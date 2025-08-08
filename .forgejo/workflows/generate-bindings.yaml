@@ -1,0 +1,160 @@
+# [.github/.forgejo]/workflows/generate-bindings.yml
+# This workflow automates the generation and publication of CDKTF Go provider bindings,
+# It's designed to be run manually, allowing you to specify the provider version.
+name: Generate CDKTF Go Bindings
+
+# This action is compatible with both GitHub Actions and Forgejo Actions.
+
+on:
+  # Allows you to run this workflow manually from the Actions tab or via API
+  workflow_dispatch:
+    inputs:
+      provider_version:
+        description: 'The semantic version of the provider to generate (e.g., 0.57.0)'
+        required: true
+        default: '0.57.0'
+        type: string
+
+env:
+  # --- Configuration ---
+  # The namespace of the provider
+  NAMESPACE: "stackitcloud"
+  # The name of the provider
+  PROVIDER: "stackit"
+  # The Go version to use for the build.
+  GO_VERSION: '1.24'
+  # The Node.js version to use for the CDKTF CLI.
+  NODE_VERSION: '22'
+  # The Terraform version to use for the CDKTF CLI.
+  TERRAFORM_VERSION: '1.12'
+  # The Git repository host
+  GIT_HOST: 'stackit-solutions.git.onstackit.cloud'
+  # The Git user to commit changes
+  GIT_USER: 'stackit-actions[bot]'
+  # The Git email to commit changes
+  GIT_EMAIL: 'stackit-actions[bot]@git.onstackit.cloud'
+
+jobs:
+  generate-bindings:
+    name: Generate and Publish Bindings
+    runs-on: docker
+    permissions:
+      # Required to commit changes and create releases.
+      contents: write
+
+    steps:
+      # 1. Checkout Repository
+      # Checks out your repository under $GITHUB_WORKSPACE, so your job can access it.
+      - name: 📤 Checkout Repository
+        uses: actions/checkout@v4
+
+      # 2. Setup Go Environment
+      - name: 🛠 Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ env.GO_VERSION }}
+
+      # 3. Setup Node.js Environment (for CDKTF CLI)
+      - name: 🛠 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      # 4. Setup Terraform (for CDKTF CLI)
+      - name: 🛠 Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: ${{ env.TERRAFORM_VERSION }}
+
+      # 5. Install CDKTF CLI
+      - name: 🛠 Install CDKTF CLI
+        run: npm install --global cdktf-cli
+
+      # 6. Initialize CDKTF Project and Generate Bindings
+      # This step creates a clean CDKTF project to generate the provider bindings from.
+      # The "<<< 'n'" here string passes "no" to the interactive enable crash reporting question
+      - name: 🏗️ Initialize CDKTF Project and Generate Bindings
+        run: |
+          echo "Create temporary directory..."
+          mkdir temp-init
+          cd temp-init
+
+          echo "Initialize project with provider, which automatically generates bindings..."
+          cdktf init --template="go" --providers="${{ env.NAMESPACE }}/${{ env.PROVIDER }}@${{ github.event.inputs.provider_version }}" --project-name "cdktf-provider-stackit-go" --project-description "cdktf-provider-stackit-go" --providers-force-local --local <<< 'n'
+
+      # 7. Finalize Go Module
+      # Sets the correct module path and tidies dependencies.
+      - name: 🧹 Tidy Go Module
+        run: |
+          cd temp-init
+          echo "Set the module path to match our repository url..."
+          go mod edit -module ${{ env.GIT_HOST }}/${{ github.repository }}/${{ env.PROVIDER }}
+
+          echo "Replace all temporary module import paths with the public git module..."
+          find ./generated -type f -name '*.go' -exec sed -i 's|cdk.tf/go/stack/generated/${{ env.NAMESPACE }}/${{ env.PROVIDER }}|${{ env.GIT_HOST }}/${{ github.repository }}/${{ env.PROVIDER }}|g' {} \;
+          
+          echo "Move the go.mod to the correct folder..."
+          mv go.mod ./generated/${{ env.NAMESPACE }}/${{ env.PROVIDER }}/go.mod
+          cd ./generated/${{ env.NAMESPACE }}/${{ env.PROVIDER }}
+          
+          echo "Tidy on the generated module with updated import paths..."
+          go mod tidy
+
+          echo "Create version file..."
+          echo "${{ github.event.inputs.provider_version }}" > version
+
+      # 8. Restructure Files
+      # This step transforms the generated output into a clean Go module at the repository root.
+      - name: 🚚 Move Generated Code
+        run: |
+          echo "Remove old provider..."
+          rm -rf ${{ env.PROVIDER }}
+
+          echo "Moving generated provider code to root..."
+          mv temp-init/generated/${{ env.NAMESPACE }}/${{ env.PROVIDER }} .
+          
+          echo "Cleaning up temporary directories..."
+          rm -rf temp-init
+
+      # 8. Commit and Tag
+      # Commits the newly generated files and tags the release.
+      - name: 🚀 Commit, Tag, and Push Changes
+        run: |
+          git config --global user.name '${{ env.GIT_USER }}'
+          git config --global user.email '${{ env.GIT_EMAIL }}'
+          
+          git add .
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit. The bindings are already up-to-date."
+            # Exit the script with failing state to avoid creating a release
+            exit -1
+          fi
+          
+          COMMIT_MSG="feat(provider): Generate bindings for ${{ env.PROVIDER_SOURCE }} v${{ github.event.inputs.provider_version }}"
+          echo "Committing new version..."
+          git commit -m "$COMMIT_MSG"
+          
+          TAG="${{ env.PROVIDER }}/v${{ github.event.inputs.provider_version }}"
+          echo "Tagging new version as $TAG"
+          git tag $TAG
+          
+          echo "Pushing commit and tag to origin..."
+          git push origin HEAD
+          git push origin --tags
+
+      # 9. Create Release
+      # Creates a formal release on GitHub/Forgejo associated with the new tag.
+      - name: 📦 Create Release
+        uses: actions/create-release@v1
+        # This condition ensures that the release is only created if there were changes to commit.
+        if: success()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ env.PROVIDER }}/v${{ github.event.inputs.provider_version }}
+          release_name: Release v${{ github.event.inputs.provider_version }}
+          body: |
+            Automated release of Go bindings for Terraform provider ${{ env.NAMESPACE }}/${{ env.PROVIDER }} v${{ github.event.inputs.provider_version }}.
+          draft: false
+          prerelease: false
