@@ -1,4 +1,4 @@
-# [.github/.forgejo]/workflows/generate-bindings.yml
+# .github/workflows/generate-bindings.yml
 # This workflow automates the generation and publication of CDKTF Go provider bindings,
 # It's designed to be run manually, allowing you to specify the provider version.
 name: Generate CDKTF Go Bindings
