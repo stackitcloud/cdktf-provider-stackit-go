@@ -1,6 +1,6 @@
 # CDKTF Go bindings for stackitcloud/stackit
 
-[![Go Reference](https://pkg.go.dev/badge/stackit-solutions.git.onstackit.cloud/SysOps/cdktf-provider-stackit-go.svg)](https://pkg.go.dev/stackit-solutions.git.onstackit.cloud/SysOps/cdktf-provider-stackit-go)
+[![Go Reference](https://pkg.go.dev/badge/github.com/stackitcloud/cdktf-provider-stackit-go.svg)](https://pkg.go.dev/github.com/stackitcloud/cdktf-provider-stackit-go)
 
 This repository provides auto-generated Go bindings for the Terraform provider [stackitcloud/stackit](https://registry.terraform.io/providers/stackitcloud/stackit/latest) for [CDK for Terraform](https://developer.hashicorp.com/terraform/cdktf).
 
@@ -9,13 +9,13 @@ This repository provides auto-generated Go bindings for the Terraform provider [
 The Go module can be installed via:
 
 ```
-go get stackit-solutions.git.onstackit.cloud/SysOps/cdktf-provider-stackit-go/stackit
+go get github.com/stackitcloud/cdktf-provider-stackit-go/stackit
 ```
 
 ## Docs
 
-Documentation is auto-generated and published via [pkg.go.dev](https://pkg.go.dev/stackit-solutions.git.onstackit.cloud/SysOps/cdktf-provider-stackit-go).
+Documentation is auto-generated and published via [pkg.go.dev](https://pkg.go.dev/github.com/stackitcloud/cdktf-provider-stackit-go).
 
 ## Issues / Bugs
 
-Please report any issues via [Forgejo issues](https://stackit-solutions.git.onstackit.cloud/SysOps/cdktf-provider-stackit-go/issues).
+Please report any issues via [GitHub issues](https://github.com/stackitcloud/cdktf-provider-stackit-go/issues).

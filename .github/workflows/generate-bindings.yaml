@@ -28,11 +28,11 @@ env:
   # The Terraform version to use for the CDKTF CLI.
   TERRAFORM_VERSION: '1.12'
   # The Git repository host
-  GIT_HOST: 'stackit-solutions.git.onstackit.cloud'
+  GIT_HOST: 'github.com'
   # The Git user to commit changes
-  GIT_USER: 'stackit-actions[bot]'
+  GIT_USER: 'github-actions[bot]'
   # The Git email to commit changes
-  GIT_EMAIL: 'stackit-actions[bot]@git.onstackit.cloud'
+  GIT_EMAIL: 'github-actions[bot]@github.com'
 
 jobs:
   generate-bindings:
