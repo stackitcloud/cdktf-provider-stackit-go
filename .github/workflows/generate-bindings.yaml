@@ -1,19 +1,15 @@
 # .github/workflows/generate-bindings.yml
-# This workflow automates the generation and publication of CDKTF Go provider bindings,
-# It's designed to be run manually, allowing you to specify the provider version.
+# This workflow automates the generation and publication of CDKTF Go provider bindings
+# It consists of two jobs
+#     1) Find the missing bindings version for the available provider versions
+#     2) Create a matrix on all missing versions and create and publish the bindings for them
+# It's designed to be run manually and on schedule
 name: Generate CDKTF Go Bindings
 
-# This action is compatible with both GitHub Actions and Forgejo Actions.
-
 on:
-  # Allows you to run this workflow manually from the Actions tab or via API
-  workflow_dispatch:
-    inputs:
-      provider_version:
-        description: 'The semantic version of the provider to generate (e.g., 0.57.0)'
-        required: true
-        default: '0.57.0'
-        type: string
+  workflow_dispatch: {} # Allows you to run this workflow manually from the Actions tab or via API
+  schedule:
+    - cron: '0 3 * * *' # Every day at 3 AM
 
 env:
   # --- Configuration ---
@@ -35,18 +31,61 @@ env:
   GIT_EMAIL: 'github-actions[bot]@github.com'
 
 jobs:
-  generate-bindings:
-    name: Generate and Publish Bindings
-    runs-on: docker
-    permissions:
-      # Required to commit changes and create releases.
-      contents: write
+  find-missing-versions:
+    name: Find Missing Versions
+    runs-on: ubuntu-latest
+    outputs:
+      versions: ${{ steps.find-missing-versions.outputs.versions }}
 
     steps:
       # 1. Checkout Repository
       # Checks out your repository under $GITHUB_WORKSPACE, so your job can access it.
       - name: 📤 Checkout Repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Required for fetch-tags to work
+          fetch-tags: true # Required for git tag to work
+
+      # 2. Find Missing Versions
+      # Checks out your repository under $GITHUB_WORKSPACE, so your job can access it.
+      - name: 🔎 Find Missing Versions
+        id: find-missing-versions
+        run: |
+          cd $GITHUB_WORKSPACE
+
+          # Download available versions of provider
+          curl -s 'https://registry.terraform.io/v1/providers/stackitcloud/stackit' | jq -r '.versions.[]' | sort -V > provider-versions.txt
+          
+          # Skip first two releases, as cdktf cannot build them
+          echo -e "0.1.0\n0.1.1" > tagged-versions.txt
+
+          # Get available versions
+          git tag | grep -Po "stackit/v\K.+" | sort -V >> tagged-versions.txt
+          
+          # Calculate missing versions
+          echo "versions=$(grep -v -x -f tagged-versions.txt provider-versions.txt | jq --raw-input --raw-output --compact-output --slurp 'split("\n") | map(select(. != ""))')" >> $GITHUB_OUTPUT
+
+  generate-bindings:
+    name: Generate and Publish Bindings
+    needs: [find-missing-versions]
+    runs-on: ubuntu-latest
+    permissions:
+      # Required to commit changes and create releases.
+      contents: write
+    
+    if: needs.find-missing-versions.outputs.versions != '[]'
+    strategy:
+      max-parallel: 1 # Create versions sequentially to avoid merge conflicts
+      matrix:
+        version: ${{ fromJSON(needs.find-missing-versions.outputs.versions) }}
+
+    steps:
+      # 1. Checkout Repository
+      # Checks out your repository under $GITHUB_WORKSPACE, so your job can access it.
+      - name: 📤 Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          ref: main # Force most-recent branch version to include previous job executions
 
       # 2. Setup Go Environment
       - name: 🛠 Setup Go
@@ -80,7 +119,7 @@ jobs:
           cd temp-init
 
           echo "Initialize project with provider, which automatically generates bindings..."
-          cdktf init --template="go" --providers="${{ env.NAMESPACE }}/${{ env.PROVIDER }}@${{ github.event.inputs.provider_version }}" --project-name "cdktf-provider-stackit-go" --project-description "cdktf-provider-stackit-go" --providers-force-local --local <<< 'n'
+          cdktf init --template="go" --providers="${{ env.NAMESPACE }}/${{ env.PROVIDER }}@${{ matrix.version }}" --project-name "cdktf-provider-stackit-go" --project-description "cdktf-provider-stackit-go" --providers-force-local --local <<< 'n'
 
       # 7. Finalize Go Module
       # Sets the correct module path and tidies dependencies.
@@ -101,7 +140,7 @@ jobs:
           go mod tidy
 
           echo "Create version file..."
-          echo "${{ github.event.inputs.provider_version }}" > version
+          echo "${{ matrix.version }}" > version
 
       # 8. Restructure Files
       # This step transforms the generated output into a clean Go module at the repository root.
@@ -131,11 +170,11 @@ jobs:
             exit -1
           fi
           
-          COMMIT_MSG="feat(provider): Generate bindings for ${{ env.PROVIDER_SOURCE }} v${{ github.event.inputs.provider_version }}"
+          COMMIT_MSG="feat(provider): Generate bindings for ${{ env.PROVIDER_SOURCE }} v${{ matrix.version }}"
           echo "Committing new version..."
           git commit -m "$COMMIT_MSG"
           
-          TAG="${{ env.PROVIDER }}/v${{ github.event.inputs.provider_version }}"
+          TAG="${{ env.PROVIDER }}/v${{ matrix.version }}"
           echo "Tagging new version as $TAG"
           git tag $TAG
           
@@ -144,7 +183,7 @@ jobs:
           git push origin --tags
 
       # 9. Create Release
-      # Creates a formal release on GitHub/Forgejo associated with the new tag.
+      # Creates a formal release on GitHub associated with the new tag.
       - name: 📦 Create Release
         uses: actions/create-release@v1
         # This condition ensures that the release is only created if there were changes to commit.
@@ -152,9 +191,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ env.PROVIDER }}/v${{ github.event.inputs.provider_version }}
-          release_name: Release v${{ github.event.inputs.provider_version }}
+          tag_name: ${{ env.PROVIDER }}/v${{ matrix.version }}
+          release_name: v${{ matrix.version }}
           body: |
-            Automated release of Go bindings for Terraform provider ${{ env.NAMESPACE }}/${{ env.PROVIDER }} v${{ github.event.inputs.provider_version }}.
+            Automated release of Go bindings for Terraform provider ${{ env.NAMESPACE }}/${{ env.PROVIDER }}@${{ matrix.version }}.
           draft: false
           prerelease: false
