@@ -170,7 +170,7 @@ jobs:
             exit -1
           fi
           
-          COMMIT_MSG="feat(provider): Generate bindings for ${{ env.PROVIDER_SOURCE }} v${{ matrix.version }}"
+          COMMIT_MSG="feat(provider): Generate bindings for v${{ matrix.version }}"
           echo "Committing new version..."
           git commit -m "$COMMIT_MSG"
           
