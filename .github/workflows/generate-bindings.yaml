@@ -155,7 +155,7 @@ jobs:
           echo "Cleaning up temporary directories..."
           rm -rf temp-init
 
-      # 8. Commit and Tag
+      # 9. Commit and Tag
       # Commits the newly generated files and tags the release.
       - name: 🚀 Commit, Tag, and Push Changes
         run: |
@@ -182,7 +182,7 @@ jobs:
           git push origin HEAD
           git push origin --tags
 
-      # 9. Create Release
+      # 10. Create Release
       # Creates a formal release on GitHub associated with the new tag.
       - name: 📦 Create Release
         uses: actions/create-release@v1
