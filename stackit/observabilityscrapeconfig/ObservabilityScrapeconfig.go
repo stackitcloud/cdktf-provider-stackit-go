@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/resources/observability_scrapeconfig stackit_observability_scrapeconfig}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/resources/observability_scrapeconfig stackit_observability_scrapeconfig}.
 type ObservabilityScrapeconfig interface {
 	cdktf.TerraformResource
 	BasicAuth() ObservabilityScrapeconfigBasicAuthOutputReference
@@ -553,7 +553,7 @@ func (j *jsiiProxy_ObservabilityScrapeconfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/resources/observability_scrapeconfig stackit_observability_scrapeconfig} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/resources/observability_scrapeconfig stackit_observability_scrapeconfig} Resource.
 func NewObservabilityScrapeconfig(scope constructs.Construct, id *string, config *ObservabilityScrapeconfigConfig) ObservabilityScrapeconfig {
 	_init_.Initialize()
 
@@ -571,7 +571,7 @@ func NewObservabilityScrapeconfig(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/resources/observability_scrapeconfig stackit_observability_scrapeconfig} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/resources/observability_scrapeconfig stackit_observability_scrapeconfig} Resource.
 func NewObservabilityScrapeconfig_Override(o ObservabilityScrapeconfig, scope constructs.Construct, id *string, config *ObservabilityScrapeconfigConfig) {
 	_init_.Initialize()
 

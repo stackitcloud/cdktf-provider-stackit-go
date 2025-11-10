@@ -27,6 +27,9 @@ type CdnDistributionConfigBackendOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Geofencing() interface{}
+	SetGeofencing(val interface{})
+	GeofencingInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	OriginRequestHeaders() *map[string]*string
@@ -70,6 +73,7 @@ type CdnDistributionConfigBackendOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetGeofencing()
 	ResetOriginRequestHeaders()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -121,6 +125,26 @@ func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference) Geofencing() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"geofencing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference) GeofencingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"geofencingInput",
 		&returns,
 	)
 	return returns
@@ -262,6 +286,17 @@ func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference)SetComplexObjectI
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference)SetGeofencing(val interface{}) {
+	if err := j.validateSetGeofencingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"geofencing",
 		val,
 	)
 }
@@ -516,6 +551,14 @@ func (c *jsiiProxy_CdnDistributionConfigBackendOutputReference) InterpolationFor
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CdnDistributionConfigBackendOutputReference) ResetGeofencing() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGeofencing",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CdnDistributionConfigBackendOutputReference) ResetOriginRequestHeaders() {

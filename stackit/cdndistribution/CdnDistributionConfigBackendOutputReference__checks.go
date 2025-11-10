@@ -163,6 +163,26 @@ func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference) validateSetCompl
 	return nil
 }
 
+func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference) validateSetGeofencingParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *map[string]*[]*string:
+		// ok
+	case map[string]*[]*string:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *map[string]*[]*string; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:

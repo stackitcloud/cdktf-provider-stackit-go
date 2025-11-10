@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/data-sources/resourcemanager_folder stackit_resourcemanager_folder}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/data-sources/resourcemanager_folder stackit_resourcemanager_folder}.
 type DataStackitResourcemanagerFolder interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -338,7 +338,7 @@ func (j *jsiiProxy_DataStackitResourcemanagerFolder) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/data-sources/resourcemanager_folder stackit_resourcemanager_folder} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/data-sources/resourcemanager_folder stackit_resourcemanager_folder} Data Source.
 func NewDataStackitResourcemanagerFolder(scope constructs.Construct, id *string, config *DataStackitResourcemanagerFolderConfig) DataStackitResourcemanagerFolder {
 	_init_.Initialize()
 
@@ -356,7 +356,7 @@ func NewDataStackitResourcemanagerFolder(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/data-sources/resourcemanager_folder stackit_resourcemanager_folder} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/data-sources/resourcemanager_folder stackit_resourcemanager_folder} Data Source.
 func NewDataStackitResourcemanagerFolder_Override(d DataStackitResourcemanagerFolder, scope constructs.Construct, id *string, config *DataStackitResourcemanagerFolderConfig) {
 	_init_.Initialize()
 

@@ -35,6 +35,7 @@ type DataStackitLoadbalancerListenersOutputReference interface {
 	ServerNameIndicators() DataStackitLoadbalancerListenersServerNameIndicatorsList
 	ServerNameIndicatorsInput() interface{}
 	TargetPool() *string
+	Tcp() DataStackitLoadbalancerListenersTcpOutputReference
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -43,6 +44,7 @@ type DataStackitLoadbalancerListenersOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Udp() DataStackitLoadbalancerListenersUdpOutputReference
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -194,6 +196,16 @@ func (j *jsiiProxy_DataStackitLoadbalancerListenersOutputReference) TargetPool()
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitLoadbalancerListenersOutputReference) Tcp() DataStackitLoadbalancerListenersTcpOutputReference {
+	var returns DataStackitLoadbalancerListenersTcpOutputReference
+	_jsii_.Get(
+		j,
+		"tcp",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitLoadbalancerListenersOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -209,6 +221,16 @@ func (j *jsiiProxy_DataStackitLoadbalancerListenersOutputReference) TerraformRes
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLoadbalancerListenersOutputReference) Udp() DataStackitLoadbalancerListenersUdpOutputReference {
+	var returns DataStackitLoadbalancerListenersUdpOutputReference
+	_jsii_.Get(
+		j,
+		"udp",
 		&returns,
 	)
 	return returns

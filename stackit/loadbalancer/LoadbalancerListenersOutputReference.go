@@ -43,6 +43,8 @@ type LoadbalancerListenersOutputReference interface {
 	TargetPool() *string
 	SetTargetPool(val *string)
 	TargetPoolInput() *string
+	Tcp() LoadbalancerListenersTcpOutputReference
+	TcpInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -51,6 +53,8 @@ type LoadbalancerListenersOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Udp() LoadbalancerListenersUdpOutputReference
+	UdpInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -76,8 +80,12 @@ type LoadbalancerListenersOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutServerNameIndicators(value interface{})
+	PutTcp(value *LoadbalancerListenersTcp)
+	PutUdp(value *LoadbalancerListenersUdp)
 	ResetDisplayName()
 	ResetServerNameIndicators()
+	ResetTcp()
+	ResetUdp()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -243,6 +251,26 @@ func (j *jsiiProxy_LoadbalancerListenersOutputReference) TargetPoolInput() *stri
 	return returns
 }
 
+func (j *jsiiProxy_LoadbalancerListenersOutputReference) Tcp() LoadbalancerListenersTcpOutputReference {
+	var returns LoadbalancerListenersTcpOutputReference
+	_jsii_.Get(
+		j,
+		"tcp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadbalancerListenersOutputReference) TcpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tcpInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LoadbalancerListenersOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -258,6 +286,26 @@ func (j *jsiiProxy_LoadbalancerListenersOutputReference) TerraformResource() cdk
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadbalancerListenersOutputReference) Udp() LoadbalancerListenersUdpOutputReference {
+	var returns LoadbalancerListenersUdpOutputReference
+	_jsii_.Get(
+		j,
+		"udp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadbalancerListenersOutputReference) UdpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"udpInput",
 		&returns,
 	)
 	return returns
@@ -587,6 +635,28 @@ func (l *jsiiProxy_LoadbalancerListenersOutputReference) PutServerNameIndicators
 	)
 }
 
+func (l *jsiiProxy_LoadbalancerListenersOutputReference) PutTcp(value *LoadbalancerListenersTcp) {
+	if err := l.validatePutTcpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putTcp",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LoadbalancerListenersOutputReference) PutUdp(value *LoadbalancerListenersUdp) {
+	if err := l.validatePutUdpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putUdp",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LoadbalancerListenersOutputReference) ResetDisplayName() {
 	_jsii_.InvokeVoid(
 		l,
@@ -599,6 +669,22 @@ func (l *jsiiProxy_LoadbalancerListenersOutputReference) ResetServerNameIndicato
 	_jsii_.InvokeVoid(
 		l,
 		"resetServerNameIndicators",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadbalancerListenersOutputReference) ResetTcp() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTcp",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadbalancerListenersOutputReference) ResetUdp() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetUdp",
 		nil, // no parameters
 	)
 }

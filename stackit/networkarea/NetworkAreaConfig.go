@@ -21,39 +21,39 @@ type NetworkAreaConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the network area.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/resources/network_area#name NetworkArea#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/resources/network_area#name NetworkArea#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// List of Network ranges.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/resources/network_area#network_ranges NetworkArea#network_ranges}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/resources/network_area#network_ranges NetworkArea#network_ranges}
 	NetworkRanges interface{} `field:"required" json:"networkRanges" yaml:"networkRanges"`
 	// STACKIT organization ID to which the network area is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/resources/network_area#organization_id NetworkArea#organization_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/resources/network_area#organization_id NetworkArea#organization_id}
 	OrganizationId *string `field:"required" json:"organizationId" yaml:"organizationId"`
 	// Classless Inter-Domain Routing (CIDR).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/resources/network_area#transfer_network NetworkArea#transfer_network}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/resources/network_area#transfer_network NetworkArea#transfer_network}
 	TransferNetwork *string `field:"required" json:"transferNetwork" yaml:"transferNetwork"`
 	// List of DNS Servers/Nameservers.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/resources/network_area#default_nameservers NetworkArea#default_nameservers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/resources/network_area#default_nameservers NetworkArea#default_nameservers}
 	DefaultNameservers *[]*string `field:"optional" json:"defaultNameservers" yaml:"defaultNameservers"`
 	// The default prefix length for networks in the network area.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/resources/network_area#default_prefix_length NetworkArea#default_prefix_length}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/resources/network_area#default_prefix_length NetworkArea#default_prefix_length}
 	DefaultPrefixLength *float64 `field:"optional" json:"defaultPrefixLength" yaml:"defaultPrefixLength"`
 	// Labels are key-value string pairs which can be attached to a resource container.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/resources/network_area#labels NetworkArea#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/resources/network_area#labels NetworkArea#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// The maximal prefix length for networks in the network area.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/resources/network_area#max_prefix_length NetworkArea#max_prefix_length}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/resources/network_area#max_prefix_length NetworkArea#max_prefix_length}
 	MaxPrefixLength *float64 `field:"optional" json:"maxPrefixLength" yaml:"maxPrefixLength"`
 	// The minimal prefix length for networks in the network area.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/resources/network_area#min_prefix_length NetworkArea#min_prefix_length}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/resources/network_area#min_prefix_length NetworkArea#min_prefix_length}
 	MinPrefixLength *float64 `field:"optional" json:"minPrefixLength" yaml:"minPrefixLength"`
 }
 

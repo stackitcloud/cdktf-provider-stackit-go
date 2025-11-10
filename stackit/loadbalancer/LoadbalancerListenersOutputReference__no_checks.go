@@ -48,6 +48,14 @@ func (l *jsiiProxy_LoadbalancerListenersOutputReference) validatePutServerNameIn
 	return nil
 }
 
+func (l *jsiiProxy_LoadbalancerListenersOutputReference) validatePutTcpParameters(value *LoadbalancerListenersTcp) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoadbalancerListenersOutputReference) validatePutUdpParameters(value *LoadbalancerListenersUdp) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoadbalancerListenersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

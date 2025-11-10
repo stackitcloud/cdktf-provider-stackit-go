@@ -21,15 +21,15 @@ type DataStackitScfPlatformConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The unique id of the platform.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/data-sources/scf_platform#platform_id DataStackitScfPlatform#platform_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/data-sources/scf_platform#platform_id DataStackitScfPlatform#platform_id}
 	PlatformId *string `field:"required" json:"platformId" yaml:"platformId"`
 	// The ID of the project associated with the platform.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/data-sources/scf_platform#project_id DataStackitScfPlatform#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/data-sources/scf_platform#project_id DataStackitScfPlatform#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The region where the platform is located. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/data-sources/scf_platform#region DataStackitScfPlatform#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/data-sources/scf_platform#region DataStackitScfPlatform#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

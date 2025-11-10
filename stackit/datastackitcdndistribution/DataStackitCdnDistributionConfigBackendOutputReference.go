@@ -27,6 +27,7 @@ type DataStackitCdnDistributionConfigBackendOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Geofencing() cdktf.StringListMap
 	InternalValue() *DataStackitCdnDistributionConfigBackend
 	SetInternalValue(val *DataStackitCdnDistributionConfigBackend)
 	OriginRequestHeaders() cdktf.StringMap
@@ -114,6 +115,16 @@ func (j *jsiiProxy_DataStackitCdnDistributionConfigBackendOutputReference) Fqn()
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitCdnDistributionConfigBackendOutputReference) Geofencing() cdktf.StringListMap {
+	var returns cdktf.StringListMap
+	_jsii_.Get(
+		j,
+		"geofencing",
 		&returns,
 	)
 	return returns

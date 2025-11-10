@@ -56,6 +56,10 @@ func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference) validateSetCompl
 	return nil
 }
 
+func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference) validateSetGeofencingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

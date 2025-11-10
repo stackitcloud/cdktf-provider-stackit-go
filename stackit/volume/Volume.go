@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/resources/volume stackit_volume}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/resources/volume stackit_volume}.
 type Volume interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -506,7 +506,7 @@ func (j *jsiiProxy_Volume) VolumeId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/resources/volume stackit_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/resources/volume stackit_volume} Resource.
 func NewVolume(scope constructs.Construct, id *string, config *VolumeConfig) Volume {
 	_init_.Initialize()
 
@@ -524,7 +524,7 @@ func NewVolume(scope constructs.Construct, id *string, config *VolumeConfig) Vol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/resources/volume stackit_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/resources/volume stackit_volume} Resource.
 func NewVolume_Override(v Volume, scope constructs.Construct, id *string, config *VolumeConfig) {
 	_init_.Initialize()
 
