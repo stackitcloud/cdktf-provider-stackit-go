@@ -21,19 +21,19 @@ type LoadbalancerCredentialConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Credential name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.2/docs/resources/loadbalancer_credential#display_name LoadbalancerCredential#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.3/docs/resources/loadbalancer_credential#display_name LoadbalancerCredential#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
 	// The password used for the ARGUS instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.2/docs/resources/loadbalancer_credential#password LoadbalancerCredential#password}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.3/docs/resources/loadbalancer_credential#password LoadbalancerCredential#password}
 	Password *string `field:"required" json:"password" yaml:"password"`
 	// STACKIT project ID to which the load balancer credential is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.2/docs/resources/loadbalancer_credential#project_id LoadbalancerCredential#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.3/docs/resources/loadbalancer_credential#project_id LoadbalancerCredential#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The username used for the ARGUS instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.2/docs/resources/loadbalancer_credential#username LoadbalancerCredential#username}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.3/docs/resources/loadbalancer_credential#username LoadbalancerCredential#username}
 	Username *string `field:"required" json:"username" yaml:"username"`
 }
 
