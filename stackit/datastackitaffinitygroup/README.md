@@ -1,3 +1,3 @@
 # `data_stackit_affinity_group`
 
-Refer to the Terraform Registry for docs: [`data_stackit_affinity_group`](https://registry.terraform.io/providers/stackitcloud/stackit/0.43.1/docs/data-sources/affinity_group).
+Refer to the Terraform Registry for docs: [`data_stackit_affinity_group`](https://registry.terraform.io/providers/stackitcloud/stackit/0.43.2/docs/data-sources/affinity_group).

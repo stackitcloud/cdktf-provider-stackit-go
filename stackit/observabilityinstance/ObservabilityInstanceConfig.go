@@ -21,45 +21,45 @@ type ObservabilityInstanceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the Observability instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.1/docs/resources/observability_instance#name ObservabilityInstance#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.2/docs/resources/observability_instance#name ObservabilityInstance#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Specifies the Observability plan. E.g. `Monitoring-Medium-EU01`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.1/docs/resources/observability_instance#plan_name ObservabilityInstance#plan_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.2/docs/resources/observability_instance#plan_name ObservabilityInstance#plan_name}
 	PlanName *string `field:"required" json:"planName" yaml:"planName"`
 	// STACKIT project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.1/docs/resources/observability_instance#project_id ObservabilityInstance#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.2/docs/resources/observability_instance#project_id ObservabilityInstance#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The access control list for this instance.
 	//
 	// Each entry is an IP address range that is permitted to access, in CIDR notation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.1/docs/resources/observability_instance#acl ObservabilityInstance#acl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.2/docs/resources/observability_instance#acl ObservabilityInstance#acl}
 	Acl *[]*string `field:"optional" json:"acl" yaml:"acl"`
 	// Alert configuration for the instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.1/docs/resources/observability_instance#alert_config ObservabilityInstance#alert_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.2/docs/resources/observability_instance#alert_config ObservabilityInstance#alert_config}
 	AlertConfig *ObservabilityInstanceAlertConfig `field:"optional" json:"alertConfig" yaml:"alertConfig"`
 	// Specifies for how many days the raw metrics are kept.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.1/docs/resources/observability_instance#metrics_retention_days ObservabilityInstance#metrics_retention_days}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.2/docs/resources/observability_instance#metrics_retention_days ObservabilityInstance#metrics_retention_days}
 	MetricsRetentionDays *float64 `field:"optional" json:"metricsRetentionDays" yaml:"metricsRetentionDays"`
 	// Specifies for how many days the 1h downsampled metrics are kept.
 	//
 	// must be less than the value of the 5m downsampling retention. Default is set to `0` (disabled).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.1/docs/resources/observability_instance#metrics_retention_days_1h_downsampling ObservabilityInstance#metrics_retention_days_1h_downsampling}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.2/docs/resources/observability_instance#metrics_retention_days_1h_downsampling ObservabilityInstance#metrics_retention_days_1h_downsampling}
 	MetricsRetentionDays1HDownsampling *float64 `field:"optional" json:"metricsRetentionDays1HDownsampling" yaml:"metricsRetentionDays1HDownsampling"`
 	// Specifies for how many days the 5m downsampled metrics are kept.
 	//
 	// must be less than the value of the general retention. Default is set to `0` (disabled).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.1/docs/resources/observability_instance#metrics_retention_days_5m_downsampling ObservabilityInstance#metrics_retention_days_5m_downsampling}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.2/docs/resources/observability_instance#metrics_retention_days_5m_downsampling ObservabilityInstance#metrics_retention_days_5m_downsampling}
 	MetricsRetentionDays5MDownsampling *float64 `field:"optional" json:"metricsRetentionDays5MDownsampling" yaml:"metricsRetentionDays5MDownsampling"`
 	// Additional parameters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.1/docs/resources/observability_instance#parameters ObservabilityInstance#parameters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.2/docs/resources/observability_instance#parameters ObservabilityInstance#parameters}
 	Parameters *map[string]*string `field:"optional" json:"parameters" yaml:"parameters"`
 }
 
