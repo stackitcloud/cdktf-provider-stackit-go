@@ -21,15 +21,15 @@ type DataStackitPostgresqlCredentialConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The credential's ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.16.1/docs/data-sources/postgresql_credential#credential_id DataStackitPostgresqlCredential#credential_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.17.0/docs/data-sources/postgresql_credential#credential_id DataStackitPostgresqlCredential#credential_id}
 	CredentialId *string `field:"required" json:"credentialId" yaml:"credentialId"`
 	// ID of the PostgreSQL instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.16.1/docs/data-sources/postgresql_credential#instance_id DataStackitPostgresqlCredential#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.17.0/docs/data-sources/postgresql_credential#instance_id DataStackitPostgresqlCredential#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// STACKIT project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.16.1/docs/data-sources/postgresql_credential#project_id DataStackitPostgresqlCredential#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.17.0/docs/data-sources/postgresql_credential#project_id DataStackitPostgresqlCredential#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 
