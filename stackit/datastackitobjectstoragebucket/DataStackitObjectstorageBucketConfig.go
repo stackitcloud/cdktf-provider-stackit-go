@@ -21,11 +21,15 @@ type DataStackitObjectstorageBucketConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The bucket name. It must be DNS conform.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.3/docs/data-sources/objectstorage_bucket#name DataStackitObjectstorageBucket#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.44.0/docs/data-sources/objectstorage_bucket#name DataStackitObjectstorageBucket#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// STACKIT Project ID to which the bucket is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.3/docs/data-sources/objectstorage_bucket#project_id DataStackitObjectstorageBucket#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.44.0/docs/data-sources/objectstorage_bucket#project_id DataStackitObjectstorageBucket#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
+	// The resource region. If not defined, the provider region is used.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.44.0/docs/data-sources/objectstorage_bucket#region DataStackitObjectstorageBucket#region}
+	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

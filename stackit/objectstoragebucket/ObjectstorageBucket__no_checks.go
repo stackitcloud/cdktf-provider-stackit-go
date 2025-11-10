@@ -112,6 +112,10 @@ func (j *jsiiProxy_ObjectstorageBucket) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_ObjectstorageBucket) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewObjectstorageBucketParameters(scope constructs.Construct, id *string, config *ObjectstorageBucketConfig) error {
 	return nil
 }

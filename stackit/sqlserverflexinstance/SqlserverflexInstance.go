@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.3/docs/resources/sqlserverflex_instance stackit_sqlserverflex_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.44.0/docs/resources/sqlserverflex_instance stackit_sqlserverflex_instance}.
 type SqlserverflexInstance interface {
 	cdktf.TerraformResource
 	Acl() *[]*string
@@ -70,6 +70,9 @@ type SqlserverflexInstance interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Replicas() *float64
 	Storage() SqlserverflexInstanceStorageOutputReference
 	StorageInput() interface{}
@@ -134,6 +137,7 @@ type SqlserverflexInstance interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetStorage()
 	ResetVersion()
 	SynthesizeAttributes() *map[string]interface{}
@@ -424,6 +428,26 @@ func (j *jsiiProxy_SqlserverflexInstance) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SqlserverflexInstance) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlserverflexInstance) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlserverflexInstance) Replicas() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -505,7 +529,7 @@ func (j *jsiiProxy_SqlserverflexInstance) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.3/docs/resources/sqlserverflex_instance stackit_sqlserverflex_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.44.0/docs/resources/sqlserverflex_instance stackit_sqlserverflex_instance} Resource.
 func NewSqlserverflexInstance(scope constructs.Construct, id *string, config *SqlserverflexInstanceConfig) SqlserverflexInstance {
 	_init_.Initialize()
 
@@ -523,7 +547,7 @@ func NewSqlserverflexInstance(scope constructs.Construct, id *string, config *Sq
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.3/docs/resources/sqlserverflex_instance stackit_sqlserverflex_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.44.0/docs/resources/sqlserverflex_instance stackit_sqlserverflex_instance} Resource.
 func NewSqlserverflexInstance_Override(s SqlserverflexInstance, scope constructs.Construct, id *string, config *SqlserverflexInstanceConfig) {
 	_init_.Initialize()
 
@@ -642,6 +666,17 @@ func (j *jsiiProxy_SqlserverflexInstance)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlserverflexInstance)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1071,6 +1106,14 @@ func (s *jsiiProxy_SqlserverflexInstance) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlserverflexInstance) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

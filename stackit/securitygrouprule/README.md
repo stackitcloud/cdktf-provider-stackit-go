@@ -1,3 +1,3 @@
 # `stackit_security_group_rule`
 
-Refer to the Terraform Registry for docs: [`stackit_security_group_rule`](https://registry.terraform.io/providers/stackitcloud/stackit/0.43.3/docs/resources/security_group_rule).
+Refer to the Terraform Registry for docs: [`stackit_security_group_rule`](https://registry.terraform.io/providers/stackitcloud/stackit/0.44.0/docs/resources/security_group_rule).

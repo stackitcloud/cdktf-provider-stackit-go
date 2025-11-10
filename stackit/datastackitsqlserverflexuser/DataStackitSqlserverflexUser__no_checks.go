@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataStackitSqlserverflexUser) validateSetProjectIdParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitSqlserverflexUser) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataStackitSqlserverflexUser) validateSetUserIdParameters(val *string) error {
 	return nil
 }

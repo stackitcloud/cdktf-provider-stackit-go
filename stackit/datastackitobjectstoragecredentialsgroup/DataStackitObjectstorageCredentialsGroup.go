@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.3/docs/data-sources/objectstorage_credentials_group stackit_objectstorage_credentials_group}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.44.0/docs/data-sources/objectstorage_credentials_group stackit_objectstorage_credentials_group}.
 type DataStackitObjectstorageCredentialsGroup interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -55,6 +55,8 @@ type DataStackitObjectstorageCredentialsGroup interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -92,6 +94,7 @@ type DataStackitObjectstorageCredentialsGroup interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -301,6 +304,16 @@ func (j *jsiiProxy_DataStackitObjectstorageCredentialsGroup) Region() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitObjectstorageCredentialsGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitObjectstorageCredentialsGroup) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -342,7 +355,7 @@ func (j *jsiiProxy_DataStackitObjectstorageCredentialsGroup) Urn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.3/docs/data-sources/objectstorage_credentials_group stackit_objectstorage_credentials_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.44.0/docs/data-sources/objectstorage_credentials_group stackit_objectstorage_credentials_group} Data Source.
 func NewDataStackitObjectstorageCredentialsGroup(scope constructs.Construct, id *string, config *DataStackitObjectstorageCredentialsGroupConfig) DataStackitObjectstorageCredentialsGroup {
 	_init_.Initialize()
 
@@ -360,7 +373,7 @@ func NewDataStackitObjectstorageCredentialsGroup(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.3/docs/data-sources/objectstorage_credentials_group stackit_objectstorage_credentials_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.44.0/docs/data-sources/objectstorage_credentials_group stackit_objectstorage_credentials_group} Data Source.
 func NewDataStackitObjectstorageCredentialsGroup_Override(d DataStackitObjectstorageCredentialsGroup, scope constructs.Construct, id *string, config *DataStackitObjectstorageCredentialsGroupConfig) {
 	_init_.Initialize()
 
@@ -446,6 +459,17 @@ func (j *jsiiProxy_DataStackitObjectstorageCredentialsGroup)SetProvider(val cdkt
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataStackitObjectstorageCredentialsGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -755,6 +779,14 @@ func (d *jsiiProxy_DataStackitObjectstorageCredentialsGroup) ResetOverrideLogica
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataStackitObjectstorageCredentialsGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

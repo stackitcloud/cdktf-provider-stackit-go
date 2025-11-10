@@ -112,6 +112,10 @@ func (j *jsiiProxy_SqlserverflexUser) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_SqlserverflexUser) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlserverflexUser) validateSetRolesParameters(val *[]*string) error {
 	return nil
 }

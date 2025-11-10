@@ -88,6 +88,10 @@ func (j *jsiiProxy_DataStackitObjectstorageCredentialsGroup) validateSetProjectI
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitObjectstorageCredentialsGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataStackitObjectstorageCredentialsGroupParameters(scope constructs.Construct, id *string, config *DataStackitObjectstorageCredentialsGroupConfig) error {
 	return nil
 }

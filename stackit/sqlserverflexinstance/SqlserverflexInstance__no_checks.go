@@ -132,6 +132,10 @@ func (j *jsiiProxy_SqlserverflexInstance) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_SqlserverflexInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlserverflexInstance) validateSetVersionParameters(val *string) error {
 	return nil
 }

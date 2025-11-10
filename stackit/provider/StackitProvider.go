@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.3/docs stackit}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.44.0/docs stackit}.
 type StackitProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -28,12 +28,18 @@ type StackitProvider interface {
 	CredentialsPath() *string
 	SetCredentialsPath(val *string)
 	CredentialsPathInput() *string
+	DefaultRegion() *string
+	SetDefaultRegion(val *string)
+	DefaultRegionInput() *string
 	DnsCustomEndpoint() *string
 	SetDnsCustomEndpoint(val *string)
 	DnsCustomEndpointInput() *string
 	EnableBetaResources() interface{}
 	SetEnableBetaResources(val interface{})
 	EnableBetaResourcesInput() interface{}
+	Experiments() *[]*string
+	SetExperiments(val *[]*string)
+	ExperimentsInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -137,8 +143,10 @@ type StackitProvider interface {
 	ResetArgusCustomEndpoint()
 	ResetAuthorizationCustomEndpoint()
 	ResetCredentialsPath()
+	ResetDefaultRegion()
 	ResetDnsCustomEndpoint()
 	ResetEnableBetaResources()
+	ResetExperiments()
 	ResetIaasCustomEndpoint()
 	ResetLoadbalancerCustomEndpoint()
 	ResetLogmeCustomEndpoint()
@@ -286,6 +294,26 @@ func (j *jsiiProxy_StackitProvider) CredentialsPathInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StackitProvider) DefaultRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) DefaultRegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultRegionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StackitProvider) DnsCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -321,6 +349,26 @@ func (j *jsiiProxy_StackitProvider) EnableBetaResourcesInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enableBetaResourcesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) Experiments() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"experiments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) ExperimentsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"experimentsInput",
 		&returns,
 	)
 	return returns
@@ -927,7 +975,7 @@ func (j *jsiiProxy_StackitProvider) TokenCustomEndpointInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.3/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.44.0/docs stackit} Resource.
 func NewStackitProvider(scope constructs.Construct, id *string, config *StackitProviderConfig) StackitProvider {
 	_init_.Initialize()
 
@@ -945,7 +993,7 @@ func NewStackitProvider(scope constructs.Construct, id *string, config *StackitP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.3/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.44.0/docs stackit} Resource.
 func NewStackitProvider_Override(s StackitProvider, scope constructs.Construct, id *string, config *StackitProviderConfig) {
 	_init_.Initialize()
 
@@ -988,6 +1036,14 @@ func (j *jsiiProxy_StackitProvider)SetCredentialsPath(val *string) {
 	)
 }
 
+func (j *jsiiProxy_StackitProvider)SetDefaultRegion(val *string) {
+	_jsii_.Set(
+		j,
+		"defaultRegion",
+		val,
+	)
+}
+
 func (j *jsiiProxy_StackitProvider)SetDnsCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -1003,6 +1059,14 @@ func (j *jsiiProxy_StackitProvider)SetEnableBetaResources(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enableBetaResources",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StackitProvider)SetExperiments(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"experiments",
 		val,
 	)
 }
@@ -1372,6 +1436,14 @@ func (s *jsiiProxy_StackitProvider) ResetCredentialsPath() {
 	)
 }
 
+func (s *jsiiProxy_StackitProvider) ResetDefaultRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDefaultRegion",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_StackitProvider) ResetDnsCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1384,6 +1456,14 @@ func (s *jsiiProxy_StackitProvider) ResetEnableBetaResources() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetEnableBetaResources",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StackitProvider) ResetExperiments() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetExperiments",
 		nil, // no parameters
 	)
 }

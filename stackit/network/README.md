@@ -1,3 +1,3 @@
 # `stackit_network`
 
-Refer to the Terraform Registry for docs: [`stackit_network`](https://registry.terraform.io/providers/stackitcloud/stackit/0.43.3/docs/resources/network).
+Refer to the Terraform Registry for docs: [`stackit_network`](https://registry.terraform.io/providers/stackitcloud/stackit/0.44.0/docs/resources/network).

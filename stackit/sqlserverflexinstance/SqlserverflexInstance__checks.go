@@ -453,6 +453,14 @@ func (j *jsiiProxy_SqlserverflexInstance) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_SqlserverflexInstance) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SqlserverflexInstance) validateSetVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

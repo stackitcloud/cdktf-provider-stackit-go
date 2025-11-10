@@ -21,27 +21,27 @@ type ServerUpdateScheduleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Is the update schedule enabled or disabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.3/docs/resources/server_update_schedule#enabled ServerUpdateSchedule#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.44.0/docs/resources/server_update_schedule#enabled ServerUpdateSchedule#enabled}
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 	// Maintenance window [1..24].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.3/docs/resources/server_update_schedule#maintenance_window ServerUpdateSchedule#maintenance_window}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.44.0/docs/resources/server_update_schedule#maintenance_window ServerUpdateSchedule#maintenance_window}
 	MaintenanceWindow *float64 `field:"required" json:"maintenanceWindow" yaml:"maintenanceWindow"`
 	// The schedule name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.3/docs/resources/server_update_schedule#name ServerUpdateSchedule#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.44.0/docs/resources/server_update_schedule#name ServerUpdateSchedule#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// STACKIT Project ID to which the server is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.3/docs/resources/server_update_schedule#project_id ServerUpdateSchedule#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.44.0/docs/resources/server_update_schedule#project_id ServerUpdateSchedule#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Update schedule described in `rrule` (recurrence rule) format.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.3/docs/resources/server_update_schedule#rrule ServerUpdateSchedule#rrule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.44.0/docs/resources/server_update_schedule#rrule ServerUpdateSchedule#rrule}
 	Rrule *string `field:"required" json:"rrule" yaml:"rrule"`
 	// Server ID for the update schedule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.3/docs/resources/server_update_schedule#server_id ServerUpdateSchedule#server_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.44.0/docs/resources/server_update_schedule#server_id ServerUpdateSchedule#server_id}
 	ServerId *string `field:"required" json:"serverId" yaml:"serverId"`
 }
 
