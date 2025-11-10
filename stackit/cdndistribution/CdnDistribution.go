@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.1/docs/resources/cdn_distribution stackit_cdn_distribution}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.2/docs/resources/cdn_distribution stackit_cdn_distribution}.
 type CdnDistribution interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -406,7 +406,7 @@ func (j *jsiiProxy_CdnDistribution) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.1/docs/resources/cdn_distribution stackit_cdn_distribution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.2/docs/resources/cdn_distribution stackit_cdn_distribution} Resource.
 func NewCdnDistribution(scope constructs.Construct, id *string, config *CdnDistributionConfig) CdnDistribution {
 	_init_.Initialize()
 
@@ -424,7 +424,7 @@ func NewCdnDistribution(scope constructs.Construct, id *string, config *CdnDistr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.1/docs/resources/cdn_distribution stackit_cdn_distribution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.2/docs/resources/cdn_distribution stackit_cdn_distribution} Resource.
 func NewCdnDistribution_Override(c CdnDistribution, scope constructs.Construct, id *string, config *CdnDistributionConfig) {
 	_init_.Initialize()
 

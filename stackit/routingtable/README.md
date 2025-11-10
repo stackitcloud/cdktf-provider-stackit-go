@@ -1,3 +1,3 @@
 # `stackit_routing_table`
 
-Refer to the Terraform Registry for docs: [`stackit_routing_table`](https://registry.terraform.io/providers/stackitcloud/stackit/0.58.1/docs/resources/routing_table).
+Refer to the Terraform Registry for docs: [`stackit_routing_table`](https://registry.terraform.io/providers/stackitcloud/stackit/0.58.2/docs/resources/routing_table).
