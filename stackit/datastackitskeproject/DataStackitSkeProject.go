@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.2/docs/data-sources/ske_project stackit_ske_project}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.3/docs/data-sources/ske_project stackit_ske_project}.
 type DataStackitSkeProject interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -272,7 +272,7 @@ func (j *jsiiProxy_DataStackitSkeProject) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.2/docs/data-sources/ske_project stackit_ske_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.3/docs/data-sources/ske_project stackit_ske_project} Data Source.
 func NewDataStackitSkeProject(scope constructs.Construct, id *string, config *DataStackitSkeProjectConfig) DataStackitSkeProject {
 	_init_.Initialize()
 
@@ -290,7 +290,7 @@ func NewDataStackitSkeProject(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.2/docs/data-sources/ske_project stackit_ske_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.3/docs/data-sources/ske_project stackit_ske_project} Data Source.
 func NewDataStackitSkeProject_Override(d DataStackitSkeProject, scope constructs.Construct, id *string, config *DataStackitSkeProjectConfig) {
 	_init_.Initialize()
 

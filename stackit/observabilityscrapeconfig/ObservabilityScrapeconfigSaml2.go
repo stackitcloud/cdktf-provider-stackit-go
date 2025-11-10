@@ -4,7 +4,7 @@ package observabilityscrapeconfig
 type ObservabilityScrapeconfigSaml2 struct {
 	// Specifies if URL parameters are enabled. Defaults to `true`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.2/docs/resources/observability_scrapeconfig#enable_url_parameters ObservabilityScrapeconfig#enable_url_parameters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.3/docs/resources/observability_scrapeconfig#enable_url_parameters ObservabilityScrapeconfig#enable_url_parameters}
 	EnableUrlParameters interface{} `field:"optional" json:"enableUrlParameters" yaml:"enableUrlParameters"`
 }
 
