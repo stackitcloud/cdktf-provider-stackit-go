@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.47.0/docs/resources/resourcemanager_project stackit_resourcemanager_project}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.48.0/docs/resources/resourcemanager_project stackit_resourcemanager_project}.
 type ResourcemanagerProject interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -45,8 +45,6 @@ type ResourcemanagerProject interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Members() ResourcemanagerProjectMembersList
-	MembersInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -118,9 +116,7 @@ type ResourcemanagerProject interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutMembers(value interface{})
 	ResetLabels()
-	ResetMembers()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -272,26 +268,6 @@ func (j *jsiiProxy_ResourcemanagerProject) Lifecycle() *cdktf.TerraformResourceL
 	return returns
 }
 
-func (j *jsiiProxy_ResourcemanagerProject) Members() ResourcemanagerProjectMembersList {
-	var returns ResourcemanagerProjectMembersList
-	_jsii_.Get(
-		j,
-		"members",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ResourcemanagerProject) MembersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"membersInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ResourcemanagerProject) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -433,7 +409,7 @@ func (j *jsiiProxy_ResourcemanagerProject) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.47.0/docs/resources/resourcemanager_project stackit_resourcemanager_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.48.0/docs/resources/resourcemanager_project stackit_resourcemanager_project} Resource.
 func NewResourcemanagerProject(scope constructs.Construct, id *string, config *ResourcemanagerProjectConfig) ResourcemanagerProject {
 	_init_.Initialize()
 
@@ -451,7 +427,7 @@ func NewResourcemanagerProject(scope constructs.Construct, id *string, config *R
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.47.0/docs/resources/resourcemanager_project stackit_resourcemanager_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.48.0/docs/resources/resourcemanager_project stackit_resourcemanager_project} Resource.
 func NewResourcemanagerProject_Override(r ResourcemanagerProject, scope constructs.Construct, id *string, config *ResourcemanagerProjectConfig) {
 	_init_.Initialize()
 
@@ -927,29 +903,10 @@ func (r *jsiiProxy_ResourcemanagerProject) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
-func (r *jsiiProxy_ResourcemanagerProject) PutMembers(value interface{}) {
-	if err := r.validatePutMembersParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		r,
-		"putMembers",
-		[]interface{}{value},
-	)
-}
-
 func (r *jsiiProxy_ResourcemanagerProject) ResetLabels() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetLabels",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_ResourcemanagerProject) ResetMembers() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetMembers",
 		nil, // no parameters
 	)
 }

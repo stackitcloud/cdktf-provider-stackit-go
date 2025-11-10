@@ -80,10 +80,6 @@ func (j *jsiiProxy_DataStackitResourcemanagerProject) validateSetLifecycleParame
 	return nil
 }
 
-func (j *jsiiProxy_DataStackitResourcemanagerProject) validateSetOwnerEmailParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataStackitResourcemanagerProject) validateSetProjectIdParameters(val *string) error {
 	return nil
 }

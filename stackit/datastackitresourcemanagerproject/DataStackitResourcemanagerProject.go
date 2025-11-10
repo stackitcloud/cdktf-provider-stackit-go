@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.47.0/docs/data-sources/resourcemanager_project stackit_resourcemanager_project}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.48.0/docs/data-sources/resourcemanager_project stackit_resourcemanager_project}.
 type DataStackitResourcemanagerProject interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -41,13 +41,9 @@ type DataStackitResourcemanagerProject interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Members() DataStackitResourcemanagerProjectMembersList
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
-	OwnerEmail() *string
-	SetOwnerEmail(val *string)
-	OwnerEmailInput() *string
 	ParentContainerId() *string
 	ProjectId() *string
 	SetProjectId(val *string)
@@ -93,7 +89,6 @@ type DataStackitResourcemanagerProject interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetOwnerEmail()
 	ResetProjectId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -234,16 +229,6 @@ func (j *jsiiProxy_DataStackitResourcemanagerProject) Lifecycle() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataStackitResourcemanagerProject) Members() DataStackitResourcemanagerProjectMembersList {
-	var returns DataStackitResourcemanagerProjectMembersList
-	_jsii_.Get(
-		j,
-		"members",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataStackitResourcemanagerProject) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -259,26 +244,6 @@ func (j *jsiiProxy_DataStackitResourcemanagerProject) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataStackitResourcemanagerProject) OwnerEmail() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ownerEmail",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataStackitResourcemanagerProject) OwnerEmailInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ownerEmailInput",
 		&returns,
 	)
 	return returns
@@ -365,7 +330,7 @@ func (j *jsiiProxy_DataStackitResourcemanagerProject) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.47.0/docs/data-sources/resourcemanager_project stackit_resourcemanager_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.48.0/docs/data-sources/resourcemanager_project stackit_resourcemanager_project} Data Source.
 func NewDataStackitResourcemanagerProject(scope constructs.Construct, id *string, config *DataStackitResourcemanagerProjectConfig) DataStackitResourcemanagerProject {
 	_init_.Initialize()
 
@@ -383,7 +348,7 @@ func NewDataStackitResourcemanagerProject(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.47.0/docs/data-sources/resourcemanager_project stackit_resourcemanager_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.48.0/docs/data-sources/resourcemanager_project stackit_resourcemanager_project} Data Source.
 func NewDataStackitResourcemanagerProject_Override(d DataStackitResourcemanagerProject, scope constructs.Construct, id *string, config *DataStackitResourcemanagerProjectConfig) {
 	_init_.Initialize()
 
@@ -439,17 +404,6 @@ func (j *jsiiProxy_DataStackitResourcemanagerProject)SetLifecycle(val *cdktf.Ter
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataStackitResourcemanagerProject)SetOwnerEmail(val *string) {
-	if err := j.validateSetOwnerEmailParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"ownerEmail",
 		val,
 	)
 }
@@ -770,14 +724,6 @@ func (d *jsiiProxy_DataStackitResourcemanagerProject) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataStackitResourcemanagerProject) ResetOwnerEmail() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetOwnerEmail",
 		nil, // no parameters
 	)
 }

@@ -21,15 +21,15 @@ type DataStackitOpensearchCredentialConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The credential's ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.47.0/docs/data-sources/opensearch_credential#credential_id DataStackitOpensearchCredential#credential_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.48.0/docs/data-sources/opensearch_credential#credential_id DataStackitOpensearchCredential#credential_id}
 	CredentialId *string `field:"required" json:"credentialId" yaml:"credentialId"`
 	// ID of the OpenSearch instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.47.0/docs/data-sources/opensearch_credential#instance_id DataStackitOpensearchCredential#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.48.0/docs/data-sources/opensearch_credential#instance_id DataStackitOpensearchCredential#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// STACKIT project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.47.0/docs/data-sources/opensearch_credential#project_id DataStackitOpensearchCredential#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.48.0/docs/data-sources/opensearch_credential#project_id DataStackitOpensearchCredential#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.47.0/docs/resources/server_update_schedule stackit_server_update_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.48.0/docs/resources/server_update_schedule stackit_server_update_schedule}.
 type ServerUpdateSchedule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -65,6 +65,9 @@ type ServerUpdateSchedule interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Rrule() *string
 	SetRrule(val *string)
 	RruleInput() *string
@@ -124,6 +127,7 @@ type ServerUpdateSchedule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -362,6 +366,26 @@ func (j *jsiiProxy_ServerUpdateSchedule) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ServerUpdateSchedule) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServerUpdateSchedule) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServerUpdateSchedule) Rrule() *string {
 	var returns *string
 	_jsii_.Get(
@@ -443,7 +467,7 @@ func (j *jsiiProxy_ServerUpdateSchedule) UpdateScheduleId() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.47.0/docs/resources/server_update_schedule stackit_server_update_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.48.0/docs/resources/server_update_schedule stackit_server_update_schedule} Resource.
 func NewServerUpdateSchedule(scope constructs.Construct, id *string, config *ServerUpdateScheduleConfig) ServerUpdateSchedule {
 	_init_.Initialize()
 
@@ -461,7 +485,7 @@ func NewServerUpdateSchedule(scope constructs.Construct, id *string, config *Ser
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.47.0/docs/resources/server_update_schedule stackit_server_update_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.48.0/docs/resources/server_update_schedule stackit_server_update_schedule} Resource.
 func NewServerUpdateSchedule_Override(s ServerUpdateSchedule, scope constructs.Construct, id *string, config *ServerUpdateScheduleConfig) {
 	_init_.Initialize()
 
@@ -580,6 +604,17 @@ func (j *jsiiProxy_ServerUpdateSchedule)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServerUpdateSchedule)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -963,6 +998,14 @@ func (s *jsiiProxy_ServerUpdateSchedule) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServerUpdateSchedule) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

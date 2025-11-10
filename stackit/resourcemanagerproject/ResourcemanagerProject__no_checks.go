@@ -72,10 +72,6 @@ func (r *jsiiProxy_ResourcemanagerProject) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
-func (r *jsiiProxy_ResourcemanagerProject) validatePutMembersParameters(value interface{}) error {
-	return nil
-}
-
 func validateResourcemanagerProject_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

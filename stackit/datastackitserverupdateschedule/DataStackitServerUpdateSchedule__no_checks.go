@@ -80,6 +80,10 @@ func (j *jsiiProxy_DataStackitServerUpdateSchedule) validateSetProjectIdParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitServerUpdateSchedule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataStackitServerUpdateSchedule) validateSetServerIdParameters(val *string) error {
 	return nil
 }

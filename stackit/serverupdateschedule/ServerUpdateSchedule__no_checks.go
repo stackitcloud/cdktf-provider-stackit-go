@@ -120,6 +120,10 @@ func (j *jsiiProxy_ServerUpdateSchedule) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_ServerUpdateSchedule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServerUpdateSchedule) validateSetRruleParameters(val *string) error {
 	return nil
 }
