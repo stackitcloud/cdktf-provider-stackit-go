@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.0/docs/resources/network stackit_network}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.1/docs/resources/network stackit_network}.
 type Network interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -37,9 +37,32 @@ type Network interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	Ipv4Gateway() *string
+	SetIpv4Gateway(val *string)
+	Ipv4GatewayInput() *string
+	Ipv4Nameservers() *[]*string
+	SetIpv4Nameservers(val *[]*string)
+	Ipv4NameserversInput() *[]*string
+	Ipv4Prefix() *string
+	SetIpv4Prefix(val *string)
+	Ipv4Prefixes() *[]*string
+	Ipv4PrefixInput() *string
 	Ipv4PrefixLength() *float64
 	SetIpv4PrefixLength(val *float64)
 	Ipv4PrefixLengthInput() *float64
+	Ipv6Gateway() *string
+	SetIpv6Gateway(val *string)
+	Ipv6GatewayInput() *string
+	Ipv6Nameservers() *[]*string
+	SetIpv6Nameservers(val *[]*string)
+	Ipv6NameserversInput() *[]*string
+	Ipv6Prefix() *string
+	SetIpv6Prefix(val *string)
+	Ipv6Prefixes() *[]*string
+	Ipv6PrefixInput() *string
+	Ipv6PrefixLength() *float64
+	SetIpv6PrefixLength(val *float64)
+	Ipv6PrefixLengthInput() *float64
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -56,6 +79,12 @@ type Network interface {
 	NetworkId() *string
 	// The tree node.
 	Node() constructs.Node
+	NoIpv4Gateway() interface{}
+	SetNoIpv4Gateway(val interface{})
+	NoIpv4GatewayInput() interface{}
+	NoIpv6Gateway() interface{}
+	SetNoIpv6Gateway(val interface{})
+	NoIpv6GatewayInput() interface{}
 	Prefixes() *[]*string
 	ProjectId() *string
 	SetProjectId(val *string)
@@ -71,6 +100,9 @@ type Network interface {
 	PublicIp() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Routed() interface{}
+	SetRouted(val interface{})
+	RoutedInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -120,12 +152,22 @@ type Network interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetIpv4Gateway()
+	ResetIpv4Nameservers()
+	ResetIpv4Prefix()
 	ResetIpv4PrefixLength()
+	ResetIpv6Gateway()
+	ResetIpv6Nameservers()
+	ResetIpv6Prefix()
+	ResetIpv6PrefixLength()
 	ResetLabels()
 	ResetNameservers()
+	ResetNoIpv4Gateway()
+	ResetNoIpv6Gateway()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRouted()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -234,6 +276,76 @@ func (j *jsiiProxy_Network) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Network) Ipv4Gateway() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv4Gateway",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) Ipv4GatewayInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv4GatewayInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) Ipv4Nameservers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipv4Nameservers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) Ipv4NameserversInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipv4NameserversInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) Ipv4Prefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv4Prefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) Ipv4Prefixes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipv4Prefixes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) Ipv4PrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv4PrefixInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Network) Ipv4PrefixLength() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -249,6 +361,96 @@ func (j *jsiiProxy_Network) Ipv4PrefixLengthInput() *float64 {
 	_jsii_.Get(
 		j,
 		"ipv4PrefixLengthInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) Ipv6Gateway() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6Gateway",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) Ipv6GatewayInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6GatewayInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) Ipv6Nameservers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipv6Nameservers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) Ipv6NameserversInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipv6NameserversInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) Ipv6Prefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6Prefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) Ipv6Prefixes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipv6Prefixes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) Ipv6PrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6PrefixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) Ipv6PrefixLength() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ipv6PrefixLength",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) Ipv6PrefixLengthInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ipv6PrefixLengthInput",
 		&returns,
 	)
 	return returns
@@ -344,6 +546,46 @@ func (j *jsiiProxy_Network) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_Network) NoIpv4Gateway() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noIpv4Gateway",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) NoIpv4GatewayInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noIpv4GatewayInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) NoIpv6Gateway() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noIpv6Gateway",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) NoIpv6GatewayInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noIpv6GatewayInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Network) Prefixes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -414,6 +656,26 @@ func (j *jsiiProxy_Network) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Network) Routed() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"routed",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) RoutedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"routedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Network) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -445,7 +707,7 @@ func (j *jsiiProxy_Network) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.0/docs/resources/network stackit_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.1/docs/resources/network stackit_network} Resource.
 func NewNetwork(scope constructs.Construct, id *string, config *NetworkConfig) Network {
 	_init_.Initialize()
 
@@ -463,7 +725,7 @@ func NewNetwork(scope constructs.Construct, id *string, config *NetworkConfig) N
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.0/docs/resources/network stackit_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.1/docs/resources/network stackit_network} Resource.
 func NewNetwork_Override(n Network, scope constructs.Construct, id *string, config *NetworkConfig) {
 	_init_.Initialize()
 
@@ -512,6 +774,39 @@ func (j *jsiiProxy_Network)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
+func (j *jsiiProxy_Network)SetIpv4Gateway(val *string) {
+	if err := j.validateSetIpv4GatewayParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv4Gateway",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Network)SetIpv4Nameservers(val *[]*string) {
+	if err := j.validateSetIpv4NameserversParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv4Nameservers",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Network)SetIpv4Prefix(val *string) {
+	if err := j.validateSetIpv4PrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv4Prefix",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Network)SetIpv4PrefixLength(val *float64) {
 	if err := j.validateSetIpv4PrefixLengthParameters(val); err != nil {
 		panic(err)
@@ -519,6 +814,50 @@ func (j *jsiiProxy_Network)SetIpv4PrefixLength(val *float64) {
 	_jsii_.Set(
 		j,
 		"ipv4PrefixLength",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Network)SetIpv6Gateway(val *string) {
+	if err := j.validateSetIpv6GatewayParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6Gateway",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Network)SetIpv6Nameservers(val *[]*string) {
+	if err := j.validateSetIpv6NameserversParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6Nameservers",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Network)SetIpv6Prefix(val *string) {
+	if err := j.validateSetIpv6PrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6Prefix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Network)SetIpv6PrefixLength(val *float64) {
+	if err := j.validateSetIpv6PrefixLengthParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6PrefixLength",
 		val,
 	)
 }
@@ -567,6 +906,28 @@ func (j *jsiiProxy_Network)SetNameservers(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_Network)SetNoIpv4Gateway(val interface{}) {
+	if err := j.validateSetNoIpv4GatewayParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"noIpv4Gateway",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Network)SetNoIpv6Gateway(val interface{}) {
+	if err := j.validateSetNoIpv6GatewayParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"noIpv6Gateway",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Network)SetProjectId(val *string) {
 	if err := j.validateSetProjectIdParameters(val); err != nil {
 		panic(err)
@@ -593,6 +954,17 @@ func (j *jsiiProxy_Network)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Network)SetRouted(val interface{}) {
+	if err := j.validateSetRoutedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routed",
 		val,
 	)
 }
@@ -950,10 +1322,66 @@ func (n *jsiiProxy_Network) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (n *jsiiProxy_Network) ResetIpv4Gateway() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetIpv4Gateway",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_Network) ResetIpv4Nameservers() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetIpv4Nameservers",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_Network) ResetIpv4Prefix() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetIpv4Prefix",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_Network) ResetIpv4PrefixLength() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetIpv4PrefixLength",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_Network) ResetIpv6Gateway() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetIpv6Gateway",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_Network) ResetIpv6Nameservers() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetIpv6Nameservers",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_Network) ResetIpv6Prefix() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetIpv6Prefix",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_Network) ResetIpv6PrefixLength() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetIpv6PrefixLength",
 		nil, // no parameters
 	)
 }
@@ -974,10 +1402,34 @@ func (n *jsiiProxy_Network) ResetNameservers() {
 	)
 }
 
+func (n *jsiiProxy_Network) ResetNoIpv4Gateway() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetNoIpv4Gateway",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_Network) ResetNoIpv6Gateway() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetNoIpv6Gateway",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_Network) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_Network) ResetRouted() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRouted",
 		nil, // no parameters
 	)
 }

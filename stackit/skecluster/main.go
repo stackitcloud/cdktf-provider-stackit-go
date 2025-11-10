@@ -448,6 +448,8 @@ func init() {
 		"stackit.skeCluster.SkeClusterNodePoolsOutputReference",
 		reflect.TypeOf((*SkeClusterNodePoolsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "allowSystemComponents", GoGetter: "AllowSystemComponents"},
+			_jsii_.MemberProperty{JsiiProperty: "allowSystemComponentsInput", GoGetter: "AllowSystemComponentsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZones", GoGetter: "AvailabilityZones"},
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZonesInput", GoGetter: "AvailabilityZonesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -491,6 +493,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "osVersionMinInput", GoGetter: "OsVersionMinInput"},
 			_jsii_.MemberProperty{JsiiProperty: "osVersionUsed", GoGetter: "OsVersionUsed"},
 			_jsii_.MemberMethod{JsiiMethod: "putTaints", GoMethod: "PutTaints"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowSystemComponents", GoMethod: "ResetAllowSystemComponents"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCri", GoMethod: "ResetCri"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxSurge", GoMethod: "ResetMaxSurge"},

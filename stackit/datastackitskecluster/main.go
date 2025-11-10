@@ -389,6 +389,7 @@ func init() {
 		"stackit.dataStackitSkeCluster.DataStackitSkeClusterNodePoolsOutputReference",
 		reflect.TypeOf((*DataStackitSkeClusterNodePoolsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "allowSystemComponents", GoGetter: "AllowSystemComponents"},
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZones", GoGetter: "AvailabilityZones"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},

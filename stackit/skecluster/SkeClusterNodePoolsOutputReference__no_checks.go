@@ -52,6 +52,10 @@ func (s *jsiiProxy_SkeClusterNodePoolsOutputReference) validateResolveParameters
 	return nil
 }
 
+func (j *jsiiProxy_SkeClusterNodePoolsOutputReference) validateSetAllowSystemComponentsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SkeClusterNodePoolsOutputReference) validateSetAvailabilityZonesParameters(val *[]*string) error {
 	return nil
 }

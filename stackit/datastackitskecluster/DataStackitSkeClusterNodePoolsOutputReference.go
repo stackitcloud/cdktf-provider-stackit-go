@@ -10,6 +10,7 @@ import (
 
 type DataStackitSkeClusterNodePoolsOutputReference interface {
 	cdktf.ComplexObject
+	AllowSystemComponents() cdktf.IResolvable
 	AvailabilityZones() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -90,6 +91,16 @@ type DataStackitSkeClusterNodePoolsOutputReference interface {
 // The jsii proxy struct for DataStackitSkeClusterNodePoolsOutputReference
 type jsiiProxy_DataStackitSkeClusterNodePoolsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataStackitSkeClusterNodePoolsOutputReference) AllowSystemComponents() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"allowSystemComponents",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataStackitSkeClusterNodePoolsOutputReference) AvailabilityZones() *[]*string {

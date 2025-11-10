@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.0/docs/data-sources/network stackit_network}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.1/docs/data-sources/network stackit_network}.
 type DataStackitNetwork interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -33,7 +33,16 @@ type DataStackitNetwork interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	Ipv4Gateway() *string
+	Ipv4Nameservers() *[]*string
+	Ipv4Prefix() *string
+	Ipv4Prefixes() *[]*string
 	Ipv4PrefixLength() *float64
+	Ipv6Gateway() *string
+	Ipv6Nameservers() *[]*string
+	Ipv6Prefix() *string
+	Ipv6Prefixes() *[]*string
+	Ipv6PrefixLength() *float64
 	Labels() cdktf.StringMap
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -57,6 +66,7 @@ type DataStackitNetwork interface {
 	PublicIp() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Routed() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -190,11 +200,101 @@ func (j *jsiiProxy_DataStackitNetwork) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitNetwork) Ipv4Gateway() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv4Gateway",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitNetwork) Ipv4Nameservers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipv4Nameservers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitNetwork) Ipv4Prefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv4Prefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitNetwork) Ipv4Prefixes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipv4Prefixes",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitNetwork) Ipv4PrefixLength() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"ipv4PrefixLength",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitNetwork) Ipv6Gateway() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6Gateway",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitNetwork) Ipv6Nameservers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipv6Nameservers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitNetwork) Ipv6Prefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6Prefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitNetwork) Ipv6Prefixes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipv6Prefixes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitNetwork) Ipv6PrefixLength() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ipv6PrefixLength",
 		&returns,
 	)
 	return returns
@@ -330,6 +430,16 @@ func (j *jsiiProxy_DataStackitNetwork) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitNetwork) Routed() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"routed",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitNetwork) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -361,7 +471,7 @@ func (j *jsiiProxy_DataStackitNetwork) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.0/docs/data-sources/network stackit_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.1/docs/data-sources/network stackit_network} Data Source.
 func NewDataStackitNetwork(scope constructs.Construct, id *string, config *DataStackitNetworkConfig) DataStackitNetwork {
 	_init_.Initialize()
 
@@ -379,7 +489,7 @@ func NewDataStackitNetwork(scope constructs.Construct, id *string, config *DataS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.0/docs/data-sources/network stackit_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.1/docs/data-sources/network stackit_network} Data Source.
 func NewDataStackitNetwork_Override(d DataStackitNetwork, scope constructs.Construct, id *string, config *DataStackitNetworkConfig) {
 	_init_.Initialize()
 

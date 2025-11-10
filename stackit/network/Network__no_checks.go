@@ -96,7 +96,35 @@ func (j *jsiiProxy_Network) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Network) validateSetIpv4GatewayParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Network) validateSetIpv4NameserversParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Network) validateSetIpv4PrefixParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Network) validateSetIpv4PrefixLengthParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_Network) validateSetIpv6GatewayParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Network) validateSetIpv6NameserversParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Network) validateSetIpv6PrefixParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Network) validateSetIpv6PrefixLengthParameters(val *float64) error {
 	return nil
 }
 
@@ -116,11 +144,23 @@ func (j *jsiiProxy_Network) validateSetNameserversParameters(val *[]*string) err
 	return nil
 }
 
+func (j *jsiiProxy_Network) validateSetNoIpv4GatewayParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Network) validateSetNoIpv6GatewayParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Network) validateSetProjectIdParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_Network) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Network) validateSetRoutedParameters(val interface{}) error {
 	return nil
 }
 

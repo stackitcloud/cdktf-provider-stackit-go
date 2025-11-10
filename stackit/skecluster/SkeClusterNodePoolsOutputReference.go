@@ -10,6 +10,9 @@ import (
 
 type SkeClusterNodePoolsOutputReference interface {
 	cdktf.ComplexObject
+	AllowSystemComponents() interface{}
+	SetAllowSystemComponents(val interface{})
+	AllowSystemComponentsInput() interface{}
 	AvailabilityZones() *[]*string
 	SetAvailabilityZones(val *[]*string)
 	AvailabilityZonesInput() *[]*string
@@ -107,6 +110,7 @@ type SkeClusterNodePoolsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutTaints(value interface{})
+	ResetAllowSystemComponents()
 	ResetCri()
 	ResetLabels()
 	ResetMaxSurge()
@@ -130,6 +134,26 @@ type SkeClusterNodePoolsOutputReference interface {
 // The jsii proxy struct for SkeClusterNodePoolsOutputReference
 type jsiiProxy_SkeClusterNodePoolsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_SkeClusterNodePoolsOutputReference) AllowSystemComponents() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowSystemComponents",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SkeClusterNodePoolsOutputReference) AllowSystemComponentsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowSystemComponentsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SkeClusterNodePoolsOutputReference) AvailabilityZones() *[]*string {
@@ -540,6 +564,17 @@ func NewSkeClusterNodePoolsOutputReference_Override(s SkeClusterNodePoolsOutputR
 	)
 }
 
+func (j *jsiiProxy_SkeClusterNodePoolsOutputReference)SetAllowSystemComponents(val interface{}) {
+	if err := j.validateSetAllowSystemComponentsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowSystemComponents",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SkeClusterNodePoolsOutputReference)SetAvailabilityZones(val *[]*string) {
 	if err := j.validateSetAvailabilityZonesParameters(val); err != nil {
 		panic(err)
@@ -943,6 +978,14 @@ func (s *jsiiProxy_SkeClusterNodePoolsOutputReference) PutTaints(value interface
 		s,
 		"putTaints",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SkeClusterNodePoolsOutputReference) ResetAllowSystemComponents() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAllowSystemComponents",
+		nil, // no parameters
 	)
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.0/docs/data-sources/network_interface stackit_network_interface}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.1/docs/data-sources/network_interface stackit_network_interface}.
 type DataStackitNetworkInterface interface {
 	cdktf.TerraformDataSource
 	AllowedAddresses() *[]*string
@@ -417,7 +417,7 @@ func (j *jsiiProxy_DataStackitNetworkInterface) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.0/docs/data-sources/network_interface stackit_network_interface} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.1/docs/data-sources/network_interface stackit_network_interface} Data Source.
 func NewDataStackitNetworkInterface(scope constructs.Construct, id *string, config *DataStackitNetworkInterfaceConfig) DataStackitNetworkInterface {
 	_init_.Initialize()
 
@@ -435,7 +435,7 @@ func NewDataStackitNetworkInterface(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.0/docs/data-sources/network_interface stackit_network_interface} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.1/docs/data-sources/network_interface stackit_network_interface} Data Source.
 func NewDataStackitNetworkInterface_Override(d DataStackitNetworkInterface, scope constructs.Construct, id *string, config *DataStackitNetworkInterfaceConfig) {
 	_init_.Initialize()
 
