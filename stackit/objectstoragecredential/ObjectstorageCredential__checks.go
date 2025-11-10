@@ -412,14 +412,6 @@ func (j *jsiiProxy_ObjectstorageCredential) validateSetProvisionersParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_ObjectstorageCredential) validateSetRegionParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewObjectstorageCredentialParameters(scope constructs.Construct, id *string, config *ObjectstorageCredentialConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

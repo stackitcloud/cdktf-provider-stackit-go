@@ -21,11 +21,11 @@ type DataStackitMariadbInstanceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of the MariaDB instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.42.0/docs/data-sources/mariadb_instance#instance_id DataStackitMariadbInstance#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.0/docs/data-sources/mariadb_instance#instance_id DataStackitMariadbInstance#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// STACKIT Project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.42.0/docs/data-sources/mariadb_instance#project_id DataStackitMariadbInstance#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.43.0/docs/data-sources/mariadb_instance#project_id DataStackitMariadbInstance#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

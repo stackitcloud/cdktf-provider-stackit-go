@@ -84,10 +84,6 @@ func (j *jsiiProxy_DataStackitObjectstorageBucket) validateSetProjectIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataStackitObjectstorageBucket) validateSetRegionParameters(val *string) error {
-	return nil
-}
-
 func validateNewDataStackitObjectstorageBucketParameters(scope constructs.Construct, id *string, config *DataStackitObjectstorageBucketConfig) error {
 	return nil
 }

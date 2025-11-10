@@ -112,10 +112,6 @@ func (j *jsiiProxy_ObjectstorageCredentialsGroup) validateSetProvisionersParamet
 	return nil
 }
 
-func (j *jsiiProxy_ObjectstorageCredentialsGroup) validateSetRegionParameters(val *string) error {
-	return nil
-}
-
 func validateNewObjectstorageCredentialsGroupParameters(scope constructs.Construct, id *string, config *ObjectstorageCredentialsGroupConfig) error {
 	return nil
 }
