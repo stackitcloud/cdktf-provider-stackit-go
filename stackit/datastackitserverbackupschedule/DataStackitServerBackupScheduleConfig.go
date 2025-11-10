@@ -21,15 +21,15 @@ type DataStackitServerBackupScheduleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Backup schedule ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.30.0/docs/data-sources/server_backup_schedule#backup_schedule_id DataStackitServerBackupSchedule#backup_schedule_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.30.1/docs/data-sources/server_backup_schedule#backup_schedule_id DataStackitServerBackupSchedule#backup_schedule_id}
 	BackupScheduleId *float64 `field:"required" json:"backupScheduleId" yaml:"backupScheduleId"`
 	// STACKIT Project ID to which the server is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.30.0/docs/data-sources/server_backup_schedule#project_id DataStackitServerBackupSchedule#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.30.1/docs/data-sources/server_backup_schedule#project_id DataStackitServerBackupSchedule#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Server ID for the backup schedule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.30.0/docs/data-sources/server_backup_schedule#server_id DataStackitServerBackupSchedule#server_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.30.1/docs/data-sources/server_backup_schedule#server_id DataStackitServerBackupSchedule#server_id}
 	ServerId *string `field:"required" json:"serverId" yaml:"serverId"`
 }
 
