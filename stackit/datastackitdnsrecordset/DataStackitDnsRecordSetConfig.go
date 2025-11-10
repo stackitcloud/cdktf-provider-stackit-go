@@ -21,15 +21,15 @@ type DataStackitDnsRecordSetConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT project ID to which the dns record set is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.0/docs/data-sources/dns_record_set#project_id DataStackitDnsRecordSet#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.1/docs/data-sources/dns_record_set#project_id DataStackitDnsRecordSet#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The rr set id.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.0/docs/data-sources/dns_record_set#record_set_id DataStackitDnsRecordSet#record_set_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.1/docs/data-sources/dns_record_set#record_set_id DataStackitDnsRecordSet#record_set_id}
 	RecordSetId *string `field:"required" json:"recordSetId" yaml:"recordSetId"`
 	// The zone ID to which is dns record set is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.0/docs/data-sources/dns_record_set#zone_id DataStackitDnsRecordSet#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.1/docs/data-sources/dns_record_set#zone_id DataStackitDnsRecordSet#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 }
 

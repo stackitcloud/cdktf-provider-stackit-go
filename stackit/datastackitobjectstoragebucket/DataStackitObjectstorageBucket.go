@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.0/docs/data-sources/objectstorage_bucket stackit_objectstorage_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.1/docs/data-sources/objectstorage_bucket stackit_objectstorage_bucket}.
 type DataStackitObjectstorageBucket interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DataStackitObjectstorageBucket) UrlVirtualHostedStyle() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.0/docs/data-sources/objectstorage_bucket stackit_objectstorage_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.1/docs/data-sources/objectstorage_bucket stackit_objectstorage_bucket} Data Source.
 func NewDataStackitObjectstorageBucket(scope constructs.Construct, id *string, config *DataStackitObjectstorageBucketConfig) DataStackitObjectstorageBucket {
 	_init_.Initialize()
 
@@ -335,7 +335,7 @@ func NewDataStackitObjectstorageBucket(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.0/docs/data-sources/objectstorage_bucket stackit_objectstorage_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.1/docs/data-sources/objectstorage_bucket stackit_objectstorage_bucket} Data Source.
 func NewDataStackitObjectstorageBucket_Override(d DataStackitObjectstorageBucket, scope constructs.Construct, id *string, config *DataStackitObjectstorageBucketConfig) {
 	_init_.Initialize()
 
