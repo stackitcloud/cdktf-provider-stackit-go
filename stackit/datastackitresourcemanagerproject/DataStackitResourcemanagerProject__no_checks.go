@@ -80,6 +80,10 @@ func (j *jsiiProxy_DataStackitResourcemanagerProject) validateSetLifecycleParame
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitResourcemanagerProject) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataStackitResourcemanagerProjectParameters(scope constructs.Construct, id *string, config *DataStackitResourcemanagerProjectConfig) error {
 	return nil
 }

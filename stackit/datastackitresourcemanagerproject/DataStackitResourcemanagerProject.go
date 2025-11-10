@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.6.8/docs/data-sources/resourcemanager_project stackit_resourcemanager_project}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.7.0/docs/data-sources/resourcemanager_project stackit_resourcemanager_project}.
 type DataStackitResourcemanagerProject interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -45,6 +45,9 @@ type DataStackitResourcemanagerProject interface {
 	// The tree node.
 	Node() constructs.Node
 	ParentContainerId() *string
+	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -82,9 +85,11 @@ type DataStackitResourcemanagerProject interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetContainerId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProjectId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -254,6 +259,26 @@ func (j *jsiiProxy_DataStackitResourcemanagerProject) ParentContainerId() *strin
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitResourcemanagerProject) ProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitResourcemanagerProject) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitResourcemanagerProject) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -305,7 +330,7 @@ func (j *jsiiProxy_DataStackitResourcemanagerProject) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.6.8/docs/data-sources/resourcemanager_project stackit_resourcemanager_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.7.0/docs/data-sources/resourcemanager_project stackit_resourcemanager_project} Data Source.
 func NewDataStackitResourcemanagerProject(scope constructs.Construct, id *string, config *DataStackitResourcemanagerProjectConfig) DataStackitResourcemanagerProject {
 	_init_.Initialize()
 
@@ -323,7 +348,7 @@ func NewDataStackitResourcemanagerProject(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.6.8/docs/data-sources/resourcemanager_project stackit_resourcemanager_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.7.0/docs/data-sources/resourcemanager_project stackit_resourcemanager_project} Data Source.
 func NewDataStackitResourcemanagerProject_Override(d DataStackitResourcemanagerProject, scope constructs.Construct, id *string, config *DataStackitResourcemanagerProjectConfig) {
 	_init_.Initialize()
 
@@ -379,6 +404,17 @@ func (j *jsiiProxy_DataStackitResourcemanagerProject)SetLifecycle(val *cdktf.Ter
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataStackitResourcemanagerProject)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -676,10 +712,26 @@ func (d *jsiiProxy_DataStackitResourcemanagerProject) OverrideLogicalId(newLogic
 	)
 }
 
+func (d *jsiiProxy_DataStackitResourcemanagerProject) ResetContainerId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetContainerId",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataStackitResourcemanagerProject) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataStackitResourcemanagerProject) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }

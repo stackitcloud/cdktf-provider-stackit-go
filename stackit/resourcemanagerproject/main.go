@@ -49,6 +49,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ownerEmailInput", GoGetter: "OwnerEmailInput"},
 			_jsii_.MemberProperty{JsiiProperty: "parentContainerId", GoGetter: "ParentContainerId"},
 			_jsii_.MemberProperty{JsiiProperty: "parentContainerIdInput", GoGetter: "ParentContainerIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "projectId", GoGetter: "ProjectId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},

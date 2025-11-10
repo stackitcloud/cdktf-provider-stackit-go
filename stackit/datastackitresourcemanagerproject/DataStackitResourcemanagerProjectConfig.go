@@ -19,9 +19,15 @@ type DataStackitResourcemanagerProjectConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Project container ID.
+	// Project container ID. Globally unique, user-friendly identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.6.8/docs/data-sources/resourcemanager_project#container_id DataStackitResourcemanagerProject#container_id}
-	ContainerId *string `field:"required" json:"containerId" yaml:"containerId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.7.0/docs/data-sources/resourcemanager_project#container_id DataStackitResourcemanagerProject#container_id}
+	ContainerId *string `field:"optional" json:"containerId" yaml:"containerId"`
+	// Project UUID identifier.
+	//
+	// This is the ID that can be used in most of the other resources to identify the project.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.7.0/docs/data-sources/resourcemanager_project#project_id DataStackitResourcemanagerProject#project_id}
+	ProjectId *string `field:"optional" json:"projectId" yaml:"projectId"`
 }
 
