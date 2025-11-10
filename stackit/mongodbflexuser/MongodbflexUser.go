@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.41.0/docs/resources/mongodbflex_user stackit_mongodbflex_user}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.42.0/docs/resources/mongodbflex_user stackit_mongodbflex_user}.
 type MongodbflexUser interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -465,7 +465,7 @@ func (j *jsiiProxy_MongodbflexUser) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.41.0/docs/resources/mongodbflex_user stackit_mongodbflex_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.42.0/docs/resources/mongodbflex_user stackit_mongodbflex_user} Resource.
 func NewMongodbflexUser(scope constructs.Construct, id *string, config *MongodbflexUserConfig) MongodbflexUser {
 	_init_.Initialize()
 
@@ -483,7 +483,7 @@ func NewMongodbflexUser(scope constructs.Construct, id *string, config *Mongodbf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.41.0/docs/resources/mongodbflex_user stackit_mongodbflex_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.42.0/docs/resources/mongodbflex_user stackit_mongodbflex_user} Resource.
 func NewMongodbflexUser_Override(m MongodbflexUser, scope constructs.Construct, id *string, config *MongodbflexUserConfig) {
 	_init_.Initialize()
 

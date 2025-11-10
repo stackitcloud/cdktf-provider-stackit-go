@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.41.0/docs/resources/objectstorage_bucket stackit_objectstorage_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.42.0/docs/resources/objectstorage_bucket stackit_objectstorage_bucket}.
 type ObjectstorageBucket interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -59,6 +59,9 @@ type ObjectstorageBucket interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -113,6 +116,7 @@ type ObjectstorageBucket interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -311,6 +315,26 @@ func (j *jsiiProxy_ObjectstorageBucket) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ObjectstorageBucket) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObjectstorageBucket) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObjectstorageBucket) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -362,7 +386,7 @@ func (j *jsiiProxy_ObjectstorageBucket) UrlVirtualHostedStyle() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.41.0/docs/resources/objectstorage_bucket stackit_objectstorage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.42.0/docs/resources/objectstorage_bucket stackit_objectstorage_bucket} Resource.
 func NewObjectstorageBucket(scope constructs.Construct, id *string, config *ObjectstorageBucketConfig) ObjectstorageBucket {
 	_init_.Initialize()
 
@@ -380,7 +404,7 @@ func NewObjectstorageBucket(scope constructs.Construct, id *string, config *Obje
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.41.0/docs/resources/objectstorage_bucket stackit_objectstorage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.42.0/docs/resources/objectstorage_bucket stackit_objectstorage_bucket} Resource.
 func NewObjectstorageBucket_Override(o ObjectstorageBucket, scope constructs.Construct, id *string, config *ObjectstorageBucketConfig) {
 	_init_.Initialize()
 
@@ -477,6 +501,17 @@ func (j *jsiiProxy_ObjectstorageBucket)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObjectstorageBucket)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -838,6 +873,14 @@ func (o *jsiiProxy_ObjectstorageBucket) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObjectstorageBucket) ResetRegion() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRegion",
 		nil, // no parameters
 	)
 }
