@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.1/docs/resources/postgresflex_user stackit_postgresflex_user}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.2/docs/resources/postgresflex_user stackit_postgresflex_user}.
 type PostgresflexUser interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -441,7 +441,7 @@ func (j *jsiiProxy_PostgresflexUser) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.1/docs/resources/postgresflex_user stackit_postgresflex_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.2/docs/resources/postgresflex_user stackit_postgresflex_user} Resource.
 func NewPostgresflexUser(scope constructs.Construct, id *string, config *PostgresflexUserConfig) PostgresflexUser {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewPostgresflexUser(scope constructs.Construct, id *string, config *Postgre
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.1/docs/resources/postgresflex_user stackit_postgresflex_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.2/docs/resources/postgresflex_user stackit_postgresflex_user} Resource.
 func NewPostgresflexUser_Override(p PostgresflexUser, scope constructs.Construct, id *string, config *PostgresflexUserConfig) {
 	_init_.Initialize()
 

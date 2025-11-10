@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.1/docs/data-sources/network stackit_network}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.2/docs/data-sources/network stackit_network}.
 type DataStackitNetwork interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -361,7 +361,7 @@ func (j *jsiiProxy_DataStackitNetwork) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.1/docs/data-sources/network stackit_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.2/docs/data-sources/network stackit_network} Data Source.
 func NewDataStackitNetwork(scope constructs.Construct, id *string, config *DataStackitNetworkConfig) DataStackitNetwork {
 	_init_.Initialize()
 
@@ -379,7 +379,7 @@ func NewDataStackitNetwork(scope constructs.Construct, id *string, config *DataS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.1/docs/data-sources/network stackit_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.2/docs/data-sources/network stackit_network} Data Source.
 func NewDataStackitNetwork_Override(d DataStackitNetwork, scope constructs.Construct, id *string, config *DataStackitNetworkConfig) {
 	_init_.Initialize()
 

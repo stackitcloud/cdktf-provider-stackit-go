@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.1/docs/resources/network_area stackit_network_area}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.2/docs/resources/network_area stackit_network_area}.
 type NetworkArea interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -528,7 +528,7 @@ func (j *jsiiProxy_NetworkArea) TransferNetworkInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.1/docs/resources/network_area stackit_network_area} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.2/docs/resources/network_area stackit_network_area} Resource.
 func NewNetworkArea(scope constructs.Construct, id *string, config *NetworkAreaConfig) NetworkArea {
 	_init_.Initialize()
 
@@ -546,7 +546,7 @@ func NewNetworkArea(scope constructs.Construct, id *string, config *NetworkAreaC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.1/docs/resources/network_area stackit_network_area} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.2/docs/resources/network_area stackit_network_area} Resource.
 func NewNetworkArea_Override(n NetworkArea, scope constructs.Construct, id *string, config *NetworkAreaConfig) {
 	_init_.Initialize()
 

@@ -19,29 +19,29 @@ type SqlserverflexInstanceConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.1/docs/resources/sqlserverflex_instance#flavor SqlserverflexInstance#flavor}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.2/docs/resources/sqlserverflex_instance#flavor SqlserverflexInstance#flavor}.
 	Flavor *SqlserverflexInstanceFlavor `field:"required" json:"flavor" yaml:"flavor"`
 	// Instance name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.1/docs/resources/sqlserverflex_instance#name SqlserverflexInstance#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.2/docs/resources/sqlserverflex_instance#name SqlserverflexInstance#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// STACKIT project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.1/docs/resources/sqlserverflex_instance#project_id SqlserverflexInstance#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.2/docs/resources/sqlserverflex_instance#project_id SqlserverflexInstance#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The Access Control List (ACL) for the SQLServer Flex instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.1/docs/resources/sqlserverflex_instance#acl SqlserverflexInstance#acl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.2/docs/resources/sqlserverflex_instance#acl SqlserverflexInstance#acl}
 	Acl *[]*string `field:"optional" json:"acl" yaml:"acl"`
 	// The backup schedule. Should follow the cron scheduling system format (e.g. "0 0 * * *").
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.1/docs/resources/sqlserverflex_instance#backup_schedule SqlserverflexInstance#backup_schedule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.2/docs/resources/sqlserverflex_instance#backup_schedule SqlserverflexInstance#backup_schedule}
 	BackupSchedule *string `field:"optional" json:"backupSchedule" yaml:"backupSchedule"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.1/docs/resources/sqlserverflex_instance#options SqlserverflexInstance#options}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.2/docs/resources/sqlserverflex_instance#options SqlserverflexInstance#options}.
 	Options *SqlserverflexInstanceOptions `field:"optional" json:"options" yaml:"options"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.1/docs/resources/sqlserverflex_instance#storage SqlserverflexInstance#storage}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.2/docs/resources/sqlserverflex_instance#storage SqlserverflexInstance#storage}.
 	Storage *SqlserverflexInstanceStorage `field:"optional" json:"storage" yaml:"storage"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.1/docs/resources/sqlserverflex_instance#version SqlserverflexInstance#version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.2/docs/resources/sqlserverflex_instance#version SqlserverflexInstance#version}.
 	Version *string `field:"optional" json:"version" yaml:"version"`
 }
 
