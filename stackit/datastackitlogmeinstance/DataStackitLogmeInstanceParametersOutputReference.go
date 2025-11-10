@@ -51,7 +51,6 @@ type DataStackitLogmeInstanceParametersOutputReference interface {
 	OpensearchTlsProtocols() *[]*string
 	SgwAcl() *string
 	Syslog() *[]*string
-	SyslogUseUdp() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -364,16 +363,6 @@ func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) Syslog() *
 	_jsii_.Get(
 		j,
 		"syslog",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) SyslogUseUdp() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"syslogUseUdp",
 		&returns,
 	)
 	return returns

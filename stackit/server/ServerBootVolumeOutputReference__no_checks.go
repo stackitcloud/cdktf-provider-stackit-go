@@ -56,6 +56,10 @@ func (j *jsiiProxy_ServerBootVolumeOutputReference) validateSetComplexObjectIsFr
 	return nil
 }
 
+func (j *jsiiProxy_ServerBootVolumeOutputReference) validateSetDeleteOnTerminationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServerBootVolumeOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

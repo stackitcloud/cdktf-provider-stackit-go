@@ -118,7 +118,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "sgwAcl", GoGetter: "SgwAcl"},
 			_jsii_.MemberProperty{JsiiProperty: "syslog", GoGetter: "Syslog"},
-			_jsii_.MemberProperty{JsiiProperty: "syslogUseUdp", GoGetter: "SyslogUseUdp"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},

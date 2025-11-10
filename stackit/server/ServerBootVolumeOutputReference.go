@@ -25,6 +25,9 @@ type ServerBootVolumeOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeleteOnTermination() interface{}
+	SetDeleteOnTermination(val interface{})
+	DeleteOnTerminationInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -73,6 +76,7 @@ type ServerBootVolumeOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDeleteOnTermination()
 	ResetPerformanceClass()
 	ResetSize()
 	// Produce the Token's value at resolution time.
@@ -115,6 +119,26 @@ func (j *jsiiProxy_ServerBootVolumeOutputReference) CreationStack() *[]*string {
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServerBootVolumeOutputReference) DeleteOnTermination() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteOnTermination",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServerBootVolumeOutputReference) DeleteOnTerminationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteOnTerminationInput",
 		&returns,
 	)
 	return returns
@@ -286,6 +310,17 @@ func (j *jsiiProxy_ServerBootVolumeOutputReference)SetComplexObjectIsFromSet(val
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServerBootVolumeOutputReference)SetDeleteOnTermination(val interface{}) {
+	if err := j.validateSetDeleteOnTerminationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteOnTermination",
 		val,
 	)
 }
@@ -551,6 +586,14 @@ func (s *jsiiProxy_ServerBootVolumeOutputReference) InterpolationForAttribute(pr
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_ServerBootVolumeOutputReference) ResetDeleteOnTermination() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDeleteOnTermination",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_ServerBootVolumeOutputReference) ResetPerformanceClass() {

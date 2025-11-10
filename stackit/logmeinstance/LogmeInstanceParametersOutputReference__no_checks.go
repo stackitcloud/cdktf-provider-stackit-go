@@ -148,10 +148,6 @@ func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetSyslogPara
 	return nil
 }
 
-func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetSyslogUseUdpParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

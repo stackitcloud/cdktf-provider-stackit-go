@@ -95,9 +95,6 @@ type LogmeInstanceParametersOutputReference interface {
 	Syslog() *[]*string
 	SetSyslog(val *[]*string)
 	SyslogInput() *[]*string
-	SyslogUseUdp() *string
-	SetSyslogUseUdp(val *string)
-	SyslogUseUdpInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -152,7 +149,6 @@ type LogmeInstanceParametersOutputReference interface {
 	ResetOpensearchTlsProtocols()
 	ResetSgwAcl()
 	ResetSyslog()
-	ResetSyslogUseUdp()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -658,26 +654,6 @@ func (j *jsiiProxy_LogmeInstanceParametersOutputReference) SyslogInput() *[]*str
 	return returns
 }
 
-func (j *jsiiProxy_LogmeInstanceParametersOutputReference) SyslogUseUdp() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"syslogUseUdp",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LogmeInstanceParametersOutputReference) SyslogUseUdpInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"syslogUseUdpInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_LogmeInstanceParametersOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -997,17 +973,6 @@ func (j *jsiiProxy_LogmeInstanceParametersOutputReference)SetSyslog(val *[]*stri
 	_jsii_.Set(
 		j,
 		"syslog",
-		val,
-	)
-}
-
-func (j *jsiiProxy_LogmeInstanceParametersOutputReference)SetSyslogUseUdp(val *string) {
-	if err := j.validateSetSyslogUseUdpParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"syslogUseUdp",
 		val,
 	)
 }
@@ -1392,14 +1357,6 @@ func (l *jsiiProxy_LogmeInstanceParametersOutputReference) ResetSyslog() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetSyslog",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LogmeInstanceParametersOutputReference) ResetSyslogUseUdp() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetSyslogUseUdp",
 		nil, // no parameters
 	)
 }
