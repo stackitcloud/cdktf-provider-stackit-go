@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataStackitCdnCustomDomain) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (d *jsiiProxy_DataStackitCdnCustomDomain) validatePutCertificateParameters(value *DataStackitCdnCustomDomainCertificate) error {
+	return nil
+}
+
 func validateDataStackitCdnCustomDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

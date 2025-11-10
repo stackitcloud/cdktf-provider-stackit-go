@@ -72,6 +72,10 @@ func (c *jsiiProxy_CdnCustomDomain) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func (c *jsiiProxy_CdnCustomDomain) validatePutCertificateParameters(value *CdnCustomDomainCertificate) error {
+	return nil
+}
+
 func validateCdnCustomDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

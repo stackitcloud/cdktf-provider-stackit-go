@@ -4,7 +4,7 @@ package datastackitloadbalancer
 type DataStackitLoadbalancerListenersServerNameIndicators struct {
 	// A domain name to match in order to pass TLS traffic to the target pool in the current listener.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.66.0/docs/data-sources/loadbalancer#name DataStackitLoadbalancer#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/data-sources/loadbalancer#name DataStackitLoadbalancer#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

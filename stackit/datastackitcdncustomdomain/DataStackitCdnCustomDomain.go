@@ -9,11 +9,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.66.0/docs/data-sources/cdn_custom_domain stackit_cdn_custom_domain}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/data-sources/cdn_custom_domain stackit_cdn_custom_domain}.
 type DataStackitCdnCustomDomain interface {
 	cdktf.TerraformDataSource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Certificate() DataStackitCdnCustomDomainCertificateOutputReference
+	CertificateInput() interface{}
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -87,6 +89,8 @@ type DataStackitCdnCustomDomain interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCertificate(value *DataStackitCdnCustomDomainCertificate)
+	ResetCertificate()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -114,6 +118,26 @@ func (j *jsiiProxy_DataStackitCdnCustomDomain) CdktfStack() cdktf.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitCdnCustomDomain) Certificate() DataStackitCdnCustomDomainCertificateOutputReference {
+	var returns DataStackitCdnCustomDomainCertificateOutputReference
+	_jsii_.Get(
+		j,
+		"certificate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitCdnCustomDomain) CertificateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"certificateInput",
 		&returns,
 	)
 	return returns
@@ -340,7 +364,7 @@ func (j *jsiiProxy_DataStackitCdnCustomDomain) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.66.0/docs/data-sources/cdn_custom_domain stackit_cdn_custom_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/data-sources/cdn_custom_domain stackit_cdn_custom_domain} Data Source.
 func NewDataStackitCdnCustomDomain(scope constructs.Construct, id *string, config *DataStackitCdnCustomDomainConfig) DataStackitCdnCustomDomain {
 	_init_.Initialize()
 
@@ -358,7 +382,7 @@ func NewDataStackitCdnCustomDomain(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.66.0/docs/data-sources/cdn_custom_domain stackit_cdn_custom_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/data-sources/cdn_custom_domain stackit_cdn_custom_domain} Data Source.
 func NewDataStackitCdnCustomDomain_Override(d DataStackitCdnCustomDomain, scope constructs.Construct, id *string, config *DataStackitCdnCustomDomainConfig) {
 	_init_.Initialize()
 
@@ -730,6 +754,25 @@ func (d *jsiiProxy_DataStackitCdnCustomDomain) OverrideLogicalId(newLogicalId *s
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataStackitCdnCustomDomain) PutCertificate(value *DataStackitCdnCustomDomainCertificate) {
+	if err := d.validatePutCertificateParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putCertificate",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataStackitCdnCustomDomain) ResetCertificate() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCertificate",
+		nil, // no parameters
 	)
 }
 

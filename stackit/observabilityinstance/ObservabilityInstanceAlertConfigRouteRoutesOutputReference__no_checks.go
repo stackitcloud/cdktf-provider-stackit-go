@@ -56,6 +56,10 @@ func (j *jsiiProxy_ObservabilityInstanceAlertConfigRouteRoutesOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityInstanceAlertConfigRouteRoutesOutputReference) validateSetContinueParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityInstanceAlertConfigRouteRoutesOutputReference) validateSetGroupByParameters(val *[]*string) error {
 	return nil
 }

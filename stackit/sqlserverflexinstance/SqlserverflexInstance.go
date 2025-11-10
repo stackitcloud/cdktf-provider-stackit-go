@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.66.0/docs/resources/sqlserverflex_instance stackit_sqlserverflex_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/resources/sqlserverflex_instance stackit_sqlserverflex_instance}.
 type SqlserverflexInstance interface {
 	cdktf.TerraformResource
 	Acl() *[]*string
@@ -529,7 +529,7 @@ func (j *jsiiProxy_SqlserverflexInstance) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.66.0/docs/resources/sqlserverflex_instance stackit_sqlserverflex_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/resources/sqlserverflex_instance stackit_sqlserverflex_instance} Resource.
 func NewSqlserverflexInstance(scope constructs.Construct, id *string, config *SqlserverflexInstanceConfig) SqlserverflexInstance {
 	_init_.Initialize()
 
@@ -547,7 +547,7 @@ func NewSqlserverflexInstance(scope constructs.Construct, id *string, config *Sq
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.66.0/docs/resources/sqlserverflex_instance stackit_sqlserverflex_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/resources/sqlserverflex_instance stackit_sqlserverflex_instance} Resource.
 func NewSqlserverflexInstance_Override(s SqlserverflexInstance, scope constructs.Construct, id *string, config *SqlserverflexInstanceConfig) {
 	_init_.Initialize()
 

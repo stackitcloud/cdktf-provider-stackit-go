@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.66.0/docs/data-sources/redis_instance stackit_redis_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/data-sources/redis_instance stackit_redis_instance}.
 type DataStackitRedisInstance interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -405,7 +405,7 @@ func (j *jsiiProxy_DataStackitRedisInstance) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.66.0/docs/data-sources/redis_instance stackit_redis_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/data-sources/redis_instance stackit_redis_instance} Data Source.
 func NewDataStackitRedisInstance(scope constructs.Construct, id *string, config *DataStackitRedisInstanceConfig) DataStackitRedisInstance {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewDataStackitRedisInstance(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.66.0/docs/data-sources/redis_instance stackit_redis_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/data-sources/redis_instance stackit_redis_instance} Data Source.
 func NewDataStackitRedisInstance_Override(d DataStackitRedisInstance, scope constructs.Construct, id *string, config *DataStackitRedisInstanceConfig) {
 	_init_.Initialize()
 
