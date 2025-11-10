@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.49.1/docs/resources/loadbalancer_observability_credential stackit_loadbalancer_observability_credential}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.50.0/docs/resources/loadbalancer_observability_credential stackit_loadbalancer_observability_credential}.
 type LoadbalancerObservabilityCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -421,7 +421,7 @@ func (j *jsiiProxy_LoadbalancerObservabilityCredential) UsernameInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.49.1/docs/resources/loadbalancer_observability_credential stackit_loadbalancer_observability_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.50.0/docs/resources/loadbalancer_observability_credential stackit_loadbalancer_observability_credential} Resource.
 func NewLoadbalancerObservabilityCredential(scope constructs.Construct, id *string, config *LoadbalancerObservabilityCredentialConfig) LoadbalancerObservabilityCredential {
 	_init_.Initialize()
 
@@ -439,7 +439,7 @@ func NewLoadbalancerObservabilityCredential(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.49.1/docs/resources/loadbalancer_observability_credential stackit_loadbalancer_observability_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.50.0/docs/resources/loadbalancer_observability_credential stackit_loadbalancer_observability_credential} Resource.
 func NewLoadbalancerObservabilityCredential_Override(l LoadbalancerObservabilityCredential, scope constructs.Construct, id *string, config *LoadbalancerObservabilityCredentialConfig) {
 	_init_.Initialize()
 

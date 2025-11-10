@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.49.1/docs/resources/ske_cluster stackit_ske_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.50.0/docs/resources/ske_cluster stackit_ske_cluster}.
 type SkeCluster interface {
 	cdktf.TerraformResource
 	AllowPrivilegedContainers() interface{}
@@ -577,7 +577,7 @@ func (j *jsiiProxy_SkeCluster) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.49.1/docs/resources/ske_cluster stackit_ske_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.50.0/docs/resources/ske_cluster stackit_ske_cluster} Resource.
 func NewSkeCluster(scope constructs.Construct, id *string, config *SkeClusterConfig) SkeCluster {
 	_init_.Initialize()
 
@@ -595,7 +595,7 @@ func NewSkeCluster(scope constructs.Construct, id *string, config *SkeClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.49.1/docs/resources/ske_cluster stackit_ske_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.50.0/docs/resources/ske_cluster stackit_ske_cluster} Resource.
 func NewSkeCluster_Override(s SkeCluster, scope constructs.Construct, id *string, config *SkeClusterConfig) {
 	_init_.Initialize()
 
