@@ -21,15 +21,15 @@ type DataStackitSqlserverflexUserConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of the SQLServer Flex instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/data-sources/sqlserverflex_user#instance_id DataStackitSqlserverflexUser#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.0/docs/data-sources/sqlserverflex_user#instance_id DataStackitSqlserverflexUser#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// STACKIT project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/data-sources/sqlserverflex_user#project_id DataStackitSqlserverflexUser#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.0/docs/data-sources/sqlserverflex_user#project_id DataStackitSqlserverflexUser#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// User ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/data-sources/sqlserverflex_user#user_id DataStackitSqlserverflexUser#user_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.0/docs/data-sources/sqlserverflex_user#user_id DataStackitSqlserverflexUser#user_id}
 	UserId *string `field:"required" json:"userId" yaml:"userId"`
 }
 

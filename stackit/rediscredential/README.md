@@ -1,3 +1,3 @@
 # `stackit_redis_credential`
 
-Refer to the Terraform Registry for docs: [`stackit_redis_credential`](https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/resources/redis_credential).
+Refer to the Terraform Registry for docs: [`stackit_redis_credential`](https://registry.terraform.io/providers/stackitcloud/stackit/0.38.0/docs/resources/redis_credential).

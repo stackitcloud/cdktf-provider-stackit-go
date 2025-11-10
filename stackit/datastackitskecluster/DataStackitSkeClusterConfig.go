@@ -21,11 +21,11 @@ type DataStackitSkeClusterConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The cluster name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/data-sources/ske_cluster#name DataStackitSkeCluster#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.0/docs/data-sources/ske_cluster#name DataStackitSkeCluster#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// STACKIT project ID to which the cluster is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/data-sources/ske_cluster#project_id DataStackitSkeCluster#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.0/docs/data-sources/ske_cluster#project_id DataStackitSkeCluster#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

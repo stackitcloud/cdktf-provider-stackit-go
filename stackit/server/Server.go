@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/resources/server stackit_server}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.0/docs/resources/server stackit_server}.
 type Server interface {
 	cdktf.TerraformResource
 	AffinityGroup() *string
@@ -37,6 +37,9 @@ type Server interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DesiredStatus() *string
+	SetDesiredStatus(val *string)
+	DesiredStatusInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -139,6 +142,7 @@ type Server interface {
 	ResetAffinityGroup()
 	ResetAvailabilityZone()
 	ResetBootVolume()
+	ResetDesiredStatus()
 	ResetImageId()
 	ResetKeypairName()
 	ResetLabels()
@@ -279,6 +283,26 @@ func (j *jsiiProxy_Server) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Server) DesiredStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"desiredStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Server) DesiredStatusInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"desiredStatusInput",
 		&returns,
 	)
 	return returns
@@ -575,7 +599,7 @@ func (j *jsiiProxy_Server) UserDataInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/resources/server stackit_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.0/docs/resources/server stackit_server} Resource.
 func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Server {
 	_init_.Initialize()
 
@@ -593,7 +617,7 @@ func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Ser
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/resources/server stackit_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.0/docs/resources/server stackit_server} Resource.
 func NewServer_Override(s Server, scope constructs.Construct, id *string, config *ServerConfig) {
 	_init_.Initialize()
 
@@ -652,6 +676,17 @@ func (j *jsiiProxy_Server)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Server)SetDesiredStatus(val *string) {
+	if err := j.validateSetDesiredStatusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"desiredStatus",
 		val,
 	)
 }
@@ -1155,6 +1190,14 @@ func (s *jsiiProxy_Server) ResetBootVolume() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetBootVolume",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Server) ResetDesiredStatus() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDesiredStatus",
 		nil, // no parameters
 	)
 }

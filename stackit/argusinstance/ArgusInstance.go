@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/resources/argus_instance stackit_argus_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.0/docs/resources/argus_instance stackit_argus_instance}.
 type ArgusInstance interface {
 	cdktf.TerraformResource
 	Acl() *[]*string
@@ -705,7 +705,7 @@ func (j *jsiiProxy_ArgusInstance) ZipkinSpansUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/resources/argus_instance stackit_argus_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.0/docs/resources/argus_instance stackit_argus_instance} Resource.
 func NewArgusInstance(scope constructs.Construct, id *string, config *ArgusInstanceConfig) ArgusInstance {
 	_init_.Initialize()
 
@@ -723,7 +723,7 @@ func NewArgusInstance(scope constructs.Construct, id *string, config *ArgusInsta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/resources/argus_instance stackit_argus_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.0/docs/resources/argus_instance stackit_argus_instance} Resource.
 func NewArgusInstance_Override(a ArgusInstance, scope constructs.Construct, id *string, config *ArgusInstanceConfig) {
 	_init_.Initialize()
 

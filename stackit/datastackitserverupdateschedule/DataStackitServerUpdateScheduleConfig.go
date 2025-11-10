@@ -21,15 +21,15 @@ type DataStackitServerUpdateScheduleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT Project ID to which the server is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/data-sources/server_update_schedule#project_id DataStackitServerUpdateSchedule#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.0/docs/data-sources/server_update_schedule#project_id DataStackitServerUpdateSchedule#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Server ID for the update schedule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/data-sources/server_update_schedule#server_id DataStackitServerUpdateSchedule#server_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.0/docs/data-sources/server_update_schedule#server_id DataStackitServerUpdateSchedule#server_id}
 	ServerId *string `field:"required" json:"serverId" yaml:"serverId"`
 	// Update schedule ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/data-sources/server_update_schedule#update_schedule_id DataStackitServerUpdateSchedule#update_schedule_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.0/docs/data-sources/server_update_schedule#update_schedule_id DataStackitServerUpdateSchedule#update_schedule_id}
 	UpdateScheduleId *float64 `field:"required" json:"updateScheduleId" yaml:"updateScheduleId"`
 }
 
