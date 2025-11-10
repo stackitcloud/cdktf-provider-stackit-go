@@ -11,6 +11,7 @@ func init() {
 		"stackit.dataStackitArgusInstance.DataStackitArgusInstance",
 		reflect.TypeOf((*DataStackitArgusInstance)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "acl", GoGetter: "Acl"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "alertingUrl", GoGetter: "AlertingUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},

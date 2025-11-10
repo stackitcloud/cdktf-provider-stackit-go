@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.3/docs/resources/objectstorage_credentials_group stackit_objectstorage_credentials_group}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.0/docs/resources/objectstorage_credentials_group stackit_objectstorage_credentials_group}.
 type ObjectstorageCredentialsGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -362,7 +362,7 @@ func (j *jsiiProxy_ObjectstorageCredentialsGroup) Urn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.3/docs/resources/objectstorage_credentials_group stackit_objectstorage_credentials_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.0/docs/resources/objectstorage_credentials_group stackit_objectstorage_credentials_group} Resource.
 func NewObjectstorageCredentialsGroup(scope constructs.Construct, id *string, config *ObjectstorageCredentialsGroupConfig) ObjectstorageCredentialsGroup {
 	_init_.Initialize()
 
@@ -380,7 +380,7 @@ func NewObjectstorageCredentialsGroup(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.3/docs/resources/objectstorage_credentials_group stackit_objectstorage_credentials_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.0/docs/resources/objectstorage_credentials_group stackit_objectstorage_credentials_group} Resource.
 func NewObjectstorageCredentialsGroup_Override(o ObjectstorageCredentialsGroup, scope constructs.Construct, id *string, config *ObjectstorageCredentialsGroupConfig) {
 	_init_.Initialize()
 

@@ -88,6 +88,10 @@ func validateArgusInstance_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_ArgusInstance) validateSetAclParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ArgusInstance) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

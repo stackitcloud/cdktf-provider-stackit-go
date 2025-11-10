@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.3/docs/data-sources/dns_record_set stackit_dns_record_set}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.0/docs/data-sources/dns_record_set stackit_dns_record_set}.
 type DataStackitDnsRecordSet interface {
 	cdktf.TerraformDataSource
 	Active() cdktf.IResolvable
@@ -31,6 +31,7 @@ type DataStackitDnsRecordSet interface {
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
 	SetForEach(val cdktf.ITerraformIterator)
+	Fqdn() *string
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -190,6 +191,16 @@ func (j *jsiiProxy_DataStackitDnsRecordSet) ForEach() cdktf.ITerraformIterator {
 	_jsii_.Get(
 		j,
 		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitDnsRecordSet) Fqdn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqdn",
 		&returns,
 	)
 	return returns
@@ -406,7 +417,7 @@ func (j *jsiiProxy_DataStackitDnsRecordSet) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.3/docs/data-sources/dns_record_set stackit_dns_record_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.0/docs/data-sources/dns_record_set stackit_dns_record_set} Data Source.
 func NewDataStackitDnsRecordSet(scope constructs.Construct, id *string, config *DataStackitDnsRecordSetConfig) DataStackitDnsRecordSet {
 	_init_.Initialize()
 
@@ -424,7 +435,7 @@ func NewDataStackitDnsRecordSet(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.3/docs/data-sources/dns_record_set stackit_dns_record_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.0/docs/data-sources/dns_record_set stackit_dns_record_set} Data Source.
 func NewDataStackitDnsRecordSet_Override(d DataStackitDnsRecordSet, scope constructs.Construct, id *string, config *DataStackitDnsRecordSetConfig) {
 	_init_.Initialize()
 

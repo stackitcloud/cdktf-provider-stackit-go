@@ -9,9 +9,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.3/docs/resources/argus_instance stackit_argus_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.0/docs/resources/argus_instance stackit_argus_instance}.
 type ArgusInstance interface {
 	cdktf.TerraformResource
+	Acl() *[]*string
+	SetAcl(val *[]*string)
+	AclInput() *[]*string
 	AlertingUrl() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -135,6 +138,7 @@ type ArgusInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAcl()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -155,6 +159,26 @@ type ArgusInstance interface {
 // The jsii proxy struct for ArgusInstance
 type jsiiProxy_ArgusInstance struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ArgusInstance) Acl() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"acl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArgusInstance) AclInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"aclInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ArgusInstance) AlertingUrl() *string {
@@ -618,7 +642,7 @@ func (j *jsiiProxy_ArgusInstance) ZipkinSpansUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.3/docs/resources/argus_instance stackit_argus_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.0/docs/resources/argus_instance stackit_argus_instance} Resource.
 func NewArgusInstance(scope constructs.Construct, id *string, config *ArgusInstanceConfig) ArgusInstance {
 	_init_.Initialize()
 
@@ -636,7 +660,7 @@ func NewArgusInstance(scope constructs.Construct, id *string, config *ArgusInsta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.3/docs/resources/argus_instance stackit_argus_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.0/docs/resources/argus_instance stackit_argus_instance} Resource.
 func NewArgusInstance_Override(a ArgusInstance, scope constructs.Construct, id *string, config *ArgusInstanceConfig) {
 	_init_.Initialize()
 
@@ -644,6 +668,17 @@ func NewArgusInstance_Override(a ArgusInstance, scope constructs.Construct, id *
 		"stackit.argusInstance.ArgusInstance",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_ArgusInstance)SetAcl(val *[]*string) {
+	if err := j.validateSetAclParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"acl",
+		val,
 	)
 }
 
@@ -1109,6 +1144,14 @@ func (a *jsiiProxy_ArgusInstance) OverrideLogicalId(newLogicalId *string) {
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (a *jsiiProxy_ArgusInstance) ResetAcl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAcl",
+		nil, // no parameters
 	)
 }
 
