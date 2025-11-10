@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.2.0/docs stackit}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.4.0/docs stackit}.
 type StackitProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -32,6 +32,9 @@ type StackitProvider interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	JwksCustomEndpoint() *string
+	SetJwksCustomEndpoint(val *string)
+	JwksCustomEndpointInput() *string
 	LogmeCustomEndpoint() *string
 	SetLogmeCustomEndpoint(val *string)
 	LogmeCustomEndpointInput() *string
@@ -42,6 +45,9 @@ type StackitProvider interface {
 	MetaAttributes() *map[string]interface{}
 	// The tree node.
 	Node() constructs.Node
+	ObjectstorageCustomEndpoint() *string
+	SetObjectstorageCustomEndpoint(val *string)
+	ObjectstorageCustomEndpointInput() *string
 	OpensearchCustomEndpoint() *string
 	SetOpensearchCustomEndpoint(val *string)
 	OpensearchCustomEndpointInput() *string
@@ -51,6 +57,12 @@ type StackitProvider interface {
 	PostgresqlCustomEndpoint() *string
 	SetPostgresqlCustomEndpoint(val *string)
 	PostgresqlCustomEndpointInput() *string
+	PrivateKey() *string
+	SetPrivateKey(val *string)
+	PrivateKeyInput() *string
+	PrivateKeyPath() *string
+	SetPrivateKeyPath(val *string)
+	PrivateKeyPathInput() *string
 	RabbitmqCustomEndpoint() *string
 	SetRabbitmqCustomEndpoint(val *string)
 	RabbitmqCustomEndpointInput() *string
@@ -68,6 +80,12 @@ type StackitProvider interface {
 	ServiceAccountEmail() *string
 	SetServiceAccountEmail(val *string)
 	ServiceAccountEmailInput() *string
+	ServiceAccountKey() *string
+	SetServiceAccountKey(val *string)
+	ServiceAccountKeyInput() *string
+	ServiceAccountKeyPath() *string
+	SetServiceAccountKeyPath(val *string)
+	ServiceAccountKeyPathInput() *string
 	ServiceAccountToken() *string
 	SetServiceAccountToken(val *string)
 	ServiceAccountTokenInput() *string
@@ -80,6 +98,9 @@ type StackitProvider interface {
 	TerraformProviderSource() *string
 	// Experimental.
 	TerraformResourceType() *string
+	TokenCustomEndpoint() *string
+	SetTokenCustomEndpoint(val *string)
+	TokenCustomEndpointInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
@@ -89,21 +110,28 @@ type StackitProvider interface {
 	ResetArgusCustomEndpoint()
 	ResetCredentialsPath()
 	ResetDnsCustomEndpoint()
+	ResetJwksCustomEndpoint()
 	ResetLogmeCustomEndpoint()
 	ResetMariadbCustomEndpoint()
+	ResetObjectstorageCustomEndpoint()
 	ResetOpensearchCustomEndpoint()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPostgresflexCustomEndpoint()
 	ResetPostgresqlCustomEndpoint()
+	ResetPrivateKey()
+	ResetPrivateKeyPath()
 	ResetRabbitmqCustomEndpoint()
 	ResetRedisCustomEndpoint()
 	ResetRegion()
 	ResetResourcemanagerCustomEndpoint()
 	ResetServiceAccountEmail()
+	ResetServiceAccountKey()
+	ResetServiceAccountKeyPath()
 	ResetServiceAccountToken()
 	ResetSkeCustomEndpoint()
+	ResetTokenCustomEndpoint()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -242,6 +270,26 @@ func (j *jsiiProxy_StackitProvider) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StackitProvider) JwksCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jwksCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) JwksCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jwksCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StackitProvider) LogmeCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -302,6 +350,26 @@ func (j *jsiiProxy_StackitProvider) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_StackitProvider) ObjectstorageCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"objectstorageCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) ObjectstorageCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"objectstorageCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StackitProvider) OpensearchCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -357,6 +425,46 @@ func (j *jsiiProxy_StackitProvider) PostgresqlCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"postgresqlCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) PrivateKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) PrivateKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) PrivateKeyPath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKeyPath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) PrivateKeyPathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKeyPathInput",
 		&returns,
 	)
 	return returns
@@ -472,6 +580,46 @@ func (j *jsiiProxy_StackitProvider) ServiceAccountEmailInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StackitProvider) ServiceAccountKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) ServiceAccountKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) ServiceAccountKeyPath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountKeyPath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) ServiceAccountKeyPathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountKeyPathInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StackitProvider) ServiceAccountToken() *string {
 	var returns *string
 	_jsii_.Get(
@@ -542,8 +690,28 @@ func (j *jsiiProxy_StackitProvider) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StackitProvider) TokenCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.2.0/docs stackit} Resource.
+func (j *jsiiProxy_StackitProvider) TokenCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.4.0/docs stackit} Resource.
 func NewStackitProvider(scope constructs.Construct, id *string, config *StackitProviderConfig) StackitProvider {
 	_init_.Initialize()
 
@@ -561,7 +729,7 @@ func NewStackitProvider(scope constructs.Construct, id *string, config *StackitP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.2.0/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.4.0/docs stackit} Resource.
 func NewStackitProvider_Override(s StackitProvider, scope constructs.Construct, id *string, config *StackitProviderConfig) {
 	_init_.Initialize()
 
@@ -604,6 +772,14 @@ func (j *jsiiProxy_StackitProvider)SetDnsCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_StackitProvider)SetJwksCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"jwksCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_StackitProvider)SetLogmeCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -616,6 +792,14 @@ func (j *jsiiProxy_StackitProvider)SetMariadbCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"mariadbCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StackitProvider)SetObjectstorageCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"objectstorageCustomEndpoint",
 		val,
 	)
 }
@@ -640,6 +824,22 @@ func (j *jsiiProxy_StackitProvider)SetPostgresqlCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"postgresqlCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StackitProvider)SetPrivateKey(val *string) {
+	_jsii_.Set(
+		j,
+		"privateKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StackitProvider)SetPrivateKeyPath(val *string) {
+	_jsii_.Set(
+		j,
+		"privateKeyPath",
 		val,
 	)
 }
@@ -684,6 +884,22 @@ func (j *jsiiProxy_StackitProvider)SetServiceAccountEmail(val *string) {
 	)
 }
 
+func (j *jsiiProxy_StackitProvider)SetServiceAccountKey(val *string) {
+	_jsii_.Set(
+		j,
+		"serviceAccountKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StackitProvider)SetServiceAccountKeyPath(val *string) {
+	_jsii_.Set(
+		j,
+		"serviceAccountKeyPath",
+		val,
+	)
+}
+
 func (j *jsiiProxy_StackitProvider)SetServiceAccountToken(val *string) {
 	_jsii_.Set(
 		j,
@@ -696,6 +912,14 @@ func (j *jsiiProxy_StackitProvider)SetSkeCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"skeCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StackitProvider)SetTokenCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"tokenCustomEndpoint",
 		val,
 	)
 }
@@ -857,6 +1081,14 @@ func (s *jsiiProxy_StackitProvider) ResetDnsCustomEndpoint() {
 	)
 }
 
+func (s *jsiiProxy_StackitProvider) ResetJwksCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetJwksCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_StackitProvider) ResetLogmeCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		s,
@@ -869,6 +1101,14 @@ func (s *jsiiProxy_StackitProvider) ResetMariadbCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetMariadbCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StackitProvider) ResetObjectstorageCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetObjectstorageCustomEndpoint",
 		nil, // no parameters
 	)
 }
@@ -901,6 +1141,22 @@ func (s *jsiiProxy_StackitProvider) ResetPostgresqlCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPostgresqlCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StackitProvider) ResetPrivateKey() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPrivateKey",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StackitProvider) ResetPrivateKeyPath() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPrivateKeyPath",
 		nil, // no parameters
 	)
 }
@@ -945,6 +1201,22 @@ func (s *jsiiProxy_StackitProvider) ResetServiceAccountEmail() {
 	)
 }
 
+func (s *jsiiProxy_StackitProvider) ResetServiceAccountKey() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetServiceAccountKey",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StackitProvider) ResetServiceAccountKeyPath() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetServiceAccountKeyPath",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_StackitProvider) ResetServiceAccountToken() {
 	_jsii_.InvokeVoid(
 		s,
@@ -957,6 +1229,14 @@ func (s *jsiiProxy_StackitProvider) ResetSkeCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSkeCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StackitProvider) ResetTokenCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTokenCustomEndpoint",
 		nil, // no parameters
 	)
 }
