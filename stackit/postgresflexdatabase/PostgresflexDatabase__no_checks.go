@@ -120,6 +120,10 @@ func (j *jsiiProxy_PostgresflexDatabase) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_PostgresflexDatabase) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewPostgresflexDatabaseParameters(scope constructs.Construct, id *string, config *PostgresflexDatabaseConfig) error {
 	return nil
 }

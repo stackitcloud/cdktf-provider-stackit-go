@@ -88,6 +88,10 @@ func (j *jsiiProxy_DataStackitPostgresflexDatabase) validateSetProjectIdParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitPostgresflexDatabase) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataStackitPostgresflexDatabaseParameters(scope constructs.Construct, id *string, config *DataStackitPostgresflexDatabaseConfig) error {
 	return nil
 }

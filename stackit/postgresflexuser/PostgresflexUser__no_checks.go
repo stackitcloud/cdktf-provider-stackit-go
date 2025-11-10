@@ -112,6 +112,10 @@ func (j *jsiiProxy_PostgresflexUser) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_PostgresflexUser) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresflexUser) validateSetRolesParameters(val *[]*string) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.44.0/docs/resources/postgresflex_user stackit_postgresflex_user}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.45.0/docs/resources/postgresflex_user stackit_postgresflex_user}.
 type PostgresflexUser interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -62,6 +62,9 @@ type PostgresflexUser interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Roles() *[]*string
 	SetRoles(val *[]*string)
 	RolesInput() *[]*string
@@ -122,6 +125,7 @@ type PostgresflexUser interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -350,6 +354,26 @@ func (j *jsiiProxy_PostgresflexUser) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PostgresflexUser) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresflexUser) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PostgresflexUser) Roles() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -441,7 +465,7 @@ func (j *jsiiProxy_PostgresflexUser) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.44.0/docs/resources/postgresflex_user stackit_postgresflex_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.45.0/docs/resources/postgresflex_user stackit_postgresflex_user} Resource.
 func NewPostgresflexUser(scope constructs.Construct, id *string, config *PostgresflexUserConfig) PostgresflexUser {
 	_init_.Initialize()
 
@@ -459,7 +483,7 @@ func NewPostgresflexUser(scope constructs.Construct, id *string, config *Postgre
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.44.0/docs/resources/postgresflex_user stackit_postgresflex_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.45.0/docs/resources/postgresflex_user stackit_postgresflex_user} Resource.
 func NewPostgresflexUser_Override(p PostgresflexUser, scope constructs.Construct, id *string, config *PostgresflexUserConfig) {
 	_init_.Initialize()
 
@@ -556,6 +580,17 @@ func (j *jsiiProxy_PostgresflexUser)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresflexUser)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -939,6 +974,14 @@ func (p *jsiiProxy_PostgresflexUser) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresflexUser) ResetRegion() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

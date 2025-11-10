@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataStackitPostgresflexUser) validateSetProjectIdParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitPostgresflexUser) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataStackitPostgresflexUser) validateSetUserIdParameters(val *string) error {
 	return nil
 }
