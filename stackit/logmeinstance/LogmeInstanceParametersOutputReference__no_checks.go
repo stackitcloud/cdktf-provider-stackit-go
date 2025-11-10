@@ -56,11 +56,99 @@ func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetComplexObj
 	return nil
 }
 
+func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetEnableMonitoringParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetFluentdTcpParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetFluentdTlsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetFluentdTlsCiphersParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetFluentdTlsMaxVersionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetFluentdTlsMinVersionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetFluentdTlsVersionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetFluentdUdpParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetGraphiteParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetIsmDeletionAfterParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetIsmJitterParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetIsmJobIntervalParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetJavaHeapspaceParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetJavaMaxmetaspaceParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetMaxDiskThresholdParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetMetricsFrequencyParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetMetricsPrefixParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetMonitoringInstanceIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetOpensearchTlsCiphersParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetOpensearchTlsProtocolsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetSgwAclParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetSyslogParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LogmeInstanceParametersOutputReference) validateSetSyslogUseUdpParameters(val *string) error {
 	return nil
 }
 

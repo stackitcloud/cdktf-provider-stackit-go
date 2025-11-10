@@ -56,11 +56,39 @@ func (j *jsiiProxy_MariadbInstanceParametersOutputReference) validateSetComplexO
 	return nil
 }
 
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) validateSetEnableMonitoringParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) validateSetGraphiteParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MariadbInstanceParametersOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) validateSetMaxDiskThresholdParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) validateSetMetricsFrequencyParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) validateSetMetricsPrefixParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) validateSetMonitoringInstanceIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MariadbInstanceParametersOutputReference) validateSetSgwAclParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) validateSetSyslogParameters(val *[]*string) error {
 	return nil
 }
 

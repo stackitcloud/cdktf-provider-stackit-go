@@ -25,11 +25,18 @@ type DataStackitMariadbInstanceParametersOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnableMonitoring() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
+	Graphite() *string
 	InternalValue() *DataStackitMariadbInstanceParameters
 	SetInternalValue(val *DataStackitMariadbInstanceParameters)
+	MaxDiskThreshold() *float64
+	MetricsFrequency() *float64
+	MetricsPrefix() *string
+	MonitoringInstanceId() *string
 	SgwAcl() *string
+	Syslog() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -107,11 +114,31 @@ func (j *jsiiProxy_DataStackitMariadbInstanceParametersOutputReference) Creation
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitMariadbInstanceParametersOutputReference) EnableMonitoring() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableMonitoring",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitMariadbInstanceParametersOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitMariadbInstanceParametersOutputReference) Graphite() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"graphite",
 		&returns,
 	)
 	return returns
@@ -127,11 +154,61 @@ func (j *jsiiProxy_DataStackitMariadbInstanceParametersOutputReference) Internal
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitMariadbInstanceParametersOutputReference) MaxDiskThreshold() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxDiskThreshold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitMariadbInstanceParametersOutputReference) MetricsFrequency() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"metricsFrequency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitMariadbInstanceParametersOutputReference) MetricsPrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metricsPrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitMariadbInstanceParametersOutputReference) MonitoringInstanceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"monitoringInstanceId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitMariadbInstanceParametersOutputReference) SgwAcl() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"sgwAcl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitMariadbInstanceParametersOutputReference) Syslog() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"syslog",
 		&returns,
 	)
 	return returns

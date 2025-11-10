@@ -25,11 +25,22 @@ type DataStackitOpensearchInstanceParametersOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnableMonitoring() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
+	Graphite() *string
 	InternalValue() *DataStackitOpensearchInstanceParameters
 	SetInternalValue(val *DataStackitOpensearchInstanceParameters)
+	JavaGarbageCollector() *string
+	JavaHeapspace() *float64
+	JavaMaxmetaspace() *float64
+	MaxDiskThreshold() *float64
+	MetricsFrequency() *float64
+	MetricsPrefix() *string
+	MonitoringInstanceId() *string
+	Plugins() *[]*string
 	SgwAcl() *string
+	Syslog() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -38,6 +49,8 @@ type DataStackitOpensearchInstanceParametersOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TlsCiphers() *[]*string
+	TlsProtocols() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -107,11 +120,31 @@ func (j *jsiiProxy_DataStackitOpensearchInstanceParametersOutputReference) Creat
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitOpensearchInstanceParametersOutputReference) EnableMonitoring() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableMonitoring",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitOpensearchInstanceParametersOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitOpensearchInstanceParametersOutputReference) Graphite() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"graphite",
 		&returns,
 	)
 	return returns
@@ -127,11 +160,101 @@ func (j *jsiiProxy_DataStackitOpensearchInstanceParametersOutputReference) Inter
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitOpensearchInstanceParametersOutputReference) JavaGarbageCollector() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"javaGarbageCollector",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitOpensearchInstanceParametersOutputReference) JavaHeapspace() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"javaHeapspace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitOpensearchInstanceParametersOutputReference) JavaMaxmetaspace() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"javaMaxmetaspace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitOpensearchInstanceParametersOutputReference) MaxDiskThreshold() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxDiskThreshold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitOpensearchInstanceParametersOutputReference) MetricsFrequency() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"metricsFrequency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitOpensearchInstanceParametersOutputReference) MetricsPrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metricsPrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitOpensearchInstanceParametersOutputReference) MonitoringInstanceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"monitoringInstanceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitOpensearchInstanceParametersOutputReference) Plugins() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"plugins",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitOpensearchInstanceParametersOutputReference) SgwAcl() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"sgwAcl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitOpensearchInstanceParametersOutputReference) Syslog() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"syslog",
 		&returns,
 	)
 	return returns
@@ -152,6 +275,26 @@ func (j *jsiiProxy_DataStackitOpensearchInstanceParametersOutputReference) Terra
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitOpensearchInstanceParametersOutputReference) TlsCiphers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tlsCiphers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitOpensearchInstanceParametersOutputReference) TlsProtocols() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsProtocols",
 		&returns,
 	)
 	return returns

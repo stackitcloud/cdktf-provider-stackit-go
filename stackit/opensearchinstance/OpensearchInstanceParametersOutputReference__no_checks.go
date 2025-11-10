@@ -56,11 +56,55 @@ func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) validateSetCompl
 	return nil
 }
 
+func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) validateSetEnableMonitoringParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) validateSetGraphiteParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) validateSetJavaGarbageCollectorParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) validateSetJavaHeapspaceParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) validateSetJavaMaxmetaspaceParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) validateSetMaxDiskThresholdParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) validateSetMetricsFrequencyParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) validateSetMetricsPrefixParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) validateSetMonitoringInstanceIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) validateSetPluginsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) validateSetSgwAclParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) validateSetSyslogParameters(val *[]*string) error {
 	return nil
 }
 
@@ -69,6 +113,14 @@ func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) validateSetTerra
 }
 
 func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) validateSetTlsCiphersParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) validateSetTlsProtocolsParameters(val *string) error {
 	return nil
 }
 

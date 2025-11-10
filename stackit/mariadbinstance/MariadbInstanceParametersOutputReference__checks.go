@@ -163,6 +163,34 @@ func (j *jsiiProxy_MariadbInstanceParametersOutputReference) validateSetComplexO
 	return nil
 }
 
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) validateSetEnableMonitoringParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) validateSetGraphiteParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MariadbInstanceParametersOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
@@ -187,7 +215,47 @@ func (j *jsiiProxy_MariadbInstanceParametersOutputReference) validateSetInternal
 	return nil
 }
 
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) validateSetMaxDiskThresholdParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) validateSetMetricsFrequencyParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) validateSetMetricsPrefixParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) validateSetMonitoringInstanceIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MariadbInstanceParametersOutputReference) validateSetSgwAclParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) validateSetSyslogParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

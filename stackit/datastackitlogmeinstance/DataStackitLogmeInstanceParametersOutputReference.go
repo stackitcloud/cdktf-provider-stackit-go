@@ -25,11 +25,33 @@ type DataStackitLogmeInstanceParametersOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnableMonitoring() cdktf.IResolvable
+	FluentdTcp() *float64
+	FluentdTls() *float64
+	FluentdTlsCiphers() *string
+	FluentdTlsMaxVersion() *string
+	FluentdTlsMinVersion() *string
+	FluentdTlsVersion() *string
+	FluentdUdp() *float64
 	// Experimental.
 	Fqn() *string
+	Graphite() *string
 	InternalValue() *DataStackitLogmeInstanceParameters
 	SetInternalValue(val *DataStackitLogmeInstanceParameters)
+	IsmDeletionAfter() *string
+	IsmJitter() *float64
+	IsmJobInterval() *float64
+	JavaHeapspace() *float64
+	JavaMaxmetaspace() *float64
+	MaxDiskThreshold() *float64
+	MetricsFrequency() *float64
+	MetricsPrefix() *string
+	MonitoringInstanceId() *string
+	OpensearchTlsCiphers() *[]*string
+	OpensearchTlsProtocols() *[]*string
 	SgwAcl() *string
+	Syslog() *[]*string
+	SyslogUseUdp() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -107,11 +129,101 @@ func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) CreationSt
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) EnableMonitoring() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableMonitoring",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) FluentdTcp() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"fluentdTcp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) FluentdTls() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"fluentdTls",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) FluentdTlsCiphers() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fluentdTlsCiphers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) FluentdTlsMaxVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fluentdTlsMaxVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) FluentdTlsMinVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fluentdTlsMinVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) FluentdTlsVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fluentdTlsVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) FluentdUdp() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"fluentdUdp",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) Graphite() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"graphite",
 		&returns,
 	)
 	return returns
@@ -127,11 +239,141 @@ func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) InternalVa
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) IsmDeletionAfter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ismDeletionAfter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) IsmJitter() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ismJitter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) IsmJobInterval() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ismJobInterval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) JavaHeapspace() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"javaHeapspace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) JavaMaxmetaspace() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"javaMaxmetaspace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) MaxDiskThreshold() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxDiskThreshold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) MetricsFrequency() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"metricsFrequency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) MetricsPrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metricsPrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) MonitoringInstanceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"monitoringInstanceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) OpensearchTlsCiphers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"opensearchTlsCiphers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) OpensearchTlsProtocols() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"opensearchTlsProtocols",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) SgwAcl() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"sgwAcl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) Syslog() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"syslog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLogmeInstanceParametersOutputReference) SyslogUseUdp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"syslogUseUdp",
 		&returns,
 	)
 	return returns

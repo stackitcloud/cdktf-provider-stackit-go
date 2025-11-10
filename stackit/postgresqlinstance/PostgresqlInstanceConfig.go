@@ -21,21 +21,21 @@ type PostgresqlInstanceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Instance name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.22.0/docs/resources/postgresql_instance#name PostgresqlInstance#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.23.0/docs/resources/postgresql_instance#name PostgresqlInstance#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The selected plan name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.22.0/docs/resources/postgresql_instance#plan_name PostgresqlInstance#plan_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.23.0/docs/resources/postgresql_instance#plan_name PostgresqlInstance#plan_name}
 	PlanName *string `field:"required" json:"planName" yaml:"planName"`
 	// STACKIT project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.22.0/docs/resources/postgresql_instance#project_id PostgresqlInstance#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.23.0/docs/resources/postgresql_instance#project_id PostgresqlInstance#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The service version.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.22.0/docs/resources/postgresql_instance#version PostgresqlInstance#version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.23.0/docs/resources/postgresql_instance#version PostgresqlInstance#version}
 	Version *string `field:"required" json:"version" yaml:"version"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.22.0/docs/resources/postgresql_instance#parameters PostgresqlInstance#parameters}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.23.0/docs/resources/postgresql_instance#parameters PostgresqlInstance#parameters}.
 	Parameters *PostgresqlInstanceParameters `field:"optional" json:"parameters" yaml:"parameters"`
 }
 

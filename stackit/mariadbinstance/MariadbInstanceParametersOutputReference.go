@@ -25,13 +25,34 @@ type MariadbInstanceParametersOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnableMonitoring() interface{}
+	SetEnableMonitoring(val interface{})
+	EnableMonitoringInput() interface{}
 	// Experimental.
 	Fqn() *string
+	Graphite() *string
+	SetGraphite(val *string)
+	GraphiteInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	MaxDiskThreshold() *float64
+	SetMaxDiskThreshold(val *float64)
+	MaxDiskThresholdInput() *float64
+	MetricsFrequency() *float64
+	SetMetricsFrequency(val *float64)
+	MetricsFrequencyInput() *float64
+	MetricsPrefix() *string
+	SetMetricsPrefix(val *string)
+	MetricsPrefixInput() *string
+	MonitoringInstanceId() *string
+	SetMonitoringInstanceId(val *string)
+	MonitoringInstanceIdInput() *string
 	SgwAcl() *string
 	SetSgwAcl(val *string)
 	SgwAclInput() *string
+	Syslog() *[]*string
+	SetSyslog(val *[]*string)
+	SyslogInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,7 +85,14 @@ type MariadbInstanceParametersOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEnableMonitoring()
+	ResetGraphite()
+	ResetMaxDiskThreshold()
+	ResetMetricsFrequency()
+	ResetMetricsPrefix()
+	ResetMonitoringInstanceId()
 	ResetSgwAcl()
+	ResetSyslog()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -110,6 +138,26 @@ func (j *jsiiProxy_MariadbInstanceParametersOutputReference) CreationStack() *[]
 	return returns
 }
 
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) EnableMonitoring() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableMonitoring",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) EnableMonitoringInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableMonitoringInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MariadbInstanceParametersOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -120,11 +168,111 @@ func (j *jsiiProxy_MariadbInstanceParametersOutputReference) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) Graphite() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"graphite",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) GraphiteInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"graphiteInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MariadbInstanceParametersOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) MaxDiskThreshold() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxDiskThreshold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) MaxDiskThresholdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxDiskThresholdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) MetricsFrequency() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"metricsFrequency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) MetricsFrequencyInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"metricsFrequencyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) MetricsPrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metricsPrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) MetricsPrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metricsPrefixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) MonitoringInstanceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"monitoringInstanceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) MonitoringInstanceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"monitoringInstanceIdInput",
 		&returns,
 	)
 	return returns
@@ -145,6 +293,26 @@ func (j *jsiiProxy_MariadbInstanceParametersOutputReference) SgwAclInput() *stri
 	_jsii_.Get(
 		j,
 		"sgwAclInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) Syslog() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"syslog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference) SyslogInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"syslogInput",
 		&returns,
 	)
 	return returns
@@ -220,6 +388,28 @@ func (j *jsiiProxy_MariadbInstanceParametersOutputReference)SetComplexObjectIsFr
 	)
 }
 
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference)SetEnableMonitoring(val interface{}) {
+	if err := j.validateSetEnableMonitoringParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableMonitoring",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference)SetGraphite(val *string) {
+	if err := j.validateSetGraphiteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"graphite",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MariadbInstanceParametersOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -231,6 +421,50 @@ func (j *jsiiProxy_MariadbInstanceParametersOutputReference)SetInternalValue(val
 	)
 }
 
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference)SetMaxDiskThreshold(val *float64) {
+	if err := j.validateSetMaxDiskThresholdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxDiskThreshold",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference)SetMetricsFrequency(val *float64) {
+	if err := j.validateSetMetricsFrequencyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"metricsFrequency",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference)SetMetricsPrefix(val *string) {
+	if err := j.validateSetMetricsPrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"metricsPrefix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference)SetMonitoringInstanceId(val *string) {
+	if err := j.validateSetMonitoringInstanceIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"monitoringInstanceId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MariadbInstanceParametersOutputReference)SetSgwAcl(val *string) {
 	if err := j.validateSetSgwAclParameters(val); err != nil {
 		panic(err)
@@ -238,6 +472,17 @@ func (j *jsiiProxy_MariadbInstanceParametersOutputReference)SetSgwAcl(val *strin
 	_jsii_.Set(
 		j,
 		"sgwAcl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MariadbInstanceParametersOutputReference)SetSyslog(val *[]*string) {
+	if err := j.validateSetSyslogParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"syslog",
 		val,
 	)
 }
@@ -450,10 +695,66 @@ func (m *jsiiProxy_MariadbInstanceParametersOutputReference) InterpolationForAtt
 	return returns
 }
 
+func (m *jsiiProxy_MariadbInstanceParametersOutputReference) ResetEnableMonitoring() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetEnableMonitoring",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MariadbInstanceParametersOutputReference) ResetGraphite() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetGraphite",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MariadbInstanceParametersOutputReference) ResetMaxDiskThreshold() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMaxDiskThreshold",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MariadbInstanceParametersOutputReference) ResetMetricsFrequency() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMetricsFrequency",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MariadbInstanceParametersOutputReference) ResetMetricsPrefix() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMetricsPrefix",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MariadbInstanceParametersOutputReference) ResetMonitoringInstanceId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMonitoringInstanceId",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MariadbInstanceParametersOutputReference) ResetSgwAcl() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetSgwAcl",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MariadbInstanceParametersOutputReference) ResetSyslog() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSyslog",
 		nil, // no parameters
 	)
 }
