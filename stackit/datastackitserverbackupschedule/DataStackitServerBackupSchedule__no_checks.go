@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataStackitServerBackupSchedule) validateSetProjectIdParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitServerBackupSchedule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataStackitServerBackupSchedule) validateSetServerIdParameters(val *string) error {
 	return nil
 }

@@ -120,6 +120,10 @@ func (j *jsiiProxy_ServerBackupSchedule) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_ServerBackupSchedule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServerBackupSchedule) validateSetRruleParameters(val *string) error {
 	return nil
 }

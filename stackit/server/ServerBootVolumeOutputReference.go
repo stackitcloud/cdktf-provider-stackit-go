@@ -30,6 +30,7 @@ type ServerBootVolumeOutputReference interface {
 	DeleteOnTerminationInput() interface{}
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	PerformanceClass() *string
@@ -149,6 +150,16 @@ func (j *jsiiProxy_ServerBootVolumeOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServerBootVolumeOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns

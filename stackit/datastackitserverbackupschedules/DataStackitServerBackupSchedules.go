@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.46.0/docs/data-sources/server_backup_schedules stackit_server_backup_schedules}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.47.0/docs/data-sources/server_backup_schedules stackit_server_backup_schedules}.
 type DataStackitServerBackupSchedules interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -49,6 +49,9 @@ type DataStackitServerBackupSchedules interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ServerId() *string
 	SetServerId(val *string)
 	ServerIdInput() *string
@@ -86,6 +89,7 @@ type DataStackitServerBackupSchedules interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -255,6 +259,26 @@ func (j *jsiiProxy_DataStackitServerBackupSchedules) RawOverrides() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitServerBackupSchedules) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitServerBackupSchedules) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitServerBackupSchedules) ServerId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -306,7 +330,7 @@ func (j *jsiiProxy_DataStackitServerBackupSchedules) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.46.0/docs/data-sources/server_backup_schedules stackit_server_backup_schedules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.47.0/docs/data-sources/server_backup_schedules stackit_server_backup_schedules} Data Source.
 func NewDataStackitServerBackupSchedules(scope constructs.Construct, id *string, config *DataStackitServerBackupSchedulesConfig) DataStackitServerBackupSchedules {
 	_init_.Initialize()
 
@@ -324,7 +348,7 @@ func NewDataStackitServerBackupSchedules(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.46.0/docs/data-sources/server_backup_schedules stackit_server_backup_schedules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.47.0/docs/data-sources/server_backup_schedules stackit_server_backup_schedules} Data Source.
 func NewDataStackitServerBackupSchedules_Override(d DataStackitServerBackupSchedules, scope constructs.Construct, id *string, config *DataStackitServerBackupSchedulesConfig) {
 	_init_.Initialize()
 
@@ -388,6 +412,17 @@ func (j *jsiiProxy_DataStackitServerBackupSchedules)SetProvider(val cdktf.Terraf
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataStackitServerBackupSchedules)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -692,6 +727,14 @@ func (d *jsiiProxy_DataStackitServerBackupSchedules) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataStackitServerBackupSchedules) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

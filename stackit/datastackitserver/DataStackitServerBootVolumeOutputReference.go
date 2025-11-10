@@ -31,8 +31,6 @@ type DataStackitServerBootVolumeOutputReference interface {
 	Id() *string
 	InternalValue() *DataStackitServerBootVolume
 	SetInternalValue(val *DataStackitServerBootVolume)
-	PerformanceClass() *string
-	Size() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -41,7 +39,6 @@ type DataStackitServerBootVolumeOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Type() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -151,26 +148,6 @@ func (j *jsiiProxy_DataStackitServerBootVolumeOutputReference) InternalValue() *
 	return returns
 }
 
-func (j *jsiiProxy_DataStackitServerBootVolumeOutputReference) PerformanceClass() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"performanceClass",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataStackitServerBootVolumeOutputReference) Size() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"size",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataStackitServerBootVolumeOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -186,16 +163,6 @@ func (j *jsiiProxy_DataStackitServerBootVolumeOutputReference) TerraformResource
 	_jsii_.Get(
 		j,
 		"terraformResource",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataStackitServerBootVolumeOutputReference) Type() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"type",
 		&returns,
 	)
 	return returns
