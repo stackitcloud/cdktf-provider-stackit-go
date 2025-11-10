@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.17.0/docs/resources/logme_instance stackit_logme_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.18.0/docs/resources/logme_instance stackit_logme_instance}.
 type LogmeInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -487,7 +487,7 @@ func (j *jsiiProxy_LogmeInstance) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.17.0/docs/resources/logme_instance stackit_logme_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.18.0/docs/resources/logme_instance stackit_logme_instance} Resource.
 func NewLogmeInstance(scope constructs.Construct, id *string, config *LogmeInstanceConfig) LogmeInstance {
 	_init_.Initialize()
 
@@ -505,7 +505,7 @@ func NewLogmeInstance(scope constructs.Construct, id *string, config *LogmeInsta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.17.0/docs/resources/logme_instance stackit_logme_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.18.0/docs/resources/logme_instance stackit_logme_instance} Resource.
 func NewLogmeInstance_Override(l LogmeInstance, scope constructs.Construct, id *string, config *LogmeInstanceConfig) {
 	_init_.Initialize()
 

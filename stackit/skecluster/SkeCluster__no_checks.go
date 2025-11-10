@@ -84,6 +84,10 @@ func (s *jsiiProxy_SkeCluster) validatePutMaintenanceParameters(value *SkeCluste
 	return nil
 }
 
+func (s *jsiiProxy_SkeCluster) validatePutNetworkParameters(value *SkeClusterNetwork) error {
+	return nil
+}
+
 func (s *jsiiProxy_SkeCluster) validatePutNodePoolsParameters(value interface{}) error {
 	return nil
 }
@@ -117,6 +121,10 @@ func (j *jsiiProxy_SkeCluster) validateSetCountParameters(val interface{}) error
 }
 
 func (j *jsiiProxy_SkeCluster) validateSetKubernetesVersionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SkeCluster) validateSetKubernetesVersionMinParameters(val *string) error {
 	return nil
 }
 

@@ -306,6 +306,14 @@ func (j *jsiiProxy_SkeClusterNodePoolsOutputReference) validateSetOsVersionParam
 	return nil
 }
 
+func (j *jsiiProxy_SkeClusterNodePoolsOutputReference) validateSetOsVersionMinParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SkeClusterNodePoolsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

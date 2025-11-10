@@ -108,6 +108,10 @@ func (j *jsiiProxy_SkeClusterNodePoolsOutputReference) validateSetOsVersionParam
 	return nil
 }
 
+func (j *jsiiProxy_SkeClusterNodePoolsOutputReference) validateSetOsVersionMinParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SkeClusterNodePoolsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

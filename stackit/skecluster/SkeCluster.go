@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.17.0/docs/resources/ske_cluster stackit_ske_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.18.0/docs/resources/ske_cluster stackit_ske_cluster}.
 type SkeCluster interface {
 	cdktf.TerraformResource
 	AllowPrivilegedContainers() interface{}
@@ -48,6 +48,9 @@ type SkeCluster interface {
 	KubernetesVersion() *string
 	SetKubernetesVersion(val *string)
 	KubernetesVersionInput() *string
+	KubernetesVersionMin() *string
+	SetKubernetesVersionMin(val *string)
+	KubernetesVersionMinInput() *string
 	KubernetesVersionUsed() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -58,6 +61,8 @@ type SkeCluster interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Network() SkeClusterNetworkOutputReference
+	NetworkInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	NodePools() SkeClusterNodePoolsList
@@ -127,11 +132,15 @@ type SkeCluster interface {
 	PutExtensions(value *SkeClusterExtensions)
 	PutHibernations(value interface{})
 	PutMaintenance(value *SkeClusterMaintenance)
+	PutNetwork(value *SkeClusterNetwork)
 	PutNodePools(value interface{})
 	ResetAllowPrivilegedContainers()
 	ResetExtensions()
 	ResetHibernations()
+	ResetKubernetesVersion()
+	ResetKubernetesVersionMin()
 	ResetMaintenance()
+	ResetNetwork()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -333,6 +342,26 @@ func (j *jsiiProxy_SkeCluster) KubernetesVersionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SkeCluster) KubernetesVersionMin() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kubernetesVersionMin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SkeCluster) KubernetesVersionMinInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kubernetesVersionMinInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SkeCluster) KubernetesVersionUsed() *string {
 	var returns *string
 	_jsii_.Get(
@@ -388,6 +417,26 @@ func (j *jsiiProxy_SkeCluster) NameInput() *string {
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SkeCluster) Network() SkeClusterNetworkOutputReference {
+	var returns SkeClusterNetworkOutputReference
+	_jsii_.Get(
+		j,
+		"network",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SkeCluster) NetworkInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"networkInput",
 		&returns,
 	)
 	return returns
@@ -504,7 +553,7 @@ func (j *jsiiProxy_SkeCluster) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.17.0/docs/resources/ske_cluster stackit_ske_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.18.0/docs/resources/ske_cluster stackit_ske_cluster} Resource.
 func NewSkeCluster(scope constructs.Construct, id *string, config *SkeClusterConfig) SkeCluster {
 	_init_.Initialize()
 
@@ -522,7 +571,7 @@ func NewSkeCluster(scope constructs.Construct, id *string, config *SkeClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.17.0/docs/resources/ske_cluster stackit_ske_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.18.0/docs/resources/ske_cluster stackit_ske_cluster} Resource.
 func NewSkeCluster_Override(s SkeCluster, scope constructs.Construct, id *string, config *SkeClusterConfig) {
 	_init_.Initialize()
 
@@ -589,6 +638,17 @@ func (j *jsiiProxy_SkeCluster)SetKubernetesVersion(val *string) {
 	_jsii_.Set(
 		j,
 		"kubernetesVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SkeCluster)SetKubernetesVersionMin(val *string) {
+	if err := j.validateSetKubernetesVersionMinParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kubernetesVersionMin",
 		val,
 	)
 }
@@ -1031,6 +1091,17 @@ func (s *jsiiProxy_SkeCluster) PutMaintenance(value *SkeClusterMaintenance) {
 	)
 }
 
+func (s *jsiiProxy_SkeCluster) PutNetwork(value *SkeClusterNetwork) {
+	if err := s.validatePutNetworkParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putNetwork",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SkeCluster) PutNodePools(value interface{}) {
 	if err := s.validatePutNodePoolsParameters(value); err != nil {
 		panic(err)
@@ -1066,10 +1137,34 @@ func (s *jsiiProxy_SkeCluster) ResetHibernations() {
 	)
 }
 
+func (s *jsiiProxy_SkeCluster) ResetKubernetesVersion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetKubernetesVersion",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SkeCluster) ResetKubernetesVersionMin() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetKubernetesVersionMin",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SkeCluster) ResetMaintenance() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetMaintenance",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SkeCluster) ResetNetwork() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNetwork",
 		nil, // no parameters
 	)
 }

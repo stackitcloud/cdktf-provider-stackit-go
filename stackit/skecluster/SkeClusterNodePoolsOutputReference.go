@@ -62,6 +62,10 @@ type SkeClusterNodePoolsOutputReference interface {
 	OsVersion() *string
 	SetOsVersion(val *string)
 	OsVersionInput() *string
+	OsVersionMin() *string
+	SetOsVersionMin(val *string)
+	OsVersionMinInput() *string
+	OsVersionUsed() *string
 	Taints() SkeClusterNodePoolsTaintsList
 	TaintsInput() interface{}
 	// Experimental.
@@ -108,6 +112,8 @@ type SkeClusterNodePoolsOutputReference interface {
 	ResetMaxSurge()
 	ResetMaxUnavailable()
 	ResetOsName()
+	ResetOsVersion()
+	ResetOsVersionMin()
 	ResetTaints()
 	ResetVolumeSize()
 	ResetVolumeType()
@@ -396,6 +402,36 @@ func (j *jsiiProxy_SkeClusterNodePoolsOutputReference) OsVersionInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_SkeClusterNodePoolsOutputReference) OsVersionMin() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osVersionMin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SkeClusterNodePoolsOutputReference) OsVersionMinInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osVersionMinInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SkeClusterNodePoolsOutputReference) OsVersionUsed() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osVersionUsed",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SkeClusterNodePoolsOutputReference) Taints() SkeClusterNodePoolsTaintsList {
 	var returns SkeClusterNodePoolsTaintsList
 	_jsii_.Get(
@@ -654,6 +690,17 @@ func (j *jsiiProxy_SkeClusterNodePoolsOutputReference)SetOsVersion(val *string) 
 	_jsii_.Set(
 		j,
 		"osVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SkeClusterNodePoolsOutputReference)SetOsVersionMin(val *string) {
+	if err := j.validateSetOsVersionMinParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"osVersionMin",
 		val,
 	)
 }
@@ -935,6 +982,22 @@ func (s *jsiiProxy_SkeClusterNodePoolsOutputReference) ResetOsName() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOsName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SkeClusterNodePoolsOutputReference) ResetOsVersion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOsVersion",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SkeClusterNodePoolsOutputReference) ResetOsVersionMin() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOsVersionMin",
 		nil, // no parameters
 	)
 }

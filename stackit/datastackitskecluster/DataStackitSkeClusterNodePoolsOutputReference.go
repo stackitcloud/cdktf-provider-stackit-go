@@ -40,6 +40,8 @@ type DataStackitSkeClusterNodePoolsOutputReference interface {
 	Name() *string
 	OsName() *string
 	OsVersion() *string
+	OsVersionMin() *string
+	OsVersionUsed() *string
 	Taints() DataStackitSkeClusterNodePoolsTaintsList
 	// Experimental.
 	TerraformAttribute() *string
@@ -245,6 +247,26 @@ func (j *jsiiProxy_DataStackitSkeClusterNodePoolsOutputReference) OsVersion() *s
 	_jsii_.Get(
 		j,
 		"osVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitSkeClusterNodePoolsOutputReference) OsVersionMin() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osVersionMin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitSkeClusterNodePoolsOutputReference) OsVersionUsed() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osVersionUsed",
 		&returns,
 	)
 	return returns
