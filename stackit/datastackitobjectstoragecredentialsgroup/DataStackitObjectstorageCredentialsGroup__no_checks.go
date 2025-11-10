@@ -80,10 +80,6 @@ func (j *jsiiProxy_DataStackitObjectstorageCredentialsGroup) validateSetLifecycl
 	return nil
 }
 
-func (j *jsiiProxy_DataStackitObjectstorageCredentialsGroup) validateSetNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataStackitObjectstorageCredentialsGroup) validateSetProjectIdParameters(val *string) error {
 	return nil
 }

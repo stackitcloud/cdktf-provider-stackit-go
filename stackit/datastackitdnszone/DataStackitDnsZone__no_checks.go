@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataStackitDnsZone) validateSetCountParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitDnsZone) validateSetDnsNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataStackitDnsZone) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

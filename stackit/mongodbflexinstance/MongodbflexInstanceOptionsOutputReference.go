@@ -81,7 +81,6 @@ type MongodbflexInstanceOptionsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDailySnapshotRetentionDays()
 	ResetMonthlySnapshotRetentionMonths()
-	ResetPointInTimeWindowHours()
 	ResetSnapshotRetentionDays()
 	ResetWeeklySnapshotRetentionWeeks()
 	// Produce the Token's value at resolution time.
@@ -636,14 +635,6 @@ func (m *jsiiProxy_MongodbflexInstanceOptionsOutputReference) ResetMonthlySnapsh
 	_jsii_.InvokeVoid(
 		m,
 		"resetMonthlySnapshotRetentionMonths",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MongodbflexInstanceOptionsOutputReference) ResetPointInTimeWindowHours() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetPointInTimeWindowHours",
 		nil, // no parameters
 	)
 }

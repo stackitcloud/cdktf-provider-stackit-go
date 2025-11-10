@@ -44,6 +44,10 @@ func (l *jsiiProxy_LoadbalancerOptionsOutputReference) validateInterpolationForA
 	return nil
 }
 
+func (l *jsiiProxy_LoadbalancerOptionsOutputReference) validatePutObservabilityParameters(value *LoadbalancerOptionsObservability) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoadbalancerOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

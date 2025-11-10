@@ -161,7 +161,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "pointInTimeWindowHoursInput", GoGetter: "PointInTimeWindowHoursInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDailySnapshotRetentionDays", GoMethod: "ResetDailySnapshotRetentionDays"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMonthlySnapshotRetentionMonths", GoMethod: "ResetMonthlySnapshotRetentionMonths"},
-			_jsii_.MemberMethod{JsiiMethod: "resetPointInTimeWindowHours", GoMethod: "ResetPointInTimeWindowHours"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSnapshotRetentionDays", GoMethod: "ResetSnapshotRetentionDays"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWeeklySnapshotRetentionWeeks", GoMethod: "ResetWeeklySnapshotRetentionWeeks"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

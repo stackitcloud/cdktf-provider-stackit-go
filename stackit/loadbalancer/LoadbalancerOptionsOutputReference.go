@@ -32,6 +32,8 @@ type LoadbalancerOptionsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Observability() LoadbalancerOptionsObservabilityOutputReference
+	ObservabilityInput() interface{}
 	PrivateNetworkOnly() interface{}
 	SetPrivateNetworkOnly(val interface{})
 	PrivateNetworkOnlyInput() interface{}
@@ -67,7 +69,9 @@ type LoadbalancerOptionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutObservability(value *LoadbalancerOptionsObservability)
 	ResetAcl()
+	ResetObservability()
 	ResetPrivateNetworkOnly()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -149,6 +153,26 @@ func (j *jsiiProxy_LoadbalancerOptionsOutputReference) InternalValue() interface
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadbalancerOptionsOutputReference) Observability() LoadbalancerOptionsObservabilityOutputReference {
+	var returns LoadbalancerOptionsObservabilityOutputReference
+	_jsii_.Get(
+		j,
+		"observability",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadbalancerOptionsOutputReference) ObservabilityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"observabilityInput",
 		&returns,
 	)
 	return returns
@@ -485,10 +509,29 @@ func (l *jsiiProxy_LoadbalancerOptionsOutputReference) InterpolationForAttribute
 	return returns
 }
 
+func (l *jsiiProxy_LoadbalancerOptionsOutputReference) PutObservability(value *LoadbalancerOptionsObservability) {
+	if err := l.validatePutObservabilityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putObservability",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LoadbalancerOptionsOutputReference) ResetAcl() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetAcl",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadbalancerOptionsOutputReference) ResetObservability() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetObservability",
 		nil, // no parameters
 	)
 }

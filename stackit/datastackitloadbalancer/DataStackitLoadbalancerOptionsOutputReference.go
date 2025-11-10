@@ -30,6 +30,7 @@ type DataStackitLoadbalancerOptionsOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataStackitLoadbalancerOptions
 	SetInternalValue(val *DataStackitLoadbalancerOptions)
+	Observability() DataStackitLoadbalancerOptionsObservabilityOutputReference
 	PrivateNetworkOnly() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
@@ -133,6 +134,16 @@ func (j *jsiiProxy_DataStackitLoadbalancerOptionsOutputReference) InternalValue(
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLoadbalancerOptionsOutputReference) Observability() DataStackitLoadbalancerOptionsObservabilityOutputReference {
+	var returns DataStackitLoadbalancerOptionsObservabilityOutputReference
+	_jsii_.Get(
+		j,
+		"observability",
 		&returns,
 	)
 	return returns

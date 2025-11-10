@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.53.0/docs/data-sources/objectstorage_credentials_group stackit_objectstorage_credentials_group}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.54.0/docs/data-sources/objectstorage_credentials_group stackit_objectstorage_credentials_group}.
 type DataStackitObjectstorageCredentialsGroup interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -41,8 +41,6 @@ type DataStackitObjectstorageCredentialsGroup interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	ProjectId() *string
@@ -89,8 +87,6 @@ type DataStackitObjectstorageCredentialsGroup interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetCredentialsGroupId()
-	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -234,16 +230,6 @@ func (j *jsiiProxy_DataStackitObjectstorageCredentialsGroup) Name() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataStackitObjectstorageCredentialsGroup) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataStackitObjectstorageCredentialsGroup) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -355,7 +341,7 @@ func (j *jsiiProxy_DataStackitObjectstorageCredentialsGroup) Urn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.53.0/docs/data-sources/objectstorage_credentials_group stackit_objectstorage_credentials_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.54.0/docs/data-sources/objectstorage_credentials_group stackit_objectstorage_credentials_group} Data Source.
 func NewDataStackitObjectstorageCredentialsGroup(scope constructs.Construct, id *string, config *DataStackitObjectstorageCredentialsGroupConfig) DataStackitObjectstorageCredentialsGroup {
 	_init_.Initialize()
 
@@ -373,7 +359,7 @@ func NewDataStackitObjectstorageCredentialsGroup(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.53.0/docs/data-sources/objectstorage_credentials_group stackit_objectstorage_credentials_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.54.0/docs/data-sources/objectstorage_credentials_group stackit_objectstorage_credentials_group} Data Source.
 func NewDataStackitObjectstorageCredentialsGroup_Override(d DataStackitObjectstorageCredentialsGroup, scope constructs.Construct, id *string, config *DataStackitObjectstorageCredentialsGroupConfig) {
 	_init_.Initialize()
 
@@ -429,17 +415,6 @@ func (j *jsiiProxy_DataStackitObjectstorageCredentialsGroup)SetLifecycle(val *cd
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataStackitObjectstorageCredentialsGroup)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
 		val,
 	)
 }
@@ -756,22 +731,6 @@ func (d *jsiiProxy_DataStackitObjectstorageCredentialsGroup) OverrideLogicalId(n
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataStackitObjectstorageCredentialsGroup) ResetCredentialsGroupId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCredentialsGroupId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataStackitObjectstorageCredentialsGroup) ResetName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetName",
-		nil, // no parameters
 	)
 }
 

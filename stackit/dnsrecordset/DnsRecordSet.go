@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.53.0/docs/resources/dns_record_set stackit_dns_record_set}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.54.0/docs/resources/dns_record_set stackit_dns_record_set}.
 type DnsRecordSet interface {
 	cdktf.TerraformResource
 	Active() interface{}
@@ -136,7 +136,6 @@ type DnsRecordSet interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTtl()
-	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -526,7 +525,7 @@ func (j *jsiiProxy_DnsRecordSet) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.53.0/docs/resources/dns_record_set stackit_dns_record_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.54.0/docs/resources/dns_record_set stackit_dns_record_set} Resource.
 func NewDnsRecordSet(scope constructs.Construct, id *string, config *DnsRecordSetConfig) DnsRecordSet {
 	_init_.Initialize()
 
@@ -544,7 +543,7 @@ func NewDnsRecordSet(scope constructs.Construct, id *string, config *DnsRecordSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.53.0/docs/resources/dns_record_set stackit_dns_record_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.54.0/docs/resources/dns_record_set stackit_dns_record_set} Resource.
 func NewDnsRecordSet_Override(d DnsRecordSet, scope constructs.Construct, id *string, config *DnsRecordSetConfig) {
 	_init_.Initialize()
 
@@ -1092,14 +1091,6 @@ func (d *jsiiProxy_DnsRecordSet) ResetTtl() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetTtl",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DnsRecordSet) ResetType() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetType",
 		nil, // no parameters
 	)
 }

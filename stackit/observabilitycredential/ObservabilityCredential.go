@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.53.0/docs/resources/observability_credential stackit_observability_credential}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.54.0/docs/resources/observability_credential stackit_observability_credential}.
 type ObservabilityCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -362,7 +362,7 @@ func (j *jsiiProxy_ObservabilityCredential) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.53.0/docs/resources/observability_credential stackit_observability_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.54.0/docs/resources/observability_credential stackit_observability_credential} Resource.
 func NewObservabilityCredential(scope constructs.Construct, id *string, config *ObservabilityCredentialConfig) ObservabilityCredential {
 	_init_.Initialize()
 
@@ -380,7 +380,7 @@ func NewObservabilityCredential(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.53.0/docs/resources/observability_credential stackit_observability_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.54.0/docs/resources/observability_credential stackit_observability_credential} Resource.
 func NewObservabilityCredential_Override(o ObservabilityCredential, scope constructs.Construct, id *string, config *ObservabilityCredentialConfig) {
 	_init_.Initialize()
 
