@@ -6,7 +6,7 @@ type DataStackitLoadbalancerTargetPoolsSessionPersistence struct {
 	//
 	// This setting changes the load balancing algorithm to Maglev.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.2/docs/data-sources/loadbalancer#use_source_ip_address DataStackitLoadbalancer#use_source_ip_address}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.3/docs/data-sources/loadbalancer#use_source_ip_address DataStackitLoadbalancer#use_source_ip_address}
 	UseSourceIpAddress interface{} `field:"optional" json:"useSourceIpAddress" yaml:"useSourceIpAddress"`
 }
 
