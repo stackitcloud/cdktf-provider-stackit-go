@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.49.0/docs/resources/public_ip_associate stackit_public_ip_associate}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.49.1/docs/resources/public_ip_associate stackit_public_ip_associate}.
 type PublicIpAssociate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -374,7 +374,7 @@ func (j *jsiiProxy_PublicIpAssociate) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.49.0/docs/resources/public_ip_associate stackit_public_ip_associate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.49.1/docs/resources/public_ip_associate stackit_public_ip_associate} Resource.
 func NewPublicIpAssociate(scope constructs.Construct, id *string, config *PublicIpAssociateConfig) PublicIpAssociate {
 	_init_.Initialize()
 
@@ -392,7 +392,7 @@ func NewPublicIpAssociate(scope constructs.Construct, id *string, config *Public
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.49.0/docs/resources/public_ip_associate stackit_public_ip_associate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.49.1/docs/resources/public_ip_associate stackit_public_ip_associate} Resource.
 func NewPublicIpAssociate_Override(p PublicIpAssociate, scope constructs.Construct, id *string, config *PublicIpAssociateConfig) {
 	_init_.Initialize()
 
