@@ -56,7 +56,23 @@ func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) validateSetComplex
 	return nil
 }
 
+func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) validateSetDailySnapshotRetentionDaysParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) validateSetMonthlySnapshotRetentionMonthsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) validateSetPointInTimeWindowHoursParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) validateSetSnapshotRetentionDaysParameters(val *float64) error {
 	return nil
 }
 
@@ -69,6 +85,10 @@ func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) validateSetTerrafo
 }
 
 func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) validateSetWeeklySnapshotRetentionWeeksParameters(val *float64) error {
 	return nil
 }
 

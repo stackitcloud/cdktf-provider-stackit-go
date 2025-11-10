@@ -25,10 +25,22 @@ type MongodbflexInstanceOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DailySnapshotRetentionDays() *float64
+	SetDailySnapshotRetentionDays(val *float64)
+	DailySnapshotRetentionDaysInput() *float64
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	MonthlySnapshotRetentionMonths() *float64
+	SetMonthlySnapshotRetentionMonths(val *float64)
+	MonthlySnapshotRetentionMonthsInput() *float64
+	PointInTimeWindowHours() *float64
+	SetPointInTimeWindowHours(val *float64)
+	PointInTimeWindowHoursInput() *float64
+	SnapshotRetentionDays() *float64
+	SetSnapshotRetentionDays(val *float64)
+	SnapshotRetentionDaysInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -40,6 +52,9 @@ type MongodbflexInstanceOptionsOutputReference interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	WeeklySnapshotRetentionWeeks() *float64
+	SetWeeklySnapshotRetentionWeeks(val *float64)
+	WeeklySnapshotRetentionWeeksInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -64,6 +79,11 @@ type MongodbflexInstanceOptionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDailySnapshotRetentionDays()
+	ResetMonthlySnapshotRetentionMonths()
+	ResetPointInTimeWindowHours()
+	ResetSnapshotRetentionDays()
+	ResetWeeklySnapshotRetentionWeeks()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -109,6 +129,26 @@ func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) CreationStack() *[
 	return returns
 }
 
+func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) DailySnapshotRetentionDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dailySnapshotRetentionDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) DailySnapshotRetentionDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dailySnapshotRetentionDaysInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -124,6 +164,66 @@ func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) InternalValue() in
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) MonthlySnapshotRetentionMonths() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"monthlySnapshotRetentionMonths",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) MonthlySnapshotRetentionMonthsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"monthlySnapshotRetentionMonthsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) PointInTimeWindowHours() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"pointInTimeWindowHours",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) PointInTimeWindowHoursInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"pointInTimeWindowHoursInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) SnapshotRetentionDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"snapshotRetentionDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) SnapshotRetentionDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"snapshotRetentionDaysInput",
 		&returns,
 	)
 	return returns
@@ -164,6 +264,26 @@ func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) TypeInput() *strin
 	_jsii_.Get(
 		j,
 		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) WeeklySnapshotRetentionWeeks() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"weeklySnapshotRetentionWeeks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) WeeklySnapshotRetentionWeeksInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"weeklySnapshotRetentionWeeksInput",
 		&returns,
 	)
 	return returns
@@ -219,6 +339,17 @@ func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference)SetComplexObjectIsF
 	)
 }
 
+func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference)SetDailySnapshotRetentionDays(val *float64) {
+	if err := j.validateSetDailySnapshotRetentionDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dailySnapshotRetentionDays",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -226,6 +357,39 @@ func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference)SetInternalValue(va
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference)SetMonthlySnapshotRetentionMonths(val *float64) {
+	if err := j.validateSetMonthlySnapshotRetentionMonthsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"monthlySnapshotRetentionMonths",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference)SetPointInTimeWindowHours(val *float64) {
+	if err := j.validateSetPointInTimeWindowHoursParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pointInTimeWindowHours",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference)SetSnapshotRetentionDays(val *float64) {
+	if err := j.validateSetSnapshotRetentionDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"snapshotRetentionDays",
 		val,
 	)
 }
@@ -259,6 +423,17 @@ func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference)SetType(val *string
 	_jsii_.Set(
 		j,
 		"type",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference)SetWeeklySnapshotRetentionWeeks(val *float64) {
+	if err := j.validateSetWeeklySnapshotRetentionWeeksParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"weeklySnapshotRetentionWeeks",
 		val,
 	)
 }
@@ -447,6 +622,46 @@ func (m *jsiiProxy_MongodbflexInstanceOptionsOutputReference) InterpolationForAt
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MongodbflexInstanceOptionsOutputReference) ResetDailySnapshotRetentionDays() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDailySnapshotRetentionDays",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MongodbflexInstanceOptionsOutputReference) ResetMonthlySnapshotRetentionMonths() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMonthlySnapshotRetentionMonths",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MongodbflexInstanceOptionsOutputReference) ResetPointInTimeWindowHours() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPointInTimeWindowHours",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MongodbflexInstanceOptionsOutputReference) ResetSnapshotRetentionDays() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSnapshotRetentionDays",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MongodbflexInstanceOptionsOutputReference) ResetWeeklySnapshotRetentionWeeks() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetWeeklySnapshotRetentionWeeks",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MongodbflexInstanceOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

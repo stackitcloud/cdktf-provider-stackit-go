@@ -21,15 +21,15 @@ type DataStackitRabbitmqCredentialConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The credential's ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.26.1/docs/data-sources/rabbitmq_credential#credential_id DataStackitRabbitmqCredential#credential_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.26.2/docs/data-sources/rabbitmq_credential#credential_id DataStackitRabbitmqCredential#credential_id}
 	CredentialId *string `field:"required" json:"credentialId" yaml:"credentialId"`
 	// ID of the RabbitMQ instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.26.1/docs/data-sources/rabbitmq_credential#instance_id DataStackitRabbitmqCredential#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.26.2/docs/data-sources/rabbitmq_credential#instance_id DataStackitRabbitmqCredential#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// STACKIT project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.26.1/docs/data-sources/rabbitmq_credential#project_id DataStackitRabbitmqCredential#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.26.2/docs/data-sources/rabbitmq_credential#project_id DataStackitRabbitmqCredential#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

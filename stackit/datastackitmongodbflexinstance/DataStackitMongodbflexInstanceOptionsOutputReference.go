@@ -25,10 +25,14 @@ type DataStackitMongodbflexInstanceOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DailySnapshotRetentionDays() *float64
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataStackitMongodbflexInstanceOptions
 	SetInternalValue(val *DataStackitMongodbflexInstanceOptions)
+	MonthlySnapshotRetentionMonths() *float64
+	PointInTimeWindowHours() *float64
+	SnapshotRetentionDays() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -38,6 +42,7 @@ type DataStackitMongodbflexInstanceOptionsOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Type() *string
+	WeeklySnapshotRetentionWeeks() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -107,6 +112,16 @@ func (j *jsiiProxy_DataStackitMongodbflexInstanceOptionsOutputReference) Creatio
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitMongodbflexInstanceOptionsOutputReference) DailySnapshotRetentionDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dailySnapshotRetentionDays",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitMongodbflexInstanceOptionsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -122,6 +137,36 @@ func (j *jsiiProxy_DataStackitMongodbflexInstanceOptionsOutputReference) Interna
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitMongodbflexInstanceOptionsOutputReference) MonthlySnapshotRetentionMonths() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"monthlySnapshotRetentionMonths",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitMongodbflexInstanceOptionsOutputReference) PointInTimeWindowHours() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"pointInTimeWindowHours",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitMongodbflexInstanceOptionsOutputReference) SnapshotRetentionDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"snapshotRetentionDays",
 		&returns,
 	)
 	return returns
@@ -152,6 +197,16 @@ func (j *jsiiProxy_DataStackitMongodbflexInstanceOptionsOutputReference) Type() 
 	_jsii_.Get(
 		j,
 		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitMongodbflexInstanceOptionsOutputReference) WeeklySnapshotRetentionWeeks() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"weeklySnapshotRetentionWeeks",
 		&returns,
 	)
 	return returns

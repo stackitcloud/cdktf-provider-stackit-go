@@ -163,6 +163,14 @@ func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) validateSetComplex
 	return nil
 }
 
+func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) validateSetDailySnapshotRetentionDaysParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
@@ -187,6 +195,30 @@ func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) validateSetInterna
 	return nil
 }
 
+func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) validateSetMonthlySnapshotRetentionMonthsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) validateSetPointInTimeWindowHoursParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) validateSetSnapshotRetentionDaysParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -204,6 +236,14 @@ func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) validateSetTerrafo
 }
 
 func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) validateSetTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MongodbflexInstanceOptionsOutputReference) validateSetWeeklySnapshotRetentionWeeksParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
