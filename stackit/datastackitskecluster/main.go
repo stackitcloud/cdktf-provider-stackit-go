@@ -33,7 +33,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "hibernations", GoGetter: "Hibernations"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "kubeConfig", GoGetter: "KubeConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "kubernetesVersion", GoGetter: "KubernetesVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "kubernetesVersionMin", GoGetter: "KubernetesVersionMin"},
 			_jsii_.MemberProperty{JsiiProperty: "kubernetesVersionUsed", GoGetter: "KubernetesVersionUsed"},

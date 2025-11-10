@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.36.0/docs/resources/argus_credential stackit_argus_credential}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.0/docs/resources/argus_credential stackit_argus_credential}.
 type ArgusCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -362,7 +362,7 @@ func (j *jsiiProxy_ArgusCredential) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.36.0/docs/resources/argus_credential stackit_argus_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.0/docs/resources/argus_credential stackit_argus_credential} Resource.
 func NewArgusCredential(scope constructs.Construct, id *string, config *ArgusCredentialConfig) ArgusCredential {
 	_init_.Initialize()
 
@@ -380,7 +380,7 @@ func NewArgusCredential(scope constructs.Construct, id *string, config *ArgusCre
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.36.0/docs/resources/argus_credential stackit_argus_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.0/docs/resources/argus_credential stackit_argus_credential} Resource.
 func NewArgusCredential_Override(a ArgusCredential, scope constructs.Construct, id *string, config *ArgusCredentialConfig) {
 	_init_.Initialize()
 

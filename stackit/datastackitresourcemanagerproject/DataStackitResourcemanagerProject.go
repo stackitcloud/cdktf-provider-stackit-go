@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.36.0/docs/data-sources/resourcemanager_project stackit_resourcemanager_project}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.0/docs/data-sources/resourcemanager_project stackit_resourcemanager_project}.
 type DataStackitResourcemanagerProject interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -365,7 +365,7 @@ func (j *jsiiProxy_DataStackitResourcemanagerProject) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.36.0/docs/data-sources/resourcemanager_project stackit_resourcemanager_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.0/docs/data-sources/resourcemanager_project stackit_resourcemanager_project} Data Source.
 func NewDataStackitResourcemanagerProject(scope constructs.Construct, id *string, config *DataStackitResourcemanagerProjectConfig) DataStackitResourcemanagerProject {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewDataStackitResourcemanagerProject(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.36.0/docs/data-sources/resourcemanager_project stackit_resourcemanager_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.0/docs/data-sources/resourcemanager_project stackit_resourcemanager_project} Data Source.
 func NewDataStackitResourcemanagerProject_Override(d DataStackitResourcemanagerProject, scope constructs.Construct, id *string, config *DataStackitResourcemanagerProjectConfig) {
 	_init_.Initialize()
 

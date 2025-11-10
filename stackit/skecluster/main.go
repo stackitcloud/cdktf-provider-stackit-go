@@ -40,7 +40,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "kubeConfig", GoGetter: "KubeConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "kubernetesVersion", GoGetter: "KubernetesVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "kubernetesVersionInput", GoGetter: "KubernetesVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "kubernetesVersionMin", GoGetter: "KubernetesVersionMin"},
