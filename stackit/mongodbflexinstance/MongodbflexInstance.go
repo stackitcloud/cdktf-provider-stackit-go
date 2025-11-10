@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.12.0/docs/resources/mongodbflex_instance stackit_mongodbflex_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.13.0/docs/resources/mongodbflex_instance stackit_mongodbflex_instance}.
 type MongodbflexInstance interface {
 	cdktf.TerraformResource
 	Acl() *[]*string
@@ -512,7 +512,7 @@ func (j *jsiiProxy_MongodbflexInstance) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.12.0/docs/resources/mongodbflex_instance stackit_mongodbflex_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.13.0/docs/resources/mongodbflex_instance stackit_mongodbflex_instance} Resource.
 func NewMongodbflexInstance(scope constructs.Construct, id *string, config *MongodbflexInstanceConfig) MongodbflexInstance {
 	_init_.Initialize()
 
@@ -530,7 +530,7 @@ func NewMongodbflexInstance(scope constructs.Construct, id *string, config *Mong
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.12.0/docs/resources/mongodbflex_instance stackit_mongodbflex_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.13.0/docs/resources/mongodbflex_instance stackit_mongodbflex_instance} Resource.
 func NewMongodbflexInstance_Override(m MongodbflexInstance, scope constructs.Construct, id *string, config *MongodbflexInstanceConfig) {
 	_init_.Initialize()
 
