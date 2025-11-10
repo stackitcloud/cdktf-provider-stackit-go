@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.31.1/docs/resources/postgresflex_database stackit_postgresflex_database}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/resources/postgresflex_database stackit_postgresflex_database}.
 type PostgresflexDatabase interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -397,7 +397,7 @@ func (j *jsiiProxy_PostgresflexDatabase) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.31.1/docs/resources/postgresflex_database stackit_postgresflex_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/resources/postgresflex_database stackit_postgresflex_database} Resource.
 func NewPostgresflexDatabase(scope constructs.Construct, id *string, config *PostgresflexDatabaseConfig) PostgresflexDatabase {
 	_init_.Initialize()
 
@@ -415,7 +415,7 @@ func NewPostgresflexDatabase(scope constructs.Construct, id *string, config *Pos
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.31.1/docs/resources/postgresflex_database stackit_postgresflex_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/resources/postgresflex_database stackit_postgresflex_database} Resource.
 func NewPostgresflexDatabase_Override(p PostgresflexDatabase, scope constructs.Construct, id *string, config *PostgresflexDatabaseConfig) {
 	_init_.Initialize()
 

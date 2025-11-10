@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.31.1/docs/data-sources/opensearch_instance stackit_opensearch_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/data-sources/opensearch_instance stackit_opensearch_instance}.
 type DataStackitOpensearchInstance interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -405,7 +405,7 @@ func (j *jsiiProxy_DataStackitOpensearchInstance) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.31.1/docs/data-sources/opensearch_instance stackit_opensearch_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/data-sources/opensearch_instance stackit_opensearch_instance} Data Source.
 func NewDataStackitOpensearchInstance(scope constructs.Construct, id *string, config *DataStackitOpensearchInstanceConfig) DataStackitOpensearchInstance {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewDataStackitOpensearchInstance(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.31.1/docs/data-sources/opensearch_instance stackit_opensearch_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/data-sources/opensearch_instance stackit_opensearch_instance} Data Source.
 func NewDataStackitOpensearchInstance_Override(d DataStackitOpensearchInstance, scope constructs.Construct, id *string, config *DataStackitOpensearchInstanceConfig) {
 	_init_.Initialize()
 

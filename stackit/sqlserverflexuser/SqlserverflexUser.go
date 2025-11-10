@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.31.1/docs/resources/sqlserverflex_user stackit_sqlserverflex_user}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/resources/sqlserverflex_user stackit_sqlserverflex_user}.
 type SqlserverflexUser interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -431,7 +431,7 @@ func (j *jsiiProxy_SqlserverflexUser) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.31.1/docs/resources/sqlserverflex_user stackit_sqlserverflex_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/resources/sqlserverflex_user stackit_sqlserverflex_user} Resource.
 func NewSqlserverflexUser(scope constructs.Construct, id *string, config *SqlserverflexUserConfig) SqlserverflexUser {
 	_init_.Initialize()
 
@@ -449,7 +449,7 @@ func NewSqlserverflexUser(scope constructs.Construct, id *string, config *Sqlser
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.31.1/docs/resources/sqlserverflex_user stackit_sqlserverflex_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/resources/sqlserverflex_user stackit_sqlserverflex_user} Resource.
 func NewSqlserverflexUser_Override(s SqlserverflexUser, scope constructs.Construct, id *string, config *SqlserverflexUserConfig) {
 	_init_.Initialize()
 

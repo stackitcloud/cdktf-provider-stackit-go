@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.31.1/docs/resources/network stackit_network}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/resources/network stackit_network}.
 type Network interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -118,6 +118,7 @@ type Network interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetIpv4PrefixLength()
+	ResetNameservers()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -420,7 +421,7 @@ func (j *jsiiProxy_Network) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.31.1/docs/resources/network stackit_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/resources/network stackit_network} Resource.
 func NewNetwork(scope constructs.Construct, id *string, config *NetworkConfig) Network {
 	_init_.Initialize()
 
@@ -438,7 +439,7 @@ func NewNetwork(scope constructs.Construct, id *string, config *NetworkConfig) N
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.31.1/docs/resources/network stackit_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/resources/network stackit_network} Resource.
 func NewNetwork_Override(n Network, scope constructs.Construct, id *string, config *NetworkConfig) {
 	_init_.Initialize()
 
@@ -918,6 +919,14 @@ func (n *jsiiProxy_Network) ResetIpv4PrefixLength() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetIpv4PrefixLength",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_Network) ResetNameservers() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetNameservers",
 		nil, // no parameters
 	)
 }

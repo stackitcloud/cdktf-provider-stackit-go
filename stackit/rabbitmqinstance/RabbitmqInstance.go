@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.31.1/docs/resources/rabbitmq_instance stackit_rabbitmq_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/resources/rabbitmq_instance stackit_rabbitmq_instance}.
 type RabbitmqInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -487,7 +487,7 @@ func (j *jsiiProxy_RabbitmqInstance) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.31.1/docs/resources/rabbitmq_instance stackit_rabbitmq_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/resources/rabbitmq_instance stackit_rabbitmq_instance} Resource.
 func NewRabbitmqInstance(scope constructs.Construct, id *string, config *RabbitmqInstanceConfig) RabbitmqInstance {
 	_init_.Initialize()
 
@@ -505,7 +505,7 @@ func NewRabbitmqInstance(scope constructs.Construct, id *string, config *Rabbitm
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.31.1/docs/resources/rabbitmq_instance stackit_rabbitmq_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/resources/rabbitmq_instance stackit_rabbitmq_instance} Resource.
 func NewRabbitmqInstance_Override(r RabbitmqInstance, scope constructs.Construct, id *string, config *RabbitmqInstanceConfig) {
 	_init_.Initialize()
 
