@@ -21,19 +21,19 @@ type SqlserverflexUserConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of the SQLServer Flex instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.2/docs/resources/sqlserverflex_user#instance_id SqlserverflexUser#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.35.0/docs/resources/sqlserverflex_user#instance_id SqlserverflexUser#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// STACKIT project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.2/docs/resources/sqlserverflex_user#project_id SqlserverflexUser#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.35.0/docs/resources/sqlserverflex_user#project_id SqlserverflexUser#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Username of the SQLServer Flex instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.2/docs/resources/sqlserverflex_user#username SqlserverflexUser#username}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.35.0/docs/resources/sqlserverflex_user#username SqlserverflexUser#username}
 	Username *string `field:"required" json:"username" yaml:"username"`
 	// Database access levels for the user. Possible values: [`##STACKIT_LoginManager##`, `##STACKIT_DatabaseManager##`].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.2/docs/resources/sqlserverflex_user#roles SqlserverflexUser#roles}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.35.0/docs/resources/sqlserverflex_user#roles SqlserverflexUser#roles}
 	Roles *[]*string `field:"optional" json:"roles" yaml:"roles"`
 }
 
