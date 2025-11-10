@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/affinity_group stackit_affinity_group}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.0/docs/resources/affinity_group stackit_affinity_group}.
 type AffinityGroup interface {
 	cdktf.TerraformResource
 	AffinityGroupId() *string
@@ -385,7 +385,7 @@ func (j *jsiiProxy_AffinityGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/affinity_group stackit_affinity_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.0/docs/resources/affinity_group stackit_affinity_group} Resource.
 func NewAffinityGroup(scope constructs.Construct, id *string, config *AffinityGroupConfig) AffinityGroup {
 	_init_.Initialize()
 
@@ -403,7 +403,7 @@ func NewAffinityGroup(scope constructs.Construct, id *string, config *AffinityGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/affinity_group stackit_affinity_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.0/docs/resources/affinity_group stackit_affinity_group} Resource.
 func NewAffinityGroup_Override(a AffinityGroup, scope constructs.Construct, id *string, config *AffinityGroupConfig) {
 	_init_.Initialize()
 

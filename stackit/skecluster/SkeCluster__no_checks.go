@@ -108,19 +108,11 @@ func validateSkeCluster_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_SkeCluster) validateSetAllowPrivilegedContainersParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_SkeCluster) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_SkeCluster) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_SkeCluster) validateSetKubernetesVersionParameters(val *string) error {
 	return nil
 }
 

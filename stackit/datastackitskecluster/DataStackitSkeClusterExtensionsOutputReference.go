@@ -32,6 +32,7 @@ type DataStackitSkeClusterExtensionsOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataStackitSkeClusterExtensions
 	SetInternalValue(val *DataStackitSkeClusterExtensions)
+	Observability() DataStackitSkeClusterExtensionsObservabilityOutputReference
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -154,6 +155,16 @@ func (j *jsiiProxy_DataStackitSkeClusterExtensionsOutputReference) InternalValue
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitSkeClusterExtensionsOutputReference) Observability() DataStackitSkeClusterExtensionsObservabilityOutputReference {
+	var returns DataStackitSkeClusterExtensionsObservabilityOutputReference
+	_jsii_.Get(
+		j,
+		"observability",
 		&returns,
 	)
 	return returns

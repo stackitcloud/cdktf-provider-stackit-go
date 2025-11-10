@@ -11,6 +11,9 @@ import (
 type DataStackitCdnDistributionConfigAOutputReference interface {
 	cdktf.ComplexObject
 	Backend() DataStackitCdnDistributionConfigBackendOutputReference
+	BlockedCountries() *[]*string
+	SetBlockedCountries(val *[]*string)
+	BlockedCountriesInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,6 +33,7 @@ type DataStackitCdnDistributionConfigAOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataStackitCdnDistributionConfigA
 	SetInternalValue(val *DataStackitCdnDistributionConfigA)
+	Optimizer() DataStackitCdnDistributionConfigOptimizerOutputReference
 	Regions() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
@@ -63,6 +67,7 @@ type DataStackitCdnDistributionConfigAOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetBlockedCountries()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -83,6 +88,26 @@ func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) Backend() D
 	_jsii_.Get(
 		j,
 		"backend",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) BlockedCountries() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"blockedCountries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) BlockedCountriesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"blockedCountriesInput",
 		&returns,
 	)
 	return returns
@@ -133,6 +158,16 @@ func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) InternalVal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) Optimizer() DataStackitCdnDistributionConfigOptimizerOutputReference {
+	var returns DataStackitCdnDistributionConfigOptimizerOutputReference
+	_jsii_.Get(
+		j,
+		"optimizer",
 		&returns,
 	)
 	return returns
@@ -193,6 +228,17 @@ func NewDataStackitCdnDistributionConfigAOutputReference_Override(d DataStackitC
 		"stackit.dataStackitCdnDistribution.DataStackitCdnDistributionConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference)SetBlockedCountries(val *[]*string) {
+	if err := j.validateSetBlockedCountriesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"blockedCountries",
+		val,
 	)
 }
 
@@ -435,6 +481,14 @@ func (d *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) Interpolati
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) ResetBlockedCountries() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBlockedCountries",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -120,6 +120,10 @@ func (j *jsiiProxy_SkeKubeconfig) validateSetRefreshParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_SkeKubeconfig) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSkeKubeconfigParameters(scope constructs.Construct, id *string, config *SkeKubeconfigConfig) error {
 	return nil
 }

@@ -9,10 +9,9 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/data-sources/ske_cluster stackit_ske_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.0/docs/data-sources/ske_cluster stackit_ske_cluster}.
 type DataStackitSkeCluster interface {
 	cdktf.TerraformDataSource
-	AllowPrivilegedContainers() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -37,7 +36,6 @@ type DataStackitSkeCluster interface {
 	FriendlyUniqueId() *string
 	Hibernations() DataStackitSkeClusterHibernationsList
 	Id() *string
-	KubernetesVersion() *string
 	KubernetesVersionMin() *string
 	KubernetesVersionUsed() *string
 	// Experimental.
@@ -117,16 +115,6 @@ type DataStackitSkeCluster interface {
 // The jsii proxy struct for DataStackitSkeCluster
 type jsiiProxy_DataStackitSkeCluster struct {
 	internal.Type__cdktfTerraformDataSource
-}
-
-func (j *jsiiProxy_DataStackitSkeCluster) AllowPrivilegedContainers() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"allowPrivilegedContainers",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_DataStackitSkeCluster) CdktfStack() cdktf.TerraformStack {
@@ -234,16 +222,6 @@ func (j *jsiiProxy_DataStackitSkeCluster) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataStackitSkeCluster) KubernetesVersion() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"kubernetesVersion",
 		&returns,
 	)
 	return returns
@@ -440,7 +418,7 @@ func (j *jsiiProxy_DataStackitSkeCluster) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/data-sources/ske_cluster stackit_ske_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.0/docs/data-sources/ske_cluster stackit_ske_cluster} Data Source.
 func NewDataStackitSkeCluster(scope constructs.Construct, id *string, config *DataStackitSkeClusterConfig) DataStackitSkeCluster {
 	_init_.Initialize()
 
@@ -458,7 +436,7 @@ func NewDataStackitSkeCluster(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/data-sources/ske_cluster stackit_ske_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.0/docs/data-sources/ske_cluster stackit_ske_cluster} Data Source.
 func NewDataStackitSkeCluster_Override(d DataStackitSkeCluster, scope constructs.Construct, id *string, config *DataStackitSkeClusterConfig) {
 	_init_.Initialize()
 

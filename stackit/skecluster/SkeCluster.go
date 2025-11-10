@@ -9,12 +9,9 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/ske_cluster stackit_ske_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.0/docs/resources/ske_cluster stackit_ske_cluster}.
 type SkeCluster interface {
 	cdktf.TerraformResource
-	AllowPrivilegedContainers() interface{}
-	SetAllowPrivilegedContainers(val interface{})
-	AllowPrivilegedContainersInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -45,9 +42,6 @@ type SkeCluster interface {
 	Hibernations() SkeClusterHibernationsList
 	HibernationsInput() interface{}
 	Id() *string
-	KubernetesVersion() *string
-	SetKubernetesVersion(val *string)
-	KubernetesVersionInput() *string
 	KubernetesVersionMin() *string
 	SetKubernetesVersionMin(val *string)
 	KubernetesVersionMinInput() *string
@@ -138,10 +132,8 @@ type SkeCluster interface {
 	PutMaintenance(value *SkeClusterMaintenance)
 	PutNetwork(value *SkeClusterNetwork)
 	PutNodePools(value interface{})
-	ResetAllowPrivilegedContainers()
 	ResetExtensions()
 	ResetHibernations()
-	ResetKubernetesVersion()
 	ResetKubernetesVersionMin()
 	ResetMaintenance()
 	ResetNetwork()
@@ -165,26 +157,6 @@ type SkeCluster interface {
 // The jsii proxy struct for SkeCluster
 type jsiiProxy_SkeCluster struct {
 	internal.Type__cdktfTerraformResource
-}
-
-func (j *jsiiProxy_SkeCluster) AllowPrivilegedContainers() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"allowPrivilegedContainers",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SkeCluster) AllowPrivilegedContainersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"allowPrivilegedContainersInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_SkeCluster) CdktfStack() cdktf.TerraformStack {
@@ -322,26 +294,6 @@ func (j *jsiiProxy_SkeCluster) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SkeCluster) KubernetesVersion() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"kubernetesVersion",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SkeCluster) KubernetesVersionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"kubernetesVersionInput",
 		&returns,
 	)
 	return returns
@@ -588,7 +540,7 @@ func (j *jsiiProxy_SkeCluster) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/ske_cluster stackit_ske_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.0/docs/resources/ske_cluster stackit_ske_cluster} Resource.
 func NewSkeCluster(scope constructs.Construct, id *string, config *SkeClusterConfig) SkeCluster {
 	_init_.Initialize()
 
@@ -606,7 +558,7 @@ func NewSkeCluster(scope constructs.Construct, id *string, config *SkeClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/ske_cluster stackit_ske_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.0/docs/resources/ske_cluster stackit_ske_cluster} Resource.
 func NewSkeCluster_Override(s SkeCluster, scope constructs.Construct, id *string, config *SkeClusterConfig) {
 	_init_.Initialize()
 
@@ -614,17 +566,6 @@ func NewSkeCluster_Override(s SkeCluster, scope constructs.Construct, id *string
 		"stackit.skeCluster.SkeCluster",
 		[]interface{}{scope, id, config},
 		s,
-	)
-}
-
-func (j *jsiiProxy_SkeCluster)SetAllowPrivilegedContainers(val interface{}) {
-	if err := j.validateSetAllowPrivilegedContainersParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"allowPrivilegedContainers",
-		val,
 	)
 }
 
@@ -662,17 +603,6 @@ func (j *jsiiProxy_SkeCluster)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SkeCluster)SetKubernetesVersion(val *string) {
-	if err := j.validateSetKubernetesVersionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"kubernetesVersion",
 		val,
 	)
 }
@@ -1159,14 +1089,6 @@ func (s *jsiiProxy_SkeCluster) PutNodePools(value interface{}) {
 	)
 }
 
-func (s *jsiiProxy_SkeCluster) ResetAllowPrivilegedContainers() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetAllowPrivilegedContainers",
-		nil, // no parameters
-	)
-}
-
 func (s *jsiiProxy_SkeCluster) ResetExtensions() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1179,14 +1101,6 @@ func (s *jsiiProxy_SkeCluster) ResetHibernations() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetHibernations",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SkeCluster) ResetKubernetesVersion() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetKubernetesVersion",
 		nil, // no parameters
 	)
 }

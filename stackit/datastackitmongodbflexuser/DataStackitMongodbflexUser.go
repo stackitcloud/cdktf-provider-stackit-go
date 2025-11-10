@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/data-sources/mongodbflex_user stackit_mongodbflex_user}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.0/docs/data-sources/mongodbflex_user stackit_mongodbflex_user}.
 type DataStackitMongodbflexUser interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -54,6 +54,9 @@ type DataStackitMongodbflexUser interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Roles() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -93,6 +96,7 @@ type DataStackitMongodbflexUser interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -302,6 +306,26 @@ func (j *jsiiProxy_DataStackitMongodbflexUser) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitMongodbflexUser) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitMongodbflexUser) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitMongodbflexUser) Roles() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -373,7 +397,7 @@ func (j *jsiiProxy_DataStackitMongodbflexUser) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/data-sources/mongodbflex_user stackit_mongodbflex_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.0/docs/data-sources/mongodbflex_user stackit_mongodbflex_user} Data Source.
 func NewDataStackitMongodbflexUser(scope constructs.Construct, id *string, config *DataStackitMongodbflexUserConfig) DataStackitMongodbflexUser {
 	_init_.Initialize()
 
@@ -391,7 +415,7 @@ func NewDataStackitMongodbflexUser(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/data-sources/mongodbflex_user stackit_mongodbflex_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.0/docs/data-sources/mongodbflex_user stackit_mongodbflex_user} Data Source.
 func NewDataStackitMongodbflexUser_Override(d DataStackitMongodbflexUser, scope constructs.Construct, id *string, config *DataStackitMongodbflexUserConfig) {
 	_init_.Initialize()
 
@@ -466,6 +490,17 @@ func (j *jsiiProxy_DataStackitMongodbflexUser)SetProvider(val cdktf.TerraformPro
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataStackitMongodbflexUser)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -770,6 +805,14 @@ func (d *jsiiProxy_DataStackitMongodbflexUser) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataStackitMongodbflexUser) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

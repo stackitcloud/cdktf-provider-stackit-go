@@ -35,6 +35,8 @@ type SkeClusterExtensionsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Observability() SkeClusterExtensionsObservabilityOutputReference
+	ObservabilityInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,9 +72,11 @@ type SkeClusterExtensionsOutputReference interface {
 	PutAcl(value *SkeClusterExtensionsAcl)
 	PutArgus(value *SkeClusterExtensionsArgus)
 	PutDns(value *SkeClusterExtensionsDns)
+	PutObservability(value *SkeClusterExtensionsObservability)
 	ResetAcl()
 	ResetArgus()
 	ResetDns()
+	ResetObservability()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -193,6 +197,26 @@ func (j *jsiiProxy_SkeClusterExtensionsOutputReference) InternalValue() interfac
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SkeClusterExtensionsOutputReference) Observability() SkeClusterExtensionsObservabilityOutputReference {
+	var returns SkeClusterExtensionsObservabilityOutputReference
+	_jsii_.Get(
+		j,
+		"observability",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SkeClusterExtensionsOutputReference) ObservabilityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"observabilityInput",
 		&returns,
 	)
 	return returns
@@ -520,6 +544,17 @@ func (s *jsiiProxy_SkeClusterExtensionsOutputReference) PutDns(value *SkeCluster
 	)
 }
 
+func (s *jsiiProxy_SkeClusterExtensionsOutputReference) PutObservability(value *SkeClusterExtensionsObservability) {
+	if err := s.validatePutObservabilityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putObservability",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SkeClusterExtensionsOutputReference) ResetAcl() {
 	_jsii_.InvokeVoid(
 		s,
@@ -540,6 +575,14 @@ func (s *jsiiProxy_SkeClusterExtensionsOutputReference) ResetDns() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDns",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SkeClusterExtensionsOutputReference) ResetObservability() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetObservability",
 		nil, // no parameters
 	)
 }

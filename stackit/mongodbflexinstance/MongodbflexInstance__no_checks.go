@@ -132,6 +132,10 @@ func (j *jsiiProxy_MongodbflexInstance) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_MongodbflexInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MongodbflexInstance) validateSetReplicasParameters(val *float64) error {
 	return nil
 }

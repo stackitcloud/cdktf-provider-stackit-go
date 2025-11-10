@@ -124,6 +124,10 @@ func (j *jsiiProxy_Loadbalancer) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Loadbalancer) validateSetPlanIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Loadbalancer) validateSetProjectIdParameters(val *string) error {
 	return nil
 }

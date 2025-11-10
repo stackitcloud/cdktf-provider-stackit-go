@@ -48,7 +48,15 @@ func (c *jsiiProxy_CdnDistributionConfigAOutputReference) validatePutBackendPara
 	return nil
 }
 
+func (c *jsiiProxy_CdnDistributionConfigAOutputReference) validatePutOptimizerParameters(value *CdnDistributionConfigOptimizer) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnDistributionConfigAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) validateSetBlockedCountriesParameters(val *[]*string) error {
 	return nil
 }
 

@@ -12,6 +12,9 @@ type CdnDistributionConfigAOutputReference interface {
 	cdktf.ComplexObject
 	Backend() CdnDistributionConfigBackendOutputReference
 	BackendInput() interface{}
+	BlockedCountries() *[]*string
+	SetBlockedCountries(val *[]*string)
+	BlockedCountriesInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -31,6 +34,8 @@ type CdnDistributionConfigAOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Optimizer() CdnDistributionConfigOptimizerOutputReference
+	OptimizerInput() interface{}
 	Regions() *[]*string
 	SetRegions(val *[]*string)
 	RegionsInput() *[]*string
@@ -67,6 +72,9 @@ type CdnDistributionConfigAOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutBackend(value *CdnDistributionConfigBackend)
+	PutOptimizer(value *CdnDistributionConfigOptimizer)
+	ResetBlockedCountries()
+	ResetOptimizer()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -97,6 +105,26 @@ func (j *jsiiProxy_CdnDistributionConfigAOutputReference) BackendInput() interfa
 	_jsii_.Get(
 		j,
 		"backendInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) BlockedCountries() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"blockedCountries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) BlockedCountriesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"blockedCountriesInput",
 		&returns,
 	)
 	return returns
@@ -147,6 +175,26 @@ func (j *jsiiProxy_CdnDistributionConfigAOutputReference) InternalValue() interf
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) Optimizer() CdnDistributionConfigOptimizerOutputReference {
+	var returns CdnDistributionConfigOptimizerOutputReference
+	_jsii_.Get(
+		j,
+		"optimizer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) OptimizerInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"optimizerInput",
 		&returns,
 	)
 	return returns
@@ -217,6 +265,17 @@ func NewCdnDistributionConfigAOutputReference_Override(c CdnDistributionConfigAO
 		"stackit.cdnDistribution.CdnDistributionConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
+	)
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference)SetBlockedCountries(val *[]*string) {
+	if err := j.validateSetBlockedCountriesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"blockedCountries",
+		val,
 	)
 }
 
@@ -480,6 +539,33 @@ func (c *jsiiProxy_CdnDistributionConfigAOutputReference) PutBackend(value *CdnD
 		c,
 		"putBackend",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CdnDistributionConfigAOutputReference) PutOptimizer(value *CdnDistributionConfigOptimizer) {
+	if err := c.validatePutOptimizerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putOptimizer",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CdnDistributionConfigAOutputReference) ResetBlockedCountries() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBlockedCountries",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CdnDistributionConfigAOutputReference) ResetOptimizer() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOptimizer",
+		nil, // no parameters
 	)
 }
 

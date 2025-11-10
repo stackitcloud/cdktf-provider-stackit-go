@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/mongodbflex_instance stackit_mongodbflex_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.0/docs/resources/mongodbflex_instance stackit_mongodbflex_instance}.
 type MongodbflexInstance interface {
 	cdktf.TerraformResource
 	Acl() *[]*string
@@ -70,6 +70,9 @@ type MongodbflexInstance interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Replicas() *float64
 	SetReplicas(val *float64)
 	ReplicasInput() *float64
@@ -133,6 +136,7 @@ type MongodbflexInstance interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -421,6 +425,26 @@ func (j *jsiiProxy_MongodbflexInstance) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MongodbflexInstance) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongodbflexInstance) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MongodbflexInstance) Replicas() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -512,7 +536,7 @@ func (j *jsiiProxy_MongodbflexInstance) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/mongodbflex_instance stackit_mongodbflex_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.0/docs/resources/mongodbflex_instance stackit_mongodbflex_instance} Resource.
 func NewMongodbflexInstance(scope constructs.Construct, id *string, config *MongodbflexInstanceConfig) MongodbflexInstance {
 	_init_.Initialize()
 
@@ -530,7 +554,7 @@ func NewMongodbflexInstance(scope constructs.Construct, id *string, config *Mong
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/mongodbflex_instance stackit_mongodbflex_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.0/docs/resources/mongodbflex_instance stackit_mongodbflex_instance} Resource.
 func NewMongodbflexInstance_Override(m MongodbflexInstance, scope constructs.Construct, id *string, config *MongodbflexInstanceConfig) {
 	_init_.Initialize()
 
@@ -649,6 +673,17 @@ func (j *jsiiProxy_MongodbflexInstance)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MongodbflexInstance)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1065,6 +1100,14 @@ func (m *jsiiProxy_MongodbflexInstance) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MongodbflexInstance) ResetRegion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

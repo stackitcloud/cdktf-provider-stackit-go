@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/mongodbflex_user stackit_mongodbflex_user}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.0/docs/resources/mongodbflex_user stackit_mongodbflex_user}.
 type MongodbflexUser interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -65,6 +65,9 @@ type MongodbflexUser interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Roles() *[]*string
 	SetRoles(val *[]*string)
 	RolesInput() *[]*string
@@ -125,6 +128,7 @@ type MongodbflexUser interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetUsername()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -374,6 +378,26 @@ func (j *jsiiProxy_MongodbflexUser) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MongodbflexUser) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongodbflexUser) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MongodbflexUser) Roles() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -465,7 +489,7 @@ func (j *jsiiProxy_MongodbflexUser) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/mongodbflex_user stackit_mongodbflex_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.0/docs/resources/mongodbflex_user stackit_mongodbflex_user} Resource.
 func NewMongodbflexUser(scope constructs.Construct, id *string, config *MongodbflexUserConfig) MongodbflexUser {
 	_init_.Initialize()
 
@@ -483,7 +507,7 @@ func NewMongodbflexUser(scope constructs.Construct, id *string, config *Mongodbf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/mongodbflex_user stackit_mongodbflex_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.0/docs/resources/mongodbflex_user stackit_mongodbflex_user} Resource.
 func NewMongodbflexUser_Override(m MongodbflexUser, scope constructs.Construct, id *string, config *MongodbflexUserConfig) {
 	_init_.Initialize()
 
@@ -591,6 +615,17 @@ func (j *jsiiProxy_MongodbflexUser)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MongodbflexUser)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -974,6 +1009,14 @@ func (m *jsiiProxy_MongodbflexUser) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MongodbflexUser) ResetRegion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

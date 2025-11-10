@@ -48,6 +48,10 @@ func (d *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) validateRes
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) validateSetBlockedCountriesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

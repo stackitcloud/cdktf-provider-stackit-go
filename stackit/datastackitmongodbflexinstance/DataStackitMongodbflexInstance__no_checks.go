@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataStackitMongodbflexInstance) validateSetProjectIdParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitMongodbflexInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataStackitMongodbflexInstanceParameters(scope constructs.Construct, id *string, config *DataStackitMongodbflexInstanceConfig) error {
 	return nil
 }
