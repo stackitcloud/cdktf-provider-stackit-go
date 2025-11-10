@@ -1,3 +1,3 @@
 # `data_stackit_argus_instance`
 
-Refer to the Terraform Registry for docs: [`data_stackit_argus_instance`](https://registry.terraform.io/providers/stackitcloud/stackit/0.6.0/docs/data-sources/argus_instance).
+Refer to the Terraform Registry for docs: [`data_stackit_argus_instance`](https://registry.terraform.io/providers/stackitcloud/stackit/0.6.1/docs/data-sources/argus_instance).

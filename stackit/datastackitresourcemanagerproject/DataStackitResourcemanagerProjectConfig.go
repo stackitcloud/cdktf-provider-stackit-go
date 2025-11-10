@@ -21,7 +21,7 @@ type DataStackitResourcemanagerProjectConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Project container ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.6.0/docs/data-sources/resourcemanager_project#container_id DataStackitResourcemanagerProject#container_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.6.1/docs/data-sources/resourcemanager_project#container_id DataStackitResourcemanagerProject#container_id}
 	ContainerId *string `field:"required" json:"containerId" yaml:"containerId"`
 }
 
