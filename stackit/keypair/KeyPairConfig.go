@@ -21,15 +21,15 @@ type KeyPairConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the SSH key pair.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.0/docs/resources/key_pair#name KeyPair#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/resources/key_pair#name KeyPair#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// A string representation of the public SSH key. E.g., `ssh-rsa <key_data>` or `ssh-ed25519 <key-data>`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.0/docs/resources/key_pair#public_key KeyPair#public_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/resources/key_pair#public_key KeyPair#public_key}
 	PublicKey *string `field:"required" json:"publicKey" yaml:"publicKey"`
 	// Labels are key-value string pairs which can be attached to a resource container.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.0/docs/resources/key_pair#labels KeyPair#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/resources/key_pair#labels KeyPair#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 }
 
