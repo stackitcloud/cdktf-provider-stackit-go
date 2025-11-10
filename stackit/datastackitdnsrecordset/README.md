@@ -1,3 +1,3 @@
 # `data_stackit_dns_record_set`
 
-Refer to the Terraform Registry for docs: [`data_stackit_dns_record_set`](https://registry.terraform.io/providers/stackitcloud/stackit/0.14.1/docs/data-sources/dns_record_set).
+Refer to the Terraform Registry for docs: [`data_stackit_dns_record_set`](https://registry.terraform.io/providers/stackitcloud/stackit/0.14.2/docs/data-sources/dns_record_set).

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.1/docs/data-sources/mariadb_credential stackit_mariadb_credential}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.2/docs/data-sources/mariadb_credential stackit_mariadb_credential}.
 type DataStackitMariadbCredential interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -406,7 +406,7 @@ func (j *jsiiProxy_DataStackitMariadbCredential) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.1/docs/data-sources/mariadb_credential stackit_mariadb_credential} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.2/docs/data-sources/mariadb_credential stackit_mariadb_credential} Data Source.
 func NewDataStackitMariadbCredential(scope constructs.Construct, id *string, config *DataStackitMariadbCredentialConfig) DataStackitMariadbCredential {
 	_init_.Initialize()
 
@@ -424,7 +424,7 @@ func NewDataStackitMariadbCredential(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.1/docs/data-sources/mariadb_credential stackit_mariadb_credential} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.2/docs/data-sources/mariadb_credential stackit_mariadb_credential} Data Source.
 func NewDataStackitMariadbCredential_Override(d DataStackitMariadbCredential, scope constructs.Construct, id *string, config *DataStackitMariadbCredentialConfig) {
 	_init_.Initialize()
 

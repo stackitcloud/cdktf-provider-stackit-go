@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.1/docs/resources/postgresql_instance stackit_postgresql_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.2/docs/resources/postgresql_instance stackit_postgresql_instance}.
 type PostgresqlInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -487,7 +487,7 @@ func (j *jsiiProxy_PostgresqlInstance) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.1/docs/resources/postgresql_instance stackit_postgresql_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.2/docs/resources/postgresql_instance stackit_postgresql_instance} Resource.
 func NewPostgresqlInstance(scope constructs.Construct, id *string, config *PostgresqlInstanceConfig) PostgresqlInstance {
 	_init_.Initialize()
 
@@ -505,7 +505,7 @@ func NewPostgresqlInstance(scope constructs.Construct, id *string, config *Postg
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.1/docs/resources/postgresql_instance stackit_postgresql_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.2/docs/resources/postgresql_instance stackit_postgresql_instance} Resource.
 func NewPostgresqlInstance_Override(p PostgresqlInstance, scope constructs.Construct, id *string, config *PostgresqlInstanceConfig) {
 	_init_.Initialize()
 

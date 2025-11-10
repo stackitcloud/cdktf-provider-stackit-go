@@ -21,19 +21,19 @@ type ArgusInstanceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the Argus instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.1/docs/resources/argus_instance#name ArgusInstance#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.2/docs/resources/argus_instance#name ArgusInstance#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Specifies the Argus plan. E.g. `Monitoring-Medium-EU01`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.1/docs/resources/argus_instance#plan_name ArgusInstance#plan_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.2/docs/resources/argus_instance#plan_name ArgusInstance#plan_name}
 	PlanName *string `field:"required" json:"planName" yaml:"planName"`
 	// STACKIT project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.1/docs/resources/argus_instance#project_id ArgusInstance#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.2/docs/resources/argus_instance#project_id ArgusInstance#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Additional parameters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.1/docs/resources/argus_instance#parameters ArgusInstance#parameters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.14.2/docs/resources/argus_instance#parameters ArgusInstance#parameters}
 	Parameters *map[string]*string `field:"optional" json:"parameters" yaml:"parameters"`
 }
 
