@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.65.0/docs/data-sources/resourcemanager_project stackit_resourcemanager_project}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.66.0/docs/data-sources/resourcemanager_project stackit_resourcemanager_project}.
 type DataStackitResourcemanagerProject interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -23,6 +23,7 @@ type DataStackitResourcemanagerProject interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreationTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -60,6 +61,7 @@ type DataStackitResourcemanagerProject interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UpdateTime() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -154,6 +156,16 @@ func (j *jsiiProxy_DataStackitResourcemanagerProject) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitResourcemanagerProject) CreationTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creationTime",
 		&returns,
 	)
 	return returns
@@ -329,8 +341,18 @@ func (j *jsiiProxy_DataStackitResourcemanagerProject) TerraformResourceType() *s
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitResourcemanagerProject) UpdateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateTime",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.65.0/docs/data-sources/resourcemanager_project stackit_resourcemanager_project} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.66.0/docs/data-sources/resourcemanager_project stackit_resourcemanager_project} Data Source.
 func NewDataStackitResourcemanagerProject(scope constructs.Construct, id *string, config *DataStackitResourcemanagerProjectConfig) DataStackitResourcemanagerProject {
 	_init_.Initialize()
 
@@ -348,7 +370,7 @@ func NewDataStackitResourcemanagerProject(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.65.0/docs/data-sources/resourcemanager_project stackit_resourcemanager_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.66.0/docs/data-sources/resourcemanager_project stackit_resourcemanager_project} Data Source.
 func NewDataStackitResourcemanagerProject_Override(d DataStackitResourcemanagerProject, scope constructs.Construct, id *string, config *DataStackitResourcemanagerProjectConfig) {
 	_init_.Initialize()
 

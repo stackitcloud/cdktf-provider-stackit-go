@@ -21,15 +21,15 @@ type ServerServiceAccountAttachConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT project ID to which the service account attachment is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.65.0/docs/resources/server_service_account_attach#project_id ServerServiceAccountAttach#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.66.0/docs/resources/server_service_account_attach#project_id ServerServiceAccountAttach#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The server ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.65.0/docs/resources/server_service_account_attach#server_id ServerServiceAccountAttach#server_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.66.0/docs/resources/server_service_account_attach#server_id ServerServiceAccountAttach#server_id}
 	ServerId *string `field:"required" json:"serverId" yaml:"serverId"`
 	// The service account email.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.65.0/docs/resources/server_service_account_attach#service_account_email ServerServiceAccountAttach#service_account_email}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.66.0/docs/resources/server_service_account_attach#service_account_email ServerServiceAccountAttach#service_account_email}
 	ServiceAccountEmail *string `field:"required" json:"serviceAccountEmail" yaml:"serviceAccountEmail"`
 }
 

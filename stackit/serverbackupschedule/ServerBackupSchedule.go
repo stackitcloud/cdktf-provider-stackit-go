@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.65.0/docs/resources/server_backup_schedule stackit_server_backup_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.66.0/docs/resources/server_backup_schedule stackit_server_backup_schedule}.
 type ServerBackupSchedule interface {
 	cdktf.TerraformResource
 	BackupProperties() ServerBackupScheduleBackupPropertiesOutputReference
@@ -467,7 +467,7 @@ func (j *jsiiProxy_ServerBackupSchedule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.65.0/docs/resources/server_backup_schedule stackit_server_backup_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.66.0/docs/resources/server_backup_schedule stackit_server_backup_schedule} Resource.
 func NewServerBackupSchedule(scope constructs.Construct, id *string, config *ServerBackupScheduleConfig) ServerBackupSchedule {
 	_init_.Initialize()
 
@@ -485,7 +485,7 @@ func NewServerBackupSchedule(scope constructs.Construct, id *string, config *Ser
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.65.0/docs/resources/server_backup_schedule stackit_server_backup_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.66.0/docs/resources/server_backup_schedule stackit_server_backup_schedule} Resource.
 func NewServerBackupSchedule_Override(s ServerBackupSchedule, scope constructs.Construct, id *string, config *ServerBackupScheduleConfig) {
 	_init_.Initialize()
 
