@@ -88,11 +88,19 @@ func validateGit_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Git) validateSetAclParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Git) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_Git) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Git) validateSetFlavorParameters(val *string) error {
 	return nil
 }
 

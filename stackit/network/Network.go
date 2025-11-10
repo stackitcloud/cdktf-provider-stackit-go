@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/resources/network stackit_network}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/network stackit_network}.
 type Network interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -100,9 +100,15 @@ type Network interface {
 	PublicIp() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Routed() interface{}
 	SetRouted(val interface{})
 	RoutedInput() interface{}
+	RoutingTableId() *string
+	SetRoutingTableId(val *string)
+	RoutingTableIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -167,7 +173,9 @@ type Network interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRouted()
+	ResetRoutingTableId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -656,6 +664,26 @@ func (j *jsiiProxy_Network) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Network) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Network) Routed() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -671,6 +699,26 @@ func (j *jsiiProxy_Network) RoutedInput() interface{} {
 	_jsii_.Get(
 		j,
 		"routedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) RoutingTableId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingTableId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) RoutingTableIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routingTableIdInput",
 		&returns,
 	)
 	return returns
@@ -707,7 +755,7 @@ func (j *jsiiProxy_Network) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/resources/network stackit_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/network stackit_network} Resource.
 func NewNetwork(scope constructs.Construct, id *string, config *NetworkConfig) Network {
 	_init_.Initialize()
 
@@ -725,7 +773,7 @@ func NewNetwork(scope constructs.Construct, id *string, config *NetworkConfig) N
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/resources/network stackit_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/network stackit_network} Resource.
 func NewNetwork_Override(n Network, scope constructs.Construct, id *string, config *NetworkConfig) {
 	_init_.Initialize()
 
@@ -958,6 +1006,17 @@ func (j *jsiiProxy_Network)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Network)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Network)SetRouted(val interface{}) {
 	if err := j.validateSetRoutedParameters(val); err != nil {
 		panic(err)
@@ -965,6 +1024,17 @@ func (j *jsiiProxy_Network)SetRouted(val interface{}) {
 	_jsii_.Set(
 		j,
 		"routed",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Network)SetRoutingTableId(val *string) {
+	if err := j.validateSetRoutingTableIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routingTableId",
 		val,
 	)
 }
@@ -1426,10 +1496,26 @@ func (n *jsiiProxy_Network) ResetOverrideLogicalId() {
 	)
 }
 
+func (n *jsiiProxy_Network) ResetRegion() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRegion",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_Network) ResetRouted() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetRouted",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_Network) ResetRoutingTableId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRoutingTableId",
 		nil, // no parameters
 	)
 }

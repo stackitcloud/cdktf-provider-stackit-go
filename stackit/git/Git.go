@@ -9,9 +9,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/resources/git stackit_git}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/git stackit_git}.
 type Git interface {
 	cdktf.TerraformResource
+	Acl() *[]*string
+	SetAcl(val *[]*string)
+	AclInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -20,14 +23,20 @@ type Git interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ConsumedDisk() *string
+	ConsumedObjectStorage() *string
 	// Experimental.
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	Created() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Flavor() *string
+	SetFlavor(val *string)
+	FlavorInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -111,6 +120,8 @@ type Git interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAcl()
+	ResetFlavor()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -130,6 +141,26 @@ type Git interface {
 // The jsii proxy struct for Git
 type jsiiProxy_Git struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Git) Acl() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"acl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Git) AclInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"aclInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Git) CdktfStack() cdktf.TerraformStack {
@@ -162,6 +193,26 @@ func (j *jsiiProxy_Git) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Git) ConsumedDisk() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"consumedDisk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Git) ConsumedObjectStorage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"consumedObjectStorage",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Git) Count() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -172,11 +223,41 @@ func (j *jsiiProxy_Git) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Git) Created() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"created",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Git) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Git) Flavor() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"flavor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Git) FlavorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"flavorInput",
 		&returns,
 	)
 	return returns
@@ -373,7 +454,7 @@ func (j *jsiiProxy_Git) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/resources/git stackit_git} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/git stackit_git} Resource.
 func NewGit(scope constructs.Construct, id *string, config *GitConfig) Git {
 	_init_.Initialize()
 
@@ -391,7 +472,7 @@ func NewGit(scope constructs.Construct, id *string, config *GitConfig) Git {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/resources/git stackit_git} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/git stackit_git} Resource.
 func NewGit_Override(g Git, scope constructs.Construct, id *string, config *GitConfig) {
 	_init_.Initialize()
 
@@ -399,6 +480,17 @@ func NewGit_Override(g Git, scope constructs.Construct, id *string, config *GitC
 		"stackit.git.Git",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_Git)SetAcl(val *[]*string) {
+	if err := j.validateSetAclParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"acl",
+		val,
 	)
 }
 
@@ -428,6 +520,17 @@ func (j *jsiiProxy_Git)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Git)SetFlavor(val *string) {
+	if err := j.validateSetFlavorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"flavor",
 		val,
 	)
 }
@@ -842,6 +945,22 @@ func (g *jsiiProxy_Git) OverrideLogicalId(newLogicalId *string) {
 		g,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (g *jsiiProxy_Git) ResetAcl() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAcl",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Git) ResetFlavor() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFlavor",
+		nil, // no parameters
 	)
 }
 

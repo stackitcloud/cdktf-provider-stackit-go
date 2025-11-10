@@ -9,21 +9,26 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/data-sources/git stackit_git}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/data-sources/git stackit_git}.
 type DataStackitGit interface {
 	cdktf.TerraformDataSource
+	Acl() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ConsumedDisk() *string
+	ConsumedObjectStorage() *string
 	// Experimental.
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	Created() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Flavor() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -107,6 +112,16 @@ type jsiiProxy_DataStackitGit struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
+func (j *jsiiProxy_DataStackitGit) Acl() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"acl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitGit) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -127,6 +142,26 @@ func (j *jsiiProxy_DataStackitGit) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitGit) ConsumedDisk() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"consumedDisk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitGit) ConsumedObjectStorage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"consumedObjectStorage",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitGit) Count() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -137,11 +172,31 @@ func (j *jsiiProxy_DataStackitGit) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitGit) Created() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"created",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitGit) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitGit) Flavor() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"flavor",
 		&returns,
 	)
 	return returns
@@ -328,7 +383,7 @@ func (j *jsiiProxy_DataStackitGit) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/data-sources/git stackit_git} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/data-sources/git stackit_git} Data Source.
 func NewDataStackitGit(scope constructs.Construct, id *string, config *DataStackitGitConfig) DataStackitGit {
 	_init_.Initialize()
 
@@ -346,7 +401,7 @@ func NewDataStackitGit(scope constructs.Construct, id *string, config *DataStack
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/data-sources/git stackit_git} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/data-sources/git stackit_git} Data Source.
 func NewDataStackitGit_Override(d DataStackitGit, scope constructs.Construct, id *string, config *DataStackitGitConfig) {
 	_init_.Initialize()
 

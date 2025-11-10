@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataStackitNetwork) validateSetProjectIdParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitNetwork) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataStackitNetworkParameters(scope constructs.Construct, id *string, config *DataStackitNetworkConfig) error {
 	return nil
 }

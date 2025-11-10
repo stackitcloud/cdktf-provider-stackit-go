@@ -21,11 +21,11 @@ type ObservabilityCredentialConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Observability Instance ID the credential belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/resources/observability_credential#instance_id ObservabilityCredential#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/observability_credential#instance_id ObservabilityCredential#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// STACKIT project ID to which the credential is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/resources/observability_credential#project_id ObservabilityCredential#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/observability_credential#project_id ObservabilityCredential#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

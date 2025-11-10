@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/resources/ske_cluster stackit_ske_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/ske_cluster stackit_ske_cluster}.
 type SkeCluster interface {
 	cdktf.TerraformResource
 	AllowPrivilegedContainers() interface{}
@@ -67,6 +67,7 @@ type SkeCluster interface {
 	Node() constructs.Node
 	NodePools() SkeClusterNodePoolsList
 	NodePoolsInput() interface{}
+	PodAddressRanges() *[]*string
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
@@ -476,6 +477,16 @@ func (j *jsiiProxy_SkeCluster) NodePoolsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SkeCluster) PodAddressRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"podAddressRanges",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SkeCluster) ProjectId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -577,7 +588,7 @@ func (j *jsiiProxy_SkeCluster) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/resources/ske_cluster stackit_ske_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/ske_cluster stackit_ske_cluster} Resource.
 func NewSkeCluster(scope constructs.Construct, id *string, config *SkeClusterConfig) SkeCluster {
 	_init_.Initialize()
 
@@ -595,7 +606,7 @@ func NewSkeCluster(scope constructs.Construct, id *string, config *SkeClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/resources/ske_cluster stackit_ske_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/ske_cluster stackit_ske_cluster} Resource.
 func NewSkeCluster_Override(s SkeCluster, scope constructs.Construct, id *string, config *SkeClusterConfig) {
 	_init_.Initialize()
 

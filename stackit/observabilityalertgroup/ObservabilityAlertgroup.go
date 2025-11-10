@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/resources/observability_alertgroup stackit_observability_alertgroup}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/observability_alertgroup stackit_observability_alertgroup}.
 type ObservabilityAlertgroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -410,7 +410,7 @@ func (j *jsiiProxy_ObservabilityAlertgroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/resources/observability_alertgroup stackit_observability_alertgroup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/observability_alertgroup stackit_observability_alertgroup} Resource.
 func NewObservabilityAlertgroup(scope constructs.Construct, id *string, config *ObservabilityAlertgroupConfig) ObservabilityAlertgroup {
 	_init_.Initialize()
 
@@ -428,7 +428,7 @@ func NewObservabilityAlertgroup(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/resources/observability_alertgroup stackit_observability_alertgroup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/resources/observability_alertgroup stackit_observability_alertgroup} Resource.
 func NewObservabilityAlertgroup_Override(o ObservabilityAlertgroup, scope constructs.Construct, id *string, config *ObservabilityAlertgroupConfig) {
 	_init_.Initialize()
 

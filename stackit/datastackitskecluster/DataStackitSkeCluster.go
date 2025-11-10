@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/data-sources/ske_cluster stackit_ske_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/data-sources/ske_cluster stackit_ske_cluster}.
 type DataStackitSkeCluster interface {
 	cdktf.TerraformDataSource
 	AllowPrivilegedContainers() cdktf.IResolvable
@@ -52,6 +52,7 @@ type DataStackitSkeCluster interface {
 	// The tree node.
 	Node() constructs.Node
 	NodePools() DataStackitSkeClusterNodePoolsList
+	PodAddressRanges() *[]*string
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
@@ -338,6 +339,16 @@ func (j *jsiiProxy_DataStackitSkeCluster) NodePools() DataStackitSkeClusterNodeP
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitSkeCluster) PodAddressRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"podAddressRanges",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitSkeCluster) ProjectId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -429,7 +440,7 @@ func (j *jsiiProxy_DataStackitSkeCluster) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/data-sources/ske_cluster stackit_ske_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/data-sources/ske_cluster stackit_ske_cluster} Data Source.
 func NewDataStackitSkeCluster(scope constructs.Construct, id *string, config *DataStackitSkeClusterConfig) DataStackitSkeCluster {
 	_init_.Initialize()
 
@@ -447,7 +458,7 @@ func NewDataStackitSkeCluster(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/data-sources/ske_cluster stackit_ske_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.57.0/docs/data-sources/ske_cluster stackit_ske_cluster} Data Source.
 func NewDataStackitSkeCluster_Override(d DataStackitSkeCluster, scope constructs.Construct, id *string, config *DataStackitSkeClusterConfig) {
 	_init_.Initialize()
 

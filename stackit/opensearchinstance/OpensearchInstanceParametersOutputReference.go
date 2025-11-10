@@ -76,9 +76,9 @@ type OpensearchInstanceParametersOutputReference interface {
 	TlsCiphers() *[]*string
 	SetTlsCiphers(val *[]*string)
 	TlsCiphersInput() *[]*string
-	TlsProtocols() *string
-	SetTlsProtocols(val *string)
-	TlsProtocolsInput() *string
+	TlsProtocols() *[]*string
+	SetTlsProtocols(val *[]*string)
+	TlsProtocolsInput() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -462,8 +462,8 @@ func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) TlsCiphersInput(
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) TlsProtocols() *string {
-	var returns *string
+func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) TlsProtocols() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"tlsProtocols",
@@ -472,8 +472,8 @@ func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) TlsProtocols() *
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) TlsProtocolsInput() *string {
-	var returns *string
+func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) TlsProtocolsInput() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"tlsProtocolsInput",
@@ -708,7 +708,7 @@ func (j *jsiiProxy_OpensearchInstanceParametersOutputReference)SetTlsCiphers(val
 	)
 }
 
-func (j *jsiiProxy_OpensearchInstanceParametersOutputReference)SetTlsProtocols(val *string) {
+func (j *jsiiProxy_OpensearchInstanceParametersOutputReference)SetTlsProtocols(val *[]*string) {
 	if err := j.validateSetTlsProtocolsParameters(val); err != nil {
 		panic(err)
 	}

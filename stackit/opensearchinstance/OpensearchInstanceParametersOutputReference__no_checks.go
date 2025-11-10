@@ -120,7 +120,7 @@ func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) validateSetTlsCi
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) validateSetTlsProtocolsParameters(val *string) error {
+func (j *jsiiProxy_OpensearchInstanceParametersOutputReference) validateSetTlsProtocolsParameters(val *[]*string) error {
 	return nil
 }
 
