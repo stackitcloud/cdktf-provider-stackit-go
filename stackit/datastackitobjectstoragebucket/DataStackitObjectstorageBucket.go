@@ -9,12 +9,9 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.4.0/docs/data-sources/objectstorage_bucket stackit_objectstorage_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.5.0/docs/data-sources/objectstorage_bucket stackit_objectstorage_bucket}.
 type DataStackitObjectstorageBucket interface {
 	cdktf.TerraformDataSource
-	BucketName() *string
-	SetBucketName(val *string)
-	BucketNameInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -40,6 +37,9 @@ type DataStackitObjectstorageBucket interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	ProjectId() *string
@@ -104,26 +104,6 @@ type DataStackitObjectstorageBucket interface {
 // The jsii proxy struct for DataStackitObjectstorageBucket
 type jsiiProxy_DataStackitObjectstorageBucket struct {
 	internal.Type__cdktfTerraformDataSource
-}
-
-func (j *jsiiProxy_DataStackitObjectstorageBucket) BucketName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"bucketName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataStackitObjectstorageBucket) BucketNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"bucketNameInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_DataStackitObjectstorageBucket) CdktfStack() cdktf.TerraformStack {
@@ -211,6 +191,26 @@ func (j *jsiiProxy_DataStackitObjectstorageBucket) Lifecycle() *cdktf.TerraformR
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitObjectstorageBucket) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitObjectstorageBucket) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
 		&returns,
 	)
 	return returns
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DataStackitObjectstorageBucket) UrlVirtualHostedStyle() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.4.0/docs/data-sources/objectstorage_bucket stackit_objectstorage_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.5.0/docs/data-sources/objectstorage_bucket stackit_objectstorage_bucket} Data Source.
 func NewDataStackitObjectstorageBucket(scope constructs.Construct, id *string, config *DataStackitObjectstorageBucketConfig) DataStackitObjectstorageBucket {
 	_init_.Initialize()
 
@@ -335,7 +335,7 @@ func NewDataStackitObjectstorageBucket(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.4.0/docs/data-sources/objectstorage_bucket stackit_objectstorage_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.5.0/docs/data-sources/objectstorage_bucket stackit_objectstorage_bucket} Data Source.
 func NewDataStackitObjectstorageBucket_Override(d DataStackitObjectstorageBucket, scope constructs.Construct, id *string, config *DataStackitObjectstorageBucketConfig) {
 	_init_.Initialize()
 
@@ -343,17 +343,6 @@ func NewDataStackitObjectstorageBucket_Override(d DataStackitObjectstorageBucket
 		"stackit.dataStackitObjectstorageBucket.DataStackitObjectstorageBucket",
 		[]interface{}{scope, id, config},
 		d,
-	)
-}
-
-func (j *jsiiProxy_DataStackitObjectstorageBucket)SetBucketName(val *string) {
-	if err := j.validateSetBucketNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"bucketName",
-		val,
 	)
 }
 
@@ -391,6 +380,17 @@ func (j *jsiiProxy_DataStackitObjectstorageBucket)SetLifecycle(val *cdktf.Terraf
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataStackitObjectstorageBucket)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }

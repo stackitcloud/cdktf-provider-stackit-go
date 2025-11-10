@@ -68,15 +68,15 @@ func validateDataStackitObjectstorageBucket_IsTerraformElementParameters(x inter
 	return nil
 }
 
-func (j *jsiiProxy_DataStackitObjectstorageBucket) validateSetBucketNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataStackitObjectstorageBucket) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataStackitObjectstorageBucket) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataStackitObjectstorageBucket) validateSetNameParameters(val *string) error {
 	return nil
 }
 

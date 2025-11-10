@@ -21,11 +21,11 @@ type DataStackitObjectstorageBucketConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The bucket name. It must be DNS conform.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.4.0/docs/data-sources/objectstorage_bucket#bucket_name DataStackitObjectstorageBucket#bucket_name}
-	BucketName *string `field:"required" json:"bucketName" yaml:"bucketName"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.5.0/docs/data-sources/objectstorage_bucket#name DataStackitObjectstorageBucket#name}
+	Name *string `field:"required" json:"name" yaml:"name"`
 	// STACKIT Project ID to which the bucket is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.4.0/docs/data-sources/objectstorage_bucket#project_id DataStackitObjectstorageBucket#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.5.0/docs/data-sources/objectstorage_bucket#project_id DataStackitObjectstorageBucket#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

@@ -9,12 +9,9 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.4.0/docs/resources/objectstorage_bucket stackit_objectstorage_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.5.0/docs/resources/objectstorage_bucket stackit_objectstorage_bucket}.
 type ObjectstorageBucket interface {
 	cdktf.TerraformResource
-	BucketName() *string
-	SetBucketName(val *string)
-	BucketNameInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -44,6 +41,9 @@ type ObjectstorageBucket interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	ProjectId() *string
@@ -129,26 +129,6 @@ type ObjectstorageBucket interface {
 // The jsii proxy struct for ObjectstorageBucket
 type jsiiProxy_ObjectstorageBucket struct {
 	internal.Type__cdktfTerraformResource
-}
-
-func (j *jsiiProxy_ObjectstorageBucket) BucketName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"bucketName",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ObjectstorageBucket) BucketNameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"bucketNameInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_ObjectstorageBucket) CdktfStack() cdktf.TerraformStack {
@@ -246,6 +226,26 @@ func (j *jsiiProxy_ObjectstorageBucket) Lifecycle() *cdktf.TerraformResourceLife
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObjectstorageBucket) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObjectstorageBucket) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
 		&returns,
 	)
 	return returns
@@ -362,7 +362,7 @@ func (j *jsiiProxy_ObjectstorageBucket) UrlVirtualHostedStyle() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.4.0/docs/resources/objectstorage_bucket stackit_objectstorage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.5.0/docs/resources/objectstorage_bucket stackit_objectstorage_bucket} Resource.
 func NewObjectstorageBucket(scope constructs.Construct, id *string, config *ObjectstorageBucketConfig) ObjectstorageBucket {
 	_init_.Initialize()
 
@@ -380,7 +380,7 @@ func NewObjectstorageBucket(scope constructs.Construct, id *string, config *Obje
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.4.0/docs/resources/objectstorage_bucket stackit_objectstorage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.5.0/docs/resources/objectstorage_bucket stackit_objectstorage_bucket} Resource.
 func NewObjectstorageBucket_Override(o ObjectstorageBucket, scope constructs.Construct, id *string, config *ObjectstorageBucketConfig) {
 	_init_.Initialize()
 
@@ -388,17 +388,6 @@ func NewObjectstorageBucket_Override(o ObjectstorageBucket, scope constructs.Con
 		"stackit.objectstorageBucket.ObjectstorageBucket",
 		[]interface{}{scope, id, config},
 		o,
-	)
-}
-
-func (j *jsiiProxy_ObjectstorageBucket)SetBucketName(val *string) {
-	if err := j.validateSetBucketNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"bucketName",
-		val,
 	)
 }
 
@@ -447,6 +436,17 @@ func (j *jsiiProxy_ObjectstorageBucket)SetLifecycle(val *cdktf.TerraformResource
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObjectstorageBucket)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }

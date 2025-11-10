@@ -21,7 +21,7 @@ type DataStackitSkeProjectConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT Project ID in which the kubernetes project is enabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.4.0/docs/data-sources/ske_project#project_id DataStackitSkeProject#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.5.0/docs/data-sources/ske_project#project_id DataStackitSkeProject#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

@@ -88,10 +88,6 @@ func validateObjectstorageBucket_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_ObjectstorageBucket) validateSetBucketNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ObjectstorageBucket) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -101,6 +97,10 @@ func (j *jsiiProxy_ObjectstorageBucket) validateSetCountParameters(val interface
 }
 
 func (j *jsiiProxy_ObjectstorageBucket) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_ObjectstorageBucket) validateSetNameParameters(val *string) error {
 	return nil
 }
 

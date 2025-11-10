@@ -21,11 +21,11 @@ type DataStackitArgusInstanceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Argus instance ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.4.0/docs/data-sources/argus_instance#instance_id DataStackitArgusInstance#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.5.0/docs/data-sources/argus_instance#instance_id DataStackitArgusInstance#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// STACKIT project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.4.0/docs/data-sources/argus_instance#project_id DataStackitArgusInstance#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.5.0/docs/data-sources/argus_instance#project_id DataStackitArgusInstance#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 
