@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.18.1/docs/resources/argus_instance stackit_argus_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.19.0/docs/resources/argus_instance stackit_argus_instance}.
 type ArgusInstance interface {
 	cdktf.TerraformResource
 	Acl() *[]*string
@@ -58,8 +58,14 @@ type ArgusInstance interface {
 	LogsUrl() *string
 	MetricsPushUrl() *string
 	MetricsRetentionDays() *float64
+	SetMetricsRetentionDays(val *float64)
 	MetricsRetentionDays1HDownsampling() *float64
+	SetMetricsRetentionDays1HDownsampling(val *float64)
+	MetricsRetentionDays1HDownsamplingInput() *float64
 	MetricsRetentionDays5MDownsampling() *float64
+	SetMetricsRetentionDays5MDownsampling(val *float64)
+	MetricsRetentionDays5MDownsamplingInput() *float64
+	MetricsRetentionDaysInput() *float64
 	MetricsUrl() *string
 	Name() *string
 	SetName(val *string)
@@ -139,6 +145,9 @@ type ArgusInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAcl()
+	ResetMetricsRetentionDays()
+	ResetMetricsRetentionDays1HDownsampling()
+	ResetMetricsRetentionDays5MDownsampling()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -431,11 +440,41 @@ func (j *jsiiProxy_ArgusInstance) MetricsRetentionDays1HDownsampling() *float64 
 	return returns
 }
 
+func (j *jsiiProxy_ArgusInstance) MetricsRetentionDays1HDownsamplingInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"metricsRetentionDays1HDownsamplingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ArgusInstance) MetricsRetentionDays5MDownsampling() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"metricsRetentionDays5MDownsampling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArgusInstance) MetricsRetentionDays5MDownsamplingInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"metricsRetentionDays5MDownsamplingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArgusInstance) MetricsRetentionDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"metricsRetentionDaysInput",
 		&returns,
 	)
 	return returns
@@ -642,7 +681,7 @@ func (j *jsiiProxy_ArgusInstance) ZipkinSpansUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.18.1/docs/resources/argus_instance stackit_argus_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.19.0/docs/resources/argus_instance stackit_argus_instance} Resource.
 func NewArgusInstance(scope constructs.Construct, id *string, config *ArgusInstanceConfig) ArgusInstance {
 	_init_.Initialize()
 
@@ -660,7 +699,7 @@ func NewArgusInstance(scope constructs.Construct, id *string, config *ArgusInsta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.18.1/docs/resources/argus_instance stackit_argus_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.19.0/docs/resources/argus_instance stackit_argus_instance} Resource.
 func NewArgusInstance_Override(a ArgusInstance, scope constructs.Construct, id *string, config *ArgusInstanceConfig) {
 	_init_.Initialize()
 
@@ -727,6 +766,39 @@ func (j *jsiiProxy_ArgusInstance)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ArgusInstance)SetMetricsRetentionDays(val *float64) {
+	if err := j.validateSetMetricsRetentionDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"metricsRetentionDays",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ArgusInstance)SetMetricsRetentionDays1HDownsampling(val *float64) {
+	if err := j.validateSetMetricsRetentionDays1HDownsamplingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"metricsRetentionDays1HDownsampling",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ArgusInstance)SetMetricsRetentionDays5MDownsampling(val *float64) {
+	if err := j.validateSetMetricsRetentionDays5MDownsamplingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"metricsRetentionDays5MDownsampling",
 		val,
 	)
 }
@@ -1151,6 +1223,30 @@ func (a *jsiiProxy_ArgusInstance) ResetAcl() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAcl",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ArgusInstance) ResetMetricsRetentionDays() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMetricsRetentionDays",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ArgusInstance) ResetMetricsRetentionDays1HDownsampling() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMetricsRetentionDays1HDownsampling",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ArgusInstance) ResetMetricsRetentionDays5MDownsampling() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMetricsRetentionDays5MDownsampling",
 		nil, // no parameters
 	)
 }

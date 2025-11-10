@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.18.1/docs stackit}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.19.0/docs stackit}.
 type StackitProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -104,6 +104,9 @@ type StackitProvider interface {
 	SkeCustomEndpoint() *string
 	SetSkeCustomEndpoint(val *string)
 	SkeCustomEndpointInput() *string
+	SqlserverflexCustomEndpoint() *string
+	SetSqlserverflexCustomEndpoint(val *string)
+	SqlserverflexCustomEndpointInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -147,6 +150,7 @@ type StackitProvider interface {
 	ResetServiceAccountKeyPath()
 	ResetServiceAccountToken()
 	ResetSkeCustomEndpoint()
+	ResetSqlserverflexCustomEndpoint()
 	ResetTokenCustomEndpoint()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -756,6 +760,26 @@ func (j *jsiiProxy_StackitProvider) SkeCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StackitProvider) SqlserverflexCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sqlserverflexCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) SqlserverflexCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sqlserverflexCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StackitProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -807,7 +831,7 @@ func (j *jsiiProxy_StackitProvider) TokenCustomEndpointInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.18.1/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.19.0/docs stackit} Resource.
 func NewStackitProvider(scope constructs.Construct, id *string, config *StackitProviderConfig) StackitProvider {
 	_init_.Initialize()
 
@@ -825,7 +849,7 @@ func NewStackitProvider(scope constructs.Construct, id *string, config *StackitP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.18.1/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.19.0/docs stackit} Resource.
 func NewStackitProvider_Override(s StackitProvider, scope constructs.Construct, id *string, config *StackitProviderConfig) {
 	_init_.Initialize()
 
@@ -1040,6 +1064,14 @@ func (j *jsiiProxy_StackitProvider)SetSkeCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"skeCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StackitProvider)SetSqlserverflexCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"sqlserverflexCustomEndpoint",
 		val,
 	)
 }
@@ -1389,6 +1421,14 @@ func (s *jsiiProxy_StackitProvider) ResetSkeCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSkeCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StackitProvider) ResetSqlserverflexCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSqlserverflexCustomEndpoint",
 		nil, // no parameters
 	)
 }
