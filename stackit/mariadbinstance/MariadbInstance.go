@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.35.0/docs/resources/mariadb_instance stackit_mariadb_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.35.1/docs/resources/mariadb_instance stackit_mariadb_instance}.
 type MariadbInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -487,7 +487,7 @@ func (j *jsiiProxy_MariadbInstance) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.35.0/docs/resources/mariadb_instance stackit_mariadb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.35.1/docs/resources/mariadb_instance stackit_mariadb_instance} Resource.
 func NewMariadbInstance(scope constructs.Construct, id *string, config *MariadbInstanceConfig) MariadbInstance {
 	_init_.Initialize()
 
@@ -505,7 +505,7 @@ func NewMariadbInstance(scope constructs.Construct, id *string, config *MariadbI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.35.0/docs/resources/mariadb_instance stackit_mariadb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.35.1/docs/resources/mariadb_instance stackit_mariadb_instance} Resource.
 func NewMariadbInstance_Override(m MariadbInstance, scope constructs.Construct, id *string, config *MariadbInstanceConfig) {
 	_init_.Initialize()
 
