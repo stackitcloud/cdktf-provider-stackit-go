@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.6.3/docs/data-sources/dns_zone stackit_dns_zone}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.6.4/docs/data-sources/dns_zone stackit_dns_zone}.
 type DataStackitDnsZone interface {
 	cdktf.TerraformDataSource
 	Acl() *string
@@ -504,7 +504,7 @@ func (j *jsiiProxy_DataStackitDnsZone) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.6.3/docs/data-sources/dns_zone stackit_dns_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.6.4/docs/data-sources/dns_zone stackit_dns_zone} Data Source.
 func NewDataStackitDnsZone(scope constructs.Construct, id *string, config *DataStackitDnsZoneConfig) DataStackitDnsZone {
 	_init_.Initialize()
 
@@ -522,7 +522,7 @@ func NewDataStackitDnsZone(scope constructs.Construct, id *string, config *DataS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.6.3/docs/data-sources/dns_zone stackit_dns_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.6.4/docs/data-sources/dns_zone stackit_dns_zone} Data Source.
 func NewDataStackitDnsZone_Override(d DataStackitDnsZone, scope constructs.Construct, id *string, config *DataStackitDnsZoneConfig) {
 	_init_.Initialize()
 

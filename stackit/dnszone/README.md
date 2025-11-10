@@ -1,3 +1,3 @@
 # `stackit_dns_zone`
 
-Refer to the Terraform Registry for docs: [`stackit_dns_zone`](https://registry.terraform.io/providers/stackitcloud/stackit/0.6.3/docs/resources/dns_zone).
+Refer to the Terraform Registry for docs: [`stackit_dns_zone`](https://registry.terraform.io/providers/stackitcloud/stackit/0.6.4/docs/resources/dns_zone).
