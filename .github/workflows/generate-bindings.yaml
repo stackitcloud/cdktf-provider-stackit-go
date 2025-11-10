@@ -185,7 +185,7 @@ jobs:
       # 10. Create Release
       # Creates a formal release on GitHub associated with the new tag.
       - name: 📦 Create Release
-        uses: actions/create-release@v1
+        uses: softprops/action-gh-release@v2
         # This condition ensures that the release is only created if there were changes to commit.
         if: success()
         env:
