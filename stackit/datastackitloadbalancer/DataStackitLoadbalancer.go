@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.45.0/docs/data-sources/loadbalancer stackit_loadbalancer}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.46.0/docs/data-sources/loadbalancer stackit_loadbalancer}.
 type DataStackitLoadbalancer interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -56,6 +56,9 @@ type DataStackitLoadbalancer interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	TargetPools() DataStackitLoadbalancerTargetPoolsList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -91,6 +94,7 @@ type DataStackitLoadbalancer interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -320,6 +324,26 @@ func (j *jsiiProxy_DataStackitLoadbalancer) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitLoadbalancer) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLoadbalancer) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitLoadbalancer) TargetPools() DataStackitLoadbalancerTargetPoolsList {
 	var returns DataStackitLoadbalancerTargetPoolsList
 	_jsii_.Get(
@@ -361,7 +385,7 @@ func (j *jsiiProxy_DataStackitLoadbalancer) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.45.0/docs/data-sources/loadbalancer stackit_loadbalancer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.46.0/docs/data-sources/loadbalancer stackit_loadbalancer} Data Source.
 func NewDataStackitLoadbalancer(scope constructs.Construct, id *string, config *DataStackitLoadbalancerConfig) DataStackitLoadbalancer {
 	_init_.Initialize()
 
@@ -379,7 +403,7 @@ func NewDataStackitLoadbalancer(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.45.0/docs/data-sources/loadbalancer stackit_loadbalancer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.46.0/docs/data-sources/loadbalancer stackit_loadbalancer} Data Source.
 func NewDataStackitLoadbalancer_Override(d DataStackitLoadbalancer, scope constructs.Construct, id *string, config *DataStackitLoadbalancerConfig) {
 	_init_.Initialize()
 
@@ -454,6 +478,17 @@ func (j *jsiiProxy_DataStackitLoadbalancer)SetProvider(val cdktf.TerraformProvid
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataStackitLoadbalancer)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -747,6 +782,14 @@ func (d *jsiiProxy_DataStackitLoadbalancer) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataStackitLoadbalancer) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

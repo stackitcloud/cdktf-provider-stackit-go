@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.45.0/docs/resources/loadbalancer_observability_credential stackit_loadbalancer_observability_credential}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.46.0/docs/resources/loadbalancer_observability_credential stackit_loadbalancer_observability_credential}.
 type LoadbalancerObservabilityCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -63,6 +63,9 @@ type LoadbalancerObservabilityCredential interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -118,6 +121,7 @@ type LoadbalancerObservabilityCredential interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -346,6 +350,26 @@ func (j *jsiiProxy_LoadbalancerObservabilityCredential) RawOverrides() interface
 	return returns
 }
 
+func (j *jsiiProxy_LoadbalancerObservabilityCredential) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadbalancerObservabilityCredential) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LoadbalancerObservabilityCredential) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -397,7 +421,7 @@ func (j *jsiiProxy_LoadbalancerObservabilityCredential) UsernameInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.45.0/docs/resources/loadbalancer_observability_credential stackit_loadbalancer_observability_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.46.0/docs/resources/loadbalancer_observability_credential stackit_loadbalancer_observability_credential} Resource.
 func NewLoadbalancerObservabilityCredential(scope constructs.Construct, id *string, config *LoadbalancerObservabilityCredentialConfig) LoadbalancerObservabilityCredential {
 	_init_.Initialize()
 
@@ -415,7 +439,7 @@ func NewLoadbalancerObservabilityCredential(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.45.0/docs/resources/loadbalancer_observability_credential stackit_loadbalancer_observability_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.46.0/docs/resources/loadbalancer_observability_credential stackit_loadbalancer_observability_credential} Resource.
 func NewLoadbalancerObservabilityCredential_Override(l LoadbalancerObservabilityCredential, scope constructs.Construct, id *string, config *LoadbalancerObservabilityCredentialConfig) {
 	_init_.Initialize()
 
@@ -523,6 +547,17 @@ func (j *jsiiProxy_LoadbalancerObservabilityCredential)SetProvisioners(val *[]in
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoadbalancerObservabilityCredential)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -895,6 +930,14 @@ func (l *jsiiProxy_LoadbalancerObservabilityCredential) ResetOverrideLogicalId()
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadbalancerObservabilityCredential) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

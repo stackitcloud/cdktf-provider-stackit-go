@@ -144,6 +144,10 @@ func (j *jsiiProxy_SkeCluster) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
+func (j *jsiiProxy_SkeCluster) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewSkeClusterParameters(scope constructs.Construct, id *string, config *SkeClusterConfig) error {
 	return nil
 }

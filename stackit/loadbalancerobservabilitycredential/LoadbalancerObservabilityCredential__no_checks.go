@@ -116,6 +116,10 @@ func (j *jsiiProxy_LoadbalancerObservabilityCredential) validateSetProvisionersP
 	return nil
 }
 
+func (j *jsiiProxy_LoadbalancerObservabilityCredential) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoadbalancerObservabilityCredential) validateSetUsernameParameters(val *string) error {
 	return nil
 }

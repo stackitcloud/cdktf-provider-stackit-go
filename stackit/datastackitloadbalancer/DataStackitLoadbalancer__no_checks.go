@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataStackitLoadbalancer) validateSetProjectIdParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitLoadbalancer) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataStackitLoadbalancerParameters(scope constructs.Construct, id *string, config *DataStackitLoadbalancerConfig) error {
 	return nil
 }

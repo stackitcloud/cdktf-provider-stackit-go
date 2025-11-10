@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataStackitSkeCluster) validateSetProjectIdParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitSkeCluster) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataStackitSkeClusterParameters(scope constructs.Construct, id *string, config *DataStackitSkeClusterConfig) error {
 	return nil
 }

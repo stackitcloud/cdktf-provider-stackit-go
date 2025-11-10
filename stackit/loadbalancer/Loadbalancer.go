@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.45.0/docs/resources/loadbalancer stackit_loadbalancer}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.46.0/docs/resources/loadbalancer stackit_loadbalancer}.
 type Loadbalancer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -69,6 +69,9 @@ type Loadbalancer interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	TargetPools() LoadbalancerTargetPoolsList
 	TargetPoolsInput() interface{}
 	// Experimental.
@@ -129,6 +132,7 @@ type Loadbalancer interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -417,6 +421,26 @@ func (j *jsiiProxy_Loadbalancer) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Loadbalancer) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Loadbalancer) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Loadbalancer) TargetPools() LoadbalancerTargetPoolsList {
 	var returns LoadbalancerTargetPoolsList
 	_jsii_.Get(
@@ -468,7 +492,7 @@ func (j *jsiiProxy_Loadbalancer) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.45.0/docs/resources/loadbalancer stackit_loadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.46.0/docs/resources/loadbalancer stackit_loadbalancer} Resource.
 func NewLoadbalancer(scope constructs.Construct, id *string, config *LoadbalancerConfig) Loadbalancer {
 	_init_.Initialize()
 
@@ -486,7 +510,7 @@ func NewLoadbalancer(scope constructs.Construct, id *string, config *Loadbalance
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.45.0/docs/resources/loadbalancer stackit_loadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.46.0/docs/resources/loadbalancer stackit_loadbalancer} Resource.
 func NewLoadbalancer_Override(l Loadbalancer, scope constructs.Construct, id *string, config *LoadbalancerConfig) {
 	_init_.Initialize()
 
@@ -594,6 +618,17 @@ func (j *jsiiProxy_Loadbalancer)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Loadbalancer)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1015,6 +1050,14 @@ func (l *jsiiProxy_Loadbalancer) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_Loadbalancer) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }
