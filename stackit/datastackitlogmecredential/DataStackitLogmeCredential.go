@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.0/docs/data-sources/logme_credential stackit_logme_credential}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.1/docs/data-sources/logme_credential stackit_logme_credential}.
 type DataStackitLogmeCredential interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -406,7 +406,7 @@ func (j *jsiiProxy_DataStackitLogmeCredential) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.0/docs/data-sources/logme_credential stackit_logme_credential} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.1/docs/data-sources/logme_credential stackit_logme_credential} Data Source.
 func NewDataStackitLogmeCredential(scope constructs.Construct, id *string, config *DataStackitLogmeCredentialConfig) DataStackitLogmeCredential {
 	_init_.Initialize()
 
@@ -424,7 +424,7 @@ func NewDataStackitLogmeCredential(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.0/docs/data-sources/logme_credential stackit_logme_credential} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.1/docs/data-sources/logme_credential stackit_logme_credential} Data Source.
 func NewDataStackitLogmeCredential_Override(d DataStackitLogmeCredential, scope constructs.Construct, id *string, config *DataStackitLogmeCredentialConfig) {
 	_init_.Initialize()
 
