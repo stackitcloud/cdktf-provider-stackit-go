@@ -1,3 +1,3 @@
 # `data_stackit_observability_scrapeconfig`
 
-Refer to the Terraform Registry for docs: [`data_stackit_observability_scrapeconfig`](https://registry.terraform.io/providers/stackitcloud/stackit/0.33.3/docs/data-sources/observability_scrapeconfig).
+Refer to the Terraform Registry for docs: [`data_stackit_observability_scrapeconfig`](https://registry.terraform.io/providers/stackitcloud/stackit/0.34.0/docs/data-sources/observability_scrapeconfig).
