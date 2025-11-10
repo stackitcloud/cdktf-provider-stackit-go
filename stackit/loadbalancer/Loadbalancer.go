@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.52.0/docs/resources/loadbalancer stackit_loadbalancer}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.53.0/docs/resources/loadbalancer stackit_loadbalancer}.
 type Loadbalancer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -491,7 +491,7 @@ func (j *jsiiProxy_Loadbalancer) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.52.0/docs/resources/loadbalancer stackit_loadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.53.0/docs/resources/loadbalancer stackit_loadbalancer} Resource.
 func NewLoadbalancer(scope constructs.Construct, id *string, config *LoadbalancerConfig) Loadbalancer {
 	_init_.Initialize()
 
@@ -509,7 +509,7 @@ func NewLoadbalancer(scope constructs.Construct, id *string, config *Loadbalance
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.52.0/docs/resources/loadbalancer stackit_loadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.53.0/docs/resources/loadbalancer stackit_loadbalancer} Resource.
 func NewLoadbalancer_Override(l Loadbalancer, scope constructs.Construct, id *string, config *LoadbalancerConfig) {
 	_init_.Initialize()
 

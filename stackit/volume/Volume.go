@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.52.0/docs/resources/volume stackit_volume}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.53.0/docs/resources/volume stackit_volume}.
 type Volume interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -72,8 +72,6 @@ type Volume interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ServerId() *string
-	SetServerId(val *string)
-	ServerIdInput() *string
 	Size() *float64
 	SetSize(val *float64)
 	SizeInput() *float64
@@ -137,7 +135,6 @@ type Volume interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPerformanceClass()
-	ResetServerId()
 	ResetSize()
 	ResetSource()
 	SynthesizeAttributes() *map[string]interface{}
@@ -428,16 +425,6 @@ func (j *jsiiProxy_Volume) ServerId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Volume) ServerIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"serverIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Volume) Size() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -519,7 +506,7 @@ func (j *jsiiProxy_Volume) VolumeId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.52.0/docs/resources/volume stackit_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.53.0/docs/resources/volume stackit_volume} Resource.
 func NewVolume(scope constructs.Construct, id *string, config *VolumeConfig) Volume {
 	_init_.Initialize()
 
@@ -537,7 +524,7 @@ func NewVolume(scope constructs.Construct, id *string, config *VolumeConfig) Vol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.52.0/docs/resources/volume stackit_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.53.0/docs/resources/volume stackit_volume} Resource.
 func NewVolume_Override(v Volume, scope constructs.Construct, id *string, config *VolumeConfig) {
 	_init_.Initialize()
 
@@ -678,17 +665,6 @@ func (j *jsiiProxy_Volume)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Volume)SetServerId(val *string) {
-	if err := j.validateSetServerIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"serverId",
 		val,
 	)
 }
@@ -1104,14 +1080,6 @@ func (v *jsiiProxy_Volume) ResetPerformanceClass() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetPerformanceClass",
-		nil, // no parameters
-	)
-}
-
-func (v *jsiiProxy_Volume) ResetServerId() {
-	_jsii_.InvokeVoid(
-		v,
-		"resetServerId",
 		nil, // no parameters
 	)
 }

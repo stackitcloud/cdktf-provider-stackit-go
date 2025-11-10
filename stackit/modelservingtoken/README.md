@@ -1,3 +1,3 @@
 # `stackit_modelserving_token`
 
-Refer to the Terraform Registry for docs: [`stackit_modelserving_token`](https://registry.terraform.io/providers/stackitcloud/stackit/0.52.0/docs/resources/modelserving_token).
+Refer to the Terraform Registry for docs: [`stackit_modelserving_token`](https://registry.terraform.io/providers/stackitcloud/stackit/0.53.0/docs/resources/modelserving_token).

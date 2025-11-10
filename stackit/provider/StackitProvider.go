@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.52.0/docs stackit}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.53.0/docs stackit}.
 type StackitProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -47,6 +47,9 @@ type StackitProvider interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GitCustomEndpoint() *string
+	SetGitCustomEndpoint(val *string)
+	GitCustomEndpointInput() *string
 	IaasCustomEndpoint() *string
 	SetIaasCustomEndpoint(val *string)
 	IaasCustomEndpointInput() *string
@@ -157,6 +160,7 @@ type StackitProvider interface {
 	ResetDnsCustomEndpoint()
 	ResetEnableBetaResources()
 	ResetExperiments()
+	ResetGitCustomEndpoint()
 	ResetIaasCustomEndpoint()
 	ResetLoadbalancerCustomEndpoint()
 	ResetLogmeCustomEndpoint()
@@ -421,6 +425,26 @@ func (j *jsiiProxy_StackitProvider) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) GitCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gitCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) GitCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gitCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -1047,7 +1071,7 @@ func (j *jsiiProxy_StackitProvider) TokenCustomEndpointInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.52.0/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.53.0/docs stackit} Resource.
 func NewStackitProvider(scope constructs.Construct, id *string, config *StackitProviderConfig) StackitProvider {
 	_init_.Initialize()
 
@@ -1065,7 +1089,7 @@ func NewStackitProvider(scope constructs.Construct, id *string, config *StackitP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.52.0/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.53.0/docs stackit} Resource.
 func NewStackitProvider_Override(s StackitProvider, scope constructs.Construct, id *string, config *StackitProviderConfig) {
 	_init_.Initialize()
 
@@ -1147,6 +1171,14 @@ func (j *jsiiProxy_StackitProvider)SetExperiments(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"experiments",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StackitProvider)SetGitCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"gitCustomEndpoint",
 		val,
 	)
 }
@@ -1568,6 +1600,14 @@ func (s *jsiiProxy_StackitProvider) ResetExperiments() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetExperiments",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StackitProvider) ResetGitCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetGitCustomEndpoint",
 		nil, // no parameters
 	)
 }
