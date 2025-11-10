@@ -21,15 +21,15 @@ type PostgresflexUserConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of the PostgresFlex instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.9.2/docs/resources/postgresflex_user#instance_id PostgresflexUser#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.10.0/docs/resources/postgresflex_user#instance_id PostgresflexUser#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// STACKIT project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.9.2/docs/resources/postgresflex_user#project_id PostgresflexUser#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.10.0/docs/resources/postgresflex_user#project_id PostgresflexUser#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.9.2/docs/resources/postgresflex_user#roles PostgresflexUser#roles}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.10.0/docs/resources/postgresflex_user#roles PostgresflexUser#roles}.
 	Roles *[]*string `field:"required" json:"roles" yaml:"roles"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.9.2/docs/resources/postgresflex_user#username PostgresflexUser#username}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.10.0/docs/resources/postgresflex_user#username PostgresflexUser#username}.
 	Username *string `field:"required" json:"username" yaml:"username"`
 }
 

@@ -44,6 +44,10 @@ func (d *jsiiProxy_DataStackitLoadbalancerTargetPoolsOutputReference) validateIn
 	return nil
 }
 
+func (d *jsiiProxy_DataStackitLoadbalancerTargetPoolsOutputReference) validatePutSessionPersistenceParameters(value *DataStackitLoadbalancerTargetPoolsSessionPersistence) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataStackitLoadbalancerTargetPoolsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

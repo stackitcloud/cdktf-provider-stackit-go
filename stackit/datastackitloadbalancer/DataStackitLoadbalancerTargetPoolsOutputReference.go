@@ -31,6 +31,8 @@ type DataStackitLoadbalancerTargetPoolsOutputReference interface {
 	InternalValue() *DataStackitLoadbalancerTargetPools
 	SetInternalValue(val *DataStackitLoadbalancerTargetPools)
 	Name() *string
+	SessionPersistence() DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputReference
+	SessionPersistenceInput() interface{}
 	TargetPort() *float64
 	Targets() DataStackitLoadbalancerTargetPoolsTargetsList
 	// Experimental.
@@ -65,6 +67,8 @@ type DataStackitLoadbalancerTargetPoolsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSessionPersistence(value *DataStackitLoadbalancerTargetPoolsSessionPersistence)
+	ResetSessionPersistence()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -145,6 +149,26 @@ func (j *jsiiProxy_DataStackitLoadbalancerTargetPoolsOutputReference) Name() *st
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLoadbalancerTargetPoolsOutputReference) SessionPersistence() DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputReference {
+	var returns DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputReference
+	_jsii_.Get(
+		j,
+		"sessionPersistence",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLoadbalancerTargetPoolsOutputReference) SessionPersistenceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sessionPersistenceInput",
 		&returns,
 	)
 	return returns
@@ -457,6 +481,25 @@ func (d *jsiiProxy_DataStackitLoadbalancerTargetPoolsOutputReference) Interpolat
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataStackitLoadbalancerTargetPoolsOutputReference) PutSessionPersistence(value *DataStackitLoadbalancerTargetPoolsSessionPersistence) {
+	if err := d.validatePutSessionPersistenceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSessionPersistence",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataStackitLoadbalancerTargetPoolsOutputReference) ResetSessionPersistence() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSessionPersistence",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataStackitLoadbalancerTargetPoolsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

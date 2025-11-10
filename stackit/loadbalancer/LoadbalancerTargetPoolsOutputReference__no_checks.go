@@ -48,6 +48,10 @@ func (l *jsiiProxy_LoadbalancerTargetPoolsOutputReference) validatePutActiveHeal
 	return nil
 }
 
+func (l *jsiiProxy_LoadbalancerTargetPoolsOutputReference) validatePutSessionPersistenceParameters(value *LoadbalancerTargetPoolsSessionPersistence) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoadbalancerTargetPoolsOutputReference) validatePutTargetsParameters(value interface{}) error {
 	return nil
 }

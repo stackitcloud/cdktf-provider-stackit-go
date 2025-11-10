@@ -34,6 +34,8 @@ type LoadbalancerTargetPoolsOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	SessionPersistence() LoadbalancerTargetPoolsSessionPersistenceOutputReference
+	SessionPersistenceInput() interface{}
 	TargetPort() *float64
 	SetTargetPort(val *float64)
 	TargetPortInput() *float64
@@ -72,8 +74,10 @@ type LoadbalancerTargetPoolsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutActiveHealthCheck(value *LoadbalancerTargetPoolsActiveHealthCheck)
+	PutSessionPersistence(value *LoadbalancerTargetPoolsSessionPersistence)
 	PutTargets(value interface{})
 	ResetActiveHealthCheck()
+	ResetSessionPersistence()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -174,6 +178,26 @@ func (j *jsiiProxy_LoadbalancerTargetPoolsOutputReference) NameInput() *string {
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadbalancerTargetPoolsOutputReference) SessionPersistence() LoadbalancerTargetPoolsSessionPersistenceOutputReference {
+	var returns LoadbalancerTargetPoolsSessionPersistenceOutputReference
+	_jsii_.Get(
+		j,
+		"sessionPersistence",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadbalancerTargetPoolsOutputReference) SessionPersistenceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sessionPersistenceInput",
 		&returns,
 	)
 	return returns
@@ -541,6 +565,17 @@ func (l *jsiiProxy_LoadbalancerTargetPoolsOutputReference) PutActiveHealthCheck(
 	)
 }
 
+func (l *jsiiProxy_LoadbalancerTargetPoolsOutputReference) PutSessionPersistence(value *LoadbalancerTargetPoolsSessionPersistence) {
+	if err := l.validatePutSessionPersistenceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putSessionPersistence",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LoadbalancerTargetPoolsOutputReference) PutTargets(value interface{}) {
 	if err := l.validatePutTargetsParameters(value); err != nil {
 		panic(err)
@@ -556,6 +591,14 @@ func (l *jsiiProxy_LoadbalancerTargetPoolsOutputReference) ResetActiveHealthChec
 	_jsii_.InvokeVoid(
 		l,
 		"resetActiveHealthCheck",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadbalancerTargetPoolsOutputReference) ResetSessionPersistence() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetSessionPersistence",
 		nil, // no parameters
 	)
 }
