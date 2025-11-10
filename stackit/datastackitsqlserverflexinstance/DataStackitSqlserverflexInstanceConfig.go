@@ -21,11 +21,11 @@ type DataStackitSqlserverflexInstanceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of the SQLServer Flex instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.20.1/docs/data-sources/sqlserverflex_instance#instance_id DataStackitSqlserverflexInstance#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.20.2/docs/data-sources/sqlserverflex_instance#instance_id DataStackitSqlserverflexInstance#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// STACKIT project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.20.1/docs/data-sources/sqlserverflex_instance#project_id DataStackitSqlserverflexInstance#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.20.2/docs/data-sources/sqlserverflex_instance#project_id DataStackitSqlserverflexInstance#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 
