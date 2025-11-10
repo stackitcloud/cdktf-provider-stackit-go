@@ -20,6 +20,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
+			_jsii_.MemberProperty{JsiiProperty: "egressAddressRanges", GoGetter: "EgressAddressRanges"},
 			_jsii_.MemberProperty{JsiiProperty: "extensions", GoGetter: "Extensions"},
 			_jsii_.MemberProperty{JsiiProperty: "extensionsInput", GoGetter: "ExtensionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},

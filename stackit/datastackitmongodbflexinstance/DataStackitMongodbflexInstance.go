@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.40.0/docs/data-sources/mongodbflex_instance stackit_mongodbflex_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.41.0/docs/data-sources/mongodbflex_instance stackit_mongodbflex_instance}.
 type DataStackitMongodbflexInstance interface {
 	cdktf.TerraformDataSource
 	Acl() *[]*string
@@ -383,7 +383,7 @@ func (j *jsiiProxy_DataStackitMongodbflexInstance) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.40.0/docs/data-sources/mongodbflex_instance stackit_mongodbflex_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.41.0/docs/data-sources/mongodbflex_instance stackit_mongodbflex_instance} Data Source.
 func NewDataStackitMongodbflexInstance(scope constructs.Construct, id *string, config *DataStackitMongodbflexInstanceConfig) DataStackitMongodbflexInstance {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewDataStackitMongodbflexInstance(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.40.0/docs/data-sources/mongodbflex_instance stackit_mongodbflex_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.41.0/docs/data-sources/mongodbflex_instance stackit_mongodbflex_instance} Data Source.
 func NewDataStackitMongodbflexInstance_Override(d DataStackitMongodbflexInstance, scope constructs.Construct, id *string, config *DataStackitMongodbflexInstanceConfig) {
 	_init_.Initialize()
 
