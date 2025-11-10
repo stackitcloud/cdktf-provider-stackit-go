@@ -40,6 +40,9 @@ type ObservabilityInstanceAlertConfigRouteRoutesOutputReference interface {
 	SetInternalValue(val interface{})
 	Match() *map[string]*string
 	SetMatch(val *map[string]*string)
+	Matchers() *[]*string
+	SetMatchers(val *[]*string)
+	MatchersInput() *[]*string
 	MatchInput() *map[string]*string
 	MatchRegex() *map[string]*string
 	SetMatchRegex(val *map[string]*string)
@@ -86,6 +89,7 @@ type ObservabilityInstanceAlertConfigRouteRoutesOutputReference interface {
 	ResetGroupInterval()
 	ResetGroupWait()
 	ResetMatch()
+	ResetMatchers()
 	ResetMatchRegex()
 	ResetRepeatInterval()
 	// Produce the Token's value at resolution time.
@@ -218,6 +222,26 @@ func (j *jsiiProxy_ObservabilityInstanceAlertConfigRouteRoutesOutputReference) M
 	_jsii_.Get(
 		j,
 		"match",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityInstanceAlertConfigRouteRoutesOutputReference) Matchers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"matchers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityInstanceAlertConfigRouteRoutesOutputReference) MatchersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"matchersInput",
 		&returns,
 	)
 	return returns
@@ -414,6 +438,17 @@ func (j *jsiiProxy_ObservabilityInstanceAlertConfigRouteRoutesOutputReference)Se
 	_jsii_.Set(
 		j,
 		"match",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityInstanceAlertConfigRouteRoutesOutputReference)SetMatchers(val *[]*string) {
+	if err := j.validateSetMatchersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"matchers",
 		val,
 	)
 }
@@ -687,6 +722,14 @@ func (o *jsiiProxy_ObservabilityInstanceAlertConfigRouteRoutesOutputReference) R
 	_jsii_.InvokeVoid(
 		o,
 		"resetMatch",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityInstanceAlertConfigRouteRoutesOutputReference) ResetMatchers() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetMatchers",
 		nil, // no parameters
 	)
 }

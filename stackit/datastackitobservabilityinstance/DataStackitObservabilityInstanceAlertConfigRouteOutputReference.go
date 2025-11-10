@@ -32,8 +32,6 @@ type DataStackitObservabilityInstanceAlertConfigRouteOutputReference interface {
 	GroupWait() *string
 	InternalValue() *DataStackitObservabilityInstanceAlertConfigRoute
 	SetInternalValue(val *DataStackitObservabilityInstanceAlertConfigRoute)
-	Match() cdktf.StringMap
-	MatchRegex() cdktf.StringMap
 	Receiver() *string
 	RepeatInterval() *string
 	Routes() DataStackitObservabilityInstanceAlertConfigRouteRoutesList
@@ -159,26 +157,6 @@ func (j *jsiiProxy_DataStackitObservabilityInstanceAlertConfigRouteOutputReferen
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataStackitObservabilityInstanceAlertConfigRouteOutputReference) Match() cdktf.StringMap {
-	var returns cdktf.StringMap
-	_jsii_.Get(
-		j,
-		"match",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataStackitObservabilityInstanceAlertConfigRouteOutputReference) MatchRegex() cdktf.StringMap {
-	var returns cdktf.StringMap
-	_jsii_.Get(
-		j,
-		"matchRegex",
 		&returns,
 	)
 	return returns

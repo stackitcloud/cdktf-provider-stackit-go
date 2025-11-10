@@ -21,15 +21,15 @@ type DataStackitRoutingTablesConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The network area ID to which the routing table is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.63.0/docs/data-sources/routing_tables#network_area_id DataStackitRoutingTables#network_area_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.64.0/docs/data-sources/routing_tables#network_area_id DataStackitRoutingTables#network_area_id}
 	NetworkAreaId *string `field:"required" json:"networkAreaId" yaml:"networkAreaId"`
 	// STACKIT organization ID to which the routing table is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.63.0/docs/data-sources/routing_tables#organization_id DataStackitRoutingTables#organization_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.64.0/docs/data-sources/routing_tables#organization_id DataStackitRoutingTables#organization_id}
 	OrganizationId *string `field:"required" json:"organizationId" yaml:"organizationId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.63.0/docs/data-sources/routing_tables#region DataStackitRoutingTables#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.64.0/docs/data-sources/routing_tables#region DataStackitRoutingTables#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

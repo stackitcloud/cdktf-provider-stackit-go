@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.63.0/docs/resources/service_account_access_token stackit_service_account_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.64.0/docs/resources/service_account_access_token stackit_service_account_access_token}.
 type ServiceAccountAccessToken interface {
 	cdktf.TerraformResource
 	AccessTokenId() *string
@@ -443,7 +443,7 @@ func (j *jsiiProxy_ServiceAccountAccessToken) ValidUntil() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.63.0/docs/resources/service_account_access_token stackit_service_account_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.64.0/docs/resources/service_account_access_token stackit_service_account_access_token} Resource.
 func NewServiceAccountAccessToken(scope constructs.Construct, id *string, config *ServiceAccountAccessTokenConfig) ServiceAccountAccessToken {
 	_init_.Initialize()
 
@@ -461,7 +461,7 @@ func NewServiceAccountAccessToken(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.63.0/docs/resources/service_account_access_token stackit_service_account_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.64.0/docs/resources/service_account_access_token stackit_service_account_access_token} Resource.
 func NewServiceAccountAccessToken_Override(s ServiceAccountAccessToken, scope constructs.Construct, id *string, config *ServiceAccountAccessTokenConfig) {
 	_init_.Initialize()
 

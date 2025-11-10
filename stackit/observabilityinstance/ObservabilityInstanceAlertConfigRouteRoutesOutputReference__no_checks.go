@@ -76,6 +76,10 @@ func (j *jsiiProxy_ObservabilityInstanceAlertConfigRouteRoutesOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityInstanceAlertConfigRouteRoutesOutputReference) validateSetMatchersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityInstanceAlertConfigRouteRoutesOutputReference) validateSetMatchRegexParameters(val *map[string]*string) error {
 	return nil
 }

@@ -21,11 +21,11 @@ type DataStackitAffinityGroupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The affinity group ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.63.0/docs/data-sources/affinity_group#affinity_group_id DataStackitAffinityGroup#affinity_group_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.64.0/docs/data-sources/affinity_group#affinity_group_id DataStackitAffinityGroup#affinity_group_id}
 	AffinityGroupId *string `field:"required" json:"affinityGroupId" yaml:"affinityGroupId"`
 	// STACKIT Project ID to which the affinity group is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.63.0/docs/data-sources/affinity_group#project_id DataStackitAffinityGroup#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.64.0/docs/data-sources/affinity_group#project_id DataStackitAffinityGroup#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 
