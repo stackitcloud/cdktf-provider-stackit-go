@@ -21,19 +21,19 @@ type NetworkConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the network.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.26.0/docs/resources/network#name Network#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.26.1/docs/resources/network#name Network#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The nameservers of the network.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.26.0/docs/resources/network#nameservers Network#nameservers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.26.1/docs/resources/network#nameservers Network#nameservers}
 	Nameservers *[]*string `field:"required" json:"nameservers" yaml:"nameservers"`
 	// STACKIT project ID to which the network is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.26.0/docs/resources/network#project_id Network#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.26.1/docs/resources/network#project_id Network#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The IPv4 prefix length of the network.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.26.0/docs/resources/network#ipv4_prefix_length Network#ipv4_prefix_length}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.26.1/docs/resources/network#ipv4_prefix_length Network#ipv4_prefix_length}
 	Ipv4PrefixLength *float64 `field:"optional" json:"ipv4PrefixLength" yaml:"ipv4PrefixLength"`
 }
 
