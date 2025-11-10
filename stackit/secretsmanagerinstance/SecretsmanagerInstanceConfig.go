@@ -21,17 +21,17 @@ type SecretsmanagerInstanceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Instance name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.59.0/docs/resources/secretsmanager_instance#name SecretsmanagerInstance#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.60.0/docs/resources/secretsmanager_instance#name SecretsmanagerInstance#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// STACKIT project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.59.0/docs/resources/secretsmanager_instance#project_id SecretsmanagerInstance#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.60.0/docs/resources/secretsmanager_instance#project_id SecretsmanagerInstance#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The access control list for this instance.
 	//
 	// Each entry is an IP or IP range that is permitted to access, in CIDR notation
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.59.0/docs/resources/secretsmanager_instance#acls SecretsmanagerInstance#acls}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.60.0/docs/resources/secretsmanager_instance#acls SecretsmanagerInstance#acls}
 	Acls *[]*string `field:"optional" json:"acls" yaml:"acls"`
 }
 

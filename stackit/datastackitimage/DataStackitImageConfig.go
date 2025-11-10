@@ -21,11 +21,11 @@ type DataStackitImageConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The image ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.59.0/docs/data-sources/image#image_id DataStackitImage#image_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.60.0/docs/data-sources/image#image_id DataStackitImage#image_id}
 	ImageId *string `field:"required" json:"imageId" yaml:"imageId"`
 	// STACKIT project ID to which the image is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.59.0/docs/data-sources/image#project_id DataStackitImage#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.60.0/docs/data-sources/image#project_id DataStackitImage#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

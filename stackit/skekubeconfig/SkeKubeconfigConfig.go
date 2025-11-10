@@ -21,23 +21,23 @@ type SkeKubeconfigConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the SKE cluster.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.59.0/docs/resources/ske_kubeconfig#cluster_name SkeKubeconfig#cluster_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.60.0/docs/resources/ske_kubeconfig#cluster_name SkeKubeconfig#cluster_name}
 	ClusterName *string `field:"required" json:"clusterName" yaml:"clusterName"`
 	// STACKIT project ID to which the cluster is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.59.0/docs/resources/ske_kubeconfig#project_id SkeKubeconfig#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.60.0/docs/resources/ske_kubeconfig#project_id SkeKubeconfig#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Expiration time of the kubeconfig, in seconds. Defaults to `3600`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.59.0/docs/resources/ske_kubeconfig#expiration SkeKubeconfig#expiration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.60.0/docs/resources/ske_kubeconfig#expiration SkeKubeconfig#expiration}
 	Expiration *float64 `field:"optional" json:"expiration" yaml:"expiration"`
 	// If set to true, the provider will check if the kubeconfig has expired and will generated a new valid one in-place.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.59.0/docs/resources/ske_kubeconfig#refresh SkeKubeconfig#refresh}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.60.0/docs/resources/ske_kubeconfig#refresh SkeKubeconfig#refresh}
 	Refresh interface{} `field:"optional" json:"refresh" yaml:"refresh"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.59.0/docs/resources/ske_kubeconfig#region SkeKubeconfig#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.60.0/docs/resources/ske_kubeconfig#region SkeKubeconfig#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

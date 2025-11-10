@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.59.0/docs/data-sources/routing_tables stackit_routing_tables}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.60.0/docs/data-sources/routing_tables stackit_routing_tables}.
 type DataStackitRoutingTables interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataStackitRoutingTables) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.59.0/docs/data-sources/routing_tables stackit_routing_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.60.0/docs/data-sources/routing_tables stackit_routing_tables} Data Source.
 func NewDataStackitRoutingTables(scope constructs.Construct, id *string, config *DataStackitRoutingTablesConfig) DataStackitRoutingTables {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewDataStackitRoutingTables(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.59.0/docs/data-sources/routing_tables stackit_routing_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.60.0/docs/data-sources/routing_tables stackit_routing_tables} Data Source.
 func NewDataStackitRoutingTables_Override(d DataStackitRoutingTables, scope constructs.Construct, id *string, config *DataStackitRoutingTablesConfig) {
 	_init_.Initialize()
 

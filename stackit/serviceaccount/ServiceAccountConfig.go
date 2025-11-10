@@ -21,11 +21,11 @@ type ServiceAccountConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the service account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.59.0/docs/resources/service_account#name ServiceAccount#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.60.0/docs/resources/service_account#name ServiceAccount#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// STACKIT project ID to which the service account is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.59.0/docs/resources/service_account#project_id ServiceAccount#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.60.0/docs/resources/service_account#project_id ServiceAccount#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 
