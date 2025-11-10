@@ -21,15 +21,15 @@ type PublicIpConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT project ID to which the public IP is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.1/docs/resources/public_ip#project_id PublicIp#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.2/docs/resources/public_ip#project_id PublicIp#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Labels are key-value string pairs which can be attached to a resource container.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.1/docs/resources/public_ip#labels PublicIp#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.2/docs/resources/public_ip#labels PublicIp#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// Associates the public IP with a network interface or a virtual IP (ID).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.1/docs/resources/public_ip#network_interface_id PublicIp#network_interface_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.34.2/docs/resources/public_ip#network_interface_id PublicIp#network_interface_id}
 	NetworkInterfaceId *string `field:"optional" json:"networkInterfaceId" yaml:"networkInterfaceId"`
 }
 
