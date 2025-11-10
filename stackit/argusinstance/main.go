@@ -15,6 +15,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "aclInput", GoGetter: "AclInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "alertConfig", GoGetter: "AlertConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "alertConfigInput", GoGetter: "AlertConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "alertingUrl", GoGetter: "AlertingUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
@@ -74,8 +76,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "projectIdInput", GoGetter: "ProjectIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putAlertConfig", GoMethod: "PutAlertConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAcl", GoMethod: "ResetAcl"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAlertConfig", GoMethod: "ResetAlertConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMetricsRetentionDays", GoMethod: "ResetMetricsRetentionDays"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMetricsRetentionDays1HDownsampling", GoMethod: "ResetMetricsRetentionDays1HDownsampling"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMetricsRetentionDays5MDownsampling", GoMethod: "ResetMetricsRetentionDays5MDownsampling"},
@@ -96,6 +100,529 @@ func init() {
 		func() interface{} {
 			j := jsiiProxy_ArgusInstance{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"stackit.argusInstance.ArgusInstanceAlertConfig",
+		reflect.TypeOf((*ArgusInstanceAlertConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"stackit.argusInstance.ArgusInstanceAlertConfigGlobal",
+		reflect.TypeOf((*ArgusInstanceAlertConfigGlobal)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"stackit.argusInstance.ArgusInstanceAlertConfigGlobalOutputReference",
+		reflect.TypeOf((*ArgusInstanceAlertConfigGlobalOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "opsgenieApiKey", GoGetter: "OpsgenieApiKey"},
+			_jsii_.MemberProperty{JsiiProperty: "opsgenieApiKeyInput", GoGetter: "OpsgenieApiKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "opsgenieApiUrl", GoGetter: "OpsgenieApiUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "opsgenieApiUrlInput", GoGetter: "OpsgenieApiUrlInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOpsgenieApiKey", GoMethod: "ResetOpsgenieApiKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOpsgenieApiUrl", GoMethod: "ResetOpsgenieApiUrl"},
+			_jsii_.MemberMethod{JsiiMethod: "resetResolveTimeout", GoMethod: "ResetResolveTimeout"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSmtpAuthIdentity", GoMethod: "ResetSmtpAuthIdentity"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSmtpAuthPassword", GoMethod: "ResetSmtpAuthPassword"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSmtpAuthUsername", GoMethod: "ResetSmtpAuthUsername"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSmtpFrom", GoMethod: "ResetSmtpFrom"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSmtpSmartHost", GoMethod: "ResetSmtpSmartHost"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "resolveTimeout", GoGetter: "ResolveTimeout"},
+			_jsii_.MemberProperty{JsiiProperty: "resolveTimeoutInput", GoGetter: "ResolveTimeoutInput"},
+			_jsii_.MemberProperty{JsiiProperty: "smtpAuthIdentity", GoGetter: "SmtpAuthIdentity"},
+			_jsii_.MemberProperty{JsiiProperty: "smtpAuthIdentityInput", GoGetter: "SmtpAuthIdentityInput"},
+			_jsii_.MemberProperty{JsiiProperty: "smtpAuthPassword", GoGetter: "SmtpAuthPassword"},
+			_jsii_.MemberProperty{JsiiProperty: "smtpAuthPasswordInput", GoGetter: "SmtpAuthPasswordInput"},
+			_jsii_.MemberProperty{JsiiProperty: "smtpAuthUsername", GoGetter: "SmtpAuthUsername"},
+			_jsii_.MemberProperty{JsiiProperty: "smtpAuthUsernameInput", GoGetter: "SmtpAuthUsernameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "smtpFrom", GoGetter: "SmtpFrom"},
+			_jsii_.MemberProperty{JsiiProperty: "smtpFromInput", GoGetter: "SmtpFromInput"},
+			_jsii_.MemberProperty{JsiiProperty: "smtpSmartHost", GoGetter: "SmtpSmartHost"},
+			_jsii_.MemberProperty{JsiiProperty: "smtpSmartHostInput", GoGetter: "SmtpSmartHostInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ArgusInstanceAlertConfigGlobalOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"stackit.argusInstance.ArgusInstanceAlertConfigOutputReference",
+		reflect.TypeOf((*ArgusInstanceAlertConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "global", GoGetter: "Global"},
+			_jsii_.MemberProperty{JsiiProperty: "globalInput", GoGetter: "GlobalInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putGlobal", GoMethod: "PutGlobal"},
+			_jsii_.MemberMethod{JsiiMethod: "putReceivers", GoMethod: "PutReceivers"},
+			_jsii_.MemberMethod{JsiiMethod: "putRoute", GoMethod: "PutRoute"},
+			_jsii_.MemberProperty{JsiiProperty: "receivers", GoGetter: "Receivers"},
+			_jsii_.MemberProperty{JsiiProperty: "receiversInput", GoGetter: "ReceiversInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGlobal", GoMethod: "ResetGlobal"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "route", GoGetter: "Route"},
+			_jsii_.MemberProperty{JsiiProperty: "routeInput", GoGetter: "RouteInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ArgusInstanceAlertConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"stackit.argusInstance.ArgusInstanceAlertConfigReceivers",
+		reflect.TypeOf((*ArgusInstanceAlertConfigReceivers)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"stackit.argusInstance.ArgusInstanceAlertConfigReceiversEmailConfigs",
+		reflect.TypeOf((*ArgusInstanceAlertConfigReceiversEmailConfigs)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"stackit.argusInstance.ArgusInstanceAlertConfigReceiversEmailConfigsList",
+		reflect.TypeOf((*ArgusInstanceAlertConfigReceiversEmailConfigsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ArgusInstanceAlertConfigReceiversEmailConfigsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"stackit.argusInstance.ArgusInstanceAlertConfigReceiversEmailConfigsOutputReference",
+		reflect.TypeOf((*ArgusInstanceAlertConfigReceiversEmailConfigsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "authIdentity", GoGetter: "AuthIdentity"},
+			_jsii_.MemberProperty{JsiiProperty: "authIdentityInput", GoGetter: "AuthIdentityInput"},
+			_jsii_.MemberProperty{JsiiProperty: "authPassword", GoGetter: "AuthPassword"},
+			_jsii_.MemberProperty{JsiiProperty: "authPasswordInput", GoGetter: "AuthPasswordInput"},
+			_jsii_.MemberProperty{JsiiProperty: "authUsername", GoGetter: "AuthUsername"},
+			_jsii_.MemberProperty{JsiiProperty: "authUsernameInput", GoGetter: "AuthUsernameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberProperty{JsiiProperty: "from", GoGetter: "From"},
+			_jsii_.MemberProperty{JsiiProperty: "fromInput", GoGetter: "FromInput"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuthIdentity", GoMethod: "ResetAuthIdentity"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuthPassword", GoMethod: "ResetAuthPassword"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuthUsername", GoMethod: "ResetAuthUsername"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFrom", GoMethod: "ResetFrom"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSmartHost", GoMethod: "ResetSmartHost"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTo", GoMethod: "ResetTo"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "smartHost", GoGetter: "SmartHost"},
+			_jsii_.MemberProperty{JsiiProperty: "smartHostInput", GoGetter: "SmartHostInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "to", GoGetter: "To"},
+			_jsii_.MemberProperty{JsiiProperty: "toInput", GoGetter: "ToInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ArgusInstanceAlertConfigReceiversEmailConfigsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"stackit.argusInstance.ArgusInstanceAlertConfigReceiversList",
+		reflect.TypeOf((*ArgusInstanceAlertConfigReceiversList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ArgusInstanceAlertConfigReceiversList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"stackit.argusInstance.ArgusInstanceAlertConfigReceiversOpsgenieConfigs",
+		reflect.TypeOf((*ArgusInstanceAlertConfigReceiversOpsgenieConfigs)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"stackit.argusInstance.ArgusInstanceAlertConfigReceiversOpsgenieConfigsList",
+		reflect.TypeOf((*ArgusInstanceAlertConfigReceiversOpsgenieConfigsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ArgusInstanceAlertConfigReceiversOpsgenieConfigsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"stackit.argusInstance.ArgusInstanceAlertConfigReceiversOpsgenieConfigsOutputReference",
+		reflect.TypeOf((*ArgusInstanceAlertConfigReceiversOpsgenieConfigsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "apiKey", GoGetter: "ApiKey"},
+			_jsii_.MemberProperty{JsiiProperty: "apiKeyInput", GoGetter: "ApiKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "apiUrl", GoGetter: "ApiUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "apiUrlInput", GoGetter: "ApiUrlInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetApiKey", GoMethod: "ResetApiKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetApiUrl", GoMethod: "ResetApiUrl"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
+			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ArgusInstanceAlertConfigReceiversOpsgenieConfigsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"stackit.argusInstance.ArgusInstanceAlertConfigReceiversOutputReference",
+		reflect.TypeOf((*ArgusInstanceAlertConfigReceiversOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "emailConfigs", GoGetter: "EmailConfigs"},
+			_jsii_.MemberProperty{JsiiProperty: "emailConfigsInput", GoGetter: "EmailConfigsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "opsgenieConfigs", GoGetter: "OpsgenieConfigs"},
+			_jsii_.MemberProperty{JsiiProperty: "opsgenieConfigsInput", GoGetter: "OpsgenieConfigsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putEmailConfigs", GoMethod: "PutEmailConfigs"},
+			_jsii_.MemberMethod{JsiiMethod: "putOpsgenieConfigs", GoMethod: "PutOpsgenieConfigs"},
+			_jsii_.MemberMethod{JsiiMethod: "putWebhooksConfigs", GoMethod: "PutWebhooksConfigs"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEmailConfigs", GoMethod: "ResetEmailConfigs"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOpsgenieConfigs", GoMethod: "ResetOpsgenieConfigs"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWebhooksConfigs", GoMethod: "ResetWebhooksConfigs"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "webhooksConfigs", GoGetter: "WebhooksConfigs"},
+			_jsii_.MemberProperty{JsiiProperty: "webhooksConfigsInput", GoGetter: "WebhooksConfigsInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ArgusInstanceAlertConfigReceiversOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"stackit.argusInstance.ArgusInstanceAlertConfigReceiversWebhooksConfigs",
+		reflect.TypeOf((*ArgusInstanceAlertConfigReceiversWebhooksConfigs)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"stackit.argusInstance.ArgusInstanceAlertConfigReceiversWebhooksConfigsList",
+		reflect.TypeOf((*ArgusInstanceAlertConfigReceiversWebhooksConfigsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ArgusInstanceAlertConfigReceiversWebhooksConfigsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"stackit.argusInstance.ArgusInstanceAlertConfigReceiversWebhooksConfigsOutputReference",
+		reflect.TypeOf((*ArgusInstanceAlertConfigReceiversWebhooksConfigsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "msTeams", GoGetter: "MsTeams"},
+			_jsii_.MemberProperty{JsiiProperty: "msTeamsInput", GoGetter: "MsTeamsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMsTeams", GoMethod: "ResetMsTeams"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUrl", GoMethod: "ResetUrl"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
+			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ArgusInstanceAlertConfigReceiversWebhooksConfigsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"stackit.argusInstance.ArgusInstanceAlertConfigRoute",
+		reflect.TypeOf((*ArgusInstanceAlertConfigRoute)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"stackit.argusInstance.ArgusInstanceAlertConfigRouteOutputReference",
+		reflect.TypeOf((*ArgusInstanceAlertConfigRouteOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "groupBy", GoGetter: "GroupBy"},
+			_jsii_.MemberProperty{JsiiProperty: "groupByInput", GoGetter: "GroupByInput"},
+			_jsii_.MemberProperty{JsiiProperty: "groupInterval", GoGetter: "GroupInterval"},
+			_jsii_.MemberProperty{JsiiProperty: "groupIntervalInput", GoGetter: "GroupIntervalInput"},
+			_jsii_.MemberProperty{JsiiProperty: "groupWait", GoGetter: "GroupWait"},
+			_jsii_.MemberProperty{JsiiProperty: "groupWaitInput", GoGetter: "GroupWaitInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "match", GoGetter: "Match"},
+			_jsii_.MemberProperty{JsiiProperty: "matchInput", GoGetter: "MatchInput"},
+			_jsii_.MemberProperty{JsiiProperty: "matchRegex", GoGetter: "MatchRegex"},
+			_jsii_.MemberProperty{JsiiProperty: "matchRegexInput", GoGetter: "MatchRegexInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putRoutes", GoMethod: "PutRoutes"},
+			_jsii_.MemberProperty{JsiiProperty: "receiver", GoGetter: "Receiver"},
+			_jsii_.MemberProperty{JsiiProperty: "receiverInput", GoGetter: "ReceiverInput"},
+			_jsii_.MemberProperty{JsiiProperty: "repeatInterval", GoGetter: "RepeatInterval"},
+			_jsii_.MemberProperty{JsiiProperty: "repeatIntervalInput", GoGetter: "RepeatIntervalInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGroupBy", GoMethod: "ResetGroupBy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGroupInterval", GoMethod: "ResetGroupInterval"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGroupWait", GoMethod: "ResetGroupWait"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMatch", GoMethod: "ResetMatch"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMatchRegex", GoMethod: "ResetMatchRegex"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRepeatInterval", GoMethod: "ResetRepeatInterval"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRoutes", GoMethod: "ResetRoutes"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "routes", GoGetter: "Routes"},
+			_jsii_.MemberProperty{JsiiProperty: "routesInput", GoGetter: "RoutesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ArgusInstanceAlertConfigRouteOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"stackit.argusInstance.ArgusInstanceAlertConfigRouteRoutes",
+		reflect.TypeOf((*ArgusInstanceAlertConfigRouteRoutes)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"stackit.argusInstance.ArgusInstanceAlertConfigRouteRoutesList",
+		reflect.TypeOf((*ArgusInstanceAlertConfigRouteRoutesList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ArgusInstanceAlertConfigRouteRoutesList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"stackit.argusInstance.ArgusInstanceAlertConfigRouteRoutesOutputReference",
+		reflect.TypeOf((*ArgusInstanceAlertConfigRouteRoutesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "groupBy", GoGetter: "GroupBy"},
+			_jsii_.MemberProperty{JsiiProperty: "groupByInput", GoGetter: "GroupByInput"},
+			_jsii_.MemberProperty{JsiiProperty: "groupInterval", GoGetter: "GroupInterval"},
+			_jsii_.MemberProperty{JsiiProperty: "groupIntervalInput", GoGetter: "GroupIntervalInput"},
+			_jsii_.MemberProperty{JsiiProperty: "groupWait", GoGetter: "GroupWait"},
+			_jsii_.MemberProperty{JsiiProperty: "groupWaitInput", GoGetter: "GroupWaitInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "match", GoGetter: "Match"},
+			_jsii_.MemberProperty{JsiiProperty: "matchInput", GoGetter: "MatchInput"},
+			_jsii_.MemberProperty{JsiiProperty: "matchRegex", GoGetter: "MatchRegex"},
+			_jsii_.MemberProperty{JsiiProperty: "matchRegexInput", GoGetter: "MatchRegexInput"},
+			_jsii_.MemberProperty{JsiiProperty: "receiver", GoGetter: "Receiver"},
+			_jsii_.MemberProperty{JsiiProperty: "receiverInput", GoGetter: "ReceiverInput"},
+			_jsii_.MemberProperty{JsiiProperty: "repeatInterval", GoGetter: "RepeatInterval"},
+			_jsii_.MemberProperty{JsiiProperty: "repeatIntervalInput", GoGetter: "RepeatIntervalInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGroupBy", GoMethod: "ResetGroupBy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGroupInterval", GoMethod: "ResetGroupInterval"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGroupWait", GoMethod: "ResetGroupWait"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMatch", GoMethod: "ResetMatch"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMatchRegex", GoMethod: "ResetMatchRegex"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRepeatInterval", GoMethod: "ResetRepeatInterval"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ArgusInstanceAlertConfigRouteRoutesOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
 	)

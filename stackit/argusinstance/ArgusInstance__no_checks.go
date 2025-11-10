@@ -72,6 +72,10 @@ func (a *jsiiProxy_ArgusInstance) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (a *jsiiProxy_ArgusInstance) validatePutAlertConfigParameters(value *ArgusInstanceAlertConfig) error {
+	return nil
+}
+
 func validateArgusInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
