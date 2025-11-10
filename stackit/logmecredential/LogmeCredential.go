@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.2/docs/resources/logme_credential stackit_logme_credential}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.3/docs/resources/logme_credential stackit_logme_credential}.
 type LogmeCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -38,8 +38,6 @@ type LogmeCredential interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Host() *string
-	Hosts() *[]*string
-	HttpApiUri() *string
 	Id() *string
 	InstanceId() *string
 	SetInstanceId(val *string)
@@ -48,7 +46,6 @@ type LogmeCredential interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Name() *string
 	// The tree node.
 	Node() constructs.Node
 	Password() *string
@@ -238,26 +235,6 @@ func (j *jsiiProxy_LogmeCredential) Host() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LogmeCredential) Hosts() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"hosts",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LogmeCredential) HttpApiUri() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"httpApiUri",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_LogmeCredential) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -293,16 +270,6 @@ func (j *jsiiProxy_LogmeCredential) Lifecycle() *cdktf.TerraformResourceLifecycl
 	_jsii_.Get(
 		j,
 		"lifecycle",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LogmeCredential) Name() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"name",
 		&returns,
 	)
 	return returns
@@ -439,7 +406,7 @@ func (j *jsiiProxy_LogmeCredential) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.2/docs/resources/logme_credential stackit_logme_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.3/docs/resources/logme_credential stackit_logme_credential} Resource.
 func NewLogmeCredential(scope constructs.Construct, id *string, config *LogmeCredentialConfig) LogmeCredential {
 	_init_.Initialize()
 
@@ -457,7 +424,7 @@ func NewLogmeCredential(scope constructs.Construct, id *string, config *LogmeCre
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.2/docs/resources/logme_credential stackit_logme_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.3/docs/resources/logme_credential stackit_logme_credential} Resource.
 func NewLogmeCredential_Override(l LogmeCredential, scope constructs.Construct, id *string, config *LogmeCredentialConfig) {
 	_init_.Initialize()
 

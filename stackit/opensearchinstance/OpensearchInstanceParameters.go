@@ -2,7 +2,7 @@ package opensearchinstance
 
 
 type OpensearchInstanceParameters struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.2/docs/resources/opensearch_instance#sgw_acl OpensearchInstance#sgw_acl}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.3/docs/resources/opensearch_instance#sgw_acl OpensearchInstance#sgw_acl}.
 	SgwAcl *string `field:"optional" json:"sgwAcl" yaml:"sgwAcl"`
 }
 

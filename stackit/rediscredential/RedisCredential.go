@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.2/docs/resources/redis_credential stackit_redis_credential}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.3/docs/resources/redis_credential stackit_redis_credential}.
 type RedisCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -39,7 +39,6 @@ type RedisCredential interface {
 	FriendlyUniqueId() *string
 	Host() *string
 	Hosts() *[]*string
-	HttpApiUri() *string
 	Id() *string
 	InstanceId() *string
 	SetInstanceId(val *string)
@@ -48,7 +47,7 @@ type RedisCredential interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Name() *string
+	LoadBalancedHost() *string
 	// The tree node.
 	Node() constructs.Node
 	Password() *string
@@ -248,16 +247,6 @@ func (j *jsiiProxy_RedisCredential) Hosts() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_RedisCredential) HttpApiUri() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"httpApiUri",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_RedisCredential) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -298,11 +287,11 @@ func (j *jsiiProxy_RedisCredential) Lifecycle() *cdktf.TerraformResourceLifecycl
 	return returns
 }
 
-func (j *jsiiProxy_RedisCredential) Name() *string {
+func (j *jsiiProxy_RedisCredential) LoadBalancedHost() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"name",
+		"loadBalancedHost",
 		&returns,
 	)
 	return returns
@@ -439,7 +428,7 @@ func (j *jsiiProxy_RedisCredential) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.2/docs/resources/redis_credential stackit_redis_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.3/docs/resources/redis_credential stackit_redis_credential} Resource.
 func NewRedisCredential(scope constructs.Construct, id *string, config *RedisCredentialConfig) RedisCredential {
 	_init_.Initialize()
 
@@ -457,7 +446,7 @@ func NewRedisCredential(scope constructs.Construct, id *string, config *RedisCre
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.2/docs/resources/redis_credential stackit_redis_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.3/docs/resources/redis_credential stackit_redis_credential} Resource.
 func NewRedisCredential_Override(r RedisCredential, scope constructs.Construct, id *string, config *RedisCredentialConfig) {
 	_init_.Initialize()
 

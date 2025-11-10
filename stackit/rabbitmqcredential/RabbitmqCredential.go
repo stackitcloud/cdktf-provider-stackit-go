@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.2/docs/resources/rabbitmq_credential stackit_rabbitmq_credential}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.3/docs/resources/rabbitmq_credential stackit_rabbitmq_credential}.
 type RabbitmqCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -40,6 +40,7 @@ type RabbitmqCredential interface {
 	Host() *string
 	Hosts() *[]*string
 	HttpApiUri() *string
+	HttpApiUris() *[]*string
 	Id() *string
 	InstanceId() *string
 	SetInstanceId(val *string)
@@ -48,7 +49,7 @@ type RabbitmqCredential interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Name() *string
+	Management() *string
 	// The tree node.
 	Node() constructs.Node
 	Password() *string
@@ -73,6 +74,7 @@ type RabbitmqCredential interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Uri() *string
+	Uris() *[]*string
 	Username() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -258,6 +260,16 @@ func (j *jsiiProxy_RabbitmqCredential) HttpApiUri() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RabbitmqCredential) HttpApiUris() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"httpApiUris",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RabbitmqCredential) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -298,11 +310,11 @@ func (j *jsiiProxy_RabbitmqCredential) Lifecycle() *cdktf.TerraformResourceLifec
 	return returns
 }
 
-func (j *jsiiProxy_RabbitmqCredential) Name() *string {
+func (j *jsiiProxy_RabbitmqCredential) Management() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"name",
+		"management",
 		&returns,
 	)
 	return returns
@@ -428,6 +440,16 @@ func (j *jsiiProxy_RabbitmqCredential) Uri() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RabbitmqCredential) Uris() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"uris",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RabbitmqCredential) Username() *string {
 	var returns *string
 	_jsii_.Get(
@@ -439,7 +461,7 @@ func (j *jsiiProxy_RabbitmqCredential) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.2/docs/resources/rabbitmq_credential stackit_rabbitmq_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.3/docs/resources/rabbitmq_credential stackit_rabbitmq_credential} Resource.
 func NewRabbitmqCredential(scope constructs.Construct, id *string, config *RabbitmqCredentialConfig) RabbitmqCredential {
 	_init_.Initialize()
 
@@ -457,7 +479,7 @@ func NewRabbitmqCredential(scope constructs.Construct, id *string, config *Rabbi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.2/docs/resources/rabbitmq_credential stackit_rabbitmq_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.3/docs/resources/rabbitmq_credential stackit_rabbitmq_credential} Resource.
 func NewRabbitmqCredential_Override(r RabbitmqCredential, scope constructs.Construct, id *string, config *RabbitmqCredentialConfig) {
 	_init_.Initialize()
 

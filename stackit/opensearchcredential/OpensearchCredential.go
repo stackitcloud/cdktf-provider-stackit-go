@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.2/docs/resources/opensearch_credential stackit_opensearch_credential}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.3/docs/resources/opensearch_credential stackit_opensearch_credential}.
 type OpensearchCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -39,7 +39,6 @@ type OpensearchCredential interface {
 	FriendlyUniqueId() *string
 	Host() *string
 	Hosts() *[]*string
-	HttpApiUri() *string
 	Id() *string
 	InstanceId() *string
 	SetInstanceId(val *string)
@@ -48,7 +47,6 @@ type OpensearchCredential interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	Name() *string
 	// The tree node.
 	Node() constructs.Node
 	Password() *string
@@ -66,6 +64,7 @@ type OpensearchCredential interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Scheme() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -248,16 +247,6 @@ func (j *jsiiProxy_OpensearchCredential) Hosts() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchCredential) HttpApiUri() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"httpApiUri",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_OpensearchCredential) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -293,16 +282,6 @@ func (j *jsiiProxy_OpensearchCredential) Lifecycle() *cdktf.TerraformResourceLif
 	_jsii_.Get(
 		j,
 		"lifecycle",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_OpensearchCredential) Name() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"name",
 		&returns,
 	)
 	return returns
@@ -388,6 +367,16 @@ func (j *jsiiProxy_OpensearchCredential) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_OpensearchCredential) Scheme() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scheme",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OpensearchCredential) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -439,7 +428,7 @@ func (j *jsiiProxy_OpensearchCredential) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.2/docs/resources/opensearch_credential stackit_opensearch_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.3/docs/resources/opensearch_credential stackit_opensearch_credential} Resource.
 func NewOpensearchCredential(scope constructs.Construct, id *string, config *OpensearchCredentialConfig) OpensearchCredential {
 	_init_.Initialize()
 
@@ -457,7 +446,7 @@ func NewOpensearchCredential(scope constructs.Construct, id *string, config *Ope
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.2/docs/resources/opensearch_credential stackit_opensearch_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.15.3/docs/resources/opensearch_credential stackit_opensearch_credential} Resource.
 func NewOpensearchCredential_Override(o OpensearchCredential, scope constructs.Construct, id *string, config *OpensearchCredentialConfig) {
 	_init_.Initialize()
 
