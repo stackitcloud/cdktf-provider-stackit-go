@@ -19,21 +19,21 @@ type MongodbflexUserConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.7.1/docs/resources/mongodbflex_user#database MongodbflexUser#database}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.8.0/docs/resources/mongodbflex_user#database MongodbflexUser#database}.
 	Database *string `field:"required" json:"database" yaml:"database"`
 	// ID of the MongoDB Flex instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.7.1/docs/resources/mongodbflex_user#instance_id MongodbflexUser#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.8.0/docs/resources/mongodbflex_user#instance_id MongodbflexUser#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// STACKIT project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.7.1/docs/resources/mongodbflex_user#project_id MongodbflexUser#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.8.0/docs/resources/mongodbflex_user#project_id MongodbflexUser#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Database access levels for the user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.7.1/docs/resources/mongodbflex_user#roles MongodbflexUser#roles}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.8.0/docs/resources/mongodbflex_user#roles MongodbflexUser#roles}
 	Roles *[]*string `field:"required" json:"roles" yaml:"roles"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.7.1/docs/resources/mongodbflex_user#username MongodbflexUser#username}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.8.0/docs/resources/mongodbflex_user#username MongodbflexUser#username}.
 	Username *string `field:"optional" json:"username" yaml:"username"`
 }
 

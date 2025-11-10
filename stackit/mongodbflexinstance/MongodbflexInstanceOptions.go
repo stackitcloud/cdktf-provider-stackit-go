@@ -2,7 +2,7 @@ package mongodbflexinstance
 
 
 type MongodbflexInstanceOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.7.1/docs/resources/mongodbflex_instance#type MongodbflexInstance#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.8.0/docs/resources/mongodbflex_instance#type MongodbflexInstance#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

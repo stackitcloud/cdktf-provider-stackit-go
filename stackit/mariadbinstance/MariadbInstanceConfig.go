@@ -21,21 +21,21 @@ type MariadbInstanceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Instance name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.7.1/docs/resources/mariadb_instance#name MariadbInstance#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.8.0/docs/resources/mariadb_instance#name MariadbInstance#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The selected plan name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.7.1/docs/resources/mariadb_instance#plan_name MariadbInstance#plan_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.8.0/docs/resources/mariadb_instance#plan_name MariadbInstance#plan_name}
 	PlanName *string `field:"required" json:"planName" yaml:"planName"`
 	// STACKIT project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.7.1/docs/resources/mariadb_instance#project_id MariadbInstance#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.8.0/docs/resources/mariadb_instance#project_id MariadbInstance#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The service version.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.7.1/docs/resources/mariadb_instance#version MariadbInstance#version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.8.0/docs/resources/mariadb_instance#version MariadbInstance#version}
 	Version *string `field:"required" json:"version" yaml:"version"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.7.1/docs/resources/mariadb_instance#parameters MariadbInstance#parameters}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.8.0/docs/resources/mariadb_instance#parameters MariadbInstance#parameters}.
 	Parameters *MariadbInstanceParameters `field:"optional" json:"parameters" yaml:"parameters"`
 }
 
