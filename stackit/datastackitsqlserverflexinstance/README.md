@@ -1,3 +1,3 @@
 # `data_stackit_sqlserverflex_instance`
 
-Refer to the Terraform Registry for docs: [`data_stackit_sqlserverflex_instance`](https://registry.terraform.io/providers/stackitcloud/stackit/0.30.1/docs/data-sources/sqlserverflex_instance).
+Refer to the Terraform Registry for docs: [`data_stackit_sqlserverflex_instance`](https://registry.terraform.io/providers/stackitcloud/stackit/0.31.0/docs/data-sources/sqlserverflex_instance).
