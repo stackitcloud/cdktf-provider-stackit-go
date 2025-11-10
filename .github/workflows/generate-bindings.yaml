@@ -55,13 +55,13 @@ jobs:
 
           # Download available versions of provider
           curl -s 'https://registry.terraform.io/v1/providers/stackitcloud/stackit' | jq -r '.versions.[]' | sort -V > provider-versions.txt
-          
+
           # Skip first two releases, as cdktf cannot build them
           echo -e "0.1.0\n0.1.1" > tagged-versions.txt
 
           # Get available versions
           git tag | grep -Po "stackit/v\K.+" | sort -V >> tagged-versions.txt
-          
+
           # Calculate missing versions
           echo "versions=$(grep -v -x -f tagged-versions.txt provider-versions.txt | jq --raw-input --raw-output --compact-output --slurp 'split("\n") | map(select(. != ""))')" >> $GITHUB_OUTPUT
 
@@ -72,7 +72,7 @@ jobs:
     permissions:
       # Required to commit changes and create releases.
       contents: write
-    
+
     if: needs.find-missing-versions.outputs.versions != '[]'
     strategy:
       max-parallel: 1 # Create versions sequentially to avoid merge conflicts
@@ -131,11 +131,11 @@ jobs:
 
           echo "Replace all temporary module import paths with the public git module..."
           find ./generated -type f -name '*.go' -exec sed -i 's|cdk.tf/go/stack/generated/${{ env.NAMESPACE }}/${{ env.PROVIDER }}|${{ env.GIT_HOST }}/${{ github.repository }}/${{ env.PROVIDER }}|g' {} \;
-          
+
           echo "Move the go.mod to the correct folder..."
           mv go.mod ./generated/${{ env.NAMESPACE }}/${{ env.PROVIDER }}/go.mod
           cd ./generated/${{ env.NAMESPACE }}/${{ env.PROVIDER }}
-          
+
           echo "Tidy on the generated module with updated import paths..."
           go mod tidy
 
@@ -151,7 +151,7 @@ jobs:
 
           echo "Moving generated provider code to root..."
           mv temp-init/generated/${{ env.NAMESPACE }}/${{ env.PROVIDER }} .
-          
+
           echo "Cleaning up temporary directories..."
           rm -rf temp-init
 
@@ -161,23 +161,23 @@ jobs:
         run: |
           git config --global user.name '${{ env.GIT_USER }}'
           git config --global user.email '${{ env.GIT_EMAIL }}'
-          
+
           git add .
-          
+
           if git diff --staged --quiet; then
             echo "No changes to commit. The bindings are already up-to-date."
             # Exit the script with failing state to avoid creating a release
             exit -1
           fi
-          
+
           COMMIT_MSG="feat(provider): Generate bindings for v${{ matrix.version }}"
           echo "Committing new version..."
           git commit -m "$COMMIT_MSG"
-          
+
           TAG="${{ env.PROVIDER }}/v${{ matrix.version }}"
           echo "Tagging new version as $TAG"
           git tag $TAG
-          
+
           echo "Pushing commit and tag to origin..."
           git push origin HEAD
           git push origin --tags
