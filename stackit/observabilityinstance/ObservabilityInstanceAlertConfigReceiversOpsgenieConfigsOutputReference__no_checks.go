@@ -72,6 +72,10 @@ func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversOpsgenieConfigsOutpu
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversOpsgenieConfigsOutputReference) validateSetSendResolvedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversOpsgenieConfigsOutputReference) validateSetTagsParameters(val *string) error {
 	return nil
 }

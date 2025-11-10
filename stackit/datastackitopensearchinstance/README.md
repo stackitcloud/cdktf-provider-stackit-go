@@ -1,3 +1,3 @@
 # `data_stackit_opensearch_instance`
 
-Refer to the Terraform Registry for docs: [`data_stackit_opensearch_instance`](https://registry.terraform.io/providers/stackitcloud/stackit/0.64.0/docs/data-sources/opensearch_instance).
+Refer to the Terraform Registry for docs: [`data_stackit_opensearch_instance`](https://registry.terraform.io/providers/stackitcloud/stackit/0.65.0/docs/data-sources/opensearch_instance).

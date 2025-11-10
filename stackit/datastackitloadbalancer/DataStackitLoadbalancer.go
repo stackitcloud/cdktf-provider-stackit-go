@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.64.0/docs/data-sources/loadbalancer stackit_loadbalancer}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.65.0/docs/data-sources/loadbalancer stackit_loadbalancer}.
 type DataStackitLoadbalancer interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -24,6 +24,7 @@ type DataStackitLoadbalancer interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DisableSecurityGroupAssignment() cdktf.IResolvable
 	ExternalAddress() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -60,6 +61,7 @@ type DataStackitLoadbalancer interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	SecurityGroupId() *string
 	TargetPools() DataStackitLoadbalancerTargetPoolsList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -150,6 +152,16 @@ func (j *jsiiProxy_DataStackitLoadbalancer) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLoadbalancer) DisableSecurityGroupAssignment() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"disableSecurityGroupAssignment",
 		&returns,
 	)
 	return returns
@@ -355,6 +367,16 @@ func (j *jsiiProxy_DataStackitLoadbalancer) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitLoadbalancer) SecurityGroupId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityGroupId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitLoadbalancer) TargetPools() DataStackitLoadbalancerTargetPoolsList {
 	var returns DataStackitLoadbalancerTargetPoolsList
 	_jsii_.Get(
@@ -396,7 +418,7 @@ func (j *jsiiProxy_DataStackitLoadbalancer) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.64.0/docs/data-sources/loadbalancer stackit_loadbalancer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.65.0/docs/data-sources/loadbalancer stackit_loadbalancer} Data Source.
 func NewDataStackitLoadbalancer(scope constructs.Construct, id *string, config *DataStackitLoadbalancerConfig) DataStackitLoadbalancer {
 	_init_.Initialize()
 
@@ -414,7 +436,7 @@ func NewDataStackitLoadbalancer(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.64.0/docs/data-sources/loadbalancer stackit_loadbalancer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.65.0/docs/data-sources/loadbalancer stackit_loadbalancer} Data Source.
 func NewDataStackitLoadbalancer_Override(d DataStackitLoadbalancer, scope constructs.Construct, id *string, config *DataStackitLoadbalancerConfig) {
 	_init_.Initialize()
 

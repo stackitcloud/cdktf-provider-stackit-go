@@ -33,6 +33,7 @@ type DataStackitObservabilityInstanceAlertConfigReceiversEmailConfigsOutputRefer
 	From() *string
 	InternalValue() *DataStackitObservabilityInstanceAlertConfigReceiversEmailConfigs
 	SetInternalValue(val *DataStackitObservabilityInstanceAlertConfigReceiversEmailConfigs)
+	SendResolved() cdktf.IResolvable
 	SmartHost() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -167,6 +168,16 @@ func (j *jsiiProxy_DataStackitObservabilityInstanceAlertConfigReceiversEmailConf
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitObservabilityInstanceAlertConfigReceiversEmailConfigsOutputReference) SendResolved() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"sendResolved",
 		&returns,
 	)
 	return returns

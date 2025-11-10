@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.64.0/docs/resources/loadbalancer stackit_loadbalancer}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.65.0/docs/resources/loadbalancer stackit_loadbalancer}.
 type Loadbalancer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,6 +28,9 @@ type Loadbalancer interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DisableSecurityGroupAssignment() interface{}
+	SetDisableSecurityGroupAssignment(val interface{})
+	DisableSecurityGroupAssignmentInput() interface{}
 	ExternalAddress() *string
 	SetExternalAddress(val *string)
 	ExternalAddressInput() *string
@@ -75,6 +78,7 @@ type Loadbalancer interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	SecurityGroupId() *string
 	TargetPools() LoadbalancerTargetPoolsList
 	TargetPoolsInput() interface{}
 	// Experimental.
@@ -130,6 +134,7 @@ type Loadbalancer interface {
 	PutNetworks(value interface{})
 	PutOptions(value *LoadbalancerOptions)
 	PutTargetPools(value interface{})
+	ResetDisableSecurityGroupAssignment()
 	ResetExternalAddress()
 	ResetOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -200,6 +205,26 @@ func (j *jsiiProxy_Loadbalancer) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Loadbalancer) DisableSecurityGroupAssignment() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableSecurityGroupAssignment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Loadbalancer) DisableSecurityGroupAssignmentInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableSecurityGroupAssignmentInput",
 		&returns,
 	)
 	return returns
@@ -465,6 +490,16 @@ func (j *jsiiProxy_Loadbalancer) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Loadbalancer) SecurityGroupId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityGroupId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Loadbalancer) TargetPools() LoadbalancerTargetPoolsList {
 	var returns LoadbalancerTargetPoolsList
 	_jsii_.Get(
@@ -516,7 +551,7 @@ func (j *jsiiProxy_Loadbalancer) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.64.0/docs/resources/loadbalancer stackit_loadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.65.0/docs/resources/loadbalancer stackit_loadbalancer} Resource.
 func NewLoadbalancer(scope constructs.Construct, id *string, config *LoadbalancerConfig) Loadbalancer {
 	_init_.Initialize()
 
@@ -534,7 +569,7 @@ func NewLoadbalancer(scope constructs.Construct, id *string, config *Loadbalance
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.64.0/docs/resources/loadbalancer stackit_loadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.65.0/docs/resources/loadbalancer stackit_loadbalancer} Resource.
 func NewLoadbalancer_Override(l Loadbalancer, scope constructs.Construct, id *string, config *LoadbalancerConfig) {
 	_init_.Initialize()
 
@@ -571,6 +606,17 @@ func (j *jsiiProxy_Loadbalancer)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Loadbalancer)SetDisableSecurityGroupAssignment(val interface{}) {
+	if err := j.validateSetDisableSecurityGroupAssignmentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableSecurityGroupAssignment",
 		val,
 	)
 }
@@ -1062,6 +1108,14 @@ func (l *jsiiProxy_Loadbalancer) PutTargetPools(value interface{}) {
 		l,
 		"putTargetPools",
 		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_Loadbalancer) ResetDisableSecurityGroupAssignment() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDisableSecurityGroupAssignment",
+		nil, // no parameters
 	)
 }
 

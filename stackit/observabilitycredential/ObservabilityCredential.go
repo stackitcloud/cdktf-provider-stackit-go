@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.64.0/docs/resources/observability_credential stackit_observability_credential}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.65.0/docs/resources/observability_credential stackit_observability_credential}.
 type ObservabilityCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,6 +28,9 @@ type ObservabilityCredential interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -110,6 +113,7 @@ type ObservabilityCredential interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -176,6 +180,26 @@ func (j *jsiiProxy_ObservabilityCredential) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityCredential) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityCredential) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -362,7 +386,7 @@ func (j *jsiiProxy_ObservabilityCredential) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.64.0/docs/resources/observability_credential stackit_observability_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.65.0/docs/resources/observability_credential stackit_observability_credential} Resource.
 func NewObservabilityCredential(scope constructs.Construct, id *string, config *ObservabilityCredentialConfig) ObservabilityCredential {
 	_init_.Initialize()
 
@@ -380,7 +404,7 @@ func NewObservabilityCredential(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.64.0/docs/resources/observability_credential stackit_observability_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.65.0/docs/resources/observability_credential stackit_observability_credential} Resource.
 func NewObservabilityCredential_Override(o ObservabilityCredential, scope constructs.Construct, id *string, config *ObservabilityCredentialConfig) {
 	_init_.Initialize()
 
@@ -417,6 +441,17 @@ func (j *jsiiProxy_ObservabilityCredential)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityCredential)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -831,6 +866,14 @@ func (o *jsiiProxy_ObservabilityCredential) OverrideLogicalId(newLogicalId *stri
 		o,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (o *jsiiProxy_ObservabilityCredential) ResetDescription() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDescription",
+		nil, // no parameters
 	)
 }
 

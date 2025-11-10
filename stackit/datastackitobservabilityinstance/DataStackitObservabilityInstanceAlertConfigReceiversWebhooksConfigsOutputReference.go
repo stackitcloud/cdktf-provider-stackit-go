@@ -31,6 +31,7 @@ type DataStackitObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutputRe
 	InternalValue() *DataStackitObservabilityInstanceAlertConfigReceiversWebhooksConfigs
 	SetInternalValue(val *DataStackitObservabilityInstanceAlertConfigReceiversWebhooksConfigs)
 	MsTeams() cdktf.IResolvable
+	SendResolved() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -144,6 +145,16 @@ func (j *jsiiProxy_DataStackitObservabilityInstanceAlertConfigReceiversWebhooksC
 	_jsii_.Get(
 		j,
 		"msTeams",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutputReference) SendResolved() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"sendResolved",
 		&returns,
 	)
 	return returns

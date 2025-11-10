@@ -35,6 +35,9 @@ type ObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutputReference int
 	MsTeams() interface{}
 	SetMsTeams(val interface{})
 	MsTeamsInput() interface{}
+	SendResolved() interface{}
+	SetSendResolved(val interface{})
+	SendResolvedInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type ObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutputReference int
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetGoogleChat()
 	ResetMsTeams()
+	ResetSendResolved()
 	ResetUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -173,6 +177,26 @@ func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutpu
 	_jsii_.Get(
 		j,
 		"msTeamsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutputReference) SendResolved() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendResolved",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutputReference) SendResolvedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendResolvedInput",
 		&returns,
 	)
 	return returns
@@ -297,6 +321,17 @@ func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutpu
 	_jsii_.Set(
 		j,
 		"msTeams",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutputReference)SetSendResolved(val interface{}) {
+	if err := j.validateSetSendResolvedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sendResolved",
 		val,
 	)
 }
@@ -532,6 +567,14 @@ func (o *jsiiProxy_ObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutpu
 	_jsii_.InvokeVoid(
 		o,
 		"resetMsTeams",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutputReference) ResetSendResolved() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSendResolved",
 		nil, // no parameters
 	)
 }

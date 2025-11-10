@@ -76,6 +76,10 @@ func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversEmailConfigsOutputRe
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversEmailConfigsOutputReference) validateSetSendResolvedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversEmailConfigsOutputReference) validateSetSmartHostParameters(val *string) error {
 	return nil
 }

@@ -38,6 +38,9 @@ type ObservabilityInstanceAlertConfigReceiversOpsgenieConfigsOutputReference int
 	Priority() *string
 	SetPriority(val *string)
 	PriorityInput() *string
+	SendResolved() interface{}
+	SetSendResolved(val interface{})
+	SendResolvedInput() interface{}
 	Tags() *string
 	SetTags(val *string)
 	TagsInput() *string
@@ -76,6 +79,7 @@ type ObservabilityInstanceAlertConfigReceiversOpsgenieConfigsOutputReference int
 	ResetApiKey()
 	ResetApiUrl()
 	ResetPriority()
+	ResetSendResolved()
 	ResetTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -197,6 +201,26 @@ func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversOpsgenieConfigsOutpu
 	_jsii_.Get(
 		j,
 		"priorityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversOpsgenieConfigsOutputReference) SendResolved() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendResolved",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversOpsgenieConfigsOutputReference) SendResolvedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendResolvedInput",
 		&returns,
 	)
 	return returns
@@ -332,6 +356,17 @@ func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversOpsgenieConfigsOutpu
 	_jsii_.Set(
 		j,
 		"priority",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversOpsgenieConfigsOutputReference)SetSendResolved(val interface{}) {
+	if err := j.validateSetSendResolvedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sendResolved",
 		val,
 	)
 }
@@ -575,6 +610,14 @@ func (o *jsiiProxy_ObservabilityInstanceAlertConfigReceiversOpsgenieConfigsOutpu
 	_jsii_.InvokeVoid(
 		o,
 		"resetPriority",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityInstanceAlertConfigReceiversOpsgenieConfigsOutputReference) ResetSendResolved() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSendResolved",
 		nil, // no parameters
 	)
 }

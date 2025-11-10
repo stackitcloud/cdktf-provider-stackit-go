@@ -41,6 +41,9 @@ type ObservabilityInstanceAlertConfigReceiversEmailConfigsOutputReference interf
 	FromInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	SendResolved() interface{}
+	SetSendResolved(val interface{})
+	SendResolvedInput() interface{}
 	SmartHost() *string
 	SetSmartHost(val *string)
 	SmartHostInput() *string
@@ -83,6 +86,7 @@ type ObservabilityInstanceAlertConfigReceiversEmailConfigsOutputReference interf
 	ResetAuthPassword()
 	ResetAuthUsername()
 	ResetFrom()
+	ResetSendResolved()
 	ResetSmartHost()
 	ResetTo()
 	// Produce the Token's value at resolution time.
@@ -225,6 +229,26 @@ func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversEmailConfigsOutputRe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversEmailConfigsOutputReference) SendResolved() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendResolved",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversEmailConfigsOutputReference) SendResolvedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendResolvedInput",
 		&returns,
 	)
 	return returns
@@ -391,6 +415,17 @@ func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversEmailConfigsOutputRe
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversEmailConfigsOutputReference)SetSendResolved(val interface{}) {
+	if err := j.validateSetSendResolvedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sendResolved",
 		val,
 	)
 }
@@ -653,6 +688,14 @@ func (o *jsiiProxy_ObservabilityInstanceAlertConfigReceiversEmailConfigsOutputRe
 	_jsii_.InvokeVoid(
 		o,
 		"resetFrom",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityInstanceAlertConfigReceiversEmailConfigsOutputReference) ResetSendResolved() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSendResolved",
 		nil, // no parameters
 	)
 }

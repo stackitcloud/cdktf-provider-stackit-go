@@ -32,6 +32,7 @@ type DataStackitObservabilityInstanceAlertConfigReceiversOpsgenieConfigsOutputRe
 	InternalValue() *DataStackitObservabilityInstanceAlertConfigReceiversOpsgenieConfigs
 	SetInternalValue(val *DataStackitObservabilityInstanceAlertConfigReceiversOpsgenieConfigs)
 	Priority() *string
+	SendResolved() cdktf.IResolvable
 	Tags() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -155,6 +156,16 @@ func (j *jsiiProxy_DataStackitObservabilityInstanceAlertConfigReceiversOpsgenieC
 	_jsii_.Get(
 		j,
 		"priority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitObservabilityInstanceAlertConfigReceiversOpsgenieConfigsOutputReference) SendResolved() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"sendResolved",
 		&returns,
 	)
 	return returns

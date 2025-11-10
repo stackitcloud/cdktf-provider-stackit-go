@@ -96,6 +96,10 @@ func (j *jsiiProxy_ObservabilityCredential) validateSetCountParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityCredential) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityCredential) validateSetInstanceIdParameters(val *string) error {
 	return nil
 }

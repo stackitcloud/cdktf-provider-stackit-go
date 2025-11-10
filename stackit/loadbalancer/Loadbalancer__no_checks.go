@@ -112,6 +112,10 @@ func (j *jsiiProxy_Loadbalancer) validateSetCountParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_Loadbalancer) validateSetDisableSecurityGroupAssignmentParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Loadbalancer) validateSetExternalAddressParameters(val *string) error {
 	return nil
 }
