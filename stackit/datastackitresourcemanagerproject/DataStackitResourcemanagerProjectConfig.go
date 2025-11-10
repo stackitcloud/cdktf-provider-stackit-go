@@ -21,7 +21,7 @@ type DataStackitResourcemanagerProjectConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Project container ID. Globally unique, user-friendly identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.26.2/docs/data-sources/resourcemanager_project#container_id DataStackitResourcemanagerProject#container_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.26.3/docs/data-sources/resourcemanager_project#container_id DataStackitResourcemanagerProject#container_id}
 	ContainerId *string `field:"optional" json:"containerId" yaml:"containerId"`
 	// Email address of the owner of the project.
 	//
@@ -29,13 +29,13 @@ type DataStackitResourcemanagerProjectConfig struct {
 	//
 	// !> The "owner_email" field has been deprecated in favor of the "members" field. Please use the "members" field to assign the owner role to a user, by setting the "role" field to `owner`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.26.2/docs/data-sources/resourcemanager_project#owner_email DataStackitResourcemanagerProject#owner_email}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.26.3/docs/data-sources/resourcemanager_project#owner_email DataStackitResourcemanagerProject#owner_email}
 	OwnerEmail *string `field:"optional" json:"ownerEmail" yaml:"ownerEmail"`
 	// Project UUID identifier.
 	//
 	// This is the ID that can be used in most of the other resources to identify the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.26.2/docs/data-sources/resourcemanager_project#project_id DataStackitResourcemanagerProject#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.26.3/docs/data-sources/resourcemanager_project#project_id DataStackitResourcemanagerProject#project_id}
 	ProjectId *string `field:"optional" json:"projectId" yaml:"projectId"`
 }
 

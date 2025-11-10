@@ -1,3 +1,3 @@
 # `stackit_mariadb_instance`
 
-Refer to the Terraform Registry for docs: [`stackit_mariadb_instance`](https://registry.terraform.io/providers/stackitcloud/stackit/0.26.2/docs/resources/mariadb_instance).
+Refer to the Terraform Registry for docs: [`stackit_mariadb_instance`](https://registry.terraform.io/providers/stackitcloud/stackit/0.26.3/docs/resources/mariadb_instance).
