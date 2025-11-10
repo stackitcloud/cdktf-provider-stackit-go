@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.5.0/docs stackit}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.6.0/docs stackit}.
 type StackitProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -43,6 +43,9 @@ type StackitProvider interface {
 	MariadbCustomEndpointInput() *string
 	// Experimental.
 	MetaAttributes() *map[string]interface{}
+	MongodbflexCustomEndpoint() *string
+	SetMongodbflexCustomEndpoint(val *string)
+	MongodbflexCustomEndpointInput() *string
 	// The tree node.
 	Node() constructs.Node
 	ObjectstorageCustomEndpoint() *string
@@ -77,6 +80,9 @@ type StackitProvider interface {
 	ResourcemanagerCustomEndpoint() *string
 	SetResourcemanagerCustomEndpoint(val *string)
 	ResourcemanagerCustomEndpointInput() *string
+	SecretsmanagerCustomEndpoint() *string
+	SetSecretsmanagerCustomEndpoint(val *string)
+	SecretsmanagerCustomEndpointInput() *string
 	ServiceAccountEmail() *string
 	SetServiceAccountEmail(val *string)
 	ServiceAccountEmailInput() *string
@@ -113,6 +119,7 @@ type StackitProvider interface {
 	ResetJwksCustomEndpoint()
 	ResetLogmeCustomEndpoint()
 	ResetMariadbCustomEndpoint()
+	ResetMongodbflexCustomEndpoint()
 	ResetObjectstorageCustomEndpoint()
 	ResetOpensearchCustomEndpoint()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -126,6 +133,7 @@ type StackitProvider interface {
 	ResetRedisCustomEndpoint()
 	ResetRegion()
 	ResetResourcemanagerCustomEndpoint()
+	ResetSecretsmanagerCustomEndpoint()
 	ResetServiceAccountEmail()
 	ResetServiceAccountKey()
 	ResetServiceAccountKeyPath()
@@ -335,6 +343,26 @@ func (j *jsiiProxy_StackitProvider) MetaAttributes() *map[string]interface{} {
 	_jsii_.Get(
 		j,
 		"metaAttributes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) MongodbflexCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mongodbflexCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) MongodbflexCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mongodbflexCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -560,6 +588,26 @@ func (j *jsiiProxy_StackitProvider) ResourcemanagerCustomEndpointInput() *string
 	return returns
 }
 
+func (j *jsiiProxy_StackitProvider) SecretsmanagerCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretsmanagerCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) SecretsmanagerCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretsmanagerCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StackitProvider) ServiceAccountEmail() *string {
 	var returns *string
 	_jsii_.Get(
@@ -711,7 +759,7 @@ func (j *jsiiProxy_StackitProvider) TokenCustomEndpointInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.5.0/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.6.0/docs stackit} Resource.
 func NewStackitProvider(scope constructs.Construct, id *string, config *StackitProviderConfig) StackitProvider {
 	_init_.Initialize()
 
@@ -729,7 +777,7 @@ func NewStackitProvider(scope constructs.Construct, id *string, config *StackitP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.5.0/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.6.0/docs stackit} Resource.
 func NewStackitProvider_Override(s StackitProvider, scope constructs.Construct, id *string, config *StackitProviderConfig) {
 	_init_.Initialize()
 
@@ -792,6 +840,14 @@ func (j *jsiiProxy_StackitProvider)SetMariadbCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"mariadbCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StackitProvider)SetMongodbflexCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"mongodbflexCustomEndpoint",
 		val,
 	)
 }
@@ -872,6 +928,14 @@ func (j *jsiiProxy_StackitProvider)SetResourcemanagerCustomEndpoint(val *string)
 	_jsii_.Set(
 		j,
 		"resourcemanagerCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StackitProvider)SetSecretsmanagerCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"secretsmanagerCustomEndpoint",
 		val,
 	)
 }
@@ -1105,6 +1169,14 @@ func (s *jsiiProxy_StackitProvider) ResetMariadbCustomEndpoint() {
 	)
 }
 
+func (s *jsiiProxy_StackitProvider) ResetMongodbflexCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetMongodbflexCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_StackitProvider) ResetObjectstorageCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1189,6 +1261,14 @@ func (s *jsiiProxy_StackitProvider) ResetResourcemanagerCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetResourcemanagerCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StackitProvider) ResetSecretsmanagerCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSecretsmanagerCustomEndpoint",
 		nil, // no parameters
 	)
 }
