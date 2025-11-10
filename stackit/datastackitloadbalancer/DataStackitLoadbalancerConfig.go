@@ -21,15 +21,15 @@ type DataStackitLoadbalancerConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Load balancer name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.55.0/docs/data-sources/loadbalancer#name DataStackitLoadbalancer#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/data-sources/loadbalancer#name DataStackitLoadbalancer#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// STACKIT project ID to which the Load Balancer is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.55.0/docs/data-sources/loadbalancer#project_id DataStackitLoadbalancer#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/data-sources/loadbalancer#project_id DataStackitLoadbalancer#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.55.0/docs/data-sources/loadbalancer#region DataStackitLoadbalancer#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/data-sources/loadbalancer#region DataStackitLoadbalancer#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

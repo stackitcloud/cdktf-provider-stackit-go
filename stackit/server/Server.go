@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.55.0/docs/resources/server stackit_server}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/resources/server stackit_server}.
 type Server interface {
 	cdktf.TerraformResource
 	AffinityGroup() *string
@@ -623,7 +623,7 @@ func (j *jsiiProxy_Server) UserDataInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.55.0/docs/resources/server stackit_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/resources/server stackit_server} Resource.
 func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Server {
 	_init_.Initialize()
 
@@ -641,7 +641,7 @@ func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Ser
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.55.0/docs/resources/server stackit_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/resources/server stackit_server} Resource.
 func NewServer_Override(s Server, scope constructs.Construct, id *string, config *ServerConfig) {
 	_init_.Initialize()
 

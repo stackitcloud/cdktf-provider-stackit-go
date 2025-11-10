@@ -21,19 +21,19 @@ type DataStackitPostgresflexDatabaseConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Database ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.55.0/docs/data-sources/postgresflex_database#database_id DataStackitPostgresflexDatabase#database_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/data-sources/postgresflex_database#database_id DataStackitPostgresflexDatabase#database_id}
 	DatabaseId *string `field:"required" json:"databaseId" yaml:"databaseId"`
 	// ID of the Postgres Flex instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.55.0/docs/data-sources/postgresflex_database#instance_id DataStackitPostgresflexDatabase#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/data-sources/postgresflex_database#instance_id DataStackitPostgresflexDatabase#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// STACKIT project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.55.0/docs/data-sources/postgresflex_database#project_id DataStackitPostgresflexDatabase#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/data-sources/postgresflex_database#project_id DataStackitPostgresflexDatabase#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.55.0/docs/data-sources/postgresflex_database#region DataStackitPostgresflexDatabase#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/data-sources/postgresflex_database#region DataStackitPostgresflexDatabase#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

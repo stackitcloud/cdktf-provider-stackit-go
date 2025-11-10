@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.55.0/docs/data-sources/server_update_schedule stackit_server_update_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/data-sources/server_update_schedule stackit_server_update_schedule}.
 type DataStackitServerUpdateSchedule interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -386,7 +386,7 @@ func (j *jsiiProxy_DataStackitServerUpdateSchedule) UpdateScheduleIdInput() *flo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.55.0/docs/data-sources/server_update_schedule stackit_server_update_schedule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/data-sources/server_update_schedule stackit_server_update_schedule} Data Source.
 func NewDataStackitServerUpdateSchedule(scope constructs.Construct, id *string, config *DataStackitServerUpdateScheduleConfig) DataStackitServerUpdateSchedule {
 	_init_.Initialize()
 
@@ -404,7 +404,7 @@ func NewDataStackitServerUpdateSchedule(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.55.0/docs/data-sources/server_update_schedule stackit_server_update_schedule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/data-sources/server_update_schedule stackit_server_update_schedule} Data Source.
 func NewDataStackitServerUpdateSchedule_Override(d DataStackitServerUpdateSchedule, scope constructs.Construct, id *string, config *DataStackitServerUpdateScheduleConfig) {
 	_init_.Initialize()
 

@@ -21,15 +21,15 @@ type DataStackitDnsZoneConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT project ID to which the dns zone is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.55.0/docs/data-sources/dns_zone#project_id DataStackitDnsZone#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/data-sources/dns_zone#project_id DataStackitDnsZone#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The zone name. E.g. `example.com`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.55.0/docs/data-sources/dns_zone#dns_name DataStackitDnsZone#dns_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/data-sources/dns_zone#dns_name DataStackitDnsZone#dns_name}
 	DnsName *string `field:"optional" json:"dnsName" yaml:"dnsName"`
 	// The zone ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.55.0/docs/data-sources/dns_zone#zone_id DataStackitDnsZone#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.56.0/docs/data-sources/dns_zone#zone_id DataStackitDnsZone#zone_id}
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 
