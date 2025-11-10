@@ -21,19 +21,23 @@ type NetworkConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the network.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/resources/network#name Network#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.0/docs/resources/network#name Network#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// STACKIT project ID to which the network is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/resources/network#project_id Network#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.0/docs/resources/network#project_id Network#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The IPv4 prefix length of the network.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/resources/network#ipv4_prefix_length Network#ipv4_prefix_length}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.0/docs/resources/network#ipv4_prefix_length Network#ipv4_prefix_length}
 	Ipv4PrefixLength *float64 `field:"optional" json:"ipv4PrefixLength" yaml:"ipv4PrefixLength"`
+	// Labels are key-value string pairs which can be attached to a resource container.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.0/docs/resources/network#labels Network#labels}
+	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// The nameservers of the network.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/resources/network#nameservers Network#nameservers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.0/docs/resources/network#nameservers Network#nameservers}
 	Nameservers *[]*string `field:"optional" json:"nameservers" yaml:"nameservers"`
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/resources/objectstorage_credential stackit_objectstorage_credential}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.0/docs/resources/objectstorage_credential stackit_objectstorage_credential}.
 type ObjectstorageCredential interface {
 	cdktf.TerraformResource
 	AccessKey() *string
@@ -408,7 +408,7 @@ func (j *jsiiProxy_ObjectstorageCredential) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/resources/objectstorage_credential stackit_objectstorage_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.0/docs/resources/objectstorage_credential stackit_objectstorage_credential} Resource.
 func NewObjectstorageCredential(scope constructs.Construct, id *string, config *ObjectstorageCredentialConfig) ObjectstorageCredential {
 	_init_.Initialize()
 
@@ -426,7 +426,7 @@ func NewObjectstorageCredential(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/resources/objectstorage_credential stackit_objectstorage_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.0/docs/resources/objectstorage_credential stackit_objectstorage_credential} Resource.
 func NewObjectstorageCredential_Override(o ObjectstorageCredential, scope constructs.Construct, id *string, config *ObjectstorageCredentialConfig) {
 	_init_.Initialize()
 

@@ -100,6 +100,10 @@ func (j *jsiiProxy_Network) validateSetIpv4PrefixLengthParameters(val *float64) 
 	return nil
 }
 
+func (j *jsiiProxy_Network) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Network) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

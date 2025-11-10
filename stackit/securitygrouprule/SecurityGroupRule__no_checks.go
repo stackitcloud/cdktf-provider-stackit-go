@@ -1,0 +1,150 @@
+//go:build no_runtime_type_checking
+
+package securitygrouprule
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (s *jsiiProxy_SecurityGroupRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityGroupRule) validateAddOverrideParameters(path *string, value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityGroupRule) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityGroupRule) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityGroupRule) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityGroupRule) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityGroupRule) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityGroupRule) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityGroupRule) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityGroupRule) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityGroupRule) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityGroupRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityGroupRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityGroupRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityGroupRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityGroupRule) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityGroupRule) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityGroupRule) validatePutIcmpParametersParameters(value *SecurityGroupRuleIcmpParameters) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityGroupRule) validatePutPortRangeParameters(value *SecurityGroupRulePortRange) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityGroupRule) validatePutProtocolParameters(value *SecurityGroupRuleProtocol) error {
+	return nil
+}
+
+func validateSecurityGroupRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
+func validateSecurityGroupRule_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateSecurityGroupRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSecurityGroupRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecurityGroupRule) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecurityGroupRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecurityGroupRule) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecurityGroupRule) validateSetDirectionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecurityGroupRule) validateSetEtherTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecurityGroupRule) validateSetIpRangeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecurityGroupRule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecurityGroupRule) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecurityGroupRule) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecurityGroupRule) validateSetRemoteSecurityGroupIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecurityGroupRule) validateSetSecurityGroupIdParameters(val *string) error {
+	return nil
+}
+
+func validateNewSecurityGroupRuleParameters(scope constructs.Construct, id *string, config *SecurityGroupRuleConfig) error {
+	return nil
+}
+

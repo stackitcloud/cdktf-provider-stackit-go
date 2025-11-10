@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/resources/network_area stackit_network_area}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.0/docs/resources/network_area stackit_network_area}.
 type NetworkArea interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -43,6 +43,9 @@ type NetworkArea interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -130,6 +133,7 @@ type NetworkArea interface {
 	PutNetworkRanges(value interface{})
 	ResetDefaultNameservers()
 	ResetDefaultPrefixLength()
+	ResetLabels()
 	ResetMaxPrefixLength()
 	ResetMinPrefixLength()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -278,6 +282,26 @@ func (j *jsiiProxy_NetworkArea) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkArea) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkArea) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
 		&returns,
 	)
 	return returns
@@ -504,7 +528,7 @@ func (j *jsiiProxy_NetworkArea) TransferNetworkInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/resources/network_area stackit_network_area} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.0/docs/resources/network_area stackit_network_area} Resource.
 func NewNetworkArea(scope constructs.Construct, id *string, config *NetworkAreaConfig) NetworkArea {
 	_init_.Initialize()
 
@@ -522,7 +546,7 @@ func NewNetworkArea(scope constructs.Construct, id *string, config *NetworkAreaC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/resources/network_area stackit_network_area} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.0/docs/resources/network_area stackit_network_area} Resource.
 func NewNetworkArea_Override(n NetworkArea, scope constructs.Construct, id *string, config *NetworkAreaConfig) {
 	_init_.Initialize()
 
@@ -589,6 +613,17 @@ func (j *jsiiProxy_NetworkArea)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkArea)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
 		val,
 	)
 }
@@ -1054,6 +1089,14 @@ func (n *jsiiProxy_NetworkArea) ResetDefaultPrefixLength() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetDefaultPrefixLength",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkArea) ResetLabels() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetLabels",
 		nil, // no parameters
 	)
 }

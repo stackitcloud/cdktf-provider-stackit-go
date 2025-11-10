@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/data-sources/network stackit_network}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.0/docs/data-sources/network stackit_network}.
 type DataStackitNetwork interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -34,6 +34,7 @@ type DataStackitNetwork interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	Ipv4PrefixLength() *float64
+	Labels() cdktf.StringMap
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -199,6 +200,16 @@ func (j *jsiiProxy_DataStackitNetwork) Ipv4PrefixLength() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitNetwork) Labels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitNetwork) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -350,7 +361,7 @@ func (j *jsiiProxy_DataStackitNetwork) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/data-sources/network stackit_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.0/docs/data-sources/network stackit_network} Data Source.
 func NewDataStackitNetwork(scope constructs.Construct, id *string, config *DataStackitNetworkConfig) DataStackitNetwork {
 	_init_.Initialize()
 
@@ -368,7 +379,7 @@ func NewDataStackitNetwork(scope constructs.Construct, id *string, config *DataS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/data-sources/network stackit_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.0/docs/data-sources/network stackit_network} Data Source.
 func NewDataStackitNetwork_Override(d DataStackitNetwork, scope constructs.Construct, id *string, config *DataStackitNetworkConfig) {
 	_init_.Initialize()
 

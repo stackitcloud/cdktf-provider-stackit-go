@@ -96,6 +96,10 @@ func (j *jsiiProxy_NetworkAreaRoute) validateSetCountParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_NetworkAreaRoute) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkAreaRoute) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

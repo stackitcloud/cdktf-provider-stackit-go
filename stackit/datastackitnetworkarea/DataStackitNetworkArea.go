@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/data-sources/network_area stackit_network_area}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.0/docs/data-sources/network_area stackit_network_area}.
 type DataStackitNetworkArea interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -35,6 +35,7 @@ type DataStackitNetworkArea interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	Labels() cdktf.StringMap
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -212,6 +213,16 @@ func (j *jsiiProxy_DataStackitNetworkArea) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitNetworkArea) Labels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitNetworkArea) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -383,7 +394,7 @@ func (j *jsiiProxy_DataStackitNetworkArea) TransferNetwork() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/data-sources/network_area stackit_network_area} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.0/docs/data-sources/network_area stackit_network_area} Data Source.
 func NewDataStackitNetworkArea(scope constructs.Construct, id *string, config *DataStackitNetworkAreaConfig) DataStackitNetworkArea {
 	_init_.Initialize()
 
@@ -401,7 +412,7 @@ func NewDataStackitNetworkArea(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.32.0/docs/data-sources/network_area stackit_network_area} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.33.0/docs/data-sources/network_area stackit_network_area} Data Source.
 func NewDataStackitNetworkArea_Override(d DataStackitNetworkArea, scope constructs.Construct, id *string, config *DataStackitNetworkAreaConfig) {
 	_init_.Initialize()
 

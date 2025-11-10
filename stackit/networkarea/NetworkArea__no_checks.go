@@ -108,6 +108,10 @@ func (j *jsiiProxy_NetworkArea) validateSetDefaultPrefixLengthParameters(val *fl
 	return nil
 }
 
+func (j *jsiiProxy_NetworkArea) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkArea) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
