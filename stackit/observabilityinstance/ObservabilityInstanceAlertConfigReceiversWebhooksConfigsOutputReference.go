@@ -27,6 +27,9 @@ type ObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutputReference int
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GoogleChat() interface{}
+	SetGoogleChat(val interface{})
+	GoogleChatInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	MsTeams() interface{}
@@ -67,6 +70,7 @@ type ObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutputReference int
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetGoogleChat()
 	ResetMsTeams()
 	ResetUrl()
 	// Produce the Token's value at resolution time.
@@ -119,6 +123,26 @@ func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutpu
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutputReference) GoogleChat() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"googleChat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutputReference) GoogleChatInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"googleChatInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +264,17 @@ func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutpu
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutputReference)SetGoogleChat(val interface{}) {
+	if err := j.validateSetGoogleChatParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"googleChat",
 		val,
 	)
 }
@@ -483,6 +518,14 @@ func (o *jsiiProxy_ObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutpu
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_ObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutputReference) ResetGoogleChat() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetGoogleChat",
+		nil, // no parameters
+	)
 }
 
 func (o *jsiiProxy_ObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutputReference) ResetMsTeams() {

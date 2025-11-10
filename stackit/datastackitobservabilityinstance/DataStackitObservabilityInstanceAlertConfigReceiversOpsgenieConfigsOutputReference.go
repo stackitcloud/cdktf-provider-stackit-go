@@ -31,6 +31,7 @@ type DataStackitObservabilityInstanceAlertConfigReceiversOpsgenieConfigsOutputRe
 	Fqn() *string
 	InternalValue() *DataStackitObservabilityInstanceAlertConfigReceiversOpsgenieConfigs
 	SetInternalValue(val *DataStackitObservabilityInstanceAlertConfigReceiversOpsgenieConfigs)
+	Priority() *string
 	Tags() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -144,6 +145,16 @@ func (j *jsiiProxy_DataStackitObservabilityInstanceAlertConfigReceiversOpsgenieC
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitObservabilityInstanceAlertConfigReceiversOpsgenieConfigsOutputReference) Priority() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"priority",
 		&returns,
 	)
 	return returns

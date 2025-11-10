@@ -68,6 +68,10 @@ func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversOpsgenieConfigsOutpu
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversOpsgenieConfigsOutputReference) validateSetPriorityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversOpsgenieConfigsOutputReference) validateSetTagsParameters(val *string) error {
 	return nil
 }

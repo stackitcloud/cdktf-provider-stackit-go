@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.61.0/docs/resources/authorization_organization_role_assignment stackit_authorization_organization_role_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.62.0/docs/resources/authorization_organization_role_assignment stackit_authorization_organization_role_assignment}.
 type AuthorizationOrganizationRoleAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -363,7 +363,7 @@ func (j *jsiiProxy_AuthorizationOrganizationRoleAssignment) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.61.0/docs/resources/authorization_organization_role_assignment stackit_authorization_organization_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.62.0/docs/resources/authorization_organization_role_assignment stackit_authorization_organization_role_assignment} Resource.
 func NewAuthorizationOrganizationRoleAssignment(scope constructs.Construct, id *string, config *AuthorizationOrganizationRoleAssignmentConfig) AuthorizationOrganizationRoleAssignment {
 	_init_.Initialize()
 
@@ -381,7 +381,7 @@ func NewAuthorizationOrganizationRoleAssignment(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.61.0/docs/resources/authorization_organization_role_assignment stackit_authorization_organization_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.62.0/docs/resources/authorization_organization_role_assignment stackit_authorization_organization_role_assignment} Resource.
 func NewAuthorizationOrganizationRoleAssignment_Override(a AuthorizationOrganizationRoleAssignment, scope constructs.Construct, id *string, config *AuthorizationOrganizationRoleAssignmentConfig) {
 	_init_.Initialize()
 

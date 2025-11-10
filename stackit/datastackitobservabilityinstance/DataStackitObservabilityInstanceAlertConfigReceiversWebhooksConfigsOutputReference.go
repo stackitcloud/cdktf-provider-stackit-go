@@ -27,6 +27,7 @@ type DataStackitObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutputRe
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GoogleChat() cdktf.IResolvable
 	InternalValue() *DataStackitObservabilityInstanceAlertConfigReceiversWebhooksConfigs
 	SetInternalValue(val *DataStackitObservabilityInstanceAlertConfigReceiversWebhooksConfigs)
 	MsTeams() cdktf.IResolvable
@@ -113,6 +114,16 @@ func (j *jsiiProxy_DataStackitObservabilityInstanceAlertConfigReceiversWebhooksC
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutputReference) GoogleChat() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"googleChat",
 		&returns,
 	)
 	return returns

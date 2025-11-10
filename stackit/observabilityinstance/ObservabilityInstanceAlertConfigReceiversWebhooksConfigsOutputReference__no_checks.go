@@ -56,6 +56,10 @@ func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutpu
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutputReference) validateSetGoogleChatParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityInstanceAlertConfigReceiversWebhooksConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
