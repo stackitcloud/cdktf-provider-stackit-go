@@ -191,8 +191,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+          name: v${{ matrix.version }}
           tag_name: ${{ env.PROVIDER }}/v${{ matrix.version }}
-          release_name: v${{ matrix.version }}
           body: |
             Automated release of Go bindings for Terraform provider ${{ env.NAMESPACE }}/${{ env.PROVIDER }}@${{ matrix.version }}.
           draft: false
