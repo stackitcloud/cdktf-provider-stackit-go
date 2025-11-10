@@ -1,3 +1,3 @@
 # `stackit_postgresflex_user`
 
-Refer to the Terraform Registry for docs: [`stackit_postgresflex_user`](https://registry.terraform.io/providers/stackitcloud/stackit/0.20.0/docs/resources/postgresflex_user).
+Refer to the Terraform Registry for docs: [`stackit_postgresflex_user`](https://registry.terraform.io/providers/stackitcloud/stackit/0.20.1/docs/resources/postgresflex_user).
