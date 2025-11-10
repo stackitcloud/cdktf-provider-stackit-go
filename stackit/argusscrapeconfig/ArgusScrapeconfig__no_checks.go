@@ -132,6 +132,10 @@ func (j *jsiiProxy_ArgusScrapeconfig) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_ArgusScrapeconfig) validateSetSampleLimitParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ArgusScrapeconfig) validateSetSchemeParameters(val *string) error {
 	return nil
 }

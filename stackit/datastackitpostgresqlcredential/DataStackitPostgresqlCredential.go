@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.8.0/docs/data-sources/postgresql_credential stackit_postgresql_credential}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.9.0/docs/data-sources/postgresql_credential stackit_postgresql_credential}.
 type DataStackitPostgresqlCredential interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -406,7 +406,7 @@ func (j *jsiiProxy_DataStackitPostgresqlCredential) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.8.0/docs/data-sources/postgresql_credential stackit_postgresql_credential} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.9.0/docs/data-sources/postgresql_credential stackit_postgresql_credential} Data Source.
 func NewDataStackitPostgresqlCredential(scope constructs.Construct, id *string, config *DataStackitPostgresqlCredentialConfig) DataStackitPostgresqlCredential {
 	_init_.Initialize()
 
@@ -424,7 +424,7 @@ func NewDataStackitPostgresqlCredential(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.8.0/docs/data-sources/postgresql_credential stackit_postgresql_credential} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.9.0/docs/data-sources/postgresql_credential stackit_postgresql_credential} Data Source.
 func NewDataStackitPostgresqlCredential_Override(d DataStackitPostgresqlCredential, scope constructs.Construct, id *string, config *DataStackitPostgresqlCredentialConfig) {
 	_init_.Initialize()
 

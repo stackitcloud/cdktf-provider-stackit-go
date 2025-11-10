@@ -473,6 +473,14 @@ func (j *jsiiProxy_ArgusScrapeconfig) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_ArgusScrapeconfig) validateSetSampleLimitParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ArgusScrapeconfig) validateSetSchemeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

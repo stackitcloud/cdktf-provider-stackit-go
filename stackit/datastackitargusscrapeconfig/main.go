@@ -45,6 +45,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "saml2", GoGetter: "Saml2"},
+			_jsii_.MemberProperty{JsiiProperty: "sampleLimit", GoGetter: "SampleLimit"},
 			_jsii_.MemberProperty{JsiiProperty: "scheme", GoGetter: "Scheme"},
 			_jsii_.MemberProperty{JsiiProperty: "scrapeInterval", GoGetter: "ScrapeInterval"},
 			_jsii_.MemberProperty{JsiiProperty: "scrapeTimeout", GoGetter: "ScrapeTimeout"},

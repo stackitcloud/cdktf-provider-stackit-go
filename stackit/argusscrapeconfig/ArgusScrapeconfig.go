@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.8.0/docs/resources/argus_scrapeconfig stackit_argus_scrapeconfig}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.9.0/docs/resources/argus_scrapeconfig stackit_argus_scrapeconfig}.
 type ArgusScrapeconfig interface {
 	cdktf.TerraformResource
 	BasicAuth() ArgusScrapeconfigBasicAuthOutputReference
@@ -69,6 +69,9 @@ type ArgusScrapeconfig interface {
 	RawOverrides() interface{}
 	Saml2() ArgusScrapeconfigSaml2OutputReference
 	Saml2Input() interface{}
+	SampleLimit() *float64
+	SetSampleLimit(val *float64)
+	SampleLimitInput() *float64
 	Scheme() *string
 	SetScheme(val *string)
 	SchemeInput() *string
@@ -137,6 +140,7 @@ type ArgusScrapeconfig interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSaml2()
+	ResetSampleLimit()
 	ResetScheme()
 	ResetScrapeInterval()
 	ResetScrapeTimeout()
@@ -418,6 +422,26 @@ func (j *jsiiProxy_ArgusScrapeconfig) Saml2Input() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ArgusScrapeconfig) SampleLimit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"sampleLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArgusScrapeconfig) SampleLimitInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"sampleLimitInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ArgusScrapeconfig) Scheme() *string {
 	var returns *string
 	_jsii_.Get(
@@ -529,7 +553,7 @@ func (j *jsiiProxy_ArgusScrapeconfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.8.0/docs/resources/argus_scrapeconfig stackit_argus_scrapeconfig} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.9.0/docs/resources/argus_scrapeconfig stackit_argus_scrapeconfig} Resource.
 func NewArgusScrapeconfig(scope constructs.Construct, id *string, config *ArgusScrapeconfigConfig) ArgusScrapeconfig {
 	_init_.Initialize()
 
@@ -547,7 +571,7 @@ func NewArgusScrapeconfig(scope constructs.Construct, id *string, config *ArgusS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.8.0/docs/resources/argus_scrapeconfig stackit_argus_scrapeconfig} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.9.0/docs/resources/argus_scrapeconfig stackit_argus_scrapeconfig} Resource.
 func NewArgusScrapeconfig_Override(a ArgusScrapeconfig, scope constructs.Construct, id *string, config *ArgusScrapeconfigConfig) {
 	_init_.Initialize()
 
@@ -666,6 +690,17 @@ func (j *jsiiProxy_ArgusScrapeconfig)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ArgusScrapeconfig)SetSampleLimit(val *float64) {
+	if err := j.validateSetSampleLimitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sampleLimit",
 		val,
 	)
 }
@@ -1109,6 +1144,14 @@ func (a *jsiiProxy_ArgusScrapeconfig) ResetSaml2() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSaml2",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ArgusScrapeconfig) ResetSampleLimit() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSampleLimit",
 		nil, // no parameters
 	)
 }
