@@ -21,25 +21,25 @@ type RedisInstanceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Instance name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.35.1/docs/resources/redis_instance#name RedisInstance#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.36.0/docs/resources/redis_instance#name RedisInstance#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The selected plan name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.35.1/docs/resources/redis_instance#plan_name RedisInstance#plan_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.36.0/docs/resources/redis_instance#plan_name RedisInstance#plan_name}
 	PlanName *string `field:"required" json:"planName" yaml:"planName"`
 	// STACKIT project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.35.1/docs/resources/redis_instance#project_id RedisInstance#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.36.0/docs/resources/redis_instance#project_id RedisInstance#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The service version.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.35.1/docs/resources/redis_instance#version RedisInstance#version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.36.0/docs/resources/redis_instance#version RedisInstance#version}
 	Version *string `field:"required" json:"version" yaml:"version"`
 	// Configuration parameters.
 	//
 	// Please note that removing a previously configured field from your Terraform configuration won't replace its value in the API. To update a previously configured field, explicitly set a new value for it.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.35.1/docs/resources/redis_instance#parameters RedisInstance#parameters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.36.0/docs/resources/redis_instance#parameters RedisInstance#parameters}
 	Parameters *RedisInstanceParameters `field:"optional" json:"parameters" yaml:"parameters"`
 }
 
