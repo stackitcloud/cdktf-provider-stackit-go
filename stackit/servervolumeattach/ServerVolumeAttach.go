@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.0/docs/resources/server_volume_attach stackit_server_volume_attach}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/resources/server_volume_attach stackit_server_volume_attach}.
 type ServerVolumeAttach interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -363,7 +363,7 @@ func (j *jsiiProxy_ServerVolumeAttach) VolumeIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.0/docs/resources/server_volume_attach stackit_server_volume_attach} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/resources/server_volume_attach stackit_server_volume_attach} Resource.
 func NewServerVolumeAttach(scope constructs.Construct, id *string, config *ServerVolumeAttachConfig) ServerVolumeAttach {
 	_init_.Initialize()
 
@@ -381,7 +381,7 @@ func NewServerVolumeAttach(scope constructs.Construct, id *string, config *Serve
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.0/docs/resources/server_volume_attach stackit_server_volume_attach} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/resources/server_volume_attach stackit_server_volume_attach} Resource.
 func NewServerVolumeAttach_Override(s ServerVolumeAttach, scope constructs.Construct, id *string, config *ServerVolumeAttachConfig) {
 	_init_.Initialize()
 

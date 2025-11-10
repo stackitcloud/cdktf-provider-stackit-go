@@ -21,15 +21,15 @@ type DataStackitObjectstorageCredentialsGroupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Object Storage Project ID to which the credentials group is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.0/docs/data-sources/objectstorage_credentials_group#project_id DataStackitObjectstorageCredentialsGroup#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/data-sources/objectstorage_credentials_group#project_id DataStackitObjectstorageCredentialsGroup#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The credentials group ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.0/docs/data-sources/objectstorage_credentials_group#credentials_group_id DataStackitObjectstorageCredentialsGroup#credentials_group_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/data-sources/objectstorage_credentials_group#credentials_group_id DataStackitObjectstorageCredentialsGroup#credentials_group_id}
 	CredentialsGroupId *string `field:"optional" json:"credentialsGroupId" yaml:"credentialsGroupId"`
 	// The credentials group's display name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.0/docs/data-sources/objectstorage_credentials_group#name DataStackitObjectstorageCredentialsGroup#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/data-sources/objectstorage_credentials_group#name DataStackitObjectstorageCredentialsGroup#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

@@ -21,25 +21,25 @@ type LogmeInstanceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Instance name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.0/docs/resources/logme_instance#name LogmeInstance#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/resources/logme_instance#name LogmeInstance#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The selected plan name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.0/docs/resources/logme_instance#plan_name LogmeInstance#plan_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/resources/logme_instance#plan_name LogmeInstance#plan_name}
 	PlanName *string `field:"required" json:"planName" yaml:"planName"`
 	// STACKIT project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.0/docs/resources/logme_instance#project_id LogmeInstance#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/resources/logme_instance#project_id LogmeInstance#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The service version.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.0/docs/resources/logme_instance#version LogmeInstance#version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/resources/logme_instance#version LogmeInstance#version}
 	Version *string `field:"required" json:"version" yaml:"version"`
 	// Configuration parameters.
 	//
 	// Please note that removing a previously configured field from your Terraform configuration won't replace its value in the API. To update a previously configured field, explicitly set a new value for it.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.0/docs/resources/logme_instance#parameters LogmeInstance#parameters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.37.1/docs/resources/logme_instance#parameters LogmeInstance#parameters}
 	Parameters *LogmeInstanceParameters `field:"optional" json:"parameters" yaml:"parameters"`
 }
 
