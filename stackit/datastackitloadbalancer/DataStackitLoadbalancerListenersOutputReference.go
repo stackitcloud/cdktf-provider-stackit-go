@@ -32,6 +32,8 @@ type DataStackitLoadbalancerListenersOutputReference interface {
 	SetInternalValue(val *DataStackitLoadbalancerListeners)
 	Port() *float64
 	Protocol() *string
+	ServerNameIndicators() DataStackitLoadbalancerListenersServerNameIndicatorsList
+	ServerNameIndicatorsInput() interface{}
 	TargetPool() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -65,6 +67,8 @@ type DataStackitLoadbalancerListenersOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutServerNameIndicators(value interface{})
+	ResetServerNameIndicators()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -155,6 +159,26 @@ func (j *jsiiProxy_DataStackitLoadbalancerListenersOutputReference) Protocol() *
 	_jsii_.Get(
 		j,
 		"protocol",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLoadbalancerListenersOutputReference) ServerNameIndicators() DataStackitLoadbalancerListenersServerNameIndicatorsList {
+	var returns DataStackitLoadbalancerListenersServerNameIndicatorsList
+	_jsii_.Get(
+		j,
+		"serverNameIndicators",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitLoadbalancerListenersOutputReference) ServerNameIndicatorsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"serverNameIndicatorsInput",
 		&returns,
 	)
 	return returns
@@ -457,6 +481,25 @@ func (d *jsiiProxy_DataStackitLoadbalancerListenersOutputReference) Interpolatio
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataStackitLoadbalancerListenersOutputReference) PutServerNameIndicators(value interface{}) {
+	if err := d.validatePutServerNameIndicatorsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putServerNameIndicators",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataStackitLoadbalancerListenersOutputReference) ResetServerNameIndicators() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetServerNameIndicators",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataStackitLoadbalancerListenersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

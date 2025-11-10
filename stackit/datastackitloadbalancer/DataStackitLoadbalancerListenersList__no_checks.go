@@ -16,6 +16,10 @@ func (d *jsiiProxy_DataStackitLoadbalancerListenersList) validateResolveParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitLoadbalancerListenersList) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataStackitLoadbalancerListenersList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

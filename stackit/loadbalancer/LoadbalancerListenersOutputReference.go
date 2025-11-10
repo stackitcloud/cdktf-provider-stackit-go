@@ -38,6 +38,8 @@ type LoadbalancerListenersOutputReference interface {
 	Protocol() *string
 	SetProtocol(val *string)
 	ProtocolInput() *string
+	ServerNameIndicators() LoadbalancerListenersServerNameIndicatorsList
+	ServerNameIndicatorsInput() interface{}
 	TargetPool() *string
 	SetTargetPool(val *string)
 	TargetPoolInput() *string
@@ -73,9 +75,11 @@ type LoadbalancerListenersOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutServerNameIndicators(value interface{})
 	ResetDisplayName()
 	ResetPort()
 	ResetProtocol()
+	ResetServerNameIndicators()
 	ResetTargetPool()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -197,6 +201,26 @@ func (j *jsiiProxy_LoadbalancerListenersOutputReference) ProtocolInput() *string
 	_jsii_.Get(
 		j,
 		"protocolInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadbalancerListenersOutputReference) ServerNameIndicators() LoadbalancerListenersServerNameIndicatorsList {
+	var returns LoadbalancerListenersServerNameIndicatorsList
+	_jsii_.Get(
+		j,
+		"serverNameIndicators",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadbalancerListenersOutputReference) ServerNameIndicatorsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"serverNameIndicatorsInput",
 		&returns,
 	)
 	return returns
@@ -555,6 +579,17 @@ func (l *jsiiProxy_LoadbalancerListenersOutputReference) InterpolationForAttribu
 	return returns
 }
 
+func (l *jsiiProxy_LoadbalancerListenersOutputReference) PutServerNameIndicators(value interface{}) {
+	if err := l.validatePutServerNameIndicatorsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putServerNameIndicators",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LoadbalancerListenersOutputReference) ResetDisplayName() {
 	_jsii_.InvokeVoid(
 		l,
@@ -575,6 +610,14 @@ func (l *jsiiProxy_LoadbalancerListenersOutputReference) ResetProtocol() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetProtocol",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadbalancerListenersOutputReference) ResetServerNameIndicators() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetServerNameIndicators",
 		nil, // no parameters
 	)
 }

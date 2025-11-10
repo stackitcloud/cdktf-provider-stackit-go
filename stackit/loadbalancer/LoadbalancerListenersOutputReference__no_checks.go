@@ -44,6 +44,10 @@ func (l *jsiiProxy_LoadbalancerListenersOutputReference) validateInterpolationFo
 	return nil
 }
 
+func (l *jsiiProxy_LoadbalancerListenersOutputReference) validatePutServerNameIndicatorsParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoadbalancerListenersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

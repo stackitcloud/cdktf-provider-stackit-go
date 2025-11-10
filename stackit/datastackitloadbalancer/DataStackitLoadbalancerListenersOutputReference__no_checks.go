@@ -44,6 +44,10 @@ func (d *jsiiProxy_DataStackitLoadbalancerListenersOutputReference) validateInte
 	return nil
 }
 
+func (d *jsiiProxy_DataStackitLoadbalancerListenersOutputReference) validatePutServerNameIndicatorsParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataStackitLoadbalancerListenersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
