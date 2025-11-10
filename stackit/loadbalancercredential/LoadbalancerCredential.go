@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/resources/loadbalancer_credential stackit_loadbalancer_credential}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.1/docs/resources/loadbalancer_credential stackit_loadbalancer_credential}.
 type LoadbalancerCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -397,7 +397,7 @@ func (j *jsiiProxy_LoadbalancerCredential) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/resources/loadbalancer_credential stackit_loadbalancer_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.1/docs/resources/loadbalancer_credential stackit_loadbalancer_credential} Resource.
 func NewLoadbalancerCredential(scope constructs.Construct, id *string, config *LoadbalancerCredentialConfig) LoadbalancerCredential {
 	_init_.Initialize()
 
@@ -415,7 +415,7 @@ func NewLoadbalancerCredential(scope constructs.Construct, id *string, config *L
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/resources/loadbalancer_credential stackit_loadbalancer_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.1/docs/resources/loadbalancer_credential stackit_loadbalancer_credential} Resource.
 func NewLoadbalancerCredential_Override(l LoadbalancerCredential, scope constructs.Construct, id *string, config *LoadbalancerCredentialConfig) {
 	_init_.Initialize()
 
