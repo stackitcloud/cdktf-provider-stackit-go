@@ -67,6 +67,7 @@ type SkeClusterExtensionsArgusOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetArgusInstanceId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -481,6 +482,14 @@ func (s *jsiiProxy_SkeClusterExtensionsArgusOutputReference) InterpolationForAtt
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SkeClusterExtensionsArgusOutputReference) ResetArgusInstanceId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetArgusInstanceId",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SkeClusterExtensionsArgusOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
