@@ -1,3 +1,3 @@
 # `stackit_postgresql_instance`
 
-Refer to the Terraform Registry for docs: [`stackit_postgresql_instance`](https://registry.terraform.io/providers/stackitcloud/stackit/0.6.5/docs/resources/postgresql_instance).
+Refer to the Terraform Registry for docs: [`stackit_postgresql_instance`](https://registry.terraform.io/providers/stackitcloud/stackit/0.6.6/docs/resources/postgresql_instance).
