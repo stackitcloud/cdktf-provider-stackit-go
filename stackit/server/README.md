@@ -1,3 +1,3 @@
 # `stackit_server`
 
-Refer to the Terraform Registry for docs: [`stackit_server`](https://registry.terraform.io/providers/stackitcloud/stackit/0.50.0/docs/resources/server).
+Refer to the Terraform Registry for docs: [`stackit_server`](https://registry.terraform.io/providers/stackitcloud/stackit/0.51.0/docs/resources/server).

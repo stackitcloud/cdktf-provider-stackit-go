@@ -21,43 +21,43 @@ type VolumeConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The availability zone of the volume.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.50.0/docs/resources/volume#availability_zone Volume#availability_zone}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.51.0/docs/resources/volume#availability_zone Volume#availability_zone}
 	AvailabilityZone *string `field:"required" json:"availabilityZone" yaml:"availabilityZone"`
 	// STACKIT project ID to which the volume is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.50.0/docs/resources/volume#project_id Volume#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.51.0/docs/resources/volume#project_id Volume#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The description of the volume.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.50.0/docs/resources/volume#description Volume#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.51.0/docs/resources/volume#description Volume#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Labels are key-value string pairs which can be attached to a resource container.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.50.0/docs/resources/volume#labels Volume#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.51.0/docs/resources/volume#labels Volume#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// The name of the volume.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.50.0/docs/resources/volume#name Volume#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.51.0/docs/resources/volume#name Volume#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// The performance class of the volume. Possible values are documented in [Service plans BlockStorage](https://docs.stackit.cloud/stackit/en/service-plans-blockstorage-75137974.html#ServiceplansBlockStorage-CurrentlyavailableServicePlans%28performanceclasses%29).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.50.0/docs/resources/volume#performance_class Volume#performance_class}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.51.0/docs/resources/volume#performance_class Volume#performance_class}
 	PerformanceClass *string `field:"optional" json:"performanceClass" yaml:"performanceClass"`
 	// The server ID of the server to which the volume is attached to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.50.0/docs/resources/volume#server_id Volume#server_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.51.0/docs/resources/volume#server_id Volume#server_id}
 	ServerId *string `field:"optional" json:"serverId" yaml:"serverId"`
 	// The size of the volume in GB.
 	//
 	// It can only be updated to a larger value than the current size. Either `size` or `source` must be provided
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.50.0/docs/resources/volume#size Volume#size}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.51.0/docs/resources/volume#size Volume#size}
 	Size *float64 `field:"optional" json:"size" yaml:"size"`
 	// The source of the volume.
 	//
 	// It can be either a volume, an image, a snapshot or a backup. Either `size` or `source` must be provided
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.50.0/docs/resources/volume#source Volume#source}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.51.0/docs/resources/volume#source Volume#source}
 	Source *VolumeSource `field:"optional" json:"source" yaml:"source"`
 }
 

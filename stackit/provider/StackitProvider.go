@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.50.0/docs stackit}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.51.0/docs stackit}.
 type StackitProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -23,6 +23,9 @@ type StackitProvider interface {
 	AuthorizationCustomEndpointInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CdnCustomEndpoint() *string
+	SetCdnCustomEndpoint(val *string)
+	CdnCustomEndpointInput() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	CredentialsPath() *string
@@ -148,6 +151,7 @@ type StackitProvider interface {
 	ResetAlias()
 	ResetArgusCustomEndpoint()
 	ResetAuthorizationCustomEndpoint()
+	ResetCdnCustomEndpoint()
 	ResetCredentialsPath()
 	ResetDefaultRegion()
 	ResetDnsCustomEndpoint()
@@ -267,6 +271,26 @@ func (j *jsiiProxy_StackitProvider) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) CdnCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cdnCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) CdnCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cdnCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -1023,7 +1047,7 @@ func (j *jsiiProxy_StackitProvider) TokenCustomEndpointInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.50.0/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.51.0/docs stackit} Resource.
 func NewStackitProvider(scope constructs.Construct, id *string, config *StackitProviderConfig) StackitProvider {
 	_init_.Initialize()
 
@@ -1041,7 +1065,7 @@ func NewStackitProvider(scope constructs.Construct, id *string, config *StackitP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.50.0/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.51.0/docs stackit} Resource.
 func NewStackitProvider_Override(s StackitProvider, scope constructs.Construct, id *string, config *StackitProviderConfig) {
 	_init_.Initialize()
 
@@ -1072,6 +1096,14 @@ func (j *jsiiProxy_StackitProvider)SetAuthorizationCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"authorizationCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StackitProvider)SetCdnCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"cdnCustomEndpoint",
 		val,
 	)
 }
@@ -1488,6 +1520,14 @@ func (s *jsiiProxy_StackitProvider) ResetAuthorizationCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAuthorizationCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StackitProvider) ResetCdnCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCdnCustomEndpoint",
 		nil, // no parameters
 	)
 }
