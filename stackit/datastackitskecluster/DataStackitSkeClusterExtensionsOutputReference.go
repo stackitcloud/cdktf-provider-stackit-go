@@ -27,6 +27,7 @@ type DataStackitSkeClusterExtensionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Dns() DataStackitSkeClusterExtensionsDnsOutputReference
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataStackitSkeClusterExtensions
@@ -123,6 +124,16 @@ func (j *jsiiProxy_DataStackitSkeClusterExtensionsOutputReference) CreationStack
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitSkeClusterExtensionsOutputReference) Dns() DataStackitSkeClusterExtensionsDnsOutputReference {
+	var returns DataStackitSkeClusterExtensionsDnsOutputReference
+	_jsii_.Get(
+		j,
+		"dns",
 		&returns,
 	)
 	return returns

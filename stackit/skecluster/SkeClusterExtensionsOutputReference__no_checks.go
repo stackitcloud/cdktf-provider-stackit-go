@@ -52,6 +52,10 @@ func (s *jsiiProxy_SkeClusterExtensionsOutputReference) validatePutArgusParamete
 	return nil
 }
 
+func (s *jsiiProxy_SkeClusterExtensionsOutputReference) validatePutDnsParameters(value *SkeClusterExtensionsDns) error {
+	return nil
+}
+
 func (s *jsiiProxy_SkeClusterExtensionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

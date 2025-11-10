@@ -67,7 +67,6 @@ type SkeClusterExtensionsAclOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetAllowedCidrs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -482,14 +481,6 @@ func (s *jsiiProxy_SkeClusterExtensionsAclOutputReference) InterpolationForAttri
 	)
 
 	return returns
-}
-
-func (s *jsiiProxy_SkeClusterExtensionsAclOutputReference) ResetAllowedCidrs() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetAllowedCidrs",
-		nil, // no parameters
-	)
 }
 
 func (s *jsiiProxy_SkeClusterExtensionsAclOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

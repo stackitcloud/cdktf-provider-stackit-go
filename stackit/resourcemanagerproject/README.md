@@ -1,3 +1,3 @@
 # `stackit_resourcemanager_project`
 
-Refer to the Terraform Registry for docs: [`stackit_resourcemanager_project`](https://registry.terraform.io/providers/stackitcloud/stackit/0.26.3/docs/resources/resourcemanager_project).
+Refer to the Terraform Registry for docs: [`stackit_resourcemanager_project`](https://registry.terraform.io/providers/stackitcloud/stackit/0.27.0/docs/resources/resourcemanager_project).

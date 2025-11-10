@@ -29,6 +29,8 @@ type SkeClusterExtensionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Dns() SkeClusterExtensionsDnsOutputReference
+	DnsInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -67,8 +69,10 @@ type SkeClusterExtensionsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAcl(value *SkeClusterExtensionsAcl)
 	PutArgus(value *SkeClusterExtensionsArgus)
+	PutDns(value *SkeClusterExtensionsDns)
 	ResetAcl()
 	ResetArgus()
+	ResetDns()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -149,6 +153,26 @@ func (j *jsiiProxy_SkeClusterExtensionsOutputReference) CreationStack() *[]*stri
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SkeClusterExtensionsOutputReference) Dns() SkeClusterExtensionsDnsOutputReference {
+	var returns SkeClusterExtensionsDnsOutputReference
+	_jsii_.Get(
+		j,
+		"dns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SkeClusterExtensionsOutputReference) DnsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dnsInput",
 		&returns,
 	)
 	return returns
@@ -485,6 +509,17 @@ func (s *jsiiProxy_SkeClusterExtensionsOutputReference) PutArgus(value *SkeClust
 	)
 }
 
+func (s *jsiiProxy_SkeClusterExtensionsOutputReference) PutDns(value *SkeClusterExtensionsDns) {
+	if err := s.validatePutDnsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putDns",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SkeClusterExtensionsOutputReference) ResetAcl() {
 	_jsii_.InvokeVoid(
 		s,
@@ -497,6 +532,14 @@ func (s *jsiiProxy_SkeClusterExtensionsOutputReference) ResetArgus() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetArgus",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SkeClusterExtensionsOutputReference) ResetDns() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDns",
 		nil, // no parameters
 	)
 }
