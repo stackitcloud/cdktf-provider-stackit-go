@@ -21,19 +21,19 @@ type SecretsmanagerUserConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A user chosen description to differentiate between multiple users. Can't be changed after creation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.0/docs/resources/secretsmanager_user#description SecretsmanagerUser#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.1/docs/resources/secretsmanager_user#description SecretsmanagerUser#description}
 	Description *string `field:"required" json:"description" yaml:"description"`
 	// ID of the Secrets Manager instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.0/docs/resources/secretsmanager_user#instance_id SecretsmanagerUser#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.1/docs/resources/secretsmanager_user#instance_id SecretsmanagerUser#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// STACKIT Project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.0/docs/resources/secretsmanager_user#project_id SecretsmanagerUser#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.1/docs/resources/secretsmanager_user#project_id SecretsmanagerUser#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// If true, the user has writeaccess to the secrets engine.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.0/docs/resources/secretsmanager_user#write_enabled SecretsmanagerUser#write_enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.1/docs/resources/secretsmanager_user#write_enabled SecretsmanagerUser#write_enabled}
 	WriteEnabled interface{} `field:"required" json:"writeEnabled" yaml:"writeEnabled"`
 }
 
