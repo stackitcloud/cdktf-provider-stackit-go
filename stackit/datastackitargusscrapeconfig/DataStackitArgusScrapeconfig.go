@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.21.1/docs/data-sources/argus_scrapeconfig stackit_argus_scrapeconfig}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.22.0/docs/data-sources/argus_scrapeconfig stackit_argus_scrapeconfig}.
 type DataStackitArgusScrapeconfig interface {
 	cdktf.TerraformDataSource
 	BasicAuth() DataStackitArgusScrapeconfigBasicAuthOutputReference
@@ -406,7 +406,7 @@ func (j *jsiiProxy_DataStackitArgusScrapeconfig) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.21.1/docs/data-sources/argus_scrapeconfig stackit_argus_scrapeconfig} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.22.0/docs/data-sources/argus_scrapeconfig stackit_argus_scrapeconfig} Data Source.
 func NewDataStackitArgusScrapeconfig(scope constructs.Construct, id *string, config *DataStackitArgusScrapeconfigConfig) DataStackitArgusScrapeconfig {
 	_init_.Initialize()
 
@@ -424,7 +424,7 @@ func NewDataStackitArgusScrapeconfig(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.21.1/docs/data-sources/argus_scrapeconfig stackit_argus_scrapeconfig} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.22.0/docs/data-sources/argus_scrapeconfig stackit_argus_scrapeconfig} Data Source.
 func NewDataStackitArgusScrapeconfig_Override(d DataStackitArgusScrapeconfig, scope constructs.Construct, id *string, config *DataStackitArgusScrapeconfigConfig) {
 	_init_.Initialize()
 

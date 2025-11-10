@@ -21,11 +21,11 @@ type MariadbCredentialConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of the MariaDB instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.21.1/docs/resources/mariadb_credential#instance_id MariadbCredential#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.22.0/docs/resources/mariadb_credential#instance_id MariadbCredential#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// STACKIT Project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.21.1/docs/resources/mariadb_credential#project_id MariadbCredential#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.22.0/docs/resources/mariadb_credential#project_id MariadbCredential#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 
