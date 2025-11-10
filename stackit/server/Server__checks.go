@@ -417,6 +417,14 @@ func (j *jsiiProxy_Server) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Server) validateSetNetworkInterfacesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Server) validateSetProjectIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

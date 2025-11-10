@@ -21,25 +21,25 @@ type PostgresflexInstanceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Access Control List (ACL) for the PostgresFlex instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/resources/postgresflex_instance#acl PostgresflexInstance#acl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/resources/postgresflex_instance#acl PostgresflexInstance#acl}
 	Acl *[]*string `field:"required" json:"acl" yaml:"acl"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/resources/postgresflex_instance#backup_schedule PostgresflexInstance#backup_schedule}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/resources/postgresflex_instance#backup_schedule PostgresflexInstance#backup_schedule}.
 	BackupSchedule *string `field:"required" json:"backupSchedule" yaml:"backupSchedule"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/resources/postgresflex_instance#flavor PostgresflexInstance#flavor}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/resources/postgresflex_instance#flavor PostgresflexInstance#flavor}.
 	Flavor *PostgresflexInstanceFlavor `field:"required" json:"flavor" yaml:"flavor"`
 	// Instance name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/resources/postgresflex_instance#name PostgresflexInstance#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/resources/postgresflex_instance#name PostgresflexInstance#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// STACKIT project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/resources/postgresflex_instance#project_id PostgresflexInstance#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/resources/postgresflex_instance#project_id PostgresflexInstance#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/resources/postgresflex_instance#replicas PostgresflexInstance#replicas}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/resources/postgresflex_instance#replicas PostgresflexInstance#replicas}.
 	Replicas *float64 `field:"required" json:"replicas" yaml:"replicas"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/resources/postgresflex_instance#storage PostgresflexInstance#storage}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/resources/postgresflex_instance#storage PostgresflexInstance#storage}.
 	Storage *PostgresflexInstanceStorage `field:"required" json:"storage" yaml:"storage"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/resources/postgresflex_instance#version PostgresflexInstance#version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/resources/postgresflex_instance#version PostgresflexInstance#version}.
 	Version *string `field:"required" json:"version" yaml:"version"`
 }
 

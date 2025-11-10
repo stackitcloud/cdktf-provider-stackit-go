@@ -136,6 +136,10 @@ func (j *jsiiProxy_Server) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Server) validateSetNetworkInterfacesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Server) validateSetProjectIdParameters(val *string) error {
 	return nil
 }

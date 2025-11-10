@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/data-sources/network_area_route stackit_network_area_route}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/data-sources/network_area_route stackit_network_area_route}.
 type DataStackitNetworkAreaRoute interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -351,7 +351,7 @@ func (j *jsiiProxy_DataStackitNetworkAreaRoute) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/data-sources/network_area_route stackit_network_area_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/data-sources/network_area_route stackit_network_area_route} Data Source.
 func NewDataStackitNetworkAreaRoute(scope constructs.Construct, id *string, config *DataStackitNetworkAreaRouteConfig) DataStackitNetworkAreaRoute {
 	_init_.Initialize()
 
@@ -369,7 +369,7 @@ func NewDataStackitNetworkAreaRoute(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/data-sources/network_area_route stackit_network_area_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/data-sources/network_area_route stackit_network_area_route} Data Source.
 func NewDataStackitNetworkAreaRoute_Override(d DataStackitNetworkAreaRoute, scope constructs.Construct, id *string, config *DataStackitNetworkAreaRouteConfig) {
 	_init_.Initialize()
 

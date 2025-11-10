@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/resources/ske_kubeconfig stackit_ske_kubeconfig}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/resources/ske_kubeconfig stackit_ske_kubeconfig}.
 type SkeKubeconfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,6 +27,7 @@ type SkeKubeconfig interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreationTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -195,6 +196,16 @@ func (j *jsiiProxy_SkeKubeconfig) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SkeKubeconfig) CreationTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creationTime",
 		&returns,
 	)
 	return returns
@@ -421,7 +432,7 @@ func (j *jsiiProxy_SkeKubeconfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/resources/ske_kubeconfig stackit_ske_kubeconfig} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/resources/ske_kubeconfig stackit_ske_kubeconfig} Resource.
 func NewSkeKubeconfig(scope constructs.Construct, id *string, config *SkeKubeconfigConfig) SkeKubeconfig {
 	_init_.Initialize()
 
@@ -439,7 +450,7 @@ func NewSkeKubeconfig(scope constructs.Construct, id *string, config *SkeKubecon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/resources/ske_kubeconfig stackit_ske_kubeconfig} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/resources/ske_kubeconfig stackit_ske_kubeconfig} Resource.
 func NewSkeKubeconfig_Override(s SkeKubeconfig, scope constructs.Construct, id *string, config *SkeKubeconfigConfig) {
 	_init_.Initialize()
 

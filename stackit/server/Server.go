@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/resources/server stackit_server}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/resources/server stackit_server}.
 type Server interface {
 	cdktf.TerraformResource
 	AffinityGroup() *string
@@ -69,6 +69,9 @@ type Server interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NetworkInterfaces() *[]*string
+	SetNetworkInterfaces(val *[]*string)
+	NetworkInterfacesInput() *[]*string
 	// The tree node.
 	Node() constructs.Node
 	ProjectId() *string
@@ -146,6 +149,7 @@ type Server interface {
 	ResetImageId()
 	ResetKeypairName()
 	ResetLabels()
+	ResetNetworkInterfaces()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -468,6 +472,26 @@ func (j *jsiiProxy_Server) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Server) NetworkInterfaces() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"networkInterfaces",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Server) NetworkInterfacesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"networkInterfacesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Server) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -599,7 +623,7 @@ func (j *jsiiProxy_Server) UserDataInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/resources/server stackit_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/resources/server stackit_server} Resource.
 func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Server {
 	_init_.Initialize()
 
@@ -617,7 +641,7 @@ func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Ser
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/resources/server stackit_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/resources/server stackit_server} Resource.
 func NewServer_Override(s Server, scope constructs.Construct, id *string, config *ServerConfig) {
 	_init_.Initialize()
 
@@ -761,6 +785,17 @@ func (j *jsiiProxy_Server)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Server)SetNetworkInterfaces(val *[]*string) {
+	if err := j.validateSetNetworkInterfacesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkInterfaces",
 		val,
 	)
 }
@@ -1222,6 +1257,14 @@ func (s *jsiiProxy_Server) ResetLabels() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Server) ResetNetworkInterfaces() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNetworkInterfaces",
 		nil, // no parameters
 	)
 }

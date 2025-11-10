@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/data-sources/volume stackit_volume}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/data-sources/volume stackit_volume}.
 type DataStackitVolume interface {
 	cdktf.TerraformDataSource
 	AvailabilityZone() *string
@@ -383,7 +383,7 @@ func (j *jsiiProxy_DataStackitVolume) VolumeIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/data-sources/volume stackit_volume} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/data-sources/volume stackit_volume} Data Source.
 func NewDataStackitVolume(scope constructs.Construct, id *string, config *DataStackitVolumeConfig) DataStackitVolume {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewDataStackitVolume(scope constructs.Construct, id *string, config *DataSt
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/data-sources/volume stackit_volume} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/data-sources/volume stackit_volume} Data Source.
 func NewDataStackitVolume_Override(d DataStackitVolume, scope constructs.Construct, id *string, config *DataStackitVolumeConfig) {
 	_init_.Initialize()
 

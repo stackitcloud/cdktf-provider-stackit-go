@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/data-sources/server stackit_server}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/data-sources/server stackit_server}.
 type DataStackitServer interface {
 	cdktf.TerraformDataSource
 	AffinityGroup() *string
@@ -47,6 +47,7 @@ type DataStackitServer interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	MachineType() *string
 	Name() *string
+	NetworkInterfaces() *[]*string
 	// The tree node.
 	Node() constructs.Node
 	ProjectId() *string
@@ -306,6 +307,16 @@ func (j *jsiiProxy_DataStackitServer) Name() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitServer) NetworkInterfaces() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"networkInterfaces",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitServer) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -427,7 +438,7 @@ func (j *jsiiProxy_DataStackitServer) UserData() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/data-sources/server stackit_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/data-sources/server stackit_server} Data Source.
 func NewDataStackitServer(scope constructs.Construct, id *string, config *DataStackitServerConfig) DataStackitServer {
 	_init_.Initialize()
 
@@ -445,7 +456,7 @@ func NewDataStackitServer(scope constructs.Construct, id *string, config *DataSt
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.38.1/docs/data-sources/server stackit_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.39.0/docs/data-sources/server stackit_server} Data Source.
 func NewDataStackitServer_Override(d DataStackitServer, scope constructs.Construct, id *string, config *DataStackitServerConfig) {
 	_init_.Initialize()
 
