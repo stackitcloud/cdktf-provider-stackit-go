@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.62.0/docs/resources/authorization_project_role_assignment stackit_authorization_project_role_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.63.0/docs/resources/authorization_project_role_assignment stackit_authorization_project_role_assignment}.
 type AuthorizationProjectRoleAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -363,7 +363,7 @@ func (j *jsiiProxy_AuthorizationProjectRoleAssignment) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.62.0/docs/resources/authorization_project_role_assignment stackit_authorization_project_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.63.0/docs/resources/authorization_project_role_assignment stackit_authorization_project_role_assignment} Resource.
 func NewAuthorizationProjectRoleAssignment(scope constructs.Construct, id *string, config *AuthorizationProjectRoleAssignmentConfig) AuthorizationProjectRoleAssignment {
 	_init_.Initialize()
 
@@ -381,7 +381,7 @@ func NewAuthorizationProjectRoleAssignment(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.62.0/docs/resources/authorization_project_role_assignment stackit_authorization_project_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.63.0/docs/resources/authorization_project_role_assignment stackit_authorization_project_role_assignment} Resource.
 func NewAuthorizationProjectRoleAssignment_Override(a AuthorizationProjectRoleAssignment, scope constructs.Construct, id *string, config *AuthorizationProjectRoleAssignmentConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.62.0/docs/data-sources/secretsmanager_instance stackit_secretsmanager_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.63.0/docs/data-sources/secretsmanager_instance stackit_secretsmanager_instance}.
 type DataStackitSecretsmanagerInstance interface {
 	cdktf.TerraformDataSource
 	Acls() *[]*string
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DataStackitSecretsmanagerInstance) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.62.0/docs/data-sources/secretsmanager_instance stackit_secretsmanager_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.63.0/docs/data-sources/secretsmanager_instance stackit_secretsmanager_instance} Data Source.
 func NewDataStackitSecretsmanagerInstance(scope constructs.Construct, id *string, config *DataStackitSecretsmanagerInstanceConfig) DataStackitSecretsmanagerInstance {
 	_init_.Initialize()
 
@@ -335,7 +335,7 @@ func NewDataStackitSecretsmanagerInstance(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.62.0/docs/data-sources/secretsmanager_instance stackit_secretsmanager_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.63.0/docs/data-sources/secretsmanager_instance stackit_secretsmanager_instance} Data Source.
 func NewDataStackitSecretsmanagerInstance_Override(d DataStackitSecretsmanagerInstance, scope constructs.Construct, id *string, config *DataStackitSecretsmanagerInstanceConfig) {
 	_init_.Initialize()
 

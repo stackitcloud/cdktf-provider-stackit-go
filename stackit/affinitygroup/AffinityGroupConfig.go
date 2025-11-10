@@ -21,15 +21,15 @@ type AffinityGroupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the affinity group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.62.0/docs/resources/affinity_group#name AffinityGroup#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.63.0/docs/resources/affinity_group#name AffinityGroup#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The policy of the affinity group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.62.0/docs/resources/affinity_group#policy AffinityGroup#policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.63.0/docs/resources/affinity_group#policy AffinityGroup#policy}
 	Policy *string `field:"required" json:"policy" yaml:"policy"`
 	// STACKIT Project ID to which the affinity group is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.62.0/docs/resources/affinity_group#project_id AffinityGroup#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.63.0/docs/resources/affinity_group#project_id AffinityGroup#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

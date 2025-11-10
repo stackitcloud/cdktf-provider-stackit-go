@@ -2,7 +2,7 @@ package cdndistribution
 
 
 type CdnDistributionConfigOptimizer struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.62.0/docs/resources/cdn_distribution#enabled CdnDistribution#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.63.0/docs/resources/cdn_distribution#enabled CdnDistribution#enabled}.
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 
