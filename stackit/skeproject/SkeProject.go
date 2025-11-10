@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.29.0/docs/resources/ske_project stackit_ske_project}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.30.0/docs/resources/ske_project stackit_ske_project}.
 type SkeProject interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -317,7 +317,7 @@ func (j *jsiiProxy_SkeProject) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.29.0/docs/resources/ske_project stackit_ske_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.30.0/docs/resources/ske_project stackit_ske_project} Resource.
 func NewSkeProject(scope constructs.Construct, id *string, config *SkeProjectConfig) SkeProject {
 	_init_.Initialize()
 
@@ -335,7 +335,7 @@ func NewSkeProject(scope constructs.Construct, id *string, config *SkeProjectCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.29.0/docs/resources/ske_project stackit_ske_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.30.0/docs/resources/ske_project stackit_ske_project} Resource.
 func NewSkeProject_Override(s SkeProject, scope constructs.Construct, id *string, config *SkeProjectConfig) {
 	_init_.Initialize()
 

@@ -1,3 +1,3 @@
 # `stackit_loadbalancer_credential`
 
-Refer to the Terraform Registry for docs: [`stackit_loadbalancer_credential`](https://registry.terraform.io/providers/stackitcloud/stackit/0.29.0/docs/resources/loadbalancer_credential).
+Refer to the Terraform Registry for docs: [`stackit_loadbalancer_credential`](https://registry.terraform.io/providers/stackitcloud/stackit/0.30.0/docs/resources/loadbalancer_credential).

@@ -1,0 +1,6 @@
+package datastackitobservabilityinstance
+
+
+type DataStackitObservabilityInstanceAlertConfigReceiversOpsgenieConfigs struct {
+}
+

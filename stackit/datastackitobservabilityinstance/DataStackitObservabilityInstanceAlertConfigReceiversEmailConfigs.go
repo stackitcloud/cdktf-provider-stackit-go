@@ -1,0 +1,6 @@
+package datastackitobservabilityinstance
+
+
+type DataStackitObservabilityInstanceAlertConfigReceiversEmailConfigs struct {
+}
+

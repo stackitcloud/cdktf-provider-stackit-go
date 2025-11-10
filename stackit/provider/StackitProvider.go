@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.29.0/docs stackit}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.30.0/docs stackit}.
 type StackitProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -63,6 +63,9 @@ type StackitProvider interface {
 	ObjectstorageCustomEndpoint() *string
 	SetObjectstorageCustomEndpoint(val *string)
 	ObjectstorageCustomEndpointInput() *string
+	ObservabilityCustomEndpoint() *string
+	SetObservabilityCustomEndpoint(val *string)
+	ObservabilityCustomEndpointInput() *string
 	OpensearchCustomEndpoint() *string
 	SetOpensearchCustomEndpoint(val *string)
 	OpensearchCustomEndpointInput() *string
@@ -146,6 +149,7 @@ type StackitProvider interface {
 	ResetMariadbCustomEndpoint()
 	ResetMongodbflexCustomEndpoint()
 	ResetObjectstorageCustomEndpoint()
+	ResetObservabilityCustomEndpoint()
 	ResetOpensearchCustomEndpoint()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -501,6 +505,26 @@ func (j *jsiiProxy_StackitProvider) ObjectstorageCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"objectstorageCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) ObservabilityCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"observabilityCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) ObservabilityCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"observabilityCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -927,7 +951,7 @@ func (j *jsiiProxy_StackitProvider) TokenCustomEndpointInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.29.0/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.30.0/docs stackit} Resource.
 func NewStackitProvider(scope constructs.Construct, id *string, config *StackitProviderConfig) StackitProvider {
 	_init_.Initialize()
 
@@ -945,7 +969,7 @@ func NewStackitProvider(scope constructs.Construct, id *string, config *StackitP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.29.0/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.30.0/docs stackit} Resource.
 func NewStackitProvider_Override(s StackitProvider, scope constructs.Construct, id *string, config *StackitProviderConfig) {
 	_init_.Initialize()
 
@@ -1059,6 +1083,14 @@ func (j *jsiiProxy_StackitProvider)SetObjectstorageCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"objectstorageCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StackitProvider)SetObservabilityCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"observabilityCustomEndpoint",
 		val,
 	)
 }
@@ -1440,6 +1472,14 @@ func (s *jsiiProxy_StackitProvider) ResetObjectstorageCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetObjectstorageCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StackitProvider) ResetObservabilityCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetObservabilityCustomEndpoint",
 		nil, // no parameters
 	)
 }
