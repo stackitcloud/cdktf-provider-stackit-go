@@ -21,19 +21,19 @@ type DataStackitObjectstorageCredentialConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The credential ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/data-sources/objectstorage_credential#credential_id DataStackitObjectstorageCredential#credential_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/data-sources/objectstorage_credential#credential_id DataStackitObjectstorageCredential#credential_id}
 	CredentialId *string `field:"required" json:"credentialId" yaml:"credentialId"`
 	// The credential group ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/data-sources/objectstorage_credential#credentials_group_id DataStackitObjectstorageCredential#credentials_group_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/data-sources/objectstorage_credential#credentials_group_id DataStackitObjectstorageCredential#credentials_group_id}
 	CredentialsGroupId *string `field:"required" json:"credentialsGroupId" yaml:"credentialsGroupId"`
 	// STACKIT Project ID to which the credential group is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/data-sources/objectstorage_credential#project_id DataStackitObjectstorageCredential#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/data-sources/objectstorage_credential#project_id DataStackitObjectstorageCredential#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/data-sources/objectstorage_credential#region DataStackitObjectstorageCredential#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/data-sources/objectstorage_credential#region DataStackitObjectstorageCredential#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

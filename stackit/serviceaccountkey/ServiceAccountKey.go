@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/resources/service_account_key stackit_service_account_key}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/resources/service_account_key stackit_service_account_key}.
 type ServiceAccountKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -434,7 +434,7 @@ func (j *jsiiProxy_ServiceAccountKey) TtlDaysInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/resources/service_account_key stackit_service_account_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/resources/service_account_key stackit_service_account_key} Resource.
 func NewServiceAccountKey(scope constructs.Construct, id *string, config *ServiceAccountKeyConfig) ServiceAccountKey {
 	_init_.Initialize()
 
@@ -452,7 +452,7 @@ func NewServiceAccountKey(scope constructs.Construct, id *string, config *Servic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/resources/service_account_key stackit_service_account_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/resources/service_account_key stackit_service_account_key} Resource.
 func NewServiceAccountKey_Override(s ServiceAccountKey, scope constructs.Construct, id *string, config *ServiceAccountKeyConfig) {
 	_init_.Initialize()
 

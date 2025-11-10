@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/resources/ske_kubeconfig stackit_ske_kubeconfig}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/resources/ske_kubeconfig stackit_ske_kubeconfig}.
 type SkeKubeconfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -68,6 +68,9 @@ type SkeKubeconfig interface {
 	RawOverrides() interface{}
 	Refresh() interface{}
 	SetRefresh(val interface{})
+	RefreshBefore() *float64
+	SetRefreshBefore(val *float64)
+	RefreshBeforeInput() *float64
 	RefreshInput() interface{}
 	Region() *string
 	SetRegion(val *string)
@@ -126,6 +129,7 @@ type SkeKubeconfig interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRefresh()
+	ResetRefreshBefore()
 	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -395,6 +399,26 @@ func (j *jsiiProxy_SkeKubeconfig) Refresh() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SkeKubeconfig) RefreshBefore() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"refreshBefore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SkeKubeconfig) RefreshBeforeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"refreshBeforeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SkeKubeconfig) RefreshInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -456,7 +480,7 @@ func (j *jsiiProxy_SkeKubeconfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/resources/ske_kubeconfig stackit_ske_kubeconfig} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/resources/ske_kubeconfig stackit_ske_kubeconfig} Resource.
 func NewSkeKubeconfig(scope constructs.Construct, id *string, config *SkeKubeconfigConfig) SkeKubeconfig {
 	_init_.Initialize()
 
@@ -474,7 +498,7 @@ func NewSkeKubeconfig(scope constructs.Construct, id *string, config *SkeKubecon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/resources/ske_kubeconfig stackit_ske_kubeconfig} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/resources/ske_kubeconfig stackit_ske_kubeconfig} Resource.
 func NewSkeKubeconfig_Override(s SkeKubeconfig, scope constructs.Construct, id *string, config *SkeKubeconfigConfig) {
 	_init_.Initialize()
 
@@ -593,6 +617,17 @@ func (j *jsiiProxy_SkeKubeconfig)SetRefresh(val interface{}) {
 	_jsii_.Set(
 		j,
 		"refresh",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SkeKubeconfig)SetRefreshBefore(val *float64) {
+	if err := j.validateSetRefreshBeforeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"refreshBefore",
 		val,
 	)
 }
@@ -981,6 +1016,14 @@ func (s *jsiiProxy_SkeKubeconfig) ResetRefresh() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRefresh",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SkeKubeconfig) ResetRefreshBefore() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRefreshBefore",
 		nil, // no parameters
 	)
 }

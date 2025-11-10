@@ -21,7 +21,7 @@ type DataStackitKeyPairConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the SSH key pair.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/data-sources/key_pair#name DataStackitKeyPair#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/data-sources/key_pair#name DataStackitKeyPair#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

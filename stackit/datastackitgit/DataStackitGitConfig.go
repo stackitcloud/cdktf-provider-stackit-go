@@ -21,11 +21,11 @@ type DataStackitGitConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID linked to the git instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/data-sources/git#instance_id DataStackitGit#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/data-sources/git#instance_id DataStackitGit#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// STACKIT project ID to which the git instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/data-sources/git#project_id DataStackitGit#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/data-sources/git#project_id DataStackitGit#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

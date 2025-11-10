@@ -120,6 +120,10 @@ func (j *jsiiProxy_SkeKubeconfig) validateSetRefreshParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_SkeKubeconfig) validateSetRefreshBeforeParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_SkeKubeconfig) validateSetRegionParameters(val *string) error {
 	return nil
 }

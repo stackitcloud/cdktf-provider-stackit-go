@@ -9,11 +9,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/data-sources/public_ip_ranges stackit_public_ip_ranges}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/data-sources/public_ip_ranges stackit_public_ip_ranges}.
 type DataStackitPublicIpRanges interface {
 	cdktf.TerraformDataSource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CidrList() *[]*string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -104,6 +105,16 @@ func (j *jsiiProxy_DataStackitPublicIpRanges) CdktfStack() cdktf.TerraformStack 
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitPublicIpRanges) CidrList() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"cidrList",
 		&returns,
 	)
 	return returns
@@ -260,7 +271,7 @@ func (j *jsiiProxy_DataStackitPublicIpRanges) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/data-sources/public_ip_ranges stackit_public_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/data-sources/public_ip_ranges stackit_public_ip_ranges} Data Source.
 func NewDataStackitPublicIpRanges(scope constructs.Construct, id *string, config *DataStackitPublicIpRangesConfig) DataStackitPublicIpRanges {
 	_init_.Initialize()
 
@@ -278,7 +289,7 @@ func NewDataStackitPublicIpRanges(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.67.0/docs/data-sources/public_ip_ranges stackit_public_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.68.0/docs/data-sources/public_ip_ranges stackit_public_ip_ranges} Data Source.
 func NewDataStackitPublicIpRanges_Override(d DataStackitPublicIpRanges, scope constructs.Construct, id *string, config *DataStackitPublicIpRangesConfig) {
 	_init_.Initialize()
 
