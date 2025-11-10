@@ -21,11 +21,11 @@ type DataStackitServiceAccountConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Email of the service account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.60.0/docs/data-sources/service_account#email DataStackitServiceAccount#email}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.61.0/docs/data-sources/service_account#email DataStackitServiceAccount#email}
 	Email *string `field:"required" json:"email" yaml:"email"`
 	// STACKIT project ID to which the service account is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.60.0/docs/data-sources/service_account#project_id DataStackitServiceAccount#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.61.0/docs/data-sources/service_account#project_id DataStackitServiceAccount#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

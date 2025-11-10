@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.60.0/docs/data-sources/security_group_rule stackit_security_group_rule}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.61.0/docs/data-sources/security_group_rule stackit_security_group_rule}.
 type DataStackitSecurityGroupRule interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -406,7 +406,7 @@ func (j *jsiiProxy_DataStackitSecurityGroupRule) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.60.0/docs/data-sources/security_group_rule stackit_security_group_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.61.0/docs/data-sources/security_group_rule stackit_security_group_rule} Data Source.
 func NewDataStackitSecurityGroupRule(scope constructs.Construct, id *string, config *DataStackitSecurityGroupRuleConfig) DataStackitSecurityGroupRule {
 	_init_.Initialize()
 
@@ -424,7 +424,7 @@ func NewDataStackitSecurityGroupRule(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.60.0/docs/data-sources/security_group_rule stackit_security_group_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.61.0/docs/data-sources/security_group_rule stackit_security_group_rule} Data Source.
 func NewDataStackitSecurityGroupRule_Override(d DataStackitSecurityGroupRule, scope constructs.Construct, id *string, config *DataStackitSecurityGroupRuleConfig) {
 	_init_.Initialize()
 
