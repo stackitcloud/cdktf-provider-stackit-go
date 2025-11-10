@@ -67,7 +67,6 @@ type LoadbalancerNetworksOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetRole()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -482,14 +481,6 @@ func (l *jsiiProxy_LoadbalancerNetworksOutputReference) InterpolationForAttribut
 	)
 
 	return returns
-}
-
-func (l *jsiiProxy_LoadbalancerNetworksOutputReference) ResetRole() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetRole",
-		nil, // no parameters
-	)
 }
 
 func (l *jsiiProxy_LoadbalancerNetworksOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

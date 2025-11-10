@@ -1,3 +1,3 @@
 # `data_stackit_public_ip_ranges`
 
-Refer to the Terraform Registry for docs: [`data_stackit_public_ip_ranges`](https://registry.terraform.io/providers/stackitcloud/stackit/0.51.0/docs/data-sources/public_ip_ranges).
+Refer to the Terraform Registry for docs: [`data_stackit_public_ip_ranges`](https://registry.terraform.io/providers/stackitcloud/stackit/0.52.0/docs/data-sources/public_ip_ranges).
