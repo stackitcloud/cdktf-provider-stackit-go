@@ -21,13 +21,13 @@ type CdnCustomDomainConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// CDN distribution ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.2/docs/resources/cdn_custom_domain#distribution_id CdnCustomDomain#distribution_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.59.0/docs/resources/cdn_custom_domain#distribution_id CdnCustomDomain#distribution_id}
 	DistributionId *string `field:"required" json:"distributionId" yaml:"distributionId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.2/docs/resources/cdn_custom_domain#name CdnCustomDomain#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.59.0/docs/resources/cdn_custom_domain#name CdnCustomDomain#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// STACKIT project ID associated with the distribution.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.2/docs/resources/cdn_custom_domain#project_id CdnCustomDomain#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.59.0/docs/resources/cdn_custom_domain#project_id CdnCustomDomain#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

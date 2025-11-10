@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.2/docs/resources/git stackit_git}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.59.0/docs/resources/git stackit_git}.
 type Git interface {
 	cdktf.TerraformResource
 	Acl() *[]*string
@@ -454,7 +454,7 @@ func (j *jsiiProxy_Git) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.2/docs/resources/git stackit_git} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.59.0/docs/resources/git stackit_git} Resource.
 func NewGit(scope constructs.Construct, id *string, config *GitConfig) Git {
 	_init_.Initialize()
 
@@ -472,7 +472,7 @@ func NewGit(scope constructs.Construct, id *string, config *GitConfig) Git {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.58.2/docs/resources/git stackit_git} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.59.0/docs/resources/git stackit_git} Resource.
 func NewGit_Override(g Git, scope constructs.Construct, id *string, config *GitConfig) {
 	_init_.Initialize()
 
