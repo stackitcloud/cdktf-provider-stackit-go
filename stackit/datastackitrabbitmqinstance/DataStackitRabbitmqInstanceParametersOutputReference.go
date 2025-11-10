@@ -20,16 +20,26 @@ type DataStackitRabbitmqInstanceParametersOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConsumerTimeout() *float64
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnableMonitoring() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
+	Graphite() *string
 	InternalValue() *DataStackitRabbitmqInstanceParameters
 	SetInternalValue(val *DataStackitRabbitmqInstanceParameters)
+	MaxDiskThreshold() *float64
+	MetricsFrequency() *float64
+	MetricsPrefix() *string
+	MonitoringInstanceId() *string
+	Plugins() *[]*string
+	Roles() *[]*string
 	SgwAcl() *string
+	Syslog() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -38,6 +48,8 @@ type DataStackitRabbitmqInstanceParametersOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TlsCiphers() *[]*string
+	TlsProtocols() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -97,11 +109,31 @@ func (j *jsiiProxy_DataStackitRabbitmqInstanceParametersOutputReference) Complex
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitRabbitmqInstanceParametersOutputReference) ConsumerTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"consumerTimeout",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitRabbitmqInstanceParametersOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRabbitmqInstanceParametersOutputReference) EnableMonitoring() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableMonitoring",
 		&returns,
 	)
 	return returns
@@ -117,6 +149,16 @@ func (j *jsiiProxy_DataStackitRabbitmqInstanceParametersOutputReference) Fqn() *
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitRabbitmqInstanceParametersOutputReference) Graphite() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"graphite",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitRabbitmqInstanceParametersOutputReference) InternalValue() *DataStackitRabbitmqInstanceParameters {
 	var returns *DataStackitRabbitmqInstanceParameters
 	_jsii_.Get(
@@ -127,11 +169,81 @@ func (j *jsiiProxy_DataStackitRabbitmqInstanceParametersOutputReference) Interna
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitRabbitmqInstanceParametersOutputReference) MaxDiskThreshold() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxDiskThreshold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRabbitmqInstanceParametersOutputReference) MetricsFrequency() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"metricsFrequency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRabbitmqInstanceParametersOutputReference) MetricsPrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metricsPrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRabbitmqInstanceParametersOutputReference) MonitoringInstanceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"monitoringInstanceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRabbitmqInstanceParametersOutputReference) Plugins() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"plugins",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRabbitmqInstanceParametersOutputReference) Roles() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"roles",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitRabbitmqInstanceParametersOutputReference) SgwAcl() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"sgwAcl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRabbitmqInstanceParametersOutputReference) Syslog() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"syslog",
 		&returns,
 	)
 	return returns
@@ -152,6 +264,26 @@ func (j *jsiiProxy_DataStackitRabbitmqInstanceParametersOutputReference) Terrafo
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRabbitmqInstanceParametersOutputReference) TlsCiphers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tlsCiphers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRabbitmqInstanceParametersOutputReference) TlsProtocols() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsProtocols",
 		&returns,
 	)
 	return returns

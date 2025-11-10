@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.20.2/docs stackit}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.21.0/docs stackit}.
 type StackitProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -92,6 +92,9 @@ type StackitProvider interface {
 	SecretsmanagerCustomEndpoint() *string
 	SetSecretsmanagerCustomEndpoint(val *string)
 	SecretsmanagerCustomEndpointInput() *string
+	ServerBackupCustomEndpoint() *string
+	SetServerBackupCustomEndpoint(val *string)
+	ServerBackupCustomEndpointInput() *string
 	ServiceAccountEmail() *string
 	SetServiceAccountEmail(val *string)
 	ServiceAccountEmailInput() *string
@@ -149,6 +152,7 @@ type StackitProvider interface {
 	ResetRegion()
 	ResetResourcemanagerCustomEndpoint()
 	ResetSecretsmanagerCustomEndpoint()
+	ResetServerBackupCustomEndpoint()
 	ResetServiceAccountEmail()
 	ResetServiceAccountKey()
 	ResetServiceAccountKeyPath()
@@ -684,6 +688,26 @@ func (j *jsiiProxy_StackitProvider) SecretsmanagerCustomEndpointInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_StackitProvider) ServerBackupCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverBackupCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) ServerBackupCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverBackupCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StackitProvider) ServiceAccountEmail() *string {
 	var returns *string
 	_jsii_.Get(
@@ -855,7 +879,7 @@ func (j *jsiiProxy_StackitProvider) TokenCustomEndpointInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.20.2/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.21.0/docs stackit} Resource.
 func NewStackitProvider(scope constructs.Construct, id *string, config *StackitProviderConfig) StackitProvider {
 	_init_.Initialize()
 
@@ -873,7 +897,7 @@ func NewStackitProvider(scope constructs.Construct, id *string, config *StackitP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.20.2/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.21.0/docs stackit} Resource.
 func NewStackitProvider_Override(s StackitProvider, scope constructs.Construct, id *string, config *StackitProviderConfig) {
 	_init_.Initialize()
 
@@ -1059,6 +1083,14 @@ func (j *jsiiProxy_StackitProvider)SetSecretsmanagerCustomEndpoint(val *string) 
 	_jsii_.Set(
 		j,
 		"secretsmanagerCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StackitProvider)SetServerBackupCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"serverBackupCustomEndpoint",
 		val,
 	)
 }
@@ -1424,6 +1456,14 @@ func (s *jsiiProxy_StackitProvider) ResetSecretsmanagerCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSecretsmanagerCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StackitProvider) ResetServerBackupCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetServerBackupCustomEndpoint",
 		nil, // no parameters
 	)
 }

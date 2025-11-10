@@ -56,11 +56,51 @@ func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetComplex
 	return nil
 }
 
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetConsumerTimeoutParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetEnableMonitoringParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetGraphiteParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetMaxDiskThresholdParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetMetricsFrequencyParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetMetricsPrefixParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetMonitoringInstanceIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetPluginsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetRolesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetSgwAclParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetSyslogParameters(val *[]*string) error {
 	return nil
 }
 
@@ -69,6 +109,14 @@ func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetTerrafo
 }
 
 func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetTlsCiphersParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetTlsProtocolsParameters(val *string) error {
 	return nil
 }
 

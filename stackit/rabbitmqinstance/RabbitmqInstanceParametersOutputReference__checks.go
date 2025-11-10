@@ -163,6 +163,42 @@ func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetComplex
 	return nil
 }
 
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetConsumerTimeoutParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetEnableMonitoringParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetGraphiteParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
@@ -187,7 +223,63 @@ func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetInterna
 	return nil
 }
 
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetMaxDiskThresholdParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetMetricsFrequencyParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetMetricsPrefixParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetMonitoringInstanceIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetPluginsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetRolesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetSgwAclParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetSyslogParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -204,6 +296,22 @@ func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetTerrafo
 }
 
 func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetTlsCiphersParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetTlsProtocolsParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

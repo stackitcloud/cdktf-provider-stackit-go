@@ -25,11 +25,29 @@ type DataStackitRedisInstanceParametersOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DownAfterMilliseconds() *float64
+	EnableMonitoring() cdktf.IResolvable
+	FailoverTimeout() *float64
 	// Experimental.
 	Fqn() *string
+	Graphite() *string
 	InternalValue() *DataStackitRedisInstanceParameters
 	SetInternalValue(val *DataStackitRedisInstanceParameters)
+	LazyfreeLazyEviction() *string
+	LazyfreeLazyExpire() *string
+	LuaTimeLimit() *float64
+	Maxclients() *float64
+	MaxDiskThreshold() *float64
+	MaxmemoryPolicy() *string
+	MaxmemorySamples() *float64
+	MetricsFrequency() *float64
+	MetricsPrefix() *string
+	MinReplicasMaxLag() *float64
+	MonitoringInstanceId() *string
+	NotifyKeyspaceEvents() *string
 	SgwAcl() *string
+	Snapshot() *string
+	Syslog() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -38,6 +56,9 @@ type DataStackitRedisInstanceParametersOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TlsCiphers() *[]*string
+	TlsCiphersuites() *string
+	TlsProtocols() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -107,11 +128,51 @@ func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) CreationSt
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) DownAfterMilliseconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"downAfterMilliseconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) EnableMonitoring() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableMonitoring",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) FailoverTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"failoverTimeout",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) Graphite() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"graphite",
 		&returns,
 	)
 	return returns
@@ -127,11 +188,151 @@ func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) InternalVa
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) LazyfreeLazyEviction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lazyfreeLazyEviction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) LazyfreeLazyExpire() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lazyfreeLazyExpire",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) LuaTimeLimit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"luaTimeLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) Maxclients() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxclients",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) MaxDiskThreshold() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxDiskThreshold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) MaxmemoryPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxmemoryPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) MaxmemorySamples() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxmemorySamples",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) MetricsFrequency() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"metricsFrequency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) MetricsPrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metricsPrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) MinReplicasMaxLag() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minReplicasMaxLag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) MonitoringInstanceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"monitoringInstanceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) NotifyKeyspaceEvents() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notifyKeyspaceEvents",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) SgwAcl() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"sgwAcl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) Snapshot() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) Syslog() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"syslog",
 		&returns,
 	)
 	return returns
@@ -152,6 +353,36 @@ func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) TerraformR
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) TlsCiphers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tlsCiphers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) TlsCiphersuites() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCiphersuites",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRedisInstanceParametersOutputReference) TlsProtocols() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsProtocols",
 		&returns,
 	)
 	return returns

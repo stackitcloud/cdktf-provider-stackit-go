@@ -20,18 +20,48 @@ type RabbitmqInstanceParametersOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConsumerTimeout() *float64
+	SetConsumerTimeout(val *float64)
+	ConsumerTimeoutInput() *float64
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnableMonitoring() interface{}
+	SetEnableMonitoring(val interface{})
+	EnableMonitoringInput() interface{}
 	// Experimental.
 	Fqn() *string
+	Graphite() *string
+	SetGraphite(val *string)
+	GraphiteInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	MaxDiskThreshold() *float64
+	SetMaxDiskThreshold(val *float64)
+	MaxDiskThresholdInput() *float64
+	MetricsFrequency() *float64
+	SetMetricsFrequency(val *float64)
+	MetricsFrequencyInput() *float64
+	MetricsPrefix() *string
+	SetMetricsPrefix(val *string)
+	MetricsPrefixInput() *string
+	MonitoringInstanceId() *string
+	SetMonitoringInstanceId(val *string)
+	MonitoringInstanceIdInput() *string
+	Plugins() *[]*string
+	SetPlugins(val *[]*string)
+	PluginsInput() *[]*string
+	Roles() *[]*string
+	SetRoles(val *[]*string)
+	RolesInput() *[]*string
 	SgwAcl() *string
 	SetSgwAcl(val *string)
 	SgwAclInput() *string
+	Syslog() *[]*string
+	SetSyslog(val *[]*string)
+	SyslogInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -40,6 +70,12 @@ type RabbitmqInstanceParametersOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TlsCiphers() *[]*string
+	SetTlsCiphers(val *[]*string)
+	TlsCiphersInput() *[]*string
+	TlsProtocols() *string
+	SetTlsProtocols(val *string)
+	TlsProtocolsInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -64,7 +100,19 @@ type RabbitmqInstanceParametersOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetConsumerTimeout()
+	ResetEnableMonitoring()
+	ResetGraphite()
+	ResetMaxDiskThreshold()
+	ResetMetricsFrequency()
+	ResetMetricsPrefix()
+	ResetMonitoringInstanceId()
+	ResetPlugins()
+	ResetRoles()
 	ResetSgwAcl()
+	ResetSyslog()
+	ResetTlsCiphers()
+	ResetTlsProtocols()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -100,11 +148,51 @@ func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) ComplexObjectIsFro
 	return returns
 }
 
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) ConsumerTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"consumerTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) ConsumerTimeoutInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"consumerTimeoutInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) EnableMonitoring() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableMonitoring",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) EnableMonitoringInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableMonitoringInput",
 		&returns,
 	)
 	return returns
@@ -120,11 +208,151 @@ func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) Graphite() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"graphite",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) GraphiteInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"graphiteInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) MaxDiskThreshold() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxDiskThreshold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) MaxDiskThresholdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxDiskThresholdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) MetricsFrequency() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"metricsFrequency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) MetricsFrequencyInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"metricsFrequencyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) MetricsPrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metricsPrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) MetricsPrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metricsPrefixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) MonitoringInstanceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"monitoringInstanceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) MonitoringInstanceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"monitoringInstanceIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) Plugins() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"plugins",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) PluginsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"pluginsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) Roles() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"roles",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) RolesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"rolesInput",
 		&returns,
 	)
 	return returns
@@ -150,6 +378,26 @@ func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) SgwAclInput() *str
 	return returns
 }
 
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) Syslog() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"syslog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) SyslogInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"syslogInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -165,6 +413,46 @@ func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) TerraformResource(
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) TlsCiphers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tlsCiphers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) TlsCiphersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tlsCiphersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) TlsProtocols() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsProtocols",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) TlsProtocolsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsProtocolsInput",
 		&returns,
 	)
 	return returns
@@ -220,6 +508,39 @@ func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference)SetComplexObjectIsF
 	)
 }
 
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference)SetConsumerTimeout(val *float64) {
+	if err := j.validateSetConsumerTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"consumerTimeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference)SetEnableMonitoring(val interface{}) {
+	if err := j.validateSetEnableMonitoringParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableMonitoring",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference)SetGraphite(val *string) {
+	if err := j.validateSetGraphiteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"graphite",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -231,6 +552,72 @@ func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference)SetInternalValue(va
 	)
 }
 
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference)SetMaxDiskThreshold(val *float64) {
+	if err := j.validateSetMaxDiskThresholdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxDiskThreshold",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference)SetMetricsFrequency(val *float64) {
+	if err := j.validateSetMetricsFrequencyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"metricsFrequency",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference)SetMetricsPrefix(val *string) {
+	if err := j.validateSetMetricsPrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"metricsPrefix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference)SetMonitoringInstanceId(val *string) {
+	if err := j.validateSetMonitoringInstanceIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"monitoringInstanceId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference)SetPlugins(val *[]*string) {
+	if err := j.validateSetPluginsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"plugins",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference)SetRoles(val *[]*string) {
+	if err := j.validateSetRolesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"roles",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference)SetSgwAcl(val *string) {
 	if err := j.validateSetSgwAclParameters(val); err != nil {
 		panic(err)
@@ -238,6 +625,17 @@ func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference)SetSgwAcl(val *stri
 	_jsii_.Set(
 		j,
 		"sgwAcl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference)SetSyslog(val *[]*string) {
+	if err := j.validateSetSyslogParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"syslog",
 		val,
 	)
 }
@@ -260,6 +658,28 @@ func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference)SetTerraformResourc
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference)SetTlsCiphers(val *[]*string) {
+	if err := j.validateSetTlsCiphersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsCiphers",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference)SetTlsProtocols(val *string) {
+	if err := j.validateSetTlsProtocolsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsProtocols",
 		val,
 	)
 }
@@ -450,10 +870,106 @@ func (r *jsiiProxy_RabbitmqInstanceParametersOutputReference) InterpolationForAt
 	return returns
 }
 
+func (r *jsiiProxy_RabbitmqInstanceParametersOutputReference) ResetConsumerTimeout() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetConsumerTimeout",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RabbitmqInstanceParametersOutputReference) ResetEnableMonitoring() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetEnableMonitoring",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RabbitmqInstanceParametersOutputReference) ResetGraphite() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetGraphite",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RabbitmqInstanceParametersOutputReference) ResetMaxDiskThreshold() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMaxDiskThreshold",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RabbitmqInstanceParametersOutputReference) ResetMetricsFrequency() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMetricsFrequency",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RabbitmqInstanceParametersOutputReference) ResetMetricsPrefix() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMetricsPrefix",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RabbitmqInstanceParametersOutputReference) ResetMonitoringInstanceId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMonitoringInstanceId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RabbitmqInstanceParametersOutputReference) ResetPlugins() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPlugins",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RabbitmqInstanceParametersOutputReference) ResetRoles() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRoles",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RabbitmqInstanceParametersOutputReference) ResetSgwAcl() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetSgwAcl",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RabbitmqInstanceParametersOutputReference) ResetSyslog() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSyslog",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RabbitmqInstanceParametersOutputReference) ResetTlsCiphers() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTlsCiphers",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RabbitmqInstanceParametersOutputReference) ResetTlsProtocols() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTlsProtocols",
 		nil, // no parameters
 	)
 }

@@ -56,11 +56,83 @@ func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetComplexObj
 	return nil
 }
 
+func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetDownAfterMillisecondsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetEnableMonitoringParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetFailoverTimeoutParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetGraphiteParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetLazyfreeLazyEvictionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetLazyfreeLazyExpireParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetLuaTimeLimitParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetMaxclientsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetMaxDiskThresholdParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetMaxmemoryPolicyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetMaxmemorySamplesParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetMetricsFrequencyParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetMetricsPrefixParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetMinReplicasMaxLagParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetMonitoringInstanceIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetNotifyKeyspaceEventsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetSgwAclParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetSnapshotParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetSyslogParameters(val *[]*string) error {
 	return nil
 }
 
@@ -69,6 +141,18 @@ func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetTerraformA
 }
 
 func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetTlsCiphersParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetTlsCiphersuitesParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedisInstanceParametersOutputReference) validateSetTlsProtocolsParameters(val *string) error {
 	return nil
 }
 
