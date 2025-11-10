@@ -4,11 +4,11 @@ package loadbalancer
 type LoadbalancerOptions struct {
 	// Load Balancer is accessible only from an IP address in this range.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.9.1/docs/resources/loadbalancer#acl Loadbalancer#acl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.9.2/docs/resources/loadbalancer#acl Loadbalancer#acl}
 	Acl *[]*string `field:"optional" json:"acl" yaml:"acl"`
 	// If true, Load Balancer is accessible only via a private network IP address.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.9.1/docs/resources/loadbalancer#private_network_only Loadbalancer#private_network_only}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.9.2/docs/resources/loadbalancer#private_network_only Loadbalancer#private_network_only}
 	PrivateNetworkOnly interface{} `field:"optional" json:"privateNetworkOnly" yaml:"privateNetworkOnly"`
 }
 
