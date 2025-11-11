@@ -1,6 +1,6 @@
 # CDKTF Go bindings for `stackitcloud/stackit` (BETA)
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Go Reference](https://pkg.go.dev/badge/github.com/stackitcloud/cdktf-provider-stackit-go.svg)](https://pkg.go.dev/github.com/stackitcloud/cdktf-provider-stackit-go)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Go Reference](https://pkg.go.dev/badge/github.com/stackitcloud/cdktf-provider-stackit-go/stackit.svg)](https://pkg.go.dev/github.com/stackitcloud/cdktf-provider-stackit-go/stackit)
 
 This repository provides auto-generated Go bindings for the Terraform provider [stackitcloud/stackit](https://registry.terraform.io/providers/stackitcloud/stackit/latest) for [CDK for Terraform](https://developer.hashicorp.com/terraform/cdktf).
 
@@ -26,7 +26,7 @@ go get github.com/stackitcloud/cdktf-provider-stackit-go/stackit
 
 ## Docs
 
-Documentation is auto-generated and published via [pkg.go.dev](https://pkg.go.dev/github.com/stackitcloud/cdktf-provider-stackit-go).
+Documentation is auto-generated and published via [pkg.go.dev](https://pkg.go.dev/github.com/stackitcloud/cdktf-provider-stackit-go/stackit).
 
 ## Issues / Bugs
 
