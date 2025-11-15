@@ -108,6 +108,10 @@ func (j *jsiiProxy_ObservabilityInstance) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityInstance) validateSetLogsRetentionDaysParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityInstance) validateSetMetricsRetentionDaysParameters(val *float64) error {
 	return nil
 }
@@ -137,6 +141,10 @@ func (j *jsiiProxy_ObservabilityInstance) validateSetProjectIdParameters(val *st
 }
 
 func (j *jsiiProxy_ObservabilityInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ObservabilityInstance) validateSetTracesRetentionDaysParameters(val *float64) error {
 	return nil
 }
 

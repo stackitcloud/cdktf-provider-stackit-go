@@ -45,6 +45,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "jaegerUiUrl", GoGetter: "JaegerUiUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "logsPushUrl", GoGetter: "LogsPushUrl"},
+			_jsii_.MemberProperty{JsiiProperty: "logsRetentionDays", GoGetter: "LogsRetentionDays"},
 			_jsii_.MemberProperty{JsiiProperty: "logsUrl", GoGetter: "LogsUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "metricsPushUrl", GoGetter: "MetricsPushUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "metricsRetentionDays", GoGetter: "MetricsRetentionDays"},
@@ -73,6 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "tracesRetentionDays", GoGetter: "TracesRetentionDays"},
 			_jsii_.MemberProperty{JsiiProperty: "zipkinSpansUrl", GoGetter: "ZipkinSpansUrl"},
 		},
 		func() interface{} {

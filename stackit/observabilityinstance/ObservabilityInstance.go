@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/resources/observability_instance stackit_observability_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.70.0/docs/resources/observability_instance stackit_observability_instance}.
 type ObservabilityInstance interface {
 	cdktf.TerraformResource
 	Acl() *[]*string
@@ -57,6 +57,9 @@ type ObservabilityInstance interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LogsPushUrl() *string
+	LogsRetentionDays() *float64
+	SetLogsRetentionDays(val *float64)
+	LogsRetentionDaysInput() *float64
 	LogsUrl() *string
 	MetricsPushUrl() *string
 	MetricsRetentionDays() *float64
@@ -102,6 +105,9 @@ type ObservabilityInstance interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TracesRetentionDays() *float64
+	SetTracesRetentionDays(val *float64)
+	TracesRetentionDaysInput() *float64
 	ZipkinSpansUrl() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -149,6 +155,7 @@ type ObservabilityInstance interface {
 	PutAlertConfig(value *ObservabilityInstanceAlertConfig)
 	ResetAcl()
 	ResetAlertConfig()
+	ResetLogsRetentionDays()
 	ResetMetricsRetentionDays()
 	ResetMetricsRetentionDays1HDownsampling()
 	ResetMetricsRetentionDays5MDownsampling()
@@ -156,6 +163,7 @@ type ObservabilityInstance interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParameters()
+	ResetTracesRetentionDays()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -419,6 +427,26 @@ func (j *jsiiProxy_ObservabilityInstance) LogsPushUrl() *string {
 	_jsii_.Get(
 		j,
 		"logsPushUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityInstance) LogsRetentionDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"logsRetentionDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityInstance) LogsRetentionDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"logsRetentionDaysInput",
 		&returns,
 	)
 	return returns
@@ -694,6 +722,26 @@ func (j *jsiiProxy_ObservabilityInstance) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityInstance) TracesRetentionDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tracesRetentionDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityInstance) TracesRetentionDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tracesRetentionDaysInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityInstance) ZipkinSpansUrl() *string {
 	var returns *string
 	_jsii_.Get(
@@ -705,7 +753,7 @@ func (j *jsiiProxy_ObservabilityInstance) ZipkinSpansUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/resources/observability_instance stackit_observability_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.70.0/docs/resources/observability_instance stackit_observability_instance} Resource.
 func NewObservabilityInstance(scope constructs.Construct, id *string, config *ObservabilityInstanceConfig) ObservabilityInstance {
 	_init_.Initialize()
 
@@ -723,7 +771,7 @@ func NewObservabilityInstance(scope constructs.Construct, id *string, config *Ob
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/resources/observability_instance stackit_observability_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.70.0/docs/resources/observability_instance stackit_observability_instance} Resource.
 func NewObservabilityInstance_Override(o ObservabilityInstance, scope constructs.Construct, id *string, config *ObservabilityInstanceConfig) {
 	_init_.Initialize()
 
@@ -790,6 +838,17 @@ func (j *jsiiProxy_ObservabilityInstance)SetLifecycle(val *cdktf.TerraformResour
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityInstance)SetLogsRetentionDays(val *float64) {
+	if err := j.validateSetLogsRetentionDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logsRetentionDays",
 		val,
 	)
 }
@@ -886,6 +945,17 @@ func (j *jsiiProxy_ObservabilityInstance)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityInstance)SetTracesRetentionDays(val *float64) {
+	if err := j.validateSetTracesRetentionDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tracesRetentionDays",
 		val,
 	)
 }
@@ -1270,6 +1340,14 @@ func (o *jsiiProxy_ObservabilityInstance) ResetAlertConfig() {
 	)
 }
 
+func (o *jsiiProxy_ObservabilityInstance) ResetLogsRetentionDays() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLogsRetentionDays",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_ObservabilityInstance) ResetMetricsRetentionDays() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1306,6 +1384,14 @@ func (o *jsiiProxy_ObservabilityInstance) ResetParameters() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetParameters",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityInstance) ResetTracesRetentionDays() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTracesRetentionDays",
 		nil, // no parameters
 	)
 }

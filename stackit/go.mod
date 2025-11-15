@@ -2,7 +2,7 @@ module github.com/stackitcloud/cdktf-provider-stackit-go/stackit
 
 go 1.21
 
-toolchain go1.24.9
+toolchain go1.24.10
 
 require github.com/aws/constructs-go/constructs/v10 v10.4.2
 

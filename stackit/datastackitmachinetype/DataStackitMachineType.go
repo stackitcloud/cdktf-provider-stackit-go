@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/data-sources/machine_type stackit_machine_type}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.70.0/docs/data-sources/machine_type stackit_machine_type}.
 type DataStackitMachineType interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -385,7 +385,7 @@ func (j *jsiiProxy_DataStackitMachineType) Vcpus() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/data-sources/machine_type stackit_machine_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.70.0/docs/data-sources/machine_type stackit_machine_type} Data Source.
 func NewDataStackitMachineType(scope constructs.Construct, id *string, config *DataStackitMachineTypeConfig) DataStackitMachineType {
 	_init_.Initialize()
 
@@ -403,7 +403,7 @@ func NewDataStackitMachineType(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/data-sources/machine_type stackit_machine_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.70.0/docs/data-sources/machine_type stackit_machine_type} Data Source.
 func NewDataStackitMachineType_Override(d DataStackitMachineType, scope constructs.Construct, id *string, config *DataStackitMachineTypeConfig) {
 	_init_.Initialize()
 

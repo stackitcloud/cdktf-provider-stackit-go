@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/data-sources/scf_organization_manager stackit_scf_organization_manager}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.70.0/docs/data-sources/scf_organization_manager stackit_scf_organization_manager}.
 type DataStackitScfOrganizationManager interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -374,7 +374,7 @@ func (j *jsiiProxy_DataStackitScfOrganizationManager) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/data-sources/scf_organization_manager stackit_scf_organization_manager} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.70.0/docs/data-sources/scf_organization_manager stackit_scf_organization_manager} Data Source.
 func NewDataStackitScfOrganizationManager(scope constructs.Construct, id *string, config *DataStackitScfOrganizationManagerConfig) DataStackitScfOrganizationManager {
 	_init_.Initialize()
 
@@ -392,7 +392,7 @@ func NewDataStackitScfOrganizationManager(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.69.0/docs/data-sources/scf_organization_manager stackit_scf_organization_manager} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.70.0/docs/data-sources/scf_organization_manager stackit_scf_organization_manager} Data Source.
 func NewDataStackitScfOrganizationManager_Override(d DataStackitScfOrganizationManager, scope constructs.Construct, id *string, config *DataStackitScfOrganizationManagerConfig) {
 	_init_.Initialize()
 
