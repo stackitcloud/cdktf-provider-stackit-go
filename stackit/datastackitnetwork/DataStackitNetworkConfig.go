@@ -21,18 +21,18 @@ type DataStackitNetworkConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The network ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.70.0/docs/data-sources/network#network_id DataStackitNetwork#network_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.71.0/docs/data-sources/network#network_id DataStackitNetwork#network_id}
 	NetworkId *string `field:"required" json:"networkId" yaml:"networkId"`
 	// STACKIT project ID to which the network is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.70.0/docs/data-sources/network#project_id DataStackitNetwork#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.71.0/docs/data-sources/network#project_id DataStackitNetwork#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Can only be used when experimental "network" is set.
 	//
 	// This is likely going to undergo significant changes or be removed in the future.
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.70.0/docs/data-sources/network#region DataStackitNetwork#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.71.0/docs/data-sources/network#region DataStackitNetwork#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

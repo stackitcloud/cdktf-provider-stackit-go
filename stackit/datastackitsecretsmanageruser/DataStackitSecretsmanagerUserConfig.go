@@ -21,15 +21,15 @@ type DataStackitSecretsmanagerUserConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of the Secrets Manager instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.70.0/docs/data-sources/secretsmanager_user#instance_id DataStackitSecretsmanagerUser#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.71.0/docs/data-sources/secretsmanager_user#instance_id DataStackitSecretsmanagerUser#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// STACKIT Project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.70.0/docs/data-sources/secretsmanager_user#project_id DataStackitSecretsmanagerUser#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.71.0/docs/data-sources/secretsmanager_user#project_id DataStackitSecretsmanagerUser#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The user's ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.70.0/docs/data-sources/secretsmanager_user#user_id DataStackitSecretsmanagerUser#user_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.71.0/docs/data-sources/secretsmanager_user#user_id DataStackitSecretsmanagerUser#user_id}
 	UserId *string `field:"required" json:"userId" yaml:"userId"`
 }
 
