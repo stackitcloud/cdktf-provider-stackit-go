@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.73.0/docs/data-sources/kms_keyring stackit_kms_keyring}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/data-sources/kms_keyring stackit_kms_keyring}.
 type DataStackitKmsKeyring interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -341,7 +341,7 @@ func (j *jsiiProxy_DataStackitKmsKeyring) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.73.0/docs/data-sources/kms_keyring stackit_kms_keyring} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/data-sources/kms_keyring stackit_kms_keyring} Data Source.
 func NewDataStackitKmsKeyring(scope constructs.Construct, id *string, config *DataStackitKmsKeyringConfig) DataStackitKmsKeyring {
 	_init_.Initialize()
 
@@ -359,7 +359,7 @@ func NewDataStackitKmsKeyring(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.73.0/docs/data-sources/kms_keyring stackit_kms_keyring} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/data-sources/kms_keyring stackit_kms_keyring} Data Source.
 func NewDataStackitKmsKeyring_Override(d DataStackitKmsKeyring, scope constructs.Construct, id *string, config *DataStackitKmsKeyringConfig) {
 	_init_.Initialize()
 

@@ -21,15 +21,15 @@ type DataStackitSkeClusterConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The cluster name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.73.0/docs/data-sources/ske_cluster#name DataStackitSkeCluster#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/data-sources/ske_cluster#name DataStackitSkeCluster#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// STACKIT project ID to which the cluster is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.73.0/docs/data-sources/ske_cluster#project_id DataStackitSkeCluster#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/data-sources/ske_cluster#project_id DataStackitSkeCluster#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.73.0/docs/data-sources/ske_cluster#region DataStackitSkeCluster#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/data-sources/ske_cluster#region DataStackitSkeCluster#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

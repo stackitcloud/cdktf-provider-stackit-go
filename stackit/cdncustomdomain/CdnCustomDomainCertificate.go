@@ -4,13 +4,13 @@ package cdncustomdomain
 type CdnCustomDomainCertificate struct {
 	// The PEM-encoded TLS certificate. Required for custom certificates.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.73.0/docs/resources/cdn_custom_domain#certificate CdnCustomDomain#certificate}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/cdn_custom_domain#certificate CdnCustomDomain#certificate}
 	Certificate *string `field:"optional" json:"certificate" yaml:"certificate"`
 	// The PEM-encoded private key for the certificate.
 	//
 	// Required for custom certificates. The certificate will be updated if this field is changed.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.73.0/docs/resources/cdn_custom_domain#private_key CdnCustomDomain#private_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/cdn_custom_domain#private_key CdnCustomDomain#private_key}
 	PrivateKey *string `field:"optional" json:"privateKey" yaml:"privateKey"`
 }
 

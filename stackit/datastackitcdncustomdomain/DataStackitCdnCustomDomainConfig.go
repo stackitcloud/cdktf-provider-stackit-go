@@ -21,19 +21,19 @@ type DataStackitCdnCustomDomainConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// CDN distribution ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.73.0/docs/data-sources/cdn_custom_domain#distribution_id DataStackitCdnCustomDomain#distribution_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/data-sources/cdn_custom_domain#distribution_id DataStackitCdnCustomDomain#distribution_id}
 	DistributionId *string `field:"required" json:"distributionId" yaml:"distributionId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.73.0/docs/data-sources/cdn_custom_domain#name DataStackitCdnCustomDomain#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/data-sources/cdn_custom_domain#name DataStackitCdnCustomDomain#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// STACKIT project ID associated with the distribution.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.73.0/docs/data-sources/cdn_custom_domain#project_id DataStackitCdnCustomDomain#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/data-sources/cdn_custom_domain#project_id DataStackitCdnCustomDomain#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The TLS certificate for the custom domain.
 	//
 	// If omitted, a managed certificate will be used. If the block is specified, a custom certificate is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.73.0/docs/data-sources/cdn_custom_domain#certificate DataStackitCdnCustomDomain#certificate}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/data-sources/cdn_custom_domain#certificate DataStackitCdnCustomDomain#certificate}
 	Certificate *DataStackitCdnCustomDomainCertificate `field:"optional" json:"certificate" yaml:"certificate"`
 }
 
