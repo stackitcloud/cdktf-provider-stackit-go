@@ -108,6 +108,10 @@ func (j *jsiiProxy_ServerServiceAccountAttach) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_ServerServiceAccountAttach) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServerServiceAccountAttach) validateSetServerIdParameters(val *string) error {
 	return nil
 }

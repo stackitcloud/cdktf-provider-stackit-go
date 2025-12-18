@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataStackitImage) validateSetProjectIdParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitImage) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataStackitImageParameters(scope constructs.Construct, id *string, config *DataStackitImageConfig) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/resourcemanager_folder stackit_resourcemanager_folder}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/resources/resourcemanager_folder stackit_resourcemanager_folder}.
 type ResourcemanagerFolder interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -431,7 +431,7 @@ func (j *jsiiProxy_ResourcemanagerFolder) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/resourcemanager_folder stackit_resourcemanager_folder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/resources/resourcemanager_folder stackit_resourcemanager_folder} Resource.
 func NewResourcemanagerFolder(scope constructs.Construct, id *string, config *ResourcemanagerFolderConfig) ResourcemanagerFolder {
 	_init_.Initialize()
 
@@ -449,7 +449,7 @@ func NewResourcemanagerFolder(scope constructs.Construct, id *string, config *Re
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/resourcemanager_folder stackit_resourcemanager_folder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/resources/resourcemanager_folder stackit_resourcemanager_folder} Resource.
 func NewResourcemanagerFolder_Override(r ResourcemanagerFolder, scope constructs.Construct, id *string, config *ResourcemanagerFolderConfig) {
 	_init_.Initialize()
 

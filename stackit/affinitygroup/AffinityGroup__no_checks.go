@@ -116,6 +116,10 @@ func (j *jsiiProxy_AffinityGroup) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_AffinityGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewAffinityGroupParameters(scope constructs.Construct, id *string, config *AffinityGroupConfig) error {
 	return nil
 }

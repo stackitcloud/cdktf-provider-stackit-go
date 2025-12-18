@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/data-sources/machine_type stackit_machine_type}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/data-sources/machine_type stackit_machine_type}.
 type DataStackitMachineType interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -56,6 +56,9 @@ type DataStackitMachineType interface {
 	Ram() *float64
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	SortAscending() interface{}
 	SetSortAscending(val interface{})
 	SortAscendingInput() interface{}
@@ -94,6 +97,7 @@ type DataStackitMachineType interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSortAscending()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -324,6 +328,26 @@ func (j *jsiiProxy_DataStackitMachineType) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitMachineType) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitMachineType) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitMachineType) SortAscending() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -385,7 +409,7 @@ func (j *jsiiProxy_DataStackitMachineType) Vcpus() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/data-sources/machine_type stackit_machine_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/data-sources/machine_type stackit_machine_type} Data Source.
 func NewDataStackitMachineType(scope constructs.Construct, id *string, config *DataStackitMachineTypeConfig) DataStackitMachineType {
 	_init_.Initialize()
 
@@ -403,7 +427,7 @@ func NewDataStackitMachineType(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/data-sources/machine_type stackit_machine_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/data-sources/machine_type stackit_machine_type} Data Source.
 func NewDataStackitMachineType_Override(d DataStackitMachineType, scope constructs.Construct, id *string, config *DataStackitMachineTypeConfig) {
 	_init_.Initialize()
 
@@ -478,6 +502,17 @@ func (j *jsiiProxy_DataStackitMachineType)SetProvider(val cdktf.TerraformProvide
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataStackitMachineType)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -782,6 +817,14 @@ func (d *jsiiProxy_DataStackitMachineType) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataStackitMachineType) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

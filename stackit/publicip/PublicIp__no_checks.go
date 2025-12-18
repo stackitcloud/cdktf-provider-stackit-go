@@ -116,6 +116,10 @@ func (j *jsiiProxy_PublicIp) validateSetProvisionersParameters(val *[]interface{
 	return nil
 }
 
+func (j *jsiiProxy_PublicIp) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewPublicIpParameters(scope constructs.Construct, id *string, config *PublicIpConfig) error {
 	return nil
 }

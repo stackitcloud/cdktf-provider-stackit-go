@@ -80,6 +80,10 @@ func (j *jsiiProxy_DataStackitVolume) validateSetProjectIdParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitVolume) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataStackitVolume) validateSetVolumeIdParameters(val *string) error {
 	return nil
 }

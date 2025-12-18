@@ -412,6 +412,14 @@ func (j *jsiiProxy_PublicIpAssociate) validateSetPublicIpIdParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_PublicIpAssociate) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewPublicIpAssociateParameters(scope constructs.Construct, id *string, config *PublicIpAssociateConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

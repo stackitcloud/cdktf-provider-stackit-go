@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/network_area stackit_network_area}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/resources/network_area stackit_network_area}.
 type NetworkArea interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -136,9 +136,11 @@ type NetworkArea interface {
 	ResetLabels()
 	ResetMaxPrefixLength()
 	ResetMinPrefixLength()
+	ResetNetworkRanges()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTransferNetwork()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -528,7 +530,7 @@ func (j *jsiiProxy_NetworkArea) TransferNetworkInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/network_area stackit_network_area} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/resources/network_area stackit_network_area} Resource.
 func NewNetworkArea(scope constructs.Construct, id *string, config *NetworkAreaConfig) NetworkArea {
 	_init_.Initialize()
 
@@ -546,7 +548,7 @@ func NewNetworkArea(scope constructs.Construct, id *string, config *NetworkAreaC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/network_area stackit_network_area} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/resources/network_area stackit_network_area} Resource.
 func NewNetworkArea_Override(n NetworkArea, scope constructs.Construct, id *string, config *NetworkAreaConfig) {
 	_init_.Initialize()
 
@@ -1117,10 +1119,26 @@ func (n *jsiiProxy_NetworkArea) ResetMinPrefixLength() {
 	)
 }
 
+func (n *jsiiProxy_NetworkArea) ResetNetworkRanges() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetNetworkRanges",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NetworkArea) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkArea) ResetTransferNetwork() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTransferNetwork",
 		nil, // no parameters
 	)
 }

@@ -72,6 +72,14 @@ func (n *jsiiProxy_NetworkAreaRoute) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (n *jsiiProxy_NetworkAreaRoute) validatePutDestinationParameters(value *NetworkAreaRouteDestination) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkAreaRoute) validatePutNextHopParameters(value *NetworkAreaRouteNextHop) error {
+	return nil
+}
+
 func validateNetworkAreaRoute_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -108,19 +116,15 @@ func (j *jsiiProxy_NetworkAreaRoute) validateSetNetworkAreaIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_NetworkAreaRoute) validateSetNextHopParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_NetworkAreaRoute) validateSetOrganizationIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_NetworkAreaRoute) validateSetPrefixParameters(val *string) error {
+func (j *jsiiProxy_NetworkAreaRoute) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_NetworkAreaRoute) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_NetworkAreaRoute) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

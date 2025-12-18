@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/data-sources/public_ip stackit_public_ip}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/data-sources/public_ip stackit_public_ip}.
 type DataStackitPublicIp interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -54,6 +54,9 @@ type DataStackitPublicIp interface {
 	PublicIpIdInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -88,6 +91,7 @@ type DataStackitPublicIp interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -297,6 +301,26 @@ func (j *jsiiProxy_DataStackitPublicIp) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitPublicIp) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitPublicIp) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitPublicIp) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -328,7 +352,7 @@ func (j *jsiiProxy_DataStackitPublicIp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/data-sources/public_ip stackit_public_ip} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/data-sources/public_ip stackit_public_ip} Data Source.
 func NewDataStackitPublicIp(scope constructs.Construct, id *string, config *DataStackitPublicIpConfig) DataStackitPublicIp {
 	_init_.Initialize()
 
@@ -346,7 +370,7 @@ func NewDataStackitPublicIp(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/data-sources/public_ip stackit_public_ip} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/data-sources/public_ip stackit_public_ip} Data Source.
 func NewDataStackitPublicIp_Override(d DataStackitPublicIp, scope constructs.Construct, id *string, config *DataStackitPublicIpConfig) {
 	_init_.Initialize()
 
@@ -421,6 +445,17 @@ func (j *jsiiProxy_DataStackitPublicIp)SetPublicIpId(val *string) {
 	_jsii_.Set(
 		j,
 		"publicIpId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataStackitPublicIp)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -714,6 +749,14 @@ func (d *jsiiProxy_DataStackitPublicIp) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataStackitPublicIp) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

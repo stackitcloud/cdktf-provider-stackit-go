@@ -232,6 +232,14 @@ func (j *jsiiProxy_DataStackitImage) validateSetProjectIdParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitImage) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataStackitImageParameters(scope constructs.Construct, id *string, config *DataStackitImageConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

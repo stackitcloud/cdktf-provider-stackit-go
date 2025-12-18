@@ -88,6 +88,10 @@ func (j *jsiiProxy_DataStackitNetworkAreaRoute) validateSetOrganizationIdParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitNetworkAreaRoute) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataStackitNetworkAreaRouteParameters(scope constructs.Construct, id *string, config *DataStackitNetworkAreaRouteConfig) error {
 	return nil
 }

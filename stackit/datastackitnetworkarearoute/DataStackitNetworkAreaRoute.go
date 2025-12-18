@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/data-sources/network_area_route stackit_network_area_route}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/data-sources/network_area_route stackit_network_area_route}.
 type DataStackitNetworkAreaRoute interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -24,6 +24,7 @@ type DataStackitNetworkAreaRoute interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Destination() DataStackitNetworkAreaRouteDestinationOutputReference
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -44,19 +45,21 @@ type DataStackitNetworkAreaRoute interface {
 	NetworkAreaRouteId() *string
 	SetNetworkAreaRouteId(val *string)
 	NetworkAreaRouteIdInput() *string
-	NextHop() *string
+	NextHop() DataStackitNetworkAreaRouteNextHopOutputReference
 	// The tree node.
 	Node() constructs.Node
 	OrganizationId() *string
 	SetOrganizationId(val *string)
 	OrganizationIdInput() *string
-	Prefix() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -91,6 +94,7 @@ type DataStackitNetworkAreaRoute interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -145,6 +149,16 @@ func (j *jsiiProxy_DataStackitNetworkAreaRoute) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitNetworkAreaRoute) Destination() DataStackitNetworkAreaRouteDestinationOutputReference {
+	var returns DataStackitNetworkAreaRouteDestinationOutputReference
+	_jsii_.Get(
+		j,
+		"destination",
 		&returns,
 	)
 	return returns
@@ -250,8 +264,8 @@ func (j *jsiiProxy_DataStackitNetworkAreaRoute) NetworkAreaRouteIdInput() *strin
 	return returns
 }
 
-func (j *jsiiProxy_DataStackitNetworkAreaRoute) NextHop() *string {
-	var returns *string
+func (j *jsiiProxy_DataStackitNetworkAreaRoute) NextHop() DataStackitNetworkAreaRouteNextHopOutputReference {
+	var returns DataStackitNetworkAreaRouteNextHopOutputReference
 	_jsii_.Get(
 		j,
 		"nextHop",
@@ -290,16 +304,6 @@ func (j *jsiiProxy_DataStackitNetworkAreaRoute) OrganizationIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataStackitNetworkAreaRoute) Prefix() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"prefix",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataStackitNetworkAreaRoute) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -315,6 +319,26 @@ func (j *jsiiProxy_DataStackitNetworkAreaRoute) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitNetworkAreaRoute) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitNetworkAreaRoute) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
 		&returns,
 	)
 	return returns
@@ -351,7 +375,7 @@ func (j *jsiiProxy_DataStackitNetworkAreaRoute) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/data-sources/network_area_route stackit_network_area_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/data-sources/network_area_route stackit_network_area_route} Data Source.
 func NewDataStackitNetworkAreaRoute(scope constructs.Construct, id *string, config *DataStackitNetworkAreaRouteConfig) DataStackitNetworkAreaRoute {
 	_init_.Initialize()
 
@@ -369,7 +393,7 @@ func NewDataStackitNetworkAreaRoute(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/data-sources/network_area_route stackit_network_area_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/data-sources/network_area_route stackit_network_area_route} Data Source.
 func NewDataStackitNetworkAreaRoute_Override(d DataStackitNetworkAreaRoute, scope constructs.Construct, id *string, config *DataStackitNetworkAreaRouteConfig) {
 	_init_.Initialize()
 
@@ -455,6 +479,17 @@ func (j *jsiiProxy_DataStackitNetworkAreaRoute)SetProvider(val cdktf.TerraformPr
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataStackitNetworkAreaRoute)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -748,6 +783,14 @@ func (d *jsiiProxy_DataStackitNetworkAreaRoute) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataStackitNetworkAreaRoute) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

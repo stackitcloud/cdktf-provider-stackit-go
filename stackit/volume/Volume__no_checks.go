@@ -132,6 +132,10 @@ func (j *jsiiProxy_Volume) validateSetProvisionersParameters(val *[]interface{})
 	return nil
 }
 
+func (j *jsiiProxy_Volume) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Volume) validateSetSizeParameters(val *float64) error {
 	return nil
 }

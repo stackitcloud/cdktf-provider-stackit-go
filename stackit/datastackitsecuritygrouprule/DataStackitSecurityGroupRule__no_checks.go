@@ -80,6 +80,10 @@ func (j *jsiiProxy_DataStackitSecurityGroupRule) validateSetProjectIdParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitSecurityGroupRule) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataStackitSecurityGroupRule) validateSetSecurityGroupIdParameters(val *string) error {
 	return nil
 }

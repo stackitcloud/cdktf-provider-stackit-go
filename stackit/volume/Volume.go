@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/volume stackit_volume}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/resources/volume stackit_volume}.
 type Volume interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -71,6 +71,9 @@ type Volume interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ServerId() *string
 	Size() *float64
 	SetSize(val *float64)
@@ -135,6 +138,7 @@ type Volume interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPerformanceClass()
+	ResetRegion()
 	ResetSize()
 	ResetSource()
 	SynthesizeAttributes() *map[string]interface{}
@@ -415,6 +419,26 @@ func (j *jsiiProxy_Volume) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Volume) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Volume) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Volume) ServerId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -506,7 +530,7 @@ func (j *jsiiProxy_Volume) VolumeId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/volume stackit_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/resources/volume stackit_volume} Resource.
 func NewVolume(scope constructs.Construct, id *string, config *VolumeConfig) Volume {
 	_init_.Initialize()
 
@@ -524,7 +548,7 @@ func NewVolume(scope constructs.Construct, id *string, config *VolumeConfig) Vol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/volume stackit_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/resources/volume stackit_volume} Resource.
 func NewVolume_Override(v Volume, scope constructs.Construct, id *string, config *VolumeConfig) {
 	_init_.Initialize()
 
@@ -665,6 +689,17 @@ func (j *jsiiProxy_Volume)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Volume)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1080,6 +1115,14 @@ func (v *jsiiProxy_Volume) ResetPerformanceClass() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetPerformanceClass",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_Volume) ResetRegion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

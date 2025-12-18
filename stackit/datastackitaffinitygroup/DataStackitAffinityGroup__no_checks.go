@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataStackitAffinityGroup) validateSetProjectIdParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitAffinityGroup) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataStackitAffinityGroupParameters(scope constructs.Construct, id *string, config *DataStackitAffinityGroupConfig) error {
 	return nil
 }

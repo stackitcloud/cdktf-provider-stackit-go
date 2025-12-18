@@ -136,6 +136,10 @@ func (j *jsiiProxy_Image) validateSetProvisionersParameters(val *[]interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_Image) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewImageParameters(scope constructs.Construct, id *string, config *ImageConfig) error {
 	return nil
 }

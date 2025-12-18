@@ -112,6 +112,10 @@ func (j *jsiiProxy_ServerNetworkInterfaceAttach) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_ServerNetworkInterfaceAttach) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServerNetworkInterfaceAttach) validateSetServerIdParameters(val *string) error {
 	return nil
 }

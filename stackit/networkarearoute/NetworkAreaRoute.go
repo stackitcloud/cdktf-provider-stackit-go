@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/network_area_route stackit_network_area_route}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/resources/network_area_route stackit_network_area_route}.
 type NetworkAreaRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,6 +28,8 @@ type NetworkAreaRoute interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Destination() NetworkAreaRouteDestinationOutputReference
+	DestinationInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -48,17 +50,13 @@ type NetworkAreaRoute interface {
 	SetNetworkAreaId(val *string)
 	NetworkAreaIdInput() *string
 	NetworkAreaRouteId() *string
-	NextHop() *string
-	SetNextHop(val *string)
-	NextHopInput() *string
+	NextHop() NetworkAreaRouteNextHopOutputReference
+	NextHopInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	OrganizationId() *string
 	SetOrganizationId(val *string)
 	OrganizationIdInput() *string
-	Prefix() *string
-	SetPrefix(val *string)
-	PrefixInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -69,6 +67,9 @@ type NetworkAreaRoute interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -118,10 +119,13 @@ type NetworkAreaRoute interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDestination(value *NetworkAreaRouteDestination)
+	PutNextHop(value *NetworkAreaRouteNextHop)
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -185,6 +189,26 @@ func (j *jsiiProxy_NetworkAreaRoute) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkAreaRoute) Destination() NetworkAreaRouteDestinationOutputReference {
+	var returns NetworkAreaRouteDestinationOutputReference
+	_jsii_.Get(
+		j,
+		"destination",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkAreaRoute) DestinationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"destinationInput",
 		&returns,
 	)
 	return returns
@@ -290,8 +314,8 @@ func (j *jsiiProxy_NetworkAreaRoute) NetworkAreaRouteId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkAreaRoute) NextHop() *string {
-	var returns *string
+func (j *jsiiProxy_NetworkAreaRoute) NextHop() NetworkAreaRouteNextHopOutputReference {
+	var returns NetworkAreaRouteNextHopOutputReference
 	_jsii_.Get(
 		j,
 		"nextHop",
@@ -300,8 +324,8 @@ func (j *jsiiProxy_NetworkAreaRoute) NextHop() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkAreaRoute) NextHopInput() *string {
-	var returns *string
+func (j *jsiiProxy_NetworkAreaRoute) NextHopInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"nextHopInput",
@@ -340,26 +364,6 @@ func (j *jsiiProxy_NetworkAreaRoute) OrganizationIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkAreaRoute) Prefix() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"prefix",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NetworkAreaRoute) PrefixInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"prefixInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_NetworkAreaRoute) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -385,6 +389,26 @@ func (j *jsiiProxy_NetworkAreaRoute) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkAreaRoute) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkAreaRoute) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
 		&returns,
 	)
 	return returns
@@ -421,7 +445,7 @@ func (j *jsiiProxy_NetworkAreaRoute) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/network_area_route stackit_network_area_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/resources/network_area_route stackit_network_area_route} Resource.
 func NewNetworkAreaRoute(scope constructs.Construct, id *string, config *NetworkAreaRouteConfig) NetworkAreaRoute {
 	_init_.Initialize()
 
@@ -439,7 +463,7 @@ func NewNetworkAreaRoute(scope constructs.Construct, id *string, config *Network
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/network_area_route stackit_network_area_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/resources/network_area_route stackit_network_area_route} Resource.
 func NewNetworkAreaRoute_Override(n NetworkAreaRoute, scope constructs.Construct, id *string, config *NetworkAreaRouteConfig) {
 	_init_.Initialize()
 
@@ -521,17 +545,6 @@ func (j *jsiiProxy_NetworkAreaRoute)SetNetworkAreaId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NetworkAreaRoute)SetNextHop(val *string) {
-	if err := j.validateSetNextHopParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"nextHop",
-		val,
-	)
-}
-
 func (j *jsiiProxy_NetworkAreaRoute)SetOrganizationId(val *string) {
 	if err := j.validateSetOrganizationIdParameters(val); err != nil {
 		panic(err)
@@ -539,17 +552,6 @@ func (j *jsiiProxy_NetworkAreaRoute)SetOrganizationId(val *string) {
 	_jsii_.Set(
 		j,
 		"organizationId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NetworkAreaRoute)SetPrefix(val *string) {
-	if err := j.validateSetPrefixParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"prefix",
 		val,
 	)
 }
@@ -569,6 +571,17 @@ func (j *jsiiProxy_NetworkAreaRoute)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkAreaRoute)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -926,6 +939,28 @@ func (n *jsiiProxy_NetworkAreaRoute) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (n *jsiiProxy_NetworkAreaRoute) PutDestination(value *NetworkAreaRouteDestination) {
+	if err := n.validatePutDestinationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putDestination",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkAreaRoute) PutNextHop(value *NetworkAreaRouteNextHop) {
+	if err := n.validatePutNextHopParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putNextHop",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetworkAreaRoute) ResetLabels() {
 	_jsii_.InvokeVoid(
 		n,
@@ -938,6 +973,14 @@ func (n *jsiiProxy_NetworkAreaRoute) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkAreaRoute) ResetRegion() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataStackitPublicIp) validateSetPublicIpIdParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitPublicIp) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataStackitPublicIpParameters(scope constructs.Construct, id *string, config *DataStackitPublicIpConfig) error {
 	return nil
 }

@@ -116,6 +116,10 @@ func (j *jsiiProxy_PublicIpAssociate) validateSetPublicIpIdParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_PublicIpAssociate) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewPublicIpAssociateParameters(scope constructs.Construct, id *string, config *PublicIpAssociateConfig) error {
 	return nil
 }

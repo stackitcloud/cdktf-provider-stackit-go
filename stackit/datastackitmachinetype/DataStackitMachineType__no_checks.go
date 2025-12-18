@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataStackitMachineType) validateSetProjectIdParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitMachineType) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataStackitMachineType) validateSetSortAscendingParameters(val interface{}) error {
 	return nil
 }

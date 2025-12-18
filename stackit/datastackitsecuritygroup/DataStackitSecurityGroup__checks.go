@@ -224,6 +224,14 @@ func (j *jsiiProxy_DataStackitSecurityGroup) validateSetProjectIdParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitSecurityGroup) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataStackitSecurityGroup) validateSetSecurityGroupIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

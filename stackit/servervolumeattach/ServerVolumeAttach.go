@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/server_volume_attach stackit_server_volume_attach}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/resources/server_volume_attach stackit_server_volume_attach}.
 type ServerVolumeAttach interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -56,6 +56,9 @@ type ServerVolumeAttach interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ServerId() *string
 	SetServerId(val *string)
 	ServerIdInput() *string
@@ -114,6 +117,7 @@ type ServerVolumeAttach interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -292,6 +296,26 @@ func (j *jsiiProxy_ServerVolumeAttach) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ServerVolumeAttach) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServerVolumeAttach) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServerVolumeAttach) ServerId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -363,7 +387,7 @@ func (j *jsiiProxy_ServerVolumeAttach) VolumeIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/server_volume_attach stackit_server_volume_attach} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/resources/server_volume_attach stackit_server_volume_attach} Resource.
 func NewServerVolumeAttach(scope constructs.Construct, id *string, config *ServerVolumeAttachConfig) ServerVolumeAttach {
 	_init_.Initialize()
 
@@ -381,7 +405,7 @@ func NewServerVolumeAttach(scope constructs.Construct, id *string, config *Serve
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/server_volume_attach stackit_server_volume_attach} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/resources/server_volume_attach stackit_server_volume_attach} Resource.
 func NewServerVolumeAttach_Override(s ServerVolumeAttach, scope constructs.Construct, id *string, config *ServerVolumeAttachConfig) {
 	_init_.Initialize()
 
@@ -467,6 +491,17 @@ func (j *jsiiProxy_ServerVolumeAttach)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServerVolumeAttach)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -850,6 +885,14 @@ func (s *jsiiProxy_ServerVolumeAttach) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServerVolumeAttach) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

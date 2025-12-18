@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/server_service_account_attach stackit_server_service_account_attach}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/resources/server_service_account_attach stackit_server_service_account_attach}.
 type ServerServiceAccountAttach interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -56,6 +56,9 @@ type ServerServiceAccountAttach interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ServerId() *string
 	SetServerId(val *string)
 	ServerIdInput() *string
@@ -114,6 +117,7 @@ type ServerServiceAccountAttach interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -292,6 +296,26 @@ func (j *jsiiProxy_ServerServiceAccountAttach) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ServerServiceAccountAttach) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServerServiceAccountAttach) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServerServiceAccountAttach) ServerId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -363,7 +387,7 @@ func (j *jsiiProxy_ServerServiceAccountAttach) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/server_service_account_attach stackit_server_service_account_attach} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/resources/server_service_account_attach stackit_server_service_account_attach} Resource.
 func NewServerServiceAccountAttach(scope constructs.Construct, id *string, config *ServerServiceAccountAttachConfig) ServerServiceAccountAttach {
 	_init_.Initialize()
 
@@ -381,7 +405,7 @@ func NewServerServiceAccountAttach(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/server_service_account_attach stackit_server_service_account_attach} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/resources/server_service_account_attach stackit_server_service_account_attach} Resource.
 func NewServerServiceAccountAttach_Override(s ServerServiceAccountAttach, scope constructs.Construct, id *string, config *ServerServiceAccountAttachConfig) {
 	_init_.Initialize()
 
@@ -467,6 +491,17 @@ func (j *jsiiProxy_ServerServiceAccountAttach)SetProvisioners(val *[]interface{}
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServerServiceAccountAttach)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -850,6 +885,14 @@ func (s *jsiiProxy_ServerServiceAccountAttach) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServerServiceAccountAttach) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

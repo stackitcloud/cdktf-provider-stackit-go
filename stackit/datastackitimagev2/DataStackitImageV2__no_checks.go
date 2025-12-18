@@ -96,6 +96,10 @@ func (j *jsiiProxy_DataStackitImageV2) validateSetProjectIdParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitImageV2) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataStackitImageV2) validateSetSortAscendingParameters(val interface{}) error {
 	return nil
 }

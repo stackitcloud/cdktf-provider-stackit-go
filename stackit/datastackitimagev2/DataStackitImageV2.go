@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/data-sources/image_v2 stackit_image_v2}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/data-sources/image_v2 stackit_image_v2}.
 type DataStackitImageV2 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -66,6 +66,9 @@ type DataStackitImageV2 interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	Scope() *string
 	SortAscending() interface{}
 	SetSortAscending(val interface{})
@@ -109,6 +112,7 @@ type DataStackitImageV2 interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetSortAscending()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -419,6 +423,26 @@ func (j *jsiiProxy_DataStackitImageV2) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitImageV2) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitImageV2) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitImageV2) Scope() *string {
 	var returns *string
 	_jsii_.Get(
@@ -480,7 +504,7 @@ func (j *jsiiProxy_DataStackitImageV2) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/data-sources/image_v2 stackit_image_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/data-sources/image_v2 stackit_image_v2} Data Source.
 func NewDataStackitImageV2(scope constructs.Construct, id *string, config *DataStackitImageV2Config) DataStackitImageV2 {
 	_init_.Initialize()
 
@@ -498,7 +522,7 @@ func NewDataStackitImageV2(scope constructs.Construct, id *string, config *DataS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/data-sources/image_v2 stackit_image_v2} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/data-sources/image_v2 stackit_image_v2} Data Source.
 func NewDataStackitImageV2_Override(d DataStackitImageV2, scope constructs.Construct, id *string, config *DataStackitImageV2Config) {
 	_init_.Initialize()
 
@@ -595,6 +619,17 @@ func (j *jsiiProxy_DataStackitImageV2)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataStackitImageV2)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -942,6 +977,14 @@ func (d *jsiiProxy_DataStackitImageV2) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataStackitImageV2) ResetRegion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

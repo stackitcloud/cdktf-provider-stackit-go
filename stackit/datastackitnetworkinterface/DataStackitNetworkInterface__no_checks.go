@@ -88,6 +88,10 @@ func (j *jsiiProxy_DataStackitNetworkInterface) validateSetProjectIdParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitNetworkInterface) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataStackitNetworkInterfaceParameters(scope constructs.Construct, id *string, config *DataStackitNetworkInterfaceConfig) error {
 	return nil
 }

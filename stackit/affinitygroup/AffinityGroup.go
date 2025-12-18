@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/affinity_group stackit_affinity_group}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/resources/affinity_group stackit_affinity_group}.
 type AffinityGroup interface {
 	cdktf.TerraformResource
 	AffinityGroupId() *string
@@ -64,6 +64,9 @@ type AffinityGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -116,6 +119,7 @@ type AffinityGroup interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -354,6 +358,26 @@ func (j *jsiiProxy_AffinityGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AffinityGroup) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AffinityGroup) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AffinityGroup) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -385,7 +409,7 @@ func (j *jsiiProxy_AffinityGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/affinity_group stackit_affinity_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/resources/affinity_group stackit_affinity_group} Resource.
 func NewAffinityGroup(scope constructs.Construct, id *string, config *AffinityGroupConfig) AffinityGroup {
 	_init_.Initialize()
 
@@ -403,7 +427,7 @@ func NewAffinityGroup(scope constructs.Construct, id *string, config *AffinityGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/affinity_group stackit_affinity_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/resources/affinity_group stackit_affinity_group} Resource.
 func NewAffinityGroup_Override(a AffinityGroup, scope constructs.Construct, id *string, config *AffinityGroupConfig) {
 	_init_.Initialize()
 
@@ -511,6 +535,17 @@ func (j *jsiiProxy_AffinityGroup)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AffinityGroup)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -872,6 +907,14 @@ func (a *jsiiProxy_AffinityGroup) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AffinityGroup) ResetRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

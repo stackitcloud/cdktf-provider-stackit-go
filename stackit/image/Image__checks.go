@@ -455,6 +455,14 @@ func (j *jsiiProxy_Image) validateSetProvisionersParameters(val *[]interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_Image) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewImageParameters(scope constructs.Construct, id *string, config *ImageConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

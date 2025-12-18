@@ -148,6 +148,10 @@ func (j *jsiiProxy_Server) validateSetProvisionersParameters(val *[]interface{})
 	return nil
 }
 
+func (j *jsiiProxy_Server) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Server) validateSetUserDataParameters(val *string) error {
 	return nil
 }

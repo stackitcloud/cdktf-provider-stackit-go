@@ -128,6 +128,10 @@ func (j *jsiiProxy_NetworkInterface) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_NetworkInterface) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkInterface) validateSetSecurityParameters(val interface{}) error {
 	return nil
 }

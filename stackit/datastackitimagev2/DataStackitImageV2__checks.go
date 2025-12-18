@@ -259,6 +259,14 @@ func (j *jsiiProxy_DataStackitImageV2) validateSetProjectIdParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitImageV2) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataStackitImageV2) validateSetSortAscendingParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

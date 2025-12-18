@@ -21,15 +21,15 @@ type DataStackitObservabilityAlertgroupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Observability instance ID to which the alert group is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/data-sources/observability_alertgroup#instance_id DataStackitObservabilityAlertgroup#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/data-sources/observability_alertgroup#instance_id DataStackitObservabilityAlertgroup#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// The name of the alert group. Is the identifier and must be unique in the group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/data-sources/observability_alertgroup#name DataStackitObservabilityAlertgroup#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/data-sources/observability_alertgroup#name DataStackitObservabilityAlertgroup#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// STACKIT project ID to which the alert group is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/data-sources/observability_alertgroup#project_id DataStackitObservabilityAlertgroup#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/data-sources/observability_alertgroup#project_id DataStackitObservabilityAlertgroup#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

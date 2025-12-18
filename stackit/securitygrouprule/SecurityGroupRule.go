@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/security_group_rule stackit_security_group_rule}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/resources/security_group_rule stackit_security_group_rule}.
 type SecurityGroupRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -74,6 +74,9 @@ type SecurityGroupRule interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RemoteSecurityGroupId() *string
 	SetRemoteSecurityGroupId(val *string)
 	RemoteSecurityGroupIdInput() *string
@@ -142,6 +145,7 @@ type SecurityGroupRule interface {
 	ResetOverrideLogicalId()
 	ResetPortRange()
 	ResetProtocol()
+	ResetRegion()
 	ResetRemoteSecurityGroupId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -461,6 +465,26 @@ func (j *jsiiProxy_SecurityGroupRule) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SecurityGroupRule) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityGroupRule) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecurityGroupRule) RemoteSecurityGroupId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -542,7 +566,7 @@ func (j *jsiiProxy_SecurityGroupRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/security_group_rule stackit_security_group_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/resources/security_group_rule stackit_security_group_rule} Resource.
 func NewSecurityGroupRule(scope constructs.Construct, id *string, config *SecurityGroupRuleConfig) SecurityGroupRule {
 	_init_.Initialize()
 
@@ -560,7 +584,7 @@ func NewSecurityGroupRule(scope constructs.Construct, id *string, config *Securi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.74.0/docs/resources/security_group_rule stackit_security_group_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/resources/security_group_rule stackit_security_group_rule} Resource.
 func NewSecurityGroupRule_Override(s SecurityGroupRule, scope constructs.Construct, id *string, config *SecurityGroupRuleConfig) {
 	_init_.Initialize()
 
@@ -690,6 +714,17 @@ func (j *jsiiProxy_SecurityGroupRule)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurityGroupRule)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1154,6 +1189,14 @@ func (s *jsiiProxy_SecurityGroupRule) ResetProtocol() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetProtocol",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityGroupRule) ResetRegion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRegion",
 		nil, // no parameters
 	)
 }
