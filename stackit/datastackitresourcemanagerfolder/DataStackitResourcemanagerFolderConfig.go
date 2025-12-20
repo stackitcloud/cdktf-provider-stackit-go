@@ -21,7 +21,7 @@ type DataStackitResourcemanagerFolderConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Folder container ID. Globally unique, user-friendly identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/data-sources/resourcemanager_folder#container_id DataStackitResourcemanagerFolder#container_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.76.0/docs/data-sources/resourcemanager_folder#container_id DataStackitResourcemanagerFolder#container_id}
 	ContainerId *string `field:"required" json:"containerId" yaml:"containerId"`
 }
 

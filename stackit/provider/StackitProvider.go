@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs stackit}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.76.0/docs stackit}.
 type StackitProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -134,6 +134,9 @@ type StackitProvider interface {
 	ServiceEnablementCustomEndpoint() *string
 	SetServiceEnablementCustomEndpoint(val *string)
 	ServiceEnablementCustomEndpointInput() *string
+	SfsCustomEndpoint() *string
+	SetSfsCustomEndpoint(val *string)
+	SfsCustomEndpointInput() *string
 	SkeCustomEndpoint() *string
 	SetSkeCustomEndpoint(val *string)
 	SkeCustomEndpointInput() *string
@@ -193,6 +196,7 @@ type StackitProvider interface {
 	ResetServiceAccountKeyPath()
 	ResetServiceAccountToken()
 	ResetServiceEnablementCustomEndpoint()
+	ResetSfsCustomEndpoint()
 	ResetSkeCustomEndpoint()
 	ResetSqlserverflexCustomEndpoint()
 	ResetTokenCustomEndpoint()
@@ -1004,6 +1008,26 @@ func (j *jsiiProxy_StackitProvider) ServiceEnablementCustomEndpointInput() *stri
 	return returns
 }
 
+func (j *jsiiProxy_StackitProvider) SfsCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sfsCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) SfsCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sfsCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StackitProvider) SkeCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1095,7 +1119,7 @@ func (j *jsiiProxy_StackitProvider) TokenCustomEndpointInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.76.0/docs stackit} Resource.
 func NewStackitProvider(scope constructs.Construct, id *string, config *StackitProviderConfig) StackitProvider {
 	_init_.Initialize()
 
@@ -1113,7 +1137,7 @@ func NewStackitProvider(scope constructs.Construct, id *string, config *StackitP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.76.0/docs stackit} Resource.
 func NewStackitProvider_Override(s StackitProvider, scope constructs.Construct, id *string, config *StackitProviderConfig) {
 	_init_.Initialize()
 
@@ -1411,6 +1435,14 @@ func (j *jsiiProxy_StackitProvider)SetServiceEnablementCustomEndpoint(val *strin
 	_jsii_.Set(
 		j,
 		"serviceEnablementCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StackitProvider)SetSfsCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"sfsCustomEndpoint",
 		val,
 	)
 }
@@ -1856,6 +1888,14 @@ func (s *jsiiProxy_StackitProvider) ResetServiceEnablementCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetServiceEnablementCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StackitProvider) ResetSfsCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSfsCustomEndpoint",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/data-sources/public_ip stackit_public_ip}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.76.0/docs/data-sources/public_ip stackit_public_ip}.
 type DataStackitPublicIp interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -352,7 +352,7 @@ func (j *jsiiProxy_DataStackitPublicIp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/data-sources/public_ip stackit_public_ip} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.76.0/docs/data-sources/public_ip stackit_public_ip} Data Source.
 func NewDataStackitPublicIp(scope constructs.Construct, id *string, config *DataStackitPublicIpConfig) DataStackitPublicIp {
 	_init_.Initialize()
 
@@ -370,7 +370,7 @@ func NewDataStackitPublicIp(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.75.0/docs/data-sources/public_ip stackit_public_ip} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.76.0/docs/data-sources/public_ip stackit_public_ip} Data Source.
 func NewDataStackitPublicIp_Override(d DataStackitPublicIp, scope constructs.Construct, id *string, config *DataStackitPublicIpConfig) {
 	_init_.Initialize()
 
