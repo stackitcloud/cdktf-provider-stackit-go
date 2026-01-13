@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.76.0/docs/resources/volume stackit_volume}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.77.0/docs/resources/volume stackit_volume}.
 type Volume interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -34,6 +34,9 @@ type Volume interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	Encrypted() cdktf.IResolvable
+	EncryptionParameters() VolumeEncryptionParametersOutputReference
+	EncryptionParametersInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -130,8 +133,10 @@ type Volume interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEncryptionParameters(value *VolumeEncryptionParameters)
 	PutSource(value *VolumeSource)
 	ResetDescription()
+	ResetEncryptionParameters()
 	ResetLabels()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -244,6 +249,36 @@ func (j *jsiiProxy_Volume) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Volume) Encrypted() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"encrypted",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Volume) EncryptionParameters() VolumeEncryptionParametersOutputReference {
+	var returns VolumeEncryptionParametersOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Volume) EncryptionParametersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"encryptionParametersInput",
 		&returns,
 	)
 	return returns
@@ -530,7 +565,7 @@ func (j *jsiiProxy_Volume) VolumeId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.76.0/docs/resources/volume stackit_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.77.0/docs/resources/volume stackit_volume} Resource.
 func NewVolume(scope constructs.Construct, id *string, config *VolumeConfig) Volume {
 	_init_.Initialize()
 
@@ -548,7 +583,7 @@ func NewVolume(scope constructs.Construct, id *string, config *VolumeConfig) Vol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.76.0/docs/resources/volume stackit_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.77.0/docs/resources/volume stackit_volume} Resource.
 func NewVolume_Override(v Volume, scope constructs.Construct, id *string, config *VolumeConfig) {
 	_init_.Initialize()
 
@@ -1068,6 +1103,17 @@ func (v *jsiiProxy_Volume) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (v *jsiiProxy_Volume) PutEncryptionParameters(value *VolumeEncryptionParameters) {
+	if err := v.validatePutEncryptionParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putEncryptionParameters",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_Volume) PutSource(value *VolumeSource) {
 	if err := v.validatePutSourceParameters(value); err != nil {
 		panic(err)
@@ -1083,6 +1129,14 @@ func (v *jsiiProxy_Volume) ResetDescription() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_Volume) ResetEncryptionParameters() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetEncryptionParameters",
 		nil, // no parameters
 	)
 }

@@ -72,6 +72,10 @@ func (v *jsiiProxy_Volume) validateOverrideLogicalIdParameters(newLogicalId *str
 	return nil
 }
 
+func (v *jsiiProxy_Volume) validatePutEncryptionParametersParameters(value *VolumeEncryptionParameters) error {
+	return nil
+}
+
 func (v *jsiiProxy_Volume) validatePutSourceParameters(value *VolumeSource) error {
 	return nil
 }

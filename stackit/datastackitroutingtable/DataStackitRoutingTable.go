@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.76.0/docs/data-sources/routing_table stackit_routing_table}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.77.0/docs/data-sources/routing_table stackit_routing_table}.
 type DataStackitRoutingTable interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -27,6 +27,7 @@ type DataStackitRoutingTable interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
+	DynamicRoutes() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -183,6 +184,16 @@ func (j *jsiiProxy_DataStackitRoutingTable) Description() *string {
 	_jsii_.Get(
 		j,
 		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRoutingTable) DynamicRoutes() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"dynamicRoutes",
 		&returns,
 	)
 	return returns
@@ -419,7 +430,7 @@ func (j *jsiiProxy_DataStackitRoutingTable) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.76.0/docs/data-sources/routing_table stackit_routing_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.77.0/docs/data-sources/routing_table stackit_routing_table} Data Source.
 func NewDataStackitRoutingTable(scope constructs.Construct, id *string, config *DataStackitRoutingTableConfig) DataStackitRoutingTable {
 	_init_.Initialize()
 
@@ -437,7 +448,7 @@ func NewDataStackitRoutingTable(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.76.0/docs/data-sources/routing_table stackit_routing_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.77.0/docs/data-sources/routing_table stackit_routing_table} Data Source.
 func NewDataStackitRoutingTable_Override(d DataStackitRoutingTable, scope constructs.Construct, id *string, config *DataStackitRoutingTableConfig) {
 	_init_.Initialize()
 

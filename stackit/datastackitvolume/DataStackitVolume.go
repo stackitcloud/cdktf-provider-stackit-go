@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.76.0/docs/data-sources/volume stackit_volume}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.77.0/docs/data-sources/volume stackit_volume}.
 type DataStackitVolume interface {
 	cdktf.TerraformDataSource
 	AvailabilityZone() *string
@@ -26,6 +26,7 @@ type DataStackitVolume interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
+	Encrypted() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -171,6 +172,16 @@ func (j *jsiiProxy_DataStackitVolume) Description() *string {
 	_jsii_.Get(
 		j,
 		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitVolume) Encrypted() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"encrypted",
 		&returns,
 	)
 	return returns
@@ -407,7 +418,7 @@ func (j *jsiiProxy_DataStackitVolume) VolumeIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.76.0/docs/data-sources/volume stackit_volume} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.77.0/docs/data-sources/volume stackit_volume} Data Source.
 func NewDataStackitVolume(scope constructs.Construct, id *string, config *DataStackitVolumeConfig) DataStackitVolume {
 	_init_.Initialize()
 
@@ -425,7 +436,7 @@ func NewDataStackitVolume(scope constructs.Construct, id *string, config *DataSt
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.76.0/docs/data-sources/volume stackit_volume} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.77.0/docs/data-sources/volume stackit_volume} Data Source.
 func NewDataStackitVolume_Override(d DataStackitVolume, scope constructs.Construct, id *string, config *DataStackitVolumeConfig) {
 	_init_.Initialize()
 

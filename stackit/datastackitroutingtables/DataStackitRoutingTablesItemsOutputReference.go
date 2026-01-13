@@ -28,6 +28,7 @@ type DataStackitRoutingTablesItemsOutputReference interface {
 	CreationStack() *[]*string
 	Default() cdktf.IResolvable
 	Description() *string
+	DynamicRoutes() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataStackitRoutingTablesItems
@@ -139,6 +140,16 @@ func (j *jsiiProxy_DataStackitRoutingTablesItemsOutputReference) Description() *
 	_jsii_.Get(
 		j,
 		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitRoutingTablesItemsOutputReference) DynamicRoutes() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"dynamicRoutes",
 		&returns,
 	)
 	return returns

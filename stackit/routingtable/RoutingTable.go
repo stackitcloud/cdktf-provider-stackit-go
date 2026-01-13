@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.76.0/docs/resources/routing_table stackit_routing_table}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.77.0/docs/resources/routing_table stackit_routing_table}.
 type RoutingTable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -32,6 +32,9 @@ type RoutingTable interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DynamicRoutes() interface{}
+	SetDynamicRoutes(val interface{})
+	DynamicRoutesInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -127,6 +130,7 @@ type RoutingTable interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetDescription()
+	ResetDynamicRoutes()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -226,6 +230,26 @@ func (j *jsiiProxy_RoutingTable) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RoutingTable) DynamicRoutes() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dynamicRoutes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RoutingTable) DynamicRoutesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dynamicRoutesInput",
 		&returns,
 	)
 	return returns
@@ -492,7 +516,7 @@ func (j *jsiiProxy_RoutingTable) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.76.0/docs/resources/routing_table stackit_routing_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.77.0/docs/resources/routing_table stackit_routing_table} Resource.
 func NewRoutingTable(scope constructs.Construct, id *string, config *RoutingTableConfig) RoutingTable {
 	_init_.Initialize()
 
@@ -510,7 +534,7 @@ func NewRoutingTable(scope constructs.Construct, id *string, config *RoutingTabl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.76.0/docs/resources/routing_table stackit_routing_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.77.0/docs/resources/routing_table stackit_routing_table} Resource.
 func NewRoutingTable_Override(r RoutingTable, scope constructs.Construct, id *string, config *RoutingTableConfig) {
 	_init_.Initialize()
 
@@ -558,6 +582,17 @@ func (j *jsiiProxy_RoutingTable)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RoutingTable)SetDynamicRoutes(val interface{}) {
+	if err := j.validateSetDynamicRoutesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dynamicRoutes",
 		val,
 	)
 }
@@ -1023,6 +1058,14 @@ func (r *jsiiProxy_RoutingTable) ResetDescription() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RoutingTable) ResetDynamicRoutes() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDynamicRoutes",
 		nil, // no parameters
 	)
 }

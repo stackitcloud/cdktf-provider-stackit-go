@@ -100,6 +100,10 @@ func (j *jsiiProxy_RoutingTable) validateSetDescriptionParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_RoutingTable) validateSetDynamicRoutesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RoutingTable) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }

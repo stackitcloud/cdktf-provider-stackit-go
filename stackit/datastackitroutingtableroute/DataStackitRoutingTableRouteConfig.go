@@ -21,23 +21,23 @@ type DataStackitRoutingTableRouteConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The network area ID to which the routing table is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.76.0/docs/data-sources/routing_table_route#network_area_id DataStackitRoutingTableRoute#network_area_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.77.0/docs/data-sources/routing_table_route#network_area_id DataStackitRoutingTableRoute#network_area_id}
 	NetworkAreaId *string `field:"required" json:"networkAreaId" yaml:"networkAreaId"`
 	// STACKIT organization ID to which the routing table is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.76.0/docs/data-sources/routing_table_route#organization_id DataStackitRoutingTableRoute#organization_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.77.0/docs/data-sources/routing_table_route#organization_id DataStackitRoutingTableRoute#organization_id}
 	OrganizationId *string `field:"required" json:"organizationId" yaml:"organizationId"`
 	// Route ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.76.0/docs/data-sources/routing_table_route#route_id DataStackitRoutingTableRoute#route_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.77.0/docs/data-sources/routing_table_route#route_id DataStackitRoutingTableRoute#route_id}
 	RouteId *string `field:"required" json:"routeId" yaml:"routeId"`
 	// The routing tables ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.76.0/docs/data-sources/routing_table_route#routing_table_id DataStackitRoutingTableRoute#routing_table_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.77.0/docs/data-sources/routing_table_route#routing_table_id DataStackitRoutingTableRoute#routing_table_id}
 	RoutingTableId *string `field:"required" json:"routingTableId" yaml:"routingTableId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.76.0/docs/data-sources/routing_table_route#region DataStackitRoutingTableRoute#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.77.0/docs/data-sources/routing_table_route#region DataStackitRoutingTableRoute#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 
