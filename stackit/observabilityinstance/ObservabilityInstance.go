@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.77.0/docs/resources/observability_instance stackit_observability_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/resources/observability_instance stackit_observability_instance}.
 type ObservabilityInstance interface {
 	cdktf.TerraformResource
 	Acl() *[]*string
@@ -753,7 +753,7 @@ func (j *jsiiProxy_ObservabilityInstance) ZipkinSpansUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.77.0/docs/resources/observability_instance stackit_observability_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/resources/observability_instance stackit_observability_instance} Resource.
 func NewObservabilityInstance(scope constructs.Construct, id *string, config *ObservabilityInstanceConfig) ObservabilityInstance {
 	_init_.Initialize()
 
@@ -771,7 +771,7 @@ func NewObservabilityInstance(scope constructs.Construct, id *string, config *Ob
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.77.0/docs/resources/observability_instance stackit_observability_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/resources/observability_instance stackit_observability_instance} Resource.
 func NewObservabilityInstance_Override(o ObservabilityInstance, scope constructs.Construct, id *string, config *ObservabilityInstanceConfig) {
 	_init_.Initialize()
 
