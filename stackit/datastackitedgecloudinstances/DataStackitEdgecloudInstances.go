@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/data-sources/edgecloud_instances stackit_edgecloud_instances}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/data-sources/edgecloud_instances stackit_edgecloud_instances}.
 type DataStackitEdgecloudInstances interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -307,7 +307,7 @@ func (j *jsiiProxy_DataStackitEdgecloudInstances) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/data-sources/edgecloud_instances stackit_edgecloud_instances} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/data-sources/edgecloud_instances stackit_edgecloud_instances} Data Source.
 func NewDataStackitEdgecloudInstances(scope constructs.Construct, id *string, config *DataStackitEdgecloudInstancesConfig) DataStackitEdgecloudInstances {
 	_init_.Initialize()
 
@@ -325,7 +325,7 @@ func NewDataStackitEdgecloudInstances(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/data-sources/edgecloud_instances stackit_edgecloud_instances} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/data-sources/edgecloud_instances stackit_edgecloud_instances} Data Source.
 func NewDataStackitEdgecloudInstances_Override(d DataStackitEdgecloudInstances, scope constructs.Construct, id *string, config *DataStackitEdgecloudInstancesConfig) {
 	_init_.Initialize()
 

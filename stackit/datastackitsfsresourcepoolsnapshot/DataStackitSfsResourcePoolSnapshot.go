@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/data-sources/sfs_resource_pool_snapshot stackit_sfs_resource_pool_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/data-sources/sfs_resource_pool_snapshot stackit_sfs_resource_pool_snapshot}.
 type DataStackitSfsResourcePoolSnapshot interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataStackitSfsResourcePoolSnapshot) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/data-sources/sfs_resource_pool_snapshot stackit_sfs_resource_pool_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/data-sources/sfs_resource_pool_snapshot stackit_sfs_resource_pool_snapshot} Data Source.
 func NewDataStackitSfsResourcePoolSnapshot(scope constructs.Construct, id *string, config *DataStackitSfsResourcePoolSnapshotConfig) DataStackitSfsResourcePoolSnapshot {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewDataStackitSfsResourcePoolSnapshot(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/data-sources/sfs_resource_pool_snapshot stackit_sfs_resource_pool_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/data-sources/sfs_resource_pool_snapshot stackit_sfs_resource_pool_snapshot} Data Source.
 func NewDataStackitSfsResourcePoolSnapshot_Override(d DataStackitSfsResourcePoolSnapshot, scope constructs.Construct, id *string, config *DataStackitSfsResourcePoolSnapshotConfig) {
 	_init_.Initialize()
 

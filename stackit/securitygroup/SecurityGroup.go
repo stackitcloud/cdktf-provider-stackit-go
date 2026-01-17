@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/resources/security_group stackit_security_group}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/security_group stackit_security_group}.
 type SecurityGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -447,7 +447,7 @@ func (j *jsiiProxy_SecurityGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/resources/security_group stackit_security_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/security_group stackit_security_group} Resource.
 func NewSecurityGroup(scope constructs.Construct, id *string, config *SecurityGroupConfig) SecurityGroup {
 	_init_.Initialize()
 
@@ -465,7 +465,7 @@ func NewSecurityGroup(scope constructs.Construct, id *string, config *SecurityGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/resources/security_group stackit_security_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/security_group stackit_security_group} Resource.
 func NewSecurityGroup_Override(s SecurityGroup, scope constructs.Construct, id *string, config *SecurityGroupConfig) {
 	_init_.Initialize()
 

@@ -21,15 +21,15 @@ type AuthorizationProjectRoleAssignmentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// project Resource to assign the role to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/resources/authorization_project_role_assignment#resource_id AuthorizationProjectRoleAssignment#resource_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/authorization_project_role_assignment#resource_id AuthorizationProjectRoleAssignment#resource_id}
 	ResourceId *string `field:"required" json:"resourceId" yaml:"resourceId"`
 	// Role to be assigned.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/resources/authorization_project_role_assignment#role AuthorizationProjectRoleAssignment#role}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/authorization_project_role_assignment#role AuthorizationProjectRoleAssignment#role}
 	Role *string `field:"required" json:"role" yaml:"role"`
 	// Identifier of user, service account or client. Usually email address or name in case of clients.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/resources/authorization_project_role_assignment#subject AuthorizationProjectRoleAssignment#subject}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/authorization_project_role_assignment#subject AuthorizationProjectRoleAssignment#subject}
 	Subject *string `field:"required" json:"subject" yaml:"subject"`
 }
 

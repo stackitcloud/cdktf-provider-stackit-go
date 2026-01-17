@@ -21,15 +21,15 @@ type DataStackitPublicIpConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT project ID to which the public IP is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/data-sources/public_ip#project_id DataStackitPublicIp#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/data-sources/public_ip#project_id DataStackitPublicIp#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The public IP ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/data-sources/public_ip#public_ip_id DataStackitPublicIp#public_ip_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/data-sources/public_ip#public_ip_id DataStackitPublicIp#public_ip_id}
 	PublicIpId *string `field:"required" json:"publicIpId" yaml:"publicIpId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/data-sources/public_ip#region DataStackitPublicIp#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/data-sources/public_ip#region DataStackitPublicIp#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

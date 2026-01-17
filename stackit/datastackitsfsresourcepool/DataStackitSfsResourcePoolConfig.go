@@ -21,15 +21,15 @@ type DataStackitSfsResourcePoolConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT project ID to which the resource pool is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/data-sources/sfs_resource_pool#project_id DataStackitSfsResourcePool#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/data-sources/sfs_resource_pool#project_id DataStackitSfsResourcePool#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Resourcepool ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/data-sources/sfs_resource_pool#resource_pool_id DataStackitSfsResourcePool#resource_pool_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/data-sources/sfs_resource_pool#resource_pool_id DataStackitSfsResourcePool#resource_pool_id}
 	ResourcePoolId *string `field:"required" json:"resourcePoolId" yaml:"resourcePoolId"`
 	// The resource region. Read-only attribute that reflects the provider region.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/data-sources/sfs_resource_pool#region DataStackitSfsResourcePool#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/data-sources/sfs_resource_pool#region DataStackitSfsResourcePool#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

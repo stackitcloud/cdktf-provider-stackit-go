@@ -21,19 +21,19 @@ type NetworkAreaRegionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The regional IPv4 config of a network area.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/resources/network_area_region#ipv4 NetworkAreaRegion#ipv4}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/network_area_region#ipv4 NetworkAreaRegion#ipv4}
 	Ipv4 *NetworkAreaRegionIpv4 `field:"required" json:"ipv4" yaml:"ipv4"`
 	// The network area ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/resources/network_area_region#network_area_id NetworkAreaRegion#network_area_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/network_area_region#network_area_id NetworkAreaRegion#network_area_id}
 	NetworkAreaId *string `field:"required" json:"networkAreaId" yaml:"networkAreaId"`
 	// STACKIT organization ID to which the network area is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/resources/network_area_region#organization_id NetworkAreaRegion#organization_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/network_area_region#organization_id NetworkAreaRegion#organization_id}
 	OrganizationId *string `field:"required" json:"organizationId" yaml:"organizationId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/resources/network_area_region#region NetworkAreaRegion#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/network_area_region#region NetworkAreaRegion#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

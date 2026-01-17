@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/resources/server_service_account_attach stackit_server_service_account_attach}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/server_service_account_attach stackit_server_service_account_attach}.
 type ServerServiceAccountAttach interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -387,7 +387,7 @@ func (j *jsiiProxy_ServerServiceAccountAttach) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/resources/server_service_account_attach stackit_server_service_account_attach} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/server_service_account_attach stackit_server_service_account_attach} Resource.
 func NewServerServiceAccountAttach(scope constructs.Construct, id *string, config *ServerServiceAccountAttachConfig) ServerServiceAccountAttach {
 	_init_.Initialize()
 
@@ -405,7 +405,7 @@ func NewServerServiceAccountAttach(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/resources/server_service_account_attach stackit_server_service_account_attach} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/server_service_account_attach stackit_server_service_account_attach} Resource.
 func NewServerServiceAccountAttach_Override(s ServerServiceAccountAttach, scope constructs.Construct, id *string, config *ServerServiceAccountAttachConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/resources/modelserving_token stackit_modelserving_token}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/modelserving_token stackit_modelserving_token}.
 type ModelservingToken interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -480,7 +480,7 @@ func (j *jsiiProxy_ModelservingToken) ValidUntil() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/resources/modelserving_token stackit_modelserving_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/modelserving_token stackit_modelserving_token} Resource.
 func NewModelservingToken(scope constructs.Construct, id *string, config *ModelservingTokenConfig) ModelservingToken {
 	_init_.Initialize()
 
@@ -498,7 +498,7 @@ func NewModelservingToken(scope constructs.Construct, id *string, config *Models
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/resources/modelserving_token stackit_modelserving_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/modelserving_token stackit_modelserving_token} Resource.
 func NewModelservingToken_Override(m ModelservingToken, scope constructs.Construct, id *string, config *ModelservingTokenConfig) {
 	_init_.Initialize()
 

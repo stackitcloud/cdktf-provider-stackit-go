@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/resources/edgecloud_kubeconfig stackit_edgecloud_kubeconfig}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/edgecloud_kubeconfig stackit_edgecloud_kubeconfig}.
 type EdgecloudKubeconfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -481,7 +481,7 @@ func (j *jsiiProxy_EdgecloudKubeconfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/resources/edgecloud_kubeconfig stackit_edgecloud_kubeconfig} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/edgecloud_kubeconfig stackit_edgecloud_kubeconfig} Resource.
 func NewEdgecloudKubeconfig(scope constructs.Construct, id *string, config *EdgecloudKubeconfigConfig) EdgecloudKubeconfig {
 	_init_.Initialize()
 
@@ -499,7 +499,7 @@ func NewEdgecloudKubeconfig(scope constructs.Construct, id *string, config *Edge
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.0/docs/resources/edgecloud_kubeconfig stackit_edgecloud_kubeconfig} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/edgecloud_kubeconfig stackit_edgecloud_kubeconfig} Resource.
 func NewEdgecloudKubeconfig_Override(e EdgecloudKubeconfig, scope constructs.Construct, id *string, config *EdgecloudKubeconfigConfig) {
 	_init_.Initialize()
 
