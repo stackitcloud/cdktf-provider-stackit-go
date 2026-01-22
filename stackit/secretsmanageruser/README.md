@@ -1,3 +1,3 @@
 # `stackit_secretsmanager_user`
 
-Refer to the Terraform Registry for docs: [`stackit_secretsmanager_user`](https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/secretsmanager_user).
+Refer to the Terraform Registry for docs: [`stackit_secretsmanager_user`](https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/resources/secretsmanager_user).

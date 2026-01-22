@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/edgecloud_token stackit_edgecloud_token}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/resources/edgecloud_token stackit_edgecloud_token}.
 type EdgecloudToken interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -481,7 +481,7 @@ func (j *jsiiProxy_EdgecloudToken) TokenId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/edgecloud_token stackit_edgecloud_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/resources/edgecloud_token stackit_edgecloud_token} Resource.
 func NewEdgecloudToken(scope constructs.Construct, id *string, config *EdgecloudTokenConfig) EdgecloudToken {
 	_init_.Initialize()
 
@@ -499,7 +499,7 @@ func NewEdgecloudToken(scope constructs.Construct, id *string, config *Edgecloud
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/edgecloud_token stackit_edgecloud_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/resources/edgecloud_token stackit_edgecloud_token} Resource.
 func NewEdgecloudToken_Override(e EdgecloudToken, scope constructs.Construct, id *string, config *EdgecloudTokenConfig) {
 	_init_.Initialize()
 

@@ -35,19 +35,19 @@ type DataStackitMachineTypeConfig struct {
 	// stackit server machine-type list
 	// ```
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/data-sources/machine_type#filter DataStackitMachineType#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/data-sources/machine_type#filter DataStackitMachineType#filter}
 	Filter *string `field:"required" json:"filter" yaml:"filter"`
 	// STACKIT Project ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/data-sources/machine_type#project_id DataStackitMachineType#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/data-sources/machine_type#project_id DataStackitMachineType#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/data-sources/machine_type#region DataStackitMachineType#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/data-sources/machine_type#region DataStackitMachineType#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// Sort machine types by name ascending (`true`) or descending (`false`). Defaults to `false`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/data-sources/machine_type#sort_ascending DataStackitMachineType#sort_ascending}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/data-sources/machine_type#sort_ascending DataStackitMachineType#sort_ascending}
 	SortAscending interface{} `field:"optional" json:"sortAscending" yaml:"sortAscending"`
 }
 

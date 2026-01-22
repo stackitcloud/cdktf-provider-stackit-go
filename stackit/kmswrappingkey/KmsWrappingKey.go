@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/kms_wrapping_key stackit_kms_wrapping_key}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/resources/kms_wrapping_key stackit_kms_wrapping_key}.
 type KmsWrappingKey interface {
 	cdktf.TerraformResource
 	AccessScope() *string
@@ -548,7 +548,7 @@ func (j *jsiiProxy_KmsWrappingKey) WrappingKeyId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/kms_wrapping_key stackit_kms_wrapping_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/resources/kms_wrapping_key stackit_kms_wrapping_key} Resource.
 func NewKmsWrappingKey(scope constructs.Construct, id *string, config *KmsWrappingKeyConfig) KmsWrappingKey {
 	_init_.Initialize()
 
@@ -566,7 +566,7 @@ func NewKmsWrappingKey(scope constructs.Construct, id *string, config *KmsWrappi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs/resources/kms_wrapping_key stackit_kms_wrapping_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/resources/kms_wrapping_key stackit_kms_wrapping_key} Resource.
 func NewKmsWrappingKey_Override(k KmsWrappingKey, scope constructs.Construct, id *string, config *KmsWrappingKeyConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs stackit}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs stackit}.
 type StackitProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -62,6 +62,9 @@ type StackitProvider interface {
 	LogmeCustomEndpoint() *string
 	SetLogmeCustomEndpoint(val *string)
 	LogmeCustomEndpointInput() *string
+	LogsCustomEndpoint() *string
+	SetLogsCustomEndpoint(val *string)
+	LogsCustomEndpointInput() *string
 	MariadbCustomEndpoint() *string
 	SetMariadbCustomEndpoint(val *string)
 	MariadbCustomEndpointInput() *string
@@ -174,6 +177,7 @@ type StackitProvider interface {
 	ResetKmsCustomEndpoint()
 	ResetLoadbalancerCustomEndpoint()
 	ResetLogmeCustomEndpoint()
+	ResetLogsCustomEndpoint()
 	ResetMariadbCustomEndpoint()
 	ResetModelservingCustomEndpoint()
 	ResetMongodbflexCustomEndpoint()
@@ -537,6 +541,26 @@ func (j *jsiiProxy_StackitProvider) LogmeCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"logmeCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) LogsCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logsCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) LogsCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logsCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -1143,7 +1167,7 @@ func (j *jsiiProxy_StackitProvider) TokenCustomEndpointInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs stackit} Resource.
 func NewStackitProvider(scope constructs.Construct, id *string, config *StackitProviderConfig) StackitProvider {
 	_init_.Initialize()
 
@@ -1161,7 +1185,7 @@ func NewStackitProvider(scope constructs.Construct, id *string, config *StackitP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.78.1/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs stackit} Resource.
 func NewStackitProvider_Override(s StackitProvider, scope constructs.Construct, id *string, config *StackitProviderConfig) {
 	_init_.Initialize()
 
@@ -1283,6 +1307,14 @@ func (j *jsiiProxy_StackitProvider)SetLogmeCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"logmeCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StackitProvider)SetLogsCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"logsCustomEndpoint",
 		val,
 	)
 }
@@ -1736,6 +1768,14 @@ func (s *jsiiProxy_StackitProvider) ResetLogmeCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetLogmeCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StackitProvider) ResetLogsCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLogsCustomEndpoint",
 		nil, // no parameters
 	)
 }
