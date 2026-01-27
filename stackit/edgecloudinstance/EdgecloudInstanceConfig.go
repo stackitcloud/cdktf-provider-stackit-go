@@ -23,23 +23,23 @@ type EdgecloudInstanceConfig struct {
 	//
 	// Has to be a valid hostname, with a length between 4 and 8 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/resources/edgecloud_instance#display_name EdgecloudInstance#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/edgecloud_instance#display_name EdgecloudInstance#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
 	// STACKIT Edge Plan ID for the Edge Cloud instance, has to be the UUID of an existing plan.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/resources/edgecloud_instance#plan_id EdgecloudInstance#plan_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/edgecloud_instance#plan_id EdgecloudInstance#plan_id}
 	PlanId *string `field:"required" json:"planId" yaml:"planId"`
 	// STACKIT project ID to which the Edge Cloud instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/resources/edgecloud_instance#project_id EdgecloudInstance#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/edgecloud_instance#project_id EdgecloudInstance#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Description for your STACKIT Edge Cloud instance. Max length is 256 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/resources/edgecloud_instance#description EdgecloudInstance#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/edgecloud_instance#description EdgecloudInstance#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// STACKIT region to use for the instance, providers default_region will be used if unset.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/resources/edgecloud_instance#region EdgecloudInstance#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/edgecloud_instance#region EdgecloudInstance#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

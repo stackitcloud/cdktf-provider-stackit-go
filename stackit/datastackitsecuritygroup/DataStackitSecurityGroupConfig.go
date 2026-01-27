@@ -21,15 +21,15 @@ type DataStackitSecurityGroupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT project ID to which the security group is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/data-sources/security_group#project_id DataStackitSecurityGroup#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/security_group#project_id DataStackitSecurityGroup#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The security group ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/data-sources/security_group#security_group_id DataStackitSecurityGroup#security_group_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/security_group#security_group_id DataStackitSecurityGroup#security_group_id}
 	SecurityGroupId *string `field:"required" json:"securityGroupId" yaml:"securityGroupId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/data-sources/security_group#region DataStackitSecurityGroup#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/security_group#region DataStackitSecurityGroup#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

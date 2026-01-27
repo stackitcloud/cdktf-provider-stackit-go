@@ -21,15 +21,15 @@ type DataStackitAffinityGroupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The affinity group ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/data-sources/affinity_group#affinity_group_id DataStackitAffinityGroup#affinity_group_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/affinity_group#affinity_group_id DataStackitAffinityGroup#affinity_group_id}
 	AffinityGroupId *string `field:"required" json:"affinityGroupId" yaml:"affinityGroupId"`
 	// STACKIT Project ID to which the affinity group is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/data-sources/affinity_group#project_id DataStackitAffinityGroup#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/affinity_group#project_id DataStackitAffinityGroup#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/data-sources/affinity_group#region DataStackitAffinityGroup#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/affinity_group#region DataStackitAffinityGroup#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

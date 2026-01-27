@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/data-sources/key_pair stackit_key_pair}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/key_pair stackit_key_pair}.
 type DataStackitKeyPair interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -305,7 +305,7 @@ func (j *jsiiProxy_DataStackitKeyPair) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/data-sources/key_pair stackit_key_pair} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/key_pair stackit_key_pair} Data Source.
 func NewDataStackitKeyPair(scope constructs.Construct, id *string, config *DataStackitKeyPairConfig) DataStackitKeyPair {
 	_init_.Initialize()
 
@@ -323,7 +323,7 @@ func NewDataStackitKeyPair(scope constructs.Construct, id *string, config *DataS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/data-sources/key_pair stackit_key_pair} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/key_pair stackit_key_pair} Data Source.
 func NewDataStackitKeyPair_Override(d DataStackitKeyPair, scope constructs.Construct, id *string, config *DataStackitKeyPairConfig) {
 	_init_.Initialize()
 

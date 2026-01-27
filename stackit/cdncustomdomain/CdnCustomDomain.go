@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/resources/cdn_custom_domain stackit_cdn_custom_domain}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/cdn_custom_domain stackit_cdn_custom_domain}.
 type CdnCustomDomain interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -409,7 +409,7 @@ func (j *jsiiProxy_CdnCustomDomain) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/resources/cdn_custom_domain stackit_cdn_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/cdn_custom_domain stackit_cdn_custom_domain} Resource.
 func NewCdnCustomDomain(scope constructs.Construct, id *string, config *CdnCustomDomainConfig) CdnCustomDomain {
 	_init_.Initialize()
 
@@ -427,7 +427,7 @@ func NewCdnCustomDomain(scope constructs.Construct, id *string, config *CdnCusto
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/resources/cdn_custom_domain stackit_cdn_custom_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/cdn_custom_domain stackit_cdn_custom_domain} Resource.
 func NewCdnCustomDomain_Override(c CdnCustomDomain, scope constructs.Construct, id *string, config *CdnCustomDomainConfig) {
 	_init_.Initialize()
 

@@ -21,27 +21,27 @@ type LogsInstanceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The displayed name of the Logs instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/resources/logs_instance#display_name LogsInstance#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/logs_instance#display_name LogsInstance#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
 	// STACKIT project ID associated with the Logs instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/resources/logs_instance#project_id LogsInstance#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/logs_instance#project_id LogsInstance#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The log retention time in days.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/resources/logs_instance#retention_days LogsInstance#retention_days}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/logs_instance#retention_days LogsInstance#retention_days}
 	RetentionDays *float64 `field:"required" json:"retentionDays" yaml:"retentionDays"`
 	// The access control list entries for the Logs instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/resources/logs_instance#acl LogsInstance#acl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/logs_instance#acl LogsInstance#acl}
 	Acl *[]*string `field:"optional" json:"acl" yaml:"acl"`
 	// The description of the Logs instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/resources/logs_instance#description LogsInstance#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/logs_instance#description LogsInstance#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// STACKIT region name the resource is located in. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/resources/logs_instance#region LogsInstance#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/logs_instance#region LogsInstance#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

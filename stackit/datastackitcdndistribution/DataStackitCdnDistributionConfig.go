@@ -21,11 +21,11 @@ type DataStackitCdnDistributionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT project ID associated with the distribution.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/data-sources/cdn_distribution#distribution_id DataStackitCdnDistribution#distribution_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/cdn_distribution#distribution_id DataStackitCdnDistribution#distribution_id}
 	DistributionId *string `field:"required" json:"distributionId" yaml:"distributionId"`
 	// STACKIT project ID associated with the distribution.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/data-sources/cdn_distribution#project_id DataStackitCdnDistribution#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/cdn_distribution#project_id DataStackitCdnDistribution#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

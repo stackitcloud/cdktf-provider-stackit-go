@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/data-sources/logs_instance stackit_logs_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/logs_instance stackit_logs_instance}.
 type DataStackitLogsInstance interface {
 	cdktf.TerraformDataSource
 	Acl() *[]*string
@@ -440,7 +440,7 @@ func (j *jsiiProxy_DataStackitLogsInstance) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/data-sources/logs_instance stackit_logs_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/logs_instance stackit_logs_instance} Data Source.
 func NewDataStackitLogsInstance(scope constructs.Construct, id *string, config *DataStackitLogsInstanceConfig) DataStackitLogsInstance {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewDataStackitLogsInstance(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.0/docs/data-sources/logs_instance stackit_logs_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/logs_instance stackit_logs_instance} Data Source.
 func NewDataStackitLogsInstance_Override(d DataStackitLogsInstance, scope constructs.Construct, id *string, config *DataStackitLogsInstanceConfig) {
 	_init_.Initialize()
 
