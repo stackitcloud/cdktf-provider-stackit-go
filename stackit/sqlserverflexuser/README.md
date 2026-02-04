@@ -1,3 +1,3 @@
 # `stackit_sqlserverflex_user`
 
-Refer to the Terraform Registry for docs: [`stackit_sqlserverflex_user`](https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/sqlserverflex_user).
+Refer to the Terraform Registry for docs: [`stackit_sqlserverflex_user`](https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/sqlserverflex_user).

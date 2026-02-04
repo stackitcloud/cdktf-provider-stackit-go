@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/network_area_region stackit_network_area_region}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/network_area_region stackit_network_area_region}.
 type DataStackitNetworkAreaRegion interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataStackitNetworkAreaRegion) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/network_area_region stackit_network_area_region} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/network_area_region stackit_network_area_region} Data Source.
 func NewDataStackitNetworkAreaRegion(scope constructs.Construct, id *string, config *DataStackitNetworkAreaRegionConfig) DataStackitNetworkAreaRegion {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewDataStackitNetworkAreaRegion(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/network_area_region stackit_network_area_region} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/network_area_region stackit_network_area_region} Data Source.
 func NewDataStackitNetworkAreaRegion_Override(d DataStackitNetworkAreaRegion, scope constructs.Construct, id *string, config *DataStackitNetworkAreaRegionConfig) {
 	_init_.Initialize()
 

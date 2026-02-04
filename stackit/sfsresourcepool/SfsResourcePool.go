@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/sfs_resource_pool stackit_sfs_resource_pool}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/sfs_resource_pool stackit_sfs_resource_pool}.
 type SfsResourcePool interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -491,7 +491,7 @@ func (j *jsiiProxy_SfsResourcePool) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/sfs_resource_pool stackit_sfs_resource_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/sfs_resource_pool stackit_sfs_resource_pool} Resource.
 func NewSfsResourcePool(scope constructs.Construct, id *string, config *SfsResourcePoolConfig) SfsResourcePool {
 	_init_.Initialize()
 
@@ -509,7 +509,7 @@ func NewSfsResourcePool(scope constructs.Construct, id *string, config *SfsResou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/sfs_resource_pool stackit_sfs_resource_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/sfs_resource_pool stackit_sfs_resource_pool} Resource.
 func NewSfsResourcePool_Override(s SfsResourcePool, scope constructs.Construct, id *string, config *SfsResourcePoolConfig) {
 	_init_.Initialize()
 

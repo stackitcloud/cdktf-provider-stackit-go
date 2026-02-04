@@ -1,3 +1,3 @@
 # `stackit_observability_credential`
 
-Refer to the Terraform Registry for docs: [`stackit_observability_credential`](https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/observability_credential).
+Refer to the Terraform Registry for docs: [`stackit_observability_credential`](https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/observability_credential).

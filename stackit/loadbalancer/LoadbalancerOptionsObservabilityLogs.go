@@ -4,11 +4,11 @@ package loadbalancer
 type LoadbalancerOptionsObservabilityLogs struct {
 	// Credentials reference for logs. Not changeable after creation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/loadbalancer#credentials_ref Loadbalancer#credentials_ref}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/loadbalancer#credentials_ref Loadbalancer#credentials_ref}
 	CredentialsRef *string `field:"optional" json:"credentialsRef" yaml:"credentialsRef"`
 	// Credentials reference for logs. Not changeable after creation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/loadbalancer#push_url Loadbalancer#push_url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/loadbalancer#push_url Loadbalancer#push_url}
 	PushUrl *string `field:"optional" json:"pushUrl" yaml:"pushUrl"`
 }
 

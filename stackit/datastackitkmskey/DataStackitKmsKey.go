@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/kms_key stackit_kms_key}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/kms_key stackit_kms_key}.
 type DataStackitKmsKey interface {
 	cdktf.TerraformDataSource
 	AccessScope() *string
@@ -419,7 +419,7 @@ func (j *jsiiProxy_DataStackitKmsKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/kms_key stackit_kms_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/kms_key stackit_kms_key} Data Source.
 func NewDataStackitKmsKey(scope constructs.Construct, id *string, config *DataStackitKmsKeyConfig) DataStackitKmsKey {
 	_init_.Initialize()
 
@@ -437,7 +437,7 @@ func NewDataStackitKmsKey(scope constructs.Construct, id *string, config *DataSt
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/kms_key stackit_kms_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/kms_key stackit_kms_key} Data Source.
 func NewDataStackitKmsKey_Override(d DataStackitKmsKey, scope constructs.Construct, id *string, config *DataStackitKmsKeyConfig) {
 	_init_.Initialize()
 

@@ -21,15 +21,15 @@ type ScfOrganizationManagerConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the Cloud Foundry Organization.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/scf_organization_manager#org_id ScfOrganizationManager#org_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/scf_organization_manager#org_id ScfOrganizationManager#org_id}
 	OrgId *string `field:"required" json:"orgId" yaml:"orgId"`
 	// The ID of the project associated with the organization of the organization manager.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/scf_organization_manager#project_id ScfOrganizationManager#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/scf_organization_manager#project_id ScfOrganizationManager#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The region where the organization of the organization manager is located. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/scf_organization_manager#region ScfOrganizationManager#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/scf_organization_manager#region ScfOrganizationManager#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

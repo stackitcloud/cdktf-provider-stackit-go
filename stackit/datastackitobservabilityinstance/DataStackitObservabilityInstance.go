@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/observability_instance stackit_observability_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/observability_instance stackit_observability_instance}.
 type DataStackitObservabilityInstance interface {
 	cdktf.TerraformDataSource
 	Acl() *[]*string
@@ -36,8 +36,7 @@ type DataStackitObservabilityInstance interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	GrafanaInitialAdminPassword() *string
-	GrafanaInitialAdminUser() *string
+	GrafanaAdminEnabled() cdktf.IResolvable
 	GrafanaPublicReadAccess() cdktf.IResolvable
 	GrafanaUrl() *string
 	Id() *string
@@ -241,21 +240,11 @@ func (j *jsiiProxy_DataStackitObservabilityInstance) FriendlyUniqueId() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataStackitObservabilityInstance) GrafanaInitialAdminPassword() *string {
-	var returns *string
+func (j *jsiiProxy_DataStackitObservabilityInstance) GrafanaAdminEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
-		"grafanaInitialAdminPassword",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataStackitObservabilityInstance) GrafanaInitialAdminUser() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"grafanaInitialAdminUser",
+		"grafanaAdminEnabled",
 		&returns,
 	)
 	return returns
@@ -592,7 +581,7 @@ func (j *jsiiProxy_DataStackitObservabilityInstance) ZipkinSpansUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/observability_instance stackit_observability_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/observability_instance stackit_observability_instance} Data Source.
 func NewDataStackitObservabilityInstance(scope constructs.Construct, id *string, config *DataStackitObservabilityInstanceConfig) DataStackitObservabilityInstance {
 	_init_.Initialize()
 
@@ -610,7 +599,7 @@ func NewDataStackitObservabilityInstance(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/observability_instance stackit_observability_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/observability_instance stackit_observability_instance} Data Source.
 func NewDataStackitObservabilityInstance_Override(d DataStackitObservabilityInstance, scope constructs.Construct, id *string, config *DataStackitObservabilityInstanceConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/server_network_interface_attach stackit_server_network_interface_attach}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/server_network_interface_attach stackit_server_network_interface_attach}.
 type ServerNetworkInterfaceAttach interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -387,7 +387,7 @@ func (j *jsiiProxy_ServerNetworkInterfaceAttach) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/server_network_interface_attach stackit_server_network_interface_attach} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/server_network_interface_attach stackit_server_network_interface_attach} Resource.
 func NewServerNetworkInterfaceAttach(scope constructs.Construct, id *string, config *ServerNetworkInterfaceAttachConfig) ServerNetworkInterfaceAttach {
 	_init_.Initialize()
 
@@ -405,7 +405,7 @@ func NewServerNetworkInterfaceAttach(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/server_network_interface_attach stackit_server_network_interface_attach} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/server_network_interface_attach stackit_server_network_interface_attach} Resource.
 func NewServerNetworkInterfaceAttach_Override(s ServerNetworkInterfaceAttach, scope constructs.Construct, id *string, config *ServerNetworkInterfaceAttachConfig) {
 	_init_.Initialize()
 

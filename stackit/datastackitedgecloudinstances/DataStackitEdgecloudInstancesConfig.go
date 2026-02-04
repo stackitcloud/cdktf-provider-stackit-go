@@ -21,11 +21,11 @@ type DataStackitEdgecloudInstancesConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT project ID to which the Edge Cloud instances are associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/edgecloud_instances#project_id DataStackitEdgecloudInstances#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/edgecloud_instances#project_id DataStackitEdgecloudInstances#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/edgecloud_instances#region DataStackitEdgecloudInstances#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/edgecloud_instances#region DataStackitEdgecloudInstances#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

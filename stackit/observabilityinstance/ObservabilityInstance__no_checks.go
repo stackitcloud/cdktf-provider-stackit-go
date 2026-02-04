@@ -104,6 +104,10 @@ func (j *jsiiProxy_ObservabilityInstance) validateSetCountParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityInstance) validateSetGrafanaAdminEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

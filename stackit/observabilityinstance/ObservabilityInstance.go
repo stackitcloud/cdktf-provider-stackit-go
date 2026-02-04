@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/observability_instance stackit_observability_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/observability_instance stackit_observability_instance}.
 type ObservabilityInstance interface {
 	cdktf.TerraformResource
 	Acl() *[]*string
@@ -43,8 +43,9 @@ type ObservabilityInstance interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	GrafanaInitialAdminPassword() *string
-	GrafanaInitialAdminUser() *string
+	GrafanaAdminEnabled() interface{}
+	SetGrafanaAdminEnabled(val interface{})
+	GrafanaAdminEnabledInput() interface{}
 	GrafanaPublicReadAccess() cdktf.IResolvable
 	GrafanaUrl() *string
 	Id() *string
@@ -155,6 +156,7 @@ type ObservabilityInstance interface {
 	PutAlertConfig(value *ObservabilityInstanceAlertConfig)
 	ResetAcl()
 	ResetAlertConfig()
+	ResetGrafanaAdminEnabled()
 	ResetLogsRetentionDays()
 	ResetMetricsRetentionDays()
 	ResetMetricsRetentionDays1HDownsampling()
@@ -322,21 +324,21 @@ func (j *jsiiProxy_ObservabilityInstance) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityInstance) GrafanaInitialAdminPassword() *string {
-	var returns *string
+func (j *jsiiProxy_ObservabilityInstance) GrafanaAdminEnabled() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
-		"grafanaInitialAdminPassword",
+		"grafanaAdminEnabled",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_ObservabilityInstance) GrafanaInitialAdminUser() *string {
-	var returns *string
+func (j *jsiiProxy_ObservabilityInstance) GrafanaAdminEnabledInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
-		"grafanaInitialAdminUser",
+		"grafanaAdminEnabledInput",
 		&returns,
 	)
 	return returns
@@ -753,7 +755,7 @@ func (j *jsiiProxy_ObservabilityInstance) ZipkinSpansUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/observability_instance stackit_observability_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/observability_instance stackit_observability_instance} Resource.
 func NewObservabilityInstance(scope constructs.Construct, id *string, config *ObservabilityInstanceConfig) ObservabilityInstance {
 	_init_.Initialize()
 
@@ -771,7 +773,7 @@ func NewObservabilityInstance(scope constructs.Construct, id *string, config *Ob
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/resources/observability_instance stackit_observability_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/observability_instance stackit_observability_instance} Resource.
 func NewObservabilityInstance_Override(o ObservabilityInstance, scope constructs.Construct, id *string, config *ObservabilityInstanceConfig) {
 	_init_.Initialize()
 
@@ -827,6 +829,17 @@ func (j *jsiiProxy_ObservabilityInstance)SetForEach(val cdktf.ITerraformIterator
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityInstance)SetGrafanaAdminEnabled(val interface{}) {
+	if err := j.validateSetGrafanaAdminEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"grafanaAdminEnabled",
 		val,
 	)
 }
@@ -1336,6 +1349,14 @@ func (o *jsiiProxy_ObservabilityInstance) ResetAlertConfig() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetAlertConfig",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityInstance) ResetGrafanaAdminEnabled() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetGrafanaAdminEnabled",
 		nil, // no parameters
 	)
 }

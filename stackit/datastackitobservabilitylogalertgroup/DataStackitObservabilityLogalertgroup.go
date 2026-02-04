@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/observability_logalertgroup stackit_observability_logalertgroup}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/observability_logalertgroup stackit_observability_logalertgroup}.
 type DataStackitObservabilityLogalertgroup interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -340,7 +340,7 @@ func (j *jsiiProxy_DataStackitObservabilityLogalertgroup) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/observability_logalertgroup stackit_observability_logalertgroup} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/observability_logalertgroup stackit_observability_logalertgroup} Data Source.
 func NewDataStackitObservabilityLogalertgroup(scope constructs.Construct, id *string, config *DataStackitObservabilityLogalertgroupConfig) DataStackitObservabilityLogalertgroup {
 	_init_.Initialize()
 
@@ -358,7 +358,7 @@ func NewDataStackitObservabilityLogalertgroup(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/observability_logalertgroup stackit_observability_logalertgroup} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/observability_logalertgroup stackit_observability_logalertgroup} Data Source.
 func NewDataStackitObservabilityLogalertgroup_Override(d DataStackitObservabilityLogalertgroup, scope constructs.Construct, id *string, config *DataStackitObservabilityLogalertgroupConfig) {
 	_init_.Initialize()
 

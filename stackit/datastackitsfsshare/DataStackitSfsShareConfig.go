@@ -21,19 +21,19 @@ type DataStackitSfsShareConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT project ID to which the share is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/sfs_share#project_id DataStackitSfsShare#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/sfs_share#project_id DataStackitSfsShare#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The ID of the resource pool for the SFS share.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/sfs_share#resource_pool_id DataStackitSfsShare#resource_pool_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/sfs_share#resource_pool_id DataStackitSfsShare#resource_pool_id}
 	ResourcePoolId *string `field:"required" json:"resourcePoolId" yaml:"resourcePoolId"`
 	// share ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/sfs_share#share_id DataStackitSfsShare#share_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/sfs_share#share_id DataStackitSfsShare#share_id}
 	ShareId *string `field:"required" json:"shareId" yaml:"shareId"`
 	// The resource region. Read-only attribute that reflects the provider region.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.79.1/docs/data-sources/sfs_share#region DataStackitSfsShare#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/sfs_share#region DataStackitSfsShare#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 
