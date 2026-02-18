@@ -10,6 +10,9 @@ import (
 
 type CdnDistributionConfigBackendOutputReference interface {
 	cdktf.ComplexObject
+	BucketUrl() *string
+	SetBucketUrl(val *string)
+	BucketUrlInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -25,6 +28,8 @@ type CdnDistributionConfigBackendOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Credentials() CdnDistributionConfigBackendCredentialsOutputReference
+	CredentialsInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Geofencing() interface{}
@@ -38,6 +43,9 @@ type CdnDistributionConfigBackendOutputReference interface {
 	OriginUrl() *string
 	SetOriginUrl(val *string)
 	OriginUrlInput() *string
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,8 +81,13 @@ type CdnDistributionConfigBackendOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCredentials(value *CdnDistributionConfigBackendCredentials)
+	ResetBucketUrl()
+	ResetCredentials()
 	ResetGeofencing()
 	ResetOriginRequestHeaders()
+	ResetOriginUrl()
+	ResetRegion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -88,6 +101,26 @@ type CdnDistributionConfigBackendOutputReference interface {
 // The jsii proxy struct for CdnDistributionConfigBackendOutputReference
 type jsiiProxy_CdnDistributionConfigBackendOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference) BucketUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference) BucketUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketUrlInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference) ComplexObjectIndex() interface{} {
@@ -115,6 +148,26 @@ func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference) CreationStack() 
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference) Credentials() CdnDistributionConfigBackendCredentialsOutputReference {
+	var returns CdnDistributionConfigBackendCredentialsOutputReference
+	_jsii_.Get(
+		j,
+		"credentials",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference) CredentialsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"credentialsInput",
 		&returns,
 	)
 	return returns
@@ -200,6 +253,26 @@ func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference) OriginUrlInput()
 	return returns
 }
 
+func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -268,6 +341,17 @@ func NewCdnDistributionConfigBackendOutputReference_Override(c CdnDistributionCo
 	)
 }
 
+func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference)SetBucketUrl(val *string) {
+	if err := j.validateSetBucketUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bucketUrl",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -330,6 +414,17 @@ func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference)SetOriginUrl(val 
 	_jsii_.Set(
 		j,
 		"originUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -553,6 +648,33 @@ func (c *jsiiProxy_CdnDistributionConfigBackendOutputReference) InterpolationFor
 	return returns
 }
 
+func (c *jsiiProxy_CdnDistributionConfigBackendOutputReference) PutCredentials(value *CdnDistributionConfigBackendCredentials) {
+	if err := c.validatePutCredentialsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putCredentials",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CdnDistributionConfigBackendOutputReference) ResetBucketUrl() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBucketUrl",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CdnDistributionConfigBackendOutputReference) ResetCredentials() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCredentials",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CdnDistributionConfigBackendOutputReference) ResetGeofencing() {
 	_jsii_.InvokeVoid(
 		c,
@@ -565,6 +687,22 @@ func (c *jsiiProxy_CdnDistributionConfigBackendOutputReference) ResetOriginReque
 	_jsii_.InvokeVoid(
 		c,
 		"resetOriginRequestHeaders",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CdnDistributionConfigBackendOutputReference) ResetOriginUrl() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOriginUrl",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CdnDistributionConfigBackendOutputReference) ResetRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -21,19 +21,19 @@ type AuthorizationProjectCustomRoleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A human readable description of the role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/authorization_project_custom_role#description AuthorizationProjectCustomRole#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/authorization_project_custom_role#description AuthorizationProjectCustomRole#description}
 	Description *string `field:"required" json:"description" yaml:"description"`
 	// Name of the role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/authorization_project_custom_role#name AuthorizationProjectCustomRole#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/authorization_project_custom_role#name AuthorizationProjectCustomRole#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Permissions for the role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/authorization_project_custom_role#permissions AuthorizationProjectCustomRole#permissions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/authorization_project_custom_role#permissions AuthorizationProjectCustomRole#permissions}
 	Permissions *[]*string `field:"required" json:"permissions" yaml:"permissions"`
 	// Resource to add the custom role to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/authorization_project_custom_role#resource_id AuthorizationProjectCustomRole#resource_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/authorization_project_custom_role#resource_id AuthorizationProjectCustomRole#resource_id}
 	ResourceId *string `field:"required" json:"resourceId" yaml:"resourceId"`
 }
 

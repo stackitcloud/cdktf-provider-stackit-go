@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/ske_machine_image_versions stackit_ske_machine_image_versions}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/ske_machine_image_versions stackit_ske_machine_image_versions}.
 type DataStackitSkeMachineImageVersions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -297,7 +297,7 @@ func (j *jsiiProxy_DataStackitSkeMachineImageVersions) VersionStateInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/ske_machine_image_versions stackit_ske_machine_image_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/ske_machine_image_versions stackit_ske_machine_image_versions} Data Source.
 func NewDataStackitSkeMachineImageVersions(scope constructs.Construct, id *string, config *DataStackitSkeMachineImageVersionsConfig) DataStackitSkeMachineImageVersions {
 	_init_.Initialize()
 
@@ -315,7 +315,7 @@ func NewDataStackitSkeMachineImageVersions(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/ske_machine_image_versions stackit_ske_machine_image_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/ske_machine_image_versions stackit_ske_machine_image_versions} Data Source.
 func NewDataStackitSkeMachineImageVersions_Override(d DataStackitSkeMachineImageVersions, scope constructs.Construct, id *string, config *DataStackitSkeMachineImageVersionsConfig) {
 	_init_.Initialize()
 

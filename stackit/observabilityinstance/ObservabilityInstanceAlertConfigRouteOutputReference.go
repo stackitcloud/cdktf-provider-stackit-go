@@ -20,6 +20,7 @@ type ObservabilityInstanceAlertConfigRouteOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Continue() cdktf.IResolvable
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -114,6 +115,16 @@ func (j *jsiiProxy_ObservabilityInstanceAlertConfigRouteOutputReference) Complex
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityInstanceAlertConfigRouteOutputReference) Continue() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"continue",
 		&returns,
 	)
 	return returns

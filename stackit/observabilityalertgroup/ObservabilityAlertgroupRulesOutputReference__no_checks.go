@@ -80,6 +80,10 @@ func (j *jsiiProxy_ObservabilityAlertgroupRulesOutputReference) validateSetLabel
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityAlertgroupRulesOutputReference) validateSetRecordParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObservabilityAlertgroupRulesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

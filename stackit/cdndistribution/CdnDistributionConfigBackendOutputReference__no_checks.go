@@ -44,7 +44,15 @@ func (c *jsiiProxy_CdnDistributionConfigBackendOutputReference) validateInterpol
 	return nil
 }
 
+func (c *jsiiProxy_CdnDistributionConfigBackendOutputReference) validatePutCredentialsParameters(value *CdnDistributionConfigBackendCredentials) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnDistributionConfigBackendOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference) validateSetBucketUrlParameters(val *string) error {
 	return nil
 }
 
@@ -69,6 +77,10 @@ func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference) validateSetOrigi
 }
 
 func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference) validateSetOriginUrlParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CdnDistributionConfigBackendOutputReference) validateSetRegionParameters(val *string) error {
 	return nil
 }
 

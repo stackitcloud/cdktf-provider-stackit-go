@@ -10,6 +10,7 @@ import (
 
 type DataStackitCdnDistributionConfigBackendOutputReference interface {
 	cdktf.ComplexObject
+	BucketUrl() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -32,6 +33,7 @@ type DataStackitCdnDistributionConfigBackendOutputReference interface {
 	SetInternalValue(val *DataStackitCdnDistributionConfigBackend)
 	OriginRequestHeaders() cdktf.StringMap
 	OriginUrl() *string
+	Region() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -78,6 +80,16 @@ type DataStackitCdnDistributionConfigBackendOutputReference interface {
 // The jsii proxy struct for DataStackitCdnDistributionConfigBackendOutputReference
 type jsiiProxy_DataStackitCdnDistributionConfigBackendOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataStackitCdnDistributionConfigBackendOutputReference) BucketUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketUrl",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataStackitCdnDistributionConfigBackendOutputReference) ComplexObjectIndex() interface{} {
@@ -155,6 +167,16 @@ func (j *jsiiProxy_DataStackitCdnDistributionConfigBackendOutputReference) Origi
 	_jsii_.Get(
 		j,
 		"originUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitCdnDistributionConfigBackendOutputReference) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
 		&returns,
 	)
 	return returns

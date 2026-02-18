@@ -23,47 +23,47 @@ type SecurityGroupRuleConfig struct {
 	//
 	// Some of the possible values are: Possible values are: `ingress`, `egress`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/security_group_rule#direction SecurityGroupRule#direction}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/security_group_rule#direction SecurityGroupRule#direction}
 	Direction *string `field:"required" json:"direction" yaml:"direction"`
 	// STACKIT project ID to which the security group rule is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/security_group_rule#project_id SecurityGroupRule#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/security_group_rule#project_id SecurityGroupRule#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The security group ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/security_group_rule#security_group_id SecurityGroupRule#security_group_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/security_group_rule#security_group_id SecurityGroupRule#security_group_id}
 	SecurityGroupId *string `field:"required" json:"securityGroupId" yaml:"securityGroupId"`
 	// The rule description.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/security_group_rule#description SecurityGroupRule#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/security_group_rule#description SecurityGroupRule#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// The ethertype which the rule should match.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/security_group_rule#ether_type SecurityGroupRule#ether_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/security_group_rule#ether_type SecurityGroupRule#ether_type}
 	EtherType *string `field:"optional" json:"etherType" yaml:"etherType"`
 	// ICMP Parameters. These parameters should only be provided if the protocol is ICMP.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/security_group_rule#icmp_parameters SecurityGroupRule#icmp_parameters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/security_group_rule#icmp_parameters SecurityGroupRule#icmp_parameters}
 	IcmpParameters *SecurityGroupRuleIcmpParameters `field:"optional" json:"icmpParameters" yaml:"icmpParameters"`
 	// The remote IP range which the rule should match.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/security_group_rule#ip_range SecurityGroupRule#ip_range}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/security_group_rule#ip_range SecurityGroupRule#ip_range}
 	IpRange *string `field:"optional" json:"ipRange" yaml:"ipRange"`
 	// The range of ports. This should only be provided if the protocol is not ICMP.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/security_group_rule#port_range SecurityGroupRule#port_range}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/security_group_rule#port_range SecurityGroupRule#port_range}
 	PortRange *SecurityGroupRulePortRange `field:"optional" json:"portRange" yaml:"portRange"`
 	// The internet protocol which the rule should match.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/security_group_rule#protocol SecurityGroupRule#protocol}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/security_group_rule#protocol SecurityGroupRule#protocol}
 	Protocol *SecurityGroupRuleProtocol `field:"optional" json:"protocol" yaml:"protocol"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/security_group_rule#region SecurityGroupRule#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/security_group_rule#region SecurityGroupRule#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// The remote security group which the rule should match.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/security_group_rule#remote_security_group_id SecurityGroupRule#remote_security_group_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/security_group_rule#remote_security_group_id SecurityGroupRule#remote_security_group_id}
 	RemoteSecurityGroupId *string `field:"optional" json:"remoteSecurityGroupId" yaml:"remoteSecurityGroupId"`
 }
 

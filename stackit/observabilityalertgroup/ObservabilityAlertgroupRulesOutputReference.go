@@ -44,6 +44,9 @@ type ObservabilityAlertgroupRulesOutputReference interface {
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
+	Record() *string
+	SetRecord(val *string)
+	RecordInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,9 +79,11 @@ type ObservabilityAlertgroupRulesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAlert()
 	ResetAnnotations()
 	ResetFor()
 	ResetLabels()
+	ResetRecord()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -244,6 +249,26 @@ func (j *jsiiProxy_ObservabilityAlertgroupRulesOutputReference) LabelsInput() *m
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityAlertgroupRulesOutputReference) Record() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"record",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityAlertgroupRulesOutputReference) RecordInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"recordInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityAlertgroupRulesOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -376,6 +401,17 @@ func (j *jsiiProxy_ObservabilityAlertgroupRulesOutputReference)SetLabels(val *ma
 	_jsii_.Set(
 		j,
 		"labels",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObservabilityAlertgroupRulesOutputReference)SetRecord(val *string) {
+	if err := j.validateSetRecordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"record",
 		val,
 	)
 }
@@ -588,6 +624,14 @@ func (o *jsiiProxy_ObservabilityAlertgroupRulesOutputReference) InterpolationFor
 	return returns
 }
 
+func (o *jsiiProxy_ObservabilityAlertgroupRulesOutputReference) ResetAlert() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAlert",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_ObservabilityAlertgroupRulesOutputReference) ResetAnnotations() {
 	_jsii_.InvokeVoid(
 		o,
@@ -608,6 +652,14 @@ func (o *jsiiProxy_ObservabilityAlertgroupRulesOutputReference) ResetLabels() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObservabilityAlertgroupRulesOutputReference) ResetRecord() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRecord",
 		nil, // no parameters
 	)
 }

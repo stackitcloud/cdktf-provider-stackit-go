@@ -34,6 +34,7 @@ type DataStackitObservabilityAlertgroupRulesOutputReference interface {
 	InternalValue() *DataStackitObservabilityAlertgroupRules
 	SetInternalValue(val *DataStackitObservabilityAlertgroupRules)
 	Labels() cdktf.StringMap
+	Record() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -176,6 +177,16 @@ func (j *jsiiProxy_DataStackitObservabilityAlertgroupRulesOutputReference) Label
 	_jsii_.Get(
 		j,
 		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitObservabilityAlertgroupRulesOutputReference) Record() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"record",
 		&returns,
 	)
 	return returns

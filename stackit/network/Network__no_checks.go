@@ -96,6 +96,10 @@ func (j *jsiiProxy_Network) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Network) validateSetDhcpParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Network) validateSetIpv4GatewayParameters(val *string) error {
 	return nil
 }

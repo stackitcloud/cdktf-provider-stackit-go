@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/network stackit_network}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/network stackit_network}.
 type Network interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,6 +28,9 @@ type Network interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Dhcp() interface{}
+	SetDhcp(val interface{})
+	DhcpInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -158,6 +161,7 @@ type Network interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDhcp()
 	ResetIpv4Gateway()
 	ResetIpv4Nameservers()
 	ResetIpv4Prefix()
@@ -239,6 +243,26 @@ func (j *jsiiProxy_Network) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) Dhcp() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dhcp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) DhcpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dhcpInput",
 		&returns,
 	)
 	return returns
@@ -755,7 +779,7 @@ func (j *jsiiProxy_Network) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/network stackit_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/network stackit_network} Resource.
 func NewNetwork(scope constructs.Construct, id *string, config *NetworkConfig) Network {
 	_init_.Initialize()
 
@@ -773,7 +797,7 @@ func NewNetwork(scope constructs.Construct, id *string, config *NetworkConfig) N
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/network stackit_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/network stackit_network} Resource.
 func NewNetwork_Override(n Network, scope constructs.Construct, id *string, config *NetworkConfig) {
 	_init_.Initialize()
 
@@ -810,6 +834,17 @@ func (j *jsiiProxy_Network)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Network)SetDhcp(val interface{}) {
+	if err := j.validateSetDhcpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dhcp",
 		val,
 	)
 }
@@ -1389,6 +1424,14 @@ func (n *jsiiProxy_Network) OverrideLogicalId(newLogicalId *string) {
 		n,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (n *jsiiProxy_Network) ResetDhcp() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetDhcp",
+		nil, // no parameters
 	)
 }
 

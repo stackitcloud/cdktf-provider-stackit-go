@@ -21,11 +21,11 @@ type DataStackitSkeMachineImageVersionsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Region override. If omitted, the provider’s region will be used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/ske_machine_image_versions#region DataStackitSkeMachineImageVersions#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/ske_machine_image_versions#region DataStackitSkeMachineImageVersions#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// Filter returned machine image versions by their state. Possible values are: `UNSPECIFIED`, `SUPPORTED`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/ske_machine_image_versions#version_state DataStackitSkeMachineImageVersions#version_state}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/ske_machine_image_versions#version_state DataStackitSkeMachineImageVersions#version_state}
 	VersionState *string `field:"optional" json:"versionState" yaml:"versionState"`
 }
 

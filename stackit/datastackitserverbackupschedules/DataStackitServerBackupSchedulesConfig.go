@@ -21,15 +21,15 @@ type DataStackitServerBackupSchedulesConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT Project ID (UUID) to which the server is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/server_backup_schedules#project_id DataStackitServerBackupSchedules#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/server_backup_schedules#project_id DataStackitServerBackupSchedules#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Server ID (UUID) to which the backup schedule is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/server_backup_schedules#server_id DataStackitServerBackupSchedules#server_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/server_backup_schedules#server_id DataStackitServerBackupSchedules#server_id}
 	ServerId *string `field:"required" json:"serverId" yaml:"serverId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/server_backup_schedules#region DataStackitServerBackupSchedules#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/server_backup_schedules#region DataStackitServerBackupSchedules#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

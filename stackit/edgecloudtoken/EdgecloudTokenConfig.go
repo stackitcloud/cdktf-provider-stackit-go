@@ -21,27 +21,27 @@ type EdgecloudTokenConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT project ID to which the Edge Cloud instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/edgecloud_token#project_id EdgecloudToken#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/edgecloud_token#project_id EdgecloudToken#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Expiration time of the token, in seconds. Minimum is 600, Maximum is 15552000. Defaults to `3600`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/edgecloud_token#expiration EdgecloudToken#expiration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/edgecloud_token#expiration EdgecloudToken#expiration}
 	Expiration *float64 `field:"optional" json:"expiration" yaml:"expiration"`
 	// ID of the Edge Cloud instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/edgecloud_token#instance_id EdgecloudToken#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/edgecloud_token#instance_id EdgecloudToken#instance_id}
 	InstanceId *string `field:"optional" json:"instanceId" yaml:"instanceId"`
 	// Name of the Edge Cloud instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/edgecloud_token#instance_name EdgecloudToken#instance_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/edgecloud_token#instance_name EdgecloudToken#instance_name}
 	InstanceName *string `field:"optional" json:"instanceName" yaml:"instanceName"`
 	// Number of seconds before expiration to trigger recreation of the token at.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/edgecloud_token#recreate_before EdgecloudToken#recreate_before}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/edgecloud_token#recreate_before EdgecloudToken#recreate_before}
 	RecreateBefore *float64 `field:"optional" json:"recreateBefore" yaml:"recreateBefore"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/edgecloud_token#region EdgecloudToken#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/edgecloud_token#region EdgecloudToken#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

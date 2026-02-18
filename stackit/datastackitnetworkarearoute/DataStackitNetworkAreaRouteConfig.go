@@ -21,19 +21,19 @@ type DataStackitNetworkAreaRouteConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The network area ID to which the network area route is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/network_area_route#network_area_id DataStackitNetworkAreaRoute#network_area_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/network_area_route#network_area_id DataStackitNetworkAreaRoute#network_area_id}
 	NetworkAreaId *string `field:"required" json:"networkAreaId" yaml:"networkAreaId"`
 	// The network area route ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/network_area_route#network_area_route_id DataStackitNetworkAreaRoute#network_area_route_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/network_area_route#network_area_route_id DataStackitNetworkAreaRoute#network_area_route_id}
 	NetworkAreaRouteId *string `field:"required" json:"networkAreaRouteId" yaml:"networkAreaRouteId"`
 	// STACKIT organization ID to which the network area is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/network_area_route#organization_id DataStackitNetworkAreaRoute#organization_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/network_area_route#organization_id DataStackitNetworkAreaRoute#organization_id}
 	OrganizationId *string `field:"required" json:"organizationId" yaml:"organizationId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/network_area_route#region DataStackitNetworkAreaRoute#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/network_area_route#region DataStackitNetworkAreaRoute#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

@@ -21,19 +21,19 @@ type DataStackitSecurityGroupRuleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT project ID to which the security group rule is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/security_group_rule#project_id DataStackitSecurityGroupRule#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/security_group_rule#project_id DataStackitSecurityGroupRule#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The security group ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/security_group_rule#security_group_id DataStackitSecurityGroupRule#security_group_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/security_group_rule#security_group_id DataStackitSecurityGroupRule#security_group_id}
 	SecurityGroupId *string `field:"required" json:"securityGroupId" yaml:"securityGroupId"`
 	// The security group rule ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/security_group_rule#security_group_rule_id DataStackitSecurityGroupRule#security_group_rule_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/security_group_rule#security_group_rule_id DataStackitSecurityGroupRule#security_group_rule_id}
 	SecurityGroupRuleId *string `field:"required" json:"securityGroupRuleId" yaml:"securityGroupRuleId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/security_group_rule#region DataStackitSecurityGroupRule#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/security_group_rule#region DataStackitSecurityGroupRule#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

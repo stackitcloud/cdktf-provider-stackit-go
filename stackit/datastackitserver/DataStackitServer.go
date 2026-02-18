@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/server stackit_server}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/server stackit_server}.
 type DataStackitServer interface {
 	cdktf.TerraformDataSource
 	AffinityGroup() *string
@@ -462,7 +462,7 @@ func (j *jsiiProxy_DataStackitServer) UserData() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/server stackit_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/server stackit_server} Data Source.
 func NewDataStackitServer(scope constructs.Construct, id *string, config *DataStackitServerConfig) DataStackitServer {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewDataStackitServer(scope constructs.Construct, id *string, config *DataSt
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/server stackit_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/server stackit_server} Data Source.
 func NewDataStackitServer_Override(d DataStackitServer, scope constructs.Construct, id *string, config *DataStackitServerConfig) {
 	_init_.Initialize()
 

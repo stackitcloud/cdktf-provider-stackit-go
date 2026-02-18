@@ -21,11 +21,11 @@ type DataStackitAuthorizationProjectCustomRoleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Resource to add the custom role to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/authorization_project_custom_role#resource_id DataStackitAuthorizationProjectCustomRole#resource_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/authorization_project_custom_role#resource_id DataStackitAuthorizationProjectCustomRole#resource_id}
 	ResourceId *string `field:"required" json:"resourceId" yaml:"resourceId"`
 	// The ID of the role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/data-sources/authorization_project_custom_role#role_id DataStackitAuthorizationProjectCustomRole#role_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/authorization_project_custom_role#role_id DataStackitAuthorizationProjectCustomRole#role_id}
 	RoleId *string `field:"required" json:"roleId" yaml:"roleId"`
 }
 

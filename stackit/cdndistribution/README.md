@@ -1,3 +1,3 @@
 # `stackit_cdn_distribution`
 
-Refer to the Terraform Registry for docs: [`stackit_cdn_distribution`](https://registry.terraform.io/providers/stackitcloud/stackit/0.80.0/docs/resources/cdn_distribution).
+Refer to the Terraform Registry for docs: [`stackit_cdn_distribution`](https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/cdn_distribution).
