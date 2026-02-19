@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/logs_access_token stackit_logs_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/data-sources/logs_access_token stackit_logs_access_token}.
 type DataStackitLogsAccessToken interface {
 	cdktf.TerraformDataSource
 	AccessTokenId() *string
@@ -419,7 +419,7 @@ func (j *jsiiProxy_DataStackitLogsAccessToken) ValidUntil() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/logs_access_token stackit_logs_access_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/data-sources/logs_access_token stackit_logs_access_token} Data Source.
 func NewDataStackitLogsAccessToken(scope constructs.Construct, id *string, config *DataStackitLogsAccessTokenConfig) DataStackitLogsAccessToken {
 	_init_.Initialize()
 
@@ -437,7 +437,7 @@ func NewDataStackitLogsAccessToken(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/logs_access_token stackit_logs_access_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/data-sources/logs_access_token stackit_logs_access_token} Data Source.
 func NewDataStackitLogsAccessToken_Override(d DataStackitLogsAccessToken, scope constructs.Construct, id *string, config *DataStackitLogsAccessTokenConfig) {
 	_init_.Initialize()
 

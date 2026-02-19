@@ -73,9 +73,9 @@ type RabbitmqInstanceParametersOutputReference interface {
 	TlsCiphers() *[]*string
 	SetTlsCiphers(val *[]*string)
 	TlsCiphersInput() *[]*string
-	TlsProtocols() *string
-	SetTlsProtocols(val *string)
-	TlsProtocolsInput() *string
+	TlsProtocols() *[]*string
+	SetTlsProtocols(val *[]*string)
+	TlsProtocolsInput() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -438,8 +438,8 @@ func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) TlsCiphersInput() 
 	return returns
 }
 
-func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) TlsProtocols() *string {
-	var returns *string
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) TlsProtocols() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"tlsProtocols",
@@ -448,8 +448,8 @@ func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) TlsProtocols() *st
 	return returns
 }
 
-func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) TlsProtocolsInput() *string {
-	var returns *string
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) TlsProtocolsInput() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"tlsProtocolsInput",
@@ -673,7 +673,7 @@ func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference)SetTlsCiphers(val *
 	)
 }
 
-func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference)SetTlsProtocols(val *string) {
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference)SetTlsProtocols(val *[]*string) {
 	if err := j.validateSetTlsProtocolsParameters(val); err != nil {
 		panic(err)
 	}

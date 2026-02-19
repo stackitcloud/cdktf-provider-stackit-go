@@ -116,7 +116,7 @@ func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetTlsCiph
 	return nil
 }
 
-func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetTlsProtocolsParameters(val *string) error {
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetTlsProtocolsParameters(val *[]*string) error {
 	return nil
 }
 

@@ -21,19 +21,19 @@ type DataStackitLogsAccessTokenConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The access token ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/logs_access_token#access_token_id DataStackitLogsAccessToken#access_token_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/data-sources/logs_access_token#access_token_id DataStackitLogsAccessToken#access_token_id}
 	AccessTokenId *string `field:"required" json:"accessTokenId" yaml:"accessTokenId"`
 	// The Logs instance ID associated with the access token.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/logs_access_token#instance_id DataStackitLogsAccessToken#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/data-sources/logs_access_token#instance_id DataStackitLogsAccessToken#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// STACKIT project ID associated with the Logs access token.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/logs_access_token#project_id DataStackitLogsAccessToken#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/data-sources/logs_access_token#project_id DataStackitLogsAccessToken#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// STACKIT region name the resource is located in. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/logs_access_token#region DataStackitLogsAccessToken#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/data-sources/logs_access_token#region DataStackitLogsAccessToken#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/key_pair stackit_key_pair}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/resources/key_pair stackit_key_pair}.
 type KeyPair interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -375,7 +375,7 @@ func (j *jsiiProxy_KeyPair) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/key_pair stackit_key_pair} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/resources/key_pair stackit_key_pair} Resource.
 func NewKeyPair(scope constructs.Construct, id *string, config *KeyPairConfig) KeyPair {
 	_init_.Initialize()
 
@@ -393,7 +393,7 @@ func NewKeyPair(scope constructs.Construct, id *string, config *KeyPairConfig) K
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/key_pair stackit_key_pair} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/resources/key_pair stackit_key_pair} Resource.
 func NewKeyPair_Override(k KeyPair, scope constructs.Construct, id *string, config *KeyPairConfig) {
 	_init_.Initialize()
 

@@ -311,7 +311,7 @@ func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetTlsCiph
 	return nil
 }
 
-func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetTlsProtocolsParameters(val *string) error {
+func (j *jsiiProxy_RabbitmqInstanceParametersOutputReference) validateSetTlsProtocolsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

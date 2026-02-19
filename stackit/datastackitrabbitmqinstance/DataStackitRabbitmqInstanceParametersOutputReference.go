@@ -49,7 +49,7 @@ type DataStackitRabbitmqInstanceParametersOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	TlsCiphers() *[]*string
-	TlsProtocols() *string
+	TlsProtocols() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -279,8 +279,8 @@ func (j *jsiiProxy_DataStackitRabbitmqInstanceParametersOutputReference) TlsCiph
 	return returns
 }
 
-func (j *jsiiProxy_DataStackitRabbitmqInstanceParametersOutputReference) TlsProtocols() *string {
-	var returns *string
+func (j *jsiiProxy_DataStackitRabbitmqInstanceParametersOutputReference) TlsProtocols() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"tlsProtocols",

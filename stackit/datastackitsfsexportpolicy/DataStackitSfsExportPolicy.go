@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/sfs_export_policy stackit_sfs_export_policy}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/data-sources/sfs_export_policy stackit_sfs_export_policy}.
 type DataStackitSfsExportPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -341,7 +341,7 @@ func (j *jsiiProxy_DataStackitSfsExportPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/sfs_export_policy stackit_sfs_export_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/data-sources/sfs_export_policy stackit_sfs_export_policy} Data Source.
 func NewDataStackitSfsExportPolicy(scope constructs.Construct, id *string, config *DataStackitSfsExportPolicyConfig) DataStackitSfsExportPolicy {
 	_init_.Initialize()
 
@@ -359,7 +359,7 @@ func NewDataStackitSfsExportPolicy(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/sfs_export_policy stackit_sfs_export_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/data-sources/sfs_export_policy stackit_sfs_export_policy} Data Source.
 func NewDataStackitSfsExportPolicy_Override(d DataStackitSfsExportPolicy, scope constructs.Construct, id *string, config *DataStackitSfsExportPolicyConfig) {
 	_init_.Initialize()
 

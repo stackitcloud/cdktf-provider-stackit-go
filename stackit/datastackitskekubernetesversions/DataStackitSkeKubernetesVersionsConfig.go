@@ -21,11 +21,11 @@ type DataStackitSkeKubernetesVersionsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Region override. If omitted, the provider’s region will be used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/ske_kubernetes_versions#region DataStackitSkeKubernetesVersions#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/data-sources/ske_kubernetes_versions#region DataStackitSkeKubernetesVersions#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
-	// If specified, only returns Kubernetes versions with this version state. Possible values are: `UNSPECIFIED`, `SUPPORTED`.
+	// If specified, only returns Kubernetes versions with this version state. Possible values are: `SUPPORTED`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/ske_kubernetes_versions#version_state DataStackitSkeKubernetesVersions#version_state}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/data-sources/ske_kubernetes_versions#version_state DataStackitSkeKubernetesVersions#version_state}
 	VersionState *string `field:"optional" json:"versionState" yaml:"versionState"`
 }
 

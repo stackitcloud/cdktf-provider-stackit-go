@@ -21,15 +21,15 @@ type DataStackitScfOrganizationConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the Cloud Foundry Organization.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/scf_organization#org_id DataStackitScfOrganization#org_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/data-sources/scf_organization#org_id DataStackitScfOrganization#org_id}
 	OrgId *string `field:"required" json:"orgId" yaml:"orgId"`
 	// The ID of the project associated with the organization.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/scf_organization#project_id DataStackitScfOrganization#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/data-sources/scf_organization#project_id DataStackitScfOrganization#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/scf_organization#region DataStackitScfOrganization#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/data-sources/scf_organization#region DataStackitScfOrganization#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

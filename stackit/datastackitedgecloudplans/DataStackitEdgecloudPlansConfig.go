@@ -21,7 +21,7 @@ type DataStackitEdgecloudPlansConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT project ID the Plans belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/edgecloud_plans#project_id DataStackitEdgecloudPlans#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/data-sources/edgecloud_plans#project_id DataStackitEdgecloudPlans#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

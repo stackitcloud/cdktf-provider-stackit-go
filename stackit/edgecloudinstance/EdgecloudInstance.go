@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/edgecloud_instance stackit_edgecloud_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/resources/edgecloud_instance stackit_edgecloud_instance}.
 type EdgecloudInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -455,7 +455,7 @@ func (j *jsiiProxy_EdgecloudInstance) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/edgecloud_instance stackit_edgecloud_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/resources/edgecloud_instance stackit_edgecloud_instance} Resource.
 func NewEdgecloudInstance(scope constructs.Construct, id *string, config *EdgecloudInstanceConfig) EdgecloudInstance {
 	_init_.Initialize()
 
@@ -473,7 +473,7 @@ func NewEdgecloudInstance(scope constructs.Construct, id *string, config *Edgecl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/edgecloud_instance stackit_edgecloud_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/resources/edgecloud_instance stackit_edgecloud_instance} Resource.
 func NewEdgecloudInstance_Override(e EdgecloudInstance, scope constructs.Construct, id *string, config *EdgecloudInstanceConfig) {
 	_init_.Initialize()
 

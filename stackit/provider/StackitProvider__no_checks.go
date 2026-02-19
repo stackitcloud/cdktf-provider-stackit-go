@@ -32,6 +32,10 @@ func (j *jsiiProxy_StackitProvider) validateSetEnableBetaResourcesParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_StackitProvider) validateSetUseOidcParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewStackitProviderParameters(scope constructs.Construct, id *string, config *StackitProviderConfig) error {
 	return nil
 }

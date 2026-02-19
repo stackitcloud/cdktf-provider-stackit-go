@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/logs_instance stackit_logs_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/resources/logs_instance stackit_logs_instance}.
 type LogsInstance interface {
 	cdktf.TerraformResource
 	Acl() *[]*string
@@ -523,7 +523,7 @@ func (j *jsiiProxy_LogsInstance) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/logs_instance stackit_logs_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/resources/logs_instance stackit_logs_instance} Resource.
 func NewLogsInstance(scope constructs.Construct, id *string, config *LogsInstanceConfig) LogsInstance {
 	_init_.Initialize()
 
@@ -541,7 +541,7 @@ func NewLogsInstance(scope constructs.Construct, id *string, config *LogsInstanc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/logs_instance stackit_logs_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/resources/logs_instance stackit_logs_instance} Resource.
 func NewLogsInstance_Override(l LogsInstance, scope constructs.Construct, id *string, config *LogsInstanceConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/git stackit_git}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/data-sources/git stackit_git}.
 type DataStackitGit interface {
 	cdktf.TerraformDataSource
 	Acl() *[]*string
@@ -383,7 +383,7 @@ func (j *jsiiProxy_DataStackitGit) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/git stackit_git} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/data-sources/git stackit_git} Data Source.
 func NewDataStackitGit(scope constructs.Construct, id *string, config *DataStackitGitConfig) DataStackitGit {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewDataStackitGit(scope constructs.Construct, id *string, config *DataStack
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/git stackit_git} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/data-sources/git stackit_git} Data Source.
 func NewDataStackitGit_Override(d DataStackitGit, scope constructs.Construct, id *string, config *DataStackitGitConfig) {
 	_init_.Initialize()
 

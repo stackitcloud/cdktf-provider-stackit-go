@@ -21,35 +21,35 @@ type PostgresflexInstanceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Access Control List (ACL) for the PostgresFlex instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/postgresflex_instance#acl PostgresflexInstance#acl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/resources/postgresflex_instance#acl PostgresflexInstance#acl}
 	Acl *[]*string `field:"required" json:"acl" yaml:"acl"`
 	// The schedule for on what time and how often the database backup will be created.
 	//
 	// Must be a valid cron expression using numeric minute and hour values, e.g: '0 2 * * *'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/postgresflex_instance#backup_schedule PostgresflexInstance#backup_schedule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/resources/postgresflex_instance#backup_schedule PostgresflexInstance#backup_schedule}
 	BackupSchedule *string `field:"required" json:"backupSchedule" yaml:"backupSchedule"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/postgresflex_instance#flavor PostgresflexInstance#flavor}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/resources/postgresflex_instance#flavor PostgresflexInstance#flavor}.
 	Flavor *PostgresflexInstanceFlavor `field:"required" json:"flavor" yaml:"flavor"`
 	// Instance name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/postgresflex_instance#name PostgresflexInstance#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/resources/postgresflex_instance#name PostgresflexInstance#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// STACKIT project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/postgresflex_instance#project_id PostgresflexInstance#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/resources/postgresflex_instance#project_id PostgresflexInstance#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// How many replicas the instance should have. Valid values are 1 for single mode or 3 for replication.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/postgresflex_instance#replicas PostgresflexInstance#replicas}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/resources/postgresflex_instance#replicas PostgresflexInstance#replicas}
 	Replicas *float64 `field:"required" json:"replicas" yaml:"replicas"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/postgresflex_instance#storage PostgresflexInstance#storage}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/resources/postgresflex_instance#storage PostgresflexInstance#storage}.
 	Storage *PostgresflexInstanceStorage `field:"required" json:"storage" yaml:"storage"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/postgresflex_instance#version PostgresflexInstance#version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/resources/postgresflex_instance#version PostgresflexInstance#version}.
 	Version *string `field:"required" json:"version" yaml:"version"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/resources/postgresflex_instance#region PostgresflexInstance#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/resources/postgresflex_instance#region PostgresflexInstance#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

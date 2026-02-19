@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/authorization_project_custom_role stackit_authorization_project_custom_role}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/data-sources/authorization_project_custom_role stackit_authorization_project_custom_role}.
 type DataStackitAuthorizationProjectCustomRole interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -328,7 +328,7 @@ func (j *jsiiProxy_DataStackitAuthorizationProjectCustomRole) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/authorization_project_custom_role stackit_authorization_project_custom_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/data-sources/authorization_project_custom_role stackit_authorization_project_custom_role} Data Source.
 func NewDataStackitAuthorizationProjectCustomRole(scope constructs.Construct, id *string, config *DataStackitAuthorizationProjectCustomRoleConfig) DataStackitAuthorizationProjectCustomRole {
 	_init_.Initialize()
 
@@ -346,7 +346,7 @@ func NewDataStackitAuthorizationProjectCustomRole(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs/data-sources/authorization_project_custom_role stackit_authorization_project_custom_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs/data-sources/authorization_project_custom_role stackit_authorization_project_custom_role} Data Source.
 func NewDataStackitAuthorizationProjectCustomRole_Override(d DataStackitAuthorizationProjectCustomRole, scope constructs.Construct, id *string, config *DataStackitAuthorizationProjectCustomRoleConfig) {
 	_init_.Initialize()
 

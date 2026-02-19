@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs stackit}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs stackit}.
 type StackitProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -84,6 +84,12 @@ type StackitProvider interface {
 	ObservabilityCustomEndpoint() *string
 	SetObservabilityCustomEndpoint(val *string)
 	ObservabilityCustomEndpointInput() *string
+	OidcRequestToken() *string
+	SetOidcRequestToken(val *string)
+	OidcRequestTokenInput() *string
+	OidcRequestUrl() *string
+	SetOidcRequestUrl(val *string)
+	OidcRequestUrlInput() *string
 	OpensearchCustomEndpoint() *string
 	SetOpensearchCustomEndpoint(val *string)
 	OpensearchCustomEndpointInput() *string
@@ -128,6 +134,12 @@ type StackitProvider interface {
 	ServiceAccountEmail() *string
 	SetServiceAccountEmail(val *string)
 	ServiceAccountEmailInput() *string
+	ServiceAccountFederatedToken() *string
+	SetServiceAccountFederatedToken(val *string)
+	ServiceAccountFederatedTokenInput() *string
+	ServiceAccountFederatedTokenPath() *string
+	SetServiceAccountFederatedTokenPath(val *string)
+	ServiceAccountFederatedTokenPathInput() *string
 	ServiceAccountKey() *string
 	SetServiceAccountKey(val *string)
 	ServiceAccountKeyInput() *string
@@ -158,6 +170,9 @@ type StackitProvider interface {
 	TokenCustomEndpoint() *string
 	SetTokenCustomEndpoint(val *string)
 	TokenCustomEndpointInput() *string
+	UseOidc() interface{}
+	SetUseOidc(val interface{})
+	UseOidcInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
@@ -183,6 +198,8 @@ type StackitProvider interface {
 	ResetMongodbflexCustomEndpoint()
 	ResetObjectstorageCustomEndpoint()
 	ResetObservabilityCustomEndpoint()
+	ResetOidcRequestToken()
+	ResetOidcRequestUrl()
 	ResetOpensearchCustomEndpoint()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -200,6 +217,8 @@ type StackitProvider interface {
 	ResetServerUpdateCustomEndpoint()
 	ResetServiceAccountCustomEndpoint()
 	ResetServiceAccountEmail()
+	ResetServiceAccountFederatedToken()
+	ResetServiceAccountFederatedTokenPath()
 	ResetServiceAccountKey()
 	ResetServiceAccountKeyPath()
 	ResetServiceAccountToken()
@@ -208,6 +227,7 @@ type StackitProvider interface {
 	ResetSkeCustomEndpoint()
 	ResetSqlserverflexCustomEndpoint()
 	ResetTokenCustomEndpoint()
+	ResetUseOidc()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -686,6 +706,46 @@ func (j *jsiiProxy_StackitProvider) ObservabilityCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StackitProvider) OidcRequestToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oidcRequestToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) OidcRequestTokenInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oidcRequestTokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) OidcRequestUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oidcRequestUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) OidcRequestUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oidcRequestUrlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StackitProvider) OpensearchCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -976,6 +1036,46 @@ func (j *jsiiProxy_StackitProvider) ServiceAccountEmailInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StackitProvider) ServiceAccountFederatedToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountFederatedToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) ServiceAccountFederatedTokenInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountFederatedTokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) ServiceAccountFederatedTokenPath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountFederatedTokenPath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) ServiceAccountFederatedTokenPathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountFederatedTokenPathInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StackitProvider) ServiceAccountKey() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1166,8 +1266,28 @@ func (j *jsiiProxy_StackitProvider) TokenCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StackitProvider) UseOidc() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useOidc",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs stackit} Resource.
+func (j *jsiiProxy_StackitProvider) UseOidcInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useOidcInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs stackit} Resource.
 func NewStackitProvider(scope constructs.Construct, id *string, config *StackitProviderConfig) StackitProvider {
 	_init_.Initialize()
 
@@ -1185,7 +1305,7 @@ func NewStackitProvider(scope constructs.Construct, id *string, config *StackitP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.81.0/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.82.0/docs stackit} Resource.
 func NewStackitProvider_Override(s StackitProvider, scope constructs.Construct, id *string, config *StackitProviderConfig) {
 	_init_.Initialize()
 
@@ -1359,6 +1479,22 @@ func (j *jsiiProxy_StackitProvider)SetObservabilityCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_StackitProvider)SetOidcRequestToken(val *string) {
+	_jsii_.Set(
+		j,
+		"oidcRequestToken",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StackitProvider)SetOidcRequestUrl(val *string) {
+	_jsii_.Set(
+		j,
+		"oidcRequestUrl",
+		val,
+	)
+}
+
 func (j *jsiiProxy_StackitProvider)SetOpensearchCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -1471,6 +1607,22 @@ func (j *jsiiProxy_StackitProvider)SetServiceAccountEmail(val *string) {
 	)
 }
 
+func (j *jsiiProxy_StackitProvider)SetServiceAccountFederatedToken(val *string) {
+	_jsii_.Set(
+		j,
+		"serviceAccountFederatedToken",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StackitProvider)SetServiceAccountFederatedTokenPath(val *string) {
+	_jsii_.Set(
+		j,
+		"serviceAccountFederatedTokenPath",
+		val,
+	)
+}
+
 func (j *jsiiProxy_StackitProvider)SetServiceAccountKey(val *string) {
 	_jsii_.Set(
 		j,
@@ -1531,6 +1683,17 @@ func (j *jsiiProxy_StackitProvider)SetTokenCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"tokenCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StackitProvider)SetUseOidc(val interface{}) {
+	if err := j.validateSetUseOidcParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useOidc",
 		val,
 	)
 }
@@ -1820,6 +1983,22 @@ func (s *jsiiProxy_StackitProvider) ResetObservabilityCustomEndpoint() {
 	)
 }
 
+func (s *jsiiProxy_StackitProvider) ResetOidcRequestToken() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOidcRequestToken",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StackitProvider) ResetOidcRequestUrl() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOidcRequestUrl",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_StackitProvider) ResetOpensearchCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1940,6 +2119,22 @@ func (s *jsiiProxy_StackitProvider) ResetServiceAccountEmail() {
 	)
 }
 
+func (s *jsiiProxy_StackitProvider) ResetServiceAccountFederatedToken() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetServiceAccountFederatedToken",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StackitProvider) ResetServiceAccountFederatedTokenPath() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetServiceAccountFederatedTokenPath",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_StackitProvider) ResetServiceAccountKey() {
 	_jsii_.InvokeVoid(
 		s,
@@ -2000,6 +2195,14 @@ func (s *jsiiProxy_StackitProvider) ResetTokenCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTokenCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StackitProvider) ResetUseOidc() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUseOidc",
 		nil, // no parameters
 	)
 }
