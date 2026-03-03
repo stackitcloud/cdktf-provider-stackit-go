@@ -21,7 +21,7 @@ type DataStackitIaasProjectConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT project ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.83.0/docs/data-sources/iaas_project#project_id DataStackitIaasProject#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.84.0/docs/data-sources/iaas_project#project_id DataStackitIaasProject#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

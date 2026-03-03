@@ -1,3 +1,3 @@
 # `stackit_git`
 
-Refer to the Terraform Registry for docs: [`stackit_git`](https://registry.terraform.io/providers/stackitcloud/stackit/0.83.0/docs/resources/git).
+Refer to the Terraform Registry for docs: [`stackit_git`](https://registry.terraform.io/providers/stackitcloud/stackit/0.84.0/docs/resources/git).
