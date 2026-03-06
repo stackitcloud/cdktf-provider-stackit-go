@@ -1,0 +1,6 @@
+package datastackitapplicationloadbalancer
+
+
+type DataStackitApplicationLoadBalancerLoadBalancerSecurityGroup struct {
+}
+

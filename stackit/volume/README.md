@@ -1,3 +1,3 @@
 # `stackit_volume`
 
-Refer to the Terraform Registry for docs: [`stackit_volume`](https://registry.terraform.io/providers/stackitcloud/stackit/0.84.0/docs/resources/volume).
+Refer to the Terraform Registry for docs: [`stackit_volume`](https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs/resources/volume).

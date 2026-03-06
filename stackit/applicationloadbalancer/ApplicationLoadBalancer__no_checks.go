@@ -1,0 +1,154 @@
+//go:build no_runtime_type_checking
+
+package applicationloadbalancer
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (a *jsiiProxy_ApplicationLoadBalancer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationLoadBalancer) validateAddOverrideParameters(path *string, value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationLoadBalancer) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationLoadBalancer) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationLoadBalancer) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationLoadBalancer) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationLoadBalancer) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationLoadBalancer) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationLoadBalancer) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationLoadBalancer) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationLoadBalancer) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationLoadBalancer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationLoadBalancer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationLoadBalancer) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationLoadBalancer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationLoadBalancer) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationLoadBalancer) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationLoadBalancer) validatePutListenersParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationLoadBalancer) validatePutNetworksParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationLoadBalancer) validatePutOptionsParameters(value *ApplicationLoadBalancerOptions) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationLoadBalancer) validatePutTargetPoolsParameters(value interface{}) error {
+	return nil
+}
+
+func validateApplicationLoadBalancer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
+func validateApplicationLoadBalancer_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateApplicationLoadBalancer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApplicationLoadBalancer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationLoadBalancer) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationLoadBalancer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationLoadBalancer) validateSetDisableTargetSecurityGroupAssignmentParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationLoadBalancer) validateSetExternalAddressParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationLoadBalancer) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationLoadBalancer) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationLoadBalancer) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationLoadBalancer) validateSetPlanIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationLoadBalancer) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationLoadBalancer) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApplicationLoadBalancer) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
+func validateNewApplicationLoadBalancerParameters(scope constructs.Construct, id *string, config *ApplicationLoadBalancerConfig) error {
+	return nil
+}
+

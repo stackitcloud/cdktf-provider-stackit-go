@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.84.0/docs/resources/service_account stackit_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs/resources/service_account stackit_service_account}.
 type ServiceAccount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -60,6 +60,7 @@ type ServiceAccount interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ServiceAccountId() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -320,6 +321,16 @@ func (j *jsiiProxy_ServiceAccount) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ServiceAccount) ServiceAccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServiceAccount) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -351,7 +362,7 @@ func (j *jsiiProxy_ServiceAccount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.84.0/docs/resources/service_account stackit_service_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs/resources/service_account stackit_service_account} Resource.
 func NewServiceAccount(scope constructs.Construct, id *string, config *ServiceAccountConfig) ServiceAccount {
 	_init_.Initialize()
 
@@ -369,7 +380,7 @@ func NewServiceAccount(scope constructs.Construct, id *string, config *ServiceAc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.84.0/docs/resources/service_account stackit_service_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs/resources/service_account stackit_service_account} Resource.
 func NewServiceAccount_Override(s ServiceAccount, scope constructs.Construct, id *string, config *ServiceAccountConfig) {
 	_init_.Initialize()
 

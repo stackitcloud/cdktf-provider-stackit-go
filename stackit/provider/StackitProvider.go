@@ -9,9 +9,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.84.0/docs stackit}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs stackit}.
 type StackitProvider interface {
 	cdktf.TerraformProvider
+	AlbCustomEndpoint() *string
+	SetAlbCustomEndpoint(val *string)
+	AlbCustomEndpointInput() *string
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
@@ -178,6 +181,7 @@ type StackitProvider interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAlbCustomEndpoint()
 	ResetAlias()
 	ResetAuthorizationCustomEndpoint()
 	ResetCdnCustomEndpoint()
@@ -244,6 +248,26 @@ type StackitProvider interface {
 // The jsii proxy struct for StackitProvider
 type jsiiProxy_StackitProvider struct {
 	internal.Type__cdktfTerraformProvider
+}
+
+func (j *jsiiProxy_StackitProvider) AlbCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"albCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) AlbCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"albCustomEndpointInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_StackitProvider) Alias() *string {
@@ -1287,7 +1311,7 @@ func (j *jsiiProxy_StackitProvider) UseOidcInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.84.0/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs stackit} Resource.
 func NewStackitProvider(scope constructs.Construct, id *string, config *StackitProviderConfig) StackitProvider {
 	_init_.Initialize()
 
@@ -1305,7 +1329,7 @@ func NewStackitProvider(scope constructs.Construct, id *string, config *StackitP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.84.0/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs stackit} Resource.
 func NewStackitProvider_Override(s StackitProvider, scope constructs.Construct, id *string, config *StackitProviderConfig) {
 	_init_.Initialize()
 
@@ -1313,6 +1337,14 @@ func NewStackitProvider_Override(s StackitProvider, scope constructs.Construct, 
 		"stackit.provider.StackitProvider",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_StackitProvider)SetAlbCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"albCustomEndpoint",
+		val,
 	)
 }
 
@@ -1820,6 +1852,14 @@ func (s *jsiiProxy_StackitProvider) OverrideLogicalId(newLogicalId *string) {
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_StackitProvider) ResetAlbCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAlbCustomEndpoint",
+		nil, // no parameters
 	)
 }
 

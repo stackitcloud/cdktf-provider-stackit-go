@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.84.0/docs/data-sources/service_account stackit_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs/data-sources/service_account stackit_service_account}.
 type DataStackitServiceAccount interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -52,6 +52,7 @@ type DataStackitServiceAccount interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	ServiceAccountId() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -275,6 +276,16 @@ func (j *jsiiProxy_DataStackitServiceAccount) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitServiceAccount) ServiceAccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitServiceAccount) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -306,7 +317,7 @@ func (j *jsiiProxy_DataStackitServiceAccount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.84.0/docs/data-sources/service_account stackit_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs/data-sources/service_account stackit_service_account} Data Source.
 func NewDataStackitServiceAccount(scope constructs.Construct, id *string, config *DataStackitServiceAccountConfig) DataStackitServiceAccount {
 	_init_.Initialize()
 
@@ -324,7 +335,7 @@ func NewDataStackitServiceAccount(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.84.0/docs/data-sources/service_account stackit_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs/data-sources/service_account stackit_service_account} Data Source.
 func NewDataStackitServiceAccount_Override(d DataStackitServiceAccount, scope constructs.Construct, id *string, config *DataStackitServiceAccountConfig) {
 	_init_.Initialize()
 

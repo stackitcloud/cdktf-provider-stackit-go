@@ -1,0 +1,6 @@
+package datastackitapplicationloadbalancer
+
+
+type DataStackitApplicationLoadBalancerListenersHttpHostsRulesHeaders struct {
+}
+

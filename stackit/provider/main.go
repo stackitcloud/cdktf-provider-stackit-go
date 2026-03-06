@@ -12,6 +12,8 @@ func init() {
 		reflect.TypeOf((*StackitProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "albCustomEndpoint", GoGetter: "AlbCustomEndpoint"},
+			_jsii_.MemberProperty{JsiiProperty: "albCustomEndpointInput", GoGetter: "AlbCustomEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
 			_jsii_.MemberProperty{JsiiProperty: "aliasInput", GoGetter: "AliasInput"},
 			_jsii_.MemberProperty{JsiiProperty: "authorizationCustomEndpoint", GoGetter: "AuthorizationCustomEndpoint"},
@@ -78,6 +80,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "redisCustomEndpointInput", GoGetter: "RedisCustomEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAlbCustomEndpoint", GoMethod: "ResetAlbCustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthorizationCustomEndpoint", GoMethod: "ResetAuthorizationCustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCdnCustomEndpoint", GoMethod: "ResetCdnCustomEndpoint"},
