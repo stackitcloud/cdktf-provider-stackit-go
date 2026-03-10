@@ -4,11 +4,11 @@ package applicationloadbalancer
 type ApplicationLoadBalancerOptionsObservability struct {
 	// Observability logs configuration.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs/resources/application_load_balancer#logs ApplicationLoadBalancer#logs}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.86.0/docs/resources/application_load_balancer#logs ApplicationLoadBalancer#logs}
 	Logs *ApplicationLoadBalancerOptionsObservabilityLogs `field:"optional" json:"logs" yaml:"logs"`
 	// Observability metrics configuration.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs/resources/application_load_balancer#metrics ApplicationLoadBalancer#metrics}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.86.0/docs/resources/application_load_balancer#metrics ApplicationLoadBalancer#metrics}
 	Metrics *ApplicationLoadBalancerOptionsObservabilityMetrics `field:"optional" json:"metrics" yaml:"metrics"`
 }
 

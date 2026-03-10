@@ -1,3 +1,3 @@
 # `data_stackit_ske_machine_image_versions`
 
-Refer to the Terraform Registry for docs: [`data_stackit_ske_machine_image_versions`](https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs/data-sources/ske_machine_image_versions).
+Refer to the Terraform Registry for docs: [`data_stackit_ske_machine_image_versions`](https://registry.terraform.io/providers/stackitcloud/stackit/0.86.0/docs/data-sources/ske_machine_image_versions).

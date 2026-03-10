@@ -21,19 +21,19 @@ type DataStackitServiceAccountsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT project ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs/data-sources/service_accounts#project_id DataStackitServiceAccounts#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.86.0/docs/data-sources/service_accounts#project_id DataStackitServiceAccounts#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Optional regular expression to filter service accounts by email.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs/data-sources/service_accounts#email_regex DataStackitServiceAccounts#email_regex}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.86.0/docs/data-sources/service_accounts#email_regex DataStackitServiceAccounts#email_regex}
 	EmailRegex *string `field:"optional" json:"emailRegex" yaml:"emailRegex"`
 	// Optional suffix to filter service accounts by email (e.g.,`@sa.stackit.cloud`, `@ske.sa.stackit.cloud`).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs/data-sources/service_accounts#email_suffix DataStackitServiceAccounts#email_suffix}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.86.0/docs/data-sources/service_accounts#email_suffix DataStackitServiceAccounts#email_suffix}
 	EmailSuffix *string `field:"optional" json:"emailSuffix" yaml:"emailSuffix"`
 	// If set to `true`, service accounts are sorted in ascending lexicographical order by email. Defaults to `false` (descending).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs/data-sources/service_accounts#sort_ascending DataStackitServiceAccounts#sort_ascending}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.86.0/docs/data-sources/service_accounts#sort_ascending DataStackitServiceAccounts#sort_ascending}
 	SortAscending interface{} `field:"optional" json:"sortAscending" yaml:"sortAscending"`
 }
 

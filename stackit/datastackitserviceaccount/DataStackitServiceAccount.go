@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs/data-sources/service_account stackit_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.86.0/docs/data-sources/service_account stackit_service_account}.
 type DataStackitServiceAccount interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DataStackitServiceAccount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs/data-sources/service_account stackit_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.86.0/docs/data-sources/service_account stackit_service_account} Data Source.
 func NewDataStackitServiceAccount(scope constructs.Construct, id *string, config *DataStackitServiceAccountConfig) DataStackitServiceAccount {
 	_init_.Initialize()
 
@@ -335,7 +335,7 @@ func NewDataStackitServiceAccount(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs/data-sources/service_account stackit_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.86.0/docs/data-sources/service_account stackit_service_account} Data Source.
 func NewDataStackitServiceAccount_Override(d DataStackitServiceAccount, scope constructs.Construct, id *string, config *DataStackitServiceAccountConfig) {
 	_init_.Initialize()
 

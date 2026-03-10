@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs/data-sources/network stackit_network}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.86.0/docs/data-sources/network stackit_network}.
 type DataStackitNetwork interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -50,13 +50,11 @@ type DataStackitNetwork interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Name() *string
-	Nameservers() *[]*string
 	NetworkId() *string
 	SetNetworkId(val *string)
 	NetworkIdInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Prefixes() *[]*string
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
@@ -346,16 +344,6 @@ func (j *jsiiProxy_DataStackitNetwork) Name() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataStackitNetwork) Nameservers() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"nameservers",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataStackitNetwork) NetworkId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -381,16 +369,6 @@ func (j *jsiiProxy_DataStackitNetwork) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataStackitNetwork) Prefixes() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"prefixes",
 		&returns,
 	)
 	return returns
@@ -517,7 +495,7 @@ func (j *jsiiProxy_DataStackitNetwork) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs/data-sources/network stackit_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.86.0/docs/data-sources/network stackit_network} Data Source.
 func NewDataStackitNetwork(scope constructs.Construct, id *string, config *DataStackitNetworkConfig) DataStackitNetwork {
 	_init_.Initialize()
 
@@ -535,7 +513,7 @@ func NewDataStackitNetwork(scope constructs.Construct, id *string, config *DataS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs/data-sources/network stackit_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.86.0/docs/data-sources/network stackit_network} Data Source.
 func NewDataStackitNetwork_Override(d DataStackitNetwork, scope constructs.Construct, id *string, config *DataStackitNetworkConfig) {
 	_init_.Initialize()
 

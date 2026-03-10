@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs/resources/network stackit_network}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.86.0/docs/resources/network stackit_network}.
 type Network interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -76,9 +76,6 @@ type Network interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
-	Nameservers() *[]*string
-	SetNameservers(val *[]*string)
-	NameserversInput() *[]*string
 	NetworkId() *string
 	// The tree node.
 	Node() constructs.Node
@@ -88,7 +85,6 @@ type Network interface {
 	NoIpv6Gateway() interface{}
 	SetNoIpv6Gateway(val interface{})
 	NoIpv6GatewayInput() interface{}
-	Prefixes() *[]*string
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
@@ -171,7 +167,6 @@ type Network interface {
 	ResetIpv6Prefix()
 	ResetIpv6PrefixLength()
 	ResetLabels()
-	ResetNameservers()
 	ResetNoIpv4Gateway()
 	ResetNoIpv6Gateway()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -538,26 +533,6 @@ func (j *jsiiProxy_Network) NameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Network) Nameservers() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"nameservers",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Network) NameserversInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"nameserversInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Network) NetworkId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -613,16 +588,6 @@ func (j *jsiiProxy_Network) NoIpv6GatewayInput() interface{} {
 	_jsii_.Get(
 		j,
 		"noIpv6GatewayInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Network) Prefixes() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"prefixes",
 		&returns,
 	)
 	return returns
@@ -779,7 +744,7 @@ func (j *jsiiProxy_Network) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs/resources/network stackit_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.86.0/docs/resources/network stackit_network} Resource.
 func NewNetwork(scope constructs.Construct, id *string, config *NetworkConfig) Network {
 	_init_.Initialize()
 
@@ -797,7 +762,7 @@ func NewNetwork(scope constructs.Construct, id *string, config *NetworkConfig) N
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.85.0/docs/resources/network stackit_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.86.0/docs/resources/network stackit_network} Resource.
 func NewNetwork_Override(n Network, scope constructs.Construct, id *string, config *NetworkConfig) {
 	_init_.Initialize()
 
@@ -974,17 +939,6 @@ func (j *jsiiProxy_Network)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Network)SetNameservers(val *[]*string) {
-	if err := j.validateSetNameserversParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"nameservers",
 		val,
 	)
 }
@@ -1503,14 +1457,6 @@ func (n *jsiiProxy_Network) ResetLabels() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetLabels",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_Network) ResetNameservers() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetNameservers",
 		nil, // no parameters
 	)
 }

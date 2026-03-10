@@ -144,10 +144,6 @@ func (j *jsiiProxy_Network) validateSetNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Network) validateSetNameserversParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_Network) validateSetNoIpv4GatewayParameters(val interface{}) error {
 	return nil
 }
