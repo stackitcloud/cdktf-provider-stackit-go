@@ -20,6 +20,7 @@ type DataStackitSkeClusterNetworkOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ControlPlane() DataStackitSkeClusterNetworkControlPlaneOutputReference
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -92,6 +93,16 @@ func (j *jsiiProxy_DataStackitSkeClusterNetworkOutputReference) ComplexObjectIsF
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitSkeClusterNetworkOutputReference) ControlPlane() DataStackitSkeClusterNetworkControlPlaneOutputReference {
+	var returns DataStackitSkeClusterNetworkControlPlaneOutputReference
+	_jsii_.Get(
+		j,
+		"controlPlane",
 		&returns,
 	)
 	return returns

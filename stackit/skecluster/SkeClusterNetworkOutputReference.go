@@ -20,6 +20,8 @@ type SkeClusterNetworkOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ControlPlane() SkeClusterNetworkControlPlaneOutputReference
+	ControlPlaneInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -64,6 +66,8 @@ type SkeClusterNetworkOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutControlPlane(value *SkeClusterNetworkControlPlane)
+	ResetControlPlane()
 	ResetId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -95,6 +99,26 @@ func (j *jsiiProxy_SkeClusterNetworkOutputReference) ComplexObjectIsFromSet() *b
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SkeClusterNetworkOutputReference) ControlPlane() SkeClusterNetworkControlPlaneOutputReference {
+	var returns SkeClusterNetworkControlPlaneOutputReference
+	_jsii_.Get(
+		j,
+		"controlPlane",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SkeClusterNetworkOutputReference) ControlPlaneInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"controlPlaneInput",
 		&returns,
 	)
 	return returns
@@ -448,6 +472,25 @@ func (s *jsiiProxy_SkeClusterNetworkOutputReference) InterpolationForAttribute(p
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SkeClusterNetworkOutputReference) PutControlPlane(value *SkeClusterNetworkControlPlane) {
+	if err := s.validatePutControlPlaneParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putControlPlane",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SkeClusterNetworkOutputReference) ResetControlPlane() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetControlPlane",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SkeClusterNetworkOutputReference) ResetId() {

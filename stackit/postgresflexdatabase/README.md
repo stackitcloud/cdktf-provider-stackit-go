@@ -1,3 +1,3 @@
 # `stackit_postgresflex_database`
 
-Refer to the Terraform Registry for docs: [`stackit_postgresflex_database`](https://registry.terraform.io/providers/stackitcloud/stackit/0.86.0/docs/resources/postgresflex_database).
+Refer to the Terraform Registry for docs: [`stackit_postgresflex_database`](https://registry.terraform.io/providers/stackitcloud/stackit/0.87.0/docs/resources/postgresflex_database).

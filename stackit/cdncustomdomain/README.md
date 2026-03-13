@@ -1,3 +1,3 @@
 # `stackit_cdn_custom_domain`
 
-Refer to the Terraform Registry for docs: [`stackit_cdn_custom_domain`](https://registry.terraform.io/providers/stackitcloud/stackit/0.86.0/docs/resources/cdn_custom_domain).
+Refer to the Terraform Registry for docs: [`stackit_cdn_custom_domain`](https://registry.terraform.io/providers/stackitcloud/stackit/0.87.0/docs/resources/cdn_custom_domain).

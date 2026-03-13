@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.86.0/docs/resources/network stackit_network}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.87.0/docs/resources/network stackit_network}.
 type Network interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -744,7 +744,7 @@ func (j *jsiiProxy_Network) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.86.0/docs/resources/network stackit_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.87.0/docs/resources/network stackit_network} Resource.
 func NewNetwork(scope constructs.Construct, id *string, config *NetworkConfig) Network {
 	_init_.Initialize()
 
@@ -762,7 +762,7 @@ func NewNetwork(scope constructs.Construct, id *string, config *NetworkConfig) N
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.86.0/docs/resources/network stackit_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.87.0/docs/resources/network stackit_network} Resource.
 func NewNetwork_Override(n Network, scope constructs.Construct, id *string, config *NetworkConfig) {
 	_init_.Initialize()
 

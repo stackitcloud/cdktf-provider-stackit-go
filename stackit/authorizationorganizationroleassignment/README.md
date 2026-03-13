@@ -1,3 +1,3 @@
 # `stackit_authorization_organization_role_assignment`
 
-Refer to the Terraform Registry for docs: [`stackit_authorization_organization_role_assignment`](https://registry.terraform.io/providers/stackitcloud/stackit/0.86.0/docs/resources/authorization_organization_role_assignment).
+Refer to the Terraform Registry for docs: [`stackit_authorization_organization_role_assignment`](https://registry.terraform.io/providers/stackitcloud/stackit/0.87.0/docs/resources/authorization_organization_role_assignment).

@@ -44,6 +44,10 @@ func (s *jsiiProxy_SkeClusterNetworkOutputReference) validateInterpolationForAtt
 	return nil
 }
 
+func (s *jsiiProxy_SkeClusterNetworkOutputReference) validatePutControlPlaneParameters(value *SkeClusterNetworkControlPlane) error {
+	return nil
+}
+
 func (s *jsiiProxy_SkeClusterNetworkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
