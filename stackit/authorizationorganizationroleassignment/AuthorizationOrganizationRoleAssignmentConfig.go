@@ -19,17 +19,19 @@ type AuthorizationOrganizationRoleAssignmentConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// organization Resource to assign the role to.
+	// Organization Resource to assign the role to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.87.0/docs/resources/authorization_organization_role_assignment#resource_id AuthorizationOrganizationRoleAssignment#resource_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.88.0/docs/resources/authorization_organization_role_assignment#resource_id AuthorizationOrganizationRoleAssignment#resource_id}
 	ResourceId *string `field:"required" json:"resourceId" yaml:"resourceId"`
 	// Role to be assigned. Available roles can be queried using stackit-cli: `stackit curl https://authorization.api.stackit.cloud/v2/permissions`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.87.0/docs/resources/authorization_organization_role_assignment#role AuthorizationOrganizationRoleAssignment#role}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.88.0/docs/resources/authorization_organization_role_assignment#role AuthorizationOrganizationRoleAssignment#role}
 	Role *string `field:"required" json:"role" yaml:"role"`
-	// Identifier of user, service account or client. Usually email address or name in case of clients.
+	// Identifier of user, service account or client.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.87.0/docs/resources/authorization_organization_role_assignment#subject AuthorizationOrganizationRoleAssignment#subject}
+	// Usually email address or name in case of clients. All letters must be lowercased.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.88.0/docs/resources/authorization_organization_role_assignment#subject AuthorizationOrganizationRoleAssignment#subject}
 	Subject *string `field:"required" json:"subject" yaml:"subject"`
 }
 
