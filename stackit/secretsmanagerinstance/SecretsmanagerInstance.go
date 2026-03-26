@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.88.0/docs/resources/secretsmanager_instance stackit_secretsmanager_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.89.0/docs/resources/secretsmanager_instance stackit_secretsmanager_instance}.
 type SecretsmanagerInstance interface {
 	cdktf.TerraformResource
 	Acls() *[]*string
@@ -41,6 +41,8 @@ type SecretsmanagerInstance interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	InstanceId() *string
+	KmsKey() SecretsmanagerInstanceKmsKeyOutputReference
+	KmsKeyInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -112,7 +114,9 @@ type SecretsmanagerInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutKmsKey(value *SecretsmanagerInstanceKmsKey)
 	ResetAcls()
+	ResetKmsKey()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -254,6 +258,26 @@ func (j *jsiiProxy_SecretsmanagerInstance) InstanceId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SecretsmanagerInstance) KmsKey() SecretsmanagerInstanceKmsKeyOutputReference {
+	var returns SecretsmanagerInstanceKmsKeyOutputReference
+	_jsii_.Get(
+		j,
+		"kmsKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsmanagerInstance) KmsKeyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"kmsKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecretsmanagerInstance) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -375,7 +399,7 @@ func (j *jsiiProxy_SecretsmanagerInstance) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.88.0/docs/resources/secretsmanager_instance stackit_secretsmanager_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.89.0/docs/resources/secretsmanager_instance stackit_secretsmanager_instance} Resource.
 func NewSecretsmanagerInstance(scope constructs.Construct, id *string, config *SecretsmanagerInstanceConfig) SecretsmanagerInstance {
 	_init_.Initialize()
 
@@ -393,7 +417,7 @@ func NewSecretsmanagerInstance(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.88.0/docs/resources/secretsmanager_instance stackit_secretsmanager_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.89.0/docs/resources/secretsmanager_instance stackit_secretsmanager_instance} Resource.
 func NewSecretsmanagerInstance_Override(s SecretsmanagerInstance, scope constructs.Construct, id *string, config *SecretsmanagerInstanceConfig) {
 	_init_.Initialize()
 
@@ -858,10 +882,29 @@ func (s *jsiiProxy_SecretsmanagerInstance) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (s *jsiiProxy_SecretsmanagerInstance) PutKmsKey(value *SecretsmanagerInstanceKmsKey) {
+	if err := s.validatePutKmsKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putKmsKey",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SecretsmanagerInstance) ResetAcls() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAcls",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsmanagerInstance) ResetKmsKey() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetKmsKey",
 		nil, // no parameters
 	)
 }

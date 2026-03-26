@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.88.0/docs/resources/objectstorage_bucket stackit_objectstorage_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.89.0/docs/resources/objectstorage_bucket stackit_objectstorage_bucket}.
 type ObjectstorageBucket interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -46,6 +46,9 @@ type ObjectstorageBucket interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	ObjectLock() interface{}
+	SetObjectLock(val interface{})
+	ObjectLockInput() interface{}
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
@@ -113,6 +116,7 @@ type ObjectstorageBucket interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetObjectLock()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -265,6 +269,26 @@ func (j *jsiiProxy_ObjectstorageBucket) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ObjectstorageBucket) ObjectLock() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"objectLock",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObjectstorageBucket) ObjectLockInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"objectLockInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObjectstorageBucket) ProjectId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -386,7 +410,7 @@ func (j *jsiiProxy_ObjectstorageBucket) UrlVirtualHostedStyle() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.88.0/docs/resources/objectstorage_bucket stackit_objectstorage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.89.0/docs/resources/objectstorage_bucket stackit_objectstorage_bucket} Resource.
 func NewObjectstorageBucket(scope constructs.Construct, id *string, config *ObjectstorageBucketConfig) ObjectstorageBucket {
 	_init_.Initialize()
 
@@ -404,7 +428,7 @@ func NewObjectstorageBucket(scope constructs.Construct, id *string, config *Obje
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.88.0/docs/resources/objectstorage_bucket stackit_objectstorage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.89.0/docs/resources/objectstorage_bucket stackit_objectstorage_bucket} Resource.
 func NewObjectstorageBucket_Override(o ObjectstorageBucket, scope constructs.Construct, id *string, config *ObjectstorageBucketConfig) {
 	_init_.Initialize()
 
@@ -471,6 +495,17 @@ func (j *jsiiProxy_ObjectstorageBucket)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObjectstorageBucket)SetObjectLock(val interface{}) {
+	if err := j.validateSetObjectLockParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"objectLock",
 		val,
 	)
 }
@@ -866,6 +901,14 @@ func (o *jsiiProxy_ObjectstorageBucket) OverrideLogicalId(newLogicalId *string) 
 		o,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (o *jsiiProxy_ObjectstorageBucket) ResetObjectLock() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetObjectLock",
+		nil, // no parameters
 	)
 }
 

@@ -32,6 +32,7 @@ type DataStackitEdgecloudPlansPlansOutputReference interface {
 	InternalValue() *DataStackitEdgecloudPlansPlans
 	SetInternalValue(val *DataStackitEdgecloudPlansPlans)
 	MaxEdgeHosts() *float64
+	MinEdgeHosts() *float64
 	Name() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -155,6 +156,16 @@ func (j *jsiiProxy_DataStackitEdgecloudPlansPlansOutputReference) MaxEdgeHosts()
 	_jsii_.Get(
 		j,
 		"maxEdgeHosts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitEdgecloudPlansPlansOutputReference) MinEdgeHosts() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minEdgeHosts",
 		&returns,
 	)
 	return returns

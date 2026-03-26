@@ -104,6 +104,10 @@ func (j *jsiiProxy_ObjectstorageBucket) validateSetNameParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_ObjectstorageBucket) validateSetObjectLockParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ObjectstorageBucket) validateSetProjectIdParameters(val *string) error {
 	return nil
 }

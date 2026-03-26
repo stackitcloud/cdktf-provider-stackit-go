@@ -72,6 +72,10 @@ func (s *jsiiProxy_SecretsmanagerInstance) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (s *jsiiProxy_SecretsmanagerInstance) validatePutKmsKeyParameters(value *SecretsmanagerInstanceKmsKey) error {
+	return nil
+}
+
 func validateSecretsmanagerInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
