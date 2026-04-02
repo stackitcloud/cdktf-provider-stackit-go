@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataStackitDnsRecordSet) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DataStackitDnsRecordSet) validatePutTimeoutsParameters(value *DataStackitDnsRecordSetTimeouts) error {
+	return nil
+}
+
 func validateDataStackitDnsRecordSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

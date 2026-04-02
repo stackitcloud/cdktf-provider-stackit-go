@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.89.0/docs/resources/dns_record_set stackit_dns_record_set}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.90.0/docs/resources/dns_record_set stackit_dns_record_set}.
 type DnsRecordSet interface {
 	cdktf.TerraformResource
 	Active() interface{}
@@ -78,6 +78,8 @@ type DnsRecordSet interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() DnsRecordSetTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	Ttl() *float64
 	SetTtl(val *float64)
 	TtlInput() *float64
@@ -130,11 +132,13 @@ type DnsRecordSet interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *DnsRecordSetTimeouts)
 	ResetActive()
 	ResetComment()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	ResetTtl()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -464,6 +468,26 @@ func (j *jsiiProxy_DnsRecordSet) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DnsRecordSet) Timeouts() DnsRecordSetTimeoutsOutputReference {
+	var returns DnsRecordSetTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DnsRecordSet) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DnsRecordSet) Ttl() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -525,7 +549,7 @@ func (j *jsiiProxy_DnsRecordSet) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.89.0/docs/resources/dns_record_set stackit_dns_record_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.90.0/docs/resources/dns_record_set stackit_dns_record_set} Resource.
 func NewDnsRecordSet(scope constructs.Construct, id *string, config *DnsRecordSetConfig) DnsRecordSet {
 	_init_.Initialize()
 
@@ -543,7 +567,7 @@ func NewDnsRecordSet(scope constructs.Construct, id *string, config *DnsRecordSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.89.0/docs/resources/dns_record_set stackit_dns_record_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.90.0/docs/resources/dns_record_set stackit_dns_record_set} Resource.
 func NewDnsRecordSet_Override(d DnsRecordSet, scope constructs.Construct, id *string, config *DnsRecordSetConfig) {
 	_init_.Initialize()
 
@@ -1063,6 +1087,17 @@ func (d *jsiiProxy_DnsRecordSet) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_DnsRecordSet) PutTimeouts(value *DnsRecordSetTimeouts) {
+	if err := d.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DnsRecordSet) ResetActive() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1083,6 +1118,14 @@ func (d *jsiiProxy_DnsRecordSet) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DnsRecordSet) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

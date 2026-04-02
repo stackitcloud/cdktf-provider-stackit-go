@@ -1,3 +1,3 @@
 # `stackit_image`
 
-Refer to the Terraform Registry for docs: [`stackit_image`](https://registry.terraform.io/providers/stackitcloud/stackit/0.89.0/docs/resources/image).
+Refer to the Terraform Registry for docs: [`stackit_image`](https://registry.terraform.io/providers/stackitcloud/stackit/0.90.0/docs/resources/image).
