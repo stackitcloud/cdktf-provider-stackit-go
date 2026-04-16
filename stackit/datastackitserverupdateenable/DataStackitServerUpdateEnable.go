@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.90.0/docs/data-sources/server_update_enable stackit_server_update_enable}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.91.0/docs/data-sources/server_update_enable stackit_server_update_enable}.
 type DataStackitServerUpdateEnable interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataStackitServerUpdateEnable) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.90.0/docs/data-sources/server_update_enable stackit_server_update_enable} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.91.0/docs/data-sources/server_update_enable stackit_server_update_enable} Data Source.
 func NewDataStackitServerUpdateEnable(scope constructs.Construct, id *string, config *DataStackitServerUpdateEnableConfig) DataStackitServerUpdateEnable {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewDataStackitServerUpdateEnable(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.90.0/docs/data-sources/server_update_enable stackit_server_update_enable} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.91.0/docs/data-sources/server_update_enable stackit_server_update_enable} Data Source.
 func NewDataStackitServerUpdateEnable_Override(d DataStackitServerUpdateEnable, scope constructs.Construct, id *string, config *DataStackitServerUpdateEnableConfig) {
 	_init_.Initialize()
 

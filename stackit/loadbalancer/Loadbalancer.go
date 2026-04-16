@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.90.0/docs/resources/loadbalancer stackit_loadbalancer}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.91.0/docs/resources/loadbalancer stackit_loadbalancer}.
 type Loadbalancer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -87,6 +87,7 @@ type Loadbalancer interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Version() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -550,8 +551,18 @@ func (j *jsiiProxy_Loadbalancer) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Loadbalancer) Version() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"version",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.90.0/docs/resources/loadbalancer stackit_loadbalancer} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.91.0/docs/resources/loadbalancer stackit_loadbalancer} Resource.
 func NewLoadbalancer(scope constructs.Construct, id *string, config *LoadbalancerConfig) Loadbalancer {
 	_init_.Initialize()
 
@@ -569,7 +580,7 @@ func NewLoadbalancer(scope constructs.Construct, id *string, config *Loadbalance
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.90.0/docs/resources/loadbalancer stackit_loadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.91.0/docs/resources/loadbalancer stackit_loadbalancer} Resource.
 func NewLoadbalancer_Override(l Loadbalancer, scope constructs.Construct, id *string, config *LoadbalancerConfig) {
 	_init_.Initialize()
 

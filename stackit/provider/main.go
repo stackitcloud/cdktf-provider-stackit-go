@@ -12,6 +12,8 @@ func init() {
 		reflect.TypeOf((*StackitProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "albCertificatesCustomEndpoint", GoGetter: "AlbCertificatesCustomEndpoint"},
+			_jsii_.MemberProperty{JsiiProperty: "albCertificatesCustomEndpointInput", GoGetter: "AlbCertificatesCustomEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "albCustomEndpoint", GoGetter: "AlbCustomEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "albCustomEndpointInput", GoGetter: "AlbCustomEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
@@ -80,6 +82,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "redisCustomEndpointInput", GoGetter: "RedisCustomEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAlbCertificatesCustomEndpoint", GoMethod: "ResetAlbCertificatesCustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlbCustomEndpoint", GoMethod: "ResetAlbCustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthorizationCustomEndpoint", GoMethod: "ResetAuthorizationCustomEndpoint"},
