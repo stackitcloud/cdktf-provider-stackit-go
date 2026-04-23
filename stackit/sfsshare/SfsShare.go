@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.91.0/docs/resources/sfs_share stackit_sfs_share}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.92.0/docs/resources/sfs_share stackit_sfs_share}.
 type SfsShare interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -122,6 +122,7 @@ type SfsShare interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetExportPolicy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -455,7 +456,7 @@ func (j *jsiiProxy_SfsShare) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.91.0/docs/resources/sfs_share stackit_sfs_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.92.0/docs/resources/sfs_share stackit_sfs_share} Resource.
 func NewSfsShare(scope constructs.Construct, id *string, config *SfsShareConfig) SfsShare {
 	_init_.Initialize()
 
@@ -473,7 +474,7 @@ func NewSfsShare(scope constructs.Construct, id *string, config *SfsShareConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.91.0/docs/resources/sfs_share stackit_sfs_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.92.0/docs/resources/sfs_share stackit_sfs_share} Resource.
 func NewSfsShare_Override(s SfsShare, scope constructs.Construct, id *string, config *SfsShareConfig) {
 	_init_.Initialize()
 
@@ -968,6 +969,14 @@ func (s *jsiiProxy_SfsShare) OverrideLogicalId(newLogicalId *string) {
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_SfsShare) ResetExportPolicy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetExportPolicy",
+		nil, // no parameters
 	)
 }
 

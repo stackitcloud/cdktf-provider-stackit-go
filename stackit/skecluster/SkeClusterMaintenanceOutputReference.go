@@ -75,6 +75,8 @@ type SkeClusterMaintenanceOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEnableKubernetesVersionUpdates()
 	ResetEnableMachineImageVersionUpdates()
+	ResetEnd()
+	ResetStart()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -565,6 +567,22 @@ func (s *jsiiProxy_SkeClusterMaintenanceOutputReference) ResetEnableMachineImage
 	_jsii_.InvokeVoid(
 		s,
 		"resetEnableMachineImageVersionUpdates",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SkeClusterMaintenanceOutputReference) ResetEnd() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnd",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SkeClusterMaintenanceOutputReference) ResetStart() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStart",
 		nil, // no parameters
 	)
 }

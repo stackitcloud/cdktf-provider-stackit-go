@@ -409,6 +409,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableKubernetesVersionUpdates", GoMethod: "ResetEnableKubernetesVersionUpdates"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableMachineImageVersionUpdates", GoMethod: "ResetEnableMachineImageVersionUpdates"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnd", GoMethod: "ResetEnd"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStart", GoMethod: "ResetStart"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "start", GoGetter: "Start"},
 			_jsii_.MemberProperty{JsiiProperty: "startInput", GoGetter: "StartInput"},

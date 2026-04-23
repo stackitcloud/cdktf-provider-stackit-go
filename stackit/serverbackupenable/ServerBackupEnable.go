@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.91.0/docs/resources/server_backup_enable stackit_server_backup_enable}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.92.0/docs/resources/server_backup_enable stackit_server_backup_enable}.
 type ServerBackupEnable interface {
 	cdktf.TerraformResource
 	BackupPolicyId() *string
@@ -399,7 +399,7 @@ func (j *jsiiProxy_ServerBackupEnable) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.91.0/docs/resources/server_backup_enable stackit_server_backup_enable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.92.0/docs/resources/server_backup_enable stackit_server_backup_enable} Resource.
 func NewServerBackupEnable(scope constructs.Construct, id *string, config *ServerBackupEnableConfig) ServerBackupEnable {
 	_init_.Initialize()
 
@@ -417,7 +417,7 @@ func NewServerBackupEnable(scope constructs.Construct, id *string, config *Serve
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.91.0/docs/resources/server_backup_enable stackit_server_backup_enable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.92.0/docs/resources/server_backup_enable stackit_server_backup_enable} Resource.
 func NewServerBackupEnable_Override(s ServerBackupEnable, scope constructs.Construct, id *string, config *ServerBackupEnableConfig) {
 	_init_.Initialize()
 
