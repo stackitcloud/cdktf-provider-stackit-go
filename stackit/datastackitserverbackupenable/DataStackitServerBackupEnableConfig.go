@@ -21,15 +21,15 @@ type DataStackitServerBackupEnableConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT Project ID to which the server backup enable is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.92.0/docs/data-sources/server_backup_enable#project_id DataStackitServerBackupEnable#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.93.0/docs/data-sources/server_backup_enable#project_id DataStackitServerBackupEnable#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Server ID to which the server backup enable is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.92.0/docs/data-sources/server_backup_enable#server_id DataStackitServerBackupEnable#server_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.93.0/docs/data-sources/server_backup_enable#server_id DataStackitServerBackupEnable#server_id}
 	ServerId *string `field:"required" json:"serverId" yaml:"serverId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.92.0/docs/data-sources/server_backup_enable#region DataStackitServerBackupEnable#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.93.0/docs/data-sources/server_backup_enable#region DataStackitServerBackupEnable#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

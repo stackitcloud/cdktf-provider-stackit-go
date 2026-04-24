@@ -21,11 +21,11 @@ type DataStackitAlbCertificateConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the certificate.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.92.0/docs/data-sources/alb_certificate#cert_id DataStackitAlbCertificate#cert_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.93.0/docs/data-sources/alb_certificate#cert_id DataStackitAlbCertificate#cert_id}
 	CertId *string `field:"required" json:"certId" yaml:"certId"`
 	// STACKIT project ID to which the certificate is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.92.0/docs/data-sources/alb_certificate#project_id DataStackitAlbCertificate#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.93.0/docs/data-sources/alb_certificate#project_id DataStackitAlbCertificate#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 
