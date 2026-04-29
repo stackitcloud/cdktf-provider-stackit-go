@@ -27,8 +27,8 @@ type DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputReference interfa
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataStackitLoadbalancerTargetPoolsSessionPersistence
+	SetInternalValue(val *DataStackitLoadbalancerTargetPoolsSessionPersistence)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -37,9 +37,7 @@ type DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputReference interfa
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UseSourceIpAddress() interface{}
-	SetUseSourceIpAddress(val interface{})
-	UseSourceIpAddressInput() interface{}
+	UseSourceIpAddress() cdktf.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -64,7 +62,6 @@ type DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputReference interfa
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetUseSourceIpAddress()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -120,8 +117,8 @@ func (j *jsiiProxy_DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputReference) InternalValue() *DataStackitLoadbalancerTargetPoolsSessionPersistence {
+	var returns *DataStackitLoadbalancerTargetPoolsSessionPersistence
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -150,21 +147,11 @@ func (j *jsiiProxy_DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputReference) UseSourceIpAddress() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputReference) UseSourceIpAddress() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"useSourceIpAddress",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputReference) UseSourceIpAddressInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"useSourceIpAddressInput",
 		&returns,
 	)
 	return returns
@@ -220,7 +207,7 @@ func (j *jsiiProxy_DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputRef
 	)
 }
 
-func (j *jsiiProxy_DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputReference)SetInternalValue(val *DataStackitLoadbalancerTargetPoolsSessionPersistence) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -249,17 +236,6 @@ func (j *jsiiProxy_DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputRef
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputReference)SetUseSourceIpAddress(val interface{}) {
-	if err := j.validateSetUseSourceIpAddressParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"useSourceIpAddress",
 		val,
 	)
 }
@@ -448,14 +424,6 @@ func (d *jsiiProxy_DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputRef
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputReference) ResetUseSourceIpAddress() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetUseSourceIpAddress",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

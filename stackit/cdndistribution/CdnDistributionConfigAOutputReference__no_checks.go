@@ -52,6 +52,10 @@ func (c *jsiiProxy_CdnDistributionConfigAOutputReference) validatePutOptimizerPa
 	return nil
 }
 
+func (c *jsiiProxy_CdnDistributionConfigAOutputReference) validatePutRedirectsParameters(value *CdnDistributionConfigRedirects) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnDistributionConfigAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -1,0 +1,6 @@
+package datastackitsecretsmanagerinstancerolebindingsv1
+
+
+type DataStackitSecretsmanagerInstanceRoleBindingsV1RoleBindings struct {
+}
+

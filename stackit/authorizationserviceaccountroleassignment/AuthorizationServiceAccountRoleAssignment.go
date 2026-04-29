@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.93.0/docs/resources/authorization_service_account_role_assignment stackit_authorization_service_account_role_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.94.0/docs/resources/authorization_service_account_role_assignment stackit_authorization_service_account_role_assignment}.
 type AuthorizationServiceAccountRoleAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -363,7 +363,7 @@ func (j *jsiiProxy_AuthorizationServiceAccountRoleAssignment) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.93.0/docs/resources/authorization_service_account_role_assignment stackit_authorization_service_account_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.94.0/docs/resources/authorization_service_account_role_assignment stackit_authorization_service_account_role_assignment} Resource.
 func NewAuthorizationServiceAccountRoleAssignment(scope constructs.Construct, id *string, config *AuthorizationServiceAccountRoleAssignmentConfig) AuthorizationServiceAccountRoleAssignment {
 	_init_.Initialize()
 
@@ -381,7 +381,7 @@ func NewAuthorizationServiceAccountRoleAssignment(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.93.0/docs/resources/authorization_service_account_role_assignment stackit_authorization_service_account_role_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.94.0/docs/resources/authorization_service_account_role_assignment stackit_authorization_service_account_role_assignment} Resource.
 func NewAuthorizationServiceAccountRoleAssignment_Override(a AuthorizationServiceAccountRoleAssignment, scope constructs.Construct, id *string, config *AuthorizationServiceAccountRoleAssignmentConfig) {
 	_init_.Initialize()
 

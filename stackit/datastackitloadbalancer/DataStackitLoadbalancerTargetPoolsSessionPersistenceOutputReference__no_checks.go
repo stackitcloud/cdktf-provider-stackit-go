@@ -56,7 +56,7 @@ func (j *jsiiProxy_DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputReference) validateSetInternalValueParameters(val *DataStackitLoadbalancerTargetPoolsSessionPersistence) error {
 	return nil
 }
 
@@ -65,10 +65,6 @@ func (j *jsiiProxy_DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputRef
 }
 
 func (j *jsiiProxy_DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataStackitLoadbalancerTargetPoolsSessionPersistenceOutputReference) validateSetUseSourceIpAddressParameters(val interface{}) error {
 	return nil
 }
 

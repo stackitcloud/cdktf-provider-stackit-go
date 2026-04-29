@@ -21,19 +21,19 @@ type SecretsmanagerSecretGroupRoleBindingV1Config struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The identifier of the resource to apply this role binding to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.93.0/docs/resources/secretsmanager_secret_group_role_binding_v1#resource_id SecretsmanagerSecretGroupRoleBindingV1#resource_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.94.0/docs/resources/secretsmanager_secret_group_role_binding_v1#resource_id SecretsmanagerSecretGroupRoleBindingV1#resource_id}
 	ResourceId *string `field:"required" json:"resourceId" yaml:"resourceId"`
 	// A valid role defined for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.93.0/docs/resources/secretsmanager_secret_group_role_binding_v1#role SecretsmanagerSecretGroupRoleBindingV1#role}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.94.0/docs/resources/secretsmanager_secret_group_role_binding_v1#role SecretsmanagerSecretGroupRoleBindingV1#role}
 	Role *string `field:"required" json:"role" yaml:"role"`
 	// Identifier of user, service account or client. Usually email address or name in case of clients.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.93.0/docs/resources/secretsmanager_secret_group_role_binding_v1#subject SecretsmanagerSecretGroupRoleBindingV1#subject}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.94.0/docs/resources/secretsmanager_secret_group_role_binding_v1#subject SecretsmanagerSecretGroupRoleBindingV1#subject}
 	Subject *string `field:"required" json:"subject" yaml:"subject"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.93.0/docs/resources/secretsmanager_secret_group_role_binding_v1#region SecretsmanagerSecretGroupRoleBindingV1#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.94.0/docs/resources/secretsmanager_secret_group_role_binding_v1#region SecretsmanagerSecretGroupRoleBindingV1#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

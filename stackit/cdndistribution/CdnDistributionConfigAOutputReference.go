@@ -36,6 +36,8 @@ type CdnDistributionConfigAOutputReference interface {
 	SetInternalValue(val interface{})
 	Optimizer() CdnDistributionConfigOptimizerOutputReference
 	OptimizerInput() interface{}
+	Redirects() CdnDistributionConfigRedirectsOutputReference
+	RedirectsInput() interface{}
 	Regions() *[]*string
 	SetRegions(val *[]*string)
 	RegionsInput() *[]*string
@@ -73,8 +75,10 @@ type CdnDistributionConfigAOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutBackend(value *CdnDistributionConfigBackend)
 	PutOptimizer(value *CdnDistributionConfigOptimizer)
+	PutRedirects(value *CdnDistributionConfigRedirects)
 	ResetBlockedCountries()
 	ResetOptimizer()
+	ResetRedirects()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -195,6 +199,26 @@ func (j *jsiiProxy_CdnDistributionConfigAOutputReference) OptimizerInput() inter
 	_jsii_.Get(
 		j,
 		"optimizerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) Redirects() CdnDistributionConfigRedirectsOutputReference {
+	var returns CdnDistributionConfigRedirectsOutputReference
+	_jsii_.Get(
+		j,
+		"redirects",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) RedirectsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"redirectsInput",
 		&returns,
 	)
 	return returns
@@ -553,6 +577,17 @@ func (c *jsiiProxy_CdnDistributionConfigAOutputReference) PutOptimizer(value *Cd
 	)
 }
 
+func (c *jsiiProxy_CdnDistributionConfigAOutputReference) PutRedirects(value *CdnDistributionConfigRedirects) {
+	if err := c.validatePutRedirectsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putRedirects",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CdnDistributionConfigAOutputReference) ResetBlockedCountries() {
 	_jsii_.InvokeVoid(
 		c,
@@ -565,6 +600,14 @@ func (c *jsiiProxy_CdnDistributionConfigAOutputReference) ResetOptimizer() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOptimizer",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CdnDistributionConfigAOutputReference) ResetRedirects() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRedirects",
 		nil, // no parameters
 	)
 }

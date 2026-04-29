@@ -34,6 +34,7 @@ type DataStackitCdnDistributionConfigAOutputReference interface {
 	InternalValue() *DataStackitCdnDistributionConfigA
 	SetInternalValue(val *DataStackitCdnDistributionConfigA)
 	Optimizer() DataStackitCdnDistributionConfigOptimizerOutputReference
+	Redirects() DataStackitCdnDistributionConfigRedirectsOutputReference
 	Regions() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
@@ -168,6 +169,16 @@ func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) Optimizer()
 	_jsii_.Get(
 		j,
 		"optimizer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) Redirects() DataStackitCdnDistributionConfigRedirectsOutputReference {
+	var returns DataStackitCdnDistributionConfigRedirectsOutputReference
+	_jsii_.Get(
+		j,
+		"redirects",
 		&returns,
 	)
 	return returns

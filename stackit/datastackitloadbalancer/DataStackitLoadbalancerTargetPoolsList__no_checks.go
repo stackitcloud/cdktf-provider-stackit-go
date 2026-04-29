@@ -16,10 +16,6 @@ func (d *jsiiProxy_DataStackitLoadbalancerTargetPoolsList) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_DataStackitLoadbalancerTargetPoolsList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataStackitLoadbalancerTargetPoolsList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
