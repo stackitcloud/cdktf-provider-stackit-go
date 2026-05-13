@@ -9,12 +9,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.94.0/docs/resources/server stackit_server}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.95.0/docs/resources/server stackit_server}.
 type Server interface {
 	cdktf.TerraformResource
 	AffinityGroup() *string
 	SetAffinityGroup(val *string)
 	AffinityGroupInput() *string
+	Agent() ServerAgentOutputReference
+	AgentInput() interface{}
 	AvailabilityZone() *string
 	SetAvailabilityZone(val *string)
 	AvailabilityZoneInput() *string
@@ -144,8 +146,10 @@ type Server interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAgent(value *ServerAgent)
 	PutBootVolume(value *ServerBootVolume)
 	ResetAffinityGroup()
+	ResetAgent()
 	ResetAvailabilityZone()
 	ResetBootVolume()
 	ResetDesiredStatus()
@@ -191,6 +195,26 @@ func (j *jsiiProxy_Server) AffinityGroupInput() *string {
 	_jsii_.Get(
 		j,
 		"affinityGroupInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Server) Agent() ServerAgentOutputReference {
+	var returns ServerAgentOutputReference
+	_jsii_.Get(
+		j,
+		"agent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Server) AgentInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"agentInput",
 		&returns,
 	)
 	return returns
@@ -647,7 +671,7 @@ func (j *jsiiProxy_Server) UserDataInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.94.0/docs/resources/server stackit_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.95.0/docs/resources/server stackit_server} Resource.
 func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Server {
 	_init_.Initialize()
 
@@ -665,7 +689,7 @@ func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Ser
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.94.0/docs/resources/server stackit_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.95.0/docs/resources/server stackit_server} Resource.
 func NewServer_Override(s Server, scope constructs.Construct, id *string, config *ServerConfig) {
 	_init_.Initialize()
 
@@ -1229,6 +1253,17 @@ func (s *jsiiProxy_Server) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_Server) PutAgent(value *ServerAgent) {
+	if err := s.validatePutAgentParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putAgent",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_Server) PutBootVolume(value *ServerBootVolume) {
 	if err := s.validatePutBootVolumeParameters(value); err != nil {
 		panic(err)
@@ -1244,6 +1279,14 @@ func (s *jsiiProxy_Server) ResetAffinityGroup() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAffinityGroup",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Server) ResetAgent() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAgent",
 		nil, // no parameters
 	)
 }

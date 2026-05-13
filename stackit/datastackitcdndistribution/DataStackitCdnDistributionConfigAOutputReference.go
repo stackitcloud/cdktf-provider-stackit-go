@@ -44,6 +44,7 @@ type DataStackitCdnDistributionConfigAOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Waf() DataStackitCdnDistributionConfigWafOutputReference
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -209,6 +210,16 @@ func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) TerraformRe
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) Waf() DataStackitCdnDistributionConfigWafOutputReference {
+	var returns DataStackitCdnDistributionConfigWafOutputReference
+	_jsii_.Get(
+		j,
+		"waf",
 		&returns,
 	)
 	return returns

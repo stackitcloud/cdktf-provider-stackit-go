@@ -56,6 +56,10 @@ func (c *jsiiProxy_CdnDistributionConfigAOutputReference) validatePutRedirectsPa
 	return nil
 }
 
+func (c *jsiiProxy_CdnDistributionConfigAOutputReference) validatePutWafParameters(value *CdnDistributionConfigWaf) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnDistributionConfigAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

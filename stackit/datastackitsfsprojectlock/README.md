@@ -1,3 +1,3 @@
 # `data_stackit_sfs_project_lock`
 
-Refer to the Terraform Registry for docs: [`data_stackit_sfs_project_lock`](https://registry.terraform.io/providers/stackitcloud/stackit/0.94.0/docs/data-sources/sfs_project_lock).
+Refer to the Terraform Registry for docs: [`data_stackit_sfs_project_lock`](https://registry.terraform.io/providers/stackitcloud/stackit/0.95.0/docs/data-sources/sfs_project_lock).

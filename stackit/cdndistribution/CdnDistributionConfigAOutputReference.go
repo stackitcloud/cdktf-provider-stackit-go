@@ -49,6 +49,8 @@ type CdnDistributionConfigAOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Waf() CdnDistributionConfigWafOutputReference
+	WafInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -76,9 +78,11 @@ type CdnDistributionConfigAOutputReference interface {
 	PutBackend(value *CdnDistributionConfigBackend)
 	PutOptimizer(value *CdnDistributionConfigOptimizer)
 	PutRedirects(value *CdnDistributionConfigRedirects)
+	PutWaf(value *CdnDistributionConfigWaf)
 	ResetBlockedCountries()
 	ResetOptimizer()
 	ResetRedirects()
+	ResetWaf()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -259,6 +263,26 @@ func (j *jsiiProxy_CdnDistributionConfigAOutputReference) TerraformResource() cd
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) Waf() CdnDistributionConfigWafOutputReference {
+	var returns CdnDistributionConfigWafOutputReference
+	_jsii_.Get(
+		j,
+		"waf",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) WafInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"wafInput",
 		&returns,
 	)
 	return returns
@@ -588,6 +612,17 @@ func (c *jsiiProxy_CdnDistributionConfigAOutputReference) PutRedirects(value *Cd
 	)
 }
 
+func (c *jsiiProxy_CdnDistributionConfigAOutputReference) PutWaf(value *CdnDistributionConfigWaf) {
+	if err := c.validatePutWafParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putWaf",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CdnDistributionConfigAOutputReference) ResetBlockedCountries() {
 	_jsii_.InvokeVoid(
 		c,
@@ -608,6 +643,14 @@ func (c *jsiiProxy_CdnDistributionConfigAOutputReference) ResetRedirects() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRedirects",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CdnDistributionConfigAOutputReference) ResetWaf() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetWaf",
 		nil, // no parameters
 	)
 }

@@ -1,0 +1,6 @@
+package datastackitserviceaccountfederatedidentityprovider
+
+
+type DataStackitServiceAccountFederatedIdentityProviderAssertions struct {
+}
+

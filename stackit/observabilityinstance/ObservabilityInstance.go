@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.94.0/docs/resources/observability_instance stackit_observability_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.95.0/docs/resources/observability_instance stackit_observability_instance}.
 type ObservabilityInstance interface {
 	cdktf.TerraformResource
 	Acl() *[]*string
@@ -80,6 +80,9 @@ type ObservabilityInstance interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OtlpGrpcTracesUrl() *string
+	OtlpHttpLogsUrl() *string
+	OtlpHttpTracesUrl() *string
 	OtlpTracesUrl() *string
 	Parameters() *map[string]*string
 	SetParameters(val *map[string]*string)
@@ -596,6 +599,36 @@ func (j *jsiiProxy_ObservabilityInstance) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ObservabilityInstance) OtlpGrpcTracesUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"otlpGrpcTracesUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityInstance) OtlpHttpLogsUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"otlpHttpLogsUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObservabilityInstance) OtlpHttpTracesUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"otlpHttpTracesUrl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObservabilityInstance) OtlpTracesUrl() *string {
 	var returns *string
 	_jsii_.Get(
@@ -777,7 +810,7 @@ func (j *jsiiProxy_ObservabilityInstance) ZipkinSpansUrl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.94.0/docs/resources/observability_instance stackit_observability_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.95.0/docs/resources/observability_instance stackit_observability_instance} Resource.
 func NewObservabilityInstance(scope constructs.Construct, id *string, config *ObservabilityInstanceConfig) ObservabilityInstance {
 	_init_.Initialize()
 
@@ -795,7 +828,7 @@ func NewObservabilityInstance(scope constructs.Construct, id *string, config *Ob
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.94.0/docs/resources/observability_instance stackit_observability_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.95.0/docs/resources/observability_instance stackit_observability_instance} Resource.
 func NewObservabilityInstance_Override(o ObservabilityInstance, scope constructs.Construct, id *string, config *ObservabilityInstanceConfig) {
 	_init_.Initialize()
 

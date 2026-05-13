@@ -72,6 +72,10 @@ func (s *jsiiProxy_Server) validateOverrideLogicalIdParameters(newLogicalId *str
 	return nil
 }
 
+func (s *jsiiProxy_Server) validatePutAgentParameters(value *ServerAgent) error {
+	return nil
+}
+
 func (s *jsiiProxy_Server) validatePutBootVolumeParameters(value *ServerBootVolume) error {
 	return nil
 }

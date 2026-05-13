@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.94.0/docs/data-sources/loadbalancer stackit_loadbalancer}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.95.0/docs/data-sources/loadbalancer stackit_loadbalancer}.
 type DataStackitLoadbalancer interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -429,7 +429,7 @@ func (j *jsiiProxy_DataStackitLoadbalancer) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.94.0/docs/data-sources/loadbalancer stackit_loadbalancer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.95.0/docs/data-sources/loadbalancer stackit_loadbalancer} Data Source.
 func NewDataStackitLoadbalancer(scope constructs.Construct, id *string, config *DataStackitLoadbalancerConfig) DataStackitLoadbalancer {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewDataStackitLoadbalancer(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.94.0/docs/data-sources/loadbalancer stackit_loadbalancer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.95.0/docs/data-sources/loadbalancer stackit_loadbalancer} Data Source.
 func NewDataStackitLoadbalancer_Override(d DataStackitLoadbalancer, scope constructs.Construct, id *string, config *DataStackitLoadbalancerConfig) {
 	_init_.Initialize()
 

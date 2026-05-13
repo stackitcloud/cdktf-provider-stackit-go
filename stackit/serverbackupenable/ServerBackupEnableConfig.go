@@ -21,19 +21,19 @@ type ServerBackupEnableConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT Project ID to which the server backup enable is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.94.0/docs/resources/server_backup_enable#project_id ServerBackupEnable#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.95.0/docs/resources/server_backup_enable#project_id ServerBackupEnable#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Server ID to which the server backup enable is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.94.0/docs/resources/server_backup_enable#server_id ServerBackupEnable#server_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.95.0/docs/resources/server_backup_enable#server_id ServerBackupEnable#server_id}
 	ServerId *string `field:"required" json:"serverId" yaml:"serverId"`
 	// The backup policy ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.94.0/docs/resources/server_backup_enable#backup_policy_id ServerBackupEnable#backup_policy_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.95.0/docs/resources/server_backup_enable#backup_policy_id ServerBackupEnable#backup_policy_id}
 	BackupPolicyId *string `field:"optional" json:"backupPolicyId" yaml:"backupPolicyId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.94.0/docs/resources/server_backup_enable#region ServerBackupEnable#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.95.0/docs/resources/server_backup_enable#region ServerBackupEnable#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 
