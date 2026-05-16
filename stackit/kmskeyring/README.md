@@ -1,3 +1,3 @@
 # `stackit_kms_keyring`
 
-Refer to the Terraform Registry for docs: [`stackit_kms_keyring`](https://registry.terraform.io/providers/stackitcloud/stackit/0.95.0/docs/resources/kms_keyring).
+Refer to the Terraform Registry for docs: [`stackit_kms_keyring`](https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/kms_keyring).

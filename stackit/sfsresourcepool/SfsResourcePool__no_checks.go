@@ -72,6 +72,10 @@ func (s *jsiiProxy_SfsResourcePool) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func (s *jsiiProxy_SfsResourcePool) validatePutSnapshotPolicyParameters(value *SfsResourcePoolSnapshotPolicy) error {
+	return nil
+}
+
 func validateSfsResourcePool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.95.0/docs/resources/sfs_resource_pool stackit_sfs_resource_pool}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/sfs_resource_pool stackit_sfs_resource_pool}.
 type SfsResourcePool interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -75,6 +75,8 @@ type SfsResourcePool interface {
 	SizeGigabytes() *float64
 	SetSizeGigabytes(val *float64)
 	SizeGigabytesInput() *float64
+	SnapshotPolicy() SfsResourcePoolSnapshotPolicyOutputReference
+	SnapshotPolicyInput() interface{}
 	SnapshotsAreVisible() interface{}
 	SetSnapshotsAreVisible(val interface{})
 	SnapshotsAreVisibleInput() interface{}
@@ -127,10 +129,12 @@ type SfsResourcePool interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutSnapshotPolicy(value *SfsResourcePoolSnapshotPolicy)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetSnapshotPolicy()
 	ResetSnapshotsAreVisible()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -440,6 +444,26 @@ func (j *jsiiProxy_SfsResourcePool) SizeGigabytesInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_SfsResourcePool) SnapshotPolicy() SfsResourcePoolSnapshotPolicyOutputReference {
+	var returns SfsResourcePoolSnapshotPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"snapshotPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SfsResourcePool) SnapshotPolicyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"snapshotPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SfsResourcePool) SnapshotsAreVisible() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -491,7 +515,7 @@ func (j *jsiiProxy_SfsResourcePool) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.95.0/docs/resources/sfs_resource_pool stackit_sfs_resource_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/sfs_resource_pool stackit_sfs_resource_pool} Resource.
 func NewSfsResourcePool(scope constructs.Construct, id *string, config *SfsResourcePoolConfig) SfsResourcePool {
 	_init_.Initialize()
 
@@ -509,7 +533,7 @@ func NewSfsResourcePool(scope constructs.Construct, id *string, config *SfsResou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.95.0/docs/resources/sfs_resource_pool stackit_sfs_resource_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/sfs_resource_pool stackit_sfs_resource_pool} Resource.
 func NewSfsResourcePool_Override(s SfsResourcePool, scope constructs.Construct, id *string, config *SfsResourcePoolConfig) {
 	_init_.Initialize()
 
@@ -1029,6 +1053,17 @@ func (s *jsiiProxy_SfsResourcePool) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_SfsResourcePool) PutSnapshotPolicy(value *SfsResourcePoolSnapshotPolicy) {
+	if err := s.validatePutSnapshotPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putSnapshotPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SfsResourcePool) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1041,6 +1076,14 @@ func (s *jsiiProxy_SfsResourcePool) ResetRegion() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SfsResourcePool) ResetSnapshotPolicy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSnapshotPolicy",
 		nil, // no parameters
 	)
 }

@@ -1,3 +1,3 @@
 # `stackit_objectstorage_compliance_lock`
 
-Refer to the Terraform Registry for docs: [`stackit_objectstorage_compliance_lock`](https://registry.terraform.io/providers/stackitcloud/stackit/0.95.0/docs/resources/objectstorage_compliance_lock).
+Refer to the Terraform Registry for docs: [`stackit_objectstorage_compliance_lock`](https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/objectstorage_compliance_lock).

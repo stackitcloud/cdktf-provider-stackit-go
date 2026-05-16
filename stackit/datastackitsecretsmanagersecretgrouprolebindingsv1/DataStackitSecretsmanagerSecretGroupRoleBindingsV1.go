@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.95.0/docs/data-sources/secretsmanager_secret_group_role_bindings_v1 stackit_secretsmanager_secret_group_role_bindings_v1}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/data-sources/secretsmanager_secret_group_role_bindings_v1 stackit_secretsmanager_secret_group_role_bindings_v1}.
 type DataStackitSecretsmanagerSecretGroupRoleBindingsV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -307,7 +307,7 @@ func (j *jsiiProxy_DataStackitSecretsmanagerSecretGroupRoleBindingsV1) Terraform
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.95.0/docs/data-sources/secretsmanager_secret_group_role_bindings_v1 stackit_secretsmanager_secret_group_role_bindings_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/data-sources/secretsmanager_secret_group_role_bindings_v1 stackit_secretsmanager_secret_group_role_bindings_v1} Data Source.
 func NewDataStackitSecretsmanagerSecretGroupRoleBindingsV1(scope constructs.Construct, id *string, config *DataStackitSecretsmanagerSecretGroupRoleBindingsV1Config) DataStackitSecretsmanagerSecretGroupRoleBindingsV1 {
 	_init_.Initialize()
 
@@ -325,7 +325,7 @@ func NewDataStackitSecretsmanagerSecretGroupRoleBindingsV1(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.95.0/docs/data-sources/secretsmanager_secret_group_role_bindings_v1 stackit_secretsmanager_secret_group_role_bindings_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/data-sources/secretsmanager_secret_group_role_bindings_v1 stackit_secretsmanager_secret_group_role_bindings_v1} Data Source.
 func NewDataStackitSecretsmanagerSecretGroupRoleBindingsV1_Override(d DataStackitSecretsmanagerSecretGroupRoleBindingsV1, scope constructs.Construct, id *string, config *DataStackitSecretsmanagerSecretGroupRoleBindingsV1Config) {
 	_init_.Initialize()
 

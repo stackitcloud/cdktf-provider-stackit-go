@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.95.0/docs/data-sources/sfs_resource_pool stackit_sfs_resource_pool}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/data-sources/sfs_resource_pool stackit_sfs_resource_pool}.
 type DataStackitSfsResourcePool interface {
 	cdktf.TerraformDataSource
 	AvailabilityZone() *string
@@ -61,6 +61,7 @@ type DataStackitSfsResourcePool interface {
 	ResourcePoolIdInput() *string
 	SizeGigabytes() *float64
 	SizeReducibleAt() *string
+	SnapshotPolicy() DataStackitSfsResourcePoolSnapshotPolicyOutputReference
 	SnapshotsAreVisible() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -366,6 +367,16 @@ func (j *jsiiProxy_DataStackitSfsResourcePool) SizeReducibleAt() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitSfsResourcePool) SnapshotPolicy() DataStackitSfsResourcePoolSnapshotPolicyOutputReference {
+	var returns DataStackitSfsResourcePoolSnapshotPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"snapshotPolicy",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitSfsResourcePool) SnapshotsAreVisible() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -407,7 +418,7 @@ func (j *jsiiProxy_DataStackitSfsResourcePool) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.95.0/docs/data-sources/sfs_resource_pool stackit_sfs_resource_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/data-sources/sfs_resource_pool stackit_sfs_resource_pool} Data Source.
 func NewDataStackitSfsResourcePool(scope constructs.Construct, id *string, config *DataStackitSfsResourcePoolConfig) DataStackitSfsResourcePool {
 	_init_.Initialize()
 
@@ -425,7 +436,7 @@ func NewDataStackitSfsResourcePool(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.95.0/docs/data-sources/sfs_resource_pool stackit_sfs_resource_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/data-sources/sfs_resource_pool stackit_sfs_resource_pool} Data Source.
 func NewDataStackitSfsResourcePool_Override(d DataStackitSfsResourcePool, scope constructs.Construct, id *string, config *DataStackitSfsResourcePoolConfig) {
 	_init_.Initialize()
 
