@@ -21,17 +21,17 @@ type AuthorizationOrganizationRoleAssignmentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Organization Resource to assign the role to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/authorization_organization_role_assignment#resource_id AuthorizationOrganizationRoleAssignment#resource_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/authorization_organization_role_assignment#resource_id AuthorizationOrganizationRoleAssignment#resource_id}
 	ResourceId *string `field:"required" json:"resourceId" yaml:"resourceId"`
 	// Role to be assigned. Available roles can be queried using stackit-cli: `stackit curl https://authorization.api.stackit.cloud/v2/permissions`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/authorization_organization_role_assignment#role AuthorizationOrganizationRoleAssignment#role}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/authorization_organization_role_assignment#role AuthorizationOrganizationRoleAssignment#role}
 	Role *string `field:"required" json:"role" yaml:"role"`
 	// Identifier of user, service account or client.
 	//
 	// Usually email address or name in case of clients. All letters must be lowercased.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/authorization_organization_role_assignment#subject AuthorizationOrganizationRoleAssignment#subject}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/authorization_organization_role_assignment#subject AuthorizationOrganizationRoleAssignment#subject}
 	Subject *string `field:"required" json:"subject" yaml:"subject"`
 }
 

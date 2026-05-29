@@ -412,6 +412,14 @@ func (j *jsiiProxy_ObservabilityCredential) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityCredential) validateSetRotateWhenChangedParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewObservabilityCredentialParameters(scope constructs.Construct, id *string, config *ObservabilityCredentialConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -116,6 +116,10 @@ func (j *jsiiProxy_SecretsmanagerUser) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_SecretsmanagerUser) validateSetRotateWhenChangedParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsmanagerUser) validateSetWriteEnabledParameters(val interface{}) error {
 	return nil
 }

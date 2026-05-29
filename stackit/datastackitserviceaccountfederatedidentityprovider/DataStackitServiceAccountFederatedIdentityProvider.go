@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/data-sources/service_account_federated_identity_provider stackit_service_account_federated_identity_provider}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/data-sources/service_account_federated_identity_provider stackit_service_account_federated_identity_provider}.
 type DataStackitServiceAccountFederatedIdentityProvider interface {
 	cdktf.TerraformDataSource
 	Assertions() DataStackitServiceAccountFederatedIdentityProviderAssertionsList
@@ -351,7 +351,7 @@ func (j *jsiiProxy_DataStackitServiceAccountFederatedIdentityProvider) Terraform
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/data-sources/service_account_federated_identity_provider stackit_service_account_federated_identity_provider} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/data-sources/service_account_federated_identity_provider stackit_service_account_federated_identity_provider} Data Source.
 func NewDataStackitServiceAccountFederatedIdentityProvider(scope constructs.Construct, id *string, config *DataStackitServiceAccountFederatedIdentityProviderConfig) DataStackitServiceAccountFederatedIdentityProvider {
 	_init_.Initialize()
 
@@ -369,7 +369,7 @@ func NewDataStackitServiceAccountFederatedIdentityProvider(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/data-sources/service_account_federated_identity_provider stackit_service_account_federated_identity_provider} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/data-sources/service_account_federated_identity_provider stackit_service_account_federated_identity_provider} Data Source.
 func NewDataStackitServiceAccountFederatedIdentityProvider_Override(d DataStackitServiceAccountFederatedIdentityProvider, scope constructs.Construct, id *string, config *DataStackitServiceAccountFederatedIdentityProviderConfig) {
 	_init_.Initialize()
 

@@ -120,6 +120,10 @@ func (j *jsiiProxy_PostgresflexUser) validateSetRolesParameters(val *[]*string) 
 	return nil
 }
 
+func (j *jsiiProxy_PostgresflexUser) validateSetRotateWhenChangedParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresflexUser) validateSetUsernameParameters(val *string) error {
 	return nil
 }

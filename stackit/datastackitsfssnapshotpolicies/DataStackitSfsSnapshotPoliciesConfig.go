@@ -21,13 +21,13 @@ type DataStackitSfsSnapshotPoliciesConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT project ID to which the snapshot policy is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/data-sources/sfs_snapshot_policies#project_id DataStackitSfsSnapshotPolicies#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/data-sources/sfs_snapshot_policies#project_id DataStackitSfsSnapshotPolicies#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Filter snapshot policies by immutability.
 	//
 	// Possible values are: `all`, `immutable-only`, `mutable-only`. Defaults to `all`. This attribute is in beta, may have breaking changes in the future.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/data-sources/sfs_snapshot_policies#immutable DataStackitSfsSnapshotPolicies#immutable}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/data-sources/sfs_snapshot_policies#immutable DataStackitSfsSnapshotPolicies#immutable}
 	Immutable *string `field:"optional" json:"immutable" yaml:"immutable"`
 }
 

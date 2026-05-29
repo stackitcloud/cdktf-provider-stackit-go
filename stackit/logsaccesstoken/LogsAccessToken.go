@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/logs_access_token stackit_logs_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/logs_access_token stackit_logs_access_token}.
 type LogsAccessToken interface {
 	cdktf.TerraformResource
 	AccessToken() *string
@@ -78,6 +78,9 @@ type LogsAccessToken interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	RotateWhenChanged() *map[string]*string
+	SetRotateWhenChanged(val *map[string]*string)
+	RotateWhenChangedInput() *map[string]*string
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -135,6 +138,7 @@ type LogsAccessToken interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetRotateWhenChanged()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -473,6 +477,26 @@ func (j *jsiiProxy_LogsAccessToken) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LogsAccessToken) RotateWhenChanged() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"rotateWhenChanged",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogsAccessToken) RotateWhenChangedInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"rotateWhenChangedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LogsAccessToken) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -524,7 +548,7 @@ func (j *jsiiProxy_LogsAccessToken) ValidUntil() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/logs_access_token stackit_logs_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/logs_access_token stackit_logs_access_token} Resource.
 func NewLogsAccessToken(scope constructs.Construct, id *string, config *LogsAccessTokenConfig) LogsAccessToken {
 	_init_.Initialize()
 
@@ -542,7 +566,7 @@ func NewLogsAccessToken(scope constructs.Construct, id *string, config *LogsAcce
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/logs_access_token stackit_logs_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/logs_access_token stackit_logs_access_token} Resource.
 func NewLogsAccessToken_Override(l LogsAccessToken, scope constructs.Construct, id *string, config *LogsAccessTokenConfig) {
 	_init_.Initialize()
 
@@ -694,6 +718,17 @@ func (j *jsiiProxy_LogsAccessToken)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogsAccessToken)SetRotateWhenChanged(val *map[string]*string) {
+	if err := j.validateSetRotateWhenChangedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotateWhenChanged",
 		val,
 	)
 }
@@ -1079,6 +1114,14 @@ func (l *jsiiProxy_LogsAccessToken) ResetRegion() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogsAccessToken) ResetRotateWhenChanged() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRotateWhenChanged",
 		nil, // no parameters
 	)
 }

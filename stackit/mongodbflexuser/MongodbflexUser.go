@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/mongodbflex_user stackit_mongodbflex_user}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/mongodbflex_user stackit_mongodbflex_user}.
 type MongodbflexUser interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -71,6 +71,9 @@ type MongodbflexUser interface {
 	Roles() *[]*string
 	SetRoles(val *[]*string)
 	RolesInput() *[]*string
+	RotateWhenChanged() *map[string]*string
+	SetRotateWhenChanged(val *map[string]*string)
+	RotateWhenChangedInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -129,6 +132,7 @@ type MongodbflexUser interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetRotateWhenChanged()
 	ResetUsername()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -418,6 +422,26 @@ func (j *jsiiProxy_MongodbflexUser) RolesInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_MongodbflexUser) RotateWhenChanged() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"rotateWhenChanged",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongodbflexUser) RotateWhenChangedInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"rotateWhenChangedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MongodbflexUser) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -489,7 +513,7 @@ func (j *jsiiProxy_MongodbflexUser) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/mongodbflex_user stackit_mongodbflex_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/mongodbflex_user stackit_mongodbflex_user} Resource.
 func NewMongodbflexUser(scope constructs.Construct, id *string, config *MongodbflexUserConfig) MongodbflexUser {
 	_init_.Initialize()
 
@@ -507,7 +531,7 @@ func NewMongodbflexUser(scope constructs.Construct, id *string, config *Mongodbf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/mongodbflex_user stackit_mongodbflex_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/mongodbflex_user stackit_mongodbflex_user} Resource.
 func NewMongodbflexUser_Override(m MongodbflexUser, scope constructs.Construct, id *string, config *MongodbflexUserConfig) {
 	_init_.Initialize()
 
@@ -637,6 +661,17 @@ func (j *jsiiProxy_MongodbflexUser)SetRoles(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"roles",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MongodbflexUser)SetRotateWhenChanged(val *map[string]*string) {
+	if err := j.validateSetRotateWhenChangedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotateWhenChanged",
 		val,
 	)
 }
@@ -1017,6 +1052,14 @@ func (m *jsiiProxy_MongodbflexUser) ResetRegion() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MongodbflexUser) ResetRotateWhenChanged() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRotateWhenChanged",
 		nil, // no parameters
 	)
 }

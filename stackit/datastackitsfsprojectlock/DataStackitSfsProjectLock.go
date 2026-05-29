@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/data-sources/sfs_project_lock stackit_sfs_project_lock}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/data-sources/sfs_project_lock stackit_sfs_project_lock}.
 type DataStackitSfsProjectLock interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -307,7 +307,7 @@ func (j *jsiiProxy_DataStackitSfsProjectLock) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/data-sources/sfs_project_lock stackit_sfs_project_lock} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/data-sources/sfs_project_lock stackit_sfs_project_lock} Data Source.
 func NewDataStackitSfsProjectLock(scope constructs.Construct, id *string, config *DataStackitSfsProjectLockConfig) DataStackitSfsProjectLock {
 	_init_.Initialize()
 
@@ -325,7 +325,7 @@ func NewDataStackitSfsProjectLock(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/data-sources/sfs_project_lock stackit_sfs_project_lock} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/data-sources/sfs_project_lock stackit_sfs_project_lock} Data Source.
 func NewDataStackitSfsProjectLock_Override(d DataStackitSfsProjectLock, scope constructs.Construct, id *string, config *DataStackitSfsProjectLockConfig) {
 	_init_.Initialize()
 

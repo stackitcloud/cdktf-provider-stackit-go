@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/sfs_share stackit_sfs_share}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/sfs_share stackit_sfs_share}.
 type SfsShare interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -40,6 +40,9 @@ type SfsShare interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -123,6 +126,7 @@ type SfsShare interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetExportPolicy()
+	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -250,6 +254,26 @@ func (j *jsiiProxy_SfsShare) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SfsShare) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SfsShare) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
 		&returns,
 	)
 	return returns
@@ -456,7 +480,7 @@ func (j *jsiiProxy_SfsShare) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/sfs_share stackit_sfs_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/sfs_share stackit_sfs_share} Resource.
 func NewSfsShare(scope constructs.Construct, id *string, config *SfsShareConfig) SfsShare {
 	_init_.Initialize()
 
@@ -474,7 +498,7 @@ func NewSfsShare(scope constructs.Construct, id *string, config *SfsShareConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/sfs_share stackit_sfs_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/sfs_share stackit_sfs_share} Resource.
 func NewSfsShare_Override(s SfsShare, scope constructs.Construct, id *string, config *SfsShareConfig) {
 	_init_.Initialize()
 
@@ -530,6 +554,17 @@ func (j *jsiiProxy_SfsShare)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SfsShare)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
 		val,
 	)
 }
@@ -976,6 +1011,14 @@ func (s *jsiiProxy_SfsShare) ResetExportPolicy() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetExportPolicy",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SfsShare) ResetLabels() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLabels",
 		nil, // no parameters
 	)
 }

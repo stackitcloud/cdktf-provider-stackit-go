@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/secretsmanager_user stackit_secretsmanager_user}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/secretsmanager_user stackit_secretsmanager_user}.
 type SecretsmanagerUser interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -63,6 +63,9 @@ type SecretsmanagerUser interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RotateWhenChanged() *map[string]*string
+	SetRotateWhenChanged(val *map[string]*string)
+	RotateWhenChangedInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -120,6 +123,7 @@ type SecretsmanagerUser interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRotateWhenChanged()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -348,6 +352,26 @@ func (j *jsiiProxy_SecretsmanagerUser) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SecretsmanagerUser) RotateWhenChanged() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"rotateWhenChanged",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsmanagerUser) RotateWhenChangedInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"rotateWhenChangedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecretsmanagerUser) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -419,7 +443,7 @@ func (j *jsiiProxy_SecretsmanagerUser) WriteEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/secretsmanager_user stackit_secretsmanager_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/secretsmanager_user stackit_secretsmanager_user} Resource.
 func NewSecretsmanagerUser(scope constructs.Construct, id *string, config *SecretsmanagerUserConfig) SecretsmanagerUser {
 	_init_.Initialize()
 
@@ -437,7 +461,7 @@ func NewSecretsmanagerUser(scope constructs.Construct, id *string, config *Secre
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/secretsmanager_user stackit_secretsmanager_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/secretsmanager_user stackit_secretsmanager_user} Resource.
 func NewSecretsmanagerUser_Override(s SecretsmanagerUser, scope constructs.Construct, id *string, config *SecretsmanagerUserConfig) {
 	_init_.Initialize()
 
@@ -545,6 +569,17 @@ func (j *jsiiProxy_SecretsmanagerUser)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsmanagerUser)SetRotateWhenChanged(val *map[string]*string) {
+	if err := j.validateSetRotateWhenChangedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotateWhenChanged",
 		val,
 	)
 }
@@ -917,6 +952,14 @@ func (s *jsiiProxy_SecretsmanagerUser) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsmanagerUser) ResetRotateWhenChanged() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRotateWhenChanged",
 		nil, // no parameters
 	)
 }

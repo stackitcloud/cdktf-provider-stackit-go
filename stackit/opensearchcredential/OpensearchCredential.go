@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/opensearch_credential stackit_opensearch_credential}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/opensearch_credential stackit_opensearch_credential}.
 type OpensearchCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -64,6 +64,9 @@ type OpensearchCredential interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RotateWhenChanged() *map[string]*string
+	SetRotateWhenChanged(val *map[string]*string)
+	RotateWhenChangedInput() *map[string]*string
 	Scheme() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -119,6 +122,7 @@ type OpensearchCredential interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRotateWhenChanged()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -367,6 +371,26 @@ func (j *jsiiProxy_OpensearchCredential) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_OpensearchCredential) RotateWhenChanged() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"rotateWhenChanged",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchCredential) RotateWhenChangedInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"rotateWhenChangedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OpensearchCredential) Scheme() *string {
 	var returns *string
 	_jsii_.Get(
@@ -428,7 +452,7 @@ func (j *jsiiProxy_OpensearchCredential) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/opensearch_credential stackit_opensearch_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/opensearch_credential stackit_opensearch_credential} Resource.
 func NewOpensearchCredential(scope constructs.Construct, id *string, config *OpensearchCredentialConfig) OpensearchCredential {
 	_init_.Initialize()
 
@@ -446,7 +470,7 @@ func NewOpensearchCredential(scope constructs.Construct, id *string, config *Ope
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/opensearch_credential stackit_opensearch_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/opensearch_credential stackit_opensearch_credential} Resource.
 func NewOpensearchCredential_Override(o OpensearchCredential, scope constructs.Construct, id *string, config *OpensearchCredentialConfig) {
 	_init_.Initialize()
 
@@ -543,6 +567,17 @@ func (j *jsiiProxy_OpensearchCredential)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpensearchCredential)SetRotateWhenChanged(val *map[string]*string) {
+	if err := j.validateSetRotateWhenChangedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotateWhenChanged",
 		val,
 	)
 }
@@ -904,6 +939,14 @@ func (o *jsiiProxy_OpensearchCredential) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchCredential) ResetRotateWhenChanged() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRotateWhenChanged",
 		nil, // no parameters
 	)
 }

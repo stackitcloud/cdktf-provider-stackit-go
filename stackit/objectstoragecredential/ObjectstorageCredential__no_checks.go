@@ -120,6 +120,10 @@ func (j *jsiiProxy_ObjectstorageCredential) validateSetRegionParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_ObjectstorageCredential) validateSetRotateWhenChangedParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewObjectstorageCredentialParameters(scope constructs.Construct, id *string, config *ObjectstorageCredentialConfig) error {
 	return nil
 }

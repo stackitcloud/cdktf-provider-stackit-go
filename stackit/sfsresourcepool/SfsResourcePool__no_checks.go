@@ -108,6 +108,10 @@ func (j *jsiiProxy_SfsResourcePool) validateSetIpAclParameters(val *[]*string) e
 	return nil
 }
 
+func (j *jsiiProxy_SfsResourcePool) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SfsResourcePool) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/mariadb_credential stackit_mariadb_credential}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/mariadb_credential stackit_mariadb_credential}.
 type MariadbCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -65,6 +65,9 @@ type MariadbCredential interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RotateWhenChanged() *map[string]*string
+	SetRotateWhenChanged(val *map[string]*string)
+	RotateWhenChangedInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -119,6 +122,7 @@ type MariadbCredential interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRotateWhenChanged()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -377,6 +381,26 @@ func (j *jsiiProxy_MariadbCredential) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MariadbCredential) RotateWhenChanged() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"rotateWhenChanged",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MariadbCredential) RotateWhenChangedInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"rotateWhenChangedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MariadbCredential) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -428,7 +452,7 @@ func (j *jsiiProxy_MariadbCredential) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/mariadb_credential stackit_mariadb_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/mariadb_credential stackit_mariadb_credential} Resource.
 func NewMariadbCredential(scope constructs.Construct, id *string, config *MariadbCredentialConfig) MariadbCredential {
 	_init_.Initialize()
 
@@ -446,7 +470,7 @@ func NewMariadbCredential(scope constructs.Construct, id *string, config *Mariad
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/mariadb_credential stackit_mariadb_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/mariadb_credential stackit_mariadb_credential} Resource.
 func NewMariadbCredential_Override(m MariadbCredential, scope constructs.Construct, id *string, config *MariadbCredentialConfig) {
 	_init_.Initialize()
 
@@ -543,6 +567,17 @@ func (j *jsiiProxy_MariadbCredential)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MariadbCredential)SetRotateWhenChanged(val *map[string]*string) {
+	if err := j.validateSetRotateWhenChangedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotateWhenChanged",
 		val,
 	)
 }
@@ -904,6 +939,14 @@ func (m *jsiiProxy_MariadbCredential) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MariadbCredential) ResetRotateWhenChanged() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRotateWhenChanged",
 		nil, // no parameters
 	)
 }

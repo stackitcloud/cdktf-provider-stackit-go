@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/sfs_export_policy stackit_sfs_export_policy}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/sfs_export_policy stackit_sfs_export_policy}.
 type SfsExportPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -37,6 +37,9 @@ type SfsExportPolicy interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -115,6 +118,7 @@ type SfsExportPolicy interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutRules(value interface{})
+	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -223,6 +227,26 @@ func (j *jsiiProxy_SfsExportPolicy) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SfsExportPolicy) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SfsExportPolicy) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
 		&returns,
 	)
 	return returns
@@ -399,7 +423,7 @@ func (j *jsiiProxy_SfsExportPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/sfs_export_policy stackit_sfs_export_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/sfs_export_policy stackit_sfs_export_policy} Resource.
 func NewSfsExportPolicy(scope constructs.Construct, id *string, config *SfsExportPolicyConfig) SfsExportPolicy {
 	_init_.Initialize()
 
@@ -417,7 +441,7 @@ func NewSfsExportPolicy(scope constructs.Construct, id *string, config *SfsExpor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/sfs_export_policy stackit_sfs_export_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/sfs_export_policy stackit_sfs_export_policy} Resource.
 func NewSfsExportPolicy_Override(s SfsExportPolicy, scope constructs.Construct, id *string, config *SfsExportPolicyConfig) {
 	_init_.Initialize()
 
@@ -462,6 +486,17 @@ func (j *jsiiProxy_SfsExportPolicy)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SfsExportPolicy)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
 		val,
 	)
 }
@@ -890,6 +925,14 @@ func (s *jsiiProxy_SfsExportPolicy) PutRules(value interface{}) {
 		s,
 		"putRules",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SfsExportPolicy) ResetLabels() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLabels",
+		nil, // no parameters
 	)
 }
 

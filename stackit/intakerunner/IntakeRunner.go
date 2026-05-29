@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/intake_runner stackit_intake_runner}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/intake_runner stackit_intake_runner}.
 type IntakeRunner interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -469,7 +469,7 @@ func (j *jsiiProxy_IntakeRunner) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/intake_runner stackit_intake_runner} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/intake_runner stackit_intake_runner} Resource.
 func NewIntakeRunner(scope constructs.Construct, id *string, config *IntakeRunnerConfig) IntakeRunner {
 	_init_.Initialize()
 
@@ -487,7 +487,7 @@ func NewIntakeRunner(scope constructs.Construct, id *string, config *IntakeRunne
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/intake_runner stackit_intake_runner} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/intake_runner stackit_intake_runner} Resource.
 func NewIntakeRunner_Override(i IntakeRunner, scope constructs.Construct, id *string, config *IntakeRunnerConfig) {
 	_init_.Initialize()
 

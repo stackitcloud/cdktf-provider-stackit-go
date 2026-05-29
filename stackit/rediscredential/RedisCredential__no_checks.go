@@ -112,6 +112,10 @@ func (j *jsiiProxy_RedisCredential) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_RedisCredential) validateSetRotateWhenChangedParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewRedisCredentialParameters(scope constructs.Construct, id *string, config *RedisCredentialConfig) error {
 	return nil
 }

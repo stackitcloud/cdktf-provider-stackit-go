@@ -116,6 +116,10 @@ func (j *jsiiProxy_ObservabilityCredential) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ObservabilityCredential) validateSetRotateWhenChangedParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewObservabilityCredentialParameters(scope constructs.Construct, id *string, config *ObservabilityCredentialConfig) error {
 	return nil
 }

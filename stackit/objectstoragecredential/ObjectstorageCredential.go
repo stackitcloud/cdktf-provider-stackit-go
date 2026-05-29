@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/objectstorage_credential stackit_objectstorage_credential}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/objectstorage_credential stackit_objectstorage_credential}.
 type ObjectstorageCredential interface {
 	cdktf.TerraformResource
 	AccessKey() *string
@@ -68,6 +68,9 @@ type ObjectstorageCredential interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	RotateWhenChanged() *map[string]*string
+	SetRotateWhenChanged(val *map[string]*string)
+	RotateWhenChangedInput() *map[string]*string
 	SecretAccessKey() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -123,6 +126,7 @@ type ObjectstorageCredential interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetRotateWhenChanged()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -391,6 +395,26 @@ func (j *jsiiProxy_ObjectstorageCredential) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ObjectstorageCredential) RotateWhenChanged() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"rotateWhenChanged",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ObjectstorageCredential) RotateWhenChangedInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"rotateWhenChangedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ObjectstorageCredential) SecretAccessKey() *string {
 	var returns *string
 	_jsii_.Get(
@@ -432,7 +456,7 @@ func (j *jsiiProxy_ObjectstorageCredential) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/objectstorage_credential stackit_objectstorage_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/objectstorage_credential stackit_objectstorage_credential} Resource.
 func NewObjectstorageCredential(scope constructs.Construct, id *string, config *ObjectstorageCredentialConfig) ObjectstorageCredential {
 	_init_.Initialize()
 
@@ -450,7 +474,7 @@ func NewObjectstorageCredential(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/objectstorage_credential stackit_objectstorage_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/objectstorage_credential stackit_objectstorage_credential} Resource.
 func NewObjectstorageCredential_Override(o ObjectstorageCredential, scope constructs.Construct, id *string, config *ObjectstorageCredentialConfig) {
 	_init_.Initialize()
 
@@ -569,6 +593,17 @@ func (j *jsiiProxy_ObjectstorageCredential)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ObjectstorageCredential)SetRotateWhenChanged(val *map[string]*string) {
+	if err := j.validateSetRotateWhenChangedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotateWhenChanged",
 		val,
 	)
 }
@@ -946,6 +981,14 @@ func (o *jsiiProxy_ObjectstorageCredential) ResetRegion() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_ObjectstorageCredential) ResetRotateWhenChanged() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRotateWhenChanged",
 		nil, // no parameters
 	)
 }

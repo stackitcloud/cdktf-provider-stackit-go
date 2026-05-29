@@ -21,17 +21,17 @@ type DataStackitDnsZoneConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT project ID to which the dns zone is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/data-sources/dns_zone#project_id DataStackitDnsZone#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/data-sources/dns_zone#project_id DataStackitDnsZone#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The zone name. E.g. `example.com` (must not end with a trailing dot).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/data-sources/dns_zone#dns_name DataStackitDnsZone#dns_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/data-sources/dns_zone#dns_name DataStackitDnsZone#dns_name}
 	DnsName *string `field:"optional" json:"dnsName" yaml:"dnsName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/data-sources/dns_zone#timeouts DataStackitDnsZone#timeouts}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/data-sources/dns_zone#timeouts DataStackitDnsZone#timeouts}.
 	Timeouts *DataStackitDnsZoneTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// The zone ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/data-sources/dns_zone#zone_id DataStackitDnsZone#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/data-sources/dns_zone#zone_id DataStackitDnsZone#zone_id}
 	ZoneId *string `field:"optional" json:"zoneId" yaml:"zoneId"`
 }
 

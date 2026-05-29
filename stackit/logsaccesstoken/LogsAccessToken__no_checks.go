@@ -132,6 +132,10 @@ func (j *jsiiProxy_LogsAccessToken) validateSetRegionParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_LogsAccessToken) validateSetRotateWhenChangedParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewLogsAccessTokenParameters(scope constructs.Construct, id *string, config *LogsAccessTokenConfig) error {
 	return nil
 }

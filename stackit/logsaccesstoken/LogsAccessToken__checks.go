@@ -444,6 +444,14 @@ func (j *jsiiProxy_LogsAccessToken) validateSetRegionParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_LogsAccessToken) validateSetRotateWhenChangedParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewLogsAccessTokenParameters(scope constructs.Construct, id *string, config *LogsAccessTokenConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -21,19 +21,19 @@ type ObjectstorageBucketConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The bucket name. It must be DNS conform.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/objectstorage_bucket#name ObjectstorageBucket#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/objectstorage_bucket#name ObjectstorageBucket#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// STACKIT Project ID to which the bucket is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/objectstorage_bucket#project_id ObjectstorageBucket#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/objectstorage_bucket#project_id ObjectstorageBucket#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Enable Object Lock on this bucket. Can only be set at creation time. Requires an active project-level compliance lock.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/objectstorage_bucket#object_lock ObjectstorageBucket#object_lock}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/objectstorage_bucket#object_lock ObjectstorageBucket#object_lock}
 	ObjectLock interface{} `field:"optional" json:"objectLock" yaml:"objectLock"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/objectstorage_bucket#region ObjectstorageBucket#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/objectstorage_bucket#region ObjectstorageBucket#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

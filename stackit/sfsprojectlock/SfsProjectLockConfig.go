@@ -21,11 +21,11 @@ type SfsProjectLockConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT Project ID to which the project lock is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/sfs_project_lock#project_id SfsProjectLock#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/sfs_project_lock#project_id SfsProjectLock#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/sfs_project_lock#region SfsProjectLock#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/sfs_project_lock#region SfsProjectLock#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

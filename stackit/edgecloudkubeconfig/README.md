@@ -1,3 +1,3 @@
 # `stackit_edgecloud_kubeconfig`
 
-Refer to the Terraform Registry for docs: [`stackit_edgecloud_kubeconfig`](https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/edgecloud_kubeconfig).
+Refer to the Terraform Registry for docs: [`stackit_edgecloud_kubeconfig`](https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/edgecloud_kubeconfig).

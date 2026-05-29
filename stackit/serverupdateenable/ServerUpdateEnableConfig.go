@@ -21,19 +21,19 @@ type ServerUpdateEnableConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT Project ID to which the server update enable is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/server_update_enable#project_id ServerUpdateEnable#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/server_update_enable#project_id ServerUpdateEnable#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Server ID to which the server update enable is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/server_update_enable#server_id ServerUpdateEnable#server_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/server_update_enable#server_id ServerUpdateEnable#server_id}
 	ServerId *string `field:"required" json:"serverId" yaml:"serverId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/server_update_enable#region ServerUpdateEnable#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/server_update_enable#region ServerUpdateEnable#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// The update policy ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/server_update_enable#update_policy_id ServerUpdateEnable#update_policy_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/server_update_enable#update_policy_id ServerUpdateEnable#update_policy_id}
 	UpdatePolicyId *string `field:"optional" json:"updatePolicyId" yaml:"updatePolicyId"`
 }
 

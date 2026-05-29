@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/data-sources/authorization_organization_custom_role stackit_authorization_organization_custom_role}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/data-sources/authorization_organization_custom_role stackit_authorization_organization_custom_role}.
 type DataStackitAuthorizationOrganizationCustomRole interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -328,7 +328,7 @@ func (j *jsiiProxy_DataStackitAuthorizationOrganizationCustomRole) TerraformReso
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/data-sources/authorization_organization_custom_role stackit_authorization_organization_custom_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/data-sources/authorization_organization_custom_role stackit_authorization_organization_custom_role} Data Source.
 func NewDataStackitAuthorizationOrganizationCustomRole(scope constructs.Construct, id *string, config *DataStackitAuthorizationOrganizationCustomRoleConfig) DataStackitAuthorizationOrganizationCustomRole {
 	_init_.Initialize()
 
@@ -346,7 +346,7 @@ func NewDataStackitAuthorizationOrganizationCustomRole(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/data-sources/authorization_organization_custom_role stackit_authorization_organization_custom_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/data-sources/authorization_organization_custom_role stackit_authorization_organization_custom_role} Data Source.
 func NewDataStackitAuthorizationOrganizationCustomRole_Override(d DataStackitAuthorizationOrganizationCustomRole, scope constructs.Construct, id *string, config *DataStackitAuthorizationOrganizationCustomRoleConfig) {
 	_init_.Initialize()
 

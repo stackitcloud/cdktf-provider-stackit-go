@@ -100,6 +100,10 @@ func (j *jsiiProxy_SfsShare) validateSetExportPolicyParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_SfsShare) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SfsShare) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

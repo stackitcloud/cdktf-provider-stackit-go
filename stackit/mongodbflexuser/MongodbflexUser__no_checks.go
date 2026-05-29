@@ -124,6 +124,10 @@ func (j *jsiiProxy_MongodbflexUser) validateSetRolesParameters(val *[]*string) e
 	return nil
 }
 
+func (j *jsiiProxy_MongodbflexUser) validateSetRotateWhenChangedParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MongodbflexUser) validateSetUsernameParameters(val *string) error {
 	return nil
 }

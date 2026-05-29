@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/sfs_resource_pool stackit_sfs_resource_pool}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/sfs_resource_pool stackit_sfs_resource_pool}.
 type SfsResourcePool interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -43,6 +43,9 @@ type SfsResourcePool interface {
 	IpAcl() *[]*string
 	SetIpAcl(val *[]*string)
 	IpAclInput() *[]*string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -130,6 +133,7 @@ type SfsResourcePool interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutSnapshotPolicy(value *SfsResourcePoolSnapshotPolicy)
+	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -279,6 +283,26 @@ func (j *jsiiProxy_SfsResourcePool) IpAclInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"ipAclInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SfsResourcePool) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SfsResourcePool) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
 		&returns,
 	)
 	return returns
@@ -515,7 +539,7 @@ func (j *jsiiProxy_SfsResourcePool) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/sfs_resource_pool stackit_sfs_resource_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/sfs_resource_pool stackit_sfs_resource_pool} Resource.
 func NewSfsResourcePool(scope constructs.Construct, id *string, config *SfsResourcePoolConfig) SfsResourcePool {
 	_init_.Initialize()
 
@@ -533,7 +557,7 @@ func NewSfsResourcePool(scope constructs.Construct, id *string, config *SfsResou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/sfs_resource_pool stackit_sfs_resource_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/sfs_resource_pool stackit_sfs_resource_pool} Resource.
 func NewSfsResourcePool_Override(s SfsResourcePool, scope constructs.Construct, id *string, config *SfsResourcePoolConfig) {
 	_init_.Initialize()
 
@@ -600,6 +624,17 @@ func (j *jsiiProxy_SfsResourcePool)SetIpAcl(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"ipAcl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SfsResourcePool)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
 		val,
 	)
 }
@@ -1061,6 +1096,14 @@ func (s *jsiiProxy_SfsResourcePool) PutSnapshotPolicy(value *SfsResourcePoolSnap
 		s,
 		"putSnapshotPolicy",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SfsResourcePool) ResetLabels() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLabels",
+		nil, // no parameters
 	)
 }
 

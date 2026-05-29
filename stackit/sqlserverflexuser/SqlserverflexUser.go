@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/sqlserverflex_user stackit_sqlserverflex_user}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/sqlserverflex_user stackit_sqlserverflex_user}.
 type SqlserverflexUser interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -68,6 +68,9 @@ type SqlserverflexUser interface {
 	Roles() *[]*string
 	SetRoles(val *[]*string)
 	RolesInput() *[]*string
+	RotateWhenChanged() *map[string]*string
+	SetRotateWhenChanged(val *map[string]*string)
+	RotateWhenChangedInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -125,6 +128,7 @@ type SqlserverflexUser interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetRotateWhenChanged()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -393,6 +397,26 @@ func (j *jsiiProxy_SqlserverflexUser) RolesInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_SqlserverflexUser) RotateWhenChanged() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"rotateWhenChanged",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlserverflexUser) RotateWhenChangedInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"rotateWhenChangedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlserverflexUser) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -454,7 +478,7 @@ func (j *jsiiProxy_SqlserverflexUser) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/sqlserverflex_user stackit_sqlserverflex_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/sqlserverflex_user stackit_sqlserverflex_user} Resource.
 func NewSqlserverflexUser(scope constructs.Construct, id *string, config *SqlserverflexUserConfig) SqlserverflexUser {
 	_init_.Initialize()
 
@@ -472,7 +496,7 @@ func NewSqlserverflexUser(scope constructs.Construct, id *string, config *Sqlser
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.96.0/docs/resources/sqlserverflex_user stackit_sqlserverflex_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/sqlserverflex_user stackit_sqlserverflex_user} Resource.
 func NewSqlserverflexUser_Override(s SqlserverflexUser, scope constructs.Construct, id *string, config *SqlserverflexUserConfig) {
 	_init_.Initialize()
 
@@ -591,6 +615,17 @@ func (j *jsiiProxy_SqlserverflexUser)SetRoles(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"roles",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlserverflexUser)SetRotateWhenChanged(val *map[string]*string) {
+	if err := j.validateSetRotateWhenChangedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotateWhenChanged",
 		val,
 	)
 }
@@ -971,6 +1006,14 @@ func (s *jsiiProxy_SqlserverflexUser) ResetRegion() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlserverflexUser) ResetRotateWhenChanged() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRotateWhenChanged",
 		nil, // no parameters
 	)
 }
