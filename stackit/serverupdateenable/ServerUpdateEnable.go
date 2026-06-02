@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/server_update_enable stackit_server_update_enable}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/server_update_enable stackit_server_update_enable}.
 type ServerUpdateEnable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -399,7 +399,7 @@ func (j *jsiiProxy_ServerUpdateEnable) UpdatePolicyIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/server_update_enable stackit_server_update_enable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/server_update_enable stackit_server_update_enable} Resource.
 func NewServerUpdateEnable(scope constructs.Construct, id *string, config *ServerUpdateEnableConfig) ServerUpdateEnable {
 	_init_.Initialize()
 
@@ -417,7 +417,7 @@ func NewServerUpdateEnable(scope constructs.Construct, id *string, config *Serve
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/server_update_enable stackit_server_update_enable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/server_update_enable stackit_server_update_enable} Resource.
 func NewServerUpdateEnable_Override(s ServerUpdateEnable, scope constructs.Construct, id *string, config *ServerUpdateEnableConfig) {
 	_init_.Initialize()
 

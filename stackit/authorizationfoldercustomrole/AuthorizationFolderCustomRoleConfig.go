@@ -21,19 +21,19 @@ type AuthorizationFolderCustomRoleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A human readable description of the role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/authorization_folder_custom_role#description AuthorizationFolderCustomRole#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/authorization_folder_custom_role#description AuthorizationFolderCustomRole#description}
 	Description *string `field:"required" json:"description" yaml:"description"`
 	// Name of the role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/authorization_folder_custom_role#name AuthorizationFolderCustomRole#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/authorization_folder_custom_role#name AuthorizationFolderCustomRole#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Permissions for the role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/authorization_folder_custom_role#permissions AuthorizationFolderCustomRole#permissions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/authorization_folder_custom_role#permissions AuthorizationFolderCustomRole#permissions}
 	Permissions *[]*string `field:"required" json:"permissions" yaml:"permissions"`
 	// Resource to add the custom role to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/authorization_folder_custom_role#resource_id AuthorizationFolderCustomRole#resource_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/authorization_folder_custom_role#resource_id AuthorizationFolderCustomRole#resource_id}
 	ResourceId *string `field:"required" json:"resourceId" yaml:"resourceId"`
 }
 

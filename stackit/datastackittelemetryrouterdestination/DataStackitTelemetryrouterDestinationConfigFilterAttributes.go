@@ -1,0 +1,6 @@
+package datastackittelemetryrouterdestination
+
+
+type DataStackitTelemetryrouterDestinationConfigFilterAttributes struct {
+}
+

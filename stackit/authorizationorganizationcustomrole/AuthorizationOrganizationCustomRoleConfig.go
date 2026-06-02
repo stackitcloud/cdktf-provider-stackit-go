@@ -21,19 +21,19 @@ type AuthorizationOrganizationCustomRoleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A human readable description of the role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/authorization_organization_custom_role#description AuthorizationOrganizationCustomRole#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/authorization_organization_custom_role#description AuthorizationOrganizationCustomRole#description}
 	Description *string `field:"required" json:"description" yaml:"description"`
 	// Name of the role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/authorization_organization_custom_role#name AuthorizationOrganizationCustomRole#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/authorization_organization_custom_role#name AuthorizationOrganizationCustomRole#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Permissions for the role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/authorization_organization_custom_role#permissions AuthorizationOrganizationCustomRole#permissions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/authorization_organization_custom_role#permissions AuthorizationOrganizationCustomRole#permissions}
 	Permissions *[]*string `field:"required" json:"permissions" yaml:"permissions"`
 	// Resource to add the custom role to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/authorization_organization_custom_role#resource_id AuthorizationOrganizationCustomRole#resource_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/authorization_organization_custom_role#resource_id AuthorizationOrganizationCustomRole#resource_id}
 	ResourceId *string `field:"required" json:"resourceId" yaml:"resourceId"`
 }
 

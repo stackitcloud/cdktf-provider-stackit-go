@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs stackit}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs stackit}.
 type StackitProvider interface {
 	cdktf.TerraformProvider
 	AlbCertificatesCustomEndpoint() *string
@@ -170,6 +170,12 @@ type StackitProvider interface {
 	SqlserverflexCustomEndpoint() *string
 	SetSqlserverflexCustomEndpoint(val *string)
 	SqlserverflexCustomEndpointInput() *string
+	TelemetrylinkCustomEndpoint() *string
+	SetTelemetrylinkCustomEndpoint(val *string)
+	TelemetrylinkCustomEndpointInput() *string
+	TelemetryrouterCustomEndpoint() *string
+	SetTelemetryrouterCustomEndpoint(val *string)
+	TelemetryrouterCustomEndpointInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -238,6 +244,8 @@ type StackitProvider interface {
 	ResetSfsCustomEndpoint()
 	ResetSkeCustomEndpoint()
 	ResetSqlserverflexCustomEndpoint()
+	ResetTelemetrylinkCustomEndpoint()
+	ResetTelemetryrouterCustomEndpoint()
 	ResetTokenCustomEndpoint()
 	ResetUseOidc()
 	SynthesizeAttributes() *map[string]interface{}
@@ -1288,6 +1296,46 @@ func (j *jsiiProxy_StackitProvider) SqlserverflexCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StackitProvider) TelemetrylinkCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"telemetrylinkCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) TelemetrylinkCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"telemetrylinkCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) TelemetryrouterCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"telemetryrouterCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) TelemetryrouterCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"telemetryrouterCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StackitProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -1359,7 +1407,7 @@ func (j *jsiiProxy_StackitProvider) UseOidcInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs stackit} Resource.
 func NewStackitProvider(scope constructs.Construct, id *string, config *StackitProviderConfig) StackitProvider {
 	_init_.Initialize()
 
@@ -1377,7 +1425,7 @@ func NewStackitProvider(scope constructs.Construct, id *string, config *StackitP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs stackit} Resource.
 func NewStackitProvider_Override(s StackitProvider, scope constructs.Construct, id *string, config *StackitProviderConfig) {
 	_init_.Initialize()
 
@@ -1771,6 +1819,22 @@ func (j *jsiiProxy_StackitProvider)SetSqlserverflexCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"sqlserverflexCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StackitProvider)SetTelemetrylinkCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"telemetrylinkCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StackitProvider)SetTelemetryrouterCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"telemetryrouterCustomEndpoint",
 		val,
 	)
 }
@@ -2307,6 +2371,22 @@ func (s *jsiiProxy_StackitProvider) ResetSqlserverflexCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSqlserverflexCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StackitProvider) ResetTelemetrylinkCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTelemetrylinkCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StackitProvider) ResetTelemetryrouterCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTelemetryrouterCustomEndpoint",
 		nil, // no parameters
 	)
 }

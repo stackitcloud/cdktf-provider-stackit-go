@@ -21,17 +21,17 @@ type AuthorizationServiceAccountRoleAssignmentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Service-account Resource to assign the role to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/authorization_service_account_role_assignment#resource_id AuthorizationServiceAccountRoleAssignment#resource_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/authorization_service_account_role_assignment#resource_id AuthorizationServiceAccountRoleAssignment#resource_id}
 	ResourceId *string `field:"required" json:"resourceId" yaml:"resourceId"`
 	// Role to be assigned. Available roles can be queried using stackit-cli: `stackit curl https://authorization.api.stackit.cloud/v2/permissions`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/authorization_service_account_role_assignment#role AuthorizationServiceAccountRoleAssignment#role}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/authorization_service_account_role_assignment#role AuthorizationServiceAccountRoleAssignment#role}
 	Role *string `field:"required" json:"role" yaml:"role"`
 	// Identifier of user, service account or client.
 	//
 	// Usually email address or name in case of clients. All letters must be lowercased.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.97.0/docs/resources/authorization_service_account_role_assignment#subject AuthorizationServiceAccountRoleAssignment#subject}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/authorization_service_account_role_assignment#subject AuthorizationServiceAccountRoleAssignment#subject}
 	Subject *string `field:"required" json:"subject" yaml:"subject"`
 }
 

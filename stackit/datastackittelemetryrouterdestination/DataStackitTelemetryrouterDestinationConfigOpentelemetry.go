@@ -1,0 +1,6 @@
+package datastackittelemetryrouterdestination
+
+
+type DataStackitTelemetryrouterDestinationConfigOpentelemetry struct {
+}
+
