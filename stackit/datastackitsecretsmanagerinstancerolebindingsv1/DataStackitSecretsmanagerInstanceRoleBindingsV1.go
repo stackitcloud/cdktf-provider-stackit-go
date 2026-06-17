@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/data-sources/secretsmanager_instance_role_bindings_v1 stackit_secretsmanager_instance_role_bindings_v1}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/data-sources/secretsmanager_instance_role_bindings_v1 stackit_secretsmanager_instance_role_bindings_v1}.
 type DataStackitSecretsmanagerInstanceRoleBindingsV1 interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -307,7 +307,7 @@ func (j *jsiiProxy_DataStackitSecretsmanagerInstanceRoleBindingsV1) TerraformRes
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/data-sources/secretsmanager_instance_role_bindings_v1 stackit_secretsmanager_instance_role_bindings_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/data-sources/secretsmanager_instance_role_bindings_v1 stackit_secretsmanager_instance_role_bindings_v1} Data Source.
 func NewDataStackitSecretsmanagerInstanceRoleBindingsV1(scope constructs.Construct, id *string, config *DataStackitSecretsmanagerInstanceRoleBindingsV1Config) DataStackitSecretsmanagerInstanceRoleBindingsV1 {
 	_init_.Initialize()
 
@@ -325,7 +325,7 @@ func NewDataStackitSecretsmanagerInstanceRoleBindingsV1(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/data-sources/secretsmanager_instance_role_bindings_v1 stackit_secretsmanager_instance_role_bindings_v1} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/data-sources/secretsmanager_instance_role_bindings_v1 stackit_secretsmanager_instance_role_bindings_v1} Data Source.
 func NewDataStackitSecretsmanagerInstanceRoleBindingsV1_Override(d DataStackitSecretsmanagerInstanceRoleBindingsV1, scope constructs.Construct, id *string, config *DataStackitSecretsmanagerInstanceRoleBindingsV1Config) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/data-sources/sfs_snapshot_policies stackit_sfs_snapshot_policies}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/data-sources/sfs_snapshot_policies stackit_sfs_snapshot_policies}.
 type DataStackitSfsSnapshotPolicies interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -307,7 +307,7 @@ func (j *jsiiProxy_DataStackitSfsSnapshotPolicies) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/data-sources/sfs_snapshot_policies stackit_sfs_snapshot_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/data-sources/sfs_snapshot_policies stackit_sfs_snapshot_policies} Data Source.
 func NewDataStackitSfsSnapshotPolicies(scope constructs.Construct, id *string, config *DataStackitSfsSnapshotPoliciesConfig) DataStackitSfsSnapshotPolicies {
 	_init_.Initialize()
 
@@ -325,7 +325,7 @@ func NewDataStackitSfsSnapshotPolicies(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/data-sources/sfs_snapshot_policies stackit_sfs_snapshot_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/data-sources/sfs_snapshot_policies stackit_sfs_snapshot_policies} Data Source.
 func NewDataStackitSfsSnapshotPolicies_Override(d DataStackitSfsSnapshotPolicies, scope constructs.Construct, id *string, config *DataStackitSfsSnapshotPoliciesConfig) {
 	_init_.Initialize()
 

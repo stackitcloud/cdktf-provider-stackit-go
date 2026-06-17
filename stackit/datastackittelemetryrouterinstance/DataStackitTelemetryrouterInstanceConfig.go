@@ -21,15 +21,15 @@ type DataStackitTelemetryrouterInstanceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The TelemetryRouter instance ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/data-sources/telemetryrouter_instance#instance_id DataStackitTelemetryrouterInstance#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/data-sources/telemetryrouter_instance#instance_id DataStackitTelemetryrouterInstance#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// STACKIT project ID associated with the TelemetryRouter instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/data-sources/telemetryrouter_instance#project_id DataStackitTelemetryrouterInstance#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/data-sources/telemetryrouter_instance#project_id DataStackitTelemetryrouterInstance#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// STACKIT region name the resource is located in. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/data-sources/telemetryrouter_instance#region DataStackitTelemetryrouterInstance#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/data-sources/telemetryrouter_instance#region DataStackitTelemetryrouterInstance#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/service_account_federated_identity_provider stackit_service_account_federated_identity_provider}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/resources/service_account_federated_identity_provider stackit_service_account_federated_identity_provider}.
 type ServiceAccountFederatedIdentityProvider interface {
 	cdktf.TerraformResource
 	Assertions() ServiceAccountFederatedIdentityProviderAssertionsList
@@ -420,7 +420,7 @@ func (j *jsiiProxy_ServiceAccountFederatedIdentityProvider) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/service_account_federated_identity_provider stackit_service_account_federated_identity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/resources/service_account_federated_identity_provider stackit_service_account_federated_identity_provider} Resource.
 func NewServiceAccountFederatedIdentityProvider(scope constructs.Construct, id *string, config *ServiceAccountFederatedIdentityProviderConfig) ServiceAccountFederatedIdentityProvider {
 	_init_.Initialize()
 
@@ -438,7 +438,7 @@ func NewServiceAccountFederatedIdentityProvider(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/service_account_federated_identity_provider stackit_service_account_federated_identity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/resources/service_account_federated_identity_provider stackit_service_account_federated_identity_provider} Resource.
 func NewServiceAccountFederatedIdentityProvider_Override(s ServiceAccountFederatedIdentityProvider, scope constructs.Construct, id *string, config *ServiceAccountFederatedIdentityProviderConfig) {
 	_init_.Initialize()
 

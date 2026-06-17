@@ -21,11 +21,11 @@ type DataStackitObjectstorageComplianceLockConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT Project ID to which the compliance lock is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/data-sources/objectstorage_compliance_lock#project_id DataStackitObjectstorageComplianceLock#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/data-sources/objectstorage_compliance_lock#project_id DataStackitObjectstorageComplianceLock#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/data-sources/objectstorage_compliance_lock#region DataStackitObjectstorageComplianceLock#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/data-sources/objectstorage_compliance_lock#region DataStackitObjectstorageComplianceLock#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

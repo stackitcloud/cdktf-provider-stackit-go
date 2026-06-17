@@ -30,6 +30,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "defaultRegionInput", GoGetter: "DefaultRegionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dnsCustomEndpoint", GoGetter: "DnsCustomEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "dnsCustomEndpointInput", GoGetter: "DnsCustomEndpointInput"},
+			_jsii_.MemberProperty{JsiiProperty: "dremioCustomEndpoint", GoGetter: "DremioCustomEndpoint"},
+			_jsii_.MemberProperty{JsiiProperty: "dremioCustomEndpointInput", GoGetter: "DremioCustomEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "edgecloudCustomEndpoint", GoGetter: "EdgecloudCustomEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "edgecloudCustomEndpointInput", GoGetter: "EdgecloudCustomEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "enableBetaResources", GoGetter: "EnableBetaResources"},
@@ -92,6 +94,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCredentialsPath", GoMethod: "ResetCredentialsPath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultRegion", GoMethod: "ResetDefaultRegion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDnsCustomEndpoint", GoMethod: "ResetDnsCustomEndpoint"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDremioCustomEndpoint", GoMethod: "ResetDremioCustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEdgecloudCustomEndpoint", GoMethod: "ResetEdgecloudCustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableBetaResources", GoMethod: "ResetEnableBetaResources"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExperiments", GoMethod: "ResetExperiments"},
@@ -137,6 +140,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTelemetryrouterCustomEndpoint", GoMethod: "ResetTelemetryrouterCustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTokenCustomEndpoint", GoMethod: "ResetTokenCustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUseOidc", GoMethod: "ResetUseOidc"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVpnCustomEndpoint", GoMethod: "ResetVpnCustomEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "resourcemanagerCustomEndpoint", GoGetter: "ResourcemanagerCustomEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "resourcemanagerCustomEndpointInput", GoGetter: "ResourcemanagerCustomEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "scfCustomEndpoint", GoGetter: "ScfCustomEndpoint"},
@@ -186,6 +190,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "useOidc", GoGetter: "UseOidc"},
 			_jsii_.MemberProperty{JsiiProperty: "useOidcInput", GoGetter: "UseOidcInput"},
+			_jsii_.MemberProperty{JsiiProperty: "vpnCustomEndpoint", GoGetter: "VpnCustomEndpoint"},
+			_jsii_.MemberProperty{JsiiProperty: "vpnCustomEndpointInput", GoGetter: "VpnCustomEndpointInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_StackitProvider{}

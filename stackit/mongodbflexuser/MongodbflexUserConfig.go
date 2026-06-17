@@ -19,31 +19,31 @@ type MongodbflexUserConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/mongodbflex_user#database MongodbflexUser#database}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/resources/mongodbflex_user#database MongodbflexUser#database}.
 	Database *string `field:"required" json:"database" yaml:"database"`
 	// ID of the MongoDB Flex instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/mongodbflex_user#instance_id MongodbflexUser#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/resources/mongodbflex_user#instance_id MongodbflexUser#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// STACKIT project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/mongodbflex_user#project_id MongodbflexUser#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/resources/mongodbflex_user#project_id MongodbflexUser#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Database access levels for the user. Some of the possible values are: [`read`, `readWrite`, `readWriteAnyDatabase`].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/mongodbflex_user#roles MongodbflexUser#roles}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/resources/mongodbflex_user#roles MongodbflexUser#roles}
 	Roles *[]*string `field:"required" json:"roles" yaml:"roles"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/mongodbflex_user#region MongodbflexUser#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/resources/mongodbflex_user#region MongodbflexUser#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// A map of arbitrary key/value pairs that will force recreation of the resource when they change, enabling resource rotation based on external conditions such as a rotating timestamp.
 	//
 	// Changing this forces a new resource to be created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/mongodbflex_user#rotate_when_changed MongodbflexUser#rotate_when_changed}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/resources/mongodbflex_user#rotate_when_changed MongodbflexUser#rotate_when_changed}
 	RotateWhenChanged *map[string]*string `field:"optional" json:"rotateWhenChanged" yaml:"rotateWhenChanged"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/mongodbflex_user#username MongodbflexUser#username}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/resources/mongodbflex_user#username MongodbflexUser#username}.
 	Username *string `field:"optional" json:"username" yaml:"username"`
 }
 

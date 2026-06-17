@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/data-sources/authorization_folder_custom_role stackit_authorization_folder_custom_role}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/data-sources/authorization_folder_custom_role stackit_authorization_folder_custom_role}.
 type DataStackitAuthorizationFolderCustomRole interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -328,7 +328,7 @@ func (j *jsiiProxy_DataStackitAuthorizationFolderCustomRole) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/data-sources/authorization_folder_custom_role stackit_authorization_folder_custom_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/data-sources/authorization_folder_custom_role stackit_authorization_folder_custom_role} Data Source.
 func NewDataStackitAuthorizationFolderCustomRole(scope constructs.Construct, id *string, config *DataStackitAuthorizationFolderCustomRoleConfig) DataStackitAuthorizationFolderCustomRole {
 	_init_.Initialize()
 
@@ -346,7 +346,7 @@ func NewDataStackitAuthorizationFolderCustomRole(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/data-sources/authorization_folder_custom_role stackit_authorization_folder_custom_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/data-sources/authorization_folder_custom_role stackit_authorization_folder_custom_role} Data Source.
 func NewDataStackitAuthorizationFolderCustomRole_Override(d DataStackitAuthorizationFolderCustomRole, scope constructs.Construct, id *string, config *DataStackitAuthorizationFolderCustomRoleConfig) {
 	_init_.Initialize()
 

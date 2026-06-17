@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs stackit}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs stackit}.
 type StackitProvider interface {
 	cdktf.TerraformProvider
 	AlbCertificatesCustomEndpoint() *string
@@ -40,6 +40,9 @@ type StackitProvider interface {
 	DnsCustomEndpoint() *string
 	SetDnsCustomEndpoint(val *string)
 	DnsCustomEndpointInput() *string
+	DremioCustomEndpoint() *string
+	SetDremioCustomEndpoint(val *string)
+	DremioCustomEndpointInput() *string
 	EdgecloudCustomEndpoint() *string
 	SetEdgecloudCustomEndpoint(val *string)
 	EdgecloudCustomEndpointInput() *string
@@ -188,6 +191,9 @@ type StackitProvider interface {
 	UseOidc() interface{}
 	SetUseOidc(val interface{})
 	UseOidcInput() interface{}
+	VpnCustomEndpoint() *string
+	SetVpnCustomEndpoint(val *string)
+	VpnCustomEndpointInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
@@ -201,6 +207,7 @@ type StackitProvider interface {
 	ResetCredentialsPath()
 	ResetDefaultRegion()
 	ResetDnsCustomEndpoint()
+	ResetDremioCustomEndpoint()
 	ResetEdgecloudCustomEndpoint()
 	ResetEnableBetaResources()
 	ResetExperiments()
@@ -248,6 +255,7 @@ type StackitProvider interface {
 	ResetTelemetryrouterCustomEndpoint()
 	ResetTokenCustomEndpoint()
 	ResetUseOidc()
+	ResetVpnCustomEndpoint()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -441,6 +449,26 @@ func (j *jsiiProxy_StackitProvider) DnsCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"dnsCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) DremioCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dremioCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) DremioCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dremioCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -1406,8 +1434,28 @@ func (j *jsiiProxy_StackitProvider) UseOidcInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_StackitProvider) VpnCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vpnCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs stackit} Resource.
+func (j *jsiiProxy_StackitProvider) VpnCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vpnCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs stackit} Resource.
 func NewStackitProvider(scope constructs.Construct, id *string, config *StackitProviderConfig) StackitProvider {
 	_init_.Initialize()
 
@@ -1425,7 +1473,7 @@ func NewStackitProvider(scope constructs.Construct, id *string, config *StackitP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs stackit} Resource.
 func NewStackitProvider_Override(s StackitProvider, scope constructs.Construct, id *string, config *StackitProviderConfig) {
 	_init_.Initialize()
 
@@ -1496,6 +1544,14 @@ func (j *jsiiProxy_StackitProvider)SetDnsCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"dnsCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StackitProvider)SetDremioCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"dremioCustomEndpoint",
 		val,
 	)
 }
@@ -1858,6 +1914,14 @@ func (j *jsiiProxy_StackitProvider)SetUseOidc(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_StackitProvider)SetVpnCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"vpnCustomEndpoint",
+		val,
+	)
+}
+
 // Generates CDKTF code for importing a StackitProvider resource upon running "cdktf plan <stack-name>".
 func StackitProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
 	_init_.Initialize()
@@ -2043,6 +2107,14 @@ func (s *jsiiProxy_StackitProvider) ResetDnsCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDnsCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StackitProvider) ResetDremioCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDremioCustomEndpoint",
 		nil, // no parameters
 	)
 }
@@ -2403,6 +2475,14 @@ func (s *jsiiProxy_StackitProvider) ResetUseOidc() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetUseOidc",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StackitProvider) ResetVpnCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetVpnCustomEndpoint",
 		nil, // no parameters
 	)
 }

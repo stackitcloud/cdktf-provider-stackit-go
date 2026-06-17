@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/authorization_organization_custom_role stackit_authorization_organization_custom_role}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/resources/authorization_organization_custom_role stackit_authorization_organization_custom_role}.
 type AuthorizationOrganizationCustomRole interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -397,7 +397,7 @@ func (j *jsiiProxy_AuthorizationOrganizationCustomRole) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/authorization_organization_custom_role stackit_authorization_organization_custom_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/resources/authorization_organization_custom_role stackit_authorization_organization_custom_role} Resource.
 func NewAuthorizationOrganizationCustomRole(scope constructs.Construct, id *string, config *AuthorizationOrganizationCustomRoleConfig) AuthorizationOrganizationCustomRole {
 	_init_.Initialize()
 
@@ -415,7 +415,7 @@ func NewAuthorizationOrganizationCustomRole(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.98.0/docs/resources/authorization_organization_custom_role stackit_authorization_organization_custom_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/resources/authorization_organization_custom_role stackit_authorization_organization_custom_role} Resource.
 func NewAuthorizationOrganizationCustomRole_Override(a AuthorizationOrganizationCustomRole, scope constructs.Construct, id *string, config *AuthorizationOrganizationCustomRoleConfig) {
 	_init_.Initialize()
 
