@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/data-sources/telemetrylink stackit_telemetrylink}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/data-sources/telemetrylink stackit_telemetrylink}.
 type DataStackitTelemetrylink interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -374,7 +374,7 @@ func (j *jsiiProxy_DataStackitTelemetrylink) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/data-sources/telemetrylink stackit_telemetrylink} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/data-sources/telemetrylink stackit_telemetrylink} Data Source.
 func NewDataStackitTelemetrylink(scope constructs.Construct, id *string, config *DataStackitTelemetrylinkConfig) DataStackitTelemetrylink {
 	_init_.Initialize()
 
@@ -392,7 +392,7 @@ func NewDataStackitTelemetrylink(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/data-sources/telemetrylink stackit_telemetrylink} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/data-sources/telemetrylink stackit_telemetrylink} Data Source.
 func NewDataStackitTelemetrylink_Override(d DataStackitTelemetrylink, scope constructs.Construct, id *string, config *DataStackitTelemetrylinkConfig) {
 	_init_.Initialize()
 

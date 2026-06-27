@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/data-sources/alb_certificate stackit_alb_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/data-sources/alb_certificate stackit_alb_certificate}.
 type DataStackitAlbCertificate interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -328,7 +328,7 @@ func (j *jsiiProxy_DataStackitAlbCertificate) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/data-sources/alb_certificate stackit_alb_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/data-sources/alb_certificate stackit_alb_certificate} Data Source.
 func NewDataStackitAlbCertificate(scope constructs.Construct, id *string, config *DataStackitAlbCertificateConfig) DataStackitAlbCertificate {
 	_init_.Initialize()
 
@@ -346,7 +346,7 @@ func NewDataStackitAlbCertificate(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/data-sources/alb_certificate stackit_alb_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/data-sources/alb_certificate stackit_alb_certificate} Data Source.
 func NewDataStackitAlbCertificate_Override(d DataStackitAlbCertificate, scope constructs.Construct, id *string, config *DataStackitAlbCertificateConfig) {
 	_init_.Initialize()
 

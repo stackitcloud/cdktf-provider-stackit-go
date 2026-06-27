@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/resources/secretsmanager_instance_role_binding_v1 stackit_secretsmanager_instance_role_binding_v1}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/resources/secretsmanager_instance_role_binding_v1 stackit_secretsmanager_instance_role_binding_v1}.
 type SecretsmanagerInstanceRoleBindingV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -387,7 +387,7 @@ func (j *jsiiProxy_SecretsmanagerInstanceRoleBindingV1) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/resources/secretsmanager_instance_role_binding_v1 stackit_secretsmanager_instance_role_binding_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/resources/secretsmanager_instance_role_binding_v1 stackit_secretsmanager_instance_role_binding_v1} Resource.
 func NewSecretsmanagerInstanceRoleBindingV1(scope constructs.Construct, id *string, config *SecretsmanagerInstanceRoleBindingV1Config) SecretsmanagerInstanceRoleBindingV1 {
 	_init_.Initialize()
 
@@ -405,7 +405,7 @@ func NewSecretsmanagerInstanceRoleBindingV1(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/resources/secretsmanager_instance_role_binding_v1 stackit_secretsmanager_instance_role_binding_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/resources/secretsmanager_instance_role_binding_v1 stackit_secretsmanager_instance_role_binding_v1} Resource.
 func NewSecretsmanagerInstanceRoleBindingV1_Override(s SecretsmanagerInstanceRoleBindingV1, scope constructs.Construct, id *string, config *SecretsmanagerInstanceRoleBindingV1Config) {
 	_init_.Initialize()
 

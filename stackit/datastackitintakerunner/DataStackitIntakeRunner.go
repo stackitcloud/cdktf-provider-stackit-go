@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/data-sources/intake_runner stackit_intake_runner}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/data-sources/intake_runner stackit_intake_runner}.
 type DataStackitIntakeRunner interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -20,6 +20,7 @@ type DataStackitIntakeRunner interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -65,6 +66,7 @@ type DataStackitIntakeRunner interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Uri() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -138,6 +140,16 @@ func (j *jsiiProxy_DataStackitIntakeRunner) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitIntakeRunner) CreateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createTime",
 		&returns,
 	)
 	return returns
@@ -373,8 +385,18 @@ func (j *jsiiProxy_DataStackitIntakeRunner) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitIntakeRunner) Uri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uri",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/data-sources/intake_runner stackit_intake_runner} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/data-sources/intake_runner stackit_intake_runner} Data Source.
 func NewDataStackitIntakeRunner(scope constructs.Construct, id *string, config *DataStackitIntakeRunnerConfig) DataStackitIntakeRunner {
 	_init_.Initialize()
 
@@ -392,7 +414,7 @@ func NewDataStackitIntakeRunner(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/data-sources/intake_runner stackit_intake_runner} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/data-sources/intake_runner stackit_intake_runner} Data Source.
 func NewDataStackitIntakeRunner_Override(d DataStackitIntakeRunner, scope constructs.Construct, id *string, config *DataStackitIntakeRunnerConfig) {
 	_init_.Initialize()
 

@@ -41,6 +41,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "listeners", GoGetter: "Listeners"},
 			_jsii_.MemberProperty{JsiiProperty: "listenersInput", GoGetter: "ListenersInput"},
+			_jsii_.MemberProperty{JsiiProperty: "loadBalancerSecurityGroupId", GoGetter: "LoadBalancerSecurityGroupId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},

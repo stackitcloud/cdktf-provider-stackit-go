@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/resources/telemetrylink stackit_telemetrylink}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/resources/telemetrylink stackit_telemetrylink}.
 type Telemetrylink interface {
 	cdktf.TerraformResource
 	AccessToken() *string
@@ -480,7 +480,7 @@ func (j *jsiiProxy_Telemetrylink) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/resources/telemetrylink stackit_telemetrylink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/resources/telemetrylink stackit_telemetrylink} Resource.
 func NewTelemetrylink(scope constructs.Construct, id *string, config *TelemetrylinkConfig) Telemetrylink {
 	_init_.Initialize()
 
@@ -498,7 +498,7 @@ func NewTelemetrylink(scope constructs.Construct, id *string, config *Telemetryl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/resources/telemetrylink stackit_telemetrylink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/resources/telemetrylink stackit_telemetrylink} Resource.
 func NewTelemetrylink_Override(t Telemetrylink, scope constructs.Construct, id *string, config *TelemetrylinkConfig) {
 	_init_.Initialize()
 

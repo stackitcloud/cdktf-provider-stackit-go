@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/resources/intake_runner stackit_intake_runner}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/resources/intake_runner stackit_intake_runner}.
 type IntakeRunner interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,6 +24,7 @@ type IntakeRunner interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -81,6 +82,7 @@ type IntakeRunner interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Uri() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -183,6 +185,16 @@ func (j *jsiiProxy_IntakeRunner) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntakeRunner) CreateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createTime",
 		&returns,
 	)
 	return returns
@@ -468,8 +480,18 @@ func (j *jsiiProxy_IntakeRunner) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_IntakeRunner) Uri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uri",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/resources/intake_runner stackit_intake_runner} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/resources/intake_runner stackit_intake_runner} Resource.
 func NewIntakeRunner(scope constructs.Construct, id *string, config *IntakeRunnerConfig) IntakeRunner {
 	_init_.Initialize()
 
@@ -487,7 +509,7 @@ func NewIntakeRunner(scope constructs.Construct, id *string, config *IntakeRunne
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/resources/intake_runner stackit_intake_runner} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/resources/intake_runner stackit_intake_runner} Resource.
 func NewIntakeRunner_Override(i IntakeRunner, scope constructs.Construct, id *string, config *IntakeRunnerConfig) {
 	_init_.Initialize()
 

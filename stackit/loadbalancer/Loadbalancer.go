@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/resources/loadbalancer stackit_loadbalancer}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/resources/loadbalancer stackit_loadbalancer}.
 type Loadbalancer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -49,6 +49,7 @@ type Loadbalancer interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Listeners() LoadbalancerListenersList
 	ListenersInput() interface{}
+	LoadBalancerSecurityGroupId() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -321,6 +322,16 @@ func (j *jsiiProxy_Loadbalancer) ListenersInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Loadbalancer) LoadBalancerSecurityGroupId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loadBalancerSecurityGroupId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Loadbalancer) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -562,7 +573,7 @@ func (j *jsiiProxy_Loadbalancer) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/resources/loadbalancer stackit_loadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/resources/loadbalancer stackit_loadbalancer} Resource.
 func NewLoadbalancer(scope constructs.Construct, id *string, config *LoadbalancerConfig) Loadbalancer {
 	_init_.Initialize()
 
@@ -580,7 +591,7 @@ func NewLoadbalancer(scope constructs.Construct, id *string, config *Loadbalance
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.99.0/docs/resources/loadbalancer stackit_loadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/resources/loadbalancer stackit_loadbalancer} Resource.
 func NewLoadbalancer_Override(l Loadbalancer, scope constructs.Construct, id *string, config *LoadbalancerConfig) {
 	_init_.Initialize()
 
