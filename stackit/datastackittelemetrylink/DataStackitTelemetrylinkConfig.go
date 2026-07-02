@@ -21,15 +21,15 @@ type DataStackitTelemetrylinkConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT project ID, folder ID, or organization ID associated with the Telemetry Link resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/data-sources/telemetrylink#resource_id DataStackitTelemetrylink#resource_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/data-sources/telemetrylink#resource_id DataStackitTelemetrylink#resource_id}
 	ResourceId *string `field:"required" json:"resourceId" yaml:"resourceId"`
 	// The resource type of the TelemetryLink resource, possible values: Possible values are: `organization`, `folder`, `project`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/data-sources/telemetrylink#resource_type DataStackitTelemetrylink#resource_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/data-sources/telemetrylink#resource_type DataStackitTelemetrylink#resource_type}
 	ResourceType *string `field:"required" json:"resourceType" yaml:"resourceType"`
 	// STACKIT region name the resource is located in. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/data-sources/telemetrylink#region DataStackitTelemetrylink#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/data-sources/telemetrylink#region DataStackitTelemetrylink#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

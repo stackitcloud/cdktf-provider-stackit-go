@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/resources/telemetryrouter_access_token stackit_telemetryrouter_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/telemetryrouter_access_token stackit_telemetryrouter_access_token}.
 type TelemetryrouterAccessToken interface {
 	cdktf.TerraformResource
 	AccessToken() *string
@@ -490,7 +490,7 @@ func (j *jsiiProxy_TelemetryrouterAccessToken) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/resources/telemetryrouter_access_token stackit_telemetryrouter_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/telemetryrouter_access_token stackit_telemetryrouter_access_token} Resource.
 func NewTelemetryrouterAccessToken(scope constructs.Construct, id *string, config *TelemetryrouterAccessTokenConfig) TelemetryrouterAccessToken {
 	_init_.Initialize()
 
@@ -508,7 +508,7 @@ func NewTelemetryrouterAccessToken(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/resources/telemetryrouter_access_token stackit_telemetryrouter_access_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/telemetryrouter_access_token stackit_telemetryrouter_access_token} Resource.
 func NewTelemetryrouterAccessToken_Override(t TelemetryrouterAccessToken, scope constructs.Construct, id *string, config *TelemetryrouterAccessTokenConfig) {
 	_init_.Initialize()
 

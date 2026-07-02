@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/resources/objectstorage_compliance_lock stackit_objectstorage_compliance_lock}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/objectstorage_compliance_lock stackit_objectstorage_compliance_lock}.
 type ObjectstorageComplianceLock interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -352,7 +352,7 @@ func (j *jsiiProxy_ObjectstorageComplianceLock) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/resources/objectstorage_compliance_lock stackit_objectstorage_compliance_lock} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/objectstorage_compliance_lock stackit_objectstorage_compliance_lock} Resource.
 func NewObjectstorageComplianceLock(scope constructs.Construct, id *string, config *ObjectstorageComplianceLockConfig) ObjectstorageComplianceLock {
 	_init_.Initialize()
 
@@ -370,7 +370,7 @@ func NewObjectstorageComplianceLock(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/resources/objectstorage_compliance_lock stackit_objectstorage_compliance_lock} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/objectstorage_compliance_lock stackit_objectstorage_compliance_lock} Resource.
 func NewObjectstorageComplianceLock_Override(o ObjectstorageComplianceLock, scope constructs.Construct, id *string, config *ObjectstorageComplianceLockConfig) {
 	_init_.Initialize()
 

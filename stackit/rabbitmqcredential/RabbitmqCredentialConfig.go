@@ -21,17 +21,17 @@ type RabbitmqCredentialConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of the RabbitMQ instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/resources/rabbitmq_credential#instance_id RabbitmqCredential#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/rabbitmq_credential#instance_id RabbitmqCredential#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// STACKIT Project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/resources/rabbitmq_credential#project_id RabbitmqCredential#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/rabbitmq_credential#project_id RabbitmqCredential#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// A map of arbitrary key/value pairs that will force recreation of the resource when they change, enabling resource rotation based on external conditions such as a rotating timestamp.
 	//
 	// Changing this forces a new resource to be created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/resources/rabbitmq_credential#rotate_when_changed RabbitmqCredential#rotate_when_changed}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/rabbitmq_credential#rotate_when_changed RabbitmqCredential#rotate_when_changed}
 	RotateWhenChanged *map[string]*string `field:"optional" json:"rotateWhenChanged" yaml:"rotateWhenChanged"`
 }
 

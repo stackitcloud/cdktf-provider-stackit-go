@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/data-sources/vpn_gateway_status stackit_vpn_gateway_status}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/data-sources/vpn_gateway_status stackit_vpn_gateway_status}.
 type DataStackitVpnGatewayStatus interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -339,7 +339,7 @@ func (j *jsiiProxy_DataStackitVpnGatewayStatus) Tunnels() DataStackitVpnGatewayS
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/data-sources/vpn_gateway_status stackit_vpn_gateway_status} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/data-sources/vpn_gateway_status stackit_vpn_gateway_status} Data Source.
 func NewDataStackitVpnGatewayStatus(scope constructs.Construct, id *string, config *DataStackitVpnGatewayStatusConfig) DataStackitVpnGatewayStatus {
 	_init_.Initialize()
 
@@ -357,7 +357,7 @@ func NewDataStackitVpnGatewayStatus(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/data-sources/vpn_gateway_status stackit_vpn_gateway_status} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/data-sources/vpn_gateway_status stackit_vpn_gateway_status} Data Source.
 func NewDataStackitVpnGatewayStatus_Override(d DataStackitVpnGatewayStatus, scope constructs.Construct, id *string, config *DataStackitVpnGatewayStatusConfig) {
 	_init_.Initialize()
 

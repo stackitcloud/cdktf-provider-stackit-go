@@ -9,9 +9,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/resources/ske_cluster stackit_ske_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/ske_cluster stackit_ske_cluster}.
 type SkeCluster interface {
 	cdktf.TerraformResource
+	Access() SkeClusterAccessOutputReference
+	AccessInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -127,11 +129,13 @@ type SkeCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAccess(value *SkeClusterAccess)
 	PutExtensions(value *SkeClusterExtensions)
 	PutHibernations(value interface{})
 	PutMaintenance(value *SkeClusterMaintenance)
 	PutNetwork(value *SkeClusterNetwork)
 	PutNodePools(value interface{})
+	ResetAccess()
 	ResetExtensions()
 	ResetHibernations()
 	ResetKubernetesVersionMin()
@@ -157,6 +161,26 @@ type SkeCluster interface {
 // The jsii proxy struct for SkeCluster
 type jsiiProxy_SkeCluster struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_SkeCluster) Access() SkeClusterAccessOutputReference {
+	var returns SkeClusterAccessOutputReference
+	_jsii_.Get(
+		j,
+		"access",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SkeCluster) AccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SkeCluster) CdktfStack() cdktf.TerraformStack {
@@ -540,7 +564,7 @@ func (j *jsiiProxy_SkeCluster) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/resources/ske_cluster stackit_ske_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/ske_cluster stackit_ske_cluster} Resource.
 func NewSkeCluster(scope constructs.Construct, id *string, config *SkeClusterConfig) SkeCluster {
 	_init_.Initialize()
 
@@ -558,7 +582,7 @@ func NewSkeCluster(scope constructs.Construct, id *string, config *SkeClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/resources/ske_cluster stackit_ske_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/ske_cluster stackit_ske_cluster} Resource.
 func NewSkeCluster_Override(s SkeCluster, scope constructs.Construct, id *string, config *SkeClusterConfig) {
 	_init_.Initialize()
 
@@ -1034,6 +1058,17 @@ func (s *jsiiProxy_SkeCluster) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_SkeCluster) PutAccess(value *SkeClusterAccess) {
+	if err := s.validatePutAccessParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putAccess",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SkeCluster) PutExtensions(value *SkeClusterExtensions) {
 	if err := s.validatePutExtensionsParameters(value); err != nil {
 		panic(err)
@@ -1086,6 +1121,14 @@ func (s *jsiiProxy_SkeCluster) PutNodePools(value interface{}) {
 		s,
 		"putNodePools",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SkeCluster) ResetAccess() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAccess",
+		nil, // no parameters
 	)
 }
 

@@ -72,6 +72,10 @@ func (s *jsiiProxy_SkeCluster) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (s *jsiiProxy_SkeCluster) validatePutAccessParameters(value *SkeClusterAccess) error {
+	return nil
+}
+
 func (s *jsiiProxy_SkeCluster) validatePutExtensionsParameters(value *SkeClusterExtensions) error {
 	return nil
 }

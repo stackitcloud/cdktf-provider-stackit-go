@@ -21,11 +21,11 @@ type DataStackitSecretsmanagerInstanceRoleBindingsV1Config struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The identifier of the resource to get the role bindings for.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/data-sources/secretsmanager_instance_role_bindings_v1#resource_id DataStackitSecretsmanagerInstanceRoleBindingsV1#resource_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/data-sources/secretsmanager_instance_role_bindings_v1#resource_id DataStackitSecretsmanagerInstanceRoleBindingsV1#resource_id}
 	ResourceId *string `field:"required" json:"resourceId" yaml:"resourceId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.100.0/docs/data-sources/secretsmanager_instance_role_bindings_v1#region DataStackitSecretsmanagerInstanceRoleBindingsV1#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/data-sources/secretsmanager_instance_role_bindings_v1#region DataStackitSecretsmanagerInstanceRoleBindingsV1#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 
