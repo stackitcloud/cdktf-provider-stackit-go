@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/redis_instance stackit_redis_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/redis_instance stackit_redis_instance}.
 type RedisInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -71,6 +71,9 @@ type RedisInstance interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -128,6 +131,7 @@ type RedisInstance interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParameters()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -436,6 +440,26 @@ func (j *jsiiProxy_RedisInstance) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RedisInstance) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisInstance) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedisInstance) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -487,7 +511,7 @@ func (j *jsiiProxy_RedisInstance) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/redis_instance stackit_redis_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/redis_instance stackit_redis_instance} Resource.
 func NewRedisInstance(scope constructs.Construct, id *string, config *RedisInstanceConfig) RedisInstance {
 	_init_.Initialize()
 
@@ -505,7 +529,7 @@ func NewRedisInstance(scope constructs.Construct, id *string, config *RedisInsta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/redis_instance stackit_redis_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/redis_instance stackit_redis_instance} Resource.
 func NewRedisInstance_Override(r RedisInstance, scope constructs.Construct, id *string, config *RedisInstanceConfig) {
 	_init_.Initialize()
 
@@ -613,6 +637,17 @@ func (j *jsiiProxy_RedisInstance)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedisInstance)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1004,6 +1039,14 @@ func (r *jsiiProxy_RedisInstance) ResetParameters() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetParameters",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisInstance) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

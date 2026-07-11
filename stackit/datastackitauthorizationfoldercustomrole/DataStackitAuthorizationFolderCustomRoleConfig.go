@@ -21,11 +21,11 @@ type DataStackitAuthorizationFolderCustomRoleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Resource to add the custom role to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/data-sources/authorization_folder_custom_role#resource_id DataStackitAuthorizationFolderCustomRole#resource_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/data-sources/authorization_folder_custom_role#resource_id DataStackitAuthorizationFolderCustomRole#resource_id}
 	ResourceId *string `field:"required" json:"resourceId" yaml:"resourceId"`
 	// The ID of the role.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/data-sources/authorization_folder_custom_role#role_id DataStackitAuthorizationFolderCustomRole#role_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/data-sources/authorization_folder_custom_role#role_id DataStackitAuthorizationFolderCustomRole#role_id}
 	RoleId *string `field:"required" json:"roleId" yaml:"roleId"`
 }
 

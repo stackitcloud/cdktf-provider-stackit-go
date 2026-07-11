@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/sqlserverflex_instance stackit_sqlserverflex_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/sqlserverflex_instance stackit_sqlserverflex_instance}.
 type SqlserverflexInstance interface {
 	cdktf.TerraformResource
 	Acl() *[]*string
@@ -34,7 +34,11 @@ type SqlserverflexInstance interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Edition() *string
 	Flavor() SqlserverflexInstanceFlavorOutputReference
+	FlavorId() *string
+	SetFlavorId(val *string)
+	FlavorIdInput() *string
 	FlavorInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -53,6 +57,8 @@ type SqlserverflexInstance interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Network() SqlserverflexInstanceNetworkOutputReference
+	NetworkInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	Options() SqlserverflexInstanceOptionsOutputReference
@@ -74,6 +80,9 @@ type SqlserverflexInstance interface {
 	SetRegion(val *string)
 	RegionInput() *string
 	Replicas() *float64
+	RetentionDays() *float64
+	SetRetentionDays(val *float64)
+	RetentionDaysInput() *float64
 	Storage() SqlserverflexInstanceStorageOutputReference
 	StorageInput() interface{}
 	// Experimental.
@@ -129,15 +138,20 @@ type SqlserverflexInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFlavor(value *SqlserverflexInstanceFlavor)
+	PutNetwork(value *SqlserverflexInstanceNetwork)
 	PutOptions(value *SqlserverflexInstanceOptions)
 	PutStorage(value *SqlserverflexInstanceStorage)
 	ResetAcl()
 	ResetBackupSchedule()
+	ResetFlavor()
+	ResetFlavorId()
+	ResetNetwork()
 	ResetOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetRetentionDays()
 	ResetStorage()
 	ResetVersion()
 	SynthesizeAttributes() *map[string]interface{}
@@ -248,11 +262,41 @@ func (j *jsiiProxy_SqlserverflexInstance) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_SqlserverflexInstance) Edition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"edition",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlserverflexInstance) Flavor() SqlserverflexInstanceFlavorOutputReference {
 	var returns SqlserverflexInstanceFlavorOutputReference
 	_jsii_.Get(
 		j,
 		"flavor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlserverflexInstance) FlavorId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"flavorId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlserverflexInstance) FlavorIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"flavorIdInput",
 		&returns,
 	)
 	return returns
@@ -343,6 +387,26 @@ func (j *jsiiProxy_SqlserverflexInstance) NameInput() *string {
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlserverflexInstance) Network() SqlserverflexInstanceNetworkOutputReference {
+	var returns SqlserverflexInstanceNetworkOutputReference
+	_jsii_.Get(
+		j,
+		"network",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlserverflexInstance) NetworkInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"networkInput",
 		&returns,
 	)
 	return returns
@@ -458,6 +522,26 @@ func (j *jsiiProxy_SqlserverflexInstance) Replicas() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_SqlserverflexInstance) RetentionDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retentionDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlserverflexInstance) RetentionDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retentionDaysInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlserverflexInstance) Storage() SqlserverflexInstanceStorageOutputReference {
 	var returns SqlserverflexInstanceStorageOutputReference
 	_jsii_.Get(
@@ -529,7 +613,7 @@ func (j *jsiiProxy_SqlserverflexInstance) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/sqlserverflex_instance stackit_sqlserverflex_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/sqlserverflex_instance stackit_sqlserverflex_instance} Resource.
 func NewSqlserverflexInstance(scope constructs.Construct, id *string, config *SqlserverflexInstanceConfig) SqlserverflexInstance {
 	_init_.Initialize()
 
@@ -547,7 +631,7 @@ func NewSqlserverflexInstance(scope constructs.Construct, id *string, config *Sq
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/sqlserverflex_instance stackit_sqlserverflex_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/sqlserverflex_instance stackit_sqlserverflex_instance} Resource.
 func NewSqlserverflexInstance_Override(s SqlserverflexInstance, scope constructs.Construct, id *string, config *SqlserverflexInstanceConfig) {
 	_init_.Initialize()
 
@@ -606,6 +690,17 @@ func (j *jsiiProxy_SqlserverflexInstance)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlserverflexInstance)SetFlavorId(val *string) {
+	if err := j.validateSetFlavorIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"flavorId",
 		val,
 	)
 }
@@ -677,6 +772,17 @@ func (j *jsiiProxy_SqlserverflexInstance)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlserverflexInstance)SetRetentionDays(val *float64) {
+	if err := j.validateSetRetentionDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"retentionDays",
 		val,
 	)
 }
@@ -1056,6 +1162,17 @@ func (s *jsiiProxy_SqlserverflexInstance) PutFlavor(value *SqlserverflexInstance
 	)
 }
 
+func (s *jsiiProxy_SqlserverflexInstance) PutNetwork(value *SqlserverflexInstanceNetwork) {
+	if err := s.validatePutNetworkParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putNetwork",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SqlserverflexInstance) PutOptions(value *SqlserverflexInstanceOptions) {
 	if err := s.validatePutOptionsParameters(value); err != nil {
 		panic(err)
@@ -1094,6 +1211,30 @@ func (s *jsiiProxy_SqlserverflexInstance) ResetBackupSchedule() {
 	)
 }
 
+func (s *jsiiProxy_SqlserverflexInstance) ResetFlavor() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetFlavor",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlserverflexInstance) ResetFlavorId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetFlavorId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlserverflexInstance) ResetNetwork() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNetwork",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SqlserverflexInstance) ResetOptions() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1114,6 +1255,14 @@ func (s *jsiiProxy_SqlserverflexInstance) ResetRegion() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlserverflexInstance) ResetRetentionDays() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRetentionDays",
 		nil, // no parameters
 	)
 }

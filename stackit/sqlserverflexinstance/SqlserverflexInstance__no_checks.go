@@ -76,6 +76,10 @@ func (s *jsiiProxy_SqlserverflexInstance) validatePutFlavorParameters(value *Sql
 	return nil
 }
 
+func (s *jsiiProxy_SqlserverflexInstance) validatePutNetworkParameters(value *SqlserverflexInstanceNetwork) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlserverflexInstance) validatePutOptionsParameters(value *SqlserverflexInstanceOptions) error {
 	return nil
 }
@@ -116,6 +120,10 @@ func (j *jsiiProxy_SqlserverflexInstance) validateSetCountParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_SqlserverflexInstance) validateSetFlavorIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlserverflexInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -133,6 +141,10 @@ func (j *jsiiProxy_SqlserverflexInstance) validateSetProvisionersParameters(val 
 }
 
 func (j *jsiiProxy_SqlserverflexInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SqlserverflexInstance) validateSetRetentionDaysParameters(val *float64) error {
 	return nil
 }
 

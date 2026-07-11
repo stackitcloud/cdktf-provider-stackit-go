@@ -21,15 +21,15 @@ type DataStackitVpnConnectionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The server-generated UUID of the VPN connection.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/data-sources/vpn_connection#connection_id DataStackitVpnConnection#connection_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/data-sources/vpn_connection#connection_id DataStackitVpnConnection#connection_id}
 	ConnectionId *string `field:"required" json:"connectionId" yaml:"connectionId"`
 	// The UUID of the parent VPN gateway.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/data-sources/vpn_connection#gateway_id DataStackitVpnConnection#gateway_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/data-sources/vpn_connection#gateway_id DataStackitVpnConnection#gateway_id}
 	GatewayId *string `field:"required" json:"gatewayId" yaml:"gatewayId"`
 	// STACKIT project ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/data-sources/vpn_connection#project_id DataStackitVpnConnection#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/data-sources/vpn_connection#project_id DataStackitVpnConnection#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

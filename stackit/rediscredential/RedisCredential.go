@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/redis_credential stackit_redis_credential}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/redis_credential stackit_redis_credential}.
 type RedisCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -65,6 +65,9 @@ type RedisCredential interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RotateWhenChanged() *map[string]*string
 	SetRotateWhenChanged(val *map[string]*string)
 	RotateWhenChangedInput() *map[string]*string
@@ -122,6 +125,7 @@ type RedisCredential interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRotateWhenChanged()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -381,6 +385,26 @@ func (j *jsiiProxy_RedisCredential) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RedisCredential) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCredential) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedisCredential) RotateWhenChanged() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -452,7 +476,7 @@ func (j *jsiiProxy_RedisCredential) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/redis_credential stackit_redis_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/redis_credential stackit_redis_credential} Resource.
 func NewRedisCredential(scope constructs.Construct, id *string, config *RedisCredentialConfig) RedisCredential {
 	_init_.Initialize()
 
@@ -470,7 +494,7 @@ func NewRedisCredential(scope constructs.Construct, id *string, config *RedisCre
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/redis_credential stackit_redis_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/redis_credential stackit_redis_credential} Resource.
 func NewRedisCredential_Override(r RedisCredential, scope constructs.Construct, id *string, config *RedisCredentialConfig) {
 	_init_.Initialize()
 
@@ -567,6 +591,17 @@ func (j *jsiiProxy_RedisCredential)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedisCredential)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -939,6 +974,14 @@ func (r *jsiiProxy_RedisCredential) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisCredential) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/vpn_connection stackit_vpn_connection}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/vpn_connection stackit_vpn_connection}.
 type VpnConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -564,7 +564,7 @@ func (j *jsiiProxy_VpnConnection) Tunnel2Input() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/vpn_connection stackit_vpn_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/vpn_connection stackit_vpn_connection} Resource.
 func NewVpnConnection(scope constructs.Construct, id *string, config *VpnConnectionConfig) VpnConnection {
 	_init_.Initialize()
 
@@ -582,7 +582,7 @@ func NewVpnConnection(scope constructs.Construct, id *string, config *VpnConnect
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/vpn_connection stackit_vpn_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/vpn_connection stackit_vpn_connection} Resource.
 func NewVpnConnection_Override(v VpnConnection, scope constructs.Construct, id *string, config *VpnConnectionConfig) {
 	_init_.Initialize()
 

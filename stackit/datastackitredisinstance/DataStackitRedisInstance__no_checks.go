@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataStackitRedisInstance) validateSetProjectIdParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitRedisInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataStackitRedisInstanceParameters(scope constructs.Construct, id *string, config *DataStackitRedisInstanceConfig) error {
 	return nil
 }

@@ -215,6 +215,17 @@ func (s *jsiiProxy_SqlserverflexInstance) validatePutFlavorParameters(value *Sql
 	return nil
 }
 
+func (s *jsiiProxy_SqlserverflexInstance) validatePutNetworkParameters(value *SqlserverflexInstanceNetwork) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SqlserverflexInstance) validatePutOptionsParameters(value *SqlserverflexInstanceOptions) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -383,6 +394,14 @@ func (j *jsiiProxy_SqlserverflexInstance) validateSetCountParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_SqlserverflexInstance) validateSetFlavorIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SqlserverflexInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -454,6 +473,14 @@ func (j *jsiiProxy_SqlserverflexInstance) validateSetProvisionersParameters(val 
 }
 
 func (j *jsiiProxy_SqlserverflexInstance) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SqlserverflexInstance) validateSetRetentionDaysParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

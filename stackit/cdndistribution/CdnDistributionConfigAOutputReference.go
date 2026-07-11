@@ -30,6 +30,9 @@ type CdnDistributionConfigAOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ForwardHostHeader() interface{}
+	SetForwardHostHeader(val interface{})
+	ForwardHostHeaderInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -41,6 +44,9 @@ type CdnDistributionConfigAOutputReference interface {
 	Regions() *[]*string
 	SetRegions(val *[]*string)
 	RegionsInput() *[]*string
+	StripResponseCookies() interface{}
+	SetStripResponseCookies(val interface{})
+	StripResponseCookiesInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,6 +55,8 @@ type CdnDistributionConfigAOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Tls() CdnDistributionConfigTlsOutputReference
+	TlsInput() interface{}
 	Waf() CdnDistributionConfigWafOutputReference
 	WafInput() interface{}
 	// Experimental.
@@ -78,10 +86,14 @@ type CdnDistributionConfigAOutputReference interface {
 	PutBackend(value *CdnDistributionConfigBackend)
 	PutOptimizer(value *CdnDistributionConfigOptimizer)
 	PutRedirects(value *CdnDistributionConfigRedirects)
+	PutTls(value *CdnDistributionConfigTls)
 	PutWaf(value *CdnDistributionConfigWaf)
 	ResetBlockedCountries()
+	ResetForwardHostHeader()
 	ResetOptimizer()
 	ResetRedirects()
+	ResetStripResponseCookies()
+	ResetTls()
 	ResetWaf()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -168,6 +180,26 @@ func (j *jsiiProxy_CdnDistributionConfigAOutputReference) CreationStack() *[]*st
 	return returns
 }
 
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) ForwardHostHeader() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forwardHostHeader",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) ForwardHostHeaderInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forwardHostHeaderInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CdnDistributionConfigAOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -248,6 +280,26 @@ func (j *jsiiProxy_CdnDistributionConfigAOutputReference) RegionsInput() *[]*str
 	return returns
 }
 
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) StripResponseCookies() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"stripResponseCookies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) StripResponseCookiesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"stripResponseCookiesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CdnDistributionConfigAOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -263,6 +315,26 @@ func (j *jsiiProxy_CdnDistributionConfigAOutputReference) TerraformResource() cd
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) Tls() CdnDistributionConfigTlsOutputReference {
+	var returns CdnDistributionConfigTlsOutputReference
+	_jsii_.Get(
+		j,
+		"tls",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) TlsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tlsInput",
 		&returns,
 	)
 	return returns
@@ -349,6 +421,17 @@ func (j *jsiiProxy_CdnDistributionConfigAOutputReference)SetComplexObjectIsFromS
 	)
 }
 
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference)SetForwardHostHeader(val interface{}) {
+	if err := j.validateSetForwardHostHeaderParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forwardHostHeader",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CdnDistributionConfigAOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -367,6 +450,17 @@ func (j *jsiiProxy_CdnDistributionConfigAOutputReference)SetRegions(val *[]*stri
 	_jsii_.Set(
 		j,
 		"regions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference)SetStripResponseCookies(val interface{}) {
+	if err := j.validateSetStripResponseCookiesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stripResponseCookies",
 		val,
 	)
 }
@@ -612,6 +706,17 @@ func (c *jsiiProxy_CdnDistributionConfigAOutputReference) PutRedirects(value *Cd
 	)
 }
 
+func (c *jsiiProxy_CdnDistributionConfigAOutputReference) PutTls(value *CdnDistributionConfigTls) {
+	if err := c.validatePutTlsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putTls",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CdnDistributionConfigAOutputReference) PutWaf(value *CdnDistributionConfigWaf) {
 	if err := c.validatePutWafParameters(value); err != nil {
 		panic(err)
@@ -631,6 +736,14 @@ func (c *jsiiProxy_CdnDistributionConfigAOutputReference) ResetBlockedCountries(
 	)
 }
 
+func (c *jsiiProxy_CdnDistributionConfigAOutputReference) ResetForwardHostHeader() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetForwardHostHeader",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CdnDistributionConfigAOutputReference) ResetOptimizer() {
 	_jsii_.InvokeVoid(
 		c,
@@ -643,6 +756,22 @@ func (c *jsiiProxy_CdnDistributionConfigAOutputReference) ResetRedirects() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRedirects",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CdnDistributionConfigAOutputReference) ResetStripResponseCookies() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStripResponseCookies",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CdnDistributionConfigAOutputReference) ResetTls() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTls",
 		nil, // no parameters
 	)
 }

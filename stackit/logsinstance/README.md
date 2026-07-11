@@ -1,3 +1,3 @@
 # `stackit_logs_instance`
 
-Refer to the Terraform Registry for docs: [`stackit_logs_instance`](https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/logs_instance).
+Refer to the Terraform Registry for docs: [`stackit_logs_instance`](https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/logs_instance).

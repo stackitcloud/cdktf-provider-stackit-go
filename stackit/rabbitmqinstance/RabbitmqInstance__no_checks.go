@@ -120,6 +120,10 @@ func (j *jsiiProxy_RabbitmqInstance) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_RabbitmqInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RabbitmqInstance) validateSetVersionParameters(val *string) error {
 	return nil
 }

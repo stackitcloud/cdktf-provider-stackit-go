@@ -120,6 +120,10 @@ func (j *jsiiProxy_RedisInstance) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_RedisInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedisInstance) validateSetVersionParameters(val *string) error {
 	return nil
 }

@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataStackitRabbitmqInstance) validateSetProjectIdParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitRabbitmqInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataStackitRabbitmqInstanceParameters(scope constructs.Construct, id *string, config *DataStackitRabbitmqInstanceConfig) error {
 	return nil
 }

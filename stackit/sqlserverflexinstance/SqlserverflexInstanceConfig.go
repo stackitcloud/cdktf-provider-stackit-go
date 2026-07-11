@@ -19,33 +19,57 @@ type SqlserverflexInstanceConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/sqlserverflex_instance#flavor SqlserverflexInstance#flavor}.
-	Flavor *SqlserverflexInstanceFlavor `field:"required" json:"flavor" yaml:"flavor"`
 	// Instance name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/sqlserverflex_instance#name SqlserverflexInstance#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/sqlserverflex_instance#name SqlserverflexInstance#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// STACKIT project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/sqlserverflex_instance#project_id SqlserverflexInstance#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/sqlserverflex_instance#project_id SqlserverflexInstance#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The Access Control List (ACL) for the SQLServer Flex instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/sqlserverflex_instance#acl SqlserverflexInstance#acl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/sqlserverflex_instance#acl SqlserverflexInstance#acl}
 	Acl *[]*string `field:"optional" json:"acl" yaml:"acl"`
-	// The backup schedule. Should follow the cron scheduling system format (e.g. "0 0 * * *").
+	// The backup schedule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/sqlserverflex_instance#backup_schedule SqlserverflexInstance#backup_schedule}
+	// Should follow the cron scheduling system format (e.g. "0 0 * * *") Will be required in the future. Set a value to prevent breaking changes.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/sqlserverflex_instance#backup_schedule SqlserverflexInstance#backup_schedule}
 	BackupSchedule *string `field:"optional" json:"backupSchedule" yaml:"backupSchedule"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/sqlserverflex_instance#options SqlserverflexInstance#options}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/sqlserverflex_instance#flavor SqlserverflexInstance#flavor}.
+	Flavor *SqlserverflexInstanceFlavor `field:"optional" json:"flavor" yaml:"flavor"`
+	// The flavor ID of the SQLServer Flex instance.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/sqlserverflex_instance#flavor_id SqlserverflexInstance#flavor_id}
+	FlavorId *string `field:"optional" json:"flavorId" yaml:"flavorId"`
+	// The network configuration of the instance. Will be required in the future. Set a value to prevent breaking changes.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/sqlserverflex_instance#network SqlserverflexInstance#network}
+	Network *SqlserverflexInstanceNetwork `field:"optional" json:"network" yaml:"network"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/sqlserverflex_instance#options SqlserverflexInstance#options}.
 	Options *SqlserverflexInstanceOptions `field:"optional" json:"options" yaml:"options"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/sqlserverflex_instance#region SqlserverflexInstance#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/sqlserverflex_instance#region SqlserverflexInstance#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/sqlserverflex_instance#storage SqlserverflexInstance#storage}.
+	// The days (30 to 90) for how long the backup files should be stored before cleaned up.
+	//
+	// Will be required in the future. Set a value to prevent breaking changes.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/sqlserverflex_instance#retention_days SqlserverflexInstance#retention_days}
+	RetentionDays *float64 `field:"optional" json:"retentionDays" yaml:"retentionDays"`
+	// The object containing information about the storage size and class.
+	//
+	// Will be required in the future. Set a value to prevent breaking changes.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/sqlserverflex_instance#storage SqlserverflexInstance#storage}
 	Storage *SqlserverflexInstanceStorage `field:"optional" json:"storage" yaml:"storage"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/sqlserverflex_instance#version SqlserverflexInstance#version}.
+	// The sqlserver version used for the instance.
+	//
+	// Possible values are: `2022`. Will be required in the future. Set a value to prevent breaking changes.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/sqlserverflex_instance#version SqlserverflexInstance#version}
 	Version *string `field:"optional" json:"version" yaml:"version"`
 }
 

@@ -1,3 +1,3 @@
 # `stackit_telemetryrouter_instance`
 
-Refer to the Terraform Registry for docs: [`stackit_telemetryrouter_instance`](https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/telemetryrouter_instance).
+Refer to the Terraform Registry for docs: [`stackit_telemetryrouter_instance`](https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/telemetryrouter_instance).

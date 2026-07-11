@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/rabbitmq_instance stackit_rabbitmq_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/rabbitmq_instance stackit_rabbitmq_instance}.
 type RabbitmqInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -71,6 +71,9 @@ type RabbitmqInstance interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -128,6 +131,7 @@ type RabbitmqInstance interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParameters()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -436,6 +440,26 @@ func (j *jsiiProxy_RabbitmqInstance) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RabbitmqInstance) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RabbitmqInstance) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RabbitmqInstance) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -487,7 +511,7 @@ func (j *jsiiProxy_RabbitmqInstance) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/rabbitmq_instance stackit_rabbitmq_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/rabbitmq_instance stackit_rabbitmq_instance} Resource.
 func NewRabbitmqInstance(scope constructs.Construct, id *string, config *RabbitmqInstanceConfig) RabbitmqInstance {
 	_init_.Initialize()
 
@@ -505,7 +529,7 @@ func NewRabbitmqInstance(scope constructs.Construct, id *string, config *Rabbitm
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/resources/rabbitmq_instance stackit_rabbitmq_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/rabbitmq_instance stackit_rabbitmq_instance} Resource.
 func NewRabbitmqInstance_Override(r RabbitmqInstance, scope constructs.Construct, id *string, config *RabbitmqInstanceConfig) {
 	_init_.Initialize()
 
@@ -613,6 +637,17 @@ func (j *jsiiProxy_RabbitmqInstance)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RabbitmqInstance)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1004,6 +1039,14 @@ func (r *jsiiProxy_RabbitmqInstance) ResetParameters() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetParameters",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RabbitmqInstance) ResetRegion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

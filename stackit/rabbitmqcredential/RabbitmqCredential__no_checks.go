@@ -112,6 +112,10 @@ func (j *jsiiProxy_RabbitmqCredential) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_RabbitmqCredential) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RabbitmqCredential) validateSetRotateWhenChangedParameters(val *map[string]*string) error {
 	return nil
 }

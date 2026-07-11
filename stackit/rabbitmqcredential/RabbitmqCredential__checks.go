@@ -404,6 +404,14 @@ func (j *jsiiProxy_RabbitmqCredential) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_RabbitmqCredential) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RabbitmqCredential) validateSetRotateWhenChangedParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

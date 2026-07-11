@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/data-sources/sqlserverflex_instance stackit_sqlserverflex_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/data-sources/sqlserverflex_instance stackit_sqlserverflex_instance}.
 type DataStackitSqlserverflexInstance interface {
 	cdktf.TerraformDataSource
 	Acl() *[]*string
@@ -26,7 +26,9 @@ type DataStackitSqlserverflexInstance interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Edition() *string
 	Flavor() DataStackitSqlserverflexInstanceFlavorOutputReference
+	FlavorId() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -44,6 +46,8 @@ type DataStackitSqlserverflexInstance interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Name() *string
+	Network() DataStackitSqlserverflexInstanceNetworkOutputReference
+	NetworkInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	Options() DataStackitSqlserverflexInstanceOptionsOutputReference
@@ -60,6 +64,7 @@ type DataStackitSqlserverflexInstance interface {
 	SetRegion(val *string)
 	RegionInput() *string
 	Replicas() *float64
+	RetentionDays() *float64
 	Storage() DataStackitSqlserverflexInstanceStorageOutputReference
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -93,6 +98,8 @@ type DataStackitSqlserverflexInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutNetwork(value *DataStackitSqlserverflexInstanceNetwork)
+	ResetNetwork()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -176,11 +183,31 @@ func (j *jsiiProxy_DataStackitSqlserverflexInstance) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitSqlserverflexInstance) Edition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"edition",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitSqlserverflexInstance) Flavor() DataStackitSqlserverflexInstanceFlavorOutputReference {
 	var returns DataStackitSqlserverflexInstanceFlavorOutputReference
 	_jsii_.Get(
 		j,
 		"flavor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitSqlserverflexInstance) FlavorId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"flavorId",
 		&returns,
 	)
 	return returns
@@ -261,6 +288,26 @@ func (j *jsiiProxy_DataStackitSqlserverflexInstance) Name() *string {
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitSqlserverflexInstance) Network() DataStackitSqlserverflexInstanceNetworkOutputReference {
+	var returns DataStackitSqlserverflexInstanceNetworkOutputReference
+	_jsii_.Get(
+		j,
+		"network",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitSqlserverflexInstance) NetworkInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"networkInput",
 		&returns,
 	)
 	return returns
@@ -356,6 +403,16 @@ func (j *jsiiProxy_DataStackitSqlserverflexInstance) Replicas() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitSqlserverflexInstance) RetentionDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retentionDays",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitSqlserverflexInstance) Storage() DataStackitSqlserverflexInstanceStorageOutputReference {
 	var returns DataStackitSqlserverflexInstanceStorageOutputReference
 	_jsii_.Get(
@@ -407,7 +464,7 @@ func (j *jsiiProxy_DataStackitSqlserverflexInstance) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/data-sources/sqlserverflex_instance stackit_sqlserverflex_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/data-sources/sqlserverflex_instance stackit_sqlserverflex_instance} Data Source.
 func NewDataStackitSqlserverflexInstance(scope constructs.Construct, id *string, config *DataStackitSqlserverflexInstanceConfig) DataStackitSqlserverflexInstance {
 	_init_.Initialize()
 
@@ -425,7 +482,7 @@ func NewDataStackitSqlserverflexInstance(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.101.0/docs/data-sources/sqlserverflex_instance stackit_sqlserverflex_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/data-sources/sqlserverflex_instance stackit_sqlserverflex_instance} Data Source.
 func NewDataStackitSqlserverflexInstance_Override(d DataStackitSqlserverflexInstance, scope constructs.Construct, id *string, config *DataStackitSqlserverflexInstanceConfig) {
 	_init_.Initialize()
 
@@ -797,6 +854,25 @@ func (d *jsiiProxy_DataStackitSqlserverflexInstance) OverrideLogicalId(newLogica
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataStackitSqlserverflexInstance) PutNetwork(value *DataStackitSqlserverflexInstanceNetwork) {
+	if err := d.validatePutNetworkParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putNetwork",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataStackitSqlserverflexInstance) ResetNetwork() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNetwork",
+		nil, // no parameters
 	)
 }
 

@@ -29,6 +29,7 @@ type DataStackitCdnDistributionConfigAOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ForwardHostHeader() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataStackitCdnDistributionConfigA
@@ -36,6 +37,7 @@ type DataStackitCdnDistributionConfigAOutputReference interface {
 	Optimizer() DataStackitCdnDistributionConfigOptimizerOutputReference
 	Redirects() DataStackitCdnDistributionConfigRedirectsOutputReference
 	Regions() *[]*string
+	StripResponseCookies() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -44,6 +46,7 @@ type DataStackitCdnDistributionConfigAOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Tls() DataStackitCdnDistributionConfigTlsOutputReference
 	Waf() DataStackitCdnDistributionConfigWafOutputReference
 	// Experimental.
 	ComputeFqn() *string
@@ -145,6 +148,16 @@ func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) CreationSta
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) ForwardHostHeader() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"forwardHostHeader",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -195,6 +208,16 @@ func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) Regions() *
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) StripResponseCookies() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"stripResponseCookies",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -210,6 +233,16 @@ func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) TerraformRe
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) Tls() DataStackitCdnDistributionConfigTlsOutputReference {
+	var returns DataStackitCdnDistributionConfigTlsOutputReference
+	_jsii_.Get(
+		j,
+		"tls",
 		&returns,
 	)
 	return returns

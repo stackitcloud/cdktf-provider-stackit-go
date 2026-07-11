@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataStackitSqlserverflexInstance) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (d *jsiiProxy_DataStackitSqlserverflexInstance) validatePutNetworkParameters(value *DataStackitSqlserverflexInstanceNetwork) error {
+	return nil
+}
+
 func validateDataStackitSqlserverflexInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

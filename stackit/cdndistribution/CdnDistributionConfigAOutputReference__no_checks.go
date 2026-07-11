@@ -56,6 +56,10 @@ func (c *jsiiProxy_CdnDistributionConfigAOutputReference) validatePutRedirectsPa
 	return nil
 }
 
+func (c *jsiiProxy_CdnDistributionConfigAOutputReference) validatePutTlsParameters(value *CdnDistributionConfigTls) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnDistributionConfigAOutputReference) validatePutWafParameters(value *CdnDistributionConfigWaf) error {
 	return nil
 }
@@ -76,11 +80,19 @@ func (j *jsiiProxy_CdnDistributionConfigAOutputReference) validateSetComplexObje
 	return nil
 }
 
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) validateSetForwardHostHeaderParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CdnDistributionConfigAOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_CdnDistributionConfigAOutputReference) validateSetRegionsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) validateSetStripResponseCookiesParameters(val interface{}) error {
 	return nil
 }
 
