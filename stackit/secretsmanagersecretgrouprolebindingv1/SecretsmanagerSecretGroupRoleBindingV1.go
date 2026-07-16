@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/secretsmanager_secret_group_role_binding_v1 stackit_secretsmanager_secret_group_role_binding_v1}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/secretsmanager_secret_group_role_binding_v1 stackit_secretsmanager_secret_group_role_binding_v1}.
 type SecretsmanagerSecretGroupRoleBindingV1 interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -387,7 +387,7 @@ func (j *jsiiProxy_SecretsmanagerSecretGroupRoleBindingV1) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/secretsmanager_secret_group_role_binding_v1 stackit_secretsmanager_secret_group_role_binding_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/secretsmanager_secret_group_role_binding_v1 stackit_secretsmanager_secret_group_role_binding_v1} Resource.
 func NewSecretsmanagerSecretGroupRoleBindingV1(scope constructs.Construct, id *string, config *SecretsmanagerSecretGroupRoleBindingV1Config) SecretsmanagerSecretGroupRoleBindingV1 {
 	_init_.Initialize()
 
@@ -405,7 +405,7 @@ func NewSecretsmanagerSecretGroupRoleBindingV1(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/secretsmanager_secret_group_role_binding_v1 stackit_secretsmanager_secret_group_role_binding_v1} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/secretsmanager_secret_group_role_binding_v1 stackit_secretsmanager_secret_group_role_binding_v1} Resource.
 func NewSecretsmanagerSecretGroupRoleBindingV1_Override(s SecretsmanagerSecretGroupRoleBindingV1, scope constructs.Construct, id *string, config *SecretsmanagerSecretGroupRoleBindingV1Config) {
 	_init_.Initialize()
 

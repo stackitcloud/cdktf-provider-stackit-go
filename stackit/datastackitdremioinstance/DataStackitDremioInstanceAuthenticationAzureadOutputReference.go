@@ -12,7 +12,6 @@ type DataStackitDremioInstanceAuthenticationAzureadOutputReference interface {
 	cdktf.ComplexObject
 	AuthorityUrl() *string
 	ClientId() *string
-	ClientSecret() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -95,16 +94,6 @@ func (j *jsiiProxy_DataStackitDremioInstanceAuthenticationAzureadOutputReference
 	_jsii_.Get(
 		j,
 		"clientId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataStackitDremioInstanceAuthenticationAzureadOutputReference) ClientSecret() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"clientSecret",
 		&returns,
 	)
 	return returns

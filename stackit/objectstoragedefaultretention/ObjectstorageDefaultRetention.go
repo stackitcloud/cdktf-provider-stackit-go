@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/objectstorage_default_retention stackit_objectstorage_default_retention}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/objectstorage_default_retention stackit_objectstorage_default_retention}.
 type ObjectstorageDefaultRetention interface {
 	cdktf.TerraformResource
 	BucketName() *string
@@ -410,7 +410,7 @@ func (j *jsiiProxy_ObjectstorageDefaultRetention) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/objectstorage_default_retention stackit_objectstorage_default_retention} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/objectstorage_default_retention stackit_objectstorage_default_retention} Resource.
 func NewObjectstorageDefaultRetention(scope constructs.Construct, id *string, config *ObjectstorageDefaultRetentionConfig) ObjectstorageDefaultRetention {
 	_init_.Initialize()
 
@@ -428,7 +428,7 @@ func NewObjectstorageDefaultRetention(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/objectstorage_default_retention stackit_objectstorage_default_retention} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/objectstorage_default_retention stackit_objectstorage_default_retention} Resource.
 func NewObjectstorageDefaultRetention_Override(o ObjectstorageDefaultRetention, scope constructs.Construct, id *string, config *ObjectstorageDefaultRetentionConfig) {
 	_init_.Initialize()
 

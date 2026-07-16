@@ -21,19 +21,19 @@ type DataStackitRedisCredentialConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The credential's ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/data-sources/redis_credential#credential_id DataStackitRedisCredential#credential_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/redis_credential#credential_id DataStackitRedisCredential#credential_id}
 	CredentialId *string `field:"required" json:"credentialId" yaml:"credentialId"`
 	// ID of the Redis instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/data-sources/redis_credential#instance_id DataStackitRedisCredential#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/redis_credential#instance_id DataStackitRedisCredential#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// STACKIT project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/data-sources/redis_credential#project_id DataStackitRedisCredential#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/redis_credential#project_id DataStackitRedisCredential#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/data-sources/redis_credential#region DataStackitRedisCredential#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/redis_credential#region DataStackitRedisCredential#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

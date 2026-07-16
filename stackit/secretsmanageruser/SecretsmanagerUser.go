@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/secretsmanager_user stackit_secretsmanager_user}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/secretsmanager_user stackit_secretsmanager_user}.
 type SecretsmanagerUser interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -443,7 +443,7 @@ func (j *jsiiProxy_SecretsmanagerUser) WriteEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/secretsmanager_user stackit_secretsmanager_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/secretsmanager_user stackit_secretsmanager_user} Resource.
 func NewSecretsmanagerUser(scope constructs.Construct, id *string, config *SecretsmanagerUserConfig) SecretsmanagerUser {
 	_init_.Initialize()
 
@@ -461,7 +461,7 @@ func NewSecretsmanagerUser(scope constructs.Construct, id *string, config *Secre
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/secretsmanager_user stackit_secretsmanager_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/secretsmanager_user stackit_secretsmanager_user} Resource.
 func NewSecretsmanagerUser_Override(s SecretsmanagerUser, scope constructs.Construct, id *string, config *SecretsmanagerUserConfig) {
 	_init_.Initialize()
 

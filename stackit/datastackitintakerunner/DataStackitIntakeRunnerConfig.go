@@ -21,15 +21,15 @@ type DataStackitIntakeRunnerConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT Project ID to which the runner is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/data-sources/intake_runner#project_id DataStackitIntakeRunner#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/intake_runner#project_id DataStackitIntakeRunner#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The runner ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/data-sources/intake_runner#runner_id DataStackitIntakeRunner#runner_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/intake_runner#runner_id DataStackitIntakeRunner#runner_id}
 	RunnerId *string `field:"required" json:"runnerId" yaml:"runnerId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/data-sources/intake_runner#region DataStackitIntakeRunner#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/intake_runner#region DataStackitIntakeRunner#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

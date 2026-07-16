@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/alb_certificate stackit_alb_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/alb_certificate stackit_alb_certificate}.
 type AlbCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -421,7 +421,7 @@ func (j *jsiiProxy_AlbCertificate) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/alb_certificate stackit_alb_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/alb_certificate stackit_alb_certificate} Resource.
 func NewAlbCertificate(scope constructs.Construct, id *string, config *AlbCertificateConfig) AlbCertificate {
 	_init_.Initialize()
 
@@ -439,7 +439,7 @@ func NewAlbCertificate(scope constructs.Construct, id *string, config *AlbCertif
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/alb_certificate stackit_alb_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/alb_certificate stackit_alb_certificate} Resource.
 func NewAlbCertificate_Override(a AlbCertificate, scope constructs.Construct, id *string, config *AlbCertificateConfig) {
 	_init_.Initialize()
 

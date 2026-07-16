@@ -21,21 +21,21 @@ type SfsExportPolicyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the export policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/sfs_export_policy#name SfsExportPolicy#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/sfs_export_policy#name SfsExportPolicy#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// STACKIT project ID to which the export policy is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/sfs_export_policy#project_id SfsExportPolicy#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/sfs_export_policy#project_id SfsExportPolicy#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Labels are key-value string pairs which can be attached to the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/sfs_export_policy#labels SfsExportPolicy#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/sfs_export_policy#labels SfsExportPolicy#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/sfs_export_policy#region SfsExportPolicy#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/sfs_export_policy#region SfsExportPolicy#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/resources/sfs_export_policy#rules SfsExportPolicy#rules}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/sfs_export_policy#rules SfsExportPolicy#rules}.
 	Rules interface{} `field:"optional" json:"rules" yaml:"rules"`
 }
 

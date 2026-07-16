@@ -1,3 +1,3 @@
 # `data_stackit_server_update_enable`
 
-Refer to the Terraform Registry for docs: [`data_stackit_server_update_enable`](https://registry.terraform.io/providers/stackitcloud/stackit/0.102.0/docs/data-sources/server_update_enable).
+Refer to the Terraform Registry for docs: [`data_stackit_server_update_enable`](https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/server_update_enable).
