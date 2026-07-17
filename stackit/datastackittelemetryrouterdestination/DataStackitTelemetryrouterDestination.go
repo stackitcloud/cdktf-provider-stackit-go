@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/telemetryrouter_destination stackit_telemetryrouter_destination}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/telemetryrouter_destination stackit_telemetryrouter_destination}.
 type DataStackitTelemetryrouterDestination interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -408,7 +408,7 @@ func (j *jsiiProxy_DataStackitTelemetryrouterDestination) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/telemetryrouter_destination stackit_telemetryrouter_destination} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/telemetryrouter_destination stackit_telemetryrouter_destination} Data Source.
 func NewDataStackitTelemetryrouterDestination(scope constructs.Construct, id *string, config *DataStackitTelemetryrouterDestinationConfig) DataStackitTelemetryrouterDestination {
 	_init_.Initialize()
 
@@ -426,7 +426,7 @@ func NewDataStackitTelemetryrouterDestination(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/telemetryrouter_destination stackit_telemetryrouter_destination} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/telemetryrouter_destination stackit_telemetryrouter_destination} Data Source.
 func NewDataStackitTelemetryrouterDestination_Override(d DataStackitTelemetryrouterDestination, scope constructs.Construct, id *string, config *DataStackitTelemetryrouterDestinationConfig) {
 	_init_.Initialize()
 

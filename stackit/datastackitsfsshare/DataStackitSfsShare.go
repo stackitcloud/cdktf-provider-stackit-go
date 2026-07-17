@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/sfs_share stackit_sfs_share}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/sfs_share stackit_sfs_share}.
 type DataStackitSfsShare interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -397,7 +397,7 @@ func (j *jsiiProxy_DataStackitSfsShare) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/sfs_share stackit_sfs_share} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/sfs_share stackit_sfs_share} Data Source.
 func NewDataStackitSfsShare(scope constructs.Construct, id *string, config *DataStackitSfsShareConfig) DataStackitSfsShare {
 	_init_.Initialize()
 
@@ -415,7 +415,7 @@ func NewDataStackitSfsShare(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/sfs_share stackit_sfs_share} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/sfs_share stackit_sfs_share} Data Source.
 func NewDataStackitSfsShare_Override(d DataStackitSfsShare, scope constructs.Construct, id *string, config *DataStackitSfsShareConfig) {
 	_init_.Initialize()
 

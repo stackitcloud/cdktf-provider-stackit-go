@@ -21,11 +21,11 @@ type DataStackitVpnGatewayStatusConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The server-generated UUID of the VPN gateway.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/vpn_gateway_status#gateway_id DataStackitVpnGatewayStatus#gateway_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/vpn_gateway_status#gateway_id DataStackitVpnGatewayStatus#gateway_id}
 	GatewayId *string `field:"required" json:"gatewayId" yaml:"gatewayId"`
 	// STACKIT project ID associated with the VPN gateway.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/vpn_gateway_status#project_id DataStackitVpnGatewayStatus#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/vpn_gateway_status#project_id DataStackitVpnGatewayStatus#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/rabbitmq_instance stackit_rabbitmq_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/rabbitmq_instance stackit_rabbitmq_instance}.
 type DataStackitRabbitmqInstance interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -429,7 +429,7 @@ func (j *jsiiProxy_DataStackitRabbitmqInstance) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/rabbitmq_instance stackit_rabbitmq_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/rabbitmq_instance stackit_rabbitmq_instance} Data Source.
 func NewDataStackitRabbitmqInstance(scope constructs.Construct, id *string, config *DataStackitRabbitmqInstanceConfig) DataStackitRabbitmqInstance {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewDataStackitRabbitmqInstance(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/rabbitmq_instance stackit_rabbitmq_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/rabbitmq_instance stackit_rabbitmq_instance} Data Source.
 func NewDataStackitRabbitmqInstance_Override(d DataStackitRabbitmqInstance, scope constructs.Construct, id *string, config *DataStackitRabbitmqInstanceConfig) {
 	_init_.Initialize()
 

@@ -216,25 +216,9 @@ func (j *jsiiProxy_DataStackitObjectstorageDefaultRetention) validateSetCountPar
 	return nil
 }
 
-func (j *jsiiProxy_DataStackitObjectstorageDefaultRetention) validateSetDaysParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataStackitObjectstorageDefaultRetention) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataStackitObjectstorageDefaultRetention) validateSetModeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

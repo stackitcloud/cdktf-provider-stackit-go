@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/vpc_routing_table_static_route stackit_vpc_routing_table_static_route}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/vpc_routing_table_static_route stackit_vpc_routing_table_static_route}.
 type VpcRoutingTableStaticRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -492,7 +492,7 @@ func (j *jsiiProxy_VpcRoutingTableStaticRoute) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/vpc_routing_table_static_route stackit_vpc_routing_table_static_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/vpc_routing_table_static_route stackit_vpc_routing_table_static_route} Resource.
 func NewVpcRoutingTableStaticRoute(scope constructs.Construct, id *string, config *VpcRoutingTableStaticRouteConfig) VpcRoutingTableStaticRoute {
 	_init_.Initialize()
 
@@ -510,7 +510,7 @@ func NewVpcRoutingTableStaticRoute(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/vpc_routing_table_static_route stackit_vpc_routing_table_static_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/vpc_routing_table_static_route stackit_vpc_routing_table_static_route} Resource.
 func NewVpcRoutingTableStaticRoute_Override(v VpcRoutingTableStaticRoute, scope constructs.Construct, id *string, config *VpcRoutingTableStaticRouteConfig) {
 	_init_.Initialize()
 

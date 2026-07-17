@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/vpc_network_range stackit_vpc_network_range}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/vpc_network_range stackit_vpc_network_range}.
 type VpcNetworkRange interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -588,7 +588,7 @@ func (j *jsiiProxy_VpcNetworkRange) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/vpc_network_range stackit_vpc_network_range} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/vpc_network_range stackit_vpc_network_range} Resource.
 func NewVpcNetworkRange(scope constructs.Construct, id *string, config *VpcNetworkRangeConfig) VpcNetworkRange {
 	_init_.Initialize()
 
@@ -606,7 +606,7 @@ func NewVpcNetworkRange(scope constructs.Construct, id *string, config *VpcNetwo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/vpc_network_range stackit_vpc_network_range} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/vpc_network_range stackit_vpc_network_range} Resource.
 func NewVpcNetworkRange_Override(v VpcNetworkRange, scope constructs.Construct, id *string, config *VpcNetworkRangeConfig) {
 	_init_.Initialize()
 

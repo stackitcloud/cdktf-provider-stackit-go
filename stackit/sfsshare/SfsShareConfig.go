@@ -21,22 +21,22 @@ type SfsShareConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the share.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/sfs_share#name SfsShare#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/sfs_share#name SfsShare#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// STACKIT project ID to which the share is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/sfs_share#project_id SfsShare#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/sfs_share#project_id SfsShare#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The ID of the resource pool for the SFS share.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/sfs_share#resource_pool_id SfsShare#resource_pool_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/sfs_share#resource_pool_id SfsShare#resource_pool_id}
 	ResourcePoolId *string `field:"required" json:"resourcePoolId" yaml:"resourcePoolId"`
 	// Space hard limit for the Share.
 	//
 	// If zero, the Share will have access to the full space of the Resource Pool it lives in.
 	// 				(unit: gigabytes)
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/sfs_share#space_hard_limit_gigabytes SfsShare#space_hard_limit_gigabytes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/sfs_share#space_hard_limit_gigabytes SfsShare#space_hard_limit_gigabytes}
 	SpaceHardLimitGigabytes *float64 `field:"required" json:"spaceHardLimitGigabytes" yaml:"spaceHardLimitGigabytes"`
 	// Name of the Share Export Policy to use in the Share.
 	//
@@ -44,15 +44,15 @@ type SfsShareConfig struct {
 	// clients with IPs matching the IP ACL of the Resource Pool hosting this Share.
 	// You can also assign a Share Export Policy after creating the Share
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/sfs_share#export_policy SfsShare#export_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/sfs_share#export_policy SfsShare#export_policy}
 	ExportPolicy *string `field:"optional" json:"exportPolicy" yaml:"exportPolicy"`
 	// Labels are key-value string pairs which can be attached to the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/sfs_share#labels SfsShare#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/sfs_share#labels SfsShare#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/sfs_share#region SfsShare#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/sfs_share#region SfsShare#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/vpc stackit_vpc}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/vpc stackit_vpc}.
 type Vpc interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -422,7 +422,7 @@ func (j *jsiiProxy_Vpc) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/vpc stackit_vpc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/vpc stackit_vpc} Resource.
 func NewVpc(scope constructs.Construct, id *string, config *VpcConfig) Vpc {
 	_init_.Initialize()
 
@@ -440,7 +440,7 @@ func NewVpc(scope constructs.Construct, id *string, config *VpcConfig) Vpc {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/vpc stackit_vpc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/vpc stackit_vpc} Resource.
 func NewVpc_Override(v Vpc, scope constructs.Construct, id *string, config *VpcConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/objectstorage_default_retention stackit_objectstorage_default_retention}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/objectstorage_default_retention stackit_objectstorage_default_retention}.
 type DataStackitObjectstorageDefaultRetention interface {
 	cdktf.TerraformDataSource
 	BucketName() *string
@@ -24,8 +24,6 @@ type DataStackitObjectstorageDefaultRetention interface {
 	// Experimental.
 	SetCount(val interface{})
 	Days() *float64
-	SetDays(val *float64)
-	DaysInput() *float64
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -44,8 +42,6 @@ type DataStackitObjectstorageDefaultRetention interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Mode() *string
-	SetMode(val *string)
-	ModeInput() *string
 	// The tree node.
 	Node() constructs.Node
 	ProjectId() *string
@@ -174,16 +170,6 @@ func (j *jsiiProxy_DataStackitObjectstorageDefaultRetention) Days() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataStackitObjectstorageDefaultRetention) DaysInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"daysInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataStackitObjectstorageDefaultRetention) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -249,16 +235,6 @@ func (j *jsiiProxy_DataStackitObjectstorageDefaultRetention) Mode() *string {
 	_jsii_.Get(
 		j,
 		"mode",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataStackitObjectstorageDefaultRetention) ModeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"modeInput",
 		&returns,
 	)
 	return returns
@@ -365,7 +341,7 @@ func (j *jsiiProxy_DataStackitObjectstorageDefaultRetention) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/objectstorage_default_retention stackit_objectstorage_default_retention} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/objectstorage_default_retention stackit_objectstorage_default_retention} Data Source.
 func NewDataStackitObjectstorageDefaultRetention(scope constructs.Construct, id *string, config *DataStackitObjectstorageDefaultRetentionConfig) DataStackitObjectstorageDefaultRetention {
 	_init_.Initialize()
 
@@ -383,7 +359,7 @@ func NewDataStackitObjectstorageDefaultRetention(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/objectstorage_default_retention stackit_objectstorage_default_retention} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/objectstorage_default_retention stackit_objectstorage_default_retention} Data Source.
 func NewDataStackitObjectstorageDefaultRetention_Override(d DataStackitObjectstorageDefaultRetention, scope constructs.Construct, id *string, config *DataStackitObjectstorageDefaultRetentionConfig) {
 	_init_.Initialize()
 
@@ -416,17 +392,6 @@ func (j *jsiiProxy_DataStackitObjectstorageDefaultRetention)SetCount(val interfa
 	)
 }
 
-func (j *jsiiProxy_DataStackitObjectstorageDefaultRetention)SetDays(val *float64) {
-	if err := j.validateSetDaysParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"days",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataStackitObjectstorageDefaultRetention)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -450,17 +415,6 @@ func (j *jsiiProxy_DataStackitObjectstorageDefaultRetention)SetLifecycle(val *cd
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataStackitObjectstorageDefaultRetention)SetMode(val *string) {
-	if err := j.validateSetModeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"mode",
 		val,
 	)
 }

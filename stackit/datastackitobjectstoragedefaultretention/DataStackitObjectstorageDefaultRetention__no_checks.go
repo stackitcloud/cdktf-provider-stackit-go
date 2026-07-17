@@ -76,15 +76,7 @@ func (j *jsiiProxy_DataStackitObjectstorageDefaultRetention) validateSetCountPar
 	return nil
 }
 
-func (j *jsiiProxy_DataStackitObjectstorageDefaultRetention) validateSetDaysParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataStackitObjectstorageDefaultRetention) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataStackitObjectstorageDefaultRetention) validateSetModeParameters(val *string) error {
 	return nil
 }
 

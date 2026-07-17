@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/vpc_region stackit_vpc_region}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/vpc_region stackit_vpc_region}.
 type DataStackitVpcRegion interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_DataStackitVpcRegion) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/vpc_region stackit_vpc_region} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/vpc_region stackit_vpc_region} Data Source.
 func NewDataStackitVpcRegion(scope constructs.Construct, id *string, config *DataStackitVpcRegionConfig) DataStackitVpcRegion {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewDataStackitVpcRegion(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/vpc_region stackit_vpc_region} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/vpc_region stackit_vpc_region} Data Source.
 func NewDataStackitVpcRegion_Override(d DataStackitVpcRegion, scope constructs.Construct, id *string, config *DataStackitVpcRegionConfig) {
 	_init_.Initialize()
 

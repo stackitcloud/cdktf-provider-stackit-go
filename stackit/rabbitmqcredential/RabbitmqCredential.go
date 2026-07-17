@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/rabbitmq_credential stackit_rabbitmq_credential}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/rabbitmq_credential stackit_rabbitmq_credential}.
 type RabbitmqCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -509,7 +509,7 @@ func (j *jsiiProxy_RabbitmqCredential) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/rabbitmq_credential stackit_rabbitmq_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/rabbitmq_credential stackit_rabbitmq_credential} Resource.
 func NewRabbitmqCredential(scope constructs.Construct, id *string, config *RabbitmqCredentialConfig) RabbitmqCredential {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewRabbitmqCredential(scope constructs.Construct, id *string, config *Rabbi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/rabbitmq_credential stackit_rabbitmq_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/rabbitmq_credential stackit_rabbitmq_credential} Resource.
 func NewRabbitmqCredential_Override(r RabbitmqCredential, scope constructs.Construct, id *string, config *RabbitmqCredentialConfig) {
 	_init_.Initialize()
 

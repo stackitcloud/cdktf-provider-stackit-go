@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/telemetryrouter_instance stackit_telemetryrouter_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/telemetryrouter_instance stackit_telemetryrouter_instance}.
 type TelemetryrouterInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -456,7 +456,7 @@ func (j *jsiiProxy_TelemetryrouterInstance) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/telemetryrouter_instance stackit_telemetryrouter_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/telemetryrouter_instance stackit_telemetryrouter_instance} Resource.
 func NewTelemetryrouterInstance(scope constructs.Construct, id *string, config *TelemetryrouterInstanceConfig) TelemetryrouterInstance {
 	_init_.Initialize()
 
@@ -474,7 +474,7 @@ func NewTelemetryrouterInstance(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/telemetryrouter_instance stackit_telemetryrouter_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/telemetryrouter_instance stackit_telemetryrouter_instance} Resource.
 func NewTelemetryrouterInstance_Override(t TelemetryrouterInstance, scope constructs.Construct, id *string, config *TelemetryrouterInstanceConfig) {
 	_init_.Initialize()
 

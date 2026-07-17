@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/vpc_region stackit_vpc_region}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/vpc_region stackit_vpc_region}.
 type VpcRegion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -388,7 +388,7 @@ func (j *jsiiProxy_VpcRegion) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/vpc_region stackit_vpc_region} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/vpc_region stackit_vpc_region} Resource.
 func NewVpcRegion(scope constructs.Construct, id *string, config *VpcRegionConfig) VpcRegion {
 	_init_.Initialize()
 
@@ -406,7 +406,7 @@ func NewVpcRegion(scope constructs.Construct, id *string, config *VpcRegionConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/vpc_region stackit_vpc_region} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/vpc_region stackit_vpc_region} Resource.
 func NewVpcRegion_Override(v VpcRegion, scope constructs.Construct, id *string, config *VpcRegionConfig) {
 	_init_.Initialize()
 

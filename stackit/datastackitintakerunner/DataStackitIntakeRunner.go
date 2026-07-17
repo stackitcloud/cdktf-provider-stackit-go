@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/intake_runner stackit_intake_runner}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/intake_runner stackit_intake_runner}.
 type DataStackitIntakeRunner interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -396,7 +396,7 @@ func (j *jsiiProxy_DataStackitIntakeRunner) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/intake_runner stackit_intake_runner} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/intake_runner stackit_intake_runner} Data Source.
 func NewDataStackitIntakeRunner(scope constructs.Construct, id *string, config *DataStackitIntakeRunnerConfig) DataStackitIntakeRunner {
 	_init_.Initialize()
 
@@ -414,7 +414,7 @@ func NewDataStackitIntakeRunner(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/intake_runner stackit_intake_runner} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/intake_runner stackit_intake_runner} Data Source.
 func NewDataStackitIntakeRunner_Override(d DataStackitIntakeRunner, scope constructs.Construct, id *string, config *DataStackitIntakeRunnerConfig) {
 	_init_.Initialize()
 

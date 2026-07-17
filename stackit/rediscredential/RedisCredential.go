@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/redis_credential stackit_redis_credential}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/redis_credential stackit_redis_credential}.
 type RedisCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -476,7 +476,7 @@ func (j *jsiiProxy_RedisCredential) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/redis_credential stackit_redis_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/redis_credential stackit_redis_credential} Resource.
 func NewRedisCredential(scope constructs.Construct, id *string, config *RedisCredentialConfig) RedisCredential {
 	_init_.Initialize()
 
@@ -494,7 +494,7 @@ func NewRedisCredential(scope constructs.Construct, id *string, config *RedisCre
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/resources/redis_credential stackit_redis_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/redis_credential stackit_redis_credential} Resource.
 func NewRedisCredential_Override(r RedisCredential, scope constructs.Construct, id *string, config *RedisCredentialConfig) {
 	_init_.Initialize()
 

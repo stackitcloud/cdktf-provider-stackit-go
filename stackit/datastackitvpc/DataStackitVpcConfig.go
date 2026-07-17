@@ -21,13 +21,13 @@ type DataStackitVpcConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT project ID to which the VPC is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/vpc#project_id DataStackitVpc#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/vpc#project_id DataStackitVpc#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The VPC ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/vpc#vpc_id DataStackitVpc#vpc_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/vpc#vpc_id DataStackitVpc#vpc_id}
 	VpcId *string `field:"required" json:"vpcId" yaml:"vpcId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/vpc#timeouts DataStackitVpc#timeouts}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/vpc#timeouts DataStackitVpc#timeouts}.
 	Timeouts *DataStackitVpcTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

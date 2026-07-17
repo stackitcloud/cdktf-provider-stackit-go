@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/vpc_routing_table_static_route stackit_vpc_routing_table_static_route}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/vpc_routing_table_static_route stackit_vpc_routing_table_static_route}.
 type DataStackitVpcRoutingTableStaticRoute interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -422,7 +422,7 @@ func (j *jsiiProxy_DataStackitVpcRoutingTableStaticRoute) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/vpc_routing_table_static_route stackit_vpc_routing_table_static_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/vpc_routing_table_static_route stackit_vpc_routing_table_static_route} Data Source.
 func NewDataStackitVpcRoutingTableStaticRoute(scope constructs.Construct, id *string, config *DataStackitVpcRoutingTableStaticRouteConfig) DataStackitVpcRoutingTableStaticRoute {
 	_init_.Initialize()
 
@@ -440,7 +440,7 @@ func NewDataStackitVpcRoutingTableStaticRoute(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.103.0/docs/data-sources/vpc_routing_table_static_route stackit_vpc_routing_table_static_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/vpc_routing_table_static_route stackit_vpc_routing_table_static_route} Data Source.
 func NewDataStackitVpcRoutingTableStaticRoute_Override(d DataStackitVpcRoutingTableStaticRoute, scope constructs.Construct, id *string, config *DataStackitVpcRoutingTableStaticRouteConfig) {
 	_init_.Initialize()
 
