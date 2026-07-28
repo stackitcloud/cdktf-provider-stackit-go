@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/postgresflex_instance stackit_postgresflex_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.105.0/docs/resources/postgresflex_instance stackit_postgresflex_instance}.
 type PostgresflexInstance interface {
 	cdktf.TerraformResource
 	Acl() *[]*string
@@ -24,6 +24,7 @@ type PostgresflexInstance interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
+	ConnectionInfo() PostgresflexInstanceConnectionInfoOutputReference
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -34,7 +35,12 @@ type PostgresflexInstance interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Encryption() PostgresflexInstanceEncryptionOutputReference
+	EncryptionInput() interface{}
 	Flavor() PostgresflexInstanceFlavorOutputReference
+	FlavorId() *string
+	SetFlavorId(val *string)
+	FlavorIdInput() *string
 	FlavorInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -53,6 +59,8 @@ type PostgresflexInstance interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Network() PostgresflexInstanceNetworkOutputReference
+	NetworkInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	ProjectId() *string
@@ -74,6 +82,9 @@ type PostgresflexInstance interface {
 	Replicas() *float64
 	SetReplicas(val *float64)
 	ReplicasInput() *float64
+	RetentionDays() *float64
+	SetRetentionDays(val *float64)
+	RetentionDaysInput() *float64
 	Storage() PostgresflexInstanceStorageOutputReference
 	StorageInput() interface{}
 	// Experimental.
@@ -128,12 +139,21 @@ type PostgresflexInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEncryption(value *PostgresflexInstanceEncryption)
 	PutFlavor(value *PostgresflexInstanceFlavor)
+	PutNetwork(value *PostgresflexInstanceNetwork)
 	PutStorage(value *PostgresflexInstanceStorage)
+	ResetAcl()
+	ResetEncryption()
+	ResetFlavor()
+	ResetFlavorId()
+	ResetNetwork()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetReplicas()
+	ResetRetentionDays()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -212,6 +232,16 @@ func (j *jsiiProxy_PostgresflexInstance) Connection() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PostgresflexInstance) ConnectionInfo() PostgresflexInstanceConnectionInfoOutputReference {
+	var returns PostgresflexInstanceConnectionInfoOutputReference
+	_jsii_.Get(
+		j,
+		"connectionInfo",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PostgresflexInstance) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -242,11 +272,51 @@ func (j *jsiiProxy_PostgresflexInstance) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_PostgresflexInstance) Encryption() PostgresflexInstanceEncryptionOutputReference {
+	var returns PostgresflexInstanceEncryptionOutputReference
+	_jsii_.Get(
+		j,
+		"encryption",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresflexInstance) EncryptionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"encryptionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PostgresflexInstance) Flavor() PostgresflexInstanceFlavorOutputReference {
 	var returns PostgresflexInstanceFlavorOutputReference
 	_jsii_.Get(
 		j,
 		"flavor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresflexInstance) FlavorId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"flavorId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresflexInstance) FlavorIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"flavorIdInput",
 		&returns,
 	)
 	return returns
@@ -337,6 +407,26 @@ func (j *jsiiProxy_PostgresflexInstance) NameInput() *string {
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresflexInstance) Network() PostgresflexInstanceNetworkOutputReference {
+	var returns PostgresflexInstanceNetworkOutputReference
+	_jsii_.Get(
+		j,
+		"network",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresflexInstance) NetworkInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"networkInput",
 		&returns,
 	)
 	return returns
@@ -442,6 +532,26 @@ func (j *jsiiProxy_PostgresflexInstance) ReplicasInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_PostgresflexInstance) RetentionDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retentionDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresflexInstance) RetentionDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retentionDaysInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PostgresflexInstance) Storage() PostgresflexInstanceStorageOutputReference {
 	var returns PostgresflexInstanceStorageOutputReference
 	_jsii_.Get(
@@ -513,7 +623,7 @@ func (j *jsiiProxy_PostgresflexInstance) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/postgresflex_instance stackit_postgresflex_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.105.0/docs/resources/postgresflex_instance stackit_postgresflex_instance} Resource.
 func NewPostgresflexInstance(scope constructs.Construct, id *string, config *PostgresflexInstanceConfig) PostgresflexInstance {
 	_init_.Initialize()
 
@@ -531,7 +641,7 @@ func NewPostgresflexInstance(scope constructs.Construct, id *string, config *Pos
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/postgresflex_instance stackit_postgresflex_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.105.0/docs/resources/postgresflex_instance stackit_postgresflex_instance} Resource.
 func NewPostgresflexInstance_Override(p PostgresflexInstance, scope constructs.Construct, id *string, config *PostgresflexInstanceConfig) {
 	_init_.Initialize()
 
@@ -590,6 +700,17 @@ func (j *jsiiProxy_PostgresflexInstance)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresflexInstance)SetFlavorId(val *string) {
+	if err := j.validateSetFlavorIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"flavorId",
 		val,
 	)
 }
@@ -672,6 +793,17 @@ func (j *jsiiProxy_PostgresflexInstance)SetReplicas(val *float64) {
 	_jsii_.Set(
 		j,
 		"replicas",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PostgresflexInstance)SetRetentionDays(val *float64) {
+	if err := j.validateSetRetentionDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"retentionDays",
 		val,
 	)
 }
@@ -1040,6 +1172,17 @@ func (p *jsiiProxy_PostgresflexInstance) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
+func (p *jsiiProxy_PostgresflexInstance) PutEncryption(value *PostgresflexInstanceEncryption) {
+	if err := p.validatePutEncryptionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putEncryption",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PostgresflexInstance) PutFlavor(value *PostgresflexInstanceFlavor) {
 	if err := p.validatePutFlavorParameters(value); err != nil {
 		panic(err)
@@ -1047,6 +1190,17 @@ func (p *jsiiProxy_PostgresflexInstance) PutFlavor(value *PostgresflexInstanceFl
 	_jsii_.InvokeVoid(
 		p,
 		"putFlavor",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PostgresflexInstance) PutNetwork(value *PostgresflexInstanceNetwork) {
+	if err := p.validatePutNetworkParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putNetwork",
 		[]interface{}{value},
 	)
 }
@@ -1062,6 +1216,46 @@ func (p *jsiiProxy_PostgresflexInstance) PutStorage(value *PostgresflexInstanceS
 	)
 }
 
+func (p *jsiiProxy_PostgresflexInstance) ResetAcl() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAcl",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresflexInstance) ResetEncryption() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetEncryption",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresflexInstance) ResetFlavor() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetFlavor",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresflexInstance) ResetFlavorId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetFlavorId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresflexInstance) ResetNetwork() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNetwork",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PostgresflexInstance) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1074,6 +1268,22 @@ func (p *jsiiProxy_PostgresflexInstance) ResetRegion() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresflexInstance) ResetReplicas() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetReplicas",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PostgresflexInstance) ResetRetentionDays() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRetentionDays",
 		nil, // no parameters
 	)
 }

@@ -72,7 +72,15 @@ func (p *jsiiProxy_PostgresflexInstance) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (p *jsiiProxy_PostgresflexInstance) validatePutEncryptionParameters(value *PostgresflexInstanceEncryption) error {
+	return nil
+}
+
 func (p *jsiiProxy_PostgresflexInstance) validatePutFlavorParameters(value *PostgresflexInstanceFlavor) error {
+	return nil
+}
+
+func (p *jsiiProxy_PostgresflexInstance) validatePutNetworkParameters(value *PostgresflexInstanceNetwork) error {
 	return nil
 }
 
@@ -112,6 +120,10 @@ func (j *jsiiProxy_PostgresflexInstance) validateSetCountParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_PostgresflexInstance) validateSetFlavorIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PostgresflexInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -133,6 +145,10 @@ func (j *jsiiProxy_PostgresflexInstance) validateSetRegionParameters(val *string
 }
 
 func (j *jsiiProxy_PostgresflexInstance) validateSetReplicasParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_PostgresflexInstance) validateSetRetentionDaysParameters(val *float64) error {
 	return nil
 }
 

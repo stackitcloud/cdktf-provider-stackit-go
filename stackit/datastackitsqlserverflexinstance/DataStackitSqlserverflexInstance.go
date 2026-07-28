@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/sqlserverflex_instance stackit_sqlserverflex_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.105.0/docs/data-sources/sqlserverflex_instance stackit_sqlserverflex_instance}.
 type DataStackitSqlserverflexInstance interface {
 	cdktf.TerraformDataSource
 	Acl() *[]*string
@@ -27,6 +27,7 @@ type DataStackitSqlserverflexInstance interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Edition() *string
+	Encryption() DataStackitSqlserverflexInstanceEncryptionOutputReference
 	Flavor() DataStackitSqlserverflexInstanceFlavorOutputReference
 	FlavorId() *string
 	// Experimental.
@@ -188,6 +189,16 @@ func (j *jsiiProxy_DataStackitSqlserverflexInstance) Edition() *string {
 	_jsii_.Get(
 		j,
 		"edition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitSqlserverflexInstance) Encryption() DataStackitSqlserverflexInstanceEncryptionOutputReference {
+	var returns DataStackitSqlserverflexInstanceEncryptionOutputReference
+	_jsii_.Get(
+		j,
+		"encryption",
 		&returns,
 	)
 	return returns
@@ -464,7 +475,7 @@ func (j *jsiiProxy_DataStackitSqlserverflexInstance) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/sqlserverflex_instance stackit_sqlserverflex_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.105.0/docs/data-sources/sqlserverflex_instance stackit_sqlserverflex_instance} Data Source.
 func NewDataStackitSqlserverflexInstance(scope constructs.Construct, id *string, config *DataStackitSqlserverflexInstanceConfig) DataStackitSqlserverflexInstance {
 	_init_.Initialize()
 
@@ -482,7 +493,7 @@ func NewDataStackitSqlserverflexInstance(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/sqlserverflex_instance stackit_sqlserverflex_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.105.0/docs/data-sources/sqlserverflex_instance stackit_sqlserverflex_instance} Data Source.
 func NewDataStackitSqlserverflexInstance_Override(d DataStackitSqlserverflexInstance, scope constructs.Construct, id *string, config *DataStackitSqlserverflexInstanceConfig) {
 	_init_.Initialize()
 

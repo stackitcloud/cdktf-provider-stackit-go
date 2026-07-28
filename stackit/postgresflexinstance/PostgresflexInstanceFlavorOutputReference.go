@@ -34,6 +34,7 @@ type PostgresflexInstanceFlavorOutputReference interface {
 	Id() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	NodeType() *string
 	Ram() *float64
 	SetRam(val *float64)
 	RamInput() *float64
@@ -169,6 +170,16 @@ func (j *jsiiProxy_PostgresflexInstanceFlavorOutputReference) InternalValue() in
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PostgresflexInstanceFlavorOutputReference) NodeType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeType",
 		&returns,
 	)
 	return returns

@@ -32,6 +32,7 @@ type DataStackitPostgresflexInstanceFlavorOutputReference interface {
 	Id() *string
 	InternalValue() *DataStackitPostgresflexInstanceFlavor
 	SetInternalValue(val *DataStackitPostgresflexInstanceFlavor)
+	NodeType() *string
 	Ram() *float64
 	// Experimental.
 	TerraformAttribute() *string
@@ -155,6 +156,16 @@ func (j *jsiiProxy_DataStackitPostgresflexInstanceFlavorOutputReference) Interna
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitPostgresflexInstanceFlavorOutputReference) NodeType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeType",
 		&returns,
 	)
 	return returns

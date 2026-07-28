@@ -31,8 +31,10 @@ type DataStackitSqlserverflexInstanceNetworkOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InstanceAddress() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	RouterAddress() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -151,11 +153,31 @@ func (j *jsiiProxy_DataStackitSqlserverflexInstanceNetworkOutputReference) Fqn()
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitSqlserverflexInstanceNetworkOutputReference) InstanceAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceAddress",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitSqlserverflexInstanceNetworkOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitSqlserverflexInstanceNetworkOutputReference) RouterAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routerAddress",
 		&returns,
 	)
 	return returns

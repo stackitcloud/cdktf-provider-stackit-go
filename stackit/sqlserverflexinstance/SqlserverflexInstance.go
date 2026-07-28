@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/sqlserverflex_instance stackit_sqlserverflex_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.105.0/docs/resources/sqlserverflex_instance stackit_sqlserverflex_instance}.
 type SqlserverflexInstance interface {
 	cdktf.TerraformResource
 	Acl() *[]*string
@@ -35,6 +35,8 @@ type SqlserverflexInstance interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Edition() *string
+	Encryption() SqlserverflexInstanceEncryptionOutputReference
+	EncryptionInput() interface{}
 	Flavor() SqlserverflexInstanceFlavorOutputReference
 	FlavorId() *string
 	SetFlavorId(val *string)
@@ -137,12 +139,14 @@ type SqlserverflexInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEncryption(value *SqlserverflexInstanceEncryption)
 	PutFlavor(value *SqlserverflexInstanceFlavor)
 	PutNetwork(value *SqlserverflexInstanceNetwork)
 	PutOptions(value *SqlserverflexInstanceOptions)
 	PutStorage(value *SqlserverflexInstanceStorage)
 	ResetAcl()
 	ResetBackupSchedule()
+	ResetEncryption()
 	ResetFlavor()
 	ResetFlavorId()
 	ResetNetwork()
@@ -267,6 +271,26 @@ func (j *jsiiProxy_SqlserverflexInstance) Edition() *string {
 	_jsii_.Get(
 		j,
 		"edition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlserverflexInstance) Encryption() SqlserverflexInstanceEncryptionOutputReference {
+	var returns SqlserverflexInstanceEncryptionOutputReference
+	_jsii_.Get(
+		j,
+		"encryption",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlserverflexInstance) EncryptionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"encryptionInput",
 		&returns,
 	)
 	return returns
@@ -613,7 +637,7 @@ func (j *jsiiProxy_SqlserverflexInstance) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/sqlserverflex_instance stackit_sqlserverflex_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.105.0/docs/resources/sqlserverflex_instance stackit_sqlserverflex_instance} Resource.
 func NewSqlserverflexInstance(scope constructs.Construct, id *string, config *SqlserverflexInstanceConfig) SqlserverflexInstance {
 	_init_.Initialize()
 
@@ -631,7 +655,7 @@ func NewSqlserverflexInstance(scope constructs.Construct, id *string, config *Sq
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/resources/sqlserverflex_instance stackit_sqlserverflex_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.105.0/docs/resources/sqlserverflex_instance stackit_sqlserverflex_instance} Resource.
 func NewSqlserverflexInstance_Override(s SqlserverflexInstance, scope constructs.Construct, id *string, config *SqlserverflexInstanceConfig) {
 	_init_.Initialize()
 
@@ -1151,6 +1175,17 @@ func (s *jsiiProxy_SqlserverflexInstance) OverrideLogicalId(newLogicalId *string
 	)
 }
 
+func (s *jsiiProxy_SqlserverflexInstance) PutEncryption(value *SqlserverflexInstanceEncryption) {
+	if err := s.validatePutEncryptionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putEncryption",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SqlserverflexInstance) PutFlavor(value *SqlserverflexInstanceFlavor) {
 	if err := s.validatePutFlavorParameters(value); err != nil {
 		panic(err)
@@ -1207,6 +1242,14 @@ func (s *jsiiProxy_SqlserverflexInstance) ResetBackupSchedule() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetBackupSchedule",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlserverflexInstance) ResetEncryption() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEncryption",
 		nil, // no parameters
 	)
 }

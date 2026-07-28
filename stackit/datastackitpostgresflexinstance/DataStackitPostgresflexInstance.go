@@ -9,13 +9,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/postgresflex_instance stackit_postgresflex_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.105.0/docs/data-sources/postgresflex_instance stackit_postgresflex_instance}.
 type DataStackitPostgresflexInstance interface {
 	cdktf.TerraformDataSource
 	Acl() *[]*string
 	BackupSchedule() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ConnectionInfo() DataStackitPostgresflexInstanceConnectionInfoOutputReference
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -26,7 +27,9 @@ type DataStackitPostgresflexInstance interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Encryption() DataStackitPostgresflexInstanceEncryptionOutputReference
 	Flavor() DataStackitPostgresflexInstanceFlavorOutputReference
+	FlavorId() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -44,6 +47,7 @@ type DataStackitPostgresflexInstance interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Name() *string
+	Network() DataStackitPostgresflexInstanceNetworkOutputReference
 	// The tree node.
 	Node() constructs.Node
 	ProjectId() *string
@@ -59,6 +63,7 @@ type DataStackitPostgresflexInstance interface {
 	SetRegion(val *string)
 	RegionInput() *string
 	Replicas() *float64
+	RetentionDays() *float64
 	Storage() DataStackitPostgresflexInstanceStorageOutputReference
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -145,6 +150,16 @@ func (j *jsiiProxy_DataStackitPostgresflexInstance) CdktfStack() cdktf.Terraform
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitPostgresflexInstance) ConnectionInfo() DataStackitPostgresflexInstanceConnectionInfoOutputReference {
+	var returns DataStackitPostgresflexInstanceConnectionInfoOutputReference
+	_jsii_.Get(
+		j,
+		"connectionInfo",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitPostgresflexInstance) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -175,11 +190,31 @@ func (j *jsiiProxy_DataStackitPostgresflexInstance) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitPostgresflexInstance) Encryption() DataStackitPostgresflexInstanceEncryptionOutputReference {
+	var returns DataStackitPostgresflexInstanceEncryptionOutputReference
+	_jsii_.Get(
+		j,
+		"encryption",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitPostgresflexInstance) Flavor() DataStackitPostgresflexInstanceFlavorOutputReference {
 	var returns DataStackitPostgresflexInstanceFlavorOutputReference
 	_jsii_.Get(
 		j,
 		"flavor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitPostgresflexInstance) FlavorId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"flavorId",
 		&returns,
 	)
 	return returns
@@ -265,6 +300,16 @@ func (j *jsiiProxy_DataStackitPostgresflexInstance) Name() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitPostgresflexInstance) Network() DataStackitPostgresflexInstanceNetworkOutputReference {
+	var returns DataStackitPostgresflexInstanceNetworkOutputReference
+	_jsii_.Get(
+		j,
+		"network",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitPostgresflexInstance) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -345,6 +390,16 @@ func (j *jsiiProxy_DataStackitPostgresflexInstance) Replicas() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitPostgresflexInstance) RetentionDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retentionDays",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitPostgresflexInstance) Storage() DataStackitPostgresflexInstanceStorageOutputReference {
 	var returns DataStackitPostgresflexInstanceStorageOutputReference
 	_jsii_.Get(
@@ -396,7 +451,7 @@ func (j *jsiiProxy_DataStackitPostgresflexInstance) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/postgresflex_instance stackit_postgresflex_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.105.0/docs/data-sources/postgresflex_instance stackit_postgresflex_instance} Data Source.
 func NewDataStackitPostgresflexInstance(scope constructs.Construct, id *string, config *DataStackitPostgresflexInstanceConfig) DataStackitPostgresflexInstance {
 	_init_.Initialize()
 
@@ -414,7 +469,7 @@ func NewDataStackitPostgresflexInstance(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.104.0/docs/data-sources/postgresflex_instance stackit_postgresflex_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.105.0/docs/data-sources/postgresflex_instance stackit_postgresflex_instance} Data Source.
 func NewDataStackitPostgresflexInstance_Override(d DataStackitPostgresflexInstance, scope constructs.Construct, id *string, config *DataStackitPostgresflexInstanceConfig) {
 	_init_.Initialize()
 

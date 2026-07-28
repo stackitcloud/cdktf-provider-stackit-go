@@ -204,7 +204,29 @@ func (p *jsiiProxy_PostgresflexInstance) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (p *jsiiProxy_PostgresflexInstance) validatePutEncryptionParameters(value *PostgresflexInstanceEncryption) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PostgresflexInstance) validatePutFlavorParameters(value *PostgresflexInstanceFlavor) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PostgresflexInstance) validatePutNetworkParameters(value *PostgresflexInstanceNetwork) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -372,6 +394,14 @@ func (j *jsiiProxy_PostgresflexInstance) validateSetCountParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_PostgresflexInstance) validateSetFlavorIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PostgresflexInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -451,6 +481,14 @@ func (j *jsiiProxy_PostgresflexInstance) validateSetRegionParameters(val *string
 }
 
 func (j *jsiiProxy_PostgresflexInstance) validateSetReplicasParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PostgresflexInstance) validateSetRetentionDaysParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

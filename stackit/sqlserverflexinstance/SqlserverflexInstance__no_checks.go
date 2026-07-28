@@ -72,6 +72,10 @@ func (s *jsiiProxy_SqlserverflexInstance) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func (s *jsiiProxy_SqlserverflexInstance) validatePutEncryptionParameters(value *SqlserverflexInstanceEncryption) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlserverflexInstance) validatePutFlavorParameters(value *SqlserverflexInstanceFlavor) error {
 	return nil
 }
