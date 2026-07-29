@@ -208,6 +208,22 @@ func (j *jsiiProxy_DataStackitNetwork) validateSetCountParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitNetwork) validateSetIpv4VpcNetworkRangeIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataStackitNetwork) validateSetIpv6VpcNetworkRangeIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataStackitNetwork) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -233,6 +249,14 @@ func (j *jsiiProxy_DataStackitNetwork) validateSetProjectIdParameters(val *strin
 }
 
 func (j *jsiiProxy_DataStackitNetwork) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataStackitNetwork) validateSetVpcIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.105.0/docs/data-sources/network stackit_network}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.106.0/docs/data-sources/network stackit_network}.
 type DataStackitNetwork interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -39,11 +39,17 @@ type DataStackitNetwork interface {
 	Ipv4Prefix() *string
 	Ipv4Prefixes() *[]*string
 	Ipv4PrefixLength() *float64
+	Ipv4VpcNetworkRangeId() *string
+	SetIpv4VpcNetworkRangeId(val *string)
+	Ipv4VpcNetworkRangeIdInput() *string
 	Ipv6Gateway() *string
 	Ipv6Nameservers() *[]*string
 	Ipv6Prefix() *string
 	Ipv6Prefixes() *[]*string
 	Ipv6PrefixLength() *float64
+	Ipv6VpcNetworkRangeId() *string
+	SetIpv6VpcNetworkRangeId(val *string)
+	Ipv6VpcNetworkRangeIdInput() *string
 	Labels() cdktf.StringMap
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -76,6 +82,9 @@ type DataStackitNetwork interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	VpcId() *string
+	SetVpcId(val *string)
+	VpcIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -101,10 +110,13 @@ type DataStackitNetwork interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetIpv4VpcNetworkRangeId()
+	ResetIpv6VpcNetworkRangeId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetVpcId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -264,6 +276,26 @@ func (j *jsiiProxy_DataStackitNetwork) Ipv4PrefixLength() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitNetwork) Ipv4VpcNetworkRangeId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv4VpcNetworkRangeId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitNetwork) Ipv4VpcNetworkRangeIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv4VpcNetworkRangeIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitNetwork) Ipv6Gateway() *string {
 	var returns *string
 	_jsii_.Get(
@@ -309,6 +341,26 @@ func (j *jsiiProxy_DataStackitNetwork) Ipv6PrefixLength() *float64 {
 	_jsii_.Get(
 		j,
 		"ipv6PrefixLength",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitNetwork) Ipv6VpcNetworkRangeId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6VpcNetworkRangeId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitNetwork) Ipv6VpcNetworkRangeIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6VpcNetworkRangeIdInput",
 		&returns,
 	)
 	return returns
@@ -494,8 +546,28 @@ func (j *jsiiProxy_DataStackitNetwork) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitNetwork) VpcId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vpcId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.105.0/docs/data-sources/network stackit_network} Data Source.
+func (j *jsiiProxy_DataStackitNetwork) VpcIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vpcIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.106.0/docs/data-sources/network stackit_network} Data Source.
 func NewDataStackitNetwork(scope constructs.Construct, id *string, config *DataStackitNetworkConfig) DataStackitNetwork {
 	_init_.Initialize()
 
@@ -513,7 +585,7 @@ func NewDataStackitNetwork(scope constructs.Construct, id *string, config *DataS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.105.0/docs/data-sources/network stackit_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.106.0/docs/data-sources/network stackit_network} Data Source.
 func NewDataStackitNetwork_Override(d DataStackitNetwork, scope constructs.Construct, id *string, config *DataStackitNetworkConfig) {
 	_init_.Initialize()
 
@@ -547,6 +619,28 @@ func (j *jsiiProxy_DataStackitNetwork)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataStackitNetwork)SetIpv4VpcNetworkRangeId(val *string) {
+	if err := j.validateSetIpv4VpcNetworkRangeIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv4VpcNetworkRangeId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataStackitNetwork)SetIpv6VpcNetworkRangeId(val *string) {
+	if err := j.validateSetIpv6VpcNetworkRangeIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6VpcNetworkRangeId",
 		val,
 	)
 }
@@ -599,6 +693,17 @@ func (j *jsiiProxy_DataStackitNetwork)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataStackitNetwork)SetVpcId(val *string) {
+	if err := j.validateSetVpcIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vpcId",
 		val,
 	)
 }
@@ -888,6 +993,22 @@ func (d *jsiiProxy_DataStackitNetwork) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_DataStackitNetwork) ResetIpv4VpcNetworkRangeId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIpv4VpcNetworkRangeId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataStackitNetwork) ResetIpv6VpcNetworkRangeId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIpv6VpcNetworkRangeId",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataStackitNetwork) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -900,6 +1021,14 @@ func (d *jsiiProxy_DataStackitNetwork) ResetRegion() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataStackitNetwork) ResetVpcId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetVpcId",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.105.0/docs/resources/network stackit_network}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.106.0/docs/resources/network stackit_network}.
 type Network interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -53,6 +53,9 @@ type Network interface {
 	Ipv4PrefixLength() *float64
 	SetIpv4PrefixLength(val *float64)
 	Ipv4PrefixLengthInput() *float64
+	Ipv4VpcNetworkRangeId() *string
+	SetIpv4VpcNetworkRangeId(val *string)
+	Ipv4VpcNetworkRangeIdInput() *string
 	Ipv6Gateway() *string
 	SetIpv6Gateway(val *string)
 	Ipv6GatewayInput() *string
@@ -66,6 +69,9 @@ type Network interface {
 	Ipv6PrefixLength() *float64
 	SetIpv6PrefixLength(val *float64)
 	Ipv6PrefixLengthInput() *float64
+	Ipv6VpcNetworkRangeId() *string
+	SetIpv6VpcNetworkRangeId(val *string)
+	Ipv6VpcNetworkRangeIdInput() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -114,6 +120,9 @@ type Network interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	VpcId() *string
+	SetVpcId(val *string)
+	VpcIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -162,10 +171,12 @@ type Network interface {
 	ResetIpv4Nameservers()
 	ResetIpv4Prefix()
 	ResetIpv4PrefixLength()
+	ResetIpv4VpcNetworkRangeId()
 	ResetIpv6Gateway()
 	ResetIpv6Nameservers()
 	ResetIpv6Prefix()
 	ResetIpv6PrefixLength()
+	ResetIpv6VpcNetworkRangeId()
 	ResetLabels()
 	ResetNoIpv4Gateway()
 	ResetNoIpv6Gateway()
@@ -175,6 +186,7 @@ type Network interface {
 	ResetRegion()
 	ResetRouted()
 	ResetRoutingTableId()
+	ResetVpcId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -393,6 +405,26 @@ func (j *jsiiProxy_Network) Ipv4PrefixLengthInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_Network) Ipv4VpcNetworkRangeId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv4VpcNetworkRangeId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) Ipv4VpcNetworkRangeIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv4VpcNetworkRangeIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Network) Ipv6Gateway() *string {
 	var returns *string
 	_jsii_.Get(
@@ -478,6 +510,26 @@ func (j *jsiiProxy_Network) Ipv6PrefixLengthInput() *float64 {
 	_jsii_.Get(
 		j,
 		"ipv6PrefixLengthInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) Ipv6VpcNetworkRangeId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6VpcNetworkRangeId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Network) Ipv6VpcNetworkRangeIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6VpcNetworkRangeIdInput",
 		&returns,
 	)
 	return returns
@@ -743,8 +795,28 @@ func (j *jsiiProxy_Network) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Network) VpcId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vpcId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.105.0/docs/resources/network stackit_network} Resource.
+func (j *jsiiProxy_Network) VpcIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vpcIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.106.0/docs/resources/network stackit_network} Resource.
 func NewNetwork(scope constructs.Construct, id *string, config *NetworkConfig) Network {
 	_init_.Initialize()
 
@@ -762,7 +834,7 @@ func NewNetwork(scope constructs.Construct, id *string, config *NetworkConfig) N
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.105.0/docs/resources/network stackit_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.106.0/docs/resources/network stackit_network} Resource.
 func NewNetwork_Override(n Network, scope constructs.Construct, id *string, config *NetworkConfig) {
 	_init_.Initialize()
 
@@ -866,6 +938,17 @@ func (j *jsiiProxy_Network)SetIpv4PrefixLength(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_Network)SetIpv4VpcNetworkRangeId(val *string) {
+	if err := j.validateSetIpv4VpcNetworkRangeIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv4VpcNetworkRangeId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Network)SetIpv6Gateway(val *string) {
 	if err := j.validateSetIpv6GatewayParameters(val); err != nil {
 		panic(err)
@@ -906,6 +989,17 @@ func (j *jsiiProxy_Network)SetIpv6PrefixLength(val *float64) {
 	_jsii_.Set(
 		j,
 		"ipv6PrefixLength",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Network)SetIpv6VpcNetworkRangeId(val *string) {
+	if err := j.validateSetIpv6VpcNetworkRangeIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6VpcNetworkRangeId",
 		val,
 	)
 }
@@ -1024,6 +1118,17 @@ func (j *jsiiProxy_Network)SetRoutingTableId(val *string) {
 	_jsii_.Set(
 		j,
 		"routingTableId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Network)SetVpcId(val *string) {
+	if err := j.validateSetVpcIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vpcId",
 		val,
 	)
 }
@@ -1421,6 +1526,14 @@ func (n *jsiiProxy_Network) ResetIpv4PrefixLength() {
 	)
 }
 
+func (n *jsiiProxy_Network) ResetIpv4VpcNetworkRangeId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetIpv4VpcNetworkRangeId",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_Network) ResetIpv6Gateway() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1449,6 +1562,14 @@ func (n *jsiiProxy_Network) ResetIpv6PrefixLength() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetIpv6PrefixLength",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_Network) ResetIpv6VpcNetworkRangeId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetIpv6VpcNetworkRangeId",
 		nil, // no parameters
 	)
 }
@@ -1505,6 +1626,14 @@ func (n *jsiiProxy_Network) ResetRoutingTableId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetRoutingTableId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_Network) ResetVpcId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetVpcId",
 		nil, // no parameters
 	)
 }

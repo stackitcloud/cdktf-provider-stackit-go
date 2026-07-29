@@ -1,3 +1,3 @@
 # `stackit_resourcemanager_folder`
 
-Refer to the Terraform Registry for docs: [`stackit_resourcemanager_folder`](https://registry.terraform.io/providers/stackitcloud/stackit/0.105.0/docs/resources/resourcemanager_folder).
+Refer to the Terraform Registry for docs: [`stackit_resourcemanager_folder`](https://registry.terraform.io/providers/stackitcloud/stackit/0.106.0/docs/resources/resourcemanager_folder).

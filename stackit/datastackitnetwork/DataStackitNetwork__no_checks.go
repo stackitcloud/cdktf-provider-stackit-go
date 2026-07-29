@@ -72,6 +72,14 @@ func (j *jsiiProxy_DataStackitNetwork) validateSetCountParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitNetwork) validateSetIpv4VpcNetworkRangeIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataStackitNetwork) validateSetIpv6VpcNetworkRangeIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataStackitNetwork) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -85,6 +93,10 @@ func (j *jsiiProxy_DataStackitNetwork) validateSetProjectIdParameters(val *strin
 }
 
 func (j *jsiiProxy_DataStackitNetwork) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataStackitNetwork) validateSetVpcIdParameters(val *string) error {
 	return nil
 }
 

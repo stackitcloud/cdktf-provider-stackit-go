@@ -116,6 +116,10 @@ func (j *jsiiProxy_Network) validateSetIpv4PrefixLengthParameters(val *float64) 
 	return nil
 }
 
+func (j *jsiiProxy_Network) validateSetIpv4VpcNetworkRangeIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Network) validateSetIpv6GatewayParameters(val *string) error {
 	return nil
 }
@@ -129,6 +133,10 @@ func (j *jsiiProxy_Network) validateSetIpv6PrefixParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Network) validateSetIpv6PrefixLengthParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_Network) validateSetIpv6VpcNetworkRangeIdParameters(val *string) error {
 	return nil
 }
 
@@ -169,6 +177,10 @@ func (j *jsiiProxy_Network) validateSetRoutedParameters(val interface{}) error {
 }
 
 func (j *jsiiProxy_Network) validateSetRoutingTableIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Network) validateSetVpcIdParameters(val *string) error {
 	return nil
 }
 

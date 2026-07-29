@@ -386,6 +386,14 @@ func (j *jsiiProxy_Network) validateSetIpv4PrefixLengthParameters(val *float64) 
 	return nil
 }
 
+func (j *jsiiProxy_Network) validateSetIpv4VpcNetworkRangeIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Network) validateSetIpv6GatewayParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -411,6 +419,14 @@ func (j *jsiiProxy_Network) validateSetIpv6PrefixParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Network) validateSetIpv6PrefixLengthParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Network) validateSetIpv6VpcNetworkRangeIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -565,6 +581,14 @@ func (j *jsiiProxy_Network) validateSetRoutedParameters(val interface{}) error {
 }
 
 func (j *jsiiProxy_Network) validateSetRoutingTableIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Network) validateSetVpcIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
