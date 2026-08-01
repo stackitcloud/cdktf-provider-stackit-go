@@ -112,6 +112,10 @@ func (j *jsiiProxy_OpensearchCredential) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_OpensearchCredential) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpensearchCredential) validateSetRotateWhenChangedParameters(val *map[string]*string) error {
 	return nil
 }

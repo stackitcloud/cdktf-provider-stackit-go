@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.106.0/docs/resources/opensearch_instance stackit_opensearch_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.107.0/docs/resources/opensearch_instance stackit_opensearch_instance}.
 type OpensearchInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -71,6 +71,9 @@ type OpensearchInstance interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -128,6 +131,7 @@ type OpensearchInstance interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParameters()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -436,6 +440,26 @@ func (j *jsiiProxy_OpensearchInstance) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_OpensearchInstance) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchInstance) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OpensearchInstance) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -487,7 +511,7 @@ func (j *jsiiProxy_OpensearchInstance) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.106.0/docs/resources/opensearch_instance stackit_opensearch_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.107.0/docs/resources/opensearch_instance stackit_opensearch_instance} Resource.
 func NewOpensearchInstance(scope constructs.Construct, id *string, config *OpensearchInstanceConfig) OpensearchInstance {
 	_init_.Initialize()
 
@@ -505,7 +529,7 @@ func NewOpensearchInstance(scope constructs.Construct, id *string, config *Opens
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.106.0/docs/resources/opensearch_instance stackit_opensearch_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.107.0/docs/resources/opensearch_instance stackit_opensearch_instance} Resource.
 func NewOpensearchInstance_Override(o OpensearchInstance, scope constructs.Construct, id *string, config *OpensearchInstanceConfig) {
 	_init_.Initialize()
 
@@ -613,6 +637,17 @@ func (j *jsiiProxy_OpensearchInstance)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpensearchInstance)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1004,6 +1039,14 @@ func (o *jsiiProxy_OpensearchInstance) ResetParameters() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetParameters",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchInstance) ResetRegion() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

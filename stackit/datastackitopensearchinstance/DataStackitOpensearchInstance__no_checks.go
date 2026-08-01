@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataStackitOpensearchInstance) validateSetProjectIdParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitOpensearchInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataStackitOpensearchInstanceParameters(scope constructs.Construct, id *string, config *DataStackitOpensearchInstanceConfig) error {
 	return nil
 }

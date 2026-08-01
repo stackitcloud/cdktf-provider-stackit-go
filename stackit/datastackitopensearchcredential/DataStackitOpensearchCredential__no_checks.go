@@ -88,6 +88,10 @@ func (j *jsiiProxy_DataStackitOpensearchCredential) validateSetProjectIdParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitOpensearchCredential) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataStackitOpensearchCredentialParameters(scope constructs.Construct, id *string, config *DataStackitOpensearchCredentialConfig) error {
 	return nil
 }

@@ -120,6 +120,10 @@ func (j *jsiiProxy_OpensearchInstance) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_OpensearchInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpensearchInstance) validateSetVersionParameters(val *string) error {
 	return nil
 }
