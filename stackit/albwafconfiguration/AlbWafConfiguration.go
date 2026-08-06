@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.109.0/docs/resources/alb_waf_configuration stackit_alb_waf_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/resources/alb_waf_configuration stackit_alb_waf_configuration}.
 type AlbWafConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -436,7 +436,7 @@ func (j *jsiiProxy_AlbWafConfiguration) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.109.0/docs/resources/alb_waf_configuration stackit_alb_waf_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/resources/alb_waf_configuration stackit_alb_waf_configuration} Resource.
 func NewAlbWafConfiguration(scope constructs.Construct, id *string, config *AlbWafConfigurationConfig) AlbWafConfiguration {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewAlbWafConfiguration(scope constructs.Construct, id *string, config *AlbW
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.109.0/docs/resources/alb_waf_configuration stackit_alb_waf_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/resources/alb_waf_configuration stackit_alb_waf_configuration} Resource.
 func NewAlbWafConfiguration_Override(a AlbWafConfiguration, scope constructs.Construct, id *string, config *AlbWafConfigurationConfig) {
 	_init_.Initialize()
 

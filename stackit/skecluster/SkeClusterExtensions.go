@@ -4,23 +4,23 @@ package skecluster
 type SkeClusterExtensions struct {
 	// Cluster access control configuration.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.109.0/docs/resources/ske_cluster#acl SkeCluster#acl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/resources/ske_cluster#acl SkeCluster#acl}
 	Acl *SkeClusterExtensionsAcl `field:"optional" json:"acl" yaml:"acl"`
 	// Application Load Balancer extension.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.109.0/docs/resources/ske_cluster#application_load_balancer SkeCluster#application_load_balancer}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/resources/ske_cluster#application_load_balancer SkeCluster#application_load_balancer}
 	ApplicationLoadBalancer *SkeClusterExtensionsApplicationLoadBalancer `field:"optional" json:"applicationLoadBalancer" yaml:"applicationLoadBalancer"`
 	// A single argus block as defined below. This field is deprecated and will be removed 06 January 2026.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.109.0/docs/resources/ske_cluster#argus SkeCluster#argus}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/resources/ske_cluster#argus SkeCluster#argus}
 	Argus *SkeClusterExtensionsArgus `field:"optional" json:"argus" yaml:"argus"`
 	// DNS extension configuration.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.109.0/docs/resources/ske_cluster#dns SkeCluster#dns}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/resources/ske_cluster#dns SkeCluster#dns}
 	Dns *SkeClusterExtensionsDns `field:"optional" json:"dns" yaml:"dns"`
 	// A single observability block as defined below.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.109.0/docs/resources/ske_cluster#observability SkeCluster#observability}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/resources/ske_cluster#observability SkeCluster#observability}
 	Observability *SkeClusterExtensionsObservability `field:"optional" json:"observability" yaml:"observability"`
 }
 

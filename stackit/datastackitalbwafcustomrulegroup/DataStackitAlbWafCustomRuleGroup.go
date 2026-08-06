@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.109.0/docs/data-sources/alb_waf_custom_rule_group stackit_alb_waf_custom_rule_group}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/data-sources/alb_waf_custom_rule_group stackit_alb_waf_custom_rule_group}.
 type DataStackitAlbWafCustomRuleGroup interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataStackitAlbWafCustomRuleGroup) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.109.0/docs/data-sources/alb_waf_custom_rule_group stackit_alb_waf_custom_rule_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/data-sources/alb_waf_custom_rule_group stackit_alb_waf_custom_rule_group} Data Source.
 func NewDataStackitAlbWafCustomRuleGroup(scope constructs.Construct, id *string, config *DataStackitAlbWafCustomRuleGroupConfig) DataStackitAlbWafCustomRuleGroup {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewDataStackitAlbWafCustomRuleGroup(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.109.0/docs/data-sources/alb_waf_custom_rule_group stackit_alb_waf_custom_rule_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/data-sources/alb_waf_custom_rule_group stackit_alb_waf_custom_rule_group} Data Source.
 func NewDataStackitAlbWafCustomRuleGroup_Override(d DataStackitAlbWafCustomRuleGroup, scope constructs.Construct, id *string, config *DataStackitAlbWafCustomRuleGroupConfig) {
 	_init_.Initialize()
 
