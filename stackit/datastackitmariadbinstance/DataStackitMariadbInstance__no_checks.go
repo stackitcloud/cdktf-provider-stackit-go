@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataStackitMariadbInstance) validateSetProjectIdParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitMariadbInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataStackitMariadbInstanceParameters(scope constructs.Construct, id *string, config *DataStackitMariadbInstanceConfig) error {
 	return nil
 }

@@ -12,6 +12,8 @@ type SkeClusterExtensionsOutputReference interface {
 	cdktf.ComplexObject
 	Acl() SkeClusterExtensionsAclOutputReference
 	AclInput() interface{}
+	ApplicationLoadBalancer() SkeClusterExtensionsApplicationLoadBalancerOutputReference
+	ApplicationLoadBalancerInput() interface{}
 	Argus() SkeClusterExtensionsArgusOutputReference
 	ArgusInput() interface{}
 	// the index of the complex object in a list.
@@ -70,10 +72,12 @@ type SkeClusterExtensionsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAcl(value *SkeClusterExtensionsAcl)
+	PutApplicationLoadBalancer(value *SkeClusterExtensionsApplicationLoadBalancer)
 	PutArgus(value *SkeClusterExtensionsArgus)
 	PutDns(value *SkeClusterExtensionsDns)
 	PutObservability(value *SkeClusterExtensionsObservability)
 	ResetAcl()
+	ResetApplicationLoadBalancer()
 	ResetArgus()
 	ResetDns()
 	ResetObservability()
@@ -107,6 +111,26 @@ func (j *jsiiProxy_SkeClusterExtensionsOutputReference) AclInput() interface{} {
 	_jsii_.Get(
 		j,
 		"aclInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SkeClusterExtensionsOutputReference) ApplicationLoadBalancer() SkeClusterExtensionsApplicationLoadBalancerOutputReference {
+	var returns SkeClusterExtensionsApplicationLoadBalancerOutputReference
+	_jsii_.Get(
+		j,
+		"applicationLoadBalancer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SkeClusterExtensionsOutputReference) ApplicationLoadBalancerInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"applicationLoadBalancerInput",
 		&returns,
 	)
 	return returns
@@ -522,6 +546,17 @@ func (s *jsiiProxy_SkeClusterExtensionsOutputReference) PutAcl(value *SkeCluster
 	)
 }
 
+func (s *jsiiProxy_SkeClusterExtensionsOutputReference) PutApplicationLoadBalancer(value *SkeClusterExtensionsApplicationLoadBalancer) {
+	if err := s.validatePutApplicationLoadBalancerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putApplicationLoadBalancer",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SkeClusterExtensionsOutputReference) PutArgus(value *SkeClusterExtensionsArgus) {
 	if err := s.validatePutArgusParameters(value); err != nil {
 		panic(err)
@@ -559,6 +594,14 @@ func (s *jsiiProxy_SkeClusterExtensionsOutputReference) ResetAcl() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAcl",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SkeClusterExtensionsOutputReference) ResetApplicationLoadBalancer() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetApplicationLoadBalancer",
 		nil, // no parameters
 	)
 }

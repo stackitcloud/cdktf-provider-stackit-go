@@ -120,6 +120,10 @@ func (j *jsiiProxy_MariadbInstance) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_MariadbInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MariadbInstance) validateSetVersionParameters(val *string) error {
 	return nil
 }

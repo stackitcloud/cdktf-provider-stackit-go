@@ -112,6 +112,10 @@ func (j *jsiiProxy_MariadbCredential) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_MariadbCredential) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MariadbCredential) validateSetRotateWhenChangedParameters(val *map[string]*string) error {
 	return nil
 }

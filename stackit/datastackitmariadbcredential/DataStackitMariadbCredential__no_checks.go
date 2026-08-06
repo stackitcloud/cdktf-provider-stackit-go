@@ -88,6 +88,10 @@ func (j *jsiiProxy_DataStackitMariadbCredential) validateSetProjectIdParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitMariadbCredential) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataStackitMariadbCredentialParameters(scope constructs.Construct, id *string, config *DataStackitMariadbCredentialConfig) error {
 	return nil
 }

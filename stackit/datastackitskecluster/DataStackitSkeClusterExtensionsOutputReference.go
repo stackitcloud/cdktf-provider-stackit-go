@@ -11,6 +11,7 @@ import (
 type DataStackitSkeClusterExtensionsOutputReference interface {
 	cdktf.ComplexObject
 	Acl() DataStackitSkeClusterExtensionsAclOutputReference
+	ApplicationLoadBalancer() DataStackitSkeClusterExtensionsApplicationLoadBalancerOutputReference
 	Argus() DataStackitSkeClusterExtensionsArgusOutputReference
 	// the index of the complex object in a list.
 	// Experimental.
@@ -85,6 +86,16 @@ func (j *jsiiProxy_DataStackitSkeClusterExtensionsOutputReference) Acl() DataSta
 	_jsii_.Get(
 		j,
 		"acl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitSkeClusterExtensionsOutputReference) ApplicationLoadBalancer() DataStackitSkeClusterExtensionsApplicationLoadBalancerOutputReference {
+	var returns DataStackitSkeClusterExtensionsApplicationLoadBalancerOutputReference
+	_jsii_.Get(
+		j,
+		"applicationLoadBalancer",
 		&returns,
 	)
 	return returns

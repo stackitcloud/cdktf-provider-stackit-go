@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.107.1/docs/resources/mariadb_credential stackit_mariadb_credential}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.108.0/docs/resources/mariadb_credential stackit_mariadb_credential}.
 type MariadbCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -65,6 +65,9 @@ type MariadbCredential interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	RotateWhenChanged() *map[string]*string
 	SetRotateWhenChanged(val *map[string]*string)
 	RotateWhenChangedInput() *map[string]*string
@@ -122,6 +125,7 @@ type MariadbCredential interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetRotateWhenChanged()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -381,6 +385,26 @@ func (j *jsiiProxy_MariadbCredential) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MariadbCredential) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MariadbCredential) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MariadbCredential) RotateWhenChanged() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -452,7 +476,7 @@ func (j *jsiiProxy_MariadbCredential) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.107.1/docs/resources/mariadb_credential stackit_mariadb_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.108.0/docs/resources/mariadb_credential stackit_mariadb_credential} Resource.
 func NewMariadbCredential(scope constructs.Construct, id *string, config *MariadbCredentialConfig) MariadbCredential {
 	_init_.Initialize()
 
@@ -470,7 +494,7 @@ func NewMariadbCredential(scope constructs.Construct, id *string, config *Mariad
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.107.1/docs/resources/mariadb_credential stackit_mariadb_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.108.0/docs/resources/mariadb_credential stackit_mariadb_credential} Resource.
 func NewMariadbCredential_Override(m MariadbCredential, scope constructs.Construct, id *string, config *MariadbCredentialConfig) {
 	_init_.Initialize()
 
@@ -567,6 +591,17 @@ func (j *jsiiProxy_MariadbCredential)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MariadbCredential)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -939,6 +974,14 @@ func (m *jsiiProxy_MariadbCredential) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MariadbCredential) ResetRegion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

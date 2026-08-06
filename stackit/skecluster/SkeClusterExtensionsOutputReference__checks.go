@@ -101,6 +101,17 @@ func (s *jsiiProxy_SkeClusterExtensionsOutputReference) validatePutAclParameters
 	return nil
 }
 
+func (s *jsiiProxy_SkeClusterExtensionsOutputReference) validatePutApplicationLoadBalancerParameters(value *SkeClusterExtensionsApplicationLoadBalancer) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SkeClusterExtensionsOutputReference) validatePutArgusParameters(value *SkeClusterExtensionsArgus) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

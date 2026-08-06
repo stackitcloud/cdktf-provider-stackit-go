@@ -48,6 +48,10 @@ func (s *jsiiProxy_SkeClusterExtensionsOutputReference) validatePutAclParameters
 	return nil
 }
 
+func (s *jsiiProxy_SkeClusterExtensionsOutputReference) validatePutApplicationLoadBalancerParameters(value *SkeClusterExtensionsApplicationLoadBalancer) error {
+	return nil
+}
+
 func (s *jsiiProxy_SkeClusterExtensionsOutputReference) validatePutArgusParameters(value *SkeClusterExtensionsArgus) error {
 	return nil
 }

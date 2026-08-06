@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.107.1/docs/resources/mariadb_instance stackit_mariadb_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.108.0/docs/resources/mariadb_instance stackit_mariadb_instance}.
 type MariadbInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -71,6 +71,9 @@ type MariadbInstance interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -128,6 +131,7 @@ type MariadbInstance interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParameters()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -436,6 +440,26 @@ func (j *jsiiProxy_MariadbInstance) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MariadbInstance) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MariadbInstance) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MariadbInstance) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -487,7 +511,7 @@ func (j *jsiiProxy_MariadbInstance) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.107.1/docs/resources/mariadb_instance stackit_mariadb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.108.0/docs/resources/mariadb_instance stackit_mariadb_instance} Resource.
 func NewMariadbInstance(scope constructs.Construct, id *string, config *MariadbInstanceConfig) MariadbInstance {
 	_init_.Initialize()
 
@@ -505,7 +529,7 @@ func NewMariadbInstance(scope constructs.Construct, id *string, config *MariadbI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.107.1/docs/resources/mariadb_instance stackit_mariadb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.108.0/docs/resources/mariadb_instance stackit_mariadb_instance} Resource.
 func NewMariadbInstance_Override(m MariadbInstance, scope constructs.Construct, id *string, config *MariadbInstanceConfig) {
 	_init_.Initialize()
 
@@ -613,6 +637,17 @@ func (j *jsiiProxy_MariadbInstance)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MariadbInstance)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1004,6 +1039,14 @@ func (m *jsiiProxy_MariadbInstance) ResetParameters() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetParameters",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MariadbInstance) ResetRegion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRegion",
 		nil, // no parameters
 	)
 }
