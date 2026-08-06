@@ -1,15 +1,17 @@
-package albwafmanagedruleset
+package albwafcustomrulegroup
 
 import (
 	_init_ "github.com/stackitcloud/cdktf-provider-stackit-go/stackit/jsii"
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/stackitcloud/cdktf-provider-stackit-go/stackit/albwafmanagedruleset/internal"
+	"github.com/stackitcloud/cdktf-provider-stackit-go/stackit/albwafcustomrulegroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type AlbWafManagedRuleSetUsageOutputReference interface {
+type AlbWafCustomRuleGroupRulesOutputReference interface {
 	cdktf.ComplexObject
+	Behavior() AlbWafCustomRuleGroupRulesBehaviorOutputReference
+	BehaviorInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -20,17 +22,21 @@ type AlbWafManagedRuleSetUsageOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	Count() *float64
+	Conditions() AlbWafCustomRuleGroupRulesConditionsList
+	ConditionsInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *AlbWafManagedRuleSetUsage
-	SetInternalValue(val *AlbWafManagedRuleSetUsage)
-	Items() *[]*string
+	Id() *float64
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -63,6 +69,9 @@ type AlbWafManagedRuleSetUsageOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutBehavior(value *AlbWafCustomRuleGroupRulesBehavior)
+	PutConditions(value interface{})
+	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -73,12 +82,32 @@ type AlbWafManagedRuleSetUsageOutputReference interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for AlbWafManagedRuleSetUsageOutputReference
-type jsiiProxy_AlbWafManagedRuleSetUsageOutputReference struct {
+// The jsii proxy struct for AlbWafCustomRuleGroupRulesOutputReference
+type jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) ComplexObjectIndex() interface{} {
+func (j *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) Behavior() AlbWafCustomRuleGroupRulesBehaviorOutputReference {
+	var returns AlbWafCustomRuleGroupRulesBehaviorOutputReference
+	_jsii_.Get(
+		j,
+		"behavior",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) BehaviorInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"behaviorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -88,7 +117,7 @@ func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) ComplexObjectIndex(
 	return returns
 }
 
-func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) ComplexObjectIsFromSet() *bool {
+func (j *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) ComplexObjectIsFromSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -98,17 +127,27 @@ func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) ComplexObjectIsFrom
 	return returns
 }
 
-func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) Conditions() AlbWafCustomRuleGroupRulesConditionsList {
+	var returns AlbWafCustomRuleGroupRulesConditionsList
 	_jsii_.Get(
 		j,
-		"count",
+		"conditions",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) CreationStack() *[]*string {
+func (j *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) ConditionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"conditionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -118,7 +157,27 @@ func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) CreationStack() *[]
 	return returns
 }
 
-func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) Fqn() *string {
+func (j *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -128,8 +187,18 @@ func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) InternalValue() *AlbWafManagedRuleSetUsage {
-	var returns *AlbWafManagedRuleSetUsage
+func (j *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) Id() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -138,17 +207,7 @@ func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) InternalValue() *Al
 	return returns
 }
 
-func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) Items() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"items",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) TerraformAttribute() *string {
+func (j *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -158,7 +217,7 @@ func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) TerraformAttribute(
 	return returns
 }
 
-func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -169,34 +228,34 @@ func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) TerraformResource()
 }
 
 
-func NewAlbWafManagedRuleSetUsageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AlbWafManagedRuleSetUsageOutputReference {
+func NewAlbWafCustomRuleGroupRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AlbWafCustomRuleGroupRulesOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewAlbWafManagedRuleSetUsageOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewAlbWafCustomRuleGroupRulesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_AlbWafManagedRuleSetUsageOutputReference{}
+	j := jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference{}
 
 	_jsii_.Create(
-		"stackit.albWafManagedRuleSet.AlbWafManagedRuleSetUsageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		"stackit.albWafCustomRuleGroup.AlbWafCustomRuleGroupRulesOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewAlbWafManagedRuleSetUsageOutputReference_Override(a AlbWafManagedRuleSetUsageOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAlbWafCustomRuleGroupRulesOutputReference_Override(a AlbWafCustomRuleGroupRulesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"stackit.albWafManagedRuleSet.AlbWafManagedRuleSetUsageOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		"stackit.albWafCustomRuleGroup.AlbWafCustomRuleGroupRulesOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
 
-func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -207,7 +266,7 @@ func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference)SetComplexObjectInde
 	)
 }
 
-func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +277,18 @@ func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference)SetComplexObjectIsFr
 	)
 }
 
-func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference)SetInternalValue(val *AlbWafManagedRuleSetUsage) {
+func (j *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +299,7 @@ func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference)SetInternalValue(val
 	)
 }
 
-func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -240,7 +310,7 @@ func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -251,7 +321,7 @@ func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference)SetTerraformResource
 	)
 }
 
-func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) ComputeFqn() *string {
+func (a *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -264,7 +334,7 @@ func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) ComputeFqn() *strin
 	return returns
 }
 
-func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (a *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -280,7 +350,7 @@ func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) GetAnyMapAttribute(
 	return returns
 }
 
-func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -296,7 +366,7 @@ func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) GetBooleanAttribute
 	return returns
 }
 
-func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (a *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -312,7 +382,7 @@ func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) GetBooleanMapAttrib
 	return returns
 }
 
-func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+func (a *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -328,7 +398,7 @@ func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) GetListAttribute(te
 	return returns
 }
 
-func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (a *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -344,7 +414,7 @@ func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) GetNumberAttribute(
 	return returns
 }
 
-func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (a *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -360,7 +430,7 @@ func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) GetNumberListAttrib
 	return returns
 }
 
-func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (a *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -376,7 +446,7 @@ func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) GetNumberMapAttribu
 	return returns
 }
 
-func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+func (a *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
 	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -392,7 +462,7 @@ func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) GetStringAttribute(
 	return returns
 }
 
-func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (a *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -408,7 +478,7 @@ func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) GetStringMapAttribu
 	return returns
 }
 
-func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) InterpolationAsList() cdktf.IResolvable {
+func (a *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) InterpolationAsList() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -421,7 +491,7 @@ func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) InterpolationAsList
 	return returns
 }
 
-func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (a *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
@@ -437,7 +507,37 @@ func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) InterpolationForAtt
 	return returns
 }
 
-func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (a *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) PutBehavior(value *AlbWafCustomRuleGroupRulesBehavior) {
+	if err := a.validatePutBehaviorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putBehavior",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) PutConditions(value interface{}) {
+	if err := a.validatePutConditionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putConditions",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) ResetDescription() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := a.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -453,7 +553,7 @@ func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) Resolve(_context cd
 	return returns
 }
 
-func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) ToString() *string {
+func (a *jsiiProxy_AlbWafCustomRuleGroupRulesOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

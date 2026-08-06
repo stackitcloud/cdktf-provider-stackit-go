@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.108.0/docs stackit}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.109.0/docs stackit}.
 type StackitProvider interface {
 	cdktf.TerraformProvider
 	AlbCertificatesCustomEndpoint() *string
@@ -125,9 +125,6 @@ type StackitProvider interface {
 	RedisCustomEndpoint() *string
 	SetRedisCustomEndpoint(val *string)
 	RedisCustomEndpointInput() *string
-	Region() *string
-	SetRegion(val *string)
-	RegionInput() *string
 	ResourcemanagerCustomEndpoint() *string
 	SetResourcemanagerCustomEndpoint(val *string)
 	ResourcemanagerCustomEndpointInput() *string
@@ -238,7 +235,6 @@ type StackitProvider interface {
 	ResetPrivateKeyPath()
 	ResetRabbitmqCustomEndpoint()
 	ResetRedisCustomEndpoint()
-	ResetRegion()
 	ResetResourcemanagerCustomEndpoint()
 	ResetScfCustomEndpoint()
 	ResetSecretsmanagerCustomEndpoint()
@@ -1008,26 +1004,6 @@ func (j *jsiiProxy_StackitProvider) RedisCustomEndpointInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_StackitProvider) Region() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"region",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_StackitProvider) RegionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"regionInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_StackitProvider) ResourcemanagerCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1479,7 +1455,7 @@ func (j *jsiiProxy_StackitProvider) VpnCustomEndpointInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.108.0/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.109.0/docs stackit} Resource.
 func NewStackitProvider(scope constructs.Construct, id *string, config *StackitProviderConfig) StackitProvider {
 	_init_.Initialize()
 
@@ -1497,7 +1473,7 @@ func NewStackitProvider(scope constructs.Construct, id *string, config *StackitP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.108.0/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.109.0/docs stackit} Resource.
 func NewStackitProvider_Override(s StackitProvider, scope constructs.Construct, id *string, config *StackitProviderConfig) {
 	_init_.Initialize()
 
@@ -1771,14 +1747,6 @@ func (j *jsiiProxy_StackitProvider)SetRedisCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"redisCustomEndpoint",
-		val,
-	)
-}
-
-func (j *jsiiProxy_StackitProvider)SetRegion(val *string) {
-	_jsii_.Set(
-		j,
-		"region",
 		val,
 	)
 }
@@ -2347,14 +2315,6 @@ func (s *jsiiProxy_StackitProvider) ResetRedisCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRedisCustomEndpoint",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_StackitProvider) ResetRegion() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetRegion",
 		nil, // no parameters
 	)
 }

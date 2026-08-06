@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.108.0/docs/resources/alb_waf_managed_rule_set stackit_alb_waf_managed_rule_set}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.109.0/docs/resources/alb_waf_managed_rule_set stackit_alb_waf_managed_rule_set}.
 type AlbWafManagedRuleSet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -72,7 +72,6 @@ type AlbWafManagedRuleSet interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
-	Usage() AlbWafManagedRuleSetUsageOutputReference
 	Version() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -399,16 +398,6 @@ func (j *jsiiProxy_AlbWafManagedRuleSet) TypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AlbWafManagedRuleSet) Usage() AlbWafManagedRuleSetUsageOutputReference {
-	var returns AlbWafManagedRuleSetUsageOutputReference
-	_jsii_.Get(
-		j,
-		"usage",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AlbWafManagedRuleSet) Version() *string {
 	var returns *string
 	_jsii_.Get(
@@ -420,7 +409,7 @@ func (j *jsiiProxy_AlbWafManagedRuleSet) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.108.0/docs/resources/alb_waf_managed_rule_set stackit_alb_waf_managed_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.109.0/docs/resources/alb_waf_managed_rule_set stackit_alb_waf_managed_rule_set} Resource.
 func NewAlbWafManagedRuleSet(scope constructs.Construct, id *string, config *AlbWafManagedRuleSetConfig) AlbWafManagedRuleSet {
 	_init_.Initialize()
 
@@ -438,7 +427,7 @@ func NewAlbWafManagedRuleSet(scope constructs.Construct, id *string, config *Alb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.108.0/docs/resources/alb_waf_managed_rule_set stackit_alb_waf_managed_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.109.0/docs/resources/alb_waf_managed_rule_set stackit_alb_waf_managed_rule_set} Resource.
 func NewAlbWafManagedRuleSet_Override(a AlbWafManagedRuleSet, scope constructs.Construct, id *string, config *AlbWafManagedRuleSetConfig) {
 	_init_.Initialize()
 

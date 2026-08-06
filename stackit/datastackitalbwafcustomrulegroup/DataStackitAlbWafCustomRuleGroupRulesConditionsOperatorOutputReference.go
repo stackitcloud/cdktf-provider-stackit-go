@@ -1,14 +1,14 @@
-package datastackitalbwafmanagedruleset
+package datastackitalbwafcustomrulegroup
 
 import (
 	_init_ "github.com/stackitcloud/cdktf-provider-stackit-go/stackit/jsii"
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/stackitcloud/cdktf-provider-stackit-go/stackit/datastackitalbwafmanagedruleset/internal"
+	"github.com/stackitcloud/cdktf-provider-stackit-go/stackit/datastackitalbwafcustomrulegroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type DataStackitAlbWafManagedRuleSetUsageOutputReference interface {
+type DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
@@ -20,7 +20,6 @@ type DataStackitAlbWafManagedRuleSetUsageOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	Count() *float64
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -28,9 +27,8 @@ type DataStackitAlbWafManagedRuleSetUsageOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *DataStackitAlbWafManagedRuleSetUsage
-	SetInternalValue(val *DataStackitAlbWafManagedRuleSetUsage)
-	Items() *[]*string
+	InternalValue() *DataStackitAlbWafCustomRuleGroupRulesConditionsOperator
+	SetInternalValue(val *DataStackitAlbWafCustomRuleGroupRulesConditionsOperator)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -39,6 +37,8 @@ type DataStackitAlbWafManagedRuleSetUsageOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Type() *string
+	Value() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -73,12 +73,12 @@ type DataStackitAlbWafManagedRuleSetUsageOutputReference interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for DataStackitAlbWafManagedRuleSetUsageOutputReference
-type jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference struct {
+// The jsii proxy struct for DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference
+type jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) ComplexObjectIndex() interface{} {
+func (j *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -88,7 +88,7 @@ func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) ComplexO
 	return returns
 }
 
-func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) ComplexObjectIsFromSet() *bool {
+func (j *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) ComplexObjectIsFromSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -98,17 +98,7 @@ func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) ComplexO
 	return returns
 }
 
-func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) Count() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) CreationStack() *[]*string {
+func (j *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -118,7 +108,7 @@ func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) Creation
 	return returns
 }
 
-func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) Fqn() *string {
+func (j *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -128,8 +118,8 @@ func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) Fqn() *s
 	return returns
 }
 
-func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) InternalValue() *DataStackitAlbWafManagedRuleSetUsage {
-	var returns *DataStackitAlbWafManagedRuleSetUsage
+func (j *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) InternalValue() *DataStackitAlbWafCustomRuleGroupRulesConditionsOperator {
+	var returns *DataStackitAlbWafCustomRuleGroupRulesConditionsOperator
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -138,17 +128,7 @@ func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) Internal
 	return returns
 }
 
-func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) Items() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"items",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) TerraformAttribute() *string {
+func (j *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -158,7 +138,7 @@ func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -168,17 +148,37 @@ func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) Terrafor
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
 
-func NewDataStackitAlbWafManagedRuleSetUsageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataStackitAlbWafManagedRuleSetUsageOutputReference {
+func (j *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) Value() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"value",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewDataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataStackitAlbWafManagedRuleSetUsageOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewDataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference{}
+	j := jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference{}
 
 	_jsii_.Create(
-		"stackit.dataStackitAlbWafManagedRuleSet.DataStackitAlbWafManagedRuleSetUsageOutputReference",
+		"stackit.dataStackitAlbWafCustomRuleGroup.DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -186,17 +186,17 @@ func NewDataStackitAlbWafManagedRuleSetUsageOutputReference(terraformResource cd
 	return &j
 }
 
-func NewDataStackitAlbWafManagedRuleSetUsageOutputReference_Override(d DataStackitAlbWafManagedRuleSetUsageOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference_Override(d DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"stackit.dataStackitAlbWafManagedRuleSet.DataStackitAlbWafManagedRuleSetUsageOutputReference",
+		"stackit.dataStackitAlbWafCustomRuleGroup.DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -207,7 +207,7 @@ func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +218,7 @@ func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference)SetComple
 	)
 }
 
-func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference)SetInternalValue(val *DataStackitAlbWafManagedRuleSetUsage) {
+func (j *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference)SetInternalValue(val *DataStackitAlbWafCustomRuleGroupRulesConditionsOperator) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +229,7 @@ func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference)SetIntern
 	)
 }
 
-func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -240,7 +240,7 @@ func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -251,7 +251,7 @@ func (j *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference)SetTerraf
 	)
 }
 
-func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) ComputeFqn() *string {
+func (d *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -264,7 +264,7 @@ func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) ComputeF
 	return returns
 }
 
-func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -280,7 +280,7 @@ func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) GetAnyMa
 	return returns
 }
 
-func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -296,7 +296,7 @@ func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) GetBoole
 	return returns
 }
 
-func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (d *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -312,7 +312,7 @@ func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) GetBoole
 	return returns
 }
 
-func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+func (d *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -328,7 +328,7 @@ func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) GetListA
 	return returns
 }
 
-func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (d *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -344,7 +344,7 @@ func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) GetNumbe
 	return returns
 }
 
-func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (d *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -360,7 +360,7 @@ func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) GetNumbe
 	return returns
 }
 
-func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (d *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -376,7 +376,7 @@ func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) GetNumbe
 	return returns
 }
 
-func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+func (d *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) GetStringAttribute(terraformAttribute *string) *string {
 	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -392,7 +392,7 @@ func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) GetStrin
 	return returns
 }
 
-func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (d *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -408,7 +408,7 @@ func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) GetStrin
 	return returns
 }
 
-func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) InterpolationAsList() cdktf.IResolvable {
+func (d *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) InterpolationAsList() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -421,7 +421,7 @@ func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) Interpol
 	return returns
 }
 
-func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
@@ -437,7 +437,7 @@ func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) Interpol
 	return returns
 }
 
-func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -453,7 +453,7 @@ func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) Resolve(
 	return returns
 }
 
-func (d *jsiiProxy_DataStackitAlbWafManagedRuleSetUsageOutputReference) ToString() *string {
+func (d *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

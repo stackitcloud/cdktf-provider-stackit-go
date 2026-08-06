@@ -30,6 +30,9 @@ type SkeClusterExtensionsDnsOutputReference interface {
 	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
+	GatewayApi() interface{}
+	SetGatewayApi(val interface{})
+	GatewayApiInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	// Experimental.
@@ -67,6 +70,7 @@ type SkeClusterExtensionsDnsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetGatewayApi()
 	ResetZones()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -138,6 +142,26 @@ func (j *jsiiProxy_SkeClusterExtensionsDnsOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SkeClusterExtensionsDnsOutputReference) GatewayApi() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gatewayApi",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SkeClusterExtensionsDnsOutputReference) GatewayApiInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gatewayApiInput",
 		&returns,
 	)
 	return returns
@@ -250,6 +274,17 @@ func (j *jsiiProxy_SkeClusterExtensionsDnsOutputReference)SetEnabled(val interfa
 	_jsii_.Set(
 		j,
 		"enabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SkeClusterExtensionsDnsOutputReference)SetGatewayApi(val interface{}) {
+	if err := j.validateSetGatewayApiParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gatewayApi",
 		val,
 	)
 }
@@ -482,6 +517,14 @@ func (s *jsiiProxy_SkeClusterExtensionsDnsOutputReference) InterpolationForAttri
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SkeClusterExtensionsDnsOutputReference) ResetGatewayApi() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetGatewayApi",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SkeClusterExtensionsDnsOutputReference) ResetZones() {

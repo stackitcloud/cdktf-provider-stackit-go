@@ -28,6 +28,7 @@ type DataStackitSkeClusterExtensionsDnsOutputReference interface {
 	Enabled() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
+	GatewayApi() cdktf.IResolvable
 	InternalValue() *DataStackitSkeClusterExtensionsDns
 	SetInternalValue(val *DataStackitSkeClusterExtensionsDns)
 	// Experimental.
@@ -123,6 +124,16 @@ func (j *jsiiProxy_DataStackitSkeClusterExtensionsDnsOutputReference) Fqn() *str
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitSkeClusterExtensionsDnsOutputReference) GatewayApi() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"gatewayApi",
 		&returns,
 	)
 	return returns

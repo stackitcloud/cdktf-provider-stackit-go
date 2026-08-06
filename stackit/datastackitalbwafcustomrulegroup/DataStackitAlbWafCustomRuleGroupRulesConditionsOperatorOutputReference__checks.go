@@ -1,6 +1,6 @@
 //go:build !no_runtime_type_checking
 
-package albwafmanagedruleset
+package datastackitalbwafcustomrulegroup
 
 import (
 	"fmt"
@@ -10,7 +10,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -18,7 +18,7 @@ func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateGetAnyMapAt
 	return nil
 }
 
-func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -26,7 +26,7 @@ func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateGetBooleanA
 	return nil
 }
 
-func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -34,7 +34,7 @@ func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateGetBooleanM
 	return nil
 }
 
-func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -42,7 +42,7 @@ func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateGetListAttr
 	return nil
 }
 
-func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -50,7 +50,7 @@ func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateGetNumberAt
 	return nil
 }
 
-func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -58,7 +58,7 @@ func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateGetNumberLi
 	return nil
 }
 
-func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -66,7 +66,7 @@ func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateGetNumberMa
 	return nil
 }
 
-func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateGetStringAt
 	return nil
 }
 
-func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -82,7 +82,7 @@ func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateGetStringMa
 	return nil
 }
 
-func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
 	if property == nil {
 		return fmt.Errorf("parameter property is required, but nil was provided")
 	}
@@ -90,7 +90,7 @@ func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateInterpolati
 	return nil
 }
 
-func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -98,7 +98,7 @@ func (a *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateResolvePara
 	return nil
 }
 
-func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -155,7 +155,7 @@ func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+func (j *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -163,7 +163,7 @@ func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateSetComplexO
 	return nil
 }
 
-func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateSetInternalValueParameters(val *AlbWafManagedRuleSetUsage) error {
+func (j *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) validateSetInternalValueParameters(val *DataStackitAlbWafCustomRuleGroupRulesConditionsOperator) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateSetInternal
 	return nil
 }
 
-func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -179,7 +179,7 @@ func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -187,7 +187,7 @@ func (j *jsiiProxy_AlbWafManagedRuleSetUsageOutputReference) validateSetTerrafor
 	return nil
 }
 
-func validateNewAlbWafManagedRuleSetUsageOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataStackitAlbWafCustomRuleGroupRulesConditionsOperatorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

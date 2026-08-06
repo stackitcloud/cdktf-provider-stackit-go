@@ -60,6 +60,10 @@ func (j *jsiiProxy_SkeClusterExtensionsDnsOutputReference) validateSetEnabledPar
 	return nil
 }
 
+func (j *jsiiProxy_SkeClusterExtensionsDnsOutputReference) validateSetGatewayApiParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SkeClusterExtensionsDnsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
