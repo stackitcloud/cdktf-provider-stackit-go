@@ -161,6 +161,14 @@ func (j *jsiiProxy_CdnDistributionConfigAOutputReference) validateSetBlockedCoun
 	return nil
 }
 
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) validateSetBlockedIpsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CdnDistributionConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -226,6 +234,14 @@ func (j *jsiiProxy_CdnDistributionConfigAOutputReference) validateSetComplexObje
 	return nil
 }
 
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) validateSetDefaultCacheDurationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CdnDistributionConfigAOutputReference) validateSetForwardHostHeaderParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -265,6 +281,14 @@ func (j *jsiiProxy_CdnDistributionConfigAOutputReference) validateSetInternalVal
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CdnDistributionConfigA; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) validateSetMonthlyLimitBytesParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

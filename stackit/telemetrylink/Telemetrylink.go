@@ -9,12 +9,18 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/resources/telemetrylink stackit_telemetrylink}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/resources/telemetrylink stackit_telemetrylink}.
 type Telemetrylink interface {
 	cdktf.TerraformResource
 	AccessToken() *string
 	SetAccessToken(val *string)
 	AccessTokenInput() *string
+	AccessTokenWo() *string
+	SetAccessTokenWo(val *string)
+	AccessTokenWoInput() *string
+	AccessTokenWoVersion() *float64
+	SetAccessTokenWoVersion(val *float64)
+	AccessTokenWoVersionInput() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -126,6 +132,8 @@ type Telemetrylink interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccessToken()
+	ResetAccessTokenWo()
+	ResetAccessTokenWoVersion()
 	ResetDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -164,6 +172,46 @@ func (j *jsiiProxy_Telemetrylink) AccessTokenInput() *string {
 	_jsii_.Get(
 		j,
 		"accessTokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Telemetrylink) AccessTokenWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessTokenWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Telemetrylink) AccessTokenWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessTokenWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Telemetrylink) AccessTokenWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"accessTokenWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Telemetrylink) AccessTokenWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"accessTokenWoVersionInput",
 		&returns,
 	)
 	return returns
@@ -480,7 +528,7 @@ func (j *jsiiProxy_Telemetrylink) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/resources/telemetrylink stackit_telemetrylink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/resources/telemetrylink stackit_telemetrylink} Resource.
 func NewTelemetrylink(scope constructs.Construct, id *string, config *TelemetrylinkConfig) Telemetrylink {
 	_init_.Initialize()
 
@@ -498,7 +546,7 @@ func NewTelemetrylink(scope constructs.Construct, id *string, config *Telemetryl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/resources/telemetrylink stackit_telemetrylink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/resources/telemetrylink stackit_telemetrylink} Resource.
 func NewTelemetrylink_Override(t Telemetrylink, scope constructs.Construct, id *string, config *TelemetrylinkConfig) {
 	_init_.Initialize()
 
@@ -516,6 +564,28 @@ func (j *jsiiProxy_Telemetrylink)SetAccessToken(val *string) {
 	_jsii_.Set(
 		j,
 		"accessToken",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Telemetrylink)SetAccessTokenWo(val *string) {
+	if err := j.validateSetAccessTokenWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessTokenWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Telemetrylink)SetAccessTokenWoVersion(val *float64) {
+	if err := j.validateSetAccessTokenWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessTokenWoVersion",
 		val,
 	)
 }
@@ -1011,6 +1081,22 @@ func (t *jsiiProxy_Telemetrylink) ResetAccessToken() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetAccessToken",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_Telemetrylink) ResetAccessTokenWo() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetAccessTokenWo",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_Telemetrylink) ResetAccessTokenWoVersion() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetAccessTokenWoVersion",
 		nil, // no parameters
 	)
 }

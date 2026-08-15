@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/resources/network_area stackit_network_area}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/resources/network_area stackit_network_area}.
 type NetworkArea interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,12 +24,6 @@ type NetworkArea interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	DefaultNameservers() *[]*string
-	SetDefaultNameservers(val *[]*string)
-	DefaultNameserversInput() *[]*string
-	DefaultPrefixLength() *float64
-	SetDefaultPrefixLength(val *float64)
-	DefaultPrefixLengthInput() *float64
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -50,18 +44,10 @@ type NetworkArea interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	MaxPrefixLength() *float64
-	SetMaxPrefixLength(val *float64)
-	MaxPrefixLengthInput() *float64
-	MinPrefixLength() *float64
-	SetMinPrefixLength(val *float64)
-	MinPrefixLengthInput() *float64
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	NetworkAreaId() *string
-	NetworkRanges() NetworkAreaNetworkRangesList
-	NetworkRangesInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	OrganizationId() *string
@@ -84,9 +70,6 @@ type NetworkArea interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	TransferNetwork() *string
-	SetTransferNetwork(val *string)
-	TransferNetworkInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -130,17 +113,10 @@ type NetworkArea interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutNetworkRanges(value interface{})
-	ResetDefaultNameservers()
-	ResetDefaultPrefixLength()
 	ResetLabels()
-	ResetMaxPrefixLength()
-	ResetMinPrefixLength()
-	ResetNetworkRanges()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetTransferNetwork()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -194,46 +170,6 @@ func (j *jsiiProxy_NetworkArea) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NetworkArea) DefaultNameservers() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"defaultNameservers",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NetworkArea) DefaultNameserversInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"defaultNameserversInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NetworkArea) DefaultPrefixLength() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"defaultPrefixLength",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NetworkArea) DefaultPrefixLengthInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"defaultPrefixLengthInput",
 		&returns,
 	)
 	return returns
@@ -319,46 +255,6 @@ func (j *jsiiProxy_NetworkArea) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkArea) MaxPrefixLength() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"maxPrefixLength",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NetworkArea) MaxPrefixLengthInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"maxPrefixLengthInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NetworkArea) MinPrefixLength() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"minPrefixLength",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NetworkArea) MinPrefixLengthInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"minPrefixLengthInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_NetworkArea) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -384,26 +280,6 @@ func (j *jsiiProxy_NetworkArea) NetworkAreaId() *string {
 	_jsii_.Get(
 		j,
 		"networkAreaId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NetworkArea) NetworkRanges() NetworkAreaNetworkRangesList {
-	var returns NetworkAreaNetworkRangesList
-	_jsii_.Get(
-		j,
-		"networkRanges",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NetworkArea) NetworkRangesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"networkRangesInput",
 		&returns,
 	)
 	return returns
@@ -509,28 +385,8 @@ func (j *jsiiProxy_NetworkArea) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkArea) TransferNetwork() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"transferNetwork",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_NetworkArea) TransferNetworkInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"transferNetworkInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/resources/network_area stackit_network_area} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/resources/network_area stackit_network_area} Resource.
 func NewNetworkArea(scope constructs.Construct, id *string, config *NetworkAreaConfig) NetworkArea {
 	_init_.Initialize()
 
@@ -548,7 +404,7 @@ func NewNetworkArea(scope constructs.Construct, id *string, config *NetworkAreaC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/resources/network_area stackit_network_area} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/resources/network_area stackit_network_area} Resource.
 func NewNetworkArea_Override(n NetworkArea, scope constructs.Construct, id *string, config *NetworkAreaConfig) {
 	_init_.Initialize()
 
@@ -577,28 +433,6 @@ func (j *jsiiProxy_NetworkArea)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NetworkArea)SetDefaultNameservers(val *[]*string) {
-	if err := j.validateSetDefaultNameserversParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"defaultNameservers",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NetworkArea)SetDefaultPrefixLength(val *float64) {
-	if err := j.validateSetDefaultPrefixLengthParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"defaultPrefixLength",
 		val,
 	)
 }
@@ -641,28 +475,6 @@ func (j *jsiiProxy_NetworkArea)SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_NetworkArea)SetMaxPrefixLength(val *float64) {
-	if err := j.validateSetMaxPrefixLengthParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"maxPrefixLength",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NetworkArea)SetMinPrefixLength(val *float64) {
-	if err := j.validateSetMinPrefixLengthParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"minPrefixLength",
-		val,
-	)
-}
-
 func (j *jsiiProxy_NetworkArea)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
@@ -700,17 +512,6 @@ func (j *jsiiProxy_NetworkArea)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NetworkArea)SetTransferNetwork(val *string) {
-	if err := j.validateSetTransferNetworkParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"transferNetwork",
 		val,
 	)
 }
@@ -1068,33 +869,6 @@ func (n *jsiiProxy_NetworkArea) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (n *jsiiProxy_NetworkArea) PutNetworkRanges(value interface{}) {
-	if err := n.validatePutNetworkRangesParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		n,
-		"putNetworkRanges",
-		[]interface{}{value},
-	)
-}
-
-func (n *jsiiProxy_NetworkArea) ResetDefaultNameservers() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetDefaultNameservers",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_NetworkArea) ResetDefaultPrefixLength() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetDefaultPrefixLength",
-		nil, // no parameters
-	)
-}
-
 func (n *jsiiProxy_NetworkArea) ResetLabels() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1103,42 +877,10 @@ func (n *jsiiProxy_NetworkArea) ResetLabels() {
 	)
 }
 
-func (n *jsiiProxy_NetworkArea) ResetMaxPrefixLength() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetMaxPrefixLength",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_NetworkArea) ResetMinPrefixLength() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetMinPrefixLength",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_NetworkArea) ResetNetworkRanges() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetNetworkRanges",
-		nil, // no parameters
-	)
-}
-
 func (n *jsiiProxy_NetworkArea) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_NetworkArea) ResetTransferNetwork() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetTransferNetwork",
 		nil, // no parameters
 	)
 }

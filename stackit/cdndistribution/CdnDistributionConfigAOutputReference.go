@@ -15,6 +15,9 @@ type CdnDistributionConfigAOutputReference interface {
 	BlockedCountries() *[]*string
 	SetBlockedCountries(val *[]*string)
 	BlockedCountriesInput() *[]*string
+	BlockedIps() *[]*string
+	SetBlockedIps(val *[]*string)
+	BlockedIpsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,6 +33,9 @@ type CdnDistributionConfigAOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DefaultCacheDuration() *string
+	SetDefaultCacheDuration(val *string)
+	DefaultCacheDurationInput() *string
 	ForwardHostHeader() interface{}
 	SetForwardHostHeader(val interface{})
 	ForwardHostHeaderInput() interface{}
@@ -37,6 +43,9 @@ type CdnDistributionConfigAOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	MonthlyLimitBytes() *float64
+	SetMonthlyLimitBytes(val *float64)
+	MonthlyLimitBytesInput() *float64
 	Optimizer() CdnDistributionConfigOptimizerOutputReference
 	OptimizerInput() interface{}
 	Redirects() CdnDistributionConfigRedirectsOutputReference
@@ -89,7 +98,10 @@ type CdnDistributionConfigAOutputReference interface {
 	PutTls(value *CdnDistributionConfigTls)
 	PutWaf(value *CdnDistributionConfigWaf)
 	ResetBlockedCountries()
+	ResetBlockedIps()
+	ResetDefaultCacheDuration()
 	ResetForwardHostHeader()
+	ResetMonthlyLimitBytes()
 	ResetOptimizer()
 	ResetRedirects()
 	ResetStripResponseCookies()
@@ -150,6 +162,26 @@ func (j *jsiiProxy_CdnDistributionConfigAOutputReference) BlockedCountriesInput(
 	return returns
 }
 
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) BlockedIps() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"blockedIps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) BlockedIpsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"blockedIpsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CdnDistributionConfigAOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -175,6 +207,26 @@ func (j *jsiiProxy_CdnDistributionConfigAOutputReference) CreationStack() *[]*st
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) DefaultCacheDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultCacheDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) DefaultCacheDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultCacheDurationInput",
 		&returns,
 	)
 	return returns
@@ -215,6 +267,26 @@ func (j *jsiiProxy_CdnDistributionConfigAOutputReference) InternalValue() interf
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) MonthlyLimitBytes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"monthlyLimitBytes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) MonthlyLimitBytesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"monthlyLimitBytesInput",
 		&returns,
 	)
 	return returns
@@ -399,6 +471,17 @@ func (j *jsiiProxy_CdnDistributionConfigAOutputReference)SetBlockedCountries(val
 	)
 }
 
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference)SetBlockedIps(val *[]*string) {
+	if err := j.validateSetBlockedIpsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"blockedIps",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CdnDistributionConfigAOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -421,6 +504,17 @@ func (j *jsiiProxy_CdnDistributionConfigAOutputReference)SetComplexObjectIsFromS
 	)
 }
 
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference)SetDefaultCacheDuration(val *string) {
+	if err := j.validateSetDefaultCacheDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultCacheDuration",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CdnDistributionConfigAOutputReference)SetForwardHostHeader(val interface{}) {
 	if err := j.validateSetForwardHostHeaderParameters(val); err != nil {
 		panic(err)
@@ -439,6 +533,17 @@ func (j *jsiiProxy_CdnDistributionConfigAOutputReference)SetInternalValue(val in
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference)SetMonthlyLimitBytes(val *float64) {
+	if err := j.validateSetMonthlyLimitBytesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"monthlyLimitBytes",
 		val,
 	)
 }
@@ -736,10 +841,34 @@ func (c *jsiiProxy_CdnDistributionConfigAOutputReference) ResetBlockedCountries(
 	)
 }
 
+func (c *jsiiProxy_CdnDistributionConfigAOutputReference) ResetBlockedIps() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBlockedIps",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CdnDistributionConfigAOutputReference) ResetDefaultCacheDuration() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDefaultCacheDuration",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CdnDistributionConfigAOutputReference) ResetForwardHostHeader() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetForwardHostHeader",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CdnDistributionConfigAOutputReference) ResetMonthlyLimitBytes() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMonthlyLimitBytes",
 		nil, // no parameters
 	)
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_CdnDistributionConfigAOutputReference) validateSetBlockedCoun
 	return nil
 }
 
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) validateSetBlockedIpsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CdnDistributionConfigAOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -80,11 +84,19 @@ func (j *jsiiProxy_CdnDistributionConfigAOutputReference) validateSetComplexObje
 	return nil
 }
 
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) validateSetDefaultCacheDurationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CdnDistributionConfigAOutputReference) validateSetForwardHostHeaderParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_CdnDistributionConfigAOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) validateSetMonthlyLimitBytesParameters(val *float64) error {
 	return nil
 }
 

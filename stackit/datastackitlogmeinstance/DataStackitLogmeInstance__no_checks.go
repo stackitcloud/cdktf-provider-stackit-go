@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataStackitLogmeInstance) validateSetProjectIdParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitLogmeInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataStackitLogmeInstanceParameters(scope constructs.Construct, id *string, config *DataStackitLogmeInstanceConfig) error {
 	return nil
 }

@@ -14,6 +14,7 @@ type DataStackitCdnDistributionConfigAOutputReference interface {
 	BlockedCountries() *[]*string
 	SetBlockedCountries(val *[]*string)
 	BlockedCountriesInput() *[]*string
+	BlockedIps() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -29,11 +30,13 @@ type DataStackitCdnDistributionConfigAOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DefaultCacheDuration() *string
 	ForwardHostHeader() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataStackitCdnDistributionConfigA
 	SetInternalValue(val *DataStackitCdnDistributionConfigA)
+	MonthlyLimitBytes() *float64
 	Optimizer() DataStackitCdnDistributionConfigOptimizerOutputReference
 	Redirects() DataStackitCdnDistributionConfigRedirectsOutputReference
 	Regions() *[]*string
@@ -118,6 +121,16 @@ func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) BlockedCoun
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) BlockedIps() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"blockedIps",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -148,6 +161,16 @@ func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) CreationSta
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) DefaultCacheDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultCacheDuration",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) ForwardHostHeader() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -173,6 +196,16 @@ func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) InternalVal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) MonthlyLimitBytes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"monthlyLimitBytes",
 		&returns,
 	)
 	return returns

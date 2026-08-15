@@ -1,6 +1,6 @@
 //go:build !no_runtime_type_checking
 
-package datastackitnetworkarea
+package datastackitsqlserverflexflavors
 
 import (
 	"fmt"
@@ -10,7 +10,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -18,7 +18,7 @@ func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -26,7 +26,7 @@ func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -34,7 +34,7 @@ func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -42,7 +42,7 @@ func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -50,7 +50,7 @@ func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -58,7 +58,7 @@ func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -66,7 +66,7 @@ func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -74,7 +74,7 @@ func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -82,7 +82,7 @@ func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
 	if property == nil {
 		return fmt.Errorf("parameter property is required, but nil was provided")
 	}
@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateI
 	return nil
 }
 
-func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -98,7 +98,7 @@ func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateR
 	return nil
 }
 
-func (j *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -155,7 +155,7 @@ func (j *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+func (j *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -163,7 +163,7 @@ func (j *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateSetInternalValueParameters(val *DataStackitNetworkAreaNetworkRanges) error {
+func (j *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesOutputReference) validateSetInternalValueParameters(val *DataStackitSqlserverflexFlavorsFlavorsStorageClasses) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -187,7 +187,7 @@ func (j *jsiiProxy_DataStackitNetworkAreaNetworkRangesOutputReference) validateS
 	return nil
 }
 
-func validateNewDataStackitNetworkAreaNetworkRangesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataStackitSqlserverflexFlavorsFlavorsStorageClassesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

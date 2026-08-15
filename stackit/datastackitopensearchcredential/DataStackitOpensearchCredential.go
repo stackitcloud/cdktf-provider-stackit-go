@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/data-sources/opensearch_credential stackit_opensearch_credential}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/data-sources/opensearch_credential stackit_opensearch_credential}.
 type DataStackitOpensearchCredential interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -419,7 +419,7 @@ func (j *jsiiProxy_DataStackitOpensearchCredential) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/data-sources/opensearch_credential stackit_opensearch_credential} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/data-sources/opensearch_credential stackit_opensearch_credential} Data Source.
 func NewDataStackitOpensearchCredential(scope constructs.Construct, id *string, config *DataStackitOpensearchCredentialConfig) DataStackitOpensearchCredential {
 	_init_.Initialize()
 
@@ -437,7 +437,7 @@ func NewDataStackitOpensearchCredential(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/data-sources/opensearch_credential stackit_opensearch_credential} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/data-sources/opensearch_credential stackit_opensearch_credential} Data Source.
 func NewDataStackitOpensearchCredential_Override(d DataStackitOpensearchCredential, scope constructs.Construct, id *string, config *DataStackitOpensearchCredentialConfig) {
 	_init_.Initialize()
 

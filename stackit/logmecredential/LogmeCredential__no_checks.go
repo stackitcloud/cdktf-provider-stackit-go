@@ -112,6 +112,10 @@ func (j *jsiiProxy_LogmeCredential) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_LogmeCredential) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewLogmeCredentialParameters(scope constructs.Construct, id *string, config *LogmeCredentialConfig) error {
 	return nil
 }

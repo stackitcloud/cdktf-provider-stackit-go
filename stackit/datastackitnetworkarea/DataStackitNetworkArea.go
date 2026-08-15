@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/data-sources/network_area stackit_network_area}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/data-sources/network_area stackit_network_area}.
 type DataStackitNetworkArea interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -20,8 +20,6 @@ type DataStackitNetworkArea interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	DefaultNameservers() *[]*string
-	DefaultPrefixLength() *float64
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -40,13 +38,10 @@ type DataStackitNetworkArea interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	MaxPrefixLength() *float64
-	MinPrefixLength() *float64
 	Name() *string
 	NetworkAreaId() *string
 	SetNetworkAreaId(val *string)
 	NetworkAreaIdInput() *string
-	NetworkRanges() DataStackitNetworkAreaNetworkRangesList
 	// The tree node.
 	Node() constructs.Node
 	OrganizationId() *string
@@ -65,7 +60,6 @@ type DataStackitNetworkArea interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	TransferNetwork() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -143,26 +137,6 @@ func (j *jsiiProxy_DataStackitNetworkArea) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataStackitNetworkArea) DefaultNameservers() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"defaultNameservers",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataStackitNetworkArea) DefaultPrefixLength() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"defaultPrefixLength",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataStackitNetworkArea) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -233,26 +207,6 @@ func (j *jsiiProxy_DataStackitNetworkArea) Lifecycle() *cdktf.TerraformResourceL
 	return returns
 }
 
-func (j *jsiiProxy_DataStackitNetworkArea) MaxPrefixLength() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"maxPrefixLength",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataStackitNetworkArea) MinPrefixLength() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"minPrefixLength",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataStackitNetworkArea) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -278,16 +232,6 @@ func (j *jsiiProxy_DataStackitNetworkArea) NetworkAreaIdInput() *string {
 	_jsii_.Get(
 		j,
 		"networkAreaIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataStackitNetworkArea) NetworkRanges() DataStackitNetworkAreaNetworkRangesList {
-	var returns DataStackitNetworkAreaNetworkRangesList
-	_jsii_.Get(
-		j,
-		"networkRanges",
 		&returns,
 	)
 	return returns
@@ -383,18 +327,8 @@ func (j *jsiiProxy_DataStackitNetworkArea) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataStackitNetworkArea) TransferNetwork() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"transferNetwork",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/data-sources/network_area stackit_network_area} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/data-sources/network_area stackit_network_area} Data Source.
 func NewDataStackitNetworkArea(scope constructs.Construct, id *string, config *DataStackitNetworkAreaConfig) DataStackitNetworkArea {
 	_init_.Initialize()
 
@@ -412,7 +346,7 @@ func NewDataStackitNetworkArea(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/data-sources/network_area stackit_network_area} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/data-sources/network_area stackit_network_area} Data Source.
 func NewDataStackitNetworkArea_Override(d DataStackitNetworkArea, scope constructs.Construct, id *string, config *DataStackitNetworkAreaConfig) {
 	_init_.Initialize()
 

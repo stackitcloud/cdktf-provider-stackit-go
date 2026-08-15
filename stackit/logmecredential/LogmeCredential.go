@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/resources/logme_credential stackit_logme_credential}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/resources/logme_credential stackit_logme_credential}.
 type LogmeCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -63,6 +63,9 @@ type LogmeCredential interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -117,6 +120,7 @@ type LogmeCredential interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -355,6 +359,26 @@ func (j *jsiiProxy_LogmeCredential) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LogmeCredential) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LogmeCredential) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LogmeCredential) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -406,7 +430,7 @@ func (j *jsiiProxy_LogmeCredential) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/resources/logme_credential stackit_logme_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/resources/logme_credential stackit_logme_credential} Resource.
 func NewLogmeCredential(scope constructs.Construct, id *string, config *LogmeCredentialConfig) LogmeCredential {
 	_init_.Initialize()
 
@@ -424,7 +448,7 @@ func NewLogmeCredential(scope constructs.Construct, id *string, config *LogmeCre
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/resources/logme_credential stackit_logme_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/resources/logme_credential stackit_logme_credential} Resource.
 func NewLogmeCredential_Override(l LogmeCredential, scope constructs.Construct, id *string, config *LogmeCredentialConfig) {
 	_init_.Initialize()
 
@@ -521,6 +545,17 @@ func (j *jsiiProxy_LogmeCredential)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LogmeCredential)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -882,6 +917,14 @@ func (l *jsiiProxy_LogmeCredential) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LogmeCredential) ResetRegion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

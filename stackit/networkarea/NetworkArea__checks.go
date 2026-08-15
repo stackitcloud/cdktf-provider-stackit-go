@@ -204,37 +204,6 @@ func (n *jsiiProxy_NetworkArea) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
-func (n *jsiiProxy_NetworkArea) validatePutNetworkRangesParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*NetworkAreaNetworkRanges:
-		value := value.(*[]*NetworkAreaNetworkRanges)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*NetworkAreaNetworkRanges:
-		value_ := value.([]*NetworkAreaNetworkRanges)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*NetworkAreaNetworkRanges; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
 func validateNetworkArea_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -365,22 +334,6 @@ func (j *jsiiProxy_NetworkArea) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_NetworkArea) validateSetDefaultNameserversParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_NetworkArea) validateSetDefaultPrefixLengthParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_NetworkArea) validateSetLabelsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -392,22 +345,6 @@ func (j *jsiiProxy_NetworkArea) validateSetLabelsParameters(val *map[string]*str
 func (j *jsiiProxy_NetworkArea) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_NetworkArea) validateSetMaxPrefixLengthParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_NetworkArea) validateSetMinPrefixLengthParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -470,14 +407,6 @@ func (j *jsiiProxy_NetworkArea) validateSetProvisionersParameters(val *[]interfa
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_NetworkArea) validateSetTransferNetworkParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

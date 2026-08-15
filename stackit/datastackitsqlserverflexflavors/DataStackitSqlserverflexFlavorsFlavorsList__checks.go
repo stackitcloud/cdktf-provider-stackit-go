@@ -1,6 +1,6 @@
 //go:build !no_runtime_type_checking
 
-package datastackitnetworkarea
+package datastackitsqlserverflexflavors
 
 import (
 	"fmt"
@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+func (d *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
 	if mapKeyAttributeName == nil {
 		return fmt.Errorf("parameter mapKeyAttributeName is required, but nil was provided")
 	}
@@ -16,7 +16,7 @@ func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesList) validateAllWithMapKe
 	return nil
 }
 
-func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesList) validateGetParameters(index *float64) error {
+func (d *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsList) validateGetParameters(index *float64) error {
 	if index == nil {
 		return fmt.Errorf("parameter index is required, but nil was provided")
 	}
@@ -24,7 +24,7 @@ func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -32,7 +32,7 @@ func (d *jsiiProxy_DataStackitNetworkAreaNetworkRangesList) validateResolveParam
 	return nil
 }
 
-func (j *jsiiProxy_DataStackitNetworkAreaNetworkRangesList) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsList) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -40,7 +40,7 @@ func (j *jsiiProxy_DataStackitNetworkAreaNetworkRangesList) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_DataStackitNetworkAreaNetworkRangesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -48,7 +48,7 @@ func (j *jsiiProxy_DataStackitNetworkAreaNetworkRangesList) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_DataStackitNetworkAreaNetworkRangesList) validateSetWrapsSetParameters(val *bool) error {
+func (j *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsList) validateSetWrapsSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -56,7 +56,7 @@ func (j *jsiiProxy_DataStackitNetworkAreaNetworkRangesList) validateSetWrapsSetP
 	return nil
 }
 
-func validateNewDataStackitNetworkAreaNetworkRangesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataStackitSqlserverflexFlavorsFlavorsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

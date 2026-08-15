@@ -88,6 +88,10 @@ func (j *jsiiProxy_DataStackitLogmeCredential) validateSetProjectIdParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataStackitLogmeCredential) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataStackitLogmeCredentialParameters(scope constructs.Construct, id *string, config *DataStackitLogmeCredentialConfig) error {
 	return nil
 }

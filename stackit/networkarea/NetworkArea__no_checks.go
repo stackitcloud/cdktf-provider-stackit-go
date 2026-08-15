@@ -72,10 +72,6 @@ func (n *jsiiProxy_NetworkArea) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
-func (n *jsiiProxy_NetworkArea) validatePutNetworkRangesParameters(value interface{}) error {
-	return nil
-}
-
 func validateNetworkArea_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -100,27 +96,11 @@ func (j *jsiiProxy_NetworkArea) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
-func (j *jsiiProxy_NetworkArea) validateSetDefaultNameserversParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_NetworkArea) validateSetDefaultPrefixLengthParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_NetworkArea) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }
 
 func (j *jsiiProxy_NetworkArea) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	return nil
-}
-
-func (j *jsiiProxy_NetworkArea) validateSetMaxPrefixLengthParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_NetworkArea) validateSetMinPrefixLengthParameters(val *float64) error {
 	return nil
 }
 
@@ -133,10 +113,6 @@ func (j *jsiiProxy_NetworkArea) validateSetOrganizationIdParameters(val *string)
 }
 
 func (j *jsiiProxy_NetworkArea) validateSetProvisionersParameters(val *[]interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_NetworkArea) validateSetTransferNetworkParameters(val *string) error {
 	return nil
 }
 

@@ -404,6 +404,14 @@ func (j *jsiiProxy_LogmeCredential) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_LogmeCredential) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewLogmeCredentialParameters(scope constructs.Construct, id *string, config *LogmeCredentialConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -120,6 +120,10 @@ func (j *jsiiProxy_LogmeInstance) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_LogmeInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LogmeInstance) validateSetVersionParameters(val *string) error {
 	return nil
 }

@@ -21,15 +21,15 @@ type DataStackitAlbWafCustomRuleGroupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Custom rule group configuration name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/data-sources/alb_waf_custom_rule_group#name DataStackitAlbWafCustomRuleGroup#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/data-sources/alb_waf_custom_rule_group#name DataStackitAlbWafCustomRuleGroup#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// STACKIT project ID associated with the ALB WAF Custom Rule Group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/data-sources/alb_waf_custom_rule_group#project_id DataStackitAlbWafCustomRuleGroup#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/data-sources/alb_waf_custom_rule_group#project_id DataStackitAlbWafCustomRuleGroup#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// STACKIT region name the resource is located in. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/data-sources/alb_waf_custom_rule_group#region DataStackitAlbWafCustomRuleGroup#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/data-sources/alb_waf_custom_rule_group#region DataStackitAlbWafCustomRuleGroup#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

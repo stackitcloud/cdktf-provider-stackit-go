@@ -1,14 +1,14 @@
-package networkarea
+package datastackitsqlserverflexflavors
 
 import (
 	_init_ "github.com/stackitcloud/cdktf-provider-stackit-go/stackit/jsii"
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/stackitcloud/cdktf-provider-stackit-go/stackit/networkarea/internal"
+	"github.com/stackitcloud/cdktf-provider-stackit-go/stackit/datastackitsqlserverflexflavors/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type NetworkAreaNetworkRangesList interface {
+type DataStackitSqlserverflexFlavorsFlavorsStorageClassesList interface {
 	cdktf.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -17,8 +17,6 @@ type NetworkAreaNetworkRangesList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -35,7 +33,7 @@ type NetworkAreaNetworkRangesList interface {
 	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
-	Get(index *float64) NetworkAreaNetworkRangesOutputReference
+	Get(index *float64) DataStackitSqlserverflexFlavorsFlavorsStorageClassesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -46,12 +44,12 @@ type NetworkAreaNetworkRangesList interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for NetworkAreaNetworkRangesList
-type jsiiProxy_NetworkAreaNetworkRangesList struct {
+// The jsii proxy struct for DataStackitSqlserverflexFlavorsFlavorsStorageClassesList
+type jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesList struct {
 	internal.Type__cdktfComplexList
 }
 
-func (j *jsiiProxy_NetworkAreaNetworkRangesList) CreationStack() *[]*string {
+func (j *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesList) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -61,7 +59,7 @@ func (j *jsiiProxy_NetworkAreaNetworkRangesList) CreationStack() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkAreaNetworkRangesList) Fqn() *string {
+func (j *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesList) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -71,17 +69,7 @@ func (j *jsiiProxy_NetworkAreaNetworkRangesList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkAreaNetworkRangesList) InternalValue() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NetworkAreaNetworkRangesList) TerraformAttribute() *string {
+func (j *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesList) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -91,7 +79,7 @@ func (j *jsiiProxy_NetworkAreaNetworkRangesList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkAreaNetworkRangesList) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesList) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -101,7 +89,7 @@ func (j *jsiiProxy_NetworkAreaNetworkRangesList) TerraformResource() cdktf.IInte
 	return returns
 }
 
-func (j *jsiiProxy_NetworkAreaNetworkRangesList) WrapsSet() *bool {
+func (j *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesList) WrapsSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -112,16 +100,16 @@ func (j *jsiiProxy_NetworkAreaNetworkRangesList) WrapsSet() *bool {
 }
 
 
-func NewNetworkAreaNetworkRangesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkAreaNetworkRangesList {
+func NewDataStackitSqlserverflexFlavorsFlavorsStorageClassesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataStackitSqlserverflexFlavorsFlavorsStorageClassesList {
 	_init_.Initialize()
 
-	if err := validateNewNetworkAreaNetworkRangesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+	if err := validateNewDataStackitSqlserverflexFlavorsFlavorsStorageClassesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_NetworkAreaNetworkRangesList{}
+	j := jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesList{}
 
 	_jsii_.Create(
-		"stackit.networkArea.NetworkAreaNetworkRangesList",
+		"stackit.dataStackitSqlserverflexFlavors.DataStackitSqlserverflexFlavorsFlavorsStorageClassesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,28 +117,17 @@ func NewNetworkAreaNetworkRangesList(terraformResource cdktf.IInterpolatingParen
 	return &j
 }
 
-func NewNetworkAreaNetworkRangesList_Override(n NetworkAreaNetworkRangesList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDataStackitSqlserverflexFlavorsFlavorsStorageClassesList_Override(d DataStackitSqlserverflexFlavorsFlavorsStorageClassesList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"stackit.networkArea.NetworkAreaNetworkRangesList",
+		"stackit.dataStackitSqlserverflexFlavors.DataStackitSqlserverflexFlavorsFlavorsStorageClassesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
-		n,
+		d,
 	)
 }
 
-func (j *jsiiProxy_NetworkAreaNetworkRangesList)SetInternalValue(val interface{}) {
-	if err := j.validateSetInternalValueParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NetworkAreaNetworkRangesList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesList)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -161,7 +138,7 @@ func (j *jsiiProxy_NetworkAreaNetworkRangesList)SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_NetworkAreaNetworkRangesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -172,7 +149,7 @@ func (j *jsiiProxy_NetworkAreaNetworkRangesList)SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_NetworkAreaNetworkRangesList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesList)SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,14 +160,14 @@ func (j *jsiiProxy_NetworkAreaNetworkRangesList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (n *jsiiProxy_NetworkAreaNetworkRangesList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
-	if err := n.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
+func (d *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
 	var returns cdktf.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"allWithMapKey",
 		[]interface{}{mapKeyAttributeName},
 		&returns,
@@ -199,11 +176,11 @@ func (n *jsiiProxy_NetworkAreaNetworkRangesList) AllWithMapKey(mapKeyAttributeNa
 	return returns
 }
 
-func (n *jsiiProxy_NetworkAreaNetworkRangesList) ComputeFqn() *string {
+func (d *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesList) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"computeFqn",
 		nil, // no parameters
 		&returns,
@@ -212,14 +189,14 @@ func (n *jsiiProxy_NetworkAreaNetworkRangesList) ComputeFqn() *string {
 	return returns
 }
 
-func (n *jsiiProxy_NetworkAreaNetworkRangesList) Get(index *float64) NetworkAreaNetworkRangesOutputReference {
-	if err := n.validateGetParameters(index); err != nil {
+func (d *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesList) Get(index *float64) DataStackitSqlserverflexFlavorsFlavorsStorageClassesOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
 		panic(err)
 	}
-	var returns NetworkAreaNetworkRangesOutputReference
+	var returns DataStackitSqlserverflexFlavorsFlavorsStorageClassesOutputReference
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"get",
 		[]interface{}{index},
 		&returns,
@@ -228,14 +205,14 @@ func (n *jsiiProxy_NetworkAreaNetworkRangesList) Get(index *float64) NetworkArea
 	return returns
 }
 
-func (n *jsiiProxy_NetworkAreaNetworkRangesList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"resolve",
 		[]interface{}{_context},
 		&returns,
@@ -244,11 +221,11 @@ func (n *jsiiProxy_NetworkAreaNetworkRangesList) Resolve(_context cdktf.IResolve
 	return returns
 }
 
-func (n *jsiiProxy_NetworkAreaNetworkRangesList) ToString() *string {
+func (d *jsiiProxy_DataStackitSqlserverflexFlavorsFlavorsStorageClassesList) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"toString",
 		nil, // no parameters
 		&returns,

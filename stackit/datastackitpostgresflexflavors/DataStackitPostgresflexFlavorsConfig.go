@@ -21,13 +21,13 @@ type DataStackitPostgresflexFlavorsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT project ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/data-sources/postgresflex_flavors#project_id DataStackitPostgresflexFlavors#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/data-sources/postgresflex_flavors#project_id DataStackitPostgresflexFlavors#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// Postgres Flex flavors data source region. If undefined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/data-sources/postgresflex_flavors#region DataStackitPostgresflexFlavors#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/data-sources/postgresflex_flavors#region DataStackitPostgresflexFlavors#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.110.0/docs/data-sources/postgresflex_flavors#timeouts DataStackitPostgresflexFlavors#timeouts}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/data-sources/postgresflex_flavors#timeouts DataStackitPostgresflexFlavors#timeouts}.
 	Timeouts *DataStackitPostgresflexFlavorsTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -92,6 +92,14 @@ func (j *jsiiProxy_Telemetrylink) validateSetAccessTokenParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_Telemetrylink) validateSetAccessTokenWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Telemetrylink) validateSetAccessTokenWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_Telemetrylink) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
