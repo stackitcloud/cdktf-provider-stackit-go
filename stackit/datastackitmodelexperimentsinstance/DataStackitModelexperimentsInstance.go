@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/data-sources/modelexperiments_instance stackit_modelexperiments_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/modelexperiments_instance stackit_modelexperiments_instance}.
 type DataStackitModelexperimentsInstance interface {
 	cdktf.TerraformDataSource
 	BucketName() *string
@@ -385,7 +385,7 @@ func (j *jsiiProxy_DataStackitModelexperimentsInstance) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/data-sources/modelexperiments_instance stackit_modelexperiments_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/modelexperiments_instance stackit_modelexperiments_instance} Data Source.
 func NewDataStackitModelexperimentsInstance(scope constructs.Construct, id *string, config *DataStackitModelexperimentsInstanceConfig) DataStackitModelexperimentsInstance {
 	_init_.Initialize()
 
@@ -403,7 +403,7 @@ func NewDataStackitModelexperimentsInstance(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/data-sources/modelexperiments_instance stackit_modelexperiments_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/modelexperiments_instance stackit_modelexperiments_instance} Data Source.
 func NewDataStackitModelexperimentsInstance_Override(d DataStackitModelexperimentsInstance, scope constructs.Construct, id *string, config *DataStackitModelexperimentsInstanceConfig) {
 	_init_.Initialize()
 

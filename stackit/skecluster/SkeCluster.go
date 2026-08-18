@@ -9,11 +9,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/resources/ske_cluster stackit_ske_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/resources/ske_cluster stackit_ske_cluster}.
 type SkeCluster interface {
 	cdktf.TerraformResource
 	Access() SkeClusterAccessOutputReference
 	AccessInput() interface{}
+	Audit() SkeClusterAuditOutputReference
+	AuditInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -131,12 +133,14 @@ type SkeCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAccess(value *SkeClusterAccess)
+	PutAudit(value *SkeClusterAudit)
 	PutExtensions(value *SkeClusterExtensions)
 	PutHibernations(value interface{})
 	PutMaintenance(value *SkeClusterMaintenance)
 	PutNetwork(value *SkeClusterNetwork)
 	PutNodePools(value interface{})
 	ResetAccess()
+	ResetAudit()
 	ResetExtensions()
 	ResetHibernations()
 	ResetKubernetesVersionMin()
@@ -179,6 +183,26 @@ func (j *jsiiProxy_SkeCluster) AccessInput() interface{} {
 	_jsii_.Get(
 		j,
 		"accessInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SkeCluster) Audit() SkeClusterAuditOutputReference {
+	var returns SkeClusterAuditOutputReference
+	_jsii_.Get(
+		j,
+		"audit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SkeCluster) AuditInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"auditInput",
 		&returns,
 	)
 	return returns
@@ -575,7 +599,7 @@ func (j *jsiiProxy_SkeCluster) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/resources/ske_cluster stackit_ske_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/resources/ske_cluster stackit_ske_cluster} Resource.
 func NewSkeCluster(scope constructs.Construct, id *string, config *SkeClusterConfig) SkeCluster {
 	_init_.Initialize()
 
@@ -593,7 +617,7 @@ func NewSkeCluster(scope constructs.Construct, id *string, config *SkeClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/resources/ske_cluster stackit_ske_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/resources/ske_cluster stackit_ske_cluster} Resource.
 func NewSkeCluster_Override(s SkeCluster, scope constructs.Construct, id *string, config *SkeClusterConfig) {
 	_init_.Initialize()
 
@@ -1080,6 +1104,17 @@ func (s *jsiiProxy_SkeCluster) PutAccess(value *SkeClusterAccess) {
 	)
 }
 
+func (s *jsiiProxy_SkeCluster) PutAudit(value *SkeClusterAudit) {
+	if err := s.validatePutAuditParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putAudit",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SkeCluster) PutExtensions(value *SkeClusterExtensions) {
 	if err := s.validatePutExtensionsParameters(value); err != nil {
 		panic(err)
@@ -1139,6 +1174,14 @@ func (s *jsiiProxy_SkeCluster) ResetAccess() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAccess",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SkeCluster) ResetAudit() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAudit",
 		nil, // no parameters
 	)
 }

@@ -64,6 +64,7 @@ type SkeClusterExtensionsApplicationLoadBalancerOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -447,6 +448,14 @@ func (s *jsiiProxy_SkeClusterExtensionsApplicationLoadBalancerOutputReference) I
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SkeClusterExtensionsApplicationLoadBalancerOutputReference) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnabled",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SkeClusterExtensionsApplicationLoadBalancerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

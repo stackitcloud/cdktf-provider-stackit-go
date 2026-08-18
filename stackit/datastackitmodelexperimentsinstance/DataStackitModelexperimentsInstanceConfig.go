@@ -21,15 +21,15 @@ type DataStackitModelexperimentsInstanceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The AI Model Experiments instance ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/data-sources/modelexperiments_instance#instance_id DataStackitModelexperimentsInstance#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/modelexperiments_instance#instance_id DataStackitModelexperimentsInstance#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// STACKIT Project ID to which the resource is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/data-sources/modelexperiments_instance#project_id DataStackitModelexperimentsInstance#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/modelexperiments_instance#project_id DataStackitModelexperimentsInstance#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The STACKIT region name the resource is located in. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/data-sources/modelexperiments_instance#region DataStackitModelexperimentsInstance#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/modelexperiments_instance#region DataStackitModelexperimentsInstance#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

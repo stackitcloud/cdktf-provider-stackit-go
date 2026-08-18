@@ -1,3 +1,3 @@
 # `stackit_vpn_connection`
 
-Refer to the Terraform Registry for docs: [`stackit_vpn_connection`](https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/resources/vpn_connection).
+Refer to the Terraform Registry for docs: [`stackit_vpn_connection`](https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/resources/vpn_connection).

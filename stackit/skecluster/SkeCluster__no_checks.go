@@ -76,6 +76,10 @@ func (s *jsiiProxy_SkeCluster) validatePutAccessParameters(value *SkeClusterAcce
 	return nil
 }
 
+func (s *jsiiProxy_SkeCluster) validatePutAuditParameters(value *SkeClusterAudit) error {
+	return nil
+}
+
 func (s *jsiiProxy_SkeCluster) validatePutExtensionsParameters(value *SkeClusterExtensions) error {
 	return nil
 }

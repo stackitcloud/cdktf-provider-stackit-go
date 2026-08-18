@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/data-sources/postgresflex_flavors stackit_postgresflex_flavors}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/postgresflex_flavors stackit_postgresflex_flavors}.
 type DataStackitPostgresflexFlavors interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -331,7 +331,7 @@ func (j *jsiiProxy_DataStackitPostgresflexFlavors) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/data-sources/postgresflex_flavors stackit_postgresflex_flavors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/postgresflex_flavors stackit_postgresflex_flavors} Data Source.
 func NewDataStackitPostgresflexFlavors(scope constructs.Construct, id *string, config *DataStackitPostgresflexFlavorsConfig) DataStackitPostgresflexFlavors {
 	_init_.Initialize()
 
@@ -349,7 +349,7 @@ func NewDataStackitPostgresflexFlavors(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/data-sources/postgresflex_flavors stackit_postgresflex_flavors} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/postgresflex_flavors stackit_postgresflex_flavors} Data Source.
 func NewDataStackitPostgresflexFlavors_Override(d DataStackitPostgresflexFlavors, scope constructs.Construct, id *string, config *DataStackitPostgresflexFlavorsConfig) {
 	_init_.Initialize()
 

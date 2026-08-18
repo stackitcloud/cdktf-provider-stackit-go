@@ -9,10 +9,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/data-sources/ske_cluster stackit_ske_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/ske_cluster stackit_ske_cluster}.
 type DataStackitSkeCluster interface {
 	cdktf.TerraformDataSource
 	Access() DataStackitSkeClusterAccessOutputReference
+	Audit() DataStackitSkeClusterAuditOutputReference
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -124,6 +125,16 @@ func (j *jsiiProxy_DataStackitSkeCluster) Access() DataStackitSkeClusterAccessOu
 	_jsii_.Get(
 		j,
 		"access",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitSkeCluster) Audit() DataStackitSkeClusterAuditOutputReference {
+	var returns DataStackitSkeClusterAuditOutputReference
+	_jsii_.Get(
+		j,
+		"audit",
 		&returns,
 	)
 	return returns
@@ -440,7 +451,7 @@ func (j *jsiiProxy_DataStackitSkeCluster) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/data-sources/ske_cluster stackit_ske_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/ske_cluster stackit_ske_cluster} Data Source.
 func NewDataStackitSkeCluster(scope constructs.Construct, id *string, config *DataStackitSkeClusterConfig) DataStackitSkeCluster {
 	_init_.Initialize()
 
@@ -458,7 +469,7 @@ func NewDataStackitSkeCluster(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.111.0/docs/data-sources/ske_cluster stackit_ske_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/ske_cluster stackit_ske_cluster} Data Source.
 func NewDataStackitSkeCluster_Override(d DataStackitSkeCluster, scope constructs.Construct, id *string, config *DataStackitSkeClusterConfig) {
 	_init_.Initialize()
 
