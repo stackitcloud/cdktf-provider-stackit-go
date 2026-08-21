@@ -1,3 +1,3 @@
 # `stackit_alb_waf_custom_rule_group`
 
-Refer to the Terraform Registry for docs: [`stackit_alb_waf_custom_rule_group`](https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/resources/alb_waf_custom_rule_group).
+Refer to the Terraform Registry for docs: [`stackit_alb_waf_custom_rule_group`](https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/resources/alb_waf_custom_rule_group).

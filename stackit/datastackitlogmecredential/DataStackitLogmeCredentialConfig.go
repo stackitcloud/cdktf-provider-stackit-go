@@ -21,19 +21,19 @@ type DataStackitLogmeCredentialConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The credential's ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/logme_credential#credential_id DataStackitLogmeCredential#credential_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/data-sources/logme_credential#credential_id DataStackitLogmeCredential#credential_id}
 	CredentialId *string `field:"required" json:"credentialId" yaml:"credentialId"`
 	// ID of the LogMe instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/logme_credential#instance_id DataStackitLogmeCredential#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/data-sources/logme_credential#instance_id DataStackitLogmeCredential#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// STACKIT project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/logme_credential#project_id DataStackitLogmeCredential#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/data-sources/logme_credential#project_id DataStackitLogmeCredential#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/logme_credential#region DataStackitLogmeCredential#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/data-sources/logme_credential#region DataStackitLogmeCredential#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

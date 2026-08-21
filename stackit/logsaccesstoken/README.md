@@ -1,3 +1,3 @@
 # `stackit_logs_access_token`
 
-Refer to the Terraform Registry for docs: [`stackit_logs_access_token`](https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/resources/logs_access_token).
+Refer to the Terraform Registry for docs: [`stackit_logs_access_token`](https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/resources/logs_access_token).

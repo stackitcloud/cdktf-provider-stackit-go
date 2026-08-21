@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/alb_waf_configuration stackit_alb_waf_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/data-sources/alb_waf_configuration stackit_alb_waf_configuration}.
 type DataStackitAlbWafConfiguration interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -352,7 +352,7 @@ func (j *jsiiProxy_DataStackitAlbWafConfiguration) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/alb_waf_configuration stackit_alb_waf_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/data-sources/alb_waf_configuration stackit_alb_waf_configuration} Data Source.
 func NewDataStackitAlbWafConfiguration(scope constructs.Construct, id *string, config *DataStackitAlbWafConfigurationConfig) DataStackitAlbWafConfiguration {
 	_init_.Initialize()
 
@@ -370,7 +370,7 @@ func NewDataStackitAlbWafConfiguration(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/alb_waf_configuration stackit_alb_waf_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/data-sources/alb_waf_configuration stackit_alb_waf_configuration} Data Source.
 func NewDataStackitAlbWafConfiguration_Override(d DataStackitAlbWafConfiguration, scope constructs.Construct, id *string, config *DataStackitAlbWafConfigurationConfig) {
 	_init_.Initialize()
 

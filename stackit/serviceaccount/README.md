@@ -1,3 +1,3 @@
 # `stackit_service_account`
 
-Refer to the Terraform Registry for docs: [`stackit_service_account`](https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/resources/service_account).
+Refer to the Terraform Registry for docs: [`stackit_service_account`](https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/resources/service_account).

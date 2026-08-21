@@ -21,19 +21,19 @@ type DataStackitModelexperimentsTokenConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The AI Model Experiments instance ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/modelexperiments_token#instance_id DataStackitModelexperimentsToken#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/data-sources/modelexperiments_token#instance_id DataStackitModelexperimentsToken#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// STACKIT Project ID to which the resource is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/modelexperiments_token#project_id DataStackitModelexperimentsToken#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/data-sources/modelexperiments_token#project_id DataStackitModelexperimentsToken#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The AI Model Experiments instance token ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/modelexperiments_token#token_id DataStackitModelexperimentsToken#token_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/data-sources/modelexperiments_token#token_id DataStackitModelexperimentsToken#token_id}
 	TokenId *string `field:"required" json:"tokenId" yaml:"tokenId"`
 	// The STACKIT region name the resource is located in. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/modelexperiments_token#region DataStackitModelexperimentsToken#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/data-sources/modelexperiments_token#region DataStackitModelexperimentsToken#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

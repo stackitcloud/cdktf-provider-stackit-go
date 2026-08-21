@@ -1,3 +1,3 @@
 # `stackit_objectstorage_default_retention`
 
-Refer to the Terraform Registry for docs: [`stackit_objectstorage_default_retention`](https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/resources/objectstorage_default_retention).
+Refer to the Terraform Registry for docs: [`stackit_objectstorage_default_retention`](https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/resources/objectstorage_default_retention).

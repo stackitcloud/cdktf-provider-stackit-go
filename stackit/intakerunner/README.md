@@ -1,3 +1,3 @@
 # `stackit_intake_runner`
 
-Refer to the Terraform Registry for docs: [`stackit_intake_runner`](https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/resources/intake_runner).
+Refer to the Terraform Registry for docs: [`stackit_intake_runner`](https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/resources/intake_runner).

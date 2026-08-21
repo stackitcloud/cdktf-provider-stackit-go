@@ -21,15 +21,15 @@ type DataStackitAlbWafConfigurationConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the WAF Configuration.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/alb_waf_configuration#name DataStackitAlbWafConfiguration#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/data-sources/alb_waf_configuration#name DataStackitAlbWafConfiguration#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// STACKIT project ID to which the WAF Configuration is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/alb_waf_configuration#project_id DataStackitAlbWafConfiguration#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/data-sources/alb_waf_configuration#project_id DataStackitAlbWafConfiguration#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The resource region (e.g. eu01). If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/data-sources/alb_waf_configuration#region DataStackitAlbWafConfiguration#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/data-sources/alb_waf_configuration#region DataStackitAlbWafConfiguration#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

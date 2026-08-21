@@ -1,3 +1,3 @@
 # `stackit_loadbalancer`
 
-Refer to the Terraform Registry for docs: [`stackit_loadbalancer`](https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/resources/loadbalancer).
+Refer to the Terraform Registry for docs: [`stackit_loadbalancer`](https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/resources/loadbalancer).

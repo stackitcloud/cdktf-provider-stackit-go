@@ -21,15 +21,15 @@ type NetworkAreaConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the network area.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/resources/network_area#name NetworkArea#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/resources/network_area#name NetworkArea#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// STACKIT organization ID to which the network area is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/resources/network_area#organization_id NetworkArea#organization_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/resources/network_area#organization_id NetworkArea#organization_id}
 	OrganizationId *string `field:"required" json:"organizationId" yaml:"organizationId"`
 	// Labels are key-value string pairs which can be attached to a resource container.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.112.0/docs/resources/network_area#labels NetworkArea#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/resources/network_area#labels NetworkArea#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 }
 
