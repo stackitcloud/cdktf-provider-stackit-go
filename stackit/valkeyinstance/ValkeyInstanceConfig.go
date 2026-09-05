@@ -1,0 +1,49 @@
+package valkeyinstance
+
+import (
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+)
+
+type ValkeyInstanceConfig struct {
+	// Experimental.
+	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	// Experimental.
+	Count interface{} `field:"optional" json:"count" yaml:"count"`
+	// Experimental.
+	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	// Experimental.
+	ForEach cdktf.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
+	// Experimental.
+	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	// Experimental.
+	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// Experimental.
+	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	// Instance name.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs/resources/valkey_instance#name ValkeyInstance#name}
+	Name *string `field:"required" json:"name" yaml:"name"`
+	// The selected plan name.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs/resources/valkey_instance#plan_name ValkeyInstance#plan_name}
+	PlanName *string `field:"required" json:"planName" yaml:"planName"`
+	// STACKIT project ID to which the instance is associated.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs/resources/valkey_instance#project_id ValkeyInstance#project_id}
+	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
+	// The service version.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs/resources/valkey_instance#version ValkeyInstance#version}
+	Version *string `field:"required" json:"version" yaml:"version"`
+	// Configuration parameters.
+	//
+	// Please note that removing a previously configured field from your Terraform configuration won't replace its value in the API. To update a previously configured field, explicitly set a new value for it.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs/resources/valkey_instance#parameters ValkeyInstance#parameters}
+	Parameters *ValkeyInstanceParameters `field:"optional" json:"parameters" yaml:"parameters"`
+	// The resource region. If not defined, the provider region is used.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs/resources/valkey_instance#region ValkeyInstance#region}
+	Region *string `field:"optional" json:"region" yaml:"region"`
+}
+

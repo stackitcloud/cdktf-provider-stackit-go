@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs stackit}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs stackit}.
 type StackitProvider interface {
 	cdktf.TerraformProvider
 	AlbCertificatesCustomEndpoint() *string
@@ -27,6 +27,9 @@ type StackitProvider interface {
 	AuthorizationCustomEndpoint() *string
 	SetAuthorizationCustomEndpoint(val *string)
 	AuthorizationCustomEndpointInput() *string
+	AutomationCustomEndpoint() *string
+	SetAutomationCustomEndpoint(val *string)
+	AutomationCustomEndpointInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CdnCustomEndpoint() *string
@@ -164,6 +167,9 @@ type StackitProvider interface {
 	ServiceAccountToken() *string
 	SetServiceAccountToken(val *string)
 	ServiceAccountTokenInput() *string
+	ServiceConnectionId() *string
+	SetServiceConnectionId(val *string)
+	ServiceConnectionIdInput() *string
 	ServiceEnablementCustomEndpoint() *string
 	SetServiceEnablementCustomEndpoint(val *string)
 	ServiceEnablementCustomEndpointInput() *string
@@ -194,6 +200,9 @@ type StackitProvider interface {
 	UseOidc() interface{}
 	SetUseOidc(val interface{})
 	UseOidcInput() interface{}
+	ValkeyCustomEndpoint() *string
+	SetValkeyCustomEndpoint(val *string)
+	ValkeyCustomEndpointInput() *string
 	VpnCustomEndpoint() *string
 	SetVpnCustomEndpoint(val *string)
 	VpnCustomEndpointInput() *string
@@ -207,6 +216,7 @@ type StackitProvider interface {
 	ResetAlbWafCustomEndpoint()
 	ResetAlias()
 	ResetAuthorizationCustomEndpoint()
+	ResetAutomationCustomEndpoint()
 	ResetCdnCustomEndpoint()
 	ResetCredentialsPath()
 	ResetDefaultRegion()
@@ -251,6 +261,7 @@ type StackitProvider interface {
 	ResetServiceAccountKey()
 	ResetServiceAccountKeyPath()
 	ResetServiceAccountToken()
+	ResetServiceConnectionId()
 	ResetServiceEnablementCustomEndpoint()
 	ResetSfsCustomEndpoint()
 	ResetSkeCustomEndpoint()
@@ -259,6 +270,7 @@ type StackitProvider interface {
 	ResetTelemetryrouterCustomEndpoint()
 	ResetTokenCustomEndpoint()
 	ResetUseOidc()
+	ResetValkeyCustomEndpoint()
 	ResetVpnCustomEndpoint()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -373,6 +385,26 @@ func (j *jsiiProxy_StackitProvider) AuthorizationCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"authorizationCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) AutomationCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"automationCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) AutomationCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"automationCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -1268,6 +1300,26 @@ func (j *jsiiProxy_StackitProvider) ServiceAccountTokenInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StackitProvider) ServiceConnectionId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceConnectionId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) ServiceConnectionIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceConnectionIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StackitProvider) ServiceEnablementCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1458,6 +1510,26 @@ func (j *jsiiProxy_StackitProvider) UseOidcInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_StackitProvider) ValkeyCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"valkeyCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StackitProvider) ValkeyCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"valkeyCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StackitProvider) VpnCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1479,7 +1551,7 @@ func (j *jsiiProxy_StackitProvider) VpnCustomEndpointInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs stackit} Resource.
 func NewStackitProvider(scope constructs.Construct, id *string, config *StackitProviderConfig) StackitProvider {
 	_init_.Initialize()
 
@@ -1497,7 +1569,7 @@ func NewStackitProvider(scope constructs.Construct, id *string, config *StackitP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs stackit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs stackit} Resource.
 func NewStackitProvider_Override(s StackitProvider, scope constructs.Construct, id *string, config *StackitProviderConfig) {
 	_init_.Initialize()
 
@@ -1544,6 +1616,14 @@ func (j *jsiiProxy_StackitProvider)SetAuthorizationCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"authorizationCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StackitProvider)SetAutomationCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"automationCustomEndpoint",
 		val,
 	)
 }
@@ -1879,6 +1959,14 @@ func (j *jsiiProxy_StackitProvider)SetServiceAccountToken(val *string) {
 	)
 }
 
+func (j *jsiiProxy_StackitProvider)SetServiceConnectionId(val *string) {
+	_jsii_.Set(
+		j,
+		"serviceConnectionId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_StackitProvider)SetServiceEnablementCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -1942,6 +2030,14 @@ func (j *jsiiProxy_StackitProvider)SetUseOidc(val interface{}) {
 	_jsii_.Set(
 		j,
 		"useOidc",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StackitProvider)SetValkeyCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"valkeyCustomEndpoint",
 		val,
 	)
 }
@@ -2115,6 +2211,14 @@ func (s *jsiiProxy_StackitProvider) ResetAuthorizationCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAuthorizationCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StackitProvider) ResetAutomationCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAutomationCustomEndpoint",
 		nil, // no parameters
 	)
 }
@@ -2455,6 +2559,14 @@ func (s *jsiiProxy_StackitProvider) ResetServiceAccountToken() {
 	)
 }
 
+func (s *jsiiProxy_StackitProvider) ResetServiceConnectionId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetServiceConnectionId",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_StackitProvider) ResetServiceEnablementCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		s,
@@ -2515,6 +2627,14 @@ func (s *jsiiProxy_StackitProvider) ResetUseOidc() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetUseOidc",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StackitProvider) ResetValkeyCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetValkeyCustomEndpoint",
 		nil, // no parameters
 	)
 }

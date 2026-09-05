@@ -116,6 +116,10 @@ func (j *jsiiProxy_Telemetrylink) validateSetDisplayNameParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_Telemetrylink) validateSetEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Telemetrylink) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

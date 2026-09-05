@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/resources/telemetrylink stackit_telemetrylink}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs/resources/telemetrylink stackit_telemetrylink}.
 type Telemetrylink interface {
 	cdktf.TerraformResource
 	AccessToken() *string
@@ -44,6 +44,9 @@ type Telemetrylink interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -135,6 +138,7 @@ type Telemetrylink interface {
 	ResetAccessTokenWo()
 	ResetAccessTokenWoVersion()
 	ResetDescription()
+	ResetEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -312,6 +316,26 @@ func (j *jsiiProxy_Telemetrylink) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Telemetrylink) Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Telemetrylink) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
 		&returns,
 	)
 	return returns
@@ -528,7 +552,7 @@ func (j *jsiiProxy_Telemetrylink) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/resources/telemetrylink stackit_telemetrylink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs/resources/telemetrylink stackit_telemetrylink} Resource.
 func NewTelemetrylink(scope constructs.Construct, id *string, config *TelemetrylinkConfig) Telemetrylink {
 	_init_.Initialize()
 
@@ -546,7 +570,7 @@ func NewTelemetrylink(scope constructs.Construct, id *string, config *Telemetryl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/resources/telemetrylink stackit_telemetrylink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs/resources/telemetrylink stackit_telemetrylink} Resource.
 func NewTelemetrylink_Override(t Telemetrylink, scope constructs.Construct, id *string, config *TelemetrylinkConfig) {
 	_init_.Initialize()
 
@@ -638,6 +662,17 @@ func (j *jsiiProxy_Telemetrylink)SetDisplayName(val *string) {
 	_jsii_.Set(
 		j,
 		"displayName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Telemetrylink)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabled",
 		val,
 	)
 }
@@ -1105,6 +1140,14 @@ func (t *jsiiProxy_Telemetrylink) ResetDescription() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_Telemetrylink) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetEnabled",
 		nil, // no parameters
 	)
 }

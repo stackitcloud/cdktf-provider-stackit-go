@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/data-sources/telemetrylink stackit_telemetrylink}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs/data-sources/telemetrylink stackit_telemetrylink}.
 type DataStackitTelemetrylink interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -27,6 +27,7 @@ type DataStackitTelemetrylink interface {
 	SetDependsOn(val *[]*string)
 	Description() *string
 	DisplayName() *string
+	Enabled() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -178,6 +179,16 @@ func (j *jsiiProxy_DataStackitTelemetrylink) DisplayName() *string {
 	_jsii_.Get(
 		j,
 		"displayName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitTelemetrylink) Enabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enabled",
 		&returns,
 	)
 	return returns
@@ -374,7 +385,7 @@ func (j *jsiiProxy_DataStackitTelemetrylink) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/data-sources/telemetrylink stackit_telemetrylink} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs/data-sources/telemetrylink stackit_telemetrylink} Data Source.
 func NewDataStackitTelemetrylink(scope constructs.Construct, id *string, config *DataStackitTelemetrylinkConfig) DataStackitTelemetrylink {
 	_init_.Initialize()
 
@@ -392,7 +403,7 @@ func NewDataStackitTelemetrylink(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.113.0/docs/data-sources/telemetrylink stackit_telemetrylink} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs/data-sources/telemetrylink stackit_telemetrylink} Data Source.
 func NewDataStackitTelemetrylink_Override(d DataStackitTelemetrylink, scope constructs.Construct, id *string, config *DataStackitTelemetrylinkConfig) {
 	_init_.Initialize()
 
