@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs/resources/vpn_gateway stackit_vpn_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/resources/vpn_gateway stackit_vpn_gateway}.
 type VpnGateway interface {
 	cdktf.TerraformResource
 	AvailabilityZones() VpnGatewayAvailabilityZonesOutputReference
@@ -52,6 +52,8 @@ type VpnGateway interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	NetworkConfig() VpnGatewayNetworkConfigOutputReference
+	NetworkConfigInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	PlanId() *string
@@ -127,8 +129,10 @@ type VpnGateway interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAvailabilityZones(value *VpnGatewayAvailabilityZones)
 	PutBgp(value *VpnGatewayBgp)
+	PutNetworkConfig(value *VpnGatewayNetworkConfig)
 	ResetBgp()
 	ResetLabels()
+	ResetNetworkConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -341,6 +345,26 @@ func (j *jsiiProxy_VpnGateway) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_VpnGateway) NetworkConfig() VpnGatewayNetworkConfigOutputReference {
+	var returns VpnGatewayNetworkConfigOutputReference
+	_jsii_.Get(
+		j,
+		"networkConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpnGateway) NetworkConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"networkConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpnGateway) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -492,7 +516,7 @@ func (j *jsiiProxy_VpnGateway) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs/resources/vpn_gateway stackit_vpn_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/resources/vpn_gateway stackit_vpn_gateway} Resource.
 func NewVpnGateway(scope constructs.Construct, id *string, config *VpnGatewayConfig) VpnGateway {
 	_init_.Initialize()
 
@@ -510,7 +534,7 @@ func NewVpnGateway(scope constructs.Construct, id *string, config *VpnGatewayCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs/resources/vpn_gateway stackit_vpn_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/resources/vpn_gateway stackit_vpn_gateway} Resource.
 func NewVpnGateway_Override(v VpnGateway, scope constructs.Construct, id *string, config *VpnGatewayConfig) {
 	_init_.Initialize()
 
@@ -1030,6 +1054,17 @@ func (v *jsiiProxy_VpnGateway) PutBgp(value *VpnGatewayBgp) {
 	)
 }
 
+func (v *jsiiProxy_VpnGateway) PutNetworkConfig(value *VpnGatewayNetworkConfig) {
+	if err := v.validatePutNetworkConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putNetworkConfig",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VpnGateway) ResetBgp() {
 	_jsii_.InvokeVoid(
 		v,
@@ -1042,6 +1077,14 @@ func (v *jsiiProxy_VpnGateway) ResetLabels() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpnGateway) ResetNetworkConfig() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetNetworkConfig",
 		nil, // no parameters
 	)
 }

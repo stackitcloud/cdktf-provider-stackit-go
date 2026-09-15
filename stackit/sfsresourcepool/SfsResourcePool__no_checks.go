@@ -76,6 +76,10 @@ func (s *jsiiProxy_SfsResourcePool) validatePutSnapshotPolicyParameters(value *S
 	return nil
 }
 
+func (s *jsiiProxy_SfsResourcePool) validatePutTimeoutsParameters(value *SfsResourcePoolTimeouts) error {
+	return nil
+}
+
 func validateSfsResourcePool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -52,6 +52,10 @@ func (a *jsiiProxy_ApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputReference) validateSetAltPortParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

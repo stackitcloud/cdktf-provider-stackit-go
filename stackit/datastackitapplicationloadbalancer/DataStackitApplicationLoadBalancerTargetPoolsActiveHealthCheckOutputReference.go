@@ -10,6 +10,7 @@ import (
 
 type DataStackitApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputReference interface {
 	cdktf.ComplexObject
+	AltPort() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -80,6 +81,16 @@ type DataStackitApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputReferen
 // The jsii proxy struct for DataStackitApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputReference
 type jsiiProxy_DataStackitApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataStackitApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputReference) AltPort() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"altPort",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataStackitApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputReference) ComplexObjectIndex() interface{} {

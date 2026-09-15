@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs/data-sources/automation_templates stackit_automation_templates}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/data-sources/automation_templates stackit_automation_templates}.
 type DataStackitAutomationTemplates interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -307,7 +307,7 @@ func (j *jsiiProxy_DataStackitAutomationTemplates) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs/data-sources/automation_templates stackit_automation_templates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/data-sources/automation_templates stackit_automation_templates} Data Source.
 func NewDataStackitAutomationTemplates(scope constructs.Construct, id *string, config *DataStackitAutomationTemplatesConfig) DataStackitAutomationTemplates {
 	_init_.Initialize()
 
@@ -325,7 +325,7 @@ func NewDataStackitAutomationTemplates(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs/data-sources/automation_templates stackit_automation_templates} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/data-sources/automation_templates stackit_automation_templates} Data Source.
 func NewDataStackitAutomationTemplates_Override(d DataStackitAutomationTemplates, scope constructs.Construct, id *string, config *DataStackitAutomationTemplatesConfig) {
 	_init_.Initialize()
 

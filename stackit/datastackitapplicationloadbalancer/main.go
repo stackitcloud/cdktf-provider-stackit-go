@@ -961,6 +961,7 @@ func init() {
 		"stackit.dataStackitApplicationLoadBalancer.DataStackitApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputReference",
 		reflect.TypeOf((*DataStackitApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "altPort", GoGetter: "AltPort"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},

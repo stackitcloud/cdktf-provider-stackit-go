@@ -1063,6 +1063,8 @@ func init() {
 		"stackit.applicationLoadBalancer.ApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputReference",
 		reflect.TypeOf((*ApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "altPort", GoGetter: "AltPort"},
+			_jsii_.MemberProperty{JsiiProperty: "altPortInput", GoGetter: "AltPortInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1089,6 +1091,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "intervalJitter", GoGetter: "IntervalJitter"},
 			_jsii_.MemberProperty{JsiiProperty: "intervalJitterInput", GoGetter: "IntervalJitterInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putHttpHealthChecks", GoMethod: "PutHttpHealthChecks"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAltPort", GoMethod: "ResetAltPort"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHttpHealthChecks", GoMethod: "ResetHttpHealthChecks"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

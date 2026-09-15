@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs/data-sources/sfs_resource_pool stackit_sfs_resource_pool}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/data-sources/sfs_resource_pool stackit_sfs_resource_pool}.
 type DataStackitSfsResourcePool interface {
 	cdktf.TerraformDataSource
 	AvailabilityZone() *string
@@ -70,6 +70,8 @@ type DataStackitSfsResourcePool interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() DataStackitSfsResourcePoolTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -95,10 +97,12 @@ type DataStackitSfsResourcePool interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *DataStackitSfsResourcePoolTimeouts)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -428,8 +432,28 @@ func (j *jsiiProxy_DataStackitSfsResourcePool) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataStackitSfsResourcePool) Timeouts() DataStackitSfsResourcePoolTimeoutsOutputReference {
+	var returns DataStackitSfsResourcePoolTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs/data-sources/sfs_resource_pool stackit_sfs_resource_pool} Data Source.
+func (j *jsiiProxy_DataStackitSfsResourcePool) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/data-sources/sfs_resource_pool stackit_sfs_resource_pool} Data Source.
 func NewDataStackitSfsResourcePool(scope constructs.Construct, id *string, config *DataStackitSfsResourcePoolConfig) DataStackitSfsResourcePool {
 	_init_.Initialize()
 
@@ -447,7 +471,7 @@ func NewDataStackitSfsResourcePool(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs/data-sources/sfs_resource_pool stackit_sfs_resource_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/data-sources/sfs_resource_pool stackit_sfs_resource_pool} Data Source.
 func NewDataStackitSfsResourcePool_Override(d DataStackitSfsResourcePool, scope constructs.Construct, id *string, config *DataStackitSfsResourcePoolConfig) {
 	_init_.Initialize()
 
@@ -822,6 +846,17 @@ func (d *jsiiProxy_DataStackitSfsResourcePool) OverrideLogicalId(newLogicalId *s
 	)
 }
 
+func (d *jsiiProxy_DataStackitSfsResourcePool) PutTimeouts(value *DataStackitSfsResourcePoolTimeouts) {
+	if err := d.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataStackitSfsResourcePool) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -834,6 +869,14 @@ func (d *jsiiProxy_DataStackitSfsResourcePool) ResetRegion() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataStackitSfsResourcePool) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

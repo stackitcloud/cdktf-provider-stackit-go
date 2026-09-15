@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataStackitSfsResourcePool) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (d *jsiiProxy_DataStackitSfsResourcePool) validatePutTimeoutsParameters(value *DataStackitSfsResourcePoolTimeouts) error {
+	return nil
+}
+
 func validateDataStackitSfsResourcePool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (v *jsiiProxy_VpnGateway) validatePutBgpParameters(value *VpnGatewayBgp) er
 	return nil
 }
 
+func (v *jsiiProxy_VpnGateway) validatePutNetworkConfigParameters(value *VpnGatewayNetworkConfig) error {
+	return nil
+}
+
 func validateVpnGateway_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -10,6 +10,9 @@ import (
 
 type ApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputReference interface {
 	cdktf.ComplexObject
+	AltPort() *float64
+	SetAltPort(val *float64)
+	AltPortInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -79,6 +82,7 @@ type ApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputReference interfac
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutHttpHealthChecks(value *ApplicationLoadBalancerTargetPoolsActiveHealthCheckHttpHealthChecks)
+	ResetAltPort()
 	ResetHttpHealthChecks()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -93,6 +97,26 @@ type ApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputReference interfac
 // The jsii proxy struct for ApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputReference
 type jsiiProxy_ApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputReference) AltPort() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"altPort",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputReference) AltPortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"altPortInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputReference) ComplexObjectIndex() interface{} {
@@ -310,6 +334,17 @@ func NewApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputReference_Overr
 		"stackit.applicationLoadBalancer.ApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
+	)
+}
+
+func (j *jsiiProxy_ApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputReference)SetAltPort(val *float64) {
+	if err := j.validateSetAltPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"altPort",
+		val,
 	)
 }
 
@@ -617,6 +652,14 @@ func (a *jsiiProxy_ApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputRefe
 		a,
 		"putHttpHealthChecks",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ApplicationLoadBalancerTargetPoolsActiveHealthCheckOutputReference) ResetAltPort() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAltPort",
+		nil, // no parameters
 	)
 }
 

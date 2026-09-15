@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs/resources/sfs_resource_pool stackit_sfs_resource_pool}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/resources/sfs_resource_pool stackit_sfs_resource_pool}.
 type SfsResourcePool interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -89,6 +89,8 @@ type SfsResourcePool interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() SfsResourcePoolTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -133,6 +135,7 @@ type SfsResourcePool interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutSnapshotPolicy(value *SfsResourcePoolSnapshotPolicy)
+	PutTimeouts(value *SfsResourcePoolTimeouts)
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -140,6 +143,7 @@ type SfsResourcePool interface {
 	ResetRegion()
 	ResetSnapshotPolicy()
 	ResetSnapshotsAreVisible()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -538,8 +542,28 @@ func (j *jsiiProxy_SfsResourcePool) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SfsResourcePool) Timeouts() SfsResourcePoolTimeoutsOutputReference {
+	var returns SfsResourcePoolTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs/resources/sfs_resource_pool stackit_sfs_resource_pool} Resource.
+func (j *jsiiProxy_SfsResourcePool) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/resources/sfs_resource_pool stackit_sfs_resource_pool} Resource.
 func NewSfsResourcePool(scope constructs.Construct, id *string, config *SfsResourcePoolConfig) SfsResourcePool {
 	_init_.Initialize()
 
@@ -557,7 +581,7 @@ func NewSfsResourcePool(scope constructs.Construct, id *string, config *SfsResou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.114.0/docs/resources/sfs_resource_pool stackit_sfs_resource_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/resources/sfs_resource_pool stackit_sfs_resource_pool} Resource.
 func NewSfsResourcePool_Override(s SfsResourcePool, scope constructs.Construct, id *string, config *SfsResourcePoolConfig) {
 	_init_.Initialize()
 
@@ -1099,6 +1123,17 @@ func (s *jsiiProxy_SfsResourcePool) PutSnapshotPolicy(value *SfsResourcePoolSnap
 	)
 }
 
+func (s *jsiiProxy_SfsResourcePool) PutTimeouts(value *SfsResourcePoolTimeouts) {
+	if err := s.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SfsResourcePool) ResetLabels() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1135,6 +1170,14 @@ func (s *jsiiProxy_SfsResourcePool) ResetSnapshotsAreVisible() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSnapshotsAreVisible",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SfsResourcePool) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }
