@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/resources/valkey_credential stackit_valkey_credential}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.116.0/docs/resources/valkey_credential stackit_valkey_credential}.
 type ValkeyCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -476,7 +476,7 @@ func (j *jsiiProxy_ValkeyCredential) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/resources/valkey_credential stackit_valkey_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.116.0/docs/resources/valkey_credential stackit_valkey_credential} Resource.
 func NewValkeyCredential(scope constructs.Construct, id *string, config *ValkeyCredentialConfig) ValkeyCredential {
 	_init_.Initialize()
 
@@ -494,7 +494,7 @@ func NewValkeyCredential(scope constructs.Construct, id *string, config *ValkeyC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/resources/valkey_credential stackit_valkey_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.116.0/docs/resources/valkey_credential stackit_valkey_credential} Resource.
 func NewValkeyCredential_Override(v ValkeyCredential, scope constructs.Construct, id *string, config *ValkeyCredentialConfig) {
 	_init_.Initialize()
 

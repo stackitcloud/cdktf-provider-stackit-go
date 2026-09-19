@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/data-sources/valkey_instance stackit_valkey_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.116.0/docs/data-sources/valkey_instance stackit_valkey_instance}.
 type DataStackitValkeyInstance interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -429,7 +429,7 @@ func (j *jsiiProxy_DataStackitValkeyInstance) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/data-sources/valkey_instance stackit_valkey_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.116.0/docs/data-sources/valkey_instance stackit_valkey_instance} Data Source.
 func NewDataStackitValkeyInstance(scope constructs.Construct, id *string, config *DataStackitValkeyInstanceConfig) DataStackitValkeyInstance {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewDataStackitValkeyInstance(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/data-sources/valkey_instance stackit_valkey_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.116.0/docs/data-sources/valkey_instance stackit_valkey_instance} Data Source.
 func NewDataStackitValkeyInstance_Override(d DataStackitValkeyInstance, scope constructs.Construct, id *string, config *DataStackitValkeyInstanceConfig) {
 	_init_.Initialize()
 

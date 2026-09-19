@@ -1,3 +1,3 @@
 # `stackit_public_ip`
 
-Refer to the Terraform Registry for docs: [`stackit_public_ip`](https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/resources/public_ip).
+Refer to the Terraform Registry for docs: [`stackit_public_ip`](https://registry.terraform.io/providers/stackitcloud/stackit/0.116.0/docs/resources/public_ip).

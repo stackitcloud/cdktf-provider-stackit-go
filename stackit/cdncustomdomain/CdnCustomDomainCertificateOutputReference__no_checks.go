@@ -68,6 +68,10 @@ func (j *jsiiProxy_CdnCustomDomainCertificateOutputReference) validateSetPrivate
 	return nil
 }
 
+func (j *jsiiProxy_CdnCustomDomainCertificateOutputReference) validateSetSkipDnsCheckParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CdnCustomDomainCertificateOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

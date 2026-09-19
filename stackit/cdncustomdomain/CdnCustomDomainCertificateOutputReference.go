@@ -35,6 +35,9 @@ type CdnCustomDomainCertificateOutputReference interface {
 	PrivateKey() *string
 	SetPrivateKey(val *string)
 	PrivateKeyInput() *string
+	SkipDnsCheck() interface{}
+	SetSkipDnsCheck(val interface{})
+	SkipDnsCheckInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +73,7 @@ type CdnCustomDomainCertificateOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCertificate()
 	ResetPrivateKey()
+	ResetSkipDnsCheck()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -170,6 +174,26 @@ func (j *jsiiProxy_CdnCustomDomainCertificateOutputReference) PrivateKeyInput() 
 	_jsii_.Get(
 		j,
 		"privateKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnCustomDomainCertificateOutputReference) SkipDnsCheck() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDnsCheck",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnCustomDomainCertificateOutputReference) SkipDnsCheckInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDnsCheckInput",
 		&returns,
 	)
 	return returns
@@ -284,6 +308,17 @@ func (j *jsiiProxy_CdnCustomDomainCertificateOutputReference)SetPrivateKey(val *
 	_jsii_.Set(
 		j,
 		"privateKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CdnCustomDomainCertificateOutputReference)SetSkipDnsCheck(val interface{}) {
+	if err := j.validateSetSkipDnsCheckParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipDnsCheck",
 		val,
 	)
 }
@@ -508,6 +543,14 @@ func (c *jsiiProxy_CdnCustomDomainCertificateOutputReference) ResetPrivateKey() 
 	_jsii_.InvokeVoid(
 		c,
 		"resetPrivateKey",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CdnCustomDomainCertificateOutputReference) ResetSkipDnsCheck() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSkipDnsCheck",
 		nil, // no parameters
 	)
 }

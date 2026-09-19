@@ -21,29 +21,29 @@ type ValkeyInstanceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Instance name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/resources/valkey_instance#name ValkeyInstance#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.116.0/docs/resources/valkey_instance#name ValkeyInstance#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The selected plan name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/resources/valkey_instance#plan_name ValkeyInstance#plan_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.116.0/docs/resources/valkey_instance#plan_name ValkeyInstance#plan_name}
 	PlanName *string `field:"required" json:"planName" yaml:"planName"`
 	// STACKIT project ID to which the instance is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/resources/valkey_instance#project_id ValkeyInstance#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.116.0/docs/resources/valkey_instance#project_id ValkeyInstance#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The service version.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/resources/valkey_instance#version ValkeyInstance#version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.116.0/docs/resources/valkey_instance#version ValkeyInstance#version}
 	Version *string `field:"required" json:"version" yaml:"version"`
 	// Configuration parameters.
 	//
 	// Please note that removing a previously configured field from your Terraform configuration won't replace its value in the API. To update a previously configured field, explicitly set a new value for it.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/resources/valkey_instance#parameters ValkeyInstance#parameters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.116.0/docs/resources/valkey_instance#parameters ValkeyInstance#parameters}
 	Parameters *ValkeyInstanceParameters `field:"optional" json:"parameters" yaml:"parameters"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/resources/valkey_instance#region ValkeyInstance#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.116.0/docs/resources/valkey_instance#region ValkeyInstance#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

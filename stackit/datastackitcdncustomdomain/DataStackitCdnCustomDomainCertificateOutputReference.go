@@ -29,6 +29,7 @@ type DataStackitCdnCustomDomainCertificateOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	SkipDnsCheck() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -122,6 +123,16 @@ func (j *jsiiProxy_DataStackitCdnCustomDomainCertificateOutputReference) Interna
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitCdnCustomDomainCertificateOutputReference) SkipDnsCheck() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"skipDnsCheck",
 		&returns,
 	)
 	return returns

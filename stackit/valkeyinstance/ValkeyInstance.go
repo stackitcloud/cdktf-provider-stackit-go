@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/resources/valkey_instance stackit_valkey_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.116.0/docs/resources/valkey_instance stackit_valkey_instance}.
 type ValkeyInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -511,7 +511,7 @@ func (j *jsiiProxy_ValkeyInstance) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/resources/valkey_instance stackit_valkey_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.116.0/docs/resources/valkey_instance stackit_valkey_instance} Resource.
 func NewValkeyInstance(scope constructs.Construct, id *string, config *ValkeyInstanceConfig) ValkeyInstance {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewValkeyInstance(scope constructs.Construct, id *string, config *ValkeyIns
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.115.0/docs/resources/valkey_instance stackit_valkey_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.116.0/docs/resources/valkey_instance stackit_valkey_instance} Resource.
 func NewValkeyInstance_Override(v ValkeyInstance, scope constructs.Construct, id *string, config *ValkeyInstanceConfig) {
 	_init_.Initialize()
 
