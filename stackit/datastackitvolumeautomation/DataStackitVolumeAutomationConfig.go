@@ -21,15 +21,15 @@ type DataStackitVolumeAutomationConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of the volume automation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.117.0/docs/data-sources/volume_automation#automation_id DataStackitVolumeAutomation#automation_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.118.0/docs/data-sources/volume_automation#automation_id DataStackitVolumeAutomation#automation_id}
 	AutomationId *string `field:"required" json:"automationId" yaml:"automationId"`
 	// STACKIT Project ID to which the volume automation is associated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.117.0/docs/data-sources/volume_automation#project_id DataStackitVolumeAutomation#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.118.0/docs/data-sources/volume_automation#project_id DataStackitVolumeAutomation#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The resource region. If not defined, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.117.0/docs/data-sources/volume_automation#region DataStackitVolumeAutomation#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.118.0/docs/data-sources/volume_automation#region DataStackitVolumeAutomation#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

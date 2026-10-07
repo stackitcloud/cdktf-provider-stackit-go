@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.117.0/docs/data-sources/iaas_project stackit_iaas_project}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.118.0/docs/data-sources/iaas_project stackit_iaas_project}.
 type DataStackitIaasProject interface {
 	cdktf.TerraformDataSource
 	AreaId() *string
@@ -51,7 +51,6 @@ type DataStackitIaasProject interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	State() *string
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -277,16 +276,6 @@ func (j *jsiiProxy_DataStackitIaasProject) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataStackitIaasProject) State() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"state",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataStackitIaasProject) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -338,7 +327,7 @@ func (j *jsiiProxy_DataStackitIaasProject) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.117.0/docs/data-sources/iaas_project stackit_iaas_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.118.0/docs/data-sources/iaas_project stackit_iaas_project} Data Source.
 func NewDataStackitIaasProject(scope constructs.Construct, id *string, config *DataStackitIaasProjectConfig) DataStackitIaasProject {
 	_init_.Initialize()
 
@@ -356,7 +345,7 @@ func NewDataStackitIaasProject(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.117.0/docs/data-sources/iaas_project stackit_iaas_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.118.0/docs/data-sources/iaas_project stackit_iaas_project} Data Source.
 func NewDataStackitIaasProject_Override(d DataStackitIaasProject, scope constructs.Construct, id *string, config *DataStackitIaasProjectConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.117.0/docs/resources/volume_automation stackit_volume_automation}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.118.0/docs/resources/volume_automation stackit_volume_automation}.
 type VolumeAutomation interface {
 	cdktf.TerraformResource
 	AutomationId() *string
@@ -471,7 +471,7 @@ func (j *jsiiProxy_VolumeAutomation) TriggersInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.117.0/docs/resources/volume_automation stackit_volume_automation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.118.0/docs/resources/volume_automation stackit_volume_automation} Resource.
 func NewVolumeAutomation(scope constructs.Construct, id *string, config *VolumeAutomationConfig) VolumeAutomation {
 	_init_.Initialize()
 
@@ -489,7 +489,7 @@ func NewVolumeAutomation(scope constructs.Construct, id *string, config *VolumeA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.117.0/docs/resources/volume_automation stackit_volume_automation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.118.0/docs/resources/volume_automation stackit_volume_automation} Resource.
 func NewVolumeAutomation_Override(v VolumeAutomation, scope constructs.Construct, id *string, config *VolumeAutomationConfig) {
 	_init_.Initialize()
 
