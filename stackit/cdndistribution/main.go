@@ -89,6 +89,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "blockedCountriesInput", GoGetter: "BlockedCountriesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "blockedIps", GoGetter: "BlockedIps"},
 			_jsii_.MemberProperty{JsiiProperty: "blockedIpsInput", GoGetter: "BlockedIpsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "cacheConfig", GoGetter: "CacheConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "cacheConfigInput", GoGetter: "CacheConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -115,6 +117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "optimizer", GoGetter: "Optimizer"},
 			_jsii_.MemberProperty{JsiiProperty: "optimizerInput", GoGetter: "OptimizerInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putBackend", GoMethod: "PutBackend"},
+			_jsii_.MemberMethod{JsiiMethod: "putCacheConfig", GoMethod: "PutCacheConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putOptimizer", GoMethod: "PutOptimizer"},
 			_jsii_.MemberMethod{JsiiMethod: "putRedirects", GoMethod: "PutRedirects"},
 			_jsii_.MemberMethod{JsiiMethod: "putTls", GoMethod: "PutTls"},
@@ -125,6 +128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "regionsInput", GoGetter: "RegionsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBlockedCountries", GoMethod: "ResetBlockedCountries"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBlockedIps", GoMethod: "ResetBlockedIps"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCacheConfig", GoMethod: "ResetCacheConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultCacheDuration", GoMethod: "ResetDefaultCacheDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetForwardHostHeader", GoMethod: "ResetForwardHostHeader"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMonthlyLimitBytes", GoMethod: "ResetMonthlyLimitBytes"},
@@ -243,6 +247,51 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CdnDistributionConfigBackendOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"stackit.cdnDistribution.CdnDistributionConfigCacheConfig",
+		reflect.TypeOf((*CdnDistributionConfigCacheConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"stackit.cdnDistribution.CdnDistributionConfigCacheConfigOutputReference",
+		reflect.TypeOf((*CdnDistributionConfigCacheConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "cacheKeyHeaders", GoGetter: "CacheKeyHeaders"},
+			_jsii_.MemberProperty{JsiiProperty: "cacheKeyHeadersInput", GoGetter: "CacheKeyHeadersInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "queryStringVaryEnabled", GoGetter: "QueryStringVaryEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "queryStringVaryEnabledInput", GoGetter: "QueryStringVaryEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "queryStringVaryParameters", GoGetter: "QueryStringVaryParameters"},
+			_jsii_.MemberProperty{JsiiProperty: "queryStringVaryParametersInput", GoGetter: "QueryStringVaryParametersInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCacheKeyHeaders", GoMethod: "ResetCacheKeyHeaders"},
+			_jsii_.MemberMethod{JsiiMethod: "resetQueryStringVaryEnabled", GoMethod: "ResetQueryStringVaryEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetQueryStringVaryParameters", GoMethod: "ResetQueryStringVaryParameters"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CdnDistributionConfigCacheConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

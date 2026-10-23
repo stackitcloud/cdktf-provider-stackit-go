@@ -15,6 +15,7 @@ type DataStackitCdnDistributionConfigAOutputReference interface {
 	SetBlockedCountries(val *[]*string)
 	BlockedCountriesInput() *[]*string
 	BlockedIps() *[]*string
+	CacheConfig() DataStackitCdnDistributionConfigCacheConfigOutputReference
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -126,6 +127,16 @@ func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) BlockedIps(
 	_jsii_.Get(
 		j,
 		"blockedIps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) CacheConfig() DataStackitCdnDistributionConfigCacheConfigOutputReference {
+	var returns DataStackitCdnDistributionConfigCacheConfigOutputReference
+	_jsii_.Get(
+		j,
+		"cacheConfig",
 		&returns,
 	)
 	return returns

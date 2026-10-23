@@ -1,3 +1,3 @@
 # `data_stackit_telemetrylink`
 
-Refer to the Terraform Registry for docs: [`data_stackit_telemetrylink`](https://registry.terraform.io/providers/stackitcloud/stackit/0.120.0/docs/data-sources/telemetrylink).
+Refer to the Terraform Registry for docs: [`data_stackit_telemetrylink`](https://registry.terraform.io/providers/stackitcloud/stackit/0.121.0/docs/data-sources/telemetrylink).

@@ -18,6 +18,8 @@ type CdnDistributionConfigAOutputReference interface {
 	BlockedIps() *[]*string
 	SetBlockedIps(val *[]*string)
 	BlockedIpsInput() *[]*string
+	CacheConfig() CdnDistributionConfigCacheConfigOutputReference
+	CacheConfigInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -93,12 +95,14 @@ type CdnDistributionConfigAOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutBackend(value *CdnDistributionConfigBackend)
+	PutCacheConfig(value *CdnDistributionConfigCacheConfig)
 	PutOptimizer(value *CdnDistributionConfigOptimizer)
 	PutRedirects(value *CdnDistributionConfigRedirects)
 	PutTls(value *CdnDistributionConfigTls)
 	PutWaf(value *CdnDistributionConfigWaf)
 	ResetBlockedCountries()
 	ResetBlockedIps()
+	ResetCacheConfig()
 	ResetDefaultCacheDuration()
 	ResetForwardHostHeader()
 	ResetMonthlyLimitBytes()
@@ -177,6 +181,26 @@ func (j *jsiiProxy_CdnDistributionConfigAOutputReference) BlockedIpsInput() *[]*
 	_jsii_.Get(
 		j,
 		"blockedIpsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) CacheConfig() CdnDistributionConfigCacheConfigOutputReference {
+	var returns CdnDistributionConfigCacheConfigOutputReference
+	_jsii_.Get(
+		j,
+		"cacheConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) CacheConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cacheConfigInput",
 		&returns,
 	)
 	return returns
@@ -789,6 +813,17 @@ func (c *jsiiProxy_CdnDistributionConfigAOutputReference) PutBackend(value *CdnD
 	)
 }
 
+func (c *jsiiProxy_CdnDistributionConfigAOutputReference) PutCacheConfig(value *CdnDistributionConfigCacheConfig) {
+	if err := c.validatePutCacheConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putCacheConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CdnDistributionConfigAOutputReference) PutOptimizer(value *CdnDistributionConfigOptimizer) {
 	if err := c.validatePutOptimizerParameters(value); err != nil {
 		panic(err)
@@ -845,6 +880,14 @@ func (c *jsiiProxy_CdnDistributionConfigAOutputReference) ResetBlockedIps() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetBlockedIps",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CdnDistributionConfigAOutputReference) ResetCacheConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCacheConfig",
 		nil, // no parameters
 	)
 }
