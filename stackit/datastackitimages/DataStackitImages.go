@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.121.0/docs/data-sources/images stackit_images}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.122.0/docs/data-sources/images stackit_images}.
 type DataStackitImages interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -355,7 +355,7 @@ func (j *jsiiProxy_DataStackitImages) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.121.0/docs/data-sources/images stackit_images} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.122.0/docs/data-sources/images stackit_images} Data Source.
 func NewDataStackitImages(scope constructs.Construct, id *string, config *DataStackitImagesConfig) DataStackitImages {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewDataStackitImages(scope constructs.Construct, id *string, config *DataSt
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.121.0/docs/data-sources/images stackit_images} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.122.0/docs/data-sources/images stackit_images} Data Source.
 func NewDataStackitImages_Override(d DataStackitImages, scope constructs.Construct, id *string, config *DataStackitImagesConfig) {
 	_init_.Initialize()
 

@@ -72,6 +72,10 @@ func (a *jsiiProxy_AlbWafManagedRuleSet) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (a *jsiiProxy_AlbWafManagedRuleSet) validatePutConfiguredGroupsParameters(value interface{}) error {
+	return nil
+}
+
 func validateAlbWafManagedRuleSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -37,6 +37,7 @@ type DataStackitCdnDistributionConfigAOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataStackitCdnDistributionConfigA
 	SetInternalValue(val *DataStackitCdnDistributionConfigA)
+	LogSink() DataStackitCdnDistributionConfigLogSinkOutputReference
 	MonthlyLimitBytes() *float64
 	Optimizer() DataStackitCdnDistributionConfigOptimizerOutputReference
 	Redirects() DataStackitCdnDistributionConfigRedirectsOutputReference
@@ -207,6 +208,16 @@ func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) InternalVal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitCdnDistributionConfigAOutputReference) LogSink() DataStackitCdnDistributionConfigLogSinkOutputReference {
+	var returns DataStackitCdnDistributionConfigLogSinkOutputReference
+	_jsii_.Get(
+		j,
+		"logSink",
 		&returns,
 	)
 	return returns

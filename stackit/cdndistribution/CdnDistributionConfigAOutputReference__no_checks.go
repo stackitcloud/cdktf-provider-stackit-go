@@ -52,6 +52,10 @@ func (c *jsiiProxy_CdnDistributionConfigAOutputReference) validatePutCacheConfig
 	return nil
 }
 
+func (c *jsiiProxy_CdnDistributionConfigAOutputReference) validatePutLogSinkParameters(value *CdnDistributionConfigLogSink) error {
+	return nil
+}
+
 func (c *jsiiProxy_CdnDistributionConfigAOutputReference) validatePutOptimizerParameters(value *CdnDistributionConfigOptimizer) error {
 	return nil
 }

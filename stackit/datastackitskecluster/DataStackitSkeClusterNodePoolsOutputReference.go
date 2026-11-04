@@ -32,6 +32,7 @@ type DataStackitSkeClusterNodePoolsOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataStackitSkeClusterNodePools
 	SetInternalValue(val *DataStackitSkeClusterNodePools)
+	Kata() cdktf.IResolvable
 	Labels() cdktf.StringMap
 	MachineType() *string
 	Maximum() *float64
@@ -168,6 +169,16 @@ func (j *jsiiProxy_DataStackitSkeClusterNodePoolsOutputReference) InternalValue(
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataStackitSkeClusterNodePoolsOutputReference) Kata() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"kata",
 		&returns,
 	)
 	return returns

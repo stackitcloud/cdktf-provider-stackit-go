@@ -9,9 +9,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.121.0/docs/data-sources/dremio_instance stackit_dremio_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.122.0/docs/data-sources/dremio_instance stackit_dremio_instance}.
 type DataStackitDremioInstance interface {
 	cdktf.TerraformDataSource
+	Acl() *[]*string
 	Authentication() DataStackitDremioInstanceAuthenticationOutputReference
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -113,6 +114,16 @@ type DataStackitDremioInstance interface {
 // The jsii proxy struct for DataStackitDremioInstance
 type jsiiProxy_DataStackitDremioInstance struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataStackitDremioInstance) Acl() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"acl",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataStackitDremioInstance) Authentication() DataStackitDremioInstanceAuthenticationOutputReference {
@@ -376,7 +387,7 @@ func (j *jsiiProxy_DataStackitDremioInstance) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.121.0/docs/data-sources/dremio_instance stackit_dremio_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.122.0/docs/data-sources/dremio_instance stackit_dremio_instance} Data Source.
 func NewDataStackitDremioInstance(scope constructs.Construct, id *string, config *DataStackitDremioInstanceConfig) DataStackitDremioInstance {
 	_init_.Initialize()
 
@@ -394,7 +405,7 @@ func NewDataStackitDremioInstance(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.121.0/docs/data-sources/dremio_instance stackit_dremio_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.122.0/docs/data-sources/dremio_instance stackit_dremio_instance} Data Source.
 func NewDataStackitDremioInstance_Override(d DataStackitDremioInstance, scope constructs.Construct, id *string, config *DataStackitDremioInstanceConfig) {
 	_init_.Initialize()
 

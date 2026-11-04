@@ -76,6 +76,10 @@ func (j *jsiiProxy_SkeClusterNodePoolsOutputReference) validateSetInternalValueP
 	return nil
 }
 
+func (j *jsiiProxy_SkeClusterNodePoolsOutputReference) validateSetKataParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SkeClusterNodePoolsOutputReference) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }

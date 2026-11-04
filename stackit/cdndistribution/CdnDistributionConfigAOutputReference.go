@@ -45,6 +45,8 @@ type CdnDistributionConfigAOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	LogSink() CdnDistributionConfigLogSinkOutputReference
+	LogSinkInput() interface{}
 	MonthlyLimitBytes() *float64
 	SetMonthlyLimitBytes(val *float64)
 	MonthlyLimitBytesInput() *float64
@@ -96,6 +98,7 @@ type CdnDistributionConfigAOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutBackend(value *CdnDistributionConfigBackend)
 	PutCacheConfig(value *CdnDistributionConfigCacheConfig)
+	PutLogSink(value *CdnDistributionConfigLogSink)
 	PutOptimizer(value *CdnDistributionConfigOptimizer)
 	PutRedirects(value *CdnDistributionConfigRedirects)
 	PutTls(value *CdnDistributionConfigTls)
@@ -105,6 +108,7 @@ type CdnDistributionConfigAOutputReference interface {
 	ResetCacheConfig()
 	ResetDefaultCacheDuration()
 	ResetForwardHostHeader()
+	ResetLogSink()
 	ResetMonthlyLimitBytes()
 	ResetOptimizer()
 	ResetRedirects()
@@ -291,6 +295,26 @@ func (j *jsiiProxy_CdnDistributionConfigAOutputReference) InternalValue() interf
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) LogSink() CdnDistributionConfigLogSinkOutputReference {
+	var returns CdnDistributionConfigLogSinkOutputReference
+	_jsii_.Get(
+		j,
+		"logSink",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionConfigAOutputReference) LogSinkInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logSinkInput",
 		&returns,
 	)
 	return returns
@@ -824,6 +848,17 @@ func (c *jsiiProxy_CdnDistributionConfigAOutputReference) PutCacheConfig(value *
 	)
 }
 
+func (c *jsiiProxy_CdnDistributionConfigAOutputReference) PutLogSink(value *CdnDistributionConfigLogSink) {
+	if err := c.validatePutLogSinkParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putLogSink",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CdnDistributionConfigAOutputReference) PutOptimizer(value *CdnDistributionConfigOptimizer) {
 	if err := c.validatePutOptimizerParameters(value); err != nil {
 		panic(err)
@@ -904,6 +939,14 @@ func (c *jsiiProxy_CdnDistributionConfigAOutputReference) ResetForwardHostHeader
 	_jsii_.InvokeVoid(
 		c,
 		"resetForwardHostHeader",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CdnDistributionConfigAOutputReference) ResetLogSink() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLogSink",
 		nil, // no parameters
 	)
 }

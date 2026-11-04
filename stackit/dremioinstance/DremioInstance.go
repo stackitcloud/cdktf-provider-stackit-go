@@ -9,9 +9,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.121.0/docs/resources/dremio_instance stackit_dremio_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.122.0/docs/resources/dremio_instance stackit_dremio_instance}.
 type DremioInstance interface {
 	cdktf.TerraformResource
+	Acl() *[]*string
+	SetAcl(val *[]*string)
+	AclInput() *[]*string
 	Authentication() DremioInstanceAuthenticationOutputReference
 	AuthenticationInput() interface{}
 	// Experimental.
@@ -122,6 +125,7 @@ type DremioInstance interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthentication(value *DremioInstanceAuthentication)
 	PutTimeouts(value *DremioInstanceTimeouts)
+	ResetAcl()
 	ResetDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -144,6 +148,26 @@ type DremioInstance interface {
 // The jsii proxy struct for DremioInstance
 type jsiiProxy_DremioInstance struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_DremioInstance) Acl() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"acl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DremioInstance) AclInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"aclInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DremioInstance) Authentication() DremioInstanceAuthenticationOutputReference {
@@ -457,7 +481,7 @@ func (j *jsiiProxy_DremioInstance) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.121.0/docs/resources/dremio_instance stackit_dremio_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.122.0/docs/resources/dremio_instance stackit_dremio_instance} Resource.
 func NewDremioInstance(scope constructs.Construct, id *string, config *DremioInstanceConfig) DremioInstance {
 	_init_.Initialize()
 
@@ -475,7 +499,7 @@ func NewDremioInstance(scope constructs.Construct, id *string, config *DremioIns
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.121.0/docs/resources/dremio_instance stackit_dremio_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.122.0/docs/resources/dremio_instance stackit_dremio_instance} Resource.
 func NewDremioInstance_Override(d DremioInstance, scope constructs.Construct, id *string, config *DremioInstanceConfig) {
 	_init_.Initialize()
 
@@ -483,6 +507,17 @@ func NewDremioInstance_Override(d DremioInstance, scope constructs.Construct, id
 		"stackit.dremioInstance.DremioInstance",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DremioInstance)SetAcl(val *[]*string) {
+	if err := j.validateSetAclParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"acl",
+		val,
 	)
 }
 
@@ -970,6 +1005,14 @@ func (d *jsiiProxy_DremioInstance) PutTimeouts(value *DremioInstanceTimeouts) {
 		d,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DremioInstance) ResetAcl() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAcl",
+		nil, // no parameters
 	)
 }
 

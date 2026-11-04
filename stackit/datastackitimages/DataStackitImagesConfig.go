@@ -21,17 +21,17 @@ type DataStackitImagesConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// STACKIT project ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.121.0/docs/data-sources/images#project_id DataStackitImages#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.122.0/docs/data-sources/images#project_id DataStackitImages#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// API-side image filtering options.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.121.0/docs/data-sources/images#filter DataStackitImages#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.122.0/docs/data-sources/images#filter DataStackitImages#filter}
 	Filter *DataStackitImagesFilter `field:"optional" json:"filter" yaml:"filter"`
 	// Region override. Uses the provider region when omitted.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.121.0/docs/data-sources/images#region DataStackitImages#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.122.0/docs/data-sources/images#region DataStackitImages#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.121.0/docs/data-sources/images#timeouts DataStackitImages#timeouts}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.122.0/docs/data-sources/images#timeouts DataStackitImages#timeouts}.
 	Timeouts *DataStackitImagesTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

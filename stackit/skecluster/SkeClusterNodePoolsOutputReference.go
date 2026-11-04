@@ -38,6 +38,9 @@ type SkeClusterNodePoolsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Kata() interface{}
+	SetKata(val interface{})
+	KataInput() interface{}
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -112,6 +115,7 @@ type SkeClusterNodePoolsOutputReference interface {
 	PutTaints(value interface{})
 	ResetAllowSystemComponents()
 	ResetCri()
+	ResetKata()
 	ResetLabels()
 	ResetMaxSurge()
 	ResetMaxUnavailable()
@@ -241,6 +245,26 @@ func (j *jsiiProxy_SkeClusterNodePoolsOutputReference) InternalValue() interface
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SkeClusterNodePoolsOutputReference) Kata() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"kata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SkeClusterNodePoolsOutputReference) KataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"kataInput",
 		&returns,
 	)
 	return returns
@@ -630,6 +654,17 @@ func (j *jsiiProxy_SkeClusterNodePoolsOutputReference)SetInternalValue(val inter
 	)
 }
 
+func (j *jsiiProxy_SkeClusterNodePoolsOutputReference)SetKata(val interface{}) {
+	if err := j.validateSetKataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kata",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SkeClusterNodePoolsOutputReference)SetLabels(val *map[string]*string) {
 	if err := j.validateSetLabelsParameters(val); err != nil {
 		panic(err)
@@ -993,6 +1028,14 @@ func (s *jsiiProxy_SkeClusterNodePoolsOutputReference) ResetCri() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCri",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SkeClusterNodePoolsOutputReference) ResetKata() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetKata",
 		nil, // no parameters
 	)
 }

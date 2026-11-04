@@ -9,11 +9,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.121.0/docs/resources/alb_waf_managed_rule_set stackit_alb_waf_managed_rule_set}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.122.0/docs/resources/alb_waf_managed_rule_set stackit_alb_waf_managed_rule_set}.
 type AlbWafManagedRuleSet interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ConfiguredGroups() AlbWafManagedRuleSetConfiguredGroupsMap
+	ConfiguredGroupsInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -116,6 +118,8 @@ type AlbWafManagedRuleSet interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutConfiguredGroups(value interface{})
+	ResetConfiguredGroups()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -143,6 +147,26 @@ func (j *jsiiProxy_AlbWafManagedRuleSet) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbWafManagedRuleSet) ConfiguredGroups() AlbWafManagedRuleSetConfiguredGroupsMap {
+	var returns AlbWafManagedRuleSetConfiguredGroupsMap
+	_jsii_.Get(
+		j,
+		"configuredGroups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbWafManagedRuleSet) ConfiguredGroupsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"configuredGroupsInput",
 		&returns,
 	)
 	return returns
@@ -409,7 +433,7 @@ func (j *jsiiProxy_AlbWafManagedRuleSet) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.121.0/docs/resources/alb_waf_managed_rule_set stackit_alb_waf_managed_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.122.0/docs/resources/alb_waf_managed_rule_set stackit_alb_waf_managed_rule_set} Resource.
 func NewAlbWafManagedRuleSet(scope constructs.Construct, id *string, config *AlbWafManagedRuleSetConfig) AlbWafManagedRuleSet {
 	_init_.Initialize()
 
@@ -427,7 +451,7 @@ func NewAlbWafManagedRuleSet(scope constructs.Construct, id *string, config *Alb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.121.0/docs/resources/alb_waf_managed_rule_set stackit_alb_waf_managed_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.122.0/docs/resources/alb_waf_managed_rule_set stackit_alb_waf_managed_rule_set} Resource.
 func NewAlbWafManagedRuleSet_Override(a AlbWafManagedRuleSet, scope constructs.Construct, id *string, config *AlbWafManagedRuleSetConfig) {
 	_init_.Initialize()
 
@@ -900,6 +924,25 @@ func (a *jsiiProxy_AlbWafManagedRuleSet) OverrideLogicalId(newLogicalId *string)
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (a *jsiiProxy_AlbWafManagedRuleSet) PutConfiguredGroups(value interface{}) {
+	if err := a.validatePutConfiguredGroupsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putConfiguredGroups",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AlbWafManagedRuleSet) ResetConfiguredGroups() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetConfiguredGroups",
+		nil, // no parameters
 	)
 }
 
