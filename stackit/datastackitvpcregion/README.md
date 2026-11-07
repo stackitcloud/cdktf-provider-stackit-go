@@ -1,3 +1,3 @@
 # `data_stackit_vpc_region`
 
-Refer to the Terraform Registry for docs: [`data_stackit_vpc_region`](https://registry.terraform.io/providers/stackitcloud/stackit/0.122.0/docs/data-sources/vpc_region).
+Refer to the Terraform Registry for docs: [`data_stackit_vpc_region`](https://registry.terraform.io/providers/stackitcloud/stackit/0.123.0/docs/data-sources/vpc_region).

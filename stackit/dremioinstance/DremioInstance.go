@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.122.0/docs/resources/dremio_instance stackit_dremio_instance}.
+// Represents a {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.123.0/docs/resources/dremio_instance stackit_dremio_instance}.
 type DremioInstance interface {
 	cdktf.TerraformResource
 	Acl() *[]*string
@@ -481,7 +481,7 @@ func (j *jsiiProxy_DremioInstance) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.122.0/docs/resources/dremio_instance stackit_dremio_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.123.0/docs/resources/dremio_instance stackit_dremio_instance} Resource.
 func NewDremioInstance(scope constructs.Construct, id *string, config *DremioInstanceConfig) DremioInstance {
 	_init_.Initialize()
 
@@ -499,7 +499,7 @@ func NewDremioInstance(scope constructs.Construct, id *string, config *DremioIns
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.122.0/docs/resources/dremio_instance stackit_dremio_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/stackitcloud/stackit/0.123.0/docs/resources/dremio_instance stackit_dremio_instance} Resource.
 func NewDremioInstance_Override(d DremioInstance, scope constructs.Construct, id *string, config *DremioInstanceConfig) {
 	_init_.Initialize()
 
